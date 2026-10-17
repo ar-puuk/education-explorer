@@ -29,3 +29,4 @@ Thumbs.db
 scratch/
 geocode_report.txt
 web/public/duckdb-ext/
+web/e2e/shots/
