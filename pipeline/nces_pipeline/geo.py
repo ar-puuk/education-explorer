@@ -89,12 +89,24 @@ def build_points_college() -> int:
              arg_max(lat, CASE WHEN lat IS NULL THEN -1 ELSE year END),
              arg_max(lon, CASE WHEN lat IS NULL THEN -1 ELSE year END)
       FROM per_year GROUP BY unitid ORDER BY unitid""").fetchall()
+    from .geocode import addr_key
+
+    gc = _geocode_lookup()
+    addr = {r[0]: r[1:] for r in con.execute(f"""
+      SELECT unitid, arg_max(addr, year), arg_max(city, year), arg_max(stabbr, year), arg_max(zip, year)
+      FROM {hd} GROUP BY unitid""").fetchall()}
     inst = []
     for (uid, ys, act, tot, name, city, sector, control, level, locale, hbcu, web, lat, lon) in rows:
+        src, approx = "ipeds", False
         if lat is None or lon is None:
-            continue
+            k = addr_key(*addr.get(uid, (None,) * 4))
+            if not (k and k in gc):
+                continue
+            lat, lon, approx = gc[k][0], gc[k][1], gc[k][2]
+            src = "geocode"
         inst.append({
             "id": uid, "name": name, "city": city, "lat": round(lat, 6), "lon": round(lon, 6),
+            "coordSource": src, "approx": approx,
             "years": ys, "active": [1 if a == 1 else 0 for a in act], "enroll": tot,
             "sector": sector, "control": control, "level": level, "locale": locale, "hbcu": hbcu, "web": web,
         })
@@ -104,3 +116,62 @@ def build_points_college() -> int:
     p = DOCS_DATA / "geo" / "points_college.json"
     p.write_text(json.dumps(out, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     return len(inst)
+
+
+def _geocode_lookup() -> dict[str, tuple[float, float, bool]]:
+    from .geocode import load_cache
+
+    return {k: (v["lat"], v["lon"], v["match_type"] != "Exact") for k, v in load_cache().items() if v["matched"]}
+
+
+def build_points_private() -> int:
+    """docs/data/geo/points_private.json: private schools from the PSS surveys that carry names and IDs
+    (2005-06 on). Coordinates come from the survey, else from the Census geocode cache (marked approximate
+    unless an exact match)."""
+    import yaml
+
+    from .geocode import addr_key
+    from .pss import VALUE_LABELS
+
+    pss = DOCS_DATA / "pss" / "schools"
+    con = duckdb.connect()
+    gc = _geocode_lookup()
+    rows = con.execute(f"""
+      SELECT ppin, year, name, address, city, zip, lat, lon, enrollment_total, teachers_fte, level, typology, relig,
+             ulocale, state_abbrev
+      FROM read_parquet('{pss.as_posix()}/*.parquet', union_by_name=true)
+      WHERE ppin IS NOT NULL AND name IS NOT NULL ORDER BY ppin, year""").fetchall()
+    by: dict[str, list] = {}
+    for r in rows:
+        by.setdefault(r[0], []).append(r)
+    schools = []
+    for ppin, rs in by.items():
+        latest = rs[-1]
+        lat = lon = None
+        src, approx = "pss", False
+        for r in reversed(rs):  # newest source coordinates first
+            if r[6] is not None and r[7] is not None and r[6] != 0:
+                lat, lon = r[6], r[7]
+                break
+        if lat is None:
+            for r in reversed(rs):
+                k = addr_key(r[3], r[4], r[14], r[5])
+                if k and k in gc:
+                    lat, lon, approx = gc[k][0], gc[k][1], gc[k][2]
+                    src = "geocode"
+                    break
+        if lat is None:
+            continue
+        schools.append({
+            "id": ppin, "name": latest[2], "address": latest[3], "city": latest[4], "zip": latest[5],
+            "lat": round(lat, 6), "lon": round(lon, 6), "coordSource": src, "approx": approx,
+            "years": [r[1] for r in rs], "enroll": [r[8] for r in rs], "teachers": [r[9] for r in rs],
+            "level": latest[10], "typology": latest[11], "relig": latest[12], "ulocale": latest[13],
+        })
+    vl = (yaml.safe_load(VALUE_LABELS.read_text(encoding="utf-8")) or {}).get("values", {})
+    labels = {k.lower(): vl.get(k, {}) for k in ("LEVEL", "TYPOLOGY", "RELIG")}
+    years = sorted({y for sc in schools for y in sc["years"]})
+    out = {"dataset": "private", "years": years, "labels": labels, "schools": schools}
+    p = DOCS_DATA / "geo" / "points_private.json"
+    p.write_text(json.dumps(out, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    return len(schools)

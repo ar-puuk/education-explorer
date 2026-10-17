@@ -16,6 +16,14 @@ page.on('console', (m) => {
   if (m.type() === 'error' && !/favicon|Failed to load resource.*(tiles|fonts|sprites)/i.test(m.text())) errors.push('console: ' + m.text().slice(0, 200))
 })
 
+// pick test subjects from the data itself (no state literals)
+const base_ = base.endsWith('/') ? base : base + '/'
+const pub = await (await fetch(base_ + 'data/geo/points_public.json')).json()
+const col = await (await fetch(base_ + 'data/geo/points_college.json')).json()
+const biggest = (arr) => arr.reduce((a, b) => ((b.enroll.at(-2) ?? 0) > (a.enroll.at(-2) ?? 0) ? b : a))
+const SCHOOL = biggest(pub.schools).name
+const COLLEGE = biggest(col.institutions).name
+
 const fail = (msg) => {
   console.error('FAIL:', msg)
   process.exitCode = 1
@@ -73,7 +81,7 @@ kept === 'dark' ? ok('explicit basemap choice survives theme change') : fail('ex
 
 // select a school via search; panel + chart
 await page.getByRole('button', { name: 'System', exact: true }).click()
-await page.locator('#school-search').fill('Provo High')
+await page.locator('#school-search').fill(SCHOOL)
 await page.locator('#search-results li button').first().click()
 await page.waitForSelector('aside[aria-label="School details"] h2', { timeout: 20000 })
 await page.waitForSelector('aside[aria-label="School details"] svg', { timeout: 60000 })
@@ -87,7 +95,7 @@ for (const t of ['Race/ethnicity', 'Sex', 'Grade']) {
 await page.screenshot({ path: `${out}/04-detail-grade.png` })
 
 // college: search, panel, charts, table explorer
-await page.locator('#school-search').fill('University of Utah')
+await page.locator('#school-search').fill(COLLEGE)
 await page.locator('#search-results li button', { hasText: 'College' }).first().click()
 await page.waitForSelector('aside[aria-label="College details"] h2', { timeout: 20000 })
 await page.waitForSelector('aside[aria-label="College details"] svg', { timeout: 60000 })

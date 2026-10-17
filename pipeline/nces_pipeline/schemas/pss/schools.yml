@@ -1,0 +1,7102 @@
+source: pss
+table: schools
+key:
+- row_id
+columns:
+  EPIN:
+    name: epin
+    type: VARCHAR
+    years: 1989,1991
+    label: Permanent Identification Number
+  ESTFIP:
+    name: estfip
+    type: BIGINT
+    years: 1989,1991
+    label: Fips State Code
+  CITY:
+    name: city
+    type: VARCHAR
+    years: '1989'
+    label: Current Institution City
+  STATE:
+    name: state
+    type: VARCHAR
+    years: '1989'
+    label: Current Institution State
+  EZIP:
+    name: zip
+    type: VARCHAR
+    years: 1989,1991
+    label: Zip Code of Mailing Address (Zip + 4)
+  SCHOOL:
+    name: school
+    type: BIGINT
+    years: 1989,1991,1993,1995,1997,1999,2001,2003
+    label: School Counter
+  PSS007:
+    name: pss007
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: Nursery'
+  PSS008:
+    name: pss008
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in Nursery
+  PSS009:
+    name: pss009
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: Prekindergarten'
+  PSS010:
+    name: pss010
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in Prekindergarten
+  PSS011:
+    name: pss011
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: Kindergarten'
+  PSS012:
+    name: pss012
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in Kindergarten
+  PSS013:
+    name: pss013
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 1st Grade'
+  PSS014:
+    name: pss014
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 1st Grade
+  PSS015:
+    name: pss015
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 2nd Grade'
+  PSS016:
+    name: pss016
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 2nd Grade
+  PSS017:
+    name: pss017
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 3rd Grade'
+  PSS018:
+    name: pss018
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 3rd Grade
+  PSS019:
+    name: pss019
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 4th Grade'
+  PSS020:
+    name: pss020
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 4th Grade
+  PSS021:
+    name: pss021
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 5th Grade'
+  PSS022:
+    name: pss022
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 5th Grade
+  PSS023:
+    name: pss023
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 6th Grade'
+  PSS024:
+    name: pss024
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 6th Grade
+  PSS025:
+    name: pss025
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 7th Grade'
+  PSS026:
+    name: pss026
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 7th Grade
+  PSS027:
+    name: pss027
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 8th Grade'
+  PSS028:
+    name: pss028
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 8th Grade
+  PSS029:
+    name: pss029
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 9th Grade'
+  PSS030:
+    name: pss030
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 9th Grade
+  PSS031:
+    name: pss031
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 10th Grade'
+  PSS032:
+    name: pss032
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 10th Grade
+  PSS033:
+    name: pss033
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 11th Grade'
+  PSS034:
+    name: pss034
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 11th Grade
+  PSS035:
+    name: pss035
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 12th Grade'
+  PSS036:
+    name: pss036
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 12th Grade
+  PSS037:
+    name: pss037
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: 13th Grade'
+  PSS038:
+    name: pss038
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 13th Grade
+  PSS039:
+    name: pss039
+    type: BIGINT
+    years: '1989'
+    label: 2A Grade Levels Offered:14th Grade
+  PSS040:
+    name: pss040
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in 14th Grade
+  PSS041:
+    name: pss041
+    type: BIGINT
+    years: '1989'
+    label: '2A Grade Levels Offered: Ungraded'
+  PSS042:
+    name: pss042
+    type: BIGINT
+    years: '1989'
+    label: 2B Students Enrolled in Ungraded
+  PSS043:
+    name: pss043
+    type: BIGINT
+    years: '1989'
+    label: Total Students Enrolled
+  PSS044:
+    name: pss044
+    type: BIGINT
+    years: '1989'
+    label: 3A Stdts Recd Reg High Sch Diploma 88-89
+  PSS045:
+    name: pss045
+    type: BIGINT
+    years: '1989'
+    label: 'Check Item A: Have Stds in the 12th Grde'
+  PSS046:
+    name: pss046
+    type: BIGINT
+    years: '1989'
+    label: 3B Stdts Recd Reg High Sch Diploma 89-90
+  PSS047:
+    name: pss047
+    type: BIGINT
+    years: '1989'
+    label: 4 Days in School Year
+  PSS048:
+    name: pss048
+    type: BIGINT
+    years: '1989'
+    label: 5 Hours in School Day
+  PSS049:
+    name: pss049
+    type: BIGINT
+    years: '1989'
+    label: 5 Minutes in School Day
+  PSS050:
+    name: pss050
+    type: BIGINT
+    years: '1989'
+    label: 'Check Item B: Nursery Or Prekindergarten'
+  PSS051:
+    name: pss051
+    type: BIGINT
+    years: '1989'
+    label: 6A Full Time Nursery And Prek Teachers
+  PSS052:
+    name: pss052
+    type: BIGINT
+    years: '1989'
+    label: 6A At Least 3/4 Time Nursry & Prek Tchrs
+  PSS053:
+    name: pss053
+    type: BIGINT
+    years: '1989'
+    label: 6A At Least 1/2 Time Nursry & Prek Tchrs
+  PSS054:
+    name: pss054
+    type: BIGINT
+    years: '1989'
+    label: 6A At Least 1/4 Time Nursry & Prek Tchrs
+  PSS055:
+    name: pss055
+    type: BIGINT
+    years: '1989'
+    label: 6A Less than 1/4 Time Nurs. & Prek Tchrs
+  PSS056:
+    name: pss056
+    type: BIGINT
+    years: '1989'
+    label: '6B Verify Total # Teaching Nursry & Prek'
+  PSS057:
+    name: pss057
+    type: BIGINT
+    years: '1989'
+    label: Full Time K-12 Teachers
+  PSS058:
+    name: pss058
+    type: BIGINT
+    years: '1989'
+    label: 7A At Least 3/4 Time K-12 Teachers
+  PSS059:
+    name: pss059
+    type: BIGINT
+    years: '1989'
+    label: 7A At Least 1/2 Time K-12 Teachers
+  PSS060:
+    name: pss060
+    type: BIGINT
+    years: '1989'
+    label: 7A At Least 1/4 Time K-12 Teachers
+  PSS061:
+    name: pss061
+    type: BIGINT
+    years: '1989'
+    label: 7A Less than 1/4 Time K-12 Teachers
+  PSS062:
+    name: pss062
+    type: BIGINT
+    years: '1989'
+    label: 7B Verify Total Teaching K-12
+  PSS063:
+    name: pss063
+    type: BIGINT
+    years: '1989'
+    label: 8 Operated in Private Home
+  PSS064:
+    name: pss064
+    type: BIGINT
+    years: '1989'
+    label: 9A Religious School
+  PSS065:
+    name: pss065
+    type: BIGINT
+    years: '1989'
+    label: 9B Affiliated With a Nat Rel Denomintion
+  PSS066:
+    name: pss066
+    type: BIGINT
+    years: '1989'
+    label: 9C Rel Orientation of School
+  PSS067:
+    name: pss067
+    type: BIGINT
+    years: '1989'
+    label: 9D School Parochial, Diocesan or Private
+  PSS068:
+    name: pss068
+    type: BIGINT
+    years: '1989'
+    label: 9E School Member of Any Association
+  PSS069:
+    name: pss069
+    type: BIGINT
+    years: '1989'
+    label: 9F Accelerated Christian Education
+  PSS070:
+    name: pss070
+    type: BIGINT
+    years: '1989'
+    label: 9F Alternative School Network
+  PSS071:
+    name: pss071
+    type: BIGINT
+    years: '1989'
+    label: 9F American Assn of Christian Schools
+  PSS072:
+    name: pss072
+    type: BIGINT
+    years: '1989'
+    label: 9F American Montessori Society
+  PSS073:
+    name: pss073
+    type: BIGINT
+    years: '1989'
+    label: 9F Other Montessori Associations
+  PSS074:
+    name: pss074
+    type: BIGINT
+    years: '1989'
+    label: 9F Assn of Christian Schools Internatl
+  PSS075:
+    name: pss075
+    type: BIGINT
+    years: '1989'
+    label: 9F Assn of Military Colleges And Schools
+  PSS076:
+    name: pss076
+    type: BIGINT
+    years: '1989'
+    label: 9F Assn of Evangelical Lutheran Church
+  PSS077:
+    name: pss077
+    type: BIGINT
+    years: '1989'
+    label: 9F Bilingual School Association
+  PSS078:
+    name: pss078
+    type: BIGINT
+    years: '1989'
+    label: 9F Christian Schools International
+  PSS079:
+    name: pss079
+    type: BIGINT
+    years: '1989'
+    label: 9F Council of Bilingual Education
+  PSS080:
+    name: pss080
+    type: BIGINT
+    years: '1989'
+    label: 9F Other Assn for Bilingual Education
+  PSS081:
+    name: pss081
+    type: BIGINT
+    years: '1989'
+    label: 9F Council for Exceptional Children
+  PSS082:
+    name: pss082
+    type: BIGINT
+    years: '1989'
+    label: 9F Early Childhood Education Association
+  PSS083:
+    name: pss083
+    type: BIGINT
+    years: '1989'
+    label: 9F Other Early Childhood Education Assn
+  PSS084:
+    name: pss084
+    type: BIGINT
+    years: '1989'
+    label: 9F European Council for Internatl Schls
+  PSS085:
+    name: pss085
+    type: BIGINT
+    years: '1989'
+    label: 9F Other Assn for International Schools
+  PSS086:
+    name: pss086
+    type: BIGINT
+    years: '1989'
+    label: 9F Evang. Luth Chrch in America ALC  LCA
+  PSS087:
+    name: pss087
+    type: BIGINT
+    years: '1989'
+    label: 9F Evangelical Luth Chur-Wisconsin Synod
+  PSS088:
+    name: pss088
+    type: BIGINT
+    years: '1989'
+    label: 9F Friends Council on Education
+  PSS089:
+    name: pss089
+    type: BIGINT
+    years: '1989'
+    label: 9F Gen Conference of 7th-Day Adventist C
+  PSS090:
+    name: pss090
+    type: BIGINT
+    years: '1989'
+    label: 9F Jesuit Secondary Education Assn
+  PSS091:
+    name: pss091
+    type: BIGINT
+    years: '1989'
+    label: 9F Local State or Reg Independt Sch Assn
+  PSS092:
+    name: pss092
+    type: BIGINT
+    years: '1989'
+    label: 9F Local State or Reg Assn of Relig. Pri
+  PSS093:
+    name: pss093
+    type: BIGINT
+    years: '1989'
+    label: 9F Lutheran Church-Missouri Synod
+  PSS094:
+    name: pss094
+    type: BIGINT
+    years: '1989'
+    label: 9F Natl Assn of Episcopal Schools
+  PSS095:
+    name: pss095
+    type: BIGINT
+    years: '1989'
+    label: 9F National Assn of Independent Schools
+  PSS096:
+    name: pss096
+    type: BIGINT
+    years: '1989'
+    label: 9F National Assn of Laboratory Schools
+  PSS097:
+    name: pss097
+    type: BIGINT
+    years: '1989'
+    label: 9F Natl Assn of Priv. Schs for Excpt Ch.
+  PSS098:
+    name: pss098
+    type: BIGINT
+    years: '1989'
+    label: 9F Other Assn of Private Schls for Except Children
+  PSS099:
+    name: pss099
+    type: BIGINT
+    years: '1989'
+    label: 9F National Catholic Educational Assn
+  PSS100:
+    name: pss100
+    type: BIGINT
+    years: '1989'
+    label: 9F Natl Center for Neighborhood Enterpri
+  PSS101:
+    name: pss101
+    type: BIGINT
+    years: '1989'
+    label: 9F Natl Coalition of Alt Community Schs
+  PSS102:
+    name: pss102
+    type: BIGINT
+    years: '1989'
+    label: 9F National Federation of Church Schools
+  PSS103:
+    name: pss103
+    type: BIGINT
+    years: '1989'
+    label: 9F Natl Independent Private School Assn
+  PSS104:
+    name: pss104
+    type: BIGINT
+    years: '1989'
+    label: 9F National Society of Hebrew Day School
+  PSS105:
+    name: pss105
+    type: BIGINT
+    years: '1989'
+    label: 9F Oral Roberts Educational Fellowship
+  PSS106:
+    name: pss106
+    type: BIGINT
+    years: '1989'
+    label: 9F Solomon Schechter Day Schools
+  PSS107:
+    name: pss107
+    type: BIGINT
+    years: '1989'
+    label: 9F Other Christian School Associations
+  PSS108:
+    name: pss108
+    type: BIGINT
+    years: '1989'
+    label: 9F Other Jewish School Associations
+  PSS109:
+    name: pss109
+    type: BIGINT
+    years: '1989'
+    label: 9F Other Nonreligious School Association
+  PSS110:
+    name: pss110
+    type: BIGINT
+    years: '1989'
+    label: 9F Other Religious School Associations
+  PSS111:
+    name: pss111
+    type: BIGINT
+    years: '1989'
+    label: 9F None of the Above Associations
+  PSS112:
+    name: pss112
+    type: BIGINT
+    years: '1989'
+    label: 10A Best Describes this School
+  PSS113:
+    name: pss113
+    type: BIGINT
+    years: '1989'
+    label: 10B Role of Schl To Support Home Schling
+  PSS114:
+    name: pss114
+    type: BIGINT
+    years: '1989'
+    label: 11 Year School Began Operating
+  PSS115:
+    name: pss115
+    type: BIGINT
+    years: '1989'
+    label: 12 Date Survey was Finished
+  DAY:
+    name: day
+    type: BIGINT
+    years: '1989'
+    label: Length of Schl Day in Hrs Recode
+  HIGRADE:
+    name: higrade
+    type: BIGINT
+    years: 1989,1991,1993
+    label: 1993-94 Highest Grade Level Recode
+  HOURS:
+    name: hours
+    type: DOUBLE
+    years: 1989,1991,1995
+    label: Length of School Day in Hours
+  LOGRADE:
+    name: lograde
+    type: BIGINT
+    years: 1989,1991,1993
+    label: 1993-94 Lowest Grade Level Recode
+  LEVEL:
+    name: level
+    type: BIGINT
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Level of Instruction (Three Categories)
+  LOCALE:
+    name: locale_old
+    type: BIGINT
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005
+    label: New Urbanicity Defined (Census assigned)
+  ORIENT:
+    name: orient
+    type: BIGINT
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: School Orientation
+  NR_STDS:
+    name: nr_stds
+    type: BIGINT
+    years: '1989'
+    label: Total No. of Stdts (K-12, Ug) Not Report
+  NUMSTUDS:
+    name: enrollment_total
+    type: BIGINT
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Total Number of Students (K-12, UG)
+  NUMTEACH:
+    name: teachers_fte
+    type: DOUBLE
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Number of K-12 Teachers (FTE)
+  PKENROLL:
+    name: pkenroll
+    type: BIGINT
+    years: 1989,1991
+    label: Total No. of Studnts in Schl Nurs.-Prek
+  PKTEACH:
+    name: pkteach
+    type: DOUBLE
+    years: 1989,1991
+    label: Total No. of Full-Time Equiv. Prek Tchrs
+  REGION:
+    name: region
+    type: BIGINT
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Census Region
+  RELIG:
+    name: relig
+    type: BIGINT
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Affiliation
+  SIZE:
+    name: size
+    type: BIGINT
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Size of School (K-12, UG)
+  STTCH_RT:
+    name: student_teacher_ratio
+    type: DOUBLE
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Student Teacher Ratio
+  TYPOLOGY:
+    name: typology
+    type: BIGINT
+    years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: School Typology
+  REPFAC1:
+    name: repfac1
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 1
+  REPFAC2:
+    name: repfac2
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 2
+  REPFAC3:
+    name: repfac3
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 3
+  REPFAC4:
+    name: repfac4
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 4
+  REPFAC5:
+    name: repfac5
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 5
+  REPFAC6:
+    name: repfac6
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 6
+  REPFAC7:
+    name: repfac7
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 7
+  REPFAC8:
+    name: repfac8
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 8
+  REPFAC9:
+    name: repfac9
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 9
+  REPFAC10:
+    name: repfac10
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 10
+  REPFAC11:
+    name: repfac11
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 11
+  REPFAC12:
+    name: repfac12
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 12
+  REPFAC13:
+    name: repfac13
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 13
+  REPFAC14:
+    name: repfac14
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 14
+  REPFAC15:
+    name: repfac15
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 15
+  REPFAC16:
+    name: repfac16
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 16
+  REPFAC17:
+    name: repfac17
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 17
+  REPFAC18:
+    name: repfac18
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 18
+  REPFAC19:
+    name: repfac19
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 19
+  REPFAC20:
+    name: repfac20
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 20
+  REPFAC21:
+    name: repfac21
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 21
+  REPFAC22:
+    name: repfac22
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 22
+  REPFAC23:
+    name: repfac23
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 23
+  REPFAC24:
+    name: repfac24
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 24
+  REPFAC25:
+    name: repfac25
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 25
+  REPFAC26:
+    name: repfac26
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 26
+  REPFAC27:
+    name: repfac27
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 27
+  REPFAC28:
+    name: repfac28
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 28
+  REPFAC29:
+    name: repfac29
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 29
+  REPFAC30:
+    name: repfac30
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 30
+  REPFAC31:
+    name: repfac31
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 31
+  REPFAC32:
+    name: repfac32
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 32
+  REPFAC33:
+    name: repfac33
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 33
+  REPFAC34:
+    name: repfac34
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 34
+  REPFAC35:
+    name: repfac35
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 35
+  REPFAC36:
+    name: repfac36
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 36
+  REPFAC37:
+    name: repfac37
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 37
+  REPFAC38:
+    name: repfac38
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 38
+  REPFAC39:
+    name: repfac39
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 39
+  REPFAC40:
+    name: repfac40
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 40
+  REPFAC41:
+    name: repfac41
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 41
+  REPFAC42:
+    name: repfac42
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 42
+  REPFAC43:
+    name: repfac43
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 43
+  REPFAC44:
+    name: repfac44
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 44
+  REPFAC45:
+    name: repfac45
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 45
+  REPFAC46:
+    name: repfac46
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 46
+  REPFAC47:
+    name: repfac47
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 47
+  REPFAC48:
+    name: repfac48
+    type: BIGINT
+    years: '1989'
+    label: Replicate Factor 48
+  FSCHWGT:
+    name: fschwgt
+    type: DOUBLE
+    years: '1989'
+    label: Final Weight for Schools
+  FENRWGT:
+    name: fenrwgt
+    type: DOUBLE
+    years: '1989'
+    label: Final Weight for Enrollment
+  FTWGT:
+    name: ftwgt
+    type: DOUBLE
+    years: '1989'
+    label: Final Weight for Teachers
+  FGRADWGT:
+    name: fgradwgt
+    type: DOUBLE
+    years: '1989'
+    label: Final Weight for Graduates
+  FPROJWGT:
+    name: fprojwgt
+    type: DOUBLE
+    years: '1989'
+    label: Final Weight for Projected Grads
+  SCHREP1:
+    name: schrep1
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 1
+  SCHREP2:
+    name: schrep2
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 2
+  SCHREP3:
+    name: schrep3
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 3
+  SCHREP4:
+    name: schrep4
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 4
+  SCHREP5:
+    name: schrep5
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 5
+  SCHREP6:
+    name: schrep6
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 6
+  SCHREP7:
+    name: schrep7
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 7
+  SCHREP8:
+    name: schrep8
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 8
+  SCHREP9:
+    name: schrep9
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 9
+  SCHREP10:
+    name: schrep10
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 10
+  SCHREP11:
+    name: schrep11
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 11
+  SCHREP12:
+    name: schrep12
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 12
+  SCHREP13:
+    name: schrep13
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 13
+  SCHREP14:
+    name: schrep14
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 14
+  SCHREP15:
+    name: schrep15
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 15
+  SCHREP16:
+    name: schrep16
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 16
+  SCHREP17:
+    name: schrep17
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 17
+  SCHREP18:
+    name: schrep18
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 18
+  SCHREP19:
+    name: schrep19
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 19
+  SCHREP20:
+    name: schrep20
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 20
+  SCHREP21:
+    name: schrep21
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 21
+  SCHREP22:
+    name: schrep22
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 22
+  SCHREP23:
+    name: schrep23
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 23
+  SCHREP24:
+    name: schrep24
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 24
+  SCHREP25:
+    name: schrep25
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 25
+  SCHREP26:
+    name: schrep26
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 26
+  SCHREP27:
+    name: schrep27
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 27
+  SCHREP28:
+    name: schrep28
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 28
+  SCHREP29:
+    name: schrep29
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 29
+  SCHREP30:
+    name: schrep30
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 30
+  SCHREP31:
+    name: schrep31
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 31
+  SCHREP32:
+    name: schrep32
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 32
+  SCHREP33:
+    name: schrep33
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 33
+  SCHREP34:
+    name: schrep34
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 34
+  SCHREP35:
+    name: schrep35
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 35
+  SCHREP36:
+    name: schrep36
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 36
+  SCHREP37:
+    name: schrep37
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 37
+  SCHREP38:
+    name: schrep38
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 38
+  SCHREP39:
+    name: schrep39
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 39
+  SCHREP40:
+    name: schrep40
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 40
+  SCHREP41:
+    name: schrep41
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 41
+  SCHREP42:
+    name: schrep42
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 42
+  SCHREP43:
+    name: schrep43
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 43
+  SCHREP44:
+    name: schrep44
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 44
+  SCHREP45:
+    name: schrep45
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 45
+  SCHREP46:
+    name: schrep46
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 46
+  SCHREP47:
+    name: schrep47
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 47
+  SCHREP48:
+    name: schrep48
+    type: DOUBLE
+    years: '1989'
+    label: School Replicate Weight 48
+  ENRREP1:
+    name: enrrep1
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 1
+  ENRREP2:
+    name: enrrep2
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 2
+  ENRREP3:
+    name: enrrep3
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 3
+  ENRREP4:
+    name: enrrep4
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 4
+  ENRREP5:
+    name: enrrep5
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 5
+  ENRREP6:
+    name: enrrep6
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 6
+  ENRREP7:
+    name: enrrep7
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 7
+  ENRREP8:
+    name: enrrep8
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 8
+  ENRREP9:
+    name: enrrep9
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 9
+  ENRREP10:
+    name: enrrep10
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 10
+  ENRREP11:
+    name: enrrep11
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 11
+  ENRREP12:
+    name: enrrep12
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 12
+  ENRREP13:
+    name: enrrep13
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 13
+  ENRREP14:
+    name: enrrep14
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 14
+  ENRREP15:
+    name: enrrep15
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 15
+  ENRREP16:
+    name: enrrep16
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 16
+  ENRREP17:
+    name: enrrep17
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 17
+  ENRREP18:
+    name: enrrep18
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 18
+  ENRREP19:
+    name: enrrep19
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 19
+  ENRREP20:
+    name: enrrep20
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 20
+  ENRREP21:
+    name: enrrep21
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 21
+  ENRREP22:
+    name: enrrep22
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 22
+  ENRREP23:
+    name: enrrep23
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 23
+  ENRREP24:
+    name: enrrep24
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 24
+  ENRREP25:
+    name: enrrep25
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 25
+  ENRREP26:
+    name: enrrep26
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 26
+  ENRREP27:
+    name: enrrep27
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 27
+  ENRREP28:
+    name: enrrep28
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 28
+  ENRREP29:
+    name: enrrep29
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 29
+  ENRREP30:
+    name: enrrep30
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 30
+  ENRREP31:
+    name: enrrep31
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 31
+  ENRREP32:
+    name: enrrep32
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 32
+  ENRREP33:
+    name: enrrep33
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 33
+  ENRREP34:
+    name: enrrep34
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 34
+  ENRREP35:
+    name: enrrep35
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 35
+  ENRREP36:
+    name: enrrep36
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 36
+  ENRREP37:
+    name: enrrep37
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 37
+  ENRREP38:
+    name: enrrep38
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 38
+  ENRREP39:
+    name: enrrep39
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 39
+  ENRREP40:
+    name: enrrep40
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 40
+  ENRREP41:
+    name: enrrep41
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 41
+  ENRREP42:
+    name: enrrep42
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 42
+  ENRREP43:
+    name: enrrep43
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 43
+  ENRREP44:
+    name: enrrep44
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 44
+  ENRREP45:
+    name: enrrep45
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 45
+  ENRREP46:
+    name: enrrep46
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 46
+  ENRREP47:
+    name: enrrep47
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 47
+  ENRREP48:
+    name: enrrep48
+    type: DOUBLE
+    years: '1989'
+    label: Enrollment Replicate Weight 48
+  TCHREP1:
+    name: tchrep1
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 1
+  TCHREP2:
+    name: tchrep2
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 2
+  TCHREP3:
+    name: tchrep3
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 3
+  TCHREP4:
+    name: tchrep4
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 4
+  TCHREP5:
+    name: tchrep5
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 5
+  TCHREP6:
+    name: tchrep6
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 6
+  TCHREP7:
+    name: tchrep7
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 7
+  TCHREP8:
+    name: tchrep8
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 8
+  TCHREP9:
+    name: tchrep9
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 9
+  TCHREP10:
+    name: tchrep10
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 10
+  TCHREP11:
+    name: tchrep11
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 11
+  TCHREP12:
+    name: tchrep12
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 12
+  TCHREP13:
+    name: tchrep13
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 13
+  TCHREP14:
+    name: tchrep14
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 14
+  TCHREP15:
+    name: tchrep15
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 15
+  TCHREP16:
+    name: tchrep16
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 16
+  TCHREP17:
+    name: tchrep17
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 17
+  TCHREP18:
+    name: tchrep18
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 18
+  TCHREP19:
+    name: tchrep19
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 19
+  TCHREP20:
+    name: tchrep20
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 20
+  TCHREP21:
+    name: tchrep21
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 21
+  TCHREP22:
+    name: tchrep22
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 22
+  TCHREP23:
+    name: tchrep23
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 23
+  TCHREP24:
+    name: tchrep24
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 24
+  TCHREP25:
+    name: tchrep25
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 25
+  TCHREP26:
+    name: tchrep26
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 26
+  TCHREP27:
+    name: tchrep27
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 27
+  TCHREP28:
+    name: tchrep28
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 28
+  TCHREP29:
+    name: tchrep29
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 29
+  TCHREP30:
+    name: tchrep30
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 30
+  TCHREP31:
+    name: tchrep31
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 31
+  TCHREP32:
+    name: tchrep32
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 32
+  TCHREP33:
+    name: tchrep33
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 33
+  TCHREP34:
+    name: tchrep34
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 34
+  TCHREP35:
+    name: tchrep35
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 35
+  TCHREP36:
+    name: tchrep36
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 36
+  TCHREP37:
+    name: tchrep37
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 37
+  TCHREP38:
+    name: tchrep38
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 38
+  TCHREP39:
+    name: tchrep39
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 39
+  TCHREP40:
+    name: tchrep40
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 40
+  TCHREP41:
+    name: tchrep41
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 41
+  TCHREP42:
+    name: tchrep42
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 42
+  TCHREP43:
+    name: tchrep43
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 43
+  TCHREP44:
+    name: tchrep44
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 44
+  TCHREP45:
+    name: tchrep45
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 45
+  TCHREP46:
+    name: tchrep46
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 46
+  TCHREP47:
+    name: tchrep47
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 47
+  TCHREP48:
+    name: tchrep48
+    type: DOUBLE
+    years: '1989'
+    label: Teacher Replicate Weight 48
+  GRDREP1:
+    name: grdrep1
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 1
+  GRDREP2:
+    name: grdrep2
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 2
+  GRDREP3:
+    name: grdrep3
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 3
+  GRDREP4:
+    name: grdrep4
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 4
+  GRDREP5:
+    name: grdrep5
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 5
+  GRDREP6:
+    name: grdrep6
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 6
+  GRDREP7:
+    name: grdrep7
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 7
+  GRDREP8:
+    name: grdrep8
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 8
+  GRDREP9:
+    name: grdrep9
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 9
+  GRDREP10:
+    name: grdrep10
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 10
+  GRDREP11:
+    name: grdrep11
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 11
+  GRDREP12:
+    name: grdrep12
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 12
+  GRDREP13:
+    name: grdrep13
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 13
+  GRDREP14:
+    name: grdrep14
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 14
+  GRDREP15:
+    name: grdrep15
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 15
+  GRDREP16:
+    name: grdrep16
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 16
+  GRDREP17:
+    name: grdrep17
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 17
+  GRDREP18:
+    name: grdrep18
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 18
+  GRDREP19:
+    name: grdrep19
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 19
+  GRDREP20:
+    name: grdrep20
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 20
+  GRDREP21:
+    name: grdrep21
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 21
+  GRDREP22:
+    name: grdrep22
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 22
+  GRDREP23:
+    name: grdrep23
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 23
+  GRDREP24:
+    name: grdrep24
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 24
+  GRDREP25:
+    name: grdrep25
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 25
+  GRDREP26:
+    name: grdrep26
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 26
+  GRDREP27:
+    name: grdrep27
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 27
+  GRDREP28:
+    name: grdrep28
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 28
+  GRDREP29:
+    name: grdrep29
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 29
+  GRDREP30:
+    name: grdrep30
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 30
+  GRDREP31:
+    name: grdrep31
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 31
+  GRDREP32:
+    name: grdrep32
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 32
+  GRDREP33:
+    name: grdrep33
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 33
+  GRDREP34:
+    name: grdrep34
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 34
+  GRDREP35:
+    name: grdrep35
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 35
+  GRDREP36:
+    name: grdrep36
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 36
+  GRDREP37:
+    name: grdrep37
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 37
+  GRDREP38:
+    name: grdrep38
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 38
+  GRDREP39:
+    name: grdrep39
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 39
+  GRDREP40:
+    name: grdrep40
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 40
+  GRDREP41:
+    name: grdrep41
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 41
+  GRDREP42:
+    name: grdrep42
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 42
+  GRDREP43:
+    name: grdrep43
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 43
+  GRDREP44:
+    name: grdrep44
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 44
+  GRDREP45:
+    name: grdrep45
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 45
+  GRDREP46:
+    name: grdrep46
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 46
+  GRDREP47:
+    name: grdrep47
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 47
+  GRDREP48:
+    name: grdrep48
+    type: DOUBLE
+    years: '1989'
+    label: Graduate Replicate Weight 48
+  PRJREP1:
+    name: prjrep1
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 1
+  PRJREP2:
+    name: prjrep2
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 2
+  PRJREP3:
+    name: prjrep3
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 3
+  PRJREP4:
+    name: prjrep4
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 4
+  PRJREP5:
+    name: prjrep5
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 5
+  PRJREP6:
+    name: prjrep6
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 6
+  PRJREP7:
+    name: prjrep7
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 7
+  PRJREP8:
+    name: prjrep8
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 8
+  PRJREP9:
+    name: prjrep9
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 9
+  PRJREP10:
+    name: prjrep10
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 10
+  PRJREP11:
+    name: prjrep11
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 11
+  PRJREP12:
+    name: prjrep12
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 12
+  PRJREP13:
+    name: prjrep13
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 13
+  PRJREP14:
+    name: prjrep14
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 14
+  PRJREP15:
+    name: prjrep15
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 15
+  PRJREP16:
+    name: prjrep16
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 16
+  PRJREP17:
+    name: prjrep17
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 17
+  PRJREP18:
+    name: prjrep18
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 18
+  PRJREP19:
+    name: prjrep19
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 19
+  PRJREP20:
+    name: prjrep20
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 20
+  PRJREP21:
+    name: prjrep21
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 21
+  PRJREP22:
+    name: prjrep22
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 22
+  PRJREP23:
+    name: prjrep23
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 23
+  PRJREP24:
+    name: prjrep24
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 24
+  PRJREP25:
+    name: prjrep25
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 25
+  PRJREP26:
+    name: prjrep26
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 26
+  PRJREP27:
+    name: prjrep27
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 27
+  PRJREP28:
+    name: prjrep28
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 28
+  PRJREP29:
+    name: prjrep29
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 29
+  PRJREP30:
+    name: prjrep30
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 30
+  PRJREP31:
+    name: prjrep31
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 31
+  PRJREP32:
+    name: prjrep32
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 32
+  PRJREP33:
+    name: prjrep33
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 33
+  PRJREP34:
+    name: prjrep34
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 34
+  PRJREP35:
+    name: prjrep35
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 35
+  PRJREP36:
+    name: prjrep36
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 36
+  PRJREP37:
+    name: prjrep37
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 37
+  PRJREP38:
+    name: prjrep38
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 38
+  PRJREP39:
+    name: prjrep39
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 39
+  PRJREP40:
+    name: prjrep40
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 40
+  PRJREP41:
+    name: prjrep41
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 41
+  PRJREP42:
+    name: prjrep42
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 42
+  PRJREP43:
+    name: prjrep43
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 43
+  PRJREP44:
+    name: prjrep44
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 44
+  PRJREP45:
+    name: prjrep45
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 45
+  PRJREP46:
+    name: prjrep46
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 46
+  PRJREP47:
+    name: prjrep47
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 47
+  PRJREP48:
+    name: prjrep48
+    type: DOUBLE
+    years: '1989'
+    label: Proj Grad Replicate Weight 48
+  TYPOFLAG:
+    name: typoflag
+    type: BIGINT
+    years: '1989'
+    label: Imputation Flag for Typology (1=Imputed)
+  ECITY:
+    name: ecity
+    type: VARCHAR
+    years: '1991'
+    label: City of Mailing Address
+  ESTABB:
+    name: state_abbrev
+    type: VARCHAR
+    years: '1991'
+    label: State Postal Code of Mailing Address
+  ECNTY:
+    name: ecnty
+    type: VARCHAR
+    years: '1991'
+    label: Fips County Code
+  ECNTNM:
+    name: ecntnm
+    type: VARCHAR
+    years: '1991'
+    label: County Name
+  STCNTY:
+    name: stcnty
+    type: VARCHAR
+    years: 1991,1993,1995,1997,1999,2001
+    label: Fips State/County Code
+  PSC007:
+    name: psc007
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: Ungraded'
+  PSC008:
+    name: psc008
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in Ungraded
+  PSC009:
+    name: psc009
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: Nursery'
+  PSC010:
+    name: psc010
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in Nursery
+  PSC011:
+    name: psc011
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: Prekindergarten'
+  PSC012:
+    name: psc012
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in Prekindergarten
+  PSC013:
+    name: psc013
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: Kindergarten'
+  PSC014:
+    name: psc014
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in Kindergarten
+  PSC015:
+    name: psc015
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 1st Grade'
+  PSC016:
+    name: psc016
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 1st Grade
+  PSC017:
+    name: psc017
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 2nd Grade'
+  PSC018:
+    name: psc018
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 2nd Grade
+  PSC019:
+    name: psc019
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 3rd Grade'
+  PSC020:
+    name: psc020
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 3rd Grade
+  PSC021:
+    name: psc021
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 4th Grade'
+  PSC022:
+    name: psc022
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 4th Grade
+  PSC023:
+    name: psc023
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 5th Grade'
+  PSC024:
+    name: psc024
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 5th Grade
+  PSC025:
+    name: psc025
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 6th Grade'
+  PSC026:
+    name: psc026
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 6th Grade
+  PSC027:
+    name: psc027
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 7th Grade'
+  PSC028:
+    name: psc028
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 7th Grade
+  PSC029:
+    name: psc029
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 8th Grade'
+  PSC030:
+    name: psc030
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 8th Grade
+  PSC031:
+    name: psc031
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 9th Grade'
+  PSC032:
+    name: psc032
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 9th Grade
+  PSC033:
+    name: psc033
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 10th Grade'
+  PSC034:
+    name: psc034
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 10th Grade
+  PSC035:
+    name: psc035
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 11th Grade'
+  PSC036:
+    name: psc036
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 11th Grade
+  PSC037:
+    name: psc037
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: 12th Grade'
+  PSC038:
+    name: psc038
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in 12th Grade
+  PSC039:
+    name: psc039
+    type: BIGINT
+    years: '1991'
+    label: '2A Grade Levels Offered: Postsecondary'
+  PSC040:
+    name: psc040
+    type: BIGINT
+    years: '1991'
+    label: 2B Students Enrolled in Postsecondary
+  PSC041:
+    name: psc041
+    type: BIGINT
+    years: '1991'
+    label: 2C Total Students Enrolled
+  PSC042:
+    name: psc042
+    type: BIGINT
+    years: '1991'
+    label: 3A Studts in 12th Grade Last Year 90-91?
+  PSC043:
+    name: psc043
+    type: BIGINT
+    years: '1991'
+    label: 3B Stu. Recd Reg High Sch Diploma 90-91?
+  PSC044:
+    name: psc044
+    type: BIGINT
+    years: '1991'
+    label: 3C Have Studnts in the 12th Grade 91-92?
+  PSC045:
+    name: psc045
+    type: BIGINT
+    years: '1991'
+    label: 3D Stu. Recd Reg High Sch Diploma 91-92
+  PSC046:
+    name: psc046
+    type: BIGINT
+    years: '1991'
+    label: 4 Days in School Year
+  PSC047:
+    name: psc047
+    type: BIGINT
+    years: '1991'
+    label: 5 Hours in School Day
+  PSC048:
+    name: psc048
+    type: BIGINT
+    years: '1991'
+    label: 5 Minutes in School Day
+  PSC049:
+    name: psc049
+    type: BIGINT
+    years: '1991'
+    label: 6A Offer Instr. for Nursery And/or Prek
+  PSC050:
+    name: psc050
+    type: BIGINT
+    years: '1991'
+    label: 6B Full Time Nursery And Prek Teachers
+  PSC051:
+    name: psc051
+    type: BIGINT
+    years: '1991'
+    label: 6B At Least 3/4 Time Nursery & Prek Tchr
+  PSC052:
+    name: psc052
+    type: BIGINT
+    years: '1991'
+    label: 6B At Least 1/2 Time Nursery & Prek Tchr
+  PSC053:
+    name: psc053
+    type: BIGINT
+    years: '1991'
+    label: 6B At Least 1/4 Time Nursery & Prek Tchr
+  PSC054:
+    name: psc054
+    type: BIGINT
+    years: '1991'
+    label: 6B At Least 1/4 Time Nursery 7 Prek Tchr
+  PSC055:
+    name: psc055
+    type: BIGINT
+    years: '1991'
+    label: '6C Verify Tot. # Teaching Nursery & Prek'
+  PSC056:
+    name: psc056
+    type: BIGINT
+    years: '1991'
+    label: 7A Full Time K-12 Teachers
+  PSC057:
+    name: psc057
+    type: BIGINT
+    years: '1991'
+    label: 7A At Least 3/4 Time K-12 Teachers
+  PSC058:
+    name: psc058
+    type: BIGINT
+    years: '1991'
+    label: 7A At Least 1/2 Time K-12 Teachers
+  PSC059:
+    name: psc059
+    type: BIGINT
+    years: '1991'
+    label: 7A At Least 1/4 Time K-12 Teachers
+  PSC060:
+    name: psc060
+    type: BIGINT
+    years: '1991'
+    label: 7A Less than 1/4 Time K-12 Teachers
+  PSC061:
+    name: psc061
+    type: BIGINT
+    years: '1991'
+    label: 7B Verify Total Teaching K-12
+  PSC062:
+    name: psc062
+    type: BIGINT
+    years: '1991'
+    label: 8 Operated in Private Home
+  PSC063:
+    name: psc063
+    type: BIGINT
+    years: '1991'
+    label: 9A Religious School
+  PSC064:
+    name: psc064
+    type: BIGINT
+    years: '1991'
+    label: 9B Affili. With a Natl Reli Denomination
+  PSC065:
+    name: psc065
+    type: BIGINT
+    years: '1991'
+    label: 9C Rel Orientation of School
+  PSC066:
+    name: psc066
+    type: BIGINT
+    years: '1991'
+    label: 9D School Parochial, Diocesan Or Private
+  PSC067:
+    name: psc067
+    type: BIGINT
+    years: '1991'
+    label: 9E Accelerated Christian Education
+  PSC068:
+    name: psc068
+    type: BIGINT
+    years: '1991'
+    label: 9E Alternative School Network
+  PSC069:
+    name: psc069
+    type: BIGINT
+    years: '1991'
+    label: 9E Natl Coalition of Alt Community Sch
+  PSC070:
+    name: psc070
+    type: BIGINT
+    years: '1991'
+    label: 9E American Assn of Christian Schools
+  PSC071:
+    name: psc071
+    type: BIGINT
+    years: '1991'
+    label: 9E American Montessori Society
+  PSC072:
+    name: psc072
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Montessori Associations
+  PSC073:
+    name: psc073
+    type: BIGINT
+    years: '1991'
+    label: 9E Assn of Christian Schools Internatl
+  PSC074:
+    name: psc074
+    type: BIGINT
+    years: '1991'
+    label: 9E Assn of Military Colleges And Schools
+  PSC075:
+    name: psc075
+    type: BIGINT
+    years: '1991'
+    label: 9E Bilingual School Association
+  PSC076:
+    name: psc076
+    type: BIGINT
+    years: '1991'
+    label: 9E Council of Bilingual Education
+  PSC077:
+    name: psc077
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Assns for Bilingual Education
+  PSC078:
+    name: psc078
+    type: BIGINT
+    years: '1991'
+    label: 9E Christian Schools International
+  PSC079:
+    name: psc079
+    type: BIGINT
+    years: '1991'
+    label: 9E Council for Exceptional Children
+  PSC080:
+    name: psc080
+    type: BIGINT
+    years: '1991'
+    label: 9E Natl Assn of Private Schls/Ex Childre
+  PSC081:
+    name: psc081
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Assns for Exceptional Children
+  PSC082:
+    name: psc082
+    type: BIGINT
+    years: '1991'
+    label: 9E Early Childhood Education Association
+  PSC083:
+    name: psc083
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Early Childhood Education Assns
+  PSC084:
+    name: psc084
+    type: BIGINT
+    years: '1991'
+    label: 9E European Council for Internatl School
+  PSC085:
+    name: psc085
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Assns for International Schools
+  PSC086:
+    name: psc086
+    type: BIGINT
+    years: '1991'
+    label: 9E Friends Council on Education
+  PSC087:
+    name: psc087
+    type: BIGINT
+    years: '1991'
+    label: 9E Gen Conference of 7th-Day Adventist C
+  PSC088:
+    name: psc088
+    type: BIGINT
+    years: '1991'
+    label: 9E National Assn of Episcopal Schools
+  PSC089:
+    name: psc089
+    type: BIGINT
+    years: '1991'
+    label: 9E National Assn of Independent Schools
+  PSC090:
+    name: psc090
+    type: BIGINT
+    years: '1991'
+    label: 9E Natl Independent Private School Assn
+  PSC091:
+    name: psc091
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Independent School Associations
+  PSC092:
+    name: psc092
+    type: BIGINT
+    years: '1991'
+    label: 9E National Assn of Laboratory Schools
+  PSC093:
+    name: psc093
+    type: BIGINT
+    years: '1991'
+    label: 9E National Catholic Educational Assn
+  PSC094:
+    name: psc094
+    type: BIGINT
+    years: '1991'
+    label: 9E Jesuit Secondary Education Assn
+  PSC095:
+    name: psc095
+    type: BIGINT
+    years: '1991'
+    label: 9E Natl Center for Neighborhood Enterpri
+  PSC096:
+    name: psc096
+    type: BIGINT
+    years: '1991'
+    label: 9E National Federation of Church Schools
+  PSC097:
+    name: psc097
+    type: BIGINT
+    years: '1991'
+    label: 9E National Society of Hebrew Day School
+  PSC098:
+    name: psc098
+    type: BIGINT
+    years: '1991'
+    label: 9E Solomon Schechter Day Schools
+  PSC099:
+    name: psc099
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Jewish School Associations
+  PSC100:
+    name: psc100
+    type: BIGINT
+    years: '1991'
+    label: 9E Oral Roberts Educational Fellowship
+  PSC101:
+    name: psc101
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Christian School Associations
+  PSC102:
+    name: psc102
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Religious School Associations
+  PSC103:
+    name: psc103
+    type: BIGINT
+    years: '1991'
+    label: 9E Other Nonreligious School Association
+  PSC104:
+    name: psc104
+    type: BIGINT
+    years: '1991'
+    label: 9E None of the Above Associations
+  PSC105:
+    name: psc105
+    type: BIGINT
+    years: '1991'
+    label: 10A Best Describes this School
+  PSC106:
+    name: psc106
+    type: BIGINT
+    years: '1991'
+    label: 10B Role of School To Support Home Schli
+  PSC107:
+    name: psc107
+    type: BIGINT
+    years: '1991'
+    label: 11 Year School Began Operating
+  PSC108:
+    name: psc108
+    type: BIGINT
+    years: '1991'
+    label: 12 Date Survey was Finished
+  FWGTSC:
+    name: fwgtsc
+    type: DOUBLE
+    years: '1991'
+    label: Final Weight for School
+  REPL001:
+    name: repl001
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 01
+  REPL006:
+    name: repl006
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 02
+  REPL011:
+    name: repl011
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 03
+  REPL016:
+    name: repl016
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 04
+  REPL021:
+    name: repl021
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 05
+  REPL026:
+    name: repl026
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 06
+  REPL031:
+    name: repl031
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 07
+  REPL036:
+    name: repl036
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 08
+  REPL041:
+    name: repl041
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 09
+  REPL046:
+    name: repl046
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 10
+  REPL051:
+    name: repl051
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 11
+  REPL056:
+    name: repl056
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 12
+  REPL061:
+    name: repl061
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 13
+  REPL066:
+    name: repl066
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 14
+  REPL071:
+    name: repl071
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 15
+  REPL076:
+    name: repl076
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 16
+  REPL081:
+    name: repl081
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 17
+  REPL086:
+    name: repl086
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 18
+  REPL091:
+    name: repl091
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 19
+  REPL096:
+    name: repl096
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 20
+  REPL101:
+    name: repl101
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 21
+  REPL106:
+    name: repl106
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 22
+  REPL111:
+    name: repl111
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 23
+  REPL116:
+    name: repl116
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 24
+  REPL121:
+    name: repl121
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 25
+  REPL126:
+    name: repl126
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 26
+  REPL131:
+    name: repl131
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 27
+  REPL136:
+    name: repl136
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 28
+  REPL141:
+    name: repl141
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 29
+  REPL146:
+    name: repl146
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 30
+  REPL151:
+    name: repl151
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 31
+  REPL156:
+    name: repl156
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 32
+  REPL161:
+    name: repl161
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 33
+  REPL166:
+    name: repl166
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 34
+  REPL171:
+    name: repl171
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 35
+  REPL176:
+    name: repl176
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 36
+  REPL181:
+    name: repl181
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 37
+  REPL186:
+    name: repl186
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 38
+  REPL191:
+    name: repl191
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 39
+  REPL196:
+    name: repl196
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 40
+  REPL201:
+    name: repl201
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 41
+  REPL206:
+    name: repl206
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 42
+  REPL211:
+    name: repl211
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 43
+  REPL216:
+    name: repl216
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 44
+  REPL221:
+    name: repl221
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 45
+  REPL226:
+    name: repl226
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 46
+  REPL231:
+    name: repl231
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 47
+  REPL236:
+    name: repl236
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 48
+  REPL241:
+    name: repl241
+    type: DOUBLE
+    years: '1991'
+    label: School Replicate Weight 49
+  F_PSC007:
+    name: psc007_flag
+    type: VARCHAR
+    flag_for: psc007
+    years: '1991'
+    label: Imputation Flag for Psc007
+  F_PSC008:
+    name: psc008_flag
+    type: VARCHAR
+    flag_for: psc008
+    years: '1991'
+    label: Imputation Flag for Psc008
+  F_PSC009:
+    name: psc009_flag
+    type: VARCHAR
+    flag_for: psc009
+    years: '1991'
+    label: Imputation Flag for Psc009
+  F_PSC010:
+    name: psc010_flag
+    type: VARCHAR
+    flag_for: psc010
+    years: '1991'
+    label: Imputation Flag for Psc010
+  F_PSC011:
+    name: psc011_flag
+    type: VARCHAR
+    flag_for: psc011
+    years: '1991'
+    label: Imputation Flag for Psc011
+  F_PSC012:
+    name: psc012_flag
+    type: VARCHAR
+    flag_for: psc012
+    years: '1991'
+    label: Imputation Flag for Psc012
+  F_PSC013:
+    name: psc013_flag
+    type: VARCHAR
+    flag_for: psc013
+    years: '1991'
+    label: Imputation Flag for Psc013
+  F_PSC014:
+    name: psc014_flag
+    type: VARCHAR
+    flag_for: psc014
+    years: '1991'
+    label: Imputation Flag for Psc014
+  F_PSC015:
+    name: psc015_flag
+    type: VARCHAR
+    flag_for: psc015
+    years: '1991'
+    label: Imputation Flag for Psc015
+  F_PSC016:
+    name: psc016_flag
+    type: VARCHAR
+    flag_for: psc016
+    years: '1991'
+    label: Imputation Flag for Psc016
+  F_PSC017:
+    name: psc017_flag
+    type: VARCHAR
+    flag_for: psc017
+    years: '1991'
+    label: Imputation Flag for Psc017
+  F_PSC018:
+    name: psc018_flag
+    type: VARCHAR
+    flag_for: psc018
+    years: '1991'
+    label: Imputation Flag for Psc018
+  F_PSC019:
+    name: psc019_flag
+    type: VARCHAR
+    flag_for: psc019
+    years: '1991'
+    label: Imputation Flag for Psc019
+  F_PSC020:
+    name: psc020_flag
+    type: VARCHAR
+    flag_for: psc020
+    years: '1991'
+    label: Imputation Flag for Psc020
+  F_PSC021:
+    name: psc021_flag
+    type: VARCHAR
+    flag_for: psc021
+    years: '1991'
+    label: Imputation Flag for Psc021
+  F_PSC022:
+    name: psc022_flag
+    type: VARCHAR
+    flag_for: psc022
+    years: '1991'
+    label: Imputation Flag for Psc022
+  F_PSC023:
+    name: psc023_flag
+    type: VARCHAR
+    flag_for: psc023
+    years: '1991'
+    label: Imputation Flag for Psc023
+  F_PSC024:
+    name: psc024_flag
+    type: VARCHAR
+    flag_for: psc024
+    years: '1991'
+    label: Imputation Flag for Psc024
+  F_PSC025:
+    name: psc025_flag
+    type: VARCHAR
+    flag_for: psc025
+    years: '1991'
+    label: Imputation Flag for Psc025
+  F_PSC026:
+    name: psc026_flag
+    type: VARCHAR
+    flag_for: psc026
+    years: '1991'
+    label: Imputation Flag for Psc026
+  F_PSC027:
+    name: psc027_flag
+    type: VARCHAR
+    flag_for: psc027
+    years: '1991'
+    label: Imputation Flag for Psc027
+  F_PSC028:
+    name: psc028_flag
+    type: VARCHAR
+    flag_for: psc028
+    years: '1991'
+    label: Imputation Flag for Psc028
+  F_PSC029:
+    name: psc029_flag
+    type: VARCHAR
+    flag_for: psc029
+    years: '1991'
+    label: Imputation Flag for Psc029
+  F_PSC030:
+    name: psc030_flag
+    type: VARCHAR
+    flag_for: psc030
+    years: '1991'
+    label: Imputation Flag for Psc030
+  F_PSC031:
+    name: psc031_flag
+    type: VARCHAR
+    flag_for: psc031
+    years: '1991'
+    label: Imputation Flag for Psc031
+  F_PSC032:
+    name: psc032_flag
+    type: VARCHAR
+    flag_for: psc032
+    years: '1991'
+    label: Imputation Flag for Psc032
+  F_PSC033:
+    name: psc033_flag
+    type: VARCHAR
+    flag_for: psc033
+    years: '1991'
+    label: Imputation Flag for Psc033
+  F_PSC034:
+    name: psc034_flag
+    type: VARCHAR
+    flag_for: psc034
+    years: '1991'
+    label: Imputation Flag for Psc034
+  F_PSC035:
+    name: psc035_flag
+    type: VARCHAR
+    flag_for: psc035
+    years: '1991'
+    label: Imputation Flag for Psc035
+  F_PSC036:
+    name: psc036_flag
+    type: VARCHAR
+    flag_for: psc036
+    years: '1991'
+    label: Imputation Flag for Psc036
+  F_PSC037:
+    name: psc037_flag
+    type: VARCHAR
+    flag_for: psc037
+    years: '1991'
+    label: Imputation Flag for Psc037
+  F_PSC038:
+    name: psc038_flag
+    type: VARCHAR
+    flag_for: psc038
+    years: '1991'
+    label: Imputation Flag for Psc038
+  F_PSC039:
+    name: psc039_flag
+    type: VARCHAR
+    flag_for: psc039
+    years: '1991'
+    label: Imputation Flag for Psc039
+  F_PSC040:
+    name: psc040_flag
+    type: VARCHAR
+    flag_for: psc040
+    years: '1991'
+    label: Imputation Flag for Psc040
+  F_PSC041:
+    name: psc041_flag
+    type: VARCHAR
+    flag_for: psc041
+    years: '1991'
+    label: Imputation Flag for Psc041
+  F_PSC042:
+    name: psc042_flag
+    type: VARCHAR
+    flag_for: psc042
+    years: '1991'
+    label: Imputation Flag for Psc042
+  F_PSC043:
+    name: psc043_flag
+    type: VARCHAR
+    flag_for: psc043
+    years: '1991'
+    label: Imputation Flag for Psc043
+  F_PSC044:
+    name: psc044_flag
+    type: VARCHAR
+    flag_for: psc044
+    years: '1991'
+    label: Imputation Flag for Psc044
+  F_PSC045:
+    name: psc045_flag
+    type: VARCHAR
+    flag_for: psc045
+    years: '1991'
+    label: Imputation Flag for Psc045
+  F_PSC046:
+    name: psc046_flag
+    type: VARCHAR
+    flag_for: psc046
+    years: '1991'
+    label: Imputation Flag for Psc046
+  F_PSC047:
+    name: psc047_flag
+    type: VARCHAR
+    flag_for: psc047
+    years: '1991'
+    label: Imputation Flag for Psc047
+  F_PSC048:
+    name: psc048_flag
+    type: VARCHAR
+    flag_for: psc048
+    years: '1991'
+    label: Imputation Flag for Psc048
+  F_PSC049:
+    name: psc049_flag
+    type: VARCHAR
+    flag_for: psc049
+    years: '1991'
+    label: Imputation Flag for Psc049
+  F_PSC050:
+    name: psc050_flag
+    type: VARCHAR
+    flag_for: psc050
+    years: '1991'
+    label: Imputation Flag for Psc050
+  F_PSC051:
+    name: psc051_flag
+    type: VARCHAR
+    flag_for: psc051
+    years: '1991'
+    label: Imputation Flag for Psc051
+  F_PSC052:
+    name: psc052_flag
+    type: VARCHAR
+    flag_for: psc052
+    years: '1991'
+    label: Imputation Flag for Psc052
+  F_PSC053:
+    name: psc053_flag
+    type: VARCHAR
+    flag_for: psc053
+    years: '1991'
+    label: Imputation Flag for Psc053
+  F_PSC054:
+    name: psc054_flag
+    type: VARCHAR
+    flag_for: psc054
+    years: '1991'
+    label: Imputation Flag for Psc054
+  F_PSC055:
+    name: psc055_flag
+    type: VARCHAR
+    flag_for: psc055
+    years: '1991'
+    label: Imputation Flag for Psc055
+  F_PSC056:
+    name: psc056_flag
+    type: VARCHAR
+    flag_for: psc056
+    years: '1991'
+    label: Imputation Flag for Psc056
+  F_PSC057:
+    name: psc057_flag
+    type: VARCHAR
+    flag_for: psc057
+    years: '1991'
+    label: Imputation Flag for Psc057
+  F_PSC058:
+    name: psc058_flag
+    type: VARCHAR
+    flag_for: psc058
+    years: '1991'
+    label: Imputation Flag for Psc058
+  F_PSC059:
+    name: psc059_flag
+    type: VARCHAR
+    flag_for: psc059
+    years: '1991'
+    label: Imputation Flag for Psc059
+  F_PSC060:
+    name: psc060_flag
+    type: VARCHAR
+    flag_for: psc060
+    years: '1991'
+    label: Imputation Flag for Psc060
+  F_PSC061:
+    name: psc061_flag
+    type: VARCHAR
+    flag_for: psc061
+    years: '1991'
+    label: Imputation Flag for Psc061
+  F_PSC062:
+    name: psc062_flag
+    type: VARCHAR
+    flag_for: psc062
+    years: '1991'
+    label: Imputation Flag for Psc062
+  F_PSC063:
+    name: psc063_flag
+    type: VARCHAR
+    flag_for: psc063
+    years: '1991'
+    label: Imputation Flag for Psc063
+  F_PSC064:
+    name: psc064_flag
+    type: VARCHAR
+    flag_for: psc064
+    years: '1991'
+    label: Imputation Flag for Psc064
+  F_PSC065:
+    name: psc065_flag
+    type: VARCHAR
+    flag_for: psc065
+    years: '1991'
+    label: Imputation Flag for Psc065
+  F_PSC066:
+    name: psc066_flag
+    type: VARCHAR
+    flag_for: psc066
+    years: '1991'
+    label: Imputation Flag for Psc066
+  F_PSC067:
+    name: psc067_flag
+    type: VARCHAR
+    flag_for: psc067
+    years: '1991'
+    label: Imputation Flag for Psc067
+  F_PSC068:
+    name: psc068_flag
+    type: VARCHAR
+    flag_for: psc068
+    years: '1991'
+    label: Imputation Flag for Psc068
+  F_PSC069:
+    name: psc069_flag
+    type: VARCHAR
+    flag_for: psc069
+    years: '1991'
+    label: Imputation Flag for Psc069
+  F_PSC070:
+    name: psc070_flag
+    type: VARCHAR
+    flag_for: psc070
+    years: '1991'
+    label: Imputation Flag for Psc070
+  F_PSC071:
+    name: psc071_flag
+    type: VARCHAR
+    flag_for: psc071
+    years: '1991'
+    label: Imputation Flag for Psc071
+  F_PSC072:
+    name: psc072_flag
+    type: VARCHAR
+    flag_for: psc072
+    years: '1991'
+    label: Imputation Flag for Psc072
+  F_PSC073:
+    name: psc073_flag
+    type: VARCHAR
+    flag_for: psc073
+    years: '1991'
+    label: Imputation Flag for Psc073
+  F_PSC074:
+    name: psc074_flag
+    type: VARCHAR
+    flag_for: psc074
+    years: '1991'
+    label: Imputation Flag for Psc074
+  F_PSC075:
+    name: psc075_flag
+    type: VARCHAR
+    flag_for: psc075
+    years: '1991'
+    label: Imputation Flag for Psc075
+  F_PSC076:
+    name: psc076_flag
+    type: VARCHAR
+    flag_for: psc076
+    years: '1991'
+    label: Imputation Flag for Psc076
+  F_PSC077:
+    name: psc077_flag
+    type: VARCHAR
+    flag_for: psc077
+    years: '1991'
+    label: Imputation Flag for Psc077
+  F_PSC078:
+    name: psc078_flag
+    type: VARCHAR
+    flag_for: psc078
+    years: '1991'
+    label: Imputation Flag for Psc078
+  F_PSC079:
+    name: psc079_flag
+    type: VARCHAR
+    flag_for: psc079
+    years: '1991'
+    label: Imputation Flag for Psc079
+  F_PSC080:
+    name: psc080_flag
+    type: VARCHAR
+    flag_for: psc080
+    years: '1991'
+    label: Imputation Flag for Psc080
+  F_PSC081:
+    name: psc081_flag
+    type: VARCHAR
+    flag_for: psc081
+    years: '1991'
+    label: Imputation Flag for Psc081
+  F_PSC082:
+    name: psc082_flag
+    type: VARCHAR
+    flag_for: psc082
+    years: '1991'
+    label: Imputation Flag for Psc082
+  F_PSC083:
+    name: psc083_flag
+    type: VARCHAR
+    flag_for: psc083
+    years: '1991'
+    label: Imputation Flag for Psc083
+  F_PSC084:
+    name: psc084_flag
+    type: VARCHAR
+    flag_for: psc084
+    years: '1991'
+    label: Imputation Flag for Psc084
+  F_PSC085:
+    name: psc085_flag
+    type: VARCHAR
+    flag_for: psc085
+    years: '1991'
+    label: Imputation Flag for Psc085
+  F_PSC086:
+    name: psc086_flag
+    type: VARCHAR
+    flag_for: psc086
+    years: '1991'
+    label: Imputation Flag for Psc086
+  F_PSC087:
+    name: psc087_flag
+    type: VARCHAR
+    flag_for: psc087
+    years: '1991'
+    label: Imputation Flag for Psc087
+  F_PSC088:
+    name: psc088_flag
+    type: VARCHAR
+    flag_for: psc088
+    years: '1991'
+    label: Imputation Flag for Psc088
+  F_PSC089:
+    name: psc089_flag
+    type: VARCHAR
+    flag_for: psc089
+    years: '1991'
+    label: Imputation Flag for Psc089
+  F_PSC090:
+    name: psc090_flag
+    type: VARCHAR
+    flag_for: psc090
+    years: '1991'
+    label: Imputation Flag for Psc090
+  F_PSC091:
+    name: psc091_flag
+    type: VARCHAR
+    flag_for: psc091
+    years: '1991'
+    label: Imputation Flag for Psc091
+  F_PSC092:
+    name: psc092_flag
+    type: VARCHAR
+    flag_for: psc092
+    years: '1991'
+    label: Imputation Flag for Psc092
+  F_PSC093:
+    name: psc093_flag
+    type: VARCHAR
+    flag_for: psc093
+    years: '1991'
+    label: Imputation Flag for Psc093
+  F_PSC094:
+    name: psc094_flag
+    type: VARCHAR
+    flag_for: psc094
+    years: '1991'
+    label: Imputation Flag for Psc094
+  F_PSC095:
+    name: psc095_flag
+    type: VARCHAR
+    flag_for: psc095
+    years: '1991'
+    label: Imputation Flag for Psc095
+  F_PSC096:
+    name: psc096_flag
+    type: VARCHAR
+    flag_for: psc096
+    years: '1991'
+    label: Imputation Flag for Psc096
+  F_PSC097:
+    name: psc097_flag
+    type: VARCHAR
+    flag_for: psc097
+    years: '1991'
+    label: Imputation Flag for Psc097
+  F_PSC098:
+    name: psc098_flag
+    type: VARCHAR
+    flag_for: psc098
+    years: '1991'
+    label: Imputation Flag for Psc098
+  F_PSC099:
+    name: psc099_flag
+    type: VARCHAR
+    flag_for: psc099
+    years: '1991'
+    label: Imputation Flag for Psc099
+  F_PSC100:
+    name: psc100_flag
+    type: VARCHAR
+    flag_for: psc100
+    years: '1991'
+    label: Imputation Flag for Psc100
+  F_PSC101:
+    name: psc101_flag
+    type: VARCHAR
+    flag_for: psc101
+    years: '1991'
+    label: Imputation Flag for Psc101
+  F_PSC102:
+    name: psc102_flag
+    type: VARCHAR
+    flag_for: psc102
+    years: '1991'
+    label: Imputation Flag for Psc102
+  F_PSC103:
+    name: psc103_flag
+    type: VARCHAR
+    flag_for: psc103
+    years: '1991'
+    label: Imputation Flag for Psc103
+  F_PSC104:
+    name: psc104_flag
+    type: VARCHAR
+    flag_for: psc104
+    years: '1991'
+    label: Imputation Flag for Psc104
+  F_PSC105:
+    name: psc105_flag
+    type: VARCHAR
+    flag_for: psc105
+    years: '1991'
+    label: Imputation Flag for Psc105
+  F_PSC106:
+    name: psc106_flag
+    type: VARCHAR
+    flag_for: psc106
+    years: '1991'
+    label: Imputation Flag for Psc106
+  F_PSC107:
+    name: psc107_flag
+    type: VARCHAR
+    flag_for: psc107
+    years: '1991'
+    label: Imputation Flag for Psc107
+  F_PSC108:
+    name: psc108_flag
+    type: VARCHAR
+    flag_for: psc108
+    years: '1991'
+    label: Imputation Flag for Psc108
+  PPIN:
+    name: ppin
+    type: VARCHAR
+    years: 1993,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Permanent Identification Number
+  PCITY:
+    name: city
+    type: VARCHAR
+    years: 1993,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Mailing City
+  PSTABB:
+    name: state_abbrev
+    type: VARCHAR
+    years: 1993,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Mailing State Postal Code
+  PSTFIP:
+    name: pstfip
+    type: BIGINT
+    years: 1993,2001,2003,2005,2007,2009
+    label: FIPS State Code  (physical location of school)
+  PCNTY:
+    name: pcnty
+    type: VARCHAR
+    years: 1993,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: ANSI County Code
+  PCNTNM:
+    name: pcntnm
+    type: VARCHAR
+    years: 1993,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: County Name
+  PZIP:
+    name: zip
+    type: VARCHAR
+    years: 1993,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Mailing Zip Code
+  P040:
+    name: p040
+    type: BIGINT
+    years: '1993'
+    label: 7A Grade Offered - Ungraded
+  P045:
+    name: p045
+    type: BIGINT
+    years: '1993'
+    label: 7A Enrollment - Ungraded
+  P050:
+    name: p050
+    type: BIGINT
+    years: '1993'
+    label: 7B Grade Offered -  Kindergarten
+  P055:
+    name: p055
+    type: BIGINT
+    years: '1993'
+    label: 7B Enrollment - Kindergarten
+  P060:
+    name: p060
+    type: BIGINT
+    years: '1993'
+    label: 7C Grade Offered - 1st
+  P065:
+    name: p065
+    type: BIGINT
+    years: '1993'
+    label: 7C Enrollment - 1st
+  P070:
+    name: p070
+    type: BIGINT
+    years: '1993'
+    label: 7D Grade Offered - 2nd
+  P075:
+    name: p075
+    type: BIGINT
+    years: '1993'
+    label: 7D Enrollment - 2nd
+  P080:
+    name: p080
+    type: BIGINT
+    years: '1993'
+    label: 7E Grade Offered - 3rd
+  P085:
+    name: p085
+    type: BIGINT
+    years: '1993'
+    label: 7E Enrollment - 3rd
+  P090:
+    name: p090
+    type: BIGINT
+    years: '1993'
+    label: 7F Grade Offered - 4th
+  P095:
+    name: p095
+    type: BIGINT
+    years: '1993'
+    label: 7F Enrollment - 4th
+  P100:
+    name: p100
+    type: BIGINT
+    years: '1993'
+    label: 7G Grade Offered - 5th
+  P105:
+    name: p105
+    type: BIGINT
+    years: '1993'
+    label: 7G Enrollment - 5th
+  P110:
+    name: p110
+    type: BIGINT
+    years: '1993'
+    label: 7H Grade Offered - 6th
+  P115:
+    name: p115
+    type: BIGINT
+    years: '1993'
+    label: 7H Enrollment - 6th
+  P120:
+    name: p120
+    type: BIGINT
+    years: '1993'
+    label: 7I Grade Offered - 7th
+  P125:
+    name: p125
+    type: BIGINT
+    years: '1993'
+    label: 7I Enrollment - 7th
+  P130:
+    name: p130
+    type: BIGINT
+    years: '1993'
+    label: 7J Grade Offered - 8th
+  P135:
+    name: p135
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4A Ungraded Offered
+  P140:
+    name: p140
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4A Ungraded Enrollment
+  P145:
+    name: p145
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4B Nursery/Prekindergarten Offered
+  P150:
+    name: p150
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4B Nursery/Prekindergarten Enrollment
+  P155:
+    name: p155
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4C Kindergarten Offered
+  P160:
+    name: p160
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4C Kindergarten Enrollment
+  P165:
+    name: p165
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4D Transitional Kindergarten Offered
+  P170:
+    name: p170
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4D Transitional Kindergarten Enrollment
+  P175:
+    name: p175
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4E Transitional First Grade Offered
+  P180:
+    name: p180
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4E Transitional First Grade Enrollment
+  P185:
+    name: p185
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4F First Grade Offered
+  P190:
+    name: p190
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4F First Grade Enrollment
+  P205:
+    name: p205
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4H Third Grade Offered
+  P210:
+    name: p210
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4H Third Grade Enrollment
+  P215:
+    name: p215
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4I Fourth Grade Offered
+  P220:
+    name: p220
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4I Fourth Grade Enrollment
+  P225:
+    name: p225
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4J Fifth Grade Offered
+  P230:
+    name: p230
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4J Fifth Grade Enrollment
+  P235:
+    name: p235
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4K Sixth Grade Offered
+  P240:
+    name: p240
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4K Sixth Grade Enrollment
+  P245:
+    name: p245
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4L Seventh Grade Offered
+  P250:
+    name: p250
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4L Seventh Grade Enrollment
+  P255:
+    name: p255
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4M Eighth Grade Offered
+  P260:
+    name: p260
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4M Eighth Grade Enrollment
+  P265:
+    name: p265
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4N Ninth Grade Offered
+  P270:
+    name: p270
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4N Ninth Grade Enrollment
+  P275:
+    name: p275
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4O Tenth Grade Offered
+  P280:
+    name: p280
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4O Tenth Grade Enrollment
+  P285:
+    name: p285
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4P Eleventh Grade Offered
+  P290:
+    name: p290
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4P Eleventh Grade Enrollment
+  P295:
+    name: p295
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4Q Twelfth Grade Offered
+  P300:
+    name: p300
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4Q Twelfth Grade Enrollment
+  P305:
+    name: p305
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 5 Total Student Enrollment
+  P310:
+    name: p310
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 6F American Indian/Alaska Native Students
+  P315:
+    name: p315
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: 7D Asian Or Pacific Islander Students
+  P320:
+    name: p320
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 6A Hispanic or Latino Students
+  P325:
+    name: p325
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 6C Black Students
+  P330:
+    name: p330
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 6B White Students
+  P335:
+    name: p335
+    type: BIGINT
+    years: 1993,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 7A Is School Coeducational
+  P340:
+    name: p340
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 7B Number of Male Students
+  P345:
+    name: p345
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 8A Students in 12th Grade Last Year
+  P350:
+    name: p350
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 8B Number of 12th Graders Last Year
+  P355:
+    name: p355
+    type: BIGINT
+    years: 1993,1995
+    label: 9C Hispanic Students
+  P360:
+    name: p360
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 8D Percent to 4-Year College
+  P365:
+    name: p365
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 9A Length of School Day for Kindergarten
+  P370:
+    name: p370
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 9B Days Per Week for Kindergarten
+  P375:
+    name: p375
+    type: BIGINT
+    years: 1993,1995
+    label: 11 Hours in School Day for Students
+  P380:
+    name: p380
+    type: BIGINT
+    years: 1993,1995
+    label: 11 Minutes in School Day for Students
+  P385:
+    name: p385
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 10 Full-Time Teachers
+  P390:
+    name: p390
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 10 More Than 3/4 Time Teachers
+  P395:
+    name: p395
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 10 More Than 1/2 Time Teachers
+  P400:
+    name: p400
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 10 More Than 1/4 Time Teachers
+  P405:
+    name: p405
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 10 Less Than 1/4 Time Teachers
+  P410:
+    name: p410
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 10 Total Number of Teachers
+  P415:
+    name: p415
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 12 Type of School
+  P420:
+    name: p420
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 13A School Supports Home Schooling
+  P425:
+    name: p425
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 13B School Located in Private Home
+  P430:
+    name: p430
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 14A Does School Have Religious Orientation
+  P435:
+    name: p435
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 14B School Affiliation
+  P440:
+    name: p440
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 14C Religious Orientation
+  P445:
+    name: p445
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 14C Type of Catholic School
+  P450:
+    name: p450
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 No Associations
+  P455:
+    name: p455
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Accelerated Christian Education
+  P460:
+    name: p460
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 American Association of Christian Schools
+  P465:
+    name: p465
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Association of Christian Schools International
+  P470:
+    name: p470
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Christian Schools International
+  P475:
+    name: p475
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2017,2019,2021,2023
+    label: 15 Council of Islamic Schools in North America
+  P480:
+    name: p480
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Evangelical Lutheran Education Association
+  P485:
+    name: p485
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Friends Council on Education
+  P490:
+    name: p490
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 General Conference of SDA Church
+  P495:
+    name: p495
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Jesuit Schools Network
+  P500:
+    name: p500
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Association of Episcopal Schools
+  P505:
+    name: p505
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Catholic Educational Association
+  P510:
+    name: p510
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Christian School Association
+  P515:
+    name: p515
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Society for Hebrew Day Schools
+  P520:
+    name: p520
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Oral Roberts University Educational Fellowship
+  P525:
+    name: p525
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017
+    label: 14 Solomon Schechter Day Schools
+  P530:
+    name: p530
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Alliance of Christian Schools
+  P535:
+    name: p535
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Other Religious School Associations
+  P540:
+    name: p540
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 American Montessori Society
+  P545:
+    name: p545
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Other Montessori Associations
+  P550:
+    name: p550
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Association of Military Colleges and Schools
+  P555:
+    name: p555
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Association of Waldorf Schools of North America
+  P560:
+    name: p560
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: 15 Bilingual School Association
+  P565:
+    name: p565
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: 15 Council of Bilingual Education
+  P570:
+    name: p570
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: 15 Council For Exceptional Children
+  P575:
+    name: p575
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Association of Private Special Education Centers
+  P580:
+    name: p580
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Other Associations for Exceptional Children
+  P585:
+    name: p585
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 European Council for International Schools
+  P590:
+    name: p590
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Association for the Education of Young Children
+  P595:
+    name: p595
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: 15 National Association of Bilingual Education
+  P600:
+    name: p600
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Association of Laboratory Schools
+  P605:
+    name: p605
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Other Special Emphasis Associations
+  FRAME:
+    name: frame
+    type: VARCHAR
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Universe frame to which school belongs
+  MINOR:
+    name: minor
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: Number of minority students
+  P_INDIAN:
+    name: p_indian
+    type: DOUBLE
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Percentage of American Indian or Alaskan Native Students
+  P_ASIAN:
+    name: p_asian
+    type: DOUBLE
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Percentage of Asian Students
+  P_HISP:
+    name: p_hisp
+    type: DOUBLE
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Percentage of Hispanic Students
+  P_BLACK:
+    name: p_black
+    type: DOUBLE
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Percentage of Black Students
+  P_WHITE:
+    name: p_white
+    type: DOUBLE
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Percentage of White Students
+  PERMINOR:
+    name: perminor
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: Percent minority students recode (K-12, UG)
+  PMINOR:
+    name: pminor
+    type: DOUBLE
+    years: 1993,1997,1999,2001,2003,2005,2007
+    label: Percent minority students (K-12, UG)
+  TABFLAG1:
+    name: tabflag1
+    type: BIGINT
+    years: 1993,1995
+    label: Schl offrs Grades Ug, 1 + - Traditional
+  TABFLAG2:
+    name: tabflag2
+    type: BIGINT
+    years: 1993,1995
+    label: Schl offrs Grades K or Lower - All Pss
+  TABFLAG3:
+    name: tabflag3
+    type: BIGINT
+    years: '1993'
+    label: Schl offrs Grades K + - All Pss
+  PFNLWT:
+    name: pfnlwt
+    type: DOUBLE
+    years: 1993,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Final Weight for School
+  REP01:
+    name: rep01
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 1
+  REP02:
+    name: rep02
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 2
+  REP03:
+    name: rep03
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 3
+  REP04:
+    name: rep04
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 4
+  REP05:
+    name: rep05
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 5
+  REP06:
+    name: rep06
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 6
+  REP07:
+    name: rep07
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 7
+  REP08:
+    name: rep08
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 8
+  REP09:
+    name: rep09
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 9
+  REP10:
+    name: rep10
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 10
+  REP11:
+    name: rep11
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 11
+  REP12:
+    name: rep12
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 12
+  REP13:
+    name: rep13
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 13
+  REP14:
+    name: rep14
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 14
+  REP15:
+    name: rep15
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 15
+  REP16:
+    name: rep16
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 16
+  REP17:
+    name: rep17
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 17
+  REP18:
+    name: rep18
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 18
+  REP19:
+    name: rep19
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 19
+  REP20:
+    name: rep20
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 20
+  REP21:
+    name: rep21
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 21
+  REP22:
+    name: rep22
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 22
+  REP23:
+    name: rep23
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 23
+  REP24:
+    name: rep24
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 24
+  REP25:
+    name: rep25
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 25
+  REP26:
+    name: rep26
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 26
+  REP27:
+    name: rep27
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 27
+  REP28:
+    name: rep28
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 28
+  REP29:
+    name: rep29
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 29
+  REP30:
+    name: rep30
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 30
+  REP31:
+    name: rep31
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 31
+  REP32:
+    name: rep32
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 32
+  REP33:
+    name: rep33
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 33
+  REP34:
+    name: rep34
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 34
+  REP35:
+    name: rep35
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 35
+  REP36:
+    name: rep36
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 36
+  REP37:
+    name: rep37
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 37
+  REP38:
+    name: rep38
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 38
+  REP39:
+    name: rep39
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 39
+  REP40:
+    name: rep40
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 40
+  REP41:
+    name: rep41
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 41
+  REP42:
+    name: rep42
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 42
+  REP43:
+    name: rep43
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 43
+  REP44:
+    name: rep44
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 44
+  REP45:
+    name: rep45
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 45
+  REP46:
+    name: rep46
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 46
+  REP47:
+    name: rep47
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 47
+  REP48:
+    name: rep48
+    type: DOUBLE
+    years: '1993'
+    label: Replicate Weight 48
+  F_P040:
+    name: p040_flag
+    type: VARCHAR
+    flag_for: p040
+    years: '1993'
+    label: Imputation Flag for P040
+  F_P045:
+    name: p045_flag
+    type: VARCHAR
+    flag_for: p045
+    years: '1993'
+    label: Imputation Flag for P045
+  F_P050:
+    name: p050_flag
+    type: VARCHAR
+    flag_for: p050
+    years: '1993'
+    label: Imputation Flag for P050
+  F_P055:
+    name: p055_flag
+    type: VARCHAR
+    flag_for: p055
+    years: '1993'
+    label: Imputation Flag for P055
+  F_P060:
+    name: p060_flag
+    type: VARCHAR
+    flag_for: p060
+    years: '1993'
+    label: Imputation Flag for P060
+  F_P065:
+    name: p065_flag
+    type: VARCHAR
+    flag_for: p065
+    years: '1993'
+    label: Imputation Flag for P065
+  F_P070:
+    name: p070_flag
+    type: VARCHAR
+    flag_for: p070
+    years: '1993'
+    label: Imputation Flag for P070
+  F_P075:
+    name: p075_flag
+    type: VARCHAR
+    flag_for: p075
+    years: '1993'
+    label: Imputation Flag for P075
+  F_P080:
+    name: p080_flag
+    type: VARCHAR
+    flag_for: p080
+    years: '1993'
+    label: Imputation Flag for P080
+  F_P085:
+    name: p085_flag
+    type: VARCHAR
+    flag_for: p085
+    years: '1993'
+    label: Imputation Flag for P085
+  F_P090:
+    name: p090_flag
+    type: VARCHAR
+    flag_for: p090
+    years: '1993'
+    label: Imputation Flag for P090
+  F_P095:
+    name: p095_flag
+    type: VARCHAR
+    flag_for: p095
+    years: '1993'
+    label: Imputation Flag for P095
+  F_P100:
+    name: p100_flag
+    type: VARCHAR
+    flag_for: p100
+    years: '1993'
+    label: Imputation Flag for P100
+  F_P105:
+    name: p105_flag
+    type: VARCHAR
+    flag_for: p105
+    years: '1993'
+    label: Imputation Flag for P105
+  F_P110:
+    name: p110_flag
+    type: VARCHAR
+    flag_for: p110
+    years: '1993'
+    label: Imputation Flag for P110
+  F_P115:
+    name: p115_flag
+    type: VARCHAR
+    flag_for: p115
+    years: '1993'
+    label: Imputation Flag for P115
+  F_P120:
+    name: p120_flag
+    type: VARCHAR
+    flag_for: p120
+    years: '1993'
+    label: Imputation Flag for P120
+  F_P125:
+    name: p125_flag
+    type: VARCHAR
+    flag_for: p125
+    years: '1993'
+    label: Imputation Flag for P125
+  F_P130:
+    name: p130_flag
+    type: VARCHAR
+    flag_for: p130
+    years: '1993'
+    label: Imputation Flag for P130
+  F_P135:
+    name: p135_flag
+    type: VARCHAR
+    flag_for: p135
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P135
+  F_P140:
+    name: p140_flag
+    type: VARCHAR
+    flag_for: p140
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P140
+  F_P145:
+    name: p145_flag
+    type: VARCHAR
+    flag_for: p145
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P145
+  F_P150:
+    name: p150_flag
+    type: VARCHAR
+    flag_for: p150
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P150
+  F_P155:
+    name: p155_flag
+    type: VARCHAR
+    flag_for: p155
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P155
+  F_P160:
+    name: p160_flag
+    type: VARCHAR
+    flag_for: p160
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P160
+  F_P165:
+    name: p165_flag
+    type: VARCHAR
+    flag_for: p165
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P165
+  F_P170:
+    name: p170_flag
+    type: VARCHAR
+    flag_for: p170
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P170
+  F_P175:
+    name: p175_flag
+    type: VARCHAR
+    flag_for: p175
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P175
+  F_P180:
+    name: p180_flag
+    type: VARCHAR
+    flag_for: p180
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P180
+  F_P185:
+    name: p185_flag
+    type: VARCHAR
+    flag_for: p185
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P185
+  F_P190:
+    name: p190_flag
+    type: VARCHAR
+    flag_for: p190
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P190
+  F_P205:
+    name: p205_flag
+    type: VARCHAR
+    flag_for: p205
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P205
+  F_P210:
+    name: p210_flag
+    type: VARCHAR
+    flag_for: p210
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P210
+  F_P215:
+    name: p215_flag
+    type: VARCHAR
+    flag_for: p215
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P215
+  F_P220:
+    name: p220_flag
+    type: VARCHAR
+    flag_for: p220
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P220
+  F_P225:
+    name: p225_flag
+    type: VARCHAR
+    flag_for: p225
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P225
+  F_P230:
+    name: p230_flag
+    type: VARCHAR
+    flag_for: p230
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P230
+  F_P235:
+    name: p235_flag
+    type: VARCHAR
+    flag_for: p235
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P235
+  F_P240:
+    name: p240_flag
+    type: VARCHAR
+    flag_for: p240
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P240
+  F_P245:
+    name: p245_flag
+    type: VARCHAR
+    flag_for: p245
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P245
+  F_P250:
+    name: p250_flag
+    type: VARCHAR
+    flag_for: p250
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P250
+  F_P255:
+    name: p255_flag
+    type: VARCHAR
+    flag_for: p255
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P255
+  F_P260:
+    name: p260_flag
+    type: VARCHAR
+    flag_for: p260
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P260
+  F_P265:
+    name: p265_flag
+    type: VARCHAR
+    flag_for: p265
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P265
+  F_P270:
+    name: p270_flag
+    type: VARCHAR
+    flag_for: p270
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P270
+  F_P275:
+    name: p275_flag
+    type: VARCHAR
+    flag_for: p275
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P275
+  F_P280:
+    name: p280_flag
+    type: VARCHAR
+    flag_for: p280
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P280
+  F_P285:
+    name: p285_flag
+    type: VARCHAR
+    flag_for: p285
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P285
+  F_P290:
+    name: p290_flag
+    type: VARCHAR
+    flag_for: p290
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P290
+  F_P295:
+    name: p295_flag
+    type: VARCHAR
+    flag_for: p295
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P295
+  F_P300:
+    name: p300_flag
+    type: VARCHAR
+    flag_for: p300
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P300
+  F_P305:
+    name: p305_flag
+    type: VARCHAR
+    flag_for: p305
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P305
+  F_P310:
+    name: p310_flag
+    type: VARCHAR
+    flag_for: p310
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P310
+  F_P315:
+    name: p315_flag
+    type: VARCHAR
+    flag_for: p315
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: Imputation Flag For P315
+  F_P320:
+    name: p320_flag
+    type: VARCHAR
+    flag_for: p320
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P320
+  F_P325:
+    name: p325_flag
+    type: VARCHAR
+    flag_for: p325
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P325
+  F_P330:
+    name: p330_flag
+    type: VARCHAR
+    flag_for: p330
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P330
+  F_P335:
+    name: p335_flag
+    type: VARCHAR
+    flag_for: p335
+    years: 1993,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P335
+  F_P340:
+    name: p340_flag
+    type: VARCHAR
+    flag_for: p340
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P340
+  F_P345:
+    name: p345_flag
+    type: VARCHAR
+    flag_for: p345
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P345
+  F_P350:
+    name: p350_flag
+    type: VARCHAR
+    flag_for: p350
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P350
+  F_P355:
+    name: p355_flag
+    type: VARCHAR
+    flag_for: p355
+    years: 1993,1995
+    label: Imputation Flag for P355
+  F_P360:
+    name: p360_flag
+    type: VARCHAR
+    flag_for: p360
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P360
+  F_P365:
+    name: p365_flag
+    type: VARCHAR
+    flag_for: p365
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P365
+  F_P370:
+    name: p370_flag
+    type: VARCHAR
+    flag_for: p370
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P370
+  F_P375:
+    name: p375_flag
+    type: VARCHAR
+    flag_for: p375
+    years: 1993,1995
+    label: Imputation Flag for P375
+  F_P380:
+    name: p380_flag
+    type: VARCHAR
+    flag_for: p380
+    years: 1993,1995
+    label: Imputation Flag for P380
+  F_P385:
+    name: p385_flag
+    type: VARCHAR
+    flag_for: p385
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P385
+  F_P390:
+    name: p390_flag
+    type: VARCHAR
+    flag_for: p390
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P390
+  F_P395:
+    name: p395_flag
+    type: VARCHAR
+    flag_for: p395
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P395
+  F_P400:
+    name: p400_flag
+    type: VARCHAR
+    flag_for: p400
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P400
+  F_P405:
+    name: p405_flag
+    type: VARCHAR
+    flag_for: p405
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P405
+  F_P410:
+    name: p410_flag
+    type: VARCHAR
+    flag_for: p410
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P410
+  F_P415:
+    name: p415_flag
+    type: VARCHAR
+    flag_for: p415
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P415
+  F_P420:
+    name: p420_flag
+    type: VARCHAR
+    flag_for: p420
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P420
+  F_P425:
+    name: p425_flag
+    type: VARCHAR
+    flag_for: p425
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P425
+  F_P430:
+    name: p430_flag
+    type: VARCHAR
+    flag_for: p430
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P430
+  F_P435:
+    name: p435_flag
+    type: VARCHAR
+    flag_for: p435
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P435
+  F_P440:
+    name: p440_flag
+    type: VARCHAR
+    flag_for: p440
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P440
+  F_P445:
+    name: p445_flag
+    type: VARCHAR
+    flag_for: p445
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P445
+  F_P450:
+    name: p450_flag
+    type: VARCHAR
+    flag_for: p450
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P450
+  F_P455:
+    name: p455_flag
+    type: VARCHAR
+    flag_for: p455
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P455
+  F_P460:
+    name: p460_flag
+    type: VARCHAR
+    flag_for: p460
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P460
+  F_P465:
+    name: p465_flag
+    type: VARCHAR
+    flag_for: p465
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P465
+  F_P470:
+    name: p470_flag
+    type: VARCHAR
+    flag_for: p470
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P470
+  F_P475:
+    name: p475_flag
+    type: VARCHAR
+    flag_for: p475
+    years: 1993,1995,1997,1999,2001,2003,2017,2019,2021,2023
+    label: Imputation Flag For P475
+  F_P480:
+    name: p480_flag
+    type: VARCHAR
+    flag_for: p480
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P480
+  F_P485:
+    name: p485_flag
+    type: VARCHAR
+    flag_for: p485
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P485
+  F_P490:
+    name: p490_flag
+    type: VARCHAR
+    flag_for: p490
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P490
+  F_P495:
+    name: p495_flag
+    type: VARCHAR
+    flag_for: p495
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P495
+  F_P500:
+    name: p500_flag
+    type: VARCHAR
+    flag_for: p500
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P500
+  F_P505:
+    name: p505_flag
+    type: VARCHAR
+    flag_for: p505
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P505
+  F_P510:
+    name: p510_flag
+    type: VARCHAR
+    flag_for: p510
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P510
+  F_P515:
+    name: p515_flag
+    type: VARCHAR
+    flag_for: p515
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P515
+  F_P520:
+    name: p520_flag
+    type: VARCHAR
+    flag_for: p520
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P520
+  F_P525:
+    name: p525_flag
+    type: VARCHAR
+    flag_for: p525
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017
+    label: Imputation Flag For P525
+  F_P530:
+    name: p530_flag
+    type: VARCHAR
+    flag_for: p530
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P530
+  F_P535:
+    name: p535_flag
+    type: VARCHAR
+    flag_for: p535
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P535
+  F_P540:
+    name: p540_flag
+    type: VARCHAR
+    flag_for: p540
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P540
+  F_P545:
+    name: p545_flag
+    type: VARCHAR
+    flag_for: p545
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P545
+  F_P550:
+    name: p550_flag
+    type: VARCHAR
+    flag_for: p550
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P550
+  F_P555:
+    name: p555_flag
+    type: VARCHAR
+    flag_for: p555
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P555
+  F_P560:
+    name: p560_flag
+    type: VARCHAR
+    flag_for: p560
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: Imputation Flag For P560
+  F_P565:
+    name: p565_flag
+    type: VARCHAR
+    flag_for: p565
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: Imputation Flag For P565
+  F_P570:
+    name: p570_flag
+    type: VARCHAR
+    flag_for: p570
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: Imputation Flag For P570
+  F_P575:
+    name: p575_flag
+    type: VARCHAR
+    flag_for: p575
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P575
+  F_P580:
+    name: p580_flag
+    type: VARCHAR
+    flag_for: p580
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P580
+  F_P585:
+    name: p585_flag
+    type: VARCHAR
+    flag_for: p585
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P585
+  F_P590:
+    name: p590_flag
+    type: VARCHAR
+    flag_for: p590
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P590
+  F_P595:
+    name: p595_flag
+    type: VARCHAR
+    flag_for: p595
+    years: 1993,1995,1997,1999,2001,2003,2005,2007
+    label: Imputation Flag For P595
+  F_P600:
+    name: p600_flag
+    type: VARCHAR
+    flag_for: p600
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P600
+  F_P605:
+    name: p605_flag
+    type: VARCHAR
+    flag_for: p605
+    years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P605
+  QPIN:
+    name: qpin
+    type: VARCHAR
+    years: '1995'
+    label: Permanent Identification Number
+  QCITY:
+    name: qcity
+    type: VARCHAR
+    years: '1995'
+    label: City of Mailing Address
+  QSTABB:
+    name: state_abbrev
+    type: VARCHAR
+    years: '1995'
+    label: State Postal Code of Mailing Address
+  QSTFIP:
+    name: qstfip
+    type: BIGINT
+    years: '1995'
+    label: Fips State Code
+  QCNTY:
+    name: qcnty
+    type: VARCHAR
+    years: '1995'
+    label: Fips County Code
+  QCNTNM:
+    name: qcntnm
+    type: VARCHAR
+    years: '1995'
+    label: County Name
+  QZIP:
+    name: zip
+    type: VARCHAR
+    years: '1995'
+    label: Zip Code of Mailing Address (Zip + 4)
+  S_KG:
+    name: s_kg
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Total Number of Kindergarten Students
+  P195:
+    name: p195
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4G Second Grade Offered
+  P200:
+    name: p200
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 4G Second Grade Enrollment
+  P610:
+    name: p610
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Alternative School Network
+  P615:
+    name: p615
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005
+    label: 15 Institute For Independent Education
+  P620:
+    name: p620
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Association of Independent Schools
+  P625:
+    name: p625
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013
+    label: 14 National Coalition of Alternative Community Schools
+  P630:
+    name: p630
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Independent Private Schools Association
+  P635:
+    name: p635
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 The Association of Boarding Schools
+  P640:
+    name: p640
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Other School Associations
+  P645:
+    name: p645
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 16 Days in School Year
+  P650:
+    name: p650
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 17 Hours in School Day for Students
+  COMMTYPE:
+    name: commtype
+    type: BIGINT
+    years: 1995,1997,1999,2001,2003,2005
+    label: Community type
+  QHIGR6:
+    name: qhigr6
+    type: BIGINT
+    years: '1995'
+    label: 1996 Highest Grade Level Recode
+  QLOGR6:
+    name: qlogr6
+    type: BIGINT
+    years: '1995'
+    label: 1996 Lowest Grade Level Recode
+  QFNLWT:
+    name: qfnlwt
+    type: DOUBLE
+    years: '1995'
+    label: Final Weight for School
+  REPW1:
+    name: repw1
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 1
+  REPW2:
+    name: repw2
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 2
+  REPW3:
+    name: repw3
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 3
+  REPW4:
+    name: repw4
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 4
+  REPW5:
+    name: repw5
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 5
+  REPW6:
+    name: repw6
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 6
+  REPW7:
+    name: repw7
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 7
+  REPW8:
+    name: repw8
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 8
+  REPW9:
+    name: repw9
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 9
+  REPW10:
+    name: repw10
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 10
+  REPW11:
+    name: repw11
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 11
+  REPW12:
+    name: repw12
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 12
+  REPW13:
+    name: repw13
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 13
+  REPW14:
+    name: repw14
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 14
+  REPW15:
+    name: repw15
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 15
+  REPW16:
+    name: repw16
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 16
+  REPW17:
+    name: repw17
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 17
+  REPW18:
+    name: repw18
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 18
+  REPW19:
+    name: repw19
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 19
+  REPW20:
+    name: repw20
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 20
+  REPW21:
+    name: repw21
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 21
+  REPW22:
+    name: repw22
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 22
+  REPW23:
+    name: repw23
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 23
+  REPW24:
+    name: repw24
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 24
+  REPW25:
+    name: repw25
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 25
+  REPW26:
+    name: repw26
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 26
+  REPW27:
+    name: repw27
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 27
+  REPW28:
+    name: repw28
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 28
+  REPW29:
+    name: repw29
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 29
+  REPW30:
+    name: repw30
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 30
+  REPW31:
+    name: repw31
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 31
+  REPW32:
+    name: repw32
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 32
+  REPW33:
+    name: repw33
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 33
+  REPW34:
+    name: repw34
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 34
+  REPW35:
+    name: repw35
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 35
+  REPW36:
+    name: repw36
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 36
+  REPW37:
+    name: repw37
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 37
+  REPW38:
+    name: repw38
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 38
+  REPW39:
+    name: repw39
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 39
+  REPW40:
+    name: repw40
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 40
+  REPW41:
+    name: repw41
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 41
+  REPW42:
+    name: repw42
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 42
+  REPW43:
+    name: repw43
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 43
+  REPW44:
+    name: repw44
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 44
+  REPW45:
+    name: repw45
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 45
+  REPW46:
+    name: repw46
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 46
+  REPW47:
+    name: repw47
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 47
+  REPW48:
+    name: repw48
+    type: DOUBLE
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 48
+  F_P195:
+    name: p195_flag
+    type: VARCHAR
+    flag_for: p195
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P195
+  F_P200:
+    name: p200_flag
+    type: VARCHAR
+    flag_for: p200
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P200
+  F_P610:
+    name: p610_flag
+    type: VARCHAR
+    flag_for: p610
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P610
+  F_P615:
+    name: p615_flag
+    type: VARCHAR
+    flag_for: p615
+    years: 1995,1997,1999,2001,2003,2005
+    label: Imputation Flag For P615
+  F_P620:
+    name: p620_flag
+    type: VARCHAR
+    flag_for: p620
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P620
+  F_P625:
+    name: p625_flag
+    type: VARCHAR
+    flag_for: p625
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013
+    label: Imputation Flag For P625
+  F_P630:
+    name: p630_flag
+    type: VARCHAR
+    flag_for: p630
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P630
+  F_P635:
+    name: p635_flag
+    type: VARCHAR
+    flag_for: p635
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P635
+  F_P640:
+    name: p640_flag
+    type: VARCHAR
+    flag_for: p640
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P640
+  F_P645:
+    name: p645_flag
+    type: VARCHAR
+    flag_for: p645
+    years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P645
+  RPIN:
+    name: rpin
+    type: VARCHAR
+    years: '1997'
+    label: Permanent Identification Number
+  RCITY:
+    name: rcity
+    type: VARCHAR
+    years: '1997'
+    label: City of Mailing Address
+  RSTABB:
+    name: state_abbrev
+    type: VARCHAR
+    years: '1997'
+    label: State Postal Code of Mailing Address
+  RSTFIP:
+    name: rstfip
+    type: BIGINT
+    years: '1997'
+    label: Fips State Code
+  RCNTY:
+    name: rcnty
+    type: VARCHAR
+    years: '1997'
+    label: Fips County Code
+  RCNTNM:
+    name: rcntnm
+    type: VARCHAR
+    years: '1997'
+    label: County Name
+  RZIP:
+    name: zip
+    type: VARCHAR
+    years: '1997'
+    label: Zip Code of Mailing Address (Zip + 4)
+  P655:
+    name: p655
+    type: BIGINT
+    years: 1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 17 Minutes in School Day for Students
+  P660:
+    name: p660
+    type: BIGINT
+    years: 1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 18 Library or Library Media Center
+  P665:
+    name: p665
+    type: BIGINT
+    years: 1997,1999,2001,2003,2005,2007,2009,2011,2015
+    label: 19B Participate in the Title I Program
+  DIOCESE:
+    name: diocese
+    type: VARCHAR
+    years: 1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Diocese or archdiocese for Catholic schools
+  HIGR8:
+    name: higr8
+    type: BIGINT
+    years: '1997'
+    label: 1997-98 Highest Grade Level Recode
+  LOGR8:
+    name: logr8
+    type: BIGINT
+    years: '1997'
+    label: 1997-98 Lowest Grade Level Recode
+  TABFLAG:
+    name: tabflag
+    type: BIGINT
+    years: 1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019
+    label: Tabulation Flag
+  TOTHRS:
+    name: tothrs
+    type: DOUBLE
+    years: 1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Length of School Day in Hours
+  RFNLWT:
+    name: rfnlwt
+    type: DOUBLE
+    years: '1997'
+    label: Final Weight for School
+  F_P650:
+    name: p650_flag
+    type: VARCHAR
+    flag_for: p650
+    years: 1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P650
+  F_P655:
+    name: p655_flag
+    type: VARCHAR
+    flag_for: p655
+    years: 1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P655
+  F_P660:
+    name: p660_flag
+    type: VARCHAR
+    flag_for: p660
+    years: 1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P660
+  SPIN:
+    name: spin
+    type: VARCHAR
+    years: '1999'
+    label: Permanent Identification Number
+  SCITY:
+    name: scity
+    type: VARCHAR
+    years: '1999'
+    label: City of Mailing Address
+  SSTABB:
+    name: state_abbrev
+    type: VARCHAR
+    years: '1999'
+    label: State Postal Code of Mailing Address
+  SSTFIPS:
+    name: sstfips
+    type: VARCHAR
+    years: '1999'
+    label: Fips State Code
+  SCNTY:
+    name: scnty
+    type: VARCHAR
+    years: '1999'
+    label: Fips County Code
+  SCNTYNM:
+    name: scntynm
+    type: VARCHAR
+    years: '1999'
+    label: County Name
+  SZIP:
+    name: zip
+    type: VARCHAR
+    years: '1999'
+    label: Zip Code of Mailing Address (Zip + 4)
+  P361:
+    name: p361
+    type: BIGINT
+    years: 1999,2001,2003,2005
+    label: 9D Percent To 2 Year College
+  P362:
+    name: p362
+    type: BIGINT
+    years: 1999,2001
+    label: 9D Percent To Technical School
+  P467:
+    name: p467
+    type: BIGINT
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Association of Christian Teachers and Schools
+  P602:
+    name: p602
+    type: BIGINT
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 National Coalition of Girls' Schools
+  P622:
+    name: p622
+    type: BIGINT
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 State/Regional Independent School Association
+  HIGR2000:
+    name: grade_high
+    type: BIGINT
+    years: '1999'
+    label: 1999-2000 Highest Grade Level Recode
+  LOGR2000:
+    name: grade_low
+    type: BIGINT
+    years: '1999'
+    label: 1999-2000 Lowest Grade Level Recode
+  SFNLWT:
+    name: sfnlwt
+    type: DOUBLE
+    years: '1999'
+    label: Final Weight for School
+  REPW49:
+    name: repw49
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 49
+  REPW50:
+    name: repw50
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 50
+  REPW51:
+    name: repw51
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 51
+  REPW52:
+    name: repw52
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 52
+  REPW53:
+    name: repw53
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 53
+  REPW54:
+    name: repw54
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 54
+  REPW55:
+    name: repw55
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 55
+  REPW56:
+    name: repw56
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 56
+  REPW57:
+    name: repw57
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 57
+  REPW58:
+    name: repw58
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 58
+  REPW59:
+    name: repw59
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 59
+  REPW60:
+    name: repw60
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 60
+  REPW61:
+    name: repw61
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 61
+  REPW62:
+    name: repw62
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 62
+  REPW63:
+    name: repw63
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 63
+  REPW64:
+    name: repw64
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 64
+  REPW65:
+    name: repw65
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 65
+  REPW66:
+    name: repw66
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 66
+  REPW67:
+    name: repw67
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 67
+  REPW68:
+    name: repw68
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 68
+  REPW69:
+    name: repw69
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 69
+  REPW70:
+    name: repw70
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 70
+  REPW71:
+    name: repw71
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 71
+  REPW72:
+    name: repw72
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 72
+  REPW73:
+    name: repw73
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 73
+  REPW74:
+    name: repw74
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 74
+  REPW75:
+    name: repw75
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 75
+  REPW76:
+    name: repw76
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 76
+  REPW77:
+    name: repw77
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 77
+  REPW78:
+    name: repw78
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 78
+  REPW79:
+    name: repw79
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 79
+  REPW80:
+    name: repw80
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 80
+  REPW81:
+    name: repw81
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 81
+  REPW82:
+    name: repw82
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 82
+  REPW83:
+    name: repw83
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 83
+  REPW84:
+    name: repw84
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 84
+  REPW85:
+    name: repw85
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 85
+  REPW86:
+    name: repw86
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 86
+  REPW87:
+    name: repw87
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 87
+  REPW88:
+    name: repw88
+    type: DOUBLE
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Replicate Weight 88
+  F_P361:
+    name: p361_flag
+    type: VARCHAR
+    flag_for: p361
+    years: 1999,2001,2003,2005
+    label: Imputation Flag For P361
+  F_P362:
+    name: p362_flag
+    type: VARCHAR
+    flag_for: p362
+    years: 1999,2001
+    label: Imputation Flag for P362
+  F_P467:
+    name: p467_flag
+    type: VARCHAR
+    flag_for: p467
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P467
+  F_P602:
+    name: p602_flag
+    type: VARCHAR
+    flag_for: p602
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P602
+  F_P622:
+    name: p622_flag
+    type: VARCHAR
+    flag_for: p622
+    years: 1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P622
+  COMMTYP2:
+    name: commtyp2
+    type: BIGINT
+    years: 2001,2003,2005
+    label: Community type 2
+  HIGR2002:
+    name: grade_high
+    type: BIGINT
+    years: '2001'
+    label: 2001-2002 Highest Grade Level Recode
+  LOGR2002:
+    name: grade_low
+    type: BIGINT
+    years: '2001'
+    label: 2001-2002 Lowest Grade Level Recode
+  MALES:
+    name: males
+    type: BIGINT
+    years: 2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Number of Male Students (K-12, UG)
+  P492:
+    name: p492
+    type: BIGINT
+    years: 2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Islamic School League of America
+  HIGR2004:
+    name: grade_high
+    type: BIGINT
+    years: '2003'
+    label: 2003-2004 Highest Grade Level Recode
+  ULOCALE:
+    name: ulocale
+    type: VARCHAR
+    years: 2003,2005,2007,2009
+    label: Urban-centric locale code
+  LOGR2004:
+    name: grade_low
+    type: BIGINT
+    years: '2003'
+    label: 2003-2004 Lowest Grade Level Recode
+  F_P492:
+    name: p492_flag
+    type: VARCHAR
+    flag_for: p492
+    years: 2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P492
+  CSOURCE:
+    name: csource
+    type: BIGINT
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Method of Interview
+  P468:
+    name: p468
+    type: BIGINT
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Association of Classical and Christian Schools
+  P542:
+    name: p542
+    type: BIGINT
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: 15 Association Montessori International
+  PINST:
+    name: name
+    type: VARCHAR
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: School Name
+  PZIP4:
+    name: zip4
+    type: VARCHAR
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Mailing Zip4 Code
+  PL_CIT:
+    name: pl_cit
+    type: VARCHAR
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Location City
+  PL_STABB:
+    name: pl_stabb
+    type: VARCHAR
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Location State Postal Code
+  PL_ZIP:
+    name: pl_zip
+    type: VARCHAR
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Location Zip Code
+  PL_ZIP4:
+    name: pl_zip4
+    type: VARCHAR
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Location Zip4 Code
+  LATITUDE:
+    name: lat
+    type: DOUBLE
+    signed: true
+    years: 2005,2007
+    label: Latitude
+  LONGITUDE:
+    name: lon
+    type: DOUBLE
+    signed: true
+    years: 2005,2007
+    label: Longitude
+  LOGR2006:
+    name: grade_low
+    type: BIGINT
+    years: '2005'
+    label: 2005-2006 Lowest Grade Level Recode
+  HIGR2006:
+    name: grade_high
+    type: BIGINT
+    years: '2005'
+    label: 2005-2006 Highest Grade Level Recode
+  UCOMMTYP:
+    name: ucommtyp
+    type: BIGINT
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Urban-centric Community Type
+  F_P468:
+    name: p468_flag
+    type: VARCHAR
+    flag_for: p468
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P468
+  F_P542:
+    name: p542_flag
+    type: VARCHAR
+    flag_for: p542
+    years: 2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P542
+  P522:
+    name: p522
+    type: BIGINT
+    years: 2007,2009,2011,2013,2015,2017
+    label: 14 The Jewish Community Day School Network
+  PADDRS:
+    name: address
+    type: VARCHAR
+    years: 2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Mailing Address
+  PL_ADD:
+    name: pl_add
+    type: VARCHAR
+    years: 2007,2009,2011,2013,2015,2017,2019,2021,2023
+    label: Location Address
+  WEBSITE:
+    name: website
+    type: VARCHAR
+    years: '2007'
+    label: School website
+  LOGR2008:
+    name: grade_low
+    type: BIGINT
+    years: '2007'
+    label: 2007-2008 Lowest Grade Level Recode
+  HIGR2008:
+    name: grade_high
+    type: BIGINT
+    years: '2007'
+    label: 2007-2008 Highest Grade Level Recode
+  F_P522:
+    name: p522_flag
+    type: VARCHAR
+    flag_for: p522
+    years: 2007,2009,2011,2013,2015,2017
+    label: Imputation Flag For P522
+  P316:
+    name: p316
+    type: BIGINT
+    years: 2009,2011,2013,2015,2017,2019,2021,2023
+    label: 6D Asian Students
+  P318:
+    name: p318
+    type: BIGINT
+    years: 2009,2011,2013,2015,2017,2019,2021,2023
+    label: 6E Native Hawaiian/Pacific Islander Students
+  P332:
+    name: p332
+    type: BIGINT
+    years: 2009,2011,2013,2015,2017,2019,2021,2023
+    label: 6G Students of Two or More Races
+  LATITUDE10:
+    name: lat
+    type: DOUBLE
+    signed: true
+    years: '2009'
+    label: Latitude
+  LONGITUDE10:
+    name: lon
+    type: DOUBLE
+    signed: true
+    years: '2009'
+    label: Longitude
+  LOGR2010:
+    name: grade_low
+    type: BIGINT
+    years: '2009'
+    label: 2009-2010 Lowest Grade Level Recode
+  HIGR2010:
+    name: grade_high
+    type: BIGINT
+    years: '2009'
+    label: 2009-2010 Highest Grade Level Recode
+  F_P316:
+    name: p316_flag
+    type: VARCHAR
+    flag_for: p316
+    years: 2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P316
+  F_P318:
+    name: p318_flag
+    type: VARCHAR
+    flag_for: p318
+    years: 2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P318
+  F_P332:
+    name: p332_flag
+    type: VARCHAR
+    flag_for: p332
+    years: 2009,2011,2013,2015,2017,2019,2021,2023
+    label: Imputation Flag For P332
+  P_PACIFIC:
+    name: p_pacific
+    type: DOUBLE
+    years: 2009,2011,2013,2015,2017,2019,2021,2023
+    label: Percentage of Native Hawaiian or Pacific Islander Students
+  P_TWO:
+    name: p_two
+    type: DOUBLE
+    years: '2009'
+    label: Percentage of students of two or more races
+  HIGR2012:
+    name: grade_high
+    type: BIGINT
+    years: '2011'
+    label: 2011-12 Highest Grade Level Recode
+  LATITUDE12:
+    name: lat
+    type: DOUBLE
+    signed: true
+    years: '2011'
+    label: Latitude
+  LOGR2012:
+    name: grade_low
+    type: BIGINT
+    years: '2011'
+    label: 2011-12 Lowest Grade Level Recode
+  LONGITUDE12:
+    name: lon
+    type: DOUBLE
+    signed: true
+    years: '2011'
+    label: Longitude
+  P_TR:
+    name: p_tr
+    type: DOUBLE
+    years: 2011,2013,2015,2017,2019,2021,2023
+    label: Percentage of Students of Two or More Races
+  PSTANSI:
+    name: pstansi
+    type: VARCHAR
+    years: 2011,2013,2015,2017,2019,2021,2023
+    label: ANSI State Code (physical location of school)
+  ULOCALE12:
+    name: ulocale
+    type: VARCHAR
+    years: '2011'
+    label: Urban-centric locale code
+  ULOCALE14:
+    name: ulocale
+    type: VARCHAR
+    years: '2013'
+    label: Urban-centric Locale Code
+  LATITUDE14:
+    name: lat
+    type: DOUBLE
+    signed: true
+    years: '2013'
+    label: Latitude
+  LONGITUDE14:
+    name: lon
+    type: DOUBLE
+    signed: true
+    years: '2013'
+    label: Longitude
+  LOGR2014:
+    name: grade_low
+    type: BIGINT
+    years: '2013'
+    label: 2013-14 Lowest Grade Level Recode
+  HIGR2014:
+    name: grade_high
+    type: BIGINT
+    years: '2013'
+    label: 2013-14 Highest Grade Level Recode
+  P661:
+    name: p661
+    type: BIGINT
+    years: '2015'
+    label: 18A National School Lunch Program
+  P662:
+    name: p662
+    type: BIGINT
+    years: '2015'
+    label: 18B Approved For Free Lunches
+  P663:
+    name: p663
+    type: BIGINT
+    years: '2015'
+    label: 19A Title I Services
+  P664:
+    name: p664
+    type: BIGINT
+    years: '2015'
+    label: 19B Participate in the Title I Program
+  ULOCALE16:
+    name: ulocale
+    type: VARCHAR
+    years: '2015'
+    label: Urban-centric Locale Code
+  LATITUDE16:
+    name: lat
+    type: DOUBLE
+    signed: true
+    years: '2015'
+    label: Latitude
+  LONGITUDE16:
+    name: lon
+    type: DOUBLE
+    signed: true
+    years: '2015'
+    label: Longitude
+  SLDLST16:
+    name: sldlst
+    type: VARCHAR
+    years: '2015'
+    label: State Legislative District - Lower
+  SLDUST16:
+    name: sldust
+    type: VARCHAR
+    years: '2015'
+    label: State Legislative District - Upper
+  STCD16:
+    name: stcd
+    type: VARCHAR
+    years: '2015'
+    label: 114th Congressional District
+  LOGR2016:
+    name: grade_low
+    type: BIGINT
+    years: '2015'
+    label: 2015-16 Lowest Grade Level Recode
+  HIGR2016:
+    name: grade_high
+    type: BIGINT
+    years: '2015'
+    label: 2015-16 Highest Grade Level Recode
+  F_P661:
+    name: p661_flag
+    type: VARCHAR
+    flag_for: p661
+    years: '2015'
+    label: Imputation Flag For P661
+  F_P662:
+    name: p662_flag
+    type: VARCHAR
+    flag_for: p662
+    years: '2015'
+    label: Imputation Flag For P662
+  F_P663:
+    name: p663_flag
+    type: VARCHAR
+    flag_for: p663
+    years: '2015'
+    label: Imputation Flag For P663
+  F_P664:
+    name: p664_flag
+    type: VARCHAR
+    flag_for: p664
+    years: '2015'
+    label: Imputation Flag For P664
+  F_P665:
+    name: p665_flag
+    type: VARCHAR
+    flag_for: p665
+    years: '2015'
+    label: Imputation Flag For P665
+  PPHONE:
+    name: pphone
+    type: VARCHAR
+    years: 2017,2019,2021,2023
+    label: School phone number
+  ULOCALE18:
+    name: ulocale
+    type: VARCHAR
+    years: '2017'
+    label: Urban-centric Locale Code
+  LATITUDE18:
+    name: lat
+    type: DOUBLE
+    signed: true
+    years: '2017'
+    label: Latitude
+  LONGITUDE18:
+    name: lon
+    type: DOUBLE
+    signed: true
+    years: '2017'
+    label: Longitude
+  SLDLST18:
+    name: sldlst
+    type: VARCHAR
+    years: '2017'
+    label: State Legislative District - Lower
+  SLDUST18:
+    name: sldust
+    type: VARCHAR
+    years: '2017'
+    label: State Legislative District - Upper
+  STCD18:
+    name: stcd
+    type: VARCHAR
+    years: '2017'
+    label: 114th Congressional District
+  LOGR2018:
+    name: grade_low
+    type: BIGINT
+    years: '2017'
+    label: 2017-18 Lowest Grade Level Recode
+  HIGR2018:
+    name: grade_high
+    type: BIGINT
+    years: '2017'
+    label: 2017-18 Highest Grade Level Recode
+  P523:
+    name: p523
+    type: BIGINT
+    years: 2019,2021,2023
+    label: '15 Prizmah: Center for Jewish Day Schools'
+  PCNTY20:
+    name: county_fips
+    type: VARCHAR
+    years: '2019'
+    label: ANSI County Code + State Code
+  ULOCALE20:
+    name: ulocale
+    type: VARCHAR
+    years: '2019'
+    label: Urban-centric Locale Code
+  LATITUDE20:
+    name: lat
+    type: DOUBLE
+    signed: true
+    years: '2019'
+    label: Latitude
+  LONGITUDE20:
+    name: lon
+    type: DOUBLE
+    signed: true
+    years: '2019'
+    label: Longitude
+  SLDLST20:
+    name: sldlst
+    type: VARCHAR
+    years: '2019'
+    label: State Legislative District - Lower
+  SLDUST20:
+    name: sldust
+    type: VARCHAR
+    years: '2019'
+    label: State Legislative District - Upper
+  STCD20:
+    name: stcd
+    type: VARCHAR
+    years: '2019'
+    label: 114th Congressional District
+  LOGR2020:
+    name: grade_low
+    type: BIGINT
+    years: '2019'
+    label: 2019-20 Lowest Grade Level Recode
+  HIGR2020:
+    name: grade_high
+    type: BIGINT
+    years: '2019'
+    label: 2019-20 Highest Grade Level Recode
+  LEVEL2:
+    name: level2
+    type: BIGINT
+    years: 2019,2021,2023
+    label: Level of Instruction (Three Categories)
+  F_P523:
+    name: p523_flag
+    type: VARCHAR
+    flag_for: p523
+    years: 2019,2021,2023
+    label: Imputation Flag For P523
+  P458:
+    name: p458
+    type: BIGINT
+    years: 2021,2023
+    label: 15 Agudath Israel of America
+  PCNTY22:
+    name: county_fips
+    type: VARCHAR
+    years: '2021'
+    label: ANSI County Code + State Code
+  ULOCALE22:
+    name: ulocale
+    type: VARCHAR
+    years: '2021'
+    label: Urban-centric Locale Code
+  LATITUDE22:
+    name: lat
+    type: DOUBLE
+    signed: true
+    years: '2021'
+    label: Latitude
+  LONGITUDE22:
+    name: lon
+    type: DOUBLE
+    signed: true
+    years: '2021'
+    label: Longitude
+  SLDLST22:
+    name: sldlst
+    type: VARCHAR
+    years: '2021'
+    label: State Legislative District - Lower
+  SLDUST22:
+    name: sldust
+    type: VARCHAR
+    years: '2021'
+    label: State Legislative District - Upper
+  STCD22:
+    name: stcd
+    type: VARCHAR
+    years: '2021'
+    label: 116th Congressional District
+  LOGR2022:
+    name: grade_low
+    type: BIGINT
+    years: '2021'
+    label: 2021-22 Lowest Grade Level Recode
+  HIGR2022:
+    name: grade_high
+    type: BIGINT
+    years: '2021'
+    label: 2021-22 Highest Grade Level Recode
+  F_P458:
+    name: p458_flag
+    type: VARCHAR
+    flag_for: p458
+    years: 2021,2023
+    label: Imputation Flag For P458
+  LEVEL3:
+    name: level3
+    type: BIGINT
+    years: 2021,2023
+    label: Level of Instruction (Three Categories)
+  GRADE2:
+    name: grade2
+    type: BIGINT
+    years: 2021,2023
+    label: Level of Instruction (Four Categories)
+  LEVEL4:
+    name: level4
+    type: BIGINT
+    years: 2021,2023
+    label: Level of Instruction (Three Categories)
+  S1_F_P135:
+    name: s1_f_p135
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P135
+  S1_F_P140:
+    name: s1_f_p140
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P140
+  S1_F_P145:
+    name: s1_f_p145
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P145
+  S1_F_P150:
+    name: s1_f_p150
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P150
+  S1_F_P155:
+    name: s1_f_p155
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P155
+  S1_F_P160:
+    name: s1_f_p160
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P160
+  S1_F_P165:
+    name: s1_f_p165
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P165
+  S1_F_P170:
+    name: s1_f_p170
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P170
+  S1_F_P175:
+    name: s1_f_p175
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P175
+  S1_F_P180:
+    name: s1_f_p180
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P180
+  S1_F_P185:
+    name: s1_f_p185
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P185
+  S1_F_P190:
+    name: s1_f_p190
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P190
+  S1_F_P195:
+    name: s1_f_p195
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P195
+  S1_F_P200:
+    name: s1_f_p200
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P200
+  S1_F_P205:
+    name: s1_f_p205
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P205
+  S1_F_P210:
+    name: s1_f_p210
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P210
+  S1_F_P215:
+    name: s1_f_p215
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P215
+  S1_F_P220:
+    name: s1_f_p220
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P220
+  S1_F_P225:
+    name: s1_f_p225
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P225
+  S1_F_P230:
+    name: s1_f_p230
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P230
+  S1_F_P235:
+    name: s1_f_p235
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P235
+  S1_F_P240:
+    name: s1_f_p240
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P240
+  S1_F_P245:
+    name: s1_f_p245
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P245
+  S1_F_P250:
+    name: s1_f_p250
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P250
+  S1_F_P255:
+    name: s1_f_p255
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P255
+  S1_F_P260:
+    name: s1_f_p260
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P260
+  S1_F_P265:
+    name: s1_f_p265
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P265
+  S1_F_P270:
+    name: s1_f_p270
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P270
+  S1_F_P275:
+    name: s1_f_p275
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P275
+  S1_F_P280:
+    name: s1_f_p280
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P280
+  S1_F_P285:
+    name: s1_f_p285
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P285
+  S1_F_P290:
+    name: s1_f_p290
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P290
+  S1_F_P295:
+    name: s1_f_p295
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P295
+  S1_F_P300:
+    name: s1_f_p300
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P300
+  S1_F_P305:
+    name: s1_f_p305
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P305
+  S1_F_P320:
+    name: s1_f_p320
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P320
+  S1_F_P330:
+    name: s1_f_p330
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P330
+  S1_F_P325:
+    name: s1_f_p325
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P325
+  S1_F_P316:
+    name: s1_f_p316
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P316
+  S1_F_P318:
+    name: s1_f_p318
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P318
+  S1_F_P310:
+    name: s1_f_p310
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P310
+  S1_F_P332:
+    name: s1_f_p332
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P332
+  S1_F_P335:
+    name: s1_f_p335
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P335
+  S1_F_P340:
+    name: s1_f_p340
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P340
+  S1_F_P345:
+    name: s1_f_p345
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P345
+  S1_F_P350:
+    name: s1_f_p350
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P350
+  S1_F_P360:
+    name: s1_f_p360
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P360
+  S1_F_P365:
+    name: s1_f_p365
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P365
+  S1_F_P370:
+    name: s1_f_p370
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P370
+  S1_F_P385:
+    name: s1_f_p385
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P385
+  S1_F_P390:
+    name: s1_f_p390
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P390
+  S1_F_P395:
+    name: s1_f_p395
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P395
+  S1_F_P400:
+    name: s1_f_p400
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P400
+  S1_F_P405:
+    name: s1_f_p405
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P405
+  S1_F_P410:
+    name: s1_f_p410
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P410
+  S1_F_P415:
+    name: s1_f_p415
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P415
+  S1_F_P420:
+    name: s1_f_p420
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P420
+  S1_F_P425:
+    name: s1_f_p425
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P425
+  S1_F_P430:
+    name: s1_f_p430
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P430
+  S1_F_P435:
+    name: s1_f_p435
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P435
+  S1_F_P440:
+    name: s1_f_p440
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P440
+  S1_F_P445:
+    name: s1_f_p445
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P445
+  S1_F_P450:
+    name: s1_f_p450
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P450
+  S1_F_P455:
+    name: s1_f_p455
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P455
+  S1_F_P458:
+    name: s1_f_p458
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P458
+  S1_F_P460:
+    name: s1_f_p460
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P460
+  S1_F_P465:
+    name: s1_f_p465
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P465
+  S1_F_P467:
+    name: s1_f_p467
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P467
+  S1_F_P468:
+    name: s1_f_p468
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P468
+  S1_F_P470:
+    name: s1_f_p470
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P470
+  S1_F_P475:
+    name: s1_f_p475
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P475
+  S1_F_P480:
+    name: s1_f_p480
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P480
+  S1_F_P485:
+    name: s1_f_p485
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P485
+  S1_F_P490:
+    name: s1_f_p490
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P490
+  S1_F_P492:
+    name: s1_f_p492
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P492
+  S1_F_P495:
+    name: s1_f_p495
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P495
+  S1_F_P500:
+    name: s1_f_p500
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P500
+  S1_F_P505:
+    name: s1_f_p505
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P505
+  S1_F_P510:
+    name: s1_f_p510
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P510
+  S1_F_P515:
+    name: s1_f_p515
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P515
+  S1_F_P520:
+    name: s1_f_p520
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P520
+  S1_F_P523:
+    name: s1_f_p523
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P523
+  S1_F_P530:
+    name: s1_f_p530
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P530
+  S1_F_P535:
+    name: s1_f_p535
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P535
+  S1_F_P540:
+    name: s1_f_p540
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P540
+  S1_F_P542:
+    name: s1_f_p542
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P542
+  S1_F_P545:
+    name: s1_f_p545
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P545
+  S1_F_P550:
+    name: s1_f_p550
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P550
+  S1_F_P555:
+    name: s1_f_p555
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P555
+  S1_F_P575:
+    name: s1_f_p575
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P575
+  S1_F_P580:
+    name: s1_f_p580
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P580
+  S1_F_P585:
+    name: s1_f_p585
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P585
+  S1_F_P590:
+    name: s1_f_p590
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P590
+  S1_F_P600:
+    name: s1_f_p600
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P600
+  S1_F_P602:
+    name: s1_f_p602
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P602
+  S1_F_P605:
+    name: s1_f_p605
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P605
+  S1_F_P610:
+    name: s1_f_p610
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P610
+  S1_F_P620:
+    name: s1_f_p620
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P620
+  S1_F_P622:
+    name: s1_f_p622
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P622
+  S1_F_P630:
+    name: s1_f_p630
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P630
+  S1_F_P635:
+    name: s1_f_p635
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P635
+  S1_F_P640:
+    name: s1_f_p640
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P640
+  S1_F_P645:
+    name: s1_f_p645
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P645
+  S1_F_P650:
+    name: s1_f_p650
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P650
+  S1_F_P655:
+    name: s1_f_p655
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P655
+  S1_F_P660:
+    name: s1_f_p660
+    type: BIGINT
+    years: '2021'
+    label: Stage 1 Imputation Flag for P660
+  P411:
+    name: p411
+    type: BIGINT
+    years: '2023'
+    label: 11A In-Person Classes
+  P412:
+    name: p412
+    type: BIGINT
+    years: '2023'
+    label: 11B Virtual Classes
+  P413:
+    name: p413
+    type: BIGINT
+    years: '2023'
+    label: 11C Hybrid Classes
+  PCNTY24:
+    name: county_fips
+    type: VARCHAR
+    years: '2023'
+    label: ANSI County Code + State Code
+  ULOCALE24:
+    name: ulocale
+    type: VARCHAR
+    years: '2023'
+    label: Urban-centric Locale Code
+  LATITUDE24:
+    name: lat
+    type: DOUBLE
+    signed: true
+    years: '2023'
+    label: Latitude
+  LONGITUDE24:
+    name: lon
+    type: DOUBLE
+    signed: true
+    years: '2023'
+    label: Longitude
+  SLDLST24:
+    name: sldlst
+    type: VARCHAR
+    years: '2023'
+    label: State Legislative District - Lower
+  SLDUST24:
+    name: sldust
+    type: VARCHAR
+    years: '2023'
+    label: State Legislative District - Upper
+  STCD24:
+    name: stcd
+    type: VARCHAR
+    years: '2023'
+    label: 118th Congressional District
+  LOGR2024:
+    name: grade_low
+    type: BIGINT
+    years: '2023'
+    label: 2023-24 Lowest Grade Level Recode
+  HIGR2024:
+    name: grade_high
+    type: BIGINT
+    years: '2023'
+    label: 2023-24 Highest Grade Level Recode
+  F_P411:
+    name: p411_flag
+    type: VARCHAR
+    flag_for: p411
+    years: '2023'
+    label: Imputation Flag For P411
+  F_P412:
+    name: p412_flag
+    type: VARCHAR
+    flag_for: p412
+    years: '2023'
+    label: Imputation Flag For P412
+  F_P413:
+    name: p413_flag
+    type: VARCHAR
+    flag_for: p413
+    years: '2023'
+    label: Imputation Flag For P413

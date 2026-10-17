@@ -19,6 +19,9 @@ CCD_TITLES = {
 def _table_info(ds: str, table: str) -> dict:
     if ds == "ccd":
         return {"title": CCD_TITLES.get(table, table)}
+    if ds == "pss":
+        return {"title": {"schools": "Private schools (PSS) public-use file", "enrollment": "Private school enrollment (long)",
+                          "teachers": "Private school teachers (long)"}.get(table, table), "survey": "Private School Universe Survey"}
     if ds == "ipeds":
         from .ipeds_files import select
 

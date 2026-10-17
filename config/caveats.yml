@@ -71,3 +71,18 @@ ipeds.adm:
   caveat: Admissions data apply to institutions with selective admissions for first-time undergraduates; open-admission institutions may not report.
 ipeds.flags:
   caveat: Response status codes for each survey component; useful for understanding why a component is missing for an institution-year.
+pss.schools:
+  caveat: >-
+    The Private School Universe Survey is conducted every two years (fall of the first year shown, for example
+    2023-24); years between surveys are not missing data, they were not collected. School names and permanent IDs (PPIN)
+    are in the public-use files from 2005-06 on (PPIN also in 1993-94, 2001-02 and 2003-04), so earlier surveys cannot be
+    linked to individual schools or placed on the map. Questionnaire item numbers (P###) are specific to each survey, and
+    value labels come from the 2023-24 codebook; definitions can differ in earlier surveys. Counts are as reported or
+    imputed by NCES (see the *_flag columns); private schools in the universe may be missed or may have closed.
+pss.enrollment:
+  caveat: >-
+    Long format derived from the survey's grade-level (P140-P300), race (P310-P332), sex (P340) and total (P305,
+    NUMSTUDS) items. Race categories changed in 2009-10. Negative source codes are treated as not applicable and
+    blank values as missing (value NULL, never 0).
+pss.teachers:
+  caveat: Long format derived from the teacher headcount items (P385-P410), full-time-equivalent teachers (NUMTEACH) and the student-teacher ratio (STTCH_RT).

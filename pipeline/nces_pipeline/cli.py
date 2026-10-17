@@ -1,4 +1,4 @@
-"""Command line: python -m nces_pipeline <command> --state utah ..."""
+"""Command line: python -m nces_pipeline <command> --state <name> ..."""
 from __future__ import annotations
 
 import argparse
@@ -36,6 +36,10 @@ def cmd_fetch(a, state) -> int:
         from .edge import fetch_edge
 
         fetch_edge(check_only=a.check_only)
+    if a.source in (None, "pss"):
+        from .pss import fetch_pss
+
+        print(f"PSS: {fetch_pss()} surveys present")
     if a.source in (None, "ipeds"):
         from .config import DATA_RAW
         from .ipeds_catalog import build_catalog as ipeds_catalog
@@ -77,6 +81,9 @@ def cmd_bootstrap(a, state) -> int:
     from .ipeds_build import bootstrap_all
 
     bootstrap_all(state, force=a.force)
+    from .pss import bootstrap as pss_bootstrap
+
+    print("map:", pss_bootstrap(state, force=a.force).name)
     return 0
 
 
@@ -108,6 +115,10 @@ def cmd_build(a, state) -> int:
         from .ipeds_build import build_ipeds
 
         build_ipeds(state, years=yrs)
+    if a.source in (None, "pss"):
+        from .pss import build_pss
+
+        build_pss(state)
     return 0
 
 
@@ -119,11 +130,21 @@ def cmd_validate(a, state) -> int:
     return 1 if rep.errors else 0
 
 
+def cmd_geocode(a, state) -> int:
+    from .geocode import apply_to_ccd_locations, geocode_pending
+
+    st = geocode_pending(state, limit=a.limit)
+    print(f"geocode: {st}")
+    print(f"school locations filled from the geocode cache: {apply_to_ccd_locations()}")
+    return 0
+
+
 def cmd_points(a, state) -> int:
-    from .geo import build_points_college, build_points_public
+    from .geo import build_points_college, build_points_private, build_points_public
 
     print("public points:", build_points_public())
     print("college points:", build_points_college())
+    print("private points:", build_points_private())
     return 0
 
 
@@ -137,11 +158,13 @@ def cmd_update(a, state) -> int:
     ns = argparse.Namespace(source=None, year=a.year, check_only=False, refresh_catalog=False, scaffold_map=None)
     cmd_fetch(ns, state)
     cmd_build(ns, state)
+    cmd_geocode(argparse.Namespace(limit=None), state)
     build_dictionary()
-    from .geo import build_points_college, build_points_public
+    from .geo import build_points_college, build_points_private, build_points_public
 
     build_points_public()
     build_points_college()
+    build_points_private()
     write_meta(state)
     after = current_rowcounts()
     print("changelog:")
@@ -188,6 +211,10 @@ def main(argv: list[str] | None = None) -> int:
     u = sub.add_parser("update", help="fetch -> build -> dictionary -> meta -> validate, with a changelog")
     u.add_argument("--year", type=int)
     u.set_defaults(fn=cmd_update)
+
+    gc = sub.add_parser("geocode", help="geocode addresses that lack source coordinates (Census batch geocoder, cached)")
+    gc.add_argument("--limit", type=int)
+    gc.set_defaults(fn=cmd_geocode)
 
     pt = sub.add_parser("points", help="build first-paint points files in docs/data/geo")
     pt.set_defaults(fn=cmd_points)

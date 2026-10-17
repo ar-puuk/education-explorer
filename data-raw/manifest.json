@@ -17072,6 +17072,168 @@
    "sha256": "7821cdc4b923dc8ff78ce4a79c115c6fd2bc003919d539f2e918005ee917a429",
    "source": "ipeds-dict",
    "url": "https://nces.ed.gov/ipeds/complete-data-files/IC2025_Dict.zip"
+  },
+  {
+   "bytes": 3344375,
+   "path": "pss/1989/pss8990_sas7bdat.zip",
+   "release": "1989-90",
+   "retrieved": "2026-10-16",
+   "sha256": "de8a2fccb21a68049781f8259c97618d8dc73f03e7e49844279542c1de11dc13",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS8990_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 2717589,
+   "path": "pss/1991/pss9192_sas7bdat.zip",
+   "release": "1991-92",
+   "retrieved": "2026-10-16",
+   "sha256": "d704ab5063e20e08f61ea3665da8f761e4da5f3774d3da90077048abb9b4d49d",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS9192_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 4935109,
+   "path": "pss/1993/pss9394_sas7bdat.zip",
+   "release": "1993-94",
+   "retrieved": "2026-10-16",
+   "sha256": "5c818ca8f986ec95793ad7e8cde0b386acc470403e9ae4d3092a5d3ccd6832f7",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS9394_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 4449508,
+   "path": "pss/1995/pss9596_sas7bdat.zip",
+   "release": "1995-96",
+   "retrieved": "2026-10-16",
+   "sha256": "aa6e3850d2498c3606c36381e70cde2a00d8367c2df359683f8310620100779f",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS9596_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 4851709,
+   "path": "pss/1997/pss9798_sas7bdat.zip",
+   "release": "1997-98",
+   "retrieved": "2026-10-16",
+   "sha256": "518a6e247bc64c9c2c95626bb745ef479888b9ac93f0de2cf3dda2a47872b81c",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS9798_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 4752734,
+   "path": "pss/1999/pss9900_sas7bdat.zip",
+   "release": "1999-00",
+   "retrieved": "2026-10-16",
+   "sha256": "7213e762178abe02561f11d910c986c605eb0ff46ab56aa5fb566cc3eab896ba",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS9900_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 5662968,
+   "path": "pss/2001/pss0102_sas7bdat.zip",
+   "release": "2001-02",
+   "retrieved": "2026-10-16",
+   "sha256": "2d54d9fd0a4d11791cdcfc5cdb852ed850d3c3f277c0efd0f19ada2bf280747c",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS0102_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 5393302,
+   "path": "pss/2003/pss0304_sas7bdat.zip",
+   "release": "2003-04",
+   "retrieved": "2026-10-16",
+   "sha256": "83e7993c1308d01ee659eb86cbbb2d736c610041bf073fe94eb47c28d32a4e81",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS0304_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 6324301,
+   "path": "pss/2005/pss0506_sas7bdat.zip",
+   "release": "2005-06",
+   "retrieved": "2026-10-16",
+   "sha256": "b6d05782a6257113f83d0aaa4a2d3fef4b28c525a55d12b1552589c8fcb89bd4",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS0506_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 6732708,
+   "path": "pss/2007/pss0708_sas7bdat.zip",
+   "release": "2007-08",
+   "retrieved": "2026-10-16",
+   "sha256": "bfbc58bce01bb35de9367e005463e1592f2036769613f9d158671d14c9140e08",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS0708_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 5765500,
+   "path": "pss/2009/pss0910_sas7bdat.zip",
+   "release": "2009-10",
+   "retrieved": "2026-10-16",
+   "sha256": "96a40bff45ae46429bfc7fc1d185e2ea88794bc656e3edff9604c3201be0d22f",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/PSS0910_SAS7BDAT.zip"
+  },
+  {
+   "bytes": 6558937,
+   "path": "pss/2011/pss1112_pu_sas7bdat.zip",
+   "release": "2011-12",
+   "retrieved": "2026-10-16",
+   "sha256": "b14293cf245524808ae8a19f16b68c69aab11785b2c8776d4bdcd84ea71c26c2",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/pss1112_pu_sas7bdat.zip"
+  },
+  {
+   "bytes": 4572848,
+   "path": "pss/2013/pss1314_pu_sas7bdat.zip",
+   "release": "2013-14",
+   "retrieved": "2026-10-16",
+   "sha256": "a44dc394940f8614caac6b0a0381d0c79552193039f1f221ba746858918052cd",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/pss1314_pu_sas7bdat.zip"
+  },
+  {
+   "bytes": 4359434,
+   "path": "pss/2015/pss1516_pu_sas7bdat.zip",
+   "release": "2015-16",
+   "retrieved": "2026-10-16",
+   "sha256": "fe3617ef5434c8000223090af487bb30fca86a9064579ce518159f69e485b947",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/pss1516_pu_sas7bdat.zip"
+  },
+  {
+   "bytes": 5744446,
+   "path": "pss/2017/pss1718_pu_sas7bdat.zip",
+   "release": "2017-18",
+   "retrieved": "2026-10-16",
+   "sha256": "f4c0055c38c1b6461fc8b495e62c44842a2f894225082b1005863b0d954c6ebe",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/pss1718_pu_sas7bdat.zip"
+  },
+  {
+   "bytes": 4645541,
+   "path": "pss/2019/pss1920_pu_sas7bdat.zip",
+   "release": "2019-20",
+   "retrieved": "2026-10-16",
+   "sha256": "5fb76fe04e18b3a8b5960ee40a24d05954e1701dec5613d3c104346e29b573c2",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/pss1920_pu_sas7bdat.zip"
+  },
+  {
+   "bytes": 5912630,
+   "path": "pss/2021/pss2122_pu_sas7bdat.zip",
+   "release": "2021-22",
+   "retrieved": "2026-10-16",
+   "sha256": "5c7390cf9a957d2de30286ceaa4ac29716fa314fc5af492583617f14f396e1ff",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/pss2122_pu_sas7bdat.zip"
+  },
+  {
+   "bytes": 4750196,
+   "path": "pss/2023/pss2324_pu_sas7bdat.zip",
+   "release": "2023-24",
+   "retrieved": "2026-10-16",
+   "sha256": "a3a4f2f440d445b698f29d93b00dbb3e5af41439f3616ac138e7f69f77f0c785",
+   "source": "pss",
+   "url": "https://nces.ed.gov/surveys/pss/zip/pss2324_pu_sas7bdat.zip"
   }
  ]
 }

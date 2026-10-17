@@ -190,7 +190,9 @@ def build_dictionary() -> int:
             yrs = years or [int(f.stem) for f in table_dir.glob("*.parquet")]
             rows.append(("ccd", table, name, label, description, unit, min(yrs), max(yrs), caveat))
     irows, ivals = ipeds_dictionary_rows()
-    rows += irows
+    prows, pvals = pss_dictionary_rows()
+    rows += irows + prows
+    ivals += pvals
     con = duckdb.connect()
     con.execute('CREATE TABLE d(dataset VARCHAR, "table" VARCHAR, "column" VARCHAR, label VARCHAR, description VARCHAR, unit VARCHAR, first_year INTEGER, last_year INTEGER, caveat VARCHAR)')
     con.executemany("INSERT INTO d VALUES (?,?,?,?,?,?,?,?,?)", rows)
@@ -288,4 +290,74 @@ def ipeds_dictionary_rows() -> tuple[list[tuple], list[tuple]]:
                     for code, lab in info["values"][raw].items():
                         vals.append(("ipeds", fam, name, str(code), lab))
             rows.append(("ipeds", fam, name, label, description, unit, yrs[0], yrs[-1], table_cav if name in ("unitid",) else ""))
+    return rows, vals
+
+
+# ------------------------------------------------------------------------------------ PSS
+PSS_DERIVED = {
+    "row_id": ("Row ID", "Position of the school record in the national public-use file (stable identifier within a survey)."),
+    "ppin": ("Private school PIN", "NCES permanent identification number; the cross-year merge key where present."),
+    "year": ("Survey year", "Fall year the survey began (2023 = 2023-24)."),
+    "school_year": ("Survey school year", "School year label such as 2023-24."),
+    "source_file": ("Source file", "Name of the NCES file this row was built from."),
+    "dimension": ("Dimension", "Kind of breakdown: total, grade, race, sex or teachers."),
+    "category": ("Category", "The grade, race/ethnicity, sex or teacher category the value describes."),
+    "value": ("Value", "Student or teacher count (or ratio/FTE), NULL when missing or not applicable."),
+    "value_flag": ("Value flag", "reported, missing (blank) or not_applicable (negative source code)."),
+    "imputation_flag": ("Imputation flag", "NCES imputation code for the source item (F_<item>), blank when none."),
+    "lat": ("Latitude", "Latitude in decimal degrees as provided by NCES for the survey."),
+    "lon": ("Longitude", "Longitude in decimal degrees as provided by NCES for the survey."),
+    "name": ("School name", "School name (PINST)."), "address": ("Street address", "Mailing street address (PADDRS)."),
+    "city": ("City", "Mailing city."), "zip": ("ZIP", "Mailing ZIP code."), "state_abbrev": ("State", "State postal abbreviation."),
+    "enrollment_total": ("Total enrollment", "Total student enrollment (NUMSTUDS, derived by NCES from the reported and imputed items)."),
+    "teachers_fte": ("Teachers (FTE)", "Number of K-12 teachers, full-time equivalent (NUMTEACH)."),
+    "student_teacher_ratio": ("Student-teacher ratio", "Students per FTE teacher (STTCH_RT)."),
+    "ulocale": ("Locale code", "NCES urban-centric locale code of the school location."),
+    "county_fips": ("County FIPS", "5-digit county FIPS code, updated to the survey's geography."),
+    "grade_low": ("Lowest grade", "Lowest grade offered (LOGR)."), "grade_high": ("Highest grade", "Highest grade offered (HIGR)."),
+}
+
+
+def pss_dictionary_rows() -> tuple[list[tuple], list[tuple]]:
+    from .ipeds_build import years_from_str
+    from .pss import VALUE_LABELS, load_map
+
+    base = DOCS_DATA / "pss"
+    if not base.exists():
+        return [], []
+    caveats = yaml.safe_load((CONFIG_DIR / "caveats.yml").read_text(encoding="utf-8")) or {}
+    m = load_map()
+    vl = (yaml.safe_load(VALUE_LABELS.read_text(encoding="utf-8")) or {}).get("values", {}) if VALUE_LABELS.exists() else {}
+    by_name: dict[str, list[tuple[str, dict]]] = {}
+    for raw, spec in m["columns"].items():
+        by_name.setdefault(spec["name"], []).append((raw, spec))
+    rows, vals = [], []
+    for table_dir in sorted(p for p in base.iterdir() if p.is_dir()):
+        t = table_dir.name
+        cav = (caveats.get(f"pss.{t}") or {}).get("caveat", "")
+        for name, years in _parquet_presence(table_dir).items():
+            yrs = years or [int(f.stem) for f in table_dir.glob("*.parquet")]
+            label, description, unit = (humanize(name), "", "")
+            if name in PSS_DERIVED:
+                label, description = PSS_DERIVED[name]
+            entries = by_name.get(name, []) if t == "schools" else []
+            if entries:
+                ys: set[int] = set()
+                for raw, spec in entries:
+                    ys |= years_from_str(spec["years"])
+                    if spec.get("label") and name not in PSS_DERIVED:
+                        label = spec["label"]
+                if ys:
+                    yrs = sorted(ys)
+                flag_for = entries[0][1].get("flag_for")
+                if flag_for:
+                    label = f"{flag_for.upper()} imputation flag"
+                    description = "NCES imputation flag for the item of the same name (0 = reported; other codes = imputed or adjusted)."
+                    unit = "category"
+                for raw, _ in entries:
+                    for code, lab in vl.get(raw, {}).items():
+                        vals.append(("pss", t, name, str(code), lab))
+            rows.append(("pss", t, name, label, description, unit, min(yrs), max(yrs), cav if name in ("row_id", "value") else ""))
+    # de-duplicate value labels (several raw columns can share a name)
+    vals = sorted(set(vals))
     return rows, vals

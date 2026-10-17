@@ -50,6 +50,9 @@ class Report:
         print(f"validate: {len(self.errors)} error(s), {len(self.warnings)} warning(s)")
 
 
+PSS_KEYS = {"schools": ["row_id"], "enrollment": ["row_id", "dimension", "category"], "teachers": ["row_id", "category"]}
+
+
 def _ipeds_key(family: str) -> list[str] | None:
     from .ipeds_build import load_family_map
 
@@ -85,7 +88,7 @@ def validate(state: State, update_baseline: bool = False) -> Report:
         if not (DOCS_DATA / ds).exists():
             continue
         for t, files in _tables(ds).items():
-            keys = KEYS.get(t) if ds == "ccd" else _ipeds_key(t)
+            keys = KEYS.get(t) if ds == "ccd" else (PSS_KEYS.get(t) if ds == "pss" else _ipeds_key(t))
             if not keys:
                 r.warn(f"{ds}.{t}: no uniqueness key defined")
                 continue
