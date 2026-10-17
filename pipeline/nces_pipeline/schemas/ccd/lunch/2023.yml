@@ -1,0 +1,57 @@
+source: ccd
+topic: lunch
+year: 2023
+columns:
+  SCHOOL_YEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  STATENAME:
+    name: state_name
+    type: VARCHAR
+  ST:
+    name: state_abbrev
+    type: VARCHAR
+  SCH_NAME:
+    name: school_name
+    type: VARCHAR
+  STATE_AGENCY_NO:
+    name: state_agency_no
+    type: VARCHAR
+  UNION:
+    name: union_code
+    type: VARCHAR
+  ST_LEAID:
+    name: st_leaid
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  ST_SCHID:
+    name: st_schid
+    type: VARCHAR
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+  SCHID:
+    name: schid
+    type: VARCHAR
+  DATA_GROUP:
+    name: data_group
+    type: VARCHAR
+  LUNCH_PROGRAM:
+    name: lunch_program
+    type: VARCHAR
+  STUDENT_COUNT:
+    name: student_count
+    type: INTEGER
+    value: true
+  TOTAL_INDICATOR:
+    name: total_indicator
+    type: VARCHAR
+  DMS_FLAG:
+    name: value_flag
+    type: VARCHAR
+    recode: dms_flag

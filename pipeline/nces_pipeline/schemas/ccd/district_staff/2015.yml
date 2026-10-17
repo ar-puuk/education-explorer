@@ -1,0 +1,134 @@
+source: ccd
+topic: district_staff
+year: 2015
+columns:
+  SURVYEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  STABR:
+    name: state_abbrev
+    type: VARCHAR
+  STATENAME:
+    name: state_name
+    type: VARCHAR
+  SEANAME:
+    name: sea_name
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  ST_LEAID:
+    name: st_leaid
+    type: VARCHAR
+  LEA_NAME:
+    name: lea_name
+    type: VARCHAR
+  STAFF:
+    unpivot: true
+  SCHSUP:
+    unpivot: true
+  SECTCH:
+    unpivot: true
+  ELMGUI:
+    unpivot: true
+  KGTCH:
+    unpivot: true
+  LEASUP:
+    unpivot: true
+  PARA:
+    unpivot: true
+  SECGUI:
+    unpivot: true
+  CORSUP:
+    unpivot: true
+  ELMTCH:
+    unpivot: true
+  LIBSUP:
+    unpivot: true
+  SCHADM:
+    unpivot: true
+  STUSUP:
+    unpivot: true
+  GUI:
+    unpivot: true
+  LEAADM:
+    unpivot: true
+  LIBSPE:
+    unpivot: true
+  OTHSUP:
+    unpivot: true
+  PKTCH:
+    unpivot: true
+  UGTCH:
+    unpivot: true
+  TOTTCH:
+    unpivot: true
+  TOTGUI:
+    unpivot: true
+unpivot:
+- source: STAFF
+  staff_category: Total Staff (STAFF)
+  total_indicator: Category Set A
+- source: SCHSUP
+  staff_category: School Administrative Support Staff
+  total_indicator: Category Set A
+- source: SECTCH
+  staff_category: Secondary Teachers
+  total_indicator: Category Set A
+- source: ELMGUI
+  staff_category: Elementary School Counselors
+  total_indicator: Category Set A
+- source: KGTCH
+  staff_category: Kindergarten Teachers
+  total_indicator: Category Set A
+- source: LEASUP
+  staff_category: LEA Administrative Support Staff
+  total_indicator: Category Set A
+- source: PARA
+  staff_category: Paraprofessionals/Instructional Aides
+  total_indicator: Category Set A
+- source: SECGUI
+  staff_category: Secondary School Counselors
+  total_indicator: Category Set A
+- source: CORSUP
+  staff_category: Instructional Coordinators and Supervisors to the Staff
+  total_indicator: Category Set A
+- source: ELMTCH
+  staff_category: Elementary Teachers
+  total_indicator: Category Set A
+- source: LIBSUP
+  staff_category: Library/Media Support Staff
+  total_indicator: Category Set A
+- source: SCHADM
+  staff_category: School administrators
+  total_indicator: Category Set A
+- source: STUSUP
+  staff_category: Student Support Services Staff
+  total_indicator: Category Set A
+- source: GUI
+  staff_category: Guidance Counselors (GUI)
+  total_indicator: Category Set A
+- source: LEAADM
+  staff_category: LEA Administrators
+  total_indicator: Category Set A
+- source: LIBSPE
+  staff_category: Librarians/media specialists
+  total_indicator: Category Set A
+- source: OTHSUP
+  staff_category: All Other Support Staff
+  total_indicator: Category Set A
+- source: PKTCH
+  staff_category: Pre-kindergarten Teachers
+  total_indicator: Category Set A
+- source: UGTCH
+  staff_category: Ungraded Teachers
+  total_indicator: Category Set A
+- source: TOTTCH
+  staff_category: Teachers
+  total_indicator: Category Set A
+- source: TOTGUI
+  staff_category: Guidance Counselors (TOTGUI)
+  total_indicator: Category Set A

@@ -1,0 +1,64 @@
+source: ccd
+topic: school_characteristics
+year: 2015
+columns:
+  SURVYEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  STABR:
+    name: state_abbrev
+    type: VARCHAR
+  STATENAME:
+    name: state_name
+    type: VARCHAR
+  SEANAME:
+    name: sea_name
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  ST_LEAID:
+    name: st_leaid
+    type: VARCHAR
+  LEA_NAME:
+    name: lea_name
+    type: VARCHAR
+  SCHID:
+    name: schid
+    type: VARCHAR
+  ST_SCHID:
+    name: st_schid
+    type: VARCHAR
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+  SCH_NAME:
+    name: school_name
+    type: VARCHAR
+  TITLEI_TEXT:
+    name: title_i_status
+    type: VARCHAR
+  TITLEI_STATUS:
+    name: title_i_status_code
+    type: VARCHAR
+  TITLEI:
+    name: title_i_flag
+    type: VARCHAR
+  STITLEI:
+    name: school_wide_title_i_flag
+    type: VARCHAR
+  SHARED_TIME:
+    name: shared_time
+    type: VARCHAR
+  MAGNET_TEXT:
+    name: magnet
+    type: VARCHAR
+  NSLPSTATUS_TEXT:
+    name: nslp_status
+    type: VARCHAR
+  NSLPSTATUS_CODE:
+    name: nslp_status_code
+    type: VARCHAR

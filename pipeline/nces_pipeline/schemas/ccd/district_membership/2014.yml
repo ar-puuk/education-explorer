@@ -1,0 +1,1978 @@
+source: ccd
+topic: district_membership
+year: 2014
+columns:
+  SURVYEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  STABR:
+    name: state_abbrev
+    type: VARCHAR
+  STATENAME:
+    name: state_name
+    type: VARCHAR
+  SEANAME:
+    name: sea_name
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  ST_LEAID:
+    name: st_leaid
+    type: VARCHAR
+  LEA_NAME:
+    name: lea_name
+    type: VARCHAR
+  PK:
+    unpivot: true
+  KG:
+    unpivot: true
+  G01:
+    unpivot: true
+  G02:
+    unpivot: true
+  G03:
+    unpivot: true
+  G04:
+    unpivot: true
+  G05:
+    unpivot: true
+  G06:
+    unpivot: true
+  G07:
+    unpivot: true
+  G08:
+    unpivot: true
+  G09:
+    unpivot: true
+  G10:
+    unpivot: true
+  G11:
+    unpivot: true
+  G12:
+    unpivot: true
+  G13:
+    unpivot: true
+  UG:
+    unpivot: true
+  AE:
+    unpivot: true
+  TOTAL:
+    unpivot: true
+  MEMBER:
+    unpivot: true
+  AMPKM:
+    unpivot: true
+  AMPKF:
+    unpivot: true
+  ASPKM:
+    unpivot: true
+  ASPKF:
+    unpivot: true
+  HIPKM:
+    unpivot: true
+  HIPKF:
+    unpivot: true
+  BLPKM:
+    unpivot: true
+  BLPKF:
+    unpivot: true
+  WHPKM:
+    unpivot: true
+  WHPKF:
+    unpivot: true
+  HPPKM:
+    unpivot: true
+  HPPKF:
+    unpivot: true
+  TRPKM:
+    unpivot: true
+  TRPKF:
+    unpivot: true
+  AMKGM:
+    unpivot: true
+  AMKGF:
+    unpivot: true
+  ASKGM:
+    unpivot: true
+  ASKGF:
+    unpivot: true
+  HIKGM:
+    unpivot: true
+  HIKGF:
+    unpivot: true
+  BLKGM:
+    unpivot: true
+  BLKGF:
+    unpivot: true
+  WHKGM:
+    unpivot: true
+  WHKGF:
+    unpivot: true
+  HPKGM:
+    unpivot: true
+  HPKGF:
+    unpivot: true
+  TRKGM:
+    unpivot: true
+  TRKGF:
+    unpivot: true
+  AM01M:
+    unpivot: true
+  AM01F:
+    unpivot: true
+  AS01M:
+    unpivot: true
+  AS01F:
+    unpivot: true
+  HI01M:
+    unpivot: true
+  HI01F:
+    unpivot: true
+  BL01M:
+    unpivot: true
+  BL01F:
+    unpivot: true
+  WH01M:
+    unpivot: true
+  WH01F:
+    unpivot: true
+  HP01M:
+    unpivot: true
+  HP01F:
+    unpivot: true
+  TR01M:
+    unpivot: true
+  TR01F:
+    unpivot: true
+  AM02M:
+    unpivot: true
+  AM02F:
+    unpivot: true
+  AS02M:
+    unpivot: true
+  AS02F:
+    unpivot: true
+  HI02M:
+    unpivot: true
+  HI02F:
+    unpivot: true
+  BL02M:
+    unpivot: true
+  BL02F:
+    unpivot: true
+  WH02M:
+    unpivot: true
+  WH02F:
+    unpivot: true
+  HP02M:
+    unpivot: true
+  HP02F:
+    unpivot: true
+  TR02M:
+    unpivot: true
+  TR02F:
+    unpivot: true
+  AM03M:
+    unpivot: true
+  AM03F:
+    unpivot: true
+  AS03M:
+    unpivot: true
+  AS03F:
+    unpivot: true
+  HI03M:
+    unpivot: true
+  HI03F:
+    unpivot: true
+  BL03M:
+    unpivot: true
+  BL03F:
+    unpivot: true
+  WH03M:
+    unpivot: true
+  WH03F:
+    unpivot: true
+  HP03M:
+    unpivot: true
+  HP03F:
+    unpivot: true
+  TR03M:
+    unpivot: true
+  TR03F:
+    unpivot: true
+  AM04M:
+    unpivot: true
+  AM04F:
+    unpivot: true
+  AS04M:
+    unpivot: true
+  AS04F:
+    unpivot: true
+  HI04M:
+    unpivot: true
+  HI04F:
+    unpivot: true
+  BL04M:
+    unpivot: true
+  BL04F:
+    unpivot: true
+  WH04M:
+    unpivot: true
+  WH04F:
+    unpivot: true
+  HP04M:
+    unpivot: true
+  HP04F:
+    unpivot: true
+  TR04M:
+    unpivot: true
+  TR04F:
+    unpivot: true
+  AM05M:
+    unpivot: true
+  AM05F:
+    unpivot: true
+  AS05M:
+    unpivot: true
+  AS05F:
+    unpivot: true
+  HI05M:
+    unpivot: true
+  HI05F:
+    unpivot: true
+  BL05M:
+    unpivot: true
+  BL05F:
+    unpivot: true
+  WH05M:
+    unpivot: true
+  WH05F:
+    unpivot: true
+  HP05M:
+    unpivot: true
+  HP05F:
+    unpivot: true
+  TR05M:
+    unpivot: true
+  TR05F:
+    unpivot: true
+  AM06M:
+    unpivot: true
+  AM06F:
+    unpivot: true
+  AS06M:
+    unpivot: true
+  AS06F:
+    unpivot: true
+  HI06M:
+    unpivot: true
+  HI06F:
+    unpivot: true
+  BL06M:
+    unpivot: true
+  BL06F:
+    unpivot: true
+  WH06M:
+    unpivot: true
+  WH06F:
+    unpivot: true
+  HP06M:
+    unpivot: true
+  HP06F:
+    unpivot: true
+  TR06M:
+    unpivot: true
+  TR06F:
+    unpivot: true
+  AM07M:
+    unpivot: true
+  AM07F:
+    unpivot: true
+  AS07M:
+    unpivot: true
+  AS07F:
+    unpivot: true
+  HI07M:
+    unpivot: true
+  HI07F:
+    unpivot: true
+  BL07M:
+    unpivot: true
+  BL07F:
+    unpivot: true
+  WH07M:
+    unpivot: true
+  WH07F:
+    unpivot: true
+  HP07M:
+    unpivot: true
+  HP07F:
+    unpivot: true
+  TR07M:
+    unpivot: true
+  TR07F:
+    unpivot: true
+  AM08M:
+    unpivot: true
+  AM08F:
+    unpivot: true
+  AS08M:
+    unpivot: true
+  AS08F:
+    unpivot: true
+  HI08M:
+    unpivot: true
+  HI08F:
+    unpivot: true
+  BL08M:
+    unpivot: true
+  BL08F:
+    unpivot: true
+  WH08M:
+    unpivot: true
+  WH08F:
+    unpivot: true
+  HP08M:
+    unpivot: true
+  HP08F:
+    unpivot: true
+  TR08M:
+    unpivot: true
+  TR08F:
+    unpivot: true
+  AM09M:
+    unpivot: true
+  AM09F:
+    unpivot: true
+  AS09M:
+    unpivot: true
+  AS09F:
+    unpivot: true
+  HI09M:
+    unpivot: true
+  HI09F:
+    unpivot: true
+  BL09M:
+    unpivot: true
+  BL09F:
+    unpivot: true
+  WH09M:
+    unpivot: true
+  WH09F:
+    unpivot: true
+  HP09M:
+    unpivot: true
+  HP09F:
+    unpivot: true
+  TR09M:
+    unpivot: true
+  TR09F:
+    unpivot: true
+  AM10M:
+    unpivot: true
+  AM10F:
+    unpivot: true
+  AS10M:
+    unpivot: true
+  AS10F:
+    unpivot: true
+  HI10M:
+    unpivot: true
+  HI10F:
+    unpivot: true
+  BL10M:
+    unpivot: true
+  BL10F:
+    unpivot: true
+  WH10M:
+    unpivot: true
+  WH10F:
+    unpivot: true
+  HP10M:
+    unpivot: true
+  HP10F:
+    unpivot: true
+  TR10M:
+    unpivot: true
+  TR10F:
+    unpivot: true
+  AM11M:
+    unpivot: true
+  AM11F:
+    unpivot: true
+  AS11M:
+    unpivot: true
+  AS11F:
+    unpivot: true
+  HI11M:
+    unpivot: true
+  HI11F:
+    unpivot: true
+  BL11M:
+    unpivot: true
+  BL11F:
+    unpivot: true
+  WH11M:
+    unpivot: true
+  WH11F:
+    unpivot: true
+  HP11M:
+    unpivot: true
+  HP11F:
+    unpivot: true
+  TR11M:
+    unpivot: true
+  TR11F:
+    unpivot: true
+  AM12M:
+    unpivot: true
+  AM12F:
+    unpivot: true
+  AS12M:
+    unpivot: true
+  AS12F:
+    unpivot: true
+  HI12M:
+    unpivot: true
+  HI12F:
+    unpivot: true
+  BL12M:
+    unpivot: true
+  BL12F:
+    unpivot: true
+  WH12M:
+    unpivot: true
+  WH12F:
+    unpivot: true
+  HP12M:
+    unpivot: true
+  HP12F:
+    unpivot: true
+  TR12M:
+    unpivot: true
+  TR12F:
+    unpivot: true
+  AM13M:
+    unpivot: true
+  AM13F:
+    unpivot: true
+  AS13M:
+    unpivot: true
+  AS13F:
+    unpivot: true
+  HI13M:
+    unpivot: true
+  HI13F:
+    unpivot: true
+  BL13M:
+    unpivot: true
+  BL13F:
+    unpivot: true
+  WH13M:
+    unpivot: true
+  WH13F:
+    unpivot: true
+  HP13M:
+    unpivot: true
+  HP13F:
+    unpivot: true
+  TR13M:
+    unpivot: true
+  TR13F:
+    unpivot: true
+  AMUGM:
+    unpivot: true
+  AMUGF:
+    unpivot: true
+  ASUGM:
+    unpivot: true
+  ASUGF:
+    unpivot: true
+  HIUGM:
+    unpivot: true
+  HIUGF:
+    unpivot: true
+  BLUGM:
+    unpivot: true
+  BLUGF:
+    unpivot: true
+  WHUGM:
+    unpivot: true
+  WHUGF:
+    unpivot: true
+  HPUGM:
+    unpivot: true
+  HPUGF:
+    unpivot: true
+  TRUGM:
+    unpivot: true
+  TRUGF:
+    unpivot: true
+  AMAEM:
+    unpivot: true
+  AMAEF:
+    unpivot: true
+  ASAEM:
+    unpivot: true
+  ASAEF:
+    unpivot: true
+  HIAEM:
+    unpivot: true
+  HIAEF:
+    unpivot: true
+  BLAEM:
+    unpivot: true
+  BLAEF:
+    unpivot: true
+  WHAEM:
+    unpivot: true
+  WHAEF:
+    unpivot: true
+  HPAEM:
+    unpivot: true
+  HPAEF:
+    unpivot: true
+  TRAEM:
+    unpivot: true
+  TRAEF:
+    unpivot: true
+  AM:
+    unpivot: true
+  AMALM:
+    unpivot: true
+  AMALF:
+    unpivot: true
+  AS:
+    unpivot: true
+  ASALM:
+    unpivot: true
+  ASALF:
+    unpivot: true
+  HI:
+    unpivot: true
+  HIALM:
+    unpivot: true
+  HIALF:
+    unpivot: true
+  BL:
+    unpivot: true
+  BLALM:
+    unpivot: true
+  BLALF:
+    unpivot: true
+  WH:
+    unpivot: true
+  WHALM:
+    unpivot: true
+  WHALF:
+    unpivot: true
+  HP:
+    unpivot: true
+  HPALM:
+    unpivot: true
+  HPALF:
+    unpivot: true
+  TR:
+    unpivot: true
+  TRALM:
+    unpivot: true
+  TRALF:
+    unpivot: true
+  IAMEMPUP:
+    ignore: true
+    reason: NCES derived indicator/percentage (not a count); recomputable from counts
+unpivot:
+- source: PK
+  grade: Pre-Kindergarten
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: KG
+  grade: Kindergarten
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G01
+  grade: Grade 1
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G02
+  grade: Grade 2
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G03
+  grade: Grade 3
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G04
+  grade: Grade 4
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G05
+  grade: Grade 5
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G06
+  grade: Grade 6
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G07
+  grade: Grade 7
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G08
+  grade: Grade 8
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G09
+  grade: Grade 9
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G10
+  grade: Grade 10
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G11
+  grade: Grade 11
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G12
+  grade: Grade 12
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: G13
+  grade: Grade 13
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: UG
+  grade: Ungraded
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: AE
+  grade: Adult Education
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Subtotal 4 - By Grade
+- source: TOTAL
+  grade: No Category Codes
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Derived - Education Unit Total minus Adult Education Count
+- source: MEMBER
+  grade: No Category Codes
+  race: No Category Codes
+  sex: No Category Codes
+  total_indicator: Education Unit Total
+- source: AMPKM
+  grade: Pre-Kindergarten
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AMPKF
+  grade: Pre-Kindergarten
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: ASPKM
+  grade: Pre-Kindergarten
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: ASPKF
+  grade: Pre-Kindergarten
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HIPKM
+  grade: Pre-Kindergarten
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HIPKF
+  grade: Pre-Kindergarten
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BLPKM
+  grade: Pre-Kindergarten
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BLPKF
+  grade: Pre-Kindergarten
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WHPKM
+  grade: Pre-Kindergarten
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WHPKF
+  grade: Pre-Kindergarten
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HPPKM
+  grade: Pre-Kindergarten
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HPPKF
+  grade: Pre-Kindergarten
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TRPKM
+  grade: Pre-Kindergarten
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TRPKF
+  grade: Pre-Kindergarten
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AMKGM
+  grade: Kindergarten
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AMKGF
+  grade: Kindergarten
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: ASKGM
+  grade: Kindergarten
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: ASKGF
+  grade: Kindergarten
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HIKGM
+  grade: Kindergarten
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HIKGF
+  grade: Kindergarten
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BLKGM
+  grade: Kindergarten
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BLKGF
+  grade: Kindergarten
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WHKGM
+  grade: Kindergarten
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WHKGF
+  grade: Kindergarten
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HPKGM
+  grade: Kindergarten
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HPKGF
+  grade: Kindergarten
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TRKGM
+  grade: Kindergarten
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TRKGF
+  grade: Kindergarten
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM01M
+  grade: Grade 1
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM01F
+  grade: Grade 1
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS01M
+  grade: Grade 1
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS01F
+  grade: Grade 1
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI01M
+  grade: Grade 1
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI01F
+  grade: Grade 1
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL01M
+  grade: Grade 1
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL01F
+  grade: Grade 1
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH01M
+  grade: Grade 1
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH01F
+  grade: Grade 1
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP01M
+  grade: Grade 1
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP01F
+  grade: Grade 1
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR01M
+  grade: Grade 1
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR01F
+  grade: Grade 1
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM02M
+  grade: Grade 2
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM02F
+  grade: Grade 2
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS02M
+  grade: Grade 2
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS02F
+  grade: Grade 2
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI02M
+  grade: Grade 2
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI02F
+  grade: Grade 2
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL02M
+  grade: Grade 2
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL02F
+  grade: Grade 2
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH02M
+  grade: Grade 2
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH02F
+  grade: Grade 2
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP02M
+  grade: Grade 2
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP02F
+  grade: Grade 2
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR02M
+  grade: Grade 2
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR02F
+  grade: Grade 2
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM03M
+  grade: Grade 3
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM03F
+  grade: Grade 3
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS03M
+  grade: Grade 3
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS03F
+  grade: Grade 3
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI03M
+  grade: Grade 3
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI03F
+  grade: Grade 3
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL03M
+  grade: Grade 3
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL03F
+  grade: Grade 3
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH03M
+  grade: Grade 3
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH03F
+  grade: Grade 3
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP03M
+  grade: Grade 3
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP03F
+  grade: Grade 3
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR03M
+  grade: Grade 3
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR03F
+  grade: Grade 3
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM04M
+  grade: Grade 4
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM04F
+  grade: Grade 4
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS04M
+  grade: Grade 4
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS04F
+  grade: Grade 4
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI04M
+  grade: Grade 4
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI04F
+  grade: Grade 4
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL04M
+  grade: Grade 4
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL04F
+  grade: Grade 4
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH04M
+  grade: Grade 4
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH04F
+  grade: Grade 4
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP04M
+  grade: Grade 4
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP04F
+  grade: Grade 4
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR04M
+  grade: Grade 4
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR04F
+  grade: Grade 4
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM05M
+  grade: Grade 5
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM05F
+  grade: Grade 5
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS05M
+  grade: Grade 5
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS05F
+  grade: Grade 5
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI05M
+  grade: Grade 5
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI05F
+  grade: Grade 5
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL05M
+  grade: Grade 5
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL05F
+  grade: Grade 5
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH05M
+  grade: Grade 5
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH05F
+  grade: Grade 5
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP05M
+  grade: Grade 5
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP05F
+  grade: Grade 5
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR05M
+  grade: Grade 5
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR05F
+  grade: Grade 5
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM06M
+  grade: Grade 6
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM06F
+  grade: Grade 6
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS06M
+  grade: Grade 6
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS06F
+  grade: Grade 6
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI06M
+  grade: Grade 6
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI06F
+  grade: Grade 6
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL06M
+  grade: Grade 6
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL06F
+  grade: Grade 6
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH06M
+  grade: Grade 6
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH06F
+  grade: Grade 6
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP06M
+  grade: Grade 6
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP06F
+  grade: Grade 6
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR06M
+  grade: Grade 6
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR06F
+  grade: Grade 6
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM07M
+  grade: Grade 7
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM07F
+  grade: Grade 7
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS07M
+  grade: Grade 7
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS07F
+  grade: Grade 7
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI07M
+  grade: Grade 7
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI07F
+  grade: Grade 7
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL07M
+  grade: Grade 7
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL07F
+  grade: Grade 7
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH07M
+  grade: Grade 7
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH07F
+  grade: Grade 7
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP07M
+  grade: Grade 7
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP07F
+  grade: Grade 7
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR07M
+  grade: Grade 7
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR07F
+  grade: Grade 7
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM08M
+  grade: Grade 8
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM08F
+  grade: Grade 8
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS08M
+  grade: Grade 8
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS08F
+  grade: Grade 8
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI08M
+  grade: Grade 8
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI08F
+  grade: Grade 8
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL08M
+  grade: Grade 8
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL08F
+  grade: Grade 8
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH08M
+  grade: Grade 8
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH08F
+  grade: Grade 8
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP08M
+  grade: Grade 8
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP08F
+  grade: Grade 8
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR08M
+  grade: Grade 8
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR08F
+  grade: Grade 8
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM09M
+  grade: Grade 9
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM09F
+  grade: Grade 9
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS09M
+  grade: Grade 9
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS09F
+  grade: Grade 9
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI09M
+  grade: Grade 9
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI09F
+  grade: Grade 9
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL09M
+  grade: Grade 9
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL09F
+  grade: Grade 9
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH09M
+  grade: Grade 9
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH09F
+  grade: Grade 9
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP09M
+  grade: Grade 9
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP09F
+  grade: Grade 9
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR09M
+  grade: Grade 9
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR09F
+  grade: Grade 9
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM10M
+  grade: Grade 10
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM10F
+  grade: Grade 10
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS10M
+  grade: Grade 10
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS10F
+  grade: Grade 10
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI10M
+  grade: Grade 10
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI10F
+  grade: Grade 10
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL10M
+  grade: Grade 10
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL10F
+  grade: Grade 10
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH10M
+  grade: Grade 10
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH10F
+  grade: Grade 10
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP10M
+  grade: Grade 10
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP10F
+  grade: Grade 10
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR10M
+  grade: Grade 10
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR10F
+  grade: Grade 10
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM11M
+  grade: Grade 11
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM11F
+  grade: Grade 11
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS11M
+  grade: Grade 11
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS11F
+  grade: Grade 11
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI11M
+  grade: Grade 11
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI11F
+  grade: Grade 11
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL11M
+  grade: Grade 11
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL11F
+  grade: Grade 11
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH11M
+  grade: Grade 11
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH11F
+  grade: Grade 11
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP11M
+  grade: Grade 11
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP11F
+  grade: Grade 11
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR11M
+  grade: Grade 11
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR11F
+  grade: Grade 11
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM12M
+  grade: Grade 12
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM12F
+  grade: Grade 12
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS12M
+  grade: Grade 12
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS12F
+  grade: Grade 12
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI12M
+  grade: Grade 12
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI12F
+  grade: Grade 12
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL12M
+  grade: Grade 12
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL12F
+  grade: Grade 12
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH12M
+  grade: Grade 12
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH12F
+  grade: Grade 12
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP12M
+  grade: Grade 12
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP12F
+  grade: Grade 12
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR12M
+  grade: Grade 12
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR12F
+  grade: Grade 12
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM13M
+  grade: Grade 13
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM13F
+  grade: Grade 13
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS13M
+  grade: Grade 13
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AS13F
+  grade: Grade 13
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI13M
+  grade: Grade 13
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HI13F
+  grade: Grade 13
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL13M
+  grade: Grade 13
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BL13F
+  grade: Grade 13
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH13M
+  grade: Grade 13
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WH13F
+  grade: Grade 13
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP13M
+  grade: Grade 13
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HP13F
+  grade: Grade 13
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR13M
+  grade: Grade 13
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TR13F
+  grade: Grade 13
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AMUGM
+  grade: Ungraded
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AMUGF
+  grade: Ungraded
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: ASUGM
+  grade: Ungraded
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: ASUGF
+  grade: Ungraded
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HIUGM
+  grade: Ungraded
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HIUGF
+  grade: Ungraded
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BLUGM
+  grade: Ungraded
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BLUGF
+  grade: Ungraded
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WHUGM
+  grade: Ungraded
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WHUGF
+  grade: Ungraded
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HPUGM
+  grade: Ungraded
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HPUGF
+  grade: Ungraded
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TRUGM
+  grade: Ungraded
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TRUGF
+  grade: Ungraded
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AMAEM
+  grade: Adult Education
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AMAEF
+  grade: Adult Education
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: ASAEM
+  grade: Adult Education
+  race: Asian
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: ASAEF
+  grade: Adult Education
+  race: Asian
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HIAEM
+  grade: Adult Education
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HIAEF
+  grade: Adult Education
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BLAEM
+  grade: Adult Education
+  race: Black or African American
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: BLAEF
+  grade: Adult Education
+  race: Black or African American
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WHAEM
+  grade: Adult Education
+  race: White
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: WHAEF
+  grade: Adult Education
+  race: White
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HPAEM
+  grade: Adult Education
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: HPAEF
+  grade: Adult Education
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TRAEM
+  grade: Adult Education
+  race: Two or more races
+  sex: Male
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: TRAEF
+  grade: Adult Education
+  race: Two or more races
+  sex: Female
+  total_indicator: Category Set A - By Race/Ethnicity; Sex; Grade
+- source: AM
+  grade: No Category Codes
+  race: American Indian or Alaska Native
+  sex: No Category Codes
+  total_indicator: Subtotal - By Race/Ethnicity (all grades)
+- source: AMALM
+  grade: No Category Codes
+  race: American Indian or Alaska Native
+  sex: Male
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: AMALF
+  grade: No Category Codes
+  race: American Indian or Alaska Native
+  sex: Female
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: AS
+  grade: No Category Codes
+  race: Asian
+  sex: No Category Codes
+  total_indicator: Subtotal - By Race/Ethnicity (all grades)
+- source: ASALM
+  grade: No Category Codes
+  race: Asian
+  sex: Male
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: ASALF
+  grade: No Category Codes
+  race: Asian
+  sex: Female
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: HI
+  grade: No Category Codes
+  race: Hispanic/Latino
+  sex: No Category Codes
+  total_indicator: Subtotal - By Race/Ethnicity (all grades)
+- source: HIALM
+  grade: No Category Codes
+  race: Hispanic/Latino
+  sex: Male
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: HIALF
+  grade: No Category Codes
+  race: Hispanic/Latino
+  sex: Female
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: BL
+  grade: No Category Codes
+  race: Black or African American
+  sex: No Category Codes
+  total_indicator: Subtotal - By Race/Ethnicity (all grades)
+- source: BLALM
+  grade: No Category Codes
+  race: Black or African American
+  sex: Male
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: BLALF
+  grade: No Category Codes
+  race: Black or African American
+  sex: Female
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: WH
+  grade: No Category Codes
+  race: White
+  sex: No Category Codes
+  total_indicator: Subtotal - By Race/Ethnicity (all grades)
+- source: WHALM
+  grade: No Category Codes
+  race: White
+  sex: Male
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: WHALF
+  grade: No Category Codes
+  race: White
+  sex: Female
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: HP
+  grade: No Category Codes
+  race: Native Hawaiian or Other Pacific Islander
+  sex: No Category Codes
+  total_indicator: Subtotal - By Race/Ethnicity (all grades)
+- source: HPALM
+  grade: No Category Codes
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Male
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: HPALF
+  grade: No Category Codes
+  race: Native Hawaiian or Other Pacific Islander
+  sex: Female
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: TR
+  grade: No Category Codes
+  race: Two or more races
+  sex: No Category Codes
+  total_indicator: Subtotal - By Race/Ethnicity (all grades)
+- source: TRALM
+  grade: No Category Codes
+  race: Two or more races
+  sex: Male
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count
+- source: TRALF
+  grade: No Category Codes
+  race: Two or more races
+  sex: Female
+  total_indicator: Derived - Subtotal by Race/Ethnicity and Sex minus Adult Education Count

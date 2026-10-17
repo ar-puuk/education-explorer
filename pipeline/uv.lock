@@ -119,6 +119,7 @@ dependencies = [
     { name = "httpx" },
     { name = "pyarrow" },
     { name = "pyyaml" },
+    { name = "zipfile-deflate64" },
 ]
 
 [package.dev-dependencies]
@@ -133,6 +134,7 @@ requires-dist = [
     { name = "httpx" },
     { name = "pyarrow" },
     { name = "pyyaml" },
+    { name = "zipfile-deflate64", specifier = ">=0.2.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -296,3 +298,9 @@ sdist = { url = "https://files.pythonhosted.org/packages/f6/cc/6253133b5bb138fc3
 wheels = [
     { url = "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl", hash = "sha256:481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8", size = 45571, upload-time = "2026-07-02T08:40:04.659Z" },
 ]
+
+[[package]]
+name = "zipfile-deflate64"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/03/1b/f397f821b48156ee94c5ca7ad82dc5cdb73cbcbc4377b9c1b21556f3ce8c/zipfile-deflate64-0.2.0.tar.gz", hash = "sha256:875a3299de102edf1c17f8cafcc528b1ca80b62dc4814b9cb56867ec59fbfd18", size = 62896, upload-time = "2022-01-05T09:24:39.575Z" }

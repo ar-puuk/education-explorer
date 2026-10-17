@@ -1,0 +1,45 @@
+source: ccd
+topic: staff
+year: 2015
+columns:
+  SURVYEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  STABR:
+    name: state_abbrev
+    type: VARCHAR
+  STATENAME:
+    name: state_name
+    type: VARCHAR
+  SEANAME:
+    name: sea_name
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  ST_LEAID:
+    name: st_leaid
+    type: VARCHAR
+  LEA_NAME:
+    name: lea_name
+    type: VARCHAR
+  SCHID:
+    name: schid
+    type: VARCHAR
+  ST_SCHID:
+    name: st_schid
+    type: VARCHAR
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+  SCH_NAME:
+    name: school_name
+    type: VARCHAR
+  FTE:
+    unpivot: true
+unpivot:
+- source: FTE
+  total_indicator: Education Unit Total

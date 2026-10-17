@@ -1,0 +1,15 @@
+# Source locations. URLs that cannot be guessed are discovered at fetch time
+# (CCD via the NCES datatables JSON API; IPEDS by probing predictable names).
+ccd:
+  catalog_api: https://nces.ed.gov/ccd/datatables/api
+edge:
+  base: https://nces.ed.gov/programs/edge/data
+pss:
+  base: https://nces.ed.gov/surveys/pss/zip
+ipeds:
+  base: https://nces.ed.gov/ipeds/complete-data-files
+  legacy_base: https://nces.ed.gov/ipeds/datacenter/data
+census_geocoder:
+  url: https://geocoding.geo.census.gov/geocoder/locations/addressbatch
+  benchmark: Public_AR_Current
+  batch_size: 5000

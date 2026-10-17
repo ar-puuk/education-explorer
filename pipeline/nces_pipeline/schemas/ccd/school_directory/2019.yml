@@ -1,0 +1,199 @@
+source: ccd
+topic: school_directory
+year: 2019
+columns:
+  SCHOOL_YEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  STATENAME:
+    name: state_name
+    type: VARCHAR
+  ST:
+    name: state_abbrev
+    type: VARCHAR
+  SCH_NAME:
+    name: school_name
+    type: VARCHAR
+  LEA_NAME:
+    name: lea_name
+    type: VARCHAR
+  STATE_AGENCY_NO:
+    name: state_agency_no
+    type: VARCHAR
+  UNION:
+    name: union_code
+    type: VARCHAR
+  ST_LEAID:
+    name: st_leaid
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  ST_SCHID:
+    name: st_schid
+    type: VARCHAR
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+  SCHID:
+    name: schid
+    type: VARCHAR
+  MSTREET1:
+    name: mail_street1
+    type: VARCHAR
+  MSTREET2:
+    name: mail_street2
+    type: VARCHAR
+  MSTREET3:
+    name: mail_street3
+    type: VARCHAR
+  MCITY:
+    name: mail_city
+    type: VARCHAR
+  MSTATE:
+    name: mail_state
+    type: VARCHAR
+  MZIP:
+    name: mail_zip
+    type: VARCHAR
+  MZIP4:
+    name: mail_zip4
+    type: VARCHAR
+  LSTREET1:
+    name: street1
+    type: VARCHAR
+  LSTREET2:
+    name: street2
+    type: VARCHAR
+  LSTREET3:
+    name: street3
+    type: VARCHAR
+  LCITY:
+    name: city
+    type: VARCHAR
+  LSTATE:
+    name: state
+    type: VARCHAR
+  LZIP:
+    name: zip
+    type: VARCHAR
+  LZIP4:
+    name: zip4
+    type: VARCHAR
+  PHONE:
+    name: phone
+    type: VARCHAR
+  WEBSITE:
+    name: website
+    type: VARCHAR
+  SY_STATUS:
+    name: status_code
+    type: VARCHAR
+  SY_STATUS_TEXT:
+    name: status
+    type: VARCHAR
+  UPDATED_STATUS:
+    name: updated_status_code
+    type: VARCHAR
+  UPDATED_STATUS_TEXT:
+    name: updated_status
+    type: VARCHAR
+  EFFECTIVE_DATE:
+    name: effective_date
+    type: VARCHAR
+  SCH_TYPE_TEXT:
+    name: school_type
+    type: VARCHAR
+  SCH_TYPE:
+    name: school_type_code
+    type: VARCHAR
+  RECON_STATUS:
+    name: recon_status
+    type: VARCHAR
+  OUT_OF_STATE_FLAG:
+    name: out_of_state_flag
+    type: VARCHAR
+  CHARTER_TEXT:
+    name: charter
+    type: VARCHAR
+  CHARTAUTH1:
+    name: charter_auth1_id
+    type: VARCHAR
+  CHARTAUTHN1:
+    name: charter_auth1_name
+    type: VARCHAR
+  CHARTAUTH2:
+    name: charter_auth2_id
+    type: VARCHAR
+  CHARTAUTHN2:
+    name: charter_auth2_name
+    type: VARCHAR
+  NOGRADES:
+    name: no_grades
+    type: VARCHAR
+  G_PK_OFFERED:
+    name: offers_pk
+    type: VARCHAR
+  G_KG_OFFERED:
+    name: offers_kg
+    type: VARCHAR
+  G_1_OFFERED:
+    name: offers_1
+    type: VARCHAR
+  G_2_OFFERED:
+    name: offers_2
+    type: VARCHAR
+  G_3_OFFERED:
+    name: offers_3
+    type: VARCHAR
+  G_4_OFFERED:
+    name: offers_4
+    type: VARCHAR
+  G_5_OFFERED:
+    name: offers_5
+    type: VARCHAR
+  G_6_OFFERED:
+    name: offers_6
+    type: VARCHAR
+  G_7_OFFERED:
+    name: offers_7
+    type: VARCHAR
+  G_8_OFFERED:
+    name: offers_8
+    type: VARCHAR
+  G_9_OFFERED:
+    name: offers_9
+    type: VARCHAR
+  G_10_OFFERED:
+    name: offers_10
+    type: VARCHAR
+  G_11_OFFERED:
+    name: offers_11
+    type: VARCHAR
+  G_12_OFFERED:
+    name: offers_12
+    type: VARCHAR
+  G_13_OFFERED:
+    name: offers_13
+    type: VARCHAR
+  G_UG_OFFERED:
+    name: offers_ug
+    type: VARCHAR
+  G_AE_OFFERED:
+    name: offers_ae
+    type: VARCHAR
+  GSLO:
+    name: grade_low
+    type: VARCHAR
+  GSHI:
+    name: grade_high
+    type: VARCHAR
+  LEVEL:
+    name: level
+    type: VARCHAR
+  IGOFFERED:
+    name: ig_offered
+    type: VARCHAR

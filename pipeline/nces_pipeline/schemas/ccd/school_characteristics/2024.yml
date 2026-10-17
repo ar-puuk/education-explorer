@@ -1,0 +1,55 @@
+source: ccd
+topic: school_characteristics
+year: 2024
+columns:
+  SCHOOL_YEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  STATENAME:
+    name: state_name
+    type: VARCHAR
+  ST:
+    name: state_abbrev
+    type: VARCHAR
+  SCH_NAME:
+    name: school_name
+    type: VARCHAR
+  STATE_AGENCY_NO:
+    name: state_agency_no
+    type: VARCHAR
+  UNION:
+    name: union_code
+    type: VARCHAR
+  ST_LEAID:
+    name: st_leaid
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  ST_SCHID:
+    name: st_schid
+    type: VARCHAR
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+  SCHID:
+    name: schid
+    type: VARCHAR
+  SHARED_TIME:
+    name: shared_time
+    type: VARCHAR
+  NSLP_STATUS:
+    name: nslp_status_code
+    type: VARCHAR
+  NSLP_STATUS_TEXT:
+    name: nslp_status
+    type: VARCHAR
+  VIRTUAL:
+    name: virtual_code
+    type: VARCHAR
+  VIRTUAL_TEXT:
+    name: virtual
+    type: VARCHAR

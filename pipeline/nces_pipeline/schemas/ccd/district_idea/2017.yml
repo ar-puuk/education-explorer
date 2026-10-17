@@ -1,0 +1,39 @@
+source: ccd
+topic: district_idea
+year: 2017
+columns:
+  SCHOOL_YEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  STATENAME:
+    name: state_name
+    type: VARCHAR
+  ST:
+    name: state_abbrev
+    type: VARCHAR
+  LEA_NAME:
+    name: lea_name
+    type: VARCHAR
+  STATE_AGENCY_NO:
+    name: state_agency_no
+    type: VARCHAR
+  UNION:
+    name: union_code
+    type: VARCHAR
+  ST_LEAID:
+    name: st_leaid
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  IDEA_COUNT:
+    name: idea_count
+    type: INTEGER
+    value: true
+  DMS_FLAG:
+    name: value_flag
+    type: VARCHAR
+    recode: dms_flag

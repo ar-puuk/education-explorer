@@ -1,0 +1,62 @@
+source: ccd
+topic: lunch
+year: 2014
+columns:
+  SURVYEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  STABR:
+    name: state_abbrev
+    type: VARCHAR
+  STATENAME:
+    name: state_name
+    type: VARCHAR
+  SEANAME:
+    name: sea_name
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  ST_LEAID:
+    name: st_leaid
+    type: VARCHAR
+  LEA_NAME:
+    name: lea_name
+    type: VARCHAR
+  SCHID:
+    name: schid
+    type: VARCHAR
+  ST_SCHID:
+    name: st_schid
+    type: VARCHAR
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+  SCH_NAME:
+    name: school_name
+    type: VARCHAR
+  FRELCH:
+    unpivot: true
+  REDLCH:
+    unpivot: true
+  TOTFRL:
+    unpivot: true
+  ISFLE:
+    ignore: true
+    reason: NCES imputation indicator for the lunch counts
+unpivot:
+- source: FRELCH
+  data_group: Free and Reduced-price Lunch Table
+  lunch_program: Free lunch qualified
+  total_indicator: Category Set A
+- source: REDLCH
+  data_group: Free and Reduced-price Lunch Table
+  lunch_program: Reduced-price lunch qualified
+  total_indicator: Category Set A
+- source: TOTFRL
+  data_group: Free and Reduced-price Lunch Table
+  lunch_program: No Category Codes
+  total_indicator: Education Unit Total
