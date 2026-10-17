@@ -2,7 +2,9 @@
   import { app, statusAt } from '../lib/app.svelte'
   import {
     loadDictionary,
+    loadStateReference,
     membershipHistory,
+    schoolProfile,
     schoolRows,
     schoolCharacteristics,
     schoolDirectoryHistory,
@@ -11,7 +13,7 @@
   } from '../lib/data'
   import type { Row } from '../lib/db'
   import { fmtInt, GRADE_ORDER, gradeLabel, localeLabel, schoolYearLabel } from '../lib/labels'
-  import type { DictEntry, PublicSchool, TrendPoint } from '../lib/types'
+  import type { DictEntry, ProfileRow, PublicSchool, StateReference, TrendPoint } from '../lib/types'
   import CompareButton from './CompareButton.svelte'
   import Inspector from './Inspector.svelte'
   import Kpis from './Kpis.svelte'
@@ -31,10 +33,31 @@
   let showAll = $state(false)
   let lunch = $state<Row[]>([])
   let staffRows = $state<Row[]>([])
+  let profile = $state<ProfileRow[]>([])
+  let reference = $state<StateReference | null>(null)
 
   const school = $derived<PublicSchool | undefined>(
     app.selected?.dataset === 'public' ? app.points?.schools.find((s) => s.id === app.selected!.id) : undefined,
   )
+
+  // the precomputed profile is one small read, so the headline figures and trends appear before the history tables load
+  $effect(() => {
+    const s = school
+    if (!s) return
+    let cancelled = false
+    profile = []
+    Promise.all([schoolProfile(s.id), loadStateReference()])
+      .then(([p, ref]) => {
+        if (!cancelled) {
+          profile = p
+          reference = ref
+        }
+      })
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+  })
 
   $effect(() => {
     const s = school
@@ -173,26 +196,27 @@
     { id: 'grade', label: 'Grade' },
   ]
 
-  // ------------------------------------------------------------------ headline figures
-  const at = (rows: { year: number; value: number | null }[], y: number) => rows.find((r) => r.year === y)?.value ?? null
-  const totalSeries = $derived(
-    mem.filter((r) => r.total_indicator === 'Education Unit Total').map((r) => ({ year: r.year, value: r.student_count })),
-  )
-  const studentsNow = $derived(at(totalSeries, app.year))
-  const teachersNow = $derived(at(staffSeries, app.year))
-  const ratioNow = $derived(studentsNow != null && teachersNow ? (studentsNow / teachersNow).toFixed(1) : null)
-  const lunchShare = $derived.by(() => {
-    const free = lunchSeries.find((d) => d.year === app.year && d.key === 'Free lunch qualified')?.value
-    const red = lunchSeries.find((d) => d.year === app.year && d.key === 'Reduced-price lunch qualified')?.value
-    if (free == null || red == null || !studentsNow) return null
-    return `${Math.round(((free + red) / studentsNow) * 100)}%`
-  })
-  const ratioSeries = $derived(
-    totalSeries.flatMap((t): TrendPoint[] => {
-      const te = at(staffSeries, t.year)
-      return t.value != null && te ? [{ year: t.year, key: 'Students per teacher (FTE)', value: Math.round((t.value / te) * 10) / 10 }] : []
-    }),
-  )
+  // ------------------------------------------------------------------ headline figures (derived/school_profile)
+  const prof = (y: number) => profile.find((r) => r.year === y)
+  const studentsNow = $derived(prof(app.year)?.enrollment ?? null)
+  const teachersNow = $derived(prof(app.year)?.teachers_fte ?? null)
+  const ratioNow = $derived(prof(app.year)?.students_per_teacher != null ? prof(app.year)!.students_per_teacher!.toFixed(1) : null)
+  const lunchShare = $derived(prof(app.year)?.frl_share != null ? `${Math.round(prof(app.year)!.frl_share! * 100)}%` : null)
+  const seriesOf = (col: 'students_per_teacher' | 'teachers_fte' | 'frl_share', key: string, scale = 1): TrendPoint[] =>
+    profile.filter((r) => r[col] != null).map((r) => ({ year: r.year, key, value: Math.round((r[col] as number) * scale * 100) / 100 }))
+  const ratioSeries = $derived(seriesOf('students_per_teacher', 'Students per teacher (FTE)'))
+  const teacherSeries = $derived(seriesOf('teachers_fte', 'Teachers (FTE)'))
+  const shareSeries = $derived(seriesOf('frl_share', 'Free or reduced-price lunch eligible (% of enrollment)', 100))
+
+  /** Quartile band and median of a metric across operating public schools, for a dashed reference line. */
+  const band = (metric: string, scale = 1) => {
+    const ys = reference?.metrics[metric]?.years ?? {}
+    return Object.entries(ys).map(([y, v]) => ({ year: Number(y), value: v.median * scale, lo: v.p25 * scale, hi: v.p75 * scale }))
+  }
+  const refNote = (metric: string) => {
+    const v = reference?.metrics[metric]?.years[String(app.year)]
+    return v ? `Dashed line: median of operating public schools in the state (${fmtInt(v.n)} schools in ${schoolYearLabel(app.year)}); shaded band: the middle half. For context only.` : ''
+  }
   const kpis = $derived([
     { label: 'Students', value: studentsNow != null ? fmtInt(studentsNow) : null, sub: schoolYearLabel(app.year) },
     { label: 'Teachers (FTE)', value: teachersNow != null ? String(Math.round(teachersNow * 10) / 10) : null },
@@ -250,8 +274,10 @@
               currentYear={app.year}
               mode={tab === 'grade' ? 'heat' : 'line'}
               height={240}
+              reference={tab === 'total' ? band('enrollment') : undefined}
               alt={`Enrollment by year for ${school.name}, ${tabs.find((t) => t.id === tab)?.label.toLowerCase()}`}
             />
+            {#if tab === 'total' && refNote('enrollment')}<p class="note">{refNote('enrollment')}</p>{/if}
             {#if flagged}<p class="note">Some values are missing, suppressed or not reported by the state and are left blank in the chart (never plotted as zero).</p>{/if}
             {#if tab !== 'total'}<p class="note">Detail rows are summed from the race × sex × grade categories reported to NCES.</p>{/if}
           {:else if !loading}
@@ -263,25 +289,33 @@
         <section class="card">
           <h3>Students per teacher <small>ratio</small></h3>
           {#if ratioSeries.length}
-            <TrendChart data={ratioSeries} yLabel="Students per FTE teacher" currentYear={app.year} alt={`Students per teacher at ${school.name}`} height={190} />
-            <p class="note">Enrollment divided by teachers (FTE). A descriptive ratio, not a quality measure.</p>
+            <TrendChart data={ratioSeries} yLabel="Students per FTE teacher" currentYear={app.year} reference={band('students_per_teacher')} alt={`Students per teacher at ${school.name}`} height={190} />
+            <p class="note">Enrollment divided by teachers (FTE). A descriptive ratio, not a quality measure. {refNote('students_per_teacher')}</p>
           {:else}
-            <p class="muted">No staffing data for this school.</p>
+            <p class="muted">{profile.length ? 'No staffing data for this school.' : 'Loading…'}</p>
           {/if}
         </section>
         <section class="card">
           <h3>Teachers <small>FTE</small></h3>
-          {#if staffSeries.some((d) => d.value != null)}
-            <TrendChart data={staffSeries} yLabel="FTE" currentYear={app.year} alt={`Teachers (FTE) at ${school.name}`} height={190} />
+          {#if teacherSeries.length}
+            <TrendChart data={teacherSeries} yLabel="FTE" currentYear={app.year} alt={`Teachers (FTE) at ${school.name}`} height={190} />
           {:else}
-            <p class="muted">No teacher counts for this school.</p>
+            <p class="muted">{profile.length ? 'No teacher counts for this school.' : 'Loading…'}</p>
           {/if}
         </section>
-        <section class="card span">
-          <h3>Free and reduced-price lunch eligibility <small>students</small></h3>
+        <section class="card">
+          <h3>Free or reduced-price lunch <small>% of enrollment</small></h3>
+          {#if shareSeries.length}
+            <TrendChart data={shareSeries} yLabel="% of enrollment" currentYear={app.year} reference={band('frl_share', 100)} alt={`Lunch program eligibility share at ${school.name}`} height={190} />
+            <p class="note">{lunchCaveat} {refNote('frl_share')}</p>
+          {:else}
+            <p class="muted">{profile.length ? 'No lunch program data for this school.' : 'Loading…'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Lunch eligibility counts <small>students</small></h3>
           {#if lunchSeries.some((d) => d.value != null)}
-            <TrendChart data={lunchSeries} yLabel="Students" currentYear={app.year} alt={`Lunch program eligibility counts for ${school.name}`} height={210} />
-            {#if lunchCaveat}<p class="note">{lunchCaveat}</p>{/if}
+            <TrendChart data={lunchSeries} yLabel="Students" currentYear={app.year} alt={`Lunch program eligibility counts for ${school.name}`} height={190} />
           {:else}
             <p class="muted">No lunch program data for this school.</p>
           {/if}

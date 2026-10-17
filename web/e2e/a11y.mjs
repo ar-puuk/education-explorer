@@ -22,7 +22,7 @@ for (const scheme of ['light', 'dark']) {
   }
   await scan('home')
   await page.locator('#school-search').fill('high')
-  await page.locator('#search-results li button').first().click()
+  await page.locator('#search-results li button', { hasText: 'Public school' }).first().click()
   await page.waitForSelector('aside[aria-label="School details"] .card svg', { timeout: 60000 })
   await page.waitForTimeout(500)
   await scan('school panel')

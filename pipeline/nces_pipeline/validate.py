@@ -209,6 +209,45 @@ def validate(state: State, update_baseline: bool = False) -> Report:
         if hit:
             r.err(f"state name appears in {hit} dictionary row(s)")
 
+    # 9. derived outputs (metrics, profiles, summaries) agree with the tables they come from
+    sm = DOCS_DATA / "derived" / "school_metrics"
+    if sm.exists():
+        for f in sorted(sm.glob("*.parquet")):
+            dup = con.execute(f"SELECT count(*) FROM (SELECT ncessch FROM read_parquet('{f.as_posix()}') GROUP BY 1 HAVING count(*) > 1)").fetchone()[0]
+            if dup:
+                r.err(f"derived.school_metrics/{f.stem}: {dup} duplicate ncessch")
+            bad = con.execute(
+                f"SELECT count(*) FROM read_parquet('{f.as_posix()}') WHERE students_per_teacher IS NOT NULL AND "
+                "(students_per_teacher <= 0 OR students_per_teacher > 500)").fetchone()[0]
+            if bad:
+                r.note(f"derived.school_metrics/{f.stem}: {bad} students_per_teacher value(s) outside 0-500")
+            over = con.execute(f"SELECT count(*) FROM read_parquet('{f.as_posix()}') WHERE frl_share > 1.5").fetchone()[0]
+            if over:
+                r.note(f"derived.school_metrics/{f.stem}: {over} frl_share value(s) above 150% of enrollment (left out of the reference band)")
+        prof = DOCS_DATA / "derived" / "school_profile.parquet"
+        if not prof.exists():
+            r.err("derived/school_profile.parquet missing")
+        else:
+            n_prof = con.execute(f"SELECT count(*) FROM read_parquet('{prof.as_posix()}')").fetchone()[0]
+            n_dir = con.execute(f"SELECT count(DISTINCT ncessch) FROM read_parquet('{(DOCS_DATA / 'ccd' / 'school_directory').as_posix()}/*.parquet', union_by_name=true)").fetchone()[0]
+            if n_prof != n_dir:
+                r.err(f"derived.school_profile has {n_prof} schools but the directory has {n_dir}")
+        for name in ("year_summary.json", "state_reference.json"):
+            if not (DOCS_DATA / "meta" / name).exists():
+                r.err(f"meta/{name} missing")
+        pp = DOCS_DATA / "geo" / "points_public.json"
+        ys = DOCS_DATA / "meta" / "year_summary.json"
+        if pp.exists() and ys.exists():
+            pts = json.loads(pp.read_text(encoding="utf-8"))
+            summ = json.loads(ys.read_text(encoding="utf-8"))
+            for y in pts["years"]:
+                want = sum(1 for s in pts["schools"] if y in s["years"])
+                got = summ["public"].get(str(y), {}).get("mapped")
+                if got != want:
+                    r.err(f"year_summary public {y}: {got} but points_public has {want}")
+        if not (DOCS_DATA / "geo" / "districts_index.json").exists():
+            r.err("geo/districts_index.json missing")
+
     # 8. row counts vs the previous build
     if ROWCOUNTS.exists():
         prev = json.loads(ROWCOUNTS.read_text(encoding="utf-8"))

@@ -123,3 +123,30 @@ export interface PrivatePointsFile {
   labels: { level: { [c: string]: string }; typology: { [c: string]: string }; relig: { [c: string]: string } }
   schools: PrivateSchool[]
 }
+
+/** meta/year_summary.json: places per year per dataset (what the map can show). */
+export interface YearSummary {
+  public: Record<string, { mapped: number; operating: number; directory: number | null }>
+  private: Record<string, { mapped: number }>
+  college: Record<string, { mapped: number; active: number }>
+  private_survey_years: number[]
+}
+
+/** meta/state_reference.json: quartiles of a metric across operating public schools, per year. */
+export interface StateReference {
+  scope: string
+  min_n: number
+  metrics: Record<string, { label: string; years: Record<string, { n: number; p25: number; median: number; p75: number }> }>
+}
+
+/** [leaid, name, boundary years] from geo/districts_index.json */
+export type DistrictIndexItem = [string, string, number[]]
+
+/** One school-year from derived/school_profile.parquet */
+export interface ProfileRow {
+  year: number
+  enrollment: number | null
+  teachers_fte: number | null
+  students_per_teacher: number | null
+  frl_share: number | null
+}

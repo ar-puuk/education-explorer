@@ -15,7 +15,7 @@ const fail = (m) => {
 async function pickFirst(page, term) {
   await page.keyboard.press('Control+k')
   await page.keyboard.type(term)
-  await page.locator('#search-results li button').first().click()
+  await page.locator('#search-results li button', { hasText: 'Public school' }).first().click()
   await page.waitForSelector('aside[aria-label="School details"] .card', { timeout: 60000 }).catch(() => {})
 }
 

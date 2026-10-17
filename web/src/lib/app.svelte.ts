@@ -2,7 +2,7 @@ import { defaultBasemap, type BasemapId } from './basemaps'
 import type { Dataset, Selectable } from './icons'
 import { theme } from './theme.svelte'
 import { parseUrl, serializeUrl, type UrlState } from './urlstate'
-import type { CollegePointsFile, PointsFile, PrivatePointsFile, PublicSchool, StateMeta, YearsMeta } from './types'
+import type { CollegePointsFile, DistrictIndexItem, PointsFile, PrivatePointsFile, PublicSchool, StateMeta, YearsMeta, YearSummary } from './types'
 
 export type Sheet = 'peek' | 'half' | 'full'
 export type Drawer = 'layers' | 'filters' | 'basemap' | 'about'
@@ -15,6 +15,8 @@ export const app = $state({
   points: null as PointsFile | null,
   college: null as CollegePointsFile | null,
   private: null as PrivatePointsFile | null,
+  summary: null as YearSummary | null,
+  districtIndex: [] as DistrictIndexItem[],
   year: 0,
   selected: null as { dataset: Selectable; id: string } | null,
   showDistricts: false,

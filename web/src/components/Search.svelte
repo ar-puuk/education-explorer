@@ -20,12 +20,10 @@
         if (out.length >= 8) break
       }
     }
-    for (const f of app.districts?.features ?? []) {
-      const nm = String(f.properties?.name ?? '')
-      if (nm.toLowerCase().includes(term) || String(f.properties?.leaid).startsWith(term)) {
-        out.unshift({ dataset: 'district', id: String(f.properties?.leaid), name: nm, sub: `School district · ${f.properties?.leaid}`, lon: 0, lat: 0 })
-      }
-    }
+    // districts with a drawn boundary first, then alphabetical
+    const dm = app.districtIndex.filter(([leaid, name]) => name.toLowerCase().includes(term) || leaid.startsWith(term))
+    dm.sort((a, b) => Number(b[2].length > 0) - Number(a[2].length > 0) || a[1].localeCompare(b[1]))
+    out.unshift(...dm.slice(0, 8).map(([leaid, name]): Hit => ({ dataset: 'district', id: leaid, name, sub: `School district · ${leaid}`, lon: 0, lat: 0 })))
     let np = 0
     for (const c of app.private?.schools ?? []) {
       if (c.name.toLowerCase().includes(term) || c.id.toLowerCase().startsWith(term)) {

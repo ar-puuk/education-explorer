@@ -163,7 +163,7 @@ const note25 = await insp('Private school details').locator('.yearline').innerTe
 await page.screenshot({ path: `${out}/07-private.png` })
 
 // district: boundaries, search, panel with trends and rollup
-await page.locator('#school-search').fill('school district')
+await page.locator('#school-search').fill('district')
 await page.locator('#search-results li button', { hasText: 'School district' }).first().click()
 await page.waitForSelector('aside[aria-label="District details"] h2', { timeout: 20000 })
 await page.waitForSelector('aside[aria-label="District details"] svg', { timeout: 60000 })

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import { allYears, app, applyUrl, readUrl, urlFor } from './lib/app.svelte'
-  import { loadCollegePoints, loadPrivatePoints, loadPublicPoints, loadState, loadYears, setAvailable } from './lib/data'
+  import { loadCollegePoints, loadDistrictIndex, loadPrivatePoints, loadPublicPoints, loadState, loadYears, loadYearSummary, setAvailable } from './lib/data'
   import { warmUp } from './lib/db'
   import CompareView from './components/CompareView.svelte'
   import DetailPanel from './components/DetailPanel.svelte'
@@ -21,7 +21,11 @@
 
   onMount(async () => {
     try {
-      const [state, years, points, college, priv] = await Promise.all([loadState(), loadYears(), loadPublicPoints(), loadCollegePoints(), loadPrivatePoints()])
+      const [state, years, points, college, priv, summary, districts] = await Promise.all([
+        loadState(), loadYears(), loadPublicPoints(), loadCollegePoints(), loadPrivatePoints(), loadYearSummary(), loadDistrictIndex(),
+      ])
+      app.summary = summary
+      app.districtIndex = districts
       app.state = state
       app.years = years
       setAvailable(years)

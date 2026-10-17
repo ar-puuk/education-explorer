@@ -11,7 +11,17 @@
     height = 220,
     alt,
     mode = 'line',
-  }: { data: Point[]; yLabel?: string; currentYear?: number; height?: number; alt: string; mode?: 'line' | 'heat' } = $props()
+    reference,
+  }: {
+    data: Point[]
+    yLabel?: string
+    currentYear?: number
+    height?: number
+    alt: string
+    mode?: 'line' | 'heat'
+    /** state median (dashed line) and middle-half band for context; years need not match the data */
+    reference?: { year: number; value: number; lo: number; hi: number }[]
+  } = $props()
 
   let el: HTMLDivElement
   let width = $state(380)
@@ -24,6 +34,8 @@
     const keys = [...new Set(data.map((d) => d.key))]
     const present = data.filter((d) => d.value != null)
     const years = [...new Set(data.map((d) => d.year))]
+    // the reference only covers the years the chart shows, so it never stretches the axis
+    const ref = reference?.filter((r) => years.length && r.year >= Math.min(...years) && r.year <= Math.max(...years))
     let chart: ReturnType<typeof Plot.plot>
     if (mode === 'heat') {
       const rows = keys.filter((k) => present.some((d) => d.key === k && (d.value ?? 0) > 0))
@@ -54,6 +66,8 @@ ${d.year}: ${d.value?.toLocaleString()}` })),
         color: { domain: keys, range: palette, legend: keys.length > 1 },
         marks: [
           Plot.ruleY([0]),
+          ref?.length ? Plot.areaY(ref, { x: 'year', y1: 'lo', y2: 'hi', fill: css('--muted'), fillOpacity: 0.14 }) : null,
+          ref?.length ? Plot.lineY(ref, { x: 'year', y: 'value', stroke: css('--muted'), strokeDasharray: '5,4', strokeWidth: 1.5 }) : null,
           currentYear ? Plot.ruleX([currentYear], { stroke: css('--muted'), strokeDasharray: '3,3' }) : null,
           Plot.lineY(present, { x: 'year', y: 'value', stroke: 'key', strokeWidth: 2 }),
           Plot.dot(present, { x: 'year', y: 'value', stroke: 'key', fill: 'key', r: 3 }),

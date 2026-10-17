@@ -19,21 +19,16 @@
     return survey === app.year ? '' : `Private: ${schoolYearLabel(survey)} survey`
   })
 
-  // places per year, per dataset, for the histogram
+  // places per year, per dataset, for the histogram (precomputed in meta/year_summary.json)
   const counts = $derived.by(() => {
-    const pub = new Map<number, number>()
-    const col = new Map<number, number>()
-    for (const s of app.points?.schools ?? []) for (const y of s.years) pub.set(y, (pub.get(y) ?? 0) + 1)
-    for (const s of app.college?.institutions ?? []) for (const y of s.years) col.set(y, (col.get(y) ?? 0) + 1)
-    const prv = new Map<number, number>()
-    for (const s of app.private?.schools ?? []) for (const y of s.years) prv.set(y, (prv.get(y) ?? 0) + 1)
+    const sum = app.summary
     return years.map((y) => {
       const sv = surveyYearFor(y)
       return {
         y,
-        pub: app.layers.public ? (pub.get(y) ?? 0) : 0,
-        col: app.layers.college ? (col.get(y) ?? 0) : 0,
-        prv: app.layers.private && sv != null ? (prv.get(sv) ?? 0) : 0,
+        pub: app.layers.public ? (sum?.public[String(y)]?.mapped ?? 0) : 0,
+        col: app.layers.college ? (sum?.college[String(y)]?.mapped ?? 0) : 0,
+        prv: app.layers.private && sv != null ? (sum?.private[String(sv)]?.mapped ?? 0) : 0,
       }
     })
   })

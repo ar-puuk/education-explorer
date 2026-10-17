@@ -1,5 +1,8 @@
 import { dataUrl, queryParquet, type Row } from './db'
-import type { CollegePointsFile, DictEntry, PointsFile, PrivatePointsFile, StateMeta, ValueLabel, YearsMeta } from './types'
+import type {
+  CollegePointsFile, DictEntry, DistrictIndexItem, PointsFile, PrivatePointsFile, ProfileRow, StateMeta, StateReference, ValueLabel,
+  YearsMeta, YearSummary,
+} from './types'
 
 async function getJson<T>(rel: string): Promise<T> {
   const r = await fetch(dataUrl(rel))
@@ -12,6 +15,20 @@ export const loadYears = () => getJson<YearsMeta>('meta/years.json')
 export const loadPublicPoints = () => getJson<PointsFile>('geo/points_public.json')
 export const loadCollegePoints = () => getJson<CollegePointsFile>('geo/points_college.json')
 export const loadPrivatePoints = () => getJson<PrivatePointsFile>('geo/points_private.json')
+export const loadYearSummary = () => getJson<YearSummary>('meta/year_summary.json').catch(() => null)
+export const loadStateReference = () => getJson<StateReference>('meta/state_reference.json').catch(() => null)
+export const loadDistrictIndex = () => getJson<{ districts: DistrictIndexItem[] }>('geo/districts_index.json').then((d) => d.districts).catch(() => [] as DistrictIndexItem[])
+
+/** Every school-year of derived metrics for one school (one small read): enrollment, teachers, ratio, lunch share. */
+export async function schoolProfile(ncessch: string): Promise<ProfileRow[]> {
+  const rows = await queryParquet(
+    ['derived/school_profile.parquet'],
+    'SELECT unnest(years) AS year, unnest(enrollment) AS enrollment, unnest(teachers_fte) AS teachers_fte, ' +
+      'unnest(students_per_teacher) AS students_per_teacher, unnest(frl_share) AS frl_share FROM {files} WHERE ncessch = ? ORDER BY year',
+    [ncessch],
+  )
+  return rows as unknown as ProfileRow[]
+}
 
 let dictCache: Map<string, DictEntry> | null = null
 

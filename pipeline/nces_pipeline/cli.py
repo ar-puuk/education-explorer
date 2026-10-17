@@ -106,6 +106,13 @@ def cmd_bootstrap(a, state) -> int:
     return 0
 
 
+def cmd_derive(a, state) -> int:
+    from .derived import build_derived
+
+    print("derived:", build_derived())
+    return 0
+
+
 def cmd_rekey(a, state) -> int:
     from .ipeds_build import rekey_all
 
@@ -205,6 +212,9 @@ def cmd_update(a, state) -> int:
     build_points_public()
     build_points_college()
     build_points_private()
+    from .derived import build_derived
+
+    build_derived()
     write_meta(state)
     after = current_rowcounts()
     print("changelog:")
@@ -243,6 +253,9 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("--year", type=int)
     b.add_argument("--force", action="store_true")
     b.set_defaults(fn=cmd_bootstrap)
+
+    dv = sub.add_parser("derive", help="derived metrics, school profiles, year summary, state reference bands, district search index")
+    dv.set_defaults(fn=cmd_derive)
 
     rk = sub.add_parser("rekey-ipeds", help="recompute IPEDS uniqueness keys from the national files (state independent)")
     rk.set_defaults(fn=cmd_rekey)
