@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { focusDialog } from '../lib/actions'
   import { app } from '../lib/app.svelte'
   import { visibleColleges, visiblePrivate, visiblePublic } from '../lib/filters'
   import { download, toCsv } from '../lib/explore'
@@ -108,15 +109,17 @@
 
 {#if app.showTable}
   <div class="backdrop" role="presentation" onclick={() => (app.showTable = false)}></div>
-  <div class="dialog" role="dialog" aria-modal="true" aria-label="Table of places on the map">
+  <div class="dialog" use:focusDialog role="dialog" aria-modal="true" aria-label="Table of places on the map">
     <div class="head">
       <h2>Table view <span class="muted">{schoolYearLabel(app.year)} · current filters</span></h2>
       <button class="close" onclick={() => (app.showTable = false)} aria-label="Close table">×</button>
     </div>
-    <div class="tabs" role="tablist">
-      {#each ['public', 'private', 'college'] as d}
-        <button role="tab" aria-selected={ds === d} class:on={ds === d} onclick={() => (ds = d as Ds)}>{NAMES[d as Ds]}</button>
-      {/each}
+    <div class="tabs">
+      <div class="tablist" role="tablist" aria-label="Dataset">
+        {#each ['public', 'private', 'college'] as d}
+          <button role="tab" aria-selected={ds === d} class:on={ds === d} onclick={() => (ds = d as Ds)}>{NAMES[d as Ds]}</button>
+        {/each}
+      </div>
       <span class="count">{fmtInt(rows.length)} rows</span>
       <button onclick={exportCsv}>Download CSV</button>
     </div>
@@ -163,6 +166,9 @@
     inset: 0;
     background: rgb(0 0 0 / 40%);
     z-index: 40;
+  }
+  .dialog:focus {
+    outline: none;
   }
   .dialog {
     position: fixed;
@@ -217,6 +223,10 @@
     border: 1px solid var(--border);
     border-radius: 999px;
     padding: 2px 12px;
+  }
+  .tablist {
+    display: flex;
+    gap: 6px;
   }
   .tabs button.on {
     background: var(--accent);

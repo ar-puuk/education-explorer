@@ -11,6 +11,8 @@ const errors = []
 const browser = await chromium.launch({ args: ['--use-gl=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] })
 const ctx = await browser.newContext({ viewport: { width: 1360, height: 820 }, colorScheme: 'light' })
 const page = await ctx.newPage()
+const hosts = new Set()
+page.on('request', (r) => hosts.add(new URL(r.url()).host))
 page.on('pageerror', (e) => errors.push('pageerror: ' + e.message))
 page.on('console', (m) => {
   if (m.type() === 'error' && !/favicon|Failed to load resource.*(tiles|fonts|sprites)/i.test(m.text())) errors.push('console: ' + m.text().slice(0, 200))
@@ -190,6 +192,9 @@ await page.waitForTimeout(800)
 const label = await page.locator('.slider strong').innerText()
 label === '2018-19' ? ok('year slider -> 2018-19') : fail('slider label ' + label)
 
+const allowed = new Set([new URL(base).host, 'tiles.openfreemap.org', ''])
+const extra = [...hosts].filter((h) => !allowed.has(h))
+extra.length ? fail('unexpected third-party hosts at runtime: ' + extra.join(', ')) : ok('only the app origin and tiles.openfreemap.org were contacted')
 await browser.close()
 if (errors.length) {
   console.error('ERRORS:\n' + errors.join('\n'))

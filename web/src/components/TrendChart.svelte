@@ -62,8 +62,14 @@ ${d.year}: ${d.value?.toLocaleString()}` })),
         ].filter(Boolean) as Plot.Markish[],
       })
     }
-    chart.setAttribute('role', 'img')
-    chart.setAttribute('aria-label', alt)
+    // Plot labels its internal groups; inside an img role those labels are invalid ARIA, so drop them.
+    chart.querySelectorAll('svg [aria-label], svg [aria-description]').forEach((el) => {
+      el.removeAttribute('aria-label')
+      el.removeAttribute('aria-description')
+    })
+    const svg = chart.tagName.toLowerCase() === 'svg' ? chart : chart.querySelector('svg')
+    svg?.setAttribute('role', 'img')
+    svg?.setAttribute('aria-label', alt)
     el.replaceChildren(chart)
     return () => chart.remove()
   })

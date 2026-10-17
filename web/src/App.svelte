@@ -69,6 +69,16 @@
   }
 </script>
 
+<svelte:window
+  onkeydown={(e) => {
+    if (e.key !== 'Escape') return
+    if (app.showTable || app.showCompare) {
+      app.showTable = false
+      app.showCompare = false
+    } else if (app.selected && !(e.target instanceof HTMLInputElement)) app.selected = null
+  }}
+/>
+
 <div class="shell">
   <TopBar onPick={pick} />
   <main>

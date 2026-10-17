@@ -37,7 +37,15 @@ function getDb(): Promise<duckdb.AsyncDuckDB> {
 }
 
 async function conn(): Promise<duckdb.AsyncDuckDBConnection> {
-  connPromise ??= getDb().then((d) => d.connect())
+  connPromise ??= getDb().then(async (d) => {
+    const c = await d.connect()
+    // The Parquet extension is self-hosted (public/duckdb-ext, copied to docs/ by the build) so the app never
+    // contacts extensions.duckdb.org at runtime.
+    const repo = new URL('duckdb-ext', document.baseURI).href
+    await c.query(`SET custom_extension_repository='${repo}'`)
+    await c.query('LOAD parquet')
+    return c
+  })
   return connPromise
 }
 

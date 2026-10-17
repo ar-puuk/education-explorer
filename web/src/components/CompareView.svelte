@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { focusDialog } from '../lib/actions'
   import { app } from '../lib/app.svelte'
   import { districtRows } from '../lib/data'
   import { download, toCsv } from '../lib/explore'
@@ -89,7 +90,7 @@
 
 {#if app.showCompare}
   <div class="backdrop" role="presentation" onclick={() => (app.showCompare = false)}></div>
-  <div class="dialog" role="dialog" aria-modal="true" aria-label="Compare places">
+  <div class="dialog" use:focusDialog role="dialog" aria-modal="true" aria-label="Compare places">
     <div class="head">
       <h2>Compare enrollment</h2>
       <button class="close" onclick={() => (app.showCompare = false)} aria-label="Close compare">×</button>
@@ -128,6 +129,9 @@
     inset: 0;
     background: rgb(0 0 0 / 40%);
     z-index: 40;
+  }
+  .dialog:focus {
+    outline: none;
   }
   .dialog {
     position: fixed;
