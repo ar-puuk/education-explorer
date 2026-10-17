@@ -1,0 +1,30 @@
+# raw data (only the manifest is tracked)
+data-raw/*
+!data-raw/manifest.json
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# node
+node_modules/
+web/.vite/
+
+# os / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# secrets / logs
+.env*
+*.log
+
+# local scratch
+scratch/
+geocode_report.txt

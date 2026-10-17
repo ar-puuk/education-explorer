@@ -1,0 +1,8 @@
+name: Utah
+abbrev: UT
+fips: "49"
+bbox: [-114.06, 36.99, -109.04, 42.01]   # [W, S, E, N]; verified against Census TIGER state extent (see docs/DECISIONS.md)
+center: [-111.65, 39.32]
+zoom: 6
+site_title: "Utah Education Explorer"
+overrides: {}
