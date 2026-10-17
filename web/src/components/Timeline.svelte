@@ -2,6 +2,7 @@
   import { onDestroy } from 'svelte'
   import { allYears, app, surveyYearFor } from '../lib/app.svelte'
   import { schoolYearLabel } from '../lib/labels'
+  import { hideTip, showTip } from '../lib/tooltip'
   import Icon from './Icon.svelte'
 
   const years = $derived(allYears())
@@ -66,8 +67,25 @@
     track.setPointerCapture(e.pointerId)
     fromPointer(e)
   }
+  function tipText(i: number) {
+    const c = counts[i]
+    const parts = [
+      app.layers.public && c.pub ? `${c.pub.toLocaleString()} public schools` : '',
+      app.layers.private && c.prv ? `${c.prv.toLocaleString()} private schools` : '',
+      app.layers.college && c.col ? `${c.col.toLocaleString()} colleges` : '',
+    ].filter(Boolean)
+    const sv = surveyYearFor(c.y)
+    const note = app.layers.private && c.prv && sv != null && sv !== c.y ? ` (private: ${schoolYearLabel(sv)} survey)` : ''
+    return `${schoolYearLabel(c.y)}: ${parts.length ? parts.join(', ') : 'no places in the layers shown'}${note}`
+  }
   function move(e: PointerEvent) {
     if (track.hasPointerCapture(e.pointerId)) fromPointer(e)
+    const r = track.getBoundingClientRect()
+    const i = Math.min(n - 1, Math.max(0, Math.floor(((e.clientX - r.left) / r.width) * n)))
+    showTip(track, tipText(i), e.clientX, e.clientY)
+  }
+  function leave() {
+    hideTip(track)
   }
   function key(e: KeyboardEvent) {
     const step = e.key === 'ArrowRight' || e.key === 'ArrowUp' ? 1 : e.key === 'ArrowLeft' || e.key === 'ArrowDown' ? -1 : 0
@@ -106,6 +124,7 @@
       aria-valuetext={schoolYearLabel(app.year)}
       onpointerdown={down}
       onpointermove={move}
+      onpointerleave={leave}
       onkeydown={key}
     >
       <svg viewBox={`0 0 ${n * bw} ${H + 8}`} preserveAspectRatio="none" aria-hidden="true">

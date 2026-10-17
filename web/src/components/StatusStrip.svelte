@@ -1,5 +1,6 @@
 <script lang="ts">
   // A yes/no/category history: one row per attribute, one cell per year. The table is real markup so screen readers get every value.
+  import { tooltip } from '../lib/tooltip'
   export interface StripRow {
     label: string
     /** year -> value text (missing years are blank) */
@@ -37,7 +38,7 @@
         <tr>
           <th scope="row" class="r">{row.label}</th>
           {#each years as y}
-            <td class={tone(row, row.values[y])} class:cur={y === current} title="{row.label}, {y}: {row.values[y] ?? 'no record'}">
+            <td class={tone(row, row.values[y])} class:cur={y === current} use:tooltip={`${row.label}, ${y}: ${row.values[y] ?? 'no record'}`}>
               <span class="sr">{row.values[y] ?? 'no record'}</span>
             </td>
           {/each}

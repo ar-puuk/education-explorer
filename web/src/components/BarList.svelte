@@ -1,5 +1,6 @@
 <script lang="ts">
   // A ranked-looking list is avoided on purpose: bars show one year's breakdown, in the order the source defines.
+  import { tooltip } from '../lib/tooltip'
   export interface BarItem {
     label: string
     value: number
@@ -12,7 +13,7 @@
 
 <ul class="bars" aria-label={label}>
   {#each items as it}
-    <li>
+    <li use:tooltip={`${it.label}: ${it.text ?? it.value.toLocaleString()}`}>
       <span class="lab">{it.label}</span>
       <span class="track" aria-hidden="true"><i style:width="{Math.max(1, Math.min(100, (it.value / top) * 100))}%"></i></span>
       <span class="val">{it.text ?? it.value.toLocaleString()}</span>

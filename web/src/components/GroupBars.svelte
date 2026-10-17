@@ -1,6 +1,7 @@
 <script lang="ts">
   // One 100% bar per group (for example race within each grade) for a single year. Plain markup, so every share is also readable text.
   import { paletteFor } from '../lib/palette'
+  import { tooltip } from '../lib/tooltip'
   export interface Group {
     group: string
     total: number
@@ -24,7 +25,7 @@
         <span class="bar" aria-hidden="true">
           {#each keys as k, i}
             {@const v = g.segs.find((s) => s.key === k)?.value ?? 0}
-            {#if v > 0}<i style:width="{(v / g.total) * 100}%" style:background={color(i)} title="{g.group}: {k}, {pct(v, g.total)}% ({v.toLocaleString()})"></i>{/if}
+            {#if v > 0}<i style:width="{(v / g.total) * 100}%" style:background={color(i)} use:tooltip={`${g.group}: ${k}, ${pct(v, g.total)}% (${v.toLocaleString()})`}></i>{/if}
           {/each}
         </span>
         <span class="t">{g.total.toLocaleString()}</span>

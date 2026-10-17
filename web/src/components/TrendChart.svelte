@@ -113,7 +113,8 @@ ${d.year}: ${fmt(d.value)}` })),
       el.removeAttribute('aria-label')
       el.removeAttribute('aria-description')
     })
-    const svg = chart.tagName.toLowerCase() === 'svg' ? chart : chart.querySelector('svg')
+    // with a legend Plot returns a figure whose first svg is a colour swatch, so take the largest svg: that is the plot
+    const svg = chart.tagName.toLowerCase() === 'svg' ? chart : ([...chart.querySelectorAll('svg')].sort((a, b) => Number(b.getAttribute('width') ?? 0) - Number(a.getAttribute('width') ?? 0))[0] ?? null)
     svg?.setAttribute('role', 'img')
     svg?.setAttribute('aria-label', alt)
     el.replaceChildren(chart)

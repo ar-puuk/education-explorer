@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { tooltip } from '../lib/tooltip'
   export interface Kpi {
     label: string
     value: string | null
@@ -10,7 +11,7 @@
 
 <dl class="kpis">
   {#each items as k}
-    <div class="kpi" title={k.title}>
+    <div class="kpi" use:tooltip={k.title}>
       <dt>{k.label}</dt>
       <dd class:none={k.value == null}>{k.value ?? '—'}</dd>
       {#if k.sub}<dd class="sub">{k.sub}</dd>{/if}

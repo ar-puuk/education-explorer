@@ -18,6 +18,7 @@
   import Inspector from './Inspector.svelte'
   import Kpis from './Kpis.svelte'
   import TableExplorer from './TableExplorer.svelte'
+  import { tooltip } from '../lib/tooltip'
   import BarList from './BarList.svelte'
   import StatusStrip, { type StripRow } from './StatusStrip.svelte'
   import TrendChart from './TrendChart.svelte'
@@ -358,14 +359,6 @@
             <p class="muted">{loading ? 'Loading…' : 'No race/ethnicity data for this school.'}</p>
           {/if}
         </section>
-        <section class="card">
-          <h3>Grades <small>{gradeNow ? schoolYearLabel(gradeNow.year) : ''}</small></h3>
-          {#if gradeNow?.items.length}
-            <BarList items={gradeNow.items} label={`Students by grade at ${school.name}`} />
-          {:else}
-            <p class="muted">{loading ? 'Loading…' : 'No grade counts.'}</p>
-          {/if}
-        </section>
         <section class="card span">
           <h3>Race and ethnicity within each grade <small>{raceByGrade ? schoolYearLabel(raceByGrade.year) : ''}</small></h3>
           {#if raceByGrade}
@@ -373,6 +366,14 @@
             <p class="note">Each bar is one grade. Small cells are suppressed in the source and left out, so very small grades may not sum to the grade total.</p>
           {:else}
             <p class="muted">{loading ? 'Loading…' : 'No race-by-grade detail.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Grades <small>{gradeNow ? schoolYearLabel(gradeNow.year) : ''}</small></h3>
+          {#if gradeNow?.items.length}
+            <BarList items={gradeNow.items} label={`Students by grade at ${school.name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No grade counts.'}</p>
           {/if}
         </section>
         <section class="card">
@@ -445,11 +446,11 @@
             <dl class="facts">
               {#each MAIN as k}
                 {#if dirRow[k] != null && dirRow[k] !== '' && k !== 'status'}
-                  <dt title={desc('school_directory', k)}>{MAIN_LABEL[k] ?? label('school_directory', k)}</dt>
+                  <dt use:tooltip={desc('school_directory', k)}>{MAIN_LABEL[k] ?? label('school_directory', k)}</dt>
                   <dd>{fmt(k, dirRow[k])}</dd>
                 {/if}
               {/each}
-              {#if locRow?.locale}<dt title={desc('school_location', 'locale')}>Locale</dt><dd>{localeLabel(String(locRow.locale))}</dd>{/if}
+              {#if locRow?.locale}<dt use:tooltip={desc('school_location', 'locale')}>Locale</dt><dd>{localeLabel(String(locRow.locale))}</dd>{/if}
               {#if locRow?.county_name}<dt>County</dt><dd>{locRow.county_name}</dd>{/if}
               {#if dirRow.street1}<dt>Address</dt><dd>{dirRow.street1}, {dirRow.city} {dirRow.state} {dirRow.zip}</dd>{/if}
               {#if dirRow.phone}<dt>Phone</dt><dd>{dirRow.phone}</dd>{/if}
@@ -460,13 +461,13 @@
               {#if charRow}
                 {#each ['title_i_status', 'magnet', 'shared_time', 'nslp_status'] as k}
                   {#if charRow[k] != null && charRow[k] !== ''}
-                    <dt title={desc('school_characteristics', k)}>{label('school_characteristics', k)}</dt>
+                    <dt use:tooltip={desc('school_characteristics', k)}>{label('school_characteristics', k)}</dt>
                     <dd>{charRow[k]}</dd>
                   {/if}
                 {/each}
               {/if}
               {#if locRow?.lat != null}
-                <dt title={desc('school_location', 'coord_source')}>Location source</dt>
+                <dt use:tooltip={desc('school_location', 'coord_source')}>Location source</dt>
                 <dd>{locRow.coord_source === 'edge' ? 'NCES EDGE' : locRow.coord_source === 'edge_prior_year' ? 'NCES EDGE (earlier year)' : locRow.coord_source}</dd>
               {/if}
             </dl>
@@ -480,7 +481,7 @@
               <summary>All directory fields for {schoolYearLabel(Number(dirRow?.year ?? app.year))} ({otherFields.length})</summary>
               <dl class="facts">
                 {#each otherFields as f}
-                  <dt title={f.d}>{f.label}</dt>
+                  <dt use:tooltip={f.d}>{f.label}</dt>
                   <dd>{f.v}</dd>
                 {/each}
               </dl>
