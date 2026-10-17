@@ -17,11 +17,12 @@ def _ccd_cols(cf_staged: Path) -> list[str]:
 
 def cmd_fetch(a, state) -> int:
     from .catalog import build_catalog
+    from .ccd_build import CCD_FIRST_YEAR
     from .ccd_files import fetch_all, select
 
     if a.source in (None, "ccd"):
         build_catalog(refresh=a.check_only or a.refresh_catalog)
-        files = select(min_year=a.year or 0, max_year=a.year or 9999)
+        files = select(min_year=a.year or CCD_FIRST_YEAR, max_year=a.year or 9999)
         if a.check_only:
             from .config import DATA_RAW
 
@@ -71,7 +72,7 @@ def cmd_bootstrap(a, state) -> int:
             if comp != topic.component or (a.year and y != a.year):
                 continue
             staged = stage(raw_path_for(cf), state)
-            p = write_bootstrap_map(topic, y, _ccd_cols(staged), force=a.force)
+            p = write_bootstrap_map(topic, y, _ccd_cols(staged), force=a.force, staged=staged)
             print("map:", p.name, topic.name)
     from .edge import FIRST, LAST, edge_table_source, write_edge_map
 

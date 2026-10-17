@@ -1,0 +1,13 @@
+# Files that exist on nces.ed.gov but that the CCD file-listing API fails to return (its fiscal listing 500s for
+# school years 2021-22 and 2022-23). URLs verified with HTTP HEAD on 2026-10-17. `fetch --check-only` still compares
+# against the catalog; remove an entry once the API lists the file.
+- school_year: "2021 - 2022"
+  level: District
+  component: finance_f33
+  version: "v.2a"
+  url: https://nces.ed.gov/ccd/Data/zip/sdf22_2a_txt.zip
+- school_year: "2022 - 2023"
+  level: District
+  component: finance_f33
+  version: "v.1a"
+  url: https://nces.ed.gov/ccd/Data/zip/sdf23_1a_txt.zip

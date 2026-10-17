@@ -31,6 +31,19 @@
     2025
    ]
   },
+  "district_dropout": {
+   "title": "Dropouts (grades 9-12), by district",
+   "versions": {
+    "2018": "provisional",
+    "2022": "provisional",
+    "2023": "provisional"
+   },
+   "years": [
+    2018,
+    2022,
+    2023
+   ]
+  },
   "district_el": {
    "title": "English learners, by district",
    "versions": {
@@ -46,6 +59,46 @@
     2016,
     2017,
     2018
+   ]
+  },
+  "district_finance": {
+   "title": "District finance (F-33)",
+   "versions": {
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "provisional",
+    "2017": "provisional",
+    "2018": "final",
+    "2019": "final",
+    "2020": "final",
+    "2021": "final",
+    "2022": "provisional",
+    "2023": "provisional"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ]
+  },
+  "district_graduates": {
+   "title": "Graduates and completers, by district",
+   "versions": {
+    "2018": "provisional",
+    "2022": "provisional",
+    "2023": "provisional"
+   },
+   "years": [
+    2018,
+    2022,
+    2023
    ]
   },
   "district_idea": {

@@ -6,7 +6,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import urljoin
 
+import yaml
+
 from .catalog import build_catalog, year_of
+from .config import CONFIG_DIR
 from .fetch import client, download, unzip
 
 # Component keys used in schema file names. Catalog component strings are
@@ -59,6 +62,11 @@ def _component(f: dict) -> str | None:
     return None
 
 
+def _extras() -> list[dict]:
+    p = CONFIG_DIR / "ccd_extra_files.yml"
+    return (yaml.safe_load(p.read_text(encoding="utf-8")) or []) if p.exists() else []
+
+
 def select(min_year: int = 0, max_year: int = 9999, components: set[str] | None = None) -> list[CcdFile]:
     out: dict[tuple, CcdFile] = {}
     for f in build_catalog():
@@ -77,6 +85,13 @@ def select(min_year: int = 0, max_year: int = 9999, components: set[str] | None 
                      bool(f.get("fiscal")), str(f.get("size")))
         # multiple versions (e.g. 1a vs 2a revised): keep the last listed (catalog is sorted by fileId)
         out[(y, cf.level, comp, f.get("title") if comp in ("dropout", "graduates") else "")] = cf
+    for e in _extras():
+        y = year_of(e["school_year"])
+        comp = e["component"]
+        if not (min_year <= y <= max_year) or (components and comp not in components):
+            continue
+        cf = CcdFile(y, e["school_year"], LEVELS[e["level"]], comp, str(e.get("version")), e["url"], True, "?")
+        out.setdefault((y, cf.level, comp, ""), cf)
     return sorted(out.values(), key=lambda c: (c.year, c.level, c.component))
 
 

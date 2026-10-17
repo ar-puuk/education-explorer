@@ -94,11 +94,34 @@ def _layout_descriptions(xlsx: Path) -> dict[str, tuple[str, str]]:
     return out
 
 
+def _f33_descriptions(cat: list[dict]) -> dict[str, tuple[str, str]]:
+    """F-33 (district finance) variable labels from the newest companion workbook."""
+    best = None
+    for f in cat:
+        if (f.get("fiscal") and f["elementType"] == "Documentation" and f["level"] == "District"
+                and "companionfile" in f["fileURL"].lower() and f["fileURL"].lower().endswith(".xlsx")):
+            y = year_of(f["schoolYear"])
+            if best is None or y > best[0]:
+                best = (y, f["fileURL"])
+    if not best:
+        return {}
+    url = best[1] if best[1].startswith("http") else "https://nces.ed.gov/ccd/" + best[1].lstrip("/")
+    x = download(url, f"ccd/docs/{url.rsplit('/', 1)[-1]}", source="ccd-doc", release=str(best[0]))
+    con = duckdb.connect()
+    con.execute("INSTALL excel; LOAD excel;")
+    out = {}
+    for r in _sheet_rows(con, x, "File_Layout", "File Layout")[1:]:
+        if r[0] and len(r) > 4:
+            codes = (r[5] or "").strip() if len(r) > 5 else ""
+            out[r[0].strip()] = ((r[4] or "").strip() + (f" Values: {codes}" if codes else ""), (r[1] or "").strip())
+    return out
+
+
 def _companion_for(level: str, comp: str, cat: list[dict]) -> Path | None:
     best = None
     for f in cat:
         if (f["elementType"] == "Documentation" and f["level"] == LEVEL[level]
-                and (f["component"] or "").strip() == COMP_NAME[comp] and f["fileURL"].lower().endswith(".xlsx")
+                and (f["component"] or "").strip() == COMP_NAME.get(comp, comp) and f["fileURL"].lower().endswith(".xlsx")
                 and "companion" in f["fileURL"].lower()):
             y = year_of(f["schoolYear"])
             if best is None or y > best[0]:
@@ -164,7 +187,9 @@ def build_dictionary() -> int:
         table = table_dir.name
         t = TOPICS.get(table)
         desc: dict[str, tuple[str, str]] = {}
-        if t:
+        if t and t.component == "lea_finance_f33":
+            desc = _f33_descriptions(cat)
+        elif t:
             lvl, comp = t.component.split("_", 1)
             doc = _companion_for(lvl, comp, cat)
             if doc:
@@ -184,6 +209,8 @@ def build_dictionary() -> int:
                     rn = maps[name]["raw"][y]
                     if rn in desc and desc[rn][0]:
                         description = desc[rn][0]
+                        if t and t.generic:  # variable names are cryptic codes: use the NCES label as the label too
+                            label = description.split(" Values:")[0]
                         break
             col_cav = (caveats.get(f"ccd.{table}.{name}") or {}).get("caveat", "")
             caveat = col_cav or (table_cav if name in CAVEAT_COLUMNS or base else "")

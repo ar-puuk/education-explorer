@@ -1,0 +1,1059 @@
+source: ccd
+topic: district_finance
+year: 2019
+columns:
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  CENSUSID:
+    name: censusid
+    type: VARCHAR
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  CONUM:
+    name: conum
+    type: VARCHAR
+  CSA:
+    name: csa
+    type: VARCHAR
+  CBSA:
+    name: cbsa
+    type: VARCHAR
+  NAME:
+    name: name
+    type: VARCHAR
+  STNAME:
+    name: stname
+    type: VARCHAR
+  STABBR:
+    name: stabbr
+    type: VARCHAR
+  SCHLEV:
+    name: schlev
+    type: VARCHAR
+  AGCHRT:
+    name: agchrt
+    type: VARCHAR
+  YEAR:
+    name: year
+    type: VARCHAR
+  CCDNF:
+    name: ccdnf
+    type: VARCHAR
+  CENFILE:
+    name: cenfile
+    type: VARCHAR
+  GSLO:
+    name: gslo
+    type: VARCHAR
+  GSHI:
+    name: gshi
+    type: VARCHAR
+  V33:
+    name: v33
+    type: BIGINT
+    neg_ok: true
+  MEMBERSCH:
+    name: membersch
+    type: BIGINT
+    neg_ok: true
+  TOTALREV:
+    name: totalrev
+    type: BIGINT
+    neg_ok: true
+  TFEDREV:
+    name: tfedrev
+    type: BIGINT
+    neg_ok: true
+  C14:
+    name: c14
+    type: BIGINT
+    neg_ok: true
+  C15:
+    name: c15
+    type: BIGINT
+    neg_ok: true
+  C19:
+    name: c19
+    type: BIGINT
+    neg_ok: true
+  C22:
+    name: c22
+    type: BIGINT
+    neg_ok: true
+  C23:
+    name: c23
+    type: BIGINT
+    neg_ok: true
+  C26:
+    name: c26
+    type: BIGINT
+    neg_ok: true
+  C27:
+    name: c27
+    type: BIGINT
+    neg_ok: true
+  B11:
+    name: b11
+    type: BIGINT
+    neg_ok: true
+  C20:
+    name: c20
+    type: BIGINT
+    neg_ok: true
+  C25:
+    name: c25
+    type: BIGINT
+    neg_ok: true
+  C36:
+    name: c36
+    type: BIGINT
+    neg_ok: true
+  B10:
+    name: b10
+    type: BIGINT
+    neg_ok: true
+  B12:
+    name: b12
+    type: BIGINT
+    neg_ok: true
+  B14:
+    name: b14
+    type: BIGINT
+    neg_ok: true
+  B13:
+    name: b13
+    type: BIGINT
+    neg_ok: true
+  TSTREV:
+    name: tstrev
+    type: BIGINT
+    neg_ok: true
+  C01:
+    name: c01
+    type: BIGINT
+    neg_ok: true
+  C04:
+    name: c04
+    type: BIGINT
+    neg_ok: true
+  C05:
+    name: c05
+    type: BIGINT
+    neg_ok: true
+  C06:
+    name: c06
+    type: BIGINT
+    neg_ok: true
+  C07:
+    name: c07
+    type: BIGINT
+    neg_ok: true
+  C08:
+    name: c08
+    type: BIGINT
+    neg_ok: true
+  C09:
+    name: c09
+    type: BIGINT
+    neg_ok: true
+  C10:
+    name: c10
+    type: BIGINT
+    neg_ok: true
+  C11:
+    name: c11
+    type: BIGINT
+    neg_ok: true
+  C12:
+    name: c12
+    type: BIGINT
+    neg_ok: true
+  C13:
+    name: c13
+    type: BIGINT
+    neg_ok: true
+  C35:
+    name: c35
+    type: BIGINT
+    neg_ok: true
+  C38:
+    name: c38
+    type: BIGINT
+    neg_ok: true
+  C39:
+    name: c39
+    type: BIGINT
+    neg_ok: true
+  TLOCREV:
+    name: tlocrev
+    type: BIGINT
+    neg_ok: true
+  T02:
+    name: t02
+    type: BIGINT
+    neg_ok: true
+  T06:
+    name: t06
+    type: BIGINT
+    neg_ok: true
+  T09:
+    name: t09
+    type: BIGINT
+    neg_ok: true
+  T15:
+    name: t15
+    type: BIGINT
+    neg_ok: true
+  T40:
+    name: t40
+    type: BIGINT
+    neg_ok: true
+  T99:
+    name: t99
+    type: BIGINT
+    neg_ok: true
+  D11:
+    name: d11
+    type: BIGINT
+    neg_ok: true
+  D23:
+    name: d23
+    type: BIGINT
+    neg_ok: true
+  A07:
+    name: a07
+    type: BIGINT
+    neg_ok: true
+  A08:
+    name: a08
+    type: BIGINT
+    neg_ok: true
+  A09:
+    name: a09
+    type: BIGINT
+    neg_ok: true
+  A11:
+    name: a11
+    type: BIGINT
+    neg_ok: true
+  A13:
+    name: a13
+    type: BIGINT
+    neg_ok: true
+  A15:
+    name: a15
+    type: BIGINT
+    neg_ok: true
+  A20:
+    name: a20
+    type: BIGINT
+    neg_ok: true
+  A40:
+    name: a40
+    type: BIGINT
+    neg_ok: true
+  U11:
+    name: u11
+    type: BIGINT
+    neg_ok: true
+  U22:
+    name: u22
+    type: BIGINT
+    neg_ok: true
+  U30:
+    name: u30
+    type: BIGINT
+    neg_ok: true
+  U50:
+    name: u50
+    type: BIGINT
+    neg_ok: true
+  U97:
+    name: u97
+    type: BIGINT
+    neg_ok: true
+  C24:
+    name: c24
+    type: BIGINT
+    neg_ok: true
+  TOTALEXP:
+    name: totalexp
+    type: BIGINT
+    neg_ok: true
+  TCURELSC:
+    name: tcurelsc
+    type: BIGINT
+    neg_ok: true
+  TCURINST:
+    name: tcurinst
+    type: BIGINT
+    neg_ok: true
+  E13:
+    name: e13
+    type: BIGINT
+    neg_ok: true
+  V91:
+    name: v91
+    type: BIGINT
+    neg_ok: true
+  V92:
+    name: v92
+    type: BIGINT
+    neg_ok: true
+  TCURSSVC:
+    name: tcurssvc
+    type: BIGINT
+    neg_ok: true
+  E17:
+    name: e17
+    type: BIGINT
+    neg_ok: true
+  E07:
+    name: e07
+    type: BIGINT
+    neg_ok: true
+  E08:
+    name: e08
+    type: BIGINT
+    neg_ok: true
+  E09:
+    name: e09
+    type: BIGINT
+    neg_ok: true
+  V40:
+    name: v40
+    type: BIGINT
+    neg_ok: true
+  V45:
+    name: v45
+    type: BIGINT
+    neg_ok: true
+  V90:
+    name: v90
+    type: BIGINT
+    neg_ok: true
+  V85:
+    name: v85
+    type: BIGINT
+    neg_ok: true
+  TCUROTH:
+    name: tcuroth
+    type: BIGINT
+    neg_ok: true
+  E11:
+    name: e11
+    type: BIGINT
+    neg_ok: true
+  V60:
+    name: v60
+    type: BIGINT
+    neg_ok: true
+  V65:
+    name: v65
+    type: BIGINT
+    neg_ok: true
+  TNONELSE:
+    name: tnonelse
+    type: BIGINT
+    neg_ok: true
+  V70:
+    name: v70
+    type: BIGINT
+    neg_ok: true
+  V75:
+    name: v75
+    type: BIGINT
+    neg_ok: true
+  V80:
+    name: v80
+    type: BIGINT
+    neg_ok: true
+  TCAPOUT:
+    name: tcapout
+    type: BIGINT
+    neg_ok: true
+  F12:
+    name: f12
+    type: BIGINT
+    neg_ok: true
+  G15:
+    name: g15
+    type: BIGINT
+    neg_ok: true
+  K09:
+    name: k09
+    type: BIGINT
+    neg_ok: true
+  K10:
+    name: k10
+    type: BIGINT
+    neg_ok: true
+  K11:
+    name: k11
+    type: BIGINT
+    neg_ok: true
+  L12:
+    name: l12
+    type: BIGINT
+    neg_ok: true
+  M12:
+    name: m12
+    type: BIGINT
+    neg_ok: true
+  Q11:
+    name: q11
+    type: BIGINT
+    neg_ok: true
+  I86:
+    name: i86
+    type: BIGINT
+    neg_ok: true
+  Z32:
+    name: z32
+    type: BIGINT
+    neg_ok: true
+  Z33:
+    name: z33
+    type: BIGINT
+    neg_ok: true
+  Z35:
+    name: z35
+    type: BIGINT
+    neg_ok: true
+  Z36:
+    name: z36
+    type: BIGINT
+    neg_ok: true
+  Z37:
+    name: z37
+    type: BIGINT
+    neg_ok: true
+  Z38:
+    name: z38
+    type: BIGINT
+    neg_ok: true
+  V11:
+    name: v11
+    type: BIGINT
+    neg_ok: true
+  V13:
+    name: v13
+    type: BIGINT
+    neg_ok: true
+  V15:
+    name: v15
+    type: BIGINT
+    neg_ok: true
+  V17:
+    name: v17
+    type: BIGINT
+    neg_ok: true
+  V21:
+    name: v21
+    type: BIGINT
+    neg_ok: true
+  V23:
+    name: v23
+    type: BIGINT
+    neg_ok: true
+  V37:
+    name: v37
+    type: BIGINT
+    neg_ok: true
+  V29:
+    name: v29
+    type: BIGINT
+    neg_ok: true
+  Z34:
+    name: z34
+    type: BIGINT
+    neg_ok: true
+  V10:
+    name: v10
+    type: BIGINT
+    neg_ok: true
+  V12:
+    name: v12
+    type: BIGINT
+    neg_ok: true
+  V14:
+    name: v14
+    type: BIGINT
+    neg_ok: true
+  V16:
+    name: v16
+    type: BIGINT
+    neg_ok: true
+  V18:
+    name: v18
+    type: BIGINT
+    neg_ok: true
+  V22:
+    name: v22
+    type: BIGINT
+    neg_ok: true
+  V24:
+    name: v24
+    type: BIGINT
+    neg_ok: true
+  V38:
+    name: v38
+    type: BIGINT
+    neg_ok: true
+  V30:
+    name: v30
+    type: BIGINT
+    neg_ok: true
+  V32:
+    name: v32
+    type: BIGINT
+    neg_ok: true
+  V93:
+    name: v93
+    type: BIGINT
+    neg_ok: true
+  _19H:
+    name: _19h
+    type: BIGINT
+    neg_ok: true
+  _21F:
+    name: _21f
+    type: BIGINT
+    neg_ok: true
+  _31F:
+    name: _31f
+    type: BIGINT
+    neg_ok: true
+  _41F:
+    name: _41f
+    type: BIGINT
+    neg_ok: true
+  _61V:
+    name: _61v
+    type: BIGINT
+    neg_ok: true
+  _66V:
+    name: _66v
+    type: BIGINT
+    neg_ok: true
+  W01:
+    name: w01
+    type: BIGINT
+    neg_ok: true
+  W31:
+    name: w31
+    type: BIGINT
+    neg_ok: true
+  W61:
+    name: w61
+    type: BIGINT
+    neg_ok: true
+  V95:
+    name: v95
+    type: BIGINT
+    neg_ok: true
+  V02:
+    name: v02
+    type: BIGINT
+    neg_ok: true
+  K14:
+    name: k14
+    type: BIGINT
+    neg_ok: true
+  CE1:
+    name: ce1
+    type: BIGINT
+    neg_ok: true
+  CE2:
+    name: ce2
+    type: BIGINT
+    neg_ok: true
+  CE3:
+    name: ce3
+    type: BIGINT
+    neg_ok: true
+  SE1:
+    name: se1
+    type: BIGINT
+    neg_ok: true
+  SE2:
+    name: se2
+    type: BIGINT
+    neg_ok: true
+  SE3:
+    name: se3
+    type: BIGINT
+    neg_ok: true
+  SE4:
+    name: se4
+    type: BIGINT
+    neg_ok: true
+  SE5:
+    name: se5
+    type: BIGINT
+    neg_ok: true
+  AR1:
+    name: ar1
+    type: BIGINT
+    neg_ok: true
+  AR2:
+    name: ar2
+    type: BIGINT
+    neg_ok: true
+  AR3:
+    name: ar3
+    type: BIGINT
+    neg_ok: true
+  AR4:
+    name: ar4
+    type: BIGINT
+    neg_ok: true
+  AR5:
+    name: ar5
+    type: BIGINT
+    neg_ok: true
+  AR6:
+    name: ar6
+    type: BIGINT
+    neg_ok: true
+  AE1:
+    name: ae1
+    type: BIGINT
+    neg_ok: true
+  AE2:
+    name: ae2
+    type: BIGINT
+    neg_ok: true
+  AE3:
+    name: ae3
+    type: BIGINT
+    neg_ok: true
+  AE4:
+    name: ae4
+    type: BIGINT
+    neg_ok: true
+  AE5:
+    name: ae5
+    type: BIGINT
+    neg_ok: true
+  AE6:
+    name: ae6
+    type: BIGINT
+    neg_ok: true
+  WEIGHT:
+    name: weight
+    type: BIGINT
+    neg_ok: true
+  FL_V33:
+    name: fl_v33
+    type: VARCHAR
+  FL_MEMBERSCH:
+    name: fl_membersch
+    type: VARCHAR
+  FL_C14:
+    name: fl_c14
+    type: VARCHAR
+  FL_C15:
+    name: fl_c15
+    type: VARCHAR
+  FL_C19:
+    name: fl_c19
+    type: VARCHAR
+  FL_C22:
+    name: fl_c22
+    type: VARCHAR
+  FL_C23:
+    name: fl_c23
+    type: VARCHAR
+  FL_C26:
+    name: fl_c26
+    type: VARCHAR
+  FL_C27:
+    name: fl_c27
+    type: VARCHAR
+  FL_B11:
+    name: fl_b11
+    type: VARCHAR
+  FL_C20:
+    name: fl_c20
+    type: VARCHAR
+  FL_C25:
+    name: fl_c25
+    type: VARCHAR
+  FL_C36:
+    name: fl_c36
+    type: VARCHAR
+  FL_B10:
+    name: fl_b10
+    type: VARCHAR
+  FL_B12:
+    name: fl_b12
+    type: VARCHAR
+  FL_B14:
+    name: fl_b14
+    type: VARCHAR
+  FL_B13:
+    name: fl_b13
+    type: VARCHAR
+  FL_C01:
+    name: fl_c01
+    type: VARCHAR
+  FL_C04:
+    name: fl_c04
+    type: VARCHAR
+  FL_C05:
+    name: fl_c05
+    type: VARCHAR
+  FL_C06:
+    name: fl_c06
+    type: VARCHAR
+  FL_C07:
+    name: fl_c07
+    type: VARCHAR
+  FL_C08:
+    name: fl_c08
+    type: VARCHAR
+  FL_C09:
+    name: fl_c09
+    type: VARCHAR
+  FL_C10:
+    name: fl_c10
+    type: VARCHAR
+  FL_C11:
+    name: fl_c11
+    type: VARCHAR
+  FL_C12:
+    name: fl_c12
+    type: VARCHAR
+  FL_C13:
+    name: fl_c13
+    type: VARCHAR
+  FL_C35:
+    name: fl_c35
+    type: VARCHAR
+  FL_C38:
+    name: fl_c38
+    type: VARCHAR
+  FL_C39:
+    name: fl_c39
+    type: VARCHAR
+  FL_T02:
+    name: fl_t02
+    type: VARCHAR
+  FL_T06:
+    name: fl_t06
+    type: VARCHAR
+  FL_T09:
+    name: fl_t09
+    type: VARCHAR
+  FL_T15:
+    name: fl_t15
+    type: VARCHAR
+  FL_T40:
+    name: fl_t40
+    type: VARCHAR
+  FL_T99:
+    name: fl_t99
+    type: VARCHAR
+  FL_D11:
+    name: fl_d11
+    type: VARCHAR
+  FL_D23:
+    name: fl_d23
+    type: VARCHAR
+  FL_A07:
+    name: fl_a07
+    type: VARCHAR
+  FL_A08:
+    name: fl_a08
+    type: VARCHAR
+  FL_A09:
+    name: fl_a09
+    type: VARCHAR
+  FL_A11:
+    name: fl_a11
+    type: VARCHAR
+  FL_A13:
+    name: fl_a13
+    type: VARCHAR
+  FL_A15:
+    name: fl_a15
+    type: VARCHAR
+  FL_A20:
+    name: fl_a20
+    type: VARCHAR
+  FL_A40:
+    name: fl_a40
+    type: VARCHAR
+  FL_U11:
+    name: fl_u11
+    type: VARCHAR
+  FL_U22:
+    name: fl_u22
+    type: VARCHAR
+  FL_U30:
+    name: fl_u30
+    type: VARCHAR
+  FL_U50:
+    name: fl_u50
+    type: VARCHAR
+  FL_U97:
+    name: fl_u97
+    type: VARCHAR
+  FL_C24:
+    name: fl_c24
+    type: VARCHAR
+  FL_E13:
+    name: fl_e13
+    type: VARCHAR
+  FL_V91:
+    name: fl_v91
+    type: VARCHAR
+  FL_V92:
+    name: fl_v92
+    type: VARCHAR
+  FL_E17:
+    name: fl_e17
+    type: VARCHAR
+  FL_E07:
+    name: fl_e07
+    type: VARCHAR
+  FL_E08:
+    name: fl_e08
+    type: VARCHAR
+  FL_E09:
+    name: fl_e09
+    type: VARCHAR
+  FL_V40:
+    name: fl_v40
+    type: VARCHAR
+  FL_V45:
+    name: fl_v45
+    type: VARCHAR
+  FL_V90:
+    name: fl_v90
+    type: VARCHAR
+  FL_V85:
+    name: fl_v85
+    type: VARCHAR
+  FL_E11:
+    name: fl_e11
+    type: VARCHAR
+  FL_V60:
+    name: fl_v60
+    type: VARCHAR
+  FL_V65:
+    name: fl_v65
+    type: VARCHAR
+  FL_V70:
+    name: fl_v70
+    type: VARCHAR
+  FL_V75:
+    name: fl_v75
+    type: VARCHAR
+  FL_V80:
+    name: fl_v80
+    type: VARCHAR
+  FL_F12:
+    name: fl_f12
+    type: VARCHAR
+  FL_G15:
+    name: fl_g15
+    type: VARCHAR
+  FL_K09:
+    name: fl_k09
+    type: VARCHAR
+  FL_K10:
+    name: fl_k10
+    type: VARCHAR
+  FL_K11:
+    name: fl_k11
+    type: VARCHAR
+  FL_L12:
+    name: fl_l12
+    type: VARCHAR
+  FL_M12:
+    name: fl_m12
+    type: VARCHAR
+  FL_Q11:
+    name: fl_q11
+    type: VARCHAR
+  FL_I86:
+    name: fl_i86
+    type: VARCHAR
+  FL_Z32:
+    name: fl_z32
+    type: VARCHAR
+  FL_Z33:
+    name: fl_z33
+    type: VARCHAR
+  FL_Z35:
+    name: fl_z35
+    type: VARCHAR
+  FL_Z36:
+    name: fl_z36
+    type: VARCHAR
+  FL_Z37:
+    name: fl_z37
+    type: VARCHAR
+  FL_Z38:
+    name: fl_z38
+    type: VARCHAR
+  FL_V11:
+    name: fl_v11
+    type: VARCHAR
+  FL_V13:
+    name: fl_v13
+    type: VARCHAR
+  FL_V15:
+    name: fl_v15
+    type: VARCHAR
+  FL_V17:
+    name: fl_v17
+    type: VARCHAR
+  FL_V21:
+    name: fl_v21
+    type: VARCHAR
+  FL_V23:
+    name: fl_v23
+    type: VARCHAR
+  FL_V37:
+    name: fl_v37
+    type: VARCHAR
+  FL_V29:
+    name: fl_v29
+    type: VARCHAR
+  FL_Z34:
+    name: fl_z34
+    type: VARCHAR
+  FL_V10:
+    name: fl_v10
+    type: VARCHAR
+  FL_V12:
+    name: fl_v12
+    type: VARCHAR
+  FL_V14:
+    name: fl_v14
+    type: VARCHAR
+  FL_V16:
+    name: fl_v16
+    type: VARCHAR
+  FL_V18:
+    name: fl_v18
+    type: VARCHAR
+  FL_V22:
+    name: fl_v22
+    type: VARCHAR
+  FL_V24:
+    name: fl_v24
+    type: VARCHAR
+  FL_V38:
+    name: fl_v38
+    type: VARCHAR
+  FL_V30:
+    name: fl_v30
+    type: VARCHAR
+  FL_V32:
+    name: fl_v32
+    type: VARCHAR
+  FL_V93:
+    name: fl_v93
+    type: VARCHAR
+  FL_19H:
+    name: fl_19h
+    type: VARCHAR
+  FL_21F:
+    name: fl_21f
+    type: VARCHAR
+  FL_31F:
+    name: fl_31f
+    type: VARCHAR
+  FL_41F:
+    name: fl_41f
+    type: VARCHAR
+  FL_61V:
+    name: fl_61v
+    type: VARCHAR
+  FL_66V:
+    name: fl_66v
+    type: VARCHAR
+  FL_W01:
+    name: fl_w01
+    type: VARCHAR
+  FL_W31:
+    name: fl_w31
+    type: VARCHAR
+  FL_W61:
+    name: fl_w61
+    type: VARCHAR
+  FL_V95:
+    name: fl_v95
+    type: VARCHAR
+  FL_V02:
+    name: fl_v02
+    type: VARCHAR
+  FL_K14:
+    name: fl_k14
+    type: VARCHAR
+  FL_CE1:
+    name: fl_ce1
+    type: VARCHAR
+  FL_CE2:
+    name: fl_ce2
+    type: VARCHAR
+  FL_CE3:
+    name: fl_ce3
+    type: VARCHAR
+  FL_SE1:
+    name: fl_se1
+    type: VARCHAR
+  FL_SE2:
+    name: fl_se2
+    type: VARCHAR
+  FL_SE3:
+    name: fl_se3
+    type: VARCHAR
+  FL_SE4:
+    name: fl_se4
+    type: VARCHAR
+  FL_SE5:
+    name: fl_se5
+    type: VARCHAR
+  FL_AR1:
+    name: fl_ar1
+    type: VARCHAR
+  FL_AR2:
+    name: fl_ar2
+    type: VARCHAR
+  FL_AR3:
+    name: fl_ar3
+    type: VARCHAR
+  FL_AR4:
+    name: fl_ar4
+    type: VARCHAR
+  FL_AR5:
+    name: fl_ar5
+    type: VARCHAR
+  FL_AR6:
+    name: fl_ar6
+    type: VARCHAR
+  FL_AE1:
+    name: fl_ae1
+    type: VARCHAR
+  FL_AE2:
+    name: fl_ae2
+    type: VARCHAR
+  FL_AE3:
+    name: fl_ae3
+    type: VARCHAR
+  FL_AE4:
+    name: fl_ae4
+    type: VARCHAR
+  FL_AE5:
+    name: fl_ae5
+    type: VARCHAR
+  FL_AE6:
+    name: fl_ae6
+    type: VARCHAR

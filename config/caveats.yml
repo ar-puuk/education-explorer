@@ -86,3 +86,14 @@ pss.enrollment:
     blank values as missing (value NULL, never 0).
 pss.teachers:
   caveat: Long format derived from the teacher headcount items (P385-P410), full-time-equivalent teachers (NUMTEACH) and the student-teacher ratio (STTCH_RT).
+ccd.district_finance:
+  caveat: >-
+    Annual survey of local government school system finances (F-33), in dollars, for the fiscal year that ends in the
+    school year shown (for example 2023 = FY2024 is labelled 2023-24 here only by file release). Column names are NCES
+    codes; labels come from the NCES companion file for the newest release and some items changed over time. Values of
+    -1 (missing), -2 (not applicable) and -3 (suppressed) are NULL with a flag; other negative amounts are real.
+    Charter and some other agencies are not covered. Amounts are not adjusted for inflation.
+ccd.district_graduates:
+  caveat: Counts of regular high school diploma recipients and other completers (not a graduation rate). Counts can be suppressed or missing (see value_flag).
+ccd.district_dropout:
+  caveat: Counts of students who dropped out of grades 9-12 (not a dropout rate). Reporting rules differ by state and some counts are suppressed.

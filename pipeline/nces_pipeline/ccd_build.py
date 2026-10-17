@@ -31,6 +31,16 @@ DMS_SQL = """CASE lower(trim({s}))
   WHEN 'not applicable' THEN 'not_applicable' WHEN NULL THEN NULL ELSE 'unknown_other' END"""
 
 
+FLAG_NEG_SQL = """CASE
+  WHEN {s} IS NULL THEN NULL
+  WHEN TRY_CAST({s} AS DOUBLE) = -1 OR {s} = 'M' THEN 'missing'
+  WHEN TRY_CAST({s} AS DOUBLE) = -2 OR {s} IN ('N', '†') THEN 'not_applicable'
+  WHEN TRY_CAST({s} AS DOUBLE) = -3 THEN 'suppressed'
+  WHEN TRY_CAST({s} AS DOUBLE) = -9 OR {s} = '‡' THEN 'not_meeting_standards'
+  WHEN TRY_CAST({s} AS DOUBLE) IS NOT NULL THEN 'reported'
+  ELSE 'unknown_other' END"""
+
+
 def q(c: str) -> str:
     return '"' + c.replace('"', '""') + '"'
 
@@ -63,6 +73,9 @@ def col_expr(raw: str, spec: dict) -> str:
         return f"CASE upper({s}) WHEN 'Y' THEN TRUE WHEN 'N' THEN FALSE WHEN 'YES' THEN TRUE WHEN 'NO' THEN FALSE END"
     if spec.get("signed"):  # coordinates etc.: negative values are real, not sentinels
         return f"CAST(TRY_CAST({s} AS DOUBLE) AS {t})"
+    if spec.get("neg_ok"):  # amounts that may be genuinely negative; -1/-2/-3/-9 stay sentinels
+        return (f"CASE WHEN TRY_CAST({s} AS DOUBLE) IS NULL OR TRY_CAST({s} AS DOUBLE) IN (-1, -2, -3, -9) THEN NULL "
+                f"ELSE CAST(TRY_CAST({s} AS DOUBLE) AS {t}) END")
     return num_value(s, t)
 
 
@@ -122,8 +135,9 @@ def select_sql(cm: ColumnMap, topic: Topic, staged: Path, cf: CcdFile, canon: li
                 raw, s = mapped[n]
                 parts.append(f"{col_expr(raw, s)} AS {q(n)}")
             elif n.endswith("_flag") and n[:-5] in mapped and mapped[n[:-5]][1].get("type", "VARCHAR") not in ("VARCHAR", "DATE", "BOOLEAN"):
-                raw = mapped[n[:-5]][0]
-                parts.append(f"{FLAG_SQL.format(s=txt(raw))} AS {q(n)}")
+                raw, sp = mapped[n[:-5]]
+                tpl = FLAG_NEG_SQL if sp.get("neg_ok") else FLAG_SQL
+                parts.append(f"{tpl.format(s=txt(raw))} AS {q(n)}")
             else:
                 parts.append(f"CAST(NULL AS {t}) AS {q(n)}")
         return ", ".join(parts)
@@ -147,7 +161,10 @@ def output_path(topic: Topic, year: int) -> Path:
     return DOCS_DATA / "ccd" / topic.name / f"{year}.parquet"
 
 
-def raw_files(min_year: int = 0, max_year: int = 9999) -> dict[tuple[int, str], CcdFile]:
+CCD_FIRST_YEAR = 2014  # earlier (legacy) layouts are ingested separately (Phase 1b)
+
+
+def raw_files(min_year: int = CCD_FIRST_YEAR, max_year: int = 9999) -> dict[tuple[int, str], CcdFile]:
     files = {}
     for cf in select(min_year=min_year, max_year=max_year):
         files[(cf.year, f"{cf.level}_{cf.component}")] = cf
@@ -189,11 +206,24 @@ def build_ccd(state: State, years: list[int] | None = None, topics: list[str] | 
     return report
 
 
-def write_bootstrap_map(topic: Topic, year: int, raw_cols: list[str], force: bool = False) -> Path:
+def sniff_types(staged: Path) -> dict[str, str]:
+    """BIGINT/DOUBLE/VARCHAR per column of a staged VARCHAR Parquet (integers detected by regex)."""
+    con = duckdb.connect()
+    cols = [r[0] for r in con.execute(f"DESCRIBE SELECT * FROM read_parquet('{staged.as_posix()}')").fetchall()]
+    aggs = []
+    for c in cols:
+        v = f"NULLIF(TRIM({q(c)}), '')"
+        aggs += [f"count(*) FILTER (WHERE {v} IS NOT NULL AND NOT regexp_matches({v}, '^[+-]?[0-9]+$'))",
+                 f"count(*) FILTER (WHERE {v} IS NOT NULL AND TRY_CAST({v} AS DOUBLE) IS NULL)"]
+    st = con.execute(f"SELECT {', '.join(aggs)} FROM read_parquet('{staged.as_posix()}')").fetchone()
+    return {c: ("VARCHAR" if st[2 * i + 1] else ("DOUBLE" if st[2 * i] else "BIGINT")) for i, c in enumerate(cols)}
+
+
+def write_bootstrap_map(topic: Topic, year: int, raw_cols: list[str], force: bool = False, staged: Path | None = None) -> Path:
     p = map_path("ccd", topic.name, year)
     if p.exists() and not force:
         return p
-    cols, unpivot = bootstrap(topic, year, raw_cols)
+    cols, unpivot = bootstrap(topic, year, raw_cols, sniff_types(staged) if (topic.generic and staged) else None)
     p.parent.mkdir(parents=True, exist_ok=True)
     doc = {"source": "ccd", "topic": topic.name, "year": year, "columns": cols}
     if unpivot:

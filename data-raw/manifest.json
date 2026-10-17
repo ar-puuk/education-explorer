@@ -1117,6 +1117,15 @@
    "url": "https://nces.ed.gov/ccd/Data/zip/ccd_lea_029_2122_w_1a_071722.zip"
   },
   {
+   "bytes": 4563249,
+   "path": "ccd/2021/lea_finance_f33_sdf22_2a_txt.zip",
+   "release": "v.2a",
+   "retrieved": "2026-10-16",
+   "sha256": "56778ba755f6036c1b809aaf78f4a87397128ced14b5346f9599efd963d94ba3",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/Data/zip/sdf22_2a_txt.zip"
+  },
+  {
    "bytes": 63445735,
    "path": "ccd/2021/lea_membership_ccd_lea_052_2122_l_1a_071722.zip",
    "release": "(v.1a)",
@@ -1196,6 +1205,15 @@
    "sha256": "0dec364d0aa8e50835bf4cca4734dd78c163293feea66c0f888713472ea48397",
    "source": "ccd",
    "url": "https://nces.ed.gov/ccd/Data/zip/ccd_lea_032_2223_l_1a_pub_050824.zip"
+  },
+  {
+   "bytes": 4512059,
+   "path": "ccd/2022/lea_finance_f33_sdf23_1a_txt.zip",
+   "release": "v.1a",
+   "retrieved": "2026-10-16",
+   "sha256": "7e281689097536e181df20f2252c845d22a2070e8d4112961f13e479a077ed5a",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/Data/zip/sdf23_1a_txt.zip"
   },
   {
    "bytes": 6855551,
@@ -1475,6 +1493,15 @@
    "sha256": "dc707104d1748831a4befe66dd6a4d0537ff732f4dad5fd566c7bd44f22fae90",
    "source": "ccd-doc",
    "url": "https://nces.ed.gov/ccd/xls/2019-20_LEA_IDEA_Companion.xlsx"
+  },
+  {
+   "bytes": 64358,
+   "path": "ccd/docs/2026011_F33_FY24_Version1a_CompanionFile.xlsx",
+   "release": "2023",
+   "retrieved": "2026-10-16",
+   "sha256": "985f85590538be5ff2dac20adacaf0adaa05313142ab56c057d58b3c40e0e0db",
+   "source": "ccd-doc",
+   "url": "https://nces.ed.gov/ccd/xls/2026011_F33_FY24_Version1a_CompanionFile.xlsx"
   },
   {
    "bytes": 40570,

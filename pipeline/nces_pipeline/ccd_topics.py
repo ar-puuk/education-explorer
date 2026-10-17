@@ -37,6 +37,7 @@ class Topic:
     dims: tuple[str, ...] = ()
     ids: tuple[str, ...] = ()
     years: tuple[int, int] = (2014, 9999)
+    generic: bool = False     # flat table whose columns keep their (lower-cased) source names, types sniffed from the data
 
 
 TOPICS: dict[str, Topic] = {t.name: t for t in [
@@ -53,6 +54,11 @@ TOPICS: dict[str, Topic] = {t.name: t for t in [
           dims=("total_indicator",), ids=("ncessch", "leaid")),
     Topic("district_staff", "lea_staff", "long", ("leaid", "staff_category", "total_indicator"),
           value="staff_count", value_type="DOUBLE", dims=("staff_category", "total_indicator"), ids=("leaid",)),
+    Topic("district_finance", "lea_finance_f33", "flat", ("leaid",), ids=("leaid",), generic=True),
+    Topic("district_graduates", "lea_graduates", "long", ("leaid", "credential", "race", "sex", "total_indicator"),
+          value="student_count", dims=("credential", "race", "sex", "total_indicator"), ids=("leaid",), years=(2018, 9999)),
+    Topic("district_dropout", "lea_dropout", "long", ("leaid", "grade", "race", "sex", "total_indicator"),
+          value="student_count", dims=("grade", "race", "sex", "total_indicator"), ids=("leaid",), years=(2018, 9999)),
     Topic("district_idea", "lea_idea", "long", ("leaid",), value="idea_count", ids=("leaid",)),
     Topic("district_el", "lea_el", "long", ("leaid",), value="lep_count", ids=("leaid",)),
 ]}
@@ -61,6 +67,7 @@ TOPICS: dict[str, Topic] = {t.name: t for t in [
 LONG_RAW = {
     "GRADE": ("grade", "VARCHAR"), "RACE_ETHNICITY": ("race", "VARCHAR"), "SEX": ("sex", "VARCHAR"),
     "TOTAL_INDICATOR": ("total_indicator", "VARCHAR"), "DATA_GROUP": ("data_group", "VARCHAR"),
+    "CREDENTIAL": ("credential", "VARCHAR"),
     "LUNCH_PROGRAM": ("lunch_program", "VARCHAR"), "STAFF": ("staff_category", "VARCHAR"),
     "DMS_FLAG": ("value_flag", "VARCHAR"),
 }
@@ -77,10 +84,25 @@ def _id_cols(raw_cols: list[str], cols: dict) -> None:
             cols[c] = {"name": a[0], "type": a[1]}
 
 
-def bootstrap(topic: Topic, year: int, raw_cols: list[str]) -> tuple[dict, list[dict]]:
+GENERIC_STR = re.compile(r"^(leaid|censusid|fipst|conum|csa|cbsa|name|stname|stabbr|schlev|agchrt|year|ccdnf|cenfile|"
+                         r"state_agency_no|st_leaid|union|statename|st|school_year|lea_name|ncessch)$", re.IGNORECASE)
+
+
+def bootstrap(topic: Topic, year: int, raw_cols: list[str], types: dict[str, str] | None = None) -> tuple[dict, list[dict]]:
     """Return (columns, unpivot) for a first-time map. Unrecognized columns get a TODO name."""
     cols: dict[str, dict] = {}
     unpivot: list[dict] = []
+    if topic.generic:
+        for c in raw_cols:
+            if c in DERIVED_YEAR:
+                cols[c] = {"ignore": True, "reason": "replaced by derived year/school_year columns"}
+                continue
+            t = "VARCHAR" if GENERIC_STR.match(c) else (types or {}).get(c, "VARCHAR")
+            spec = {"name": c.lower(), "type": t}
+            if t in ("DOUBLE", "BIGINT", "INTEGER"):
+                spec["neg_ok"] = True  # finance amounts can be negative; only -1/-2/-3/-9 are sentinels
+            cols[c] = spec
+        return cols, unpivot
     _id_cols(raw_cols, cols)
     long_format = any(c in raw_cols for c in LONG_RAW) and any(c in raw_cols for c in LONG_VALUE_RAW)
     if topic.kind == "long" and long_format:

@@ -17,7 +17,9 @@ KEYS = {
     "staff": ["ncessch", "total_indicator"],
     "district_staff": ["leaid", "staff_category", "total_indicator"],
     "district_idea": ["leaid"], "district_el": ["leaid"],
-    "finance": ["leaid"], "graduation": ["leaid"],
+    "district_finance": ["leaid"],
+    "district_graduates": ["leaid", "credential", "race", "sex", "total_indicator"],
+    "district_dropout": ["leaid", "grade", "race", "sex", "total_indicator"],
 }
 EXPAND_DEG = 0.5
 MAX_FILE_BYTES = 90 * 1024 * 1024
