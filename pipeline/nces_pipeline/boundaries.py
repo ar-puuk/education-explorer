@@ -48,7 +48,7 @@ def _round(coords):
 
 def _read_districts(con, shp, name_col: str, lo: str | None, hi: str | None) -> list[tuple]:
     """Read one TIGER shapefile; some states' .dbf files are not valid UTF-8 (accented names), so retry as Latin-1."""
-    for opts in ("", ", open_options=['ENCODING=LATIN1']"):
+    for opts in ("", ", open_options=['ENCODING=ISO-8859-1']"):
         try:
             return con.execute(f"""
               SELECT GEOID, {name_col}, {lo or 'NULL'}, {hi or 'NULL'},

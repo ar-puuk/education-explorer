@@ -39,5 +39,23 @@ Legend: [x] done, [~] in progress, [ ] todo
 - [x] Census batch geocoder with committed cache (163 addresses: 146 matched); applied to CCD school locations and college points; private points (292 schools, PSS 2005-06+)
 - [x] Private layer (square/house markers), affiliation filter, biennial-survey note on the slider, private detail panel (enrollment tabs, teachers, facts, table explorer for PSS tables), approximate-location outline
 
-## Phase 5 .. 6
-- [ ] Phase 5 not started: remaining CCD topics (finance F-33, graduation/dropout), boundaries + rollups, compare mode, table/CSV export, methodology page
+## Phase 5: districts, compare, tables, methodology
+- [x] F-33 finance (via config/ccd_extra_files.yml), district boundaries (TIGER UNSD 2010-11..2024-25), district detail panel, compare mode (up to 4, shareable), table explorer + CSV export, methodology page
+- [x] Colour-by (charter/locale/level) for public school markers, survey-year pips on the slider
+
+## Phase 6: quality and release
+- [x] pytest 27, vitest 11, Playwright smoke + axe a11y (light and dark: clean) + mobile (no horizontal scroll) + perf; ruff clean; CONTRIBUTING, issue/PR templates
+- [x] Deployed at https://ar-puuk.github.io/education-explorer/ (main:/docs)
+
+## Colorado smoke run (not committed; output redirected with EE_DOCS_DATA)
+- [x] CCD 2014+ , EDGE, IPEDS (all families), PSS, geocode, dictionary and points build for Colorado with no schema or type drift (maps use national types)
+- [x] Found and fixed: TIGER .dbf encoding retry (`ISO-8859-1`; GDAL does not know `LATIN1`)
+- [ ] Open: 11 IPEDS uniqueness failures (ca2dig 2001, csubbacip 1980, ff1af/ff1ag 2004-07, iccampuses 2021-22, icpccampuses 2023). Keys are derived from the first state's rows, so they are too narrow for states with multiple rows per entity (affiliated entities, campuses). Fix: derive keys from the national staged files, or re-run `bootstrap-maps --force` for the new state
+- [ ] Not run: legacy CCD 1997-2013 (re-reads ~25 min of national SAS files), geometry/size/performance for a large state
+
+## Next / unverified / known issues
+- Known gaps: CCD 1986-87..1996-97 (fixed-width text) and the 1997-98 district file; IPEDS map layer and chart integration before 2000 (tables are in the explorer); curated finance, net-price and graduation charts
+- Unverified: mobile only lightly tested (Chromium emulation); other browsers; other states beyond the Colorado smoke run
+- Utah Parquet total ~62 MB in docs/data (IPEDS ~38, CCD ~12, PSS ~4, geo ~4)
+- Commits are authored with the work email from git config
+- Recommended next: fix IPEDS key derivation nationally, then run a full Colorado build including legacy
