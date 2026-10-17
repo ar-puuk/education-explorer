@@ -1,0 +1,69 @@
+source: ipeds
+family: chd
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1990,1998
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1990'
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: '1990'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: '1990'
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: '1990'
+  FORM_C:
+    name: form_c
+    type: BIGINT
+    years: '1998'
+  STAT_C:
+    name: stat_c
+    type: BIGINT
+    years: '1998'
+  PRCH_C:
+    name: prch_c
+    type: BIGINT
+    years: '1998'
+  IDX_C:
+    name: idx_c
+    type: BIGINT
+    years: '1998'
+  IMP_C:
+    name: imp_c
+    type: BIGINT
+    years: '1998'
+  REFU_C:
+    name: refu_c
+    type: BIGINT
+    years: '1998'
+  SRC_C:
+    name: src_c
+    type: BIGINT
+    years: '1998'
+  EDIT_C:
+    name: edit_c
+    type: BIGINT
+    years: '1998'
+  DATE_C:
+    name: date_c
+    type: BIGINT
+    years: '1998'
+  PARTA:
+    name: parta
+    type: BIGINT
+    years: '1998'
+  PARTB:
+    name: partb
+    type: BIGINT
+    years: '1998'

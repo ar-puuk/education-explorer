@@ -1,0 +1,367 @@
+source: ipeds
+family: efanr
+key:
+- unitid
+- line
+- efalevel
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1994-1999
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1994-1997
+  LINE:
+    name: line
+    type: BIGINT
+    years: 1994-1999
+  LSTUDY:
+    name: lstudy
+    type: VARCHAR
+    years: 1994-1999
+  SECTION:
+    name: section
+    type: BIGINT
+    years: 1994-1999
+  EFRACE01:
+    name: efrace01
+    type: BIGINT
+    years: 1994-1999
+  EFRACE02:
+    name: efrace02
+    type: BIGINT
+    years: 1994-1999
+  EFRACE03:
+    name: efrace03
+    type: BIGINT
+    years: 1994-1999
+  EFRACE04:
+    name: efrace04
+    type: BIGINT
+    years: 1994-1999
+  EFRACE05:
+    name: efrace05
+    type: BIGINT
+    years: 1994-1999
+  EFRACE06:
+    name: efrace06
+    type: BIGINT
+    years: 1994-1999
+  EFRACE07:
+    name: efrace07
+    type: BIGINT
+    years: 1994-1999
+  EFRACE08:
+    name: efrace08
+    type: BIGINT
+    years: 1994-1999
+  EFRACE09:
+    name: efrace09
+    type: BIGINT
+    years: 1994-1999
+  EFRACE10:
+    name: efrace10
+    type: BIGINT
+    years: 1994-1999
+  EFRACE11:
+    name: efrace11
+    type: BIGINT
+    years: 1994-1999
+  EFRACE12:
+    name: efrace12
+    type: BIGINT
+    years: 1994-1999
+  EFRACE13:
+    name: efrace13
+    type: BIGINT
+    years: 1994-1999
+  EFRACE14:
+    name: efrace14
+    type: BIGINT
+    years: 1994-1999
+  EFRACE15:
+    name: efrace15
+    type: BIGINT
+    years: 1994-1999
+  EFRACE16:
+    name: efrace16
+    type: BIGINT
+    years: 1994-1999
+  BAL_M:
+    name: bal_m
+    type: BIGINT
+    years: '1994'
+  BAL_W:
+    name: bal_w
+    type: BIGINT
+    years: '1994'
+  IA01:
+    name: ia01
+    type: VARCHAR
+    years: 1994-1997
+  IA02:
+    name: ia02
+    type: VARCHAR
+    years: 1994-1997
+  IA03:
+    name: ia03
+    type: VARCHAR
+    years: 1994-1997
+  IA04:
+    name: ia04
+    type: VARCHAR
+    years: 1994-1997
+  IA05:
+    name: ia05
+    type: VARCHAR
+    years: 1994-1997
+  IA06:
+    name: ia06
+    type: VARCHAR
+    years: 1994-1997
+  IA07:
+    name: ia07
+    type: VARCHAR
+    years: 1994-1997
+  IA08:
+    name: ia08
+    type: VARCHAR
+    years: 1994-1997
+  IA09:
+    name: ia09
+    type: VARCHAR
+    years: 1994-1997
+  IA10:
+    name: ia10
+    type: VARCHAR
+    years: 1994-1997
+  IA11:
+    name: ia11
+    type: VARCHAR
+    years: 1994-1997
+  IA12:
+    name: ia12
+    type: VARCHAR
+    years: 1994-1997
+  IA13:
+    name: ia13
+    type: VARCHAR
+    years: 1994-1997
+  IA14:
+    name: ia14
+    type: VARCHAR
+    years: 1994-1997
+  IA15:
+    name: ia15
+    type: VARCHAR
+    years: 1994-1997
+  IA16:
+    name: ia16
+    type: VARCHAR
+    years: 1994-1997
+  BALMEN:
+    name: balmen
+    type: BIGINT
+    years: 1995-1997
+  BALWOMEN:
+    name: balwomen
+    type: BIGINT
+    years: 1995-1997
+  XEF01:
+    name: xef01
+    type: VARCHAR
+    years: '1998'
+  XEF02:
+    name: xef02
+    type: VARCHAR
+    years: '1998'
+  XEF03:
+    name: xef03
+    type: VARCHAR
+    years: '1998'
+  XEF04:
+    name: xef04
+    type: VARCHAR
+    years: '1998'
+  XEF05:
+    name: xef05
+    type: VARCHAR
+    years: '1998'
+  XEF06:
+    name: xef06
+    type: VARCHAR
+    years: '1998'
+  XEF07:
+    name: xef07
+    type: VARCHAR
+    years: '1998'
+  XEF08:
+    name: xef08
+    type: VARCHAR
+    years: '1998'
+  XEF09:
+    name: xef09
+    type: VARCHAR
+    years: '1998'
+  XEF10:
+    name: xef10
+    type: VARCHAR
+    years: '1998'
+  XEF11:
+    name: xef11
+    type: VARCHAR
+    years: '1998'
+  XEF12:
+    name: xef12
+    type: VARCHAR
+    years: '1998'
+  XEF13:
+    name: xef13
+    type: VARCHAR
+    years: '1998'
+  XEF14:
+    name: xef14
+    type: VARCHAR
+    years: '1998'
+  XEF15:
+    name: xef15
+    type: VARCHAR
+    years: '1998'
+  XEF16:
+    name: xef16
+    type: VARCHAR
+    years: '1998'
+  EFALEVEL:
+    name: efalevel
+    type: BIGINT
+    years: '1999'
+  XEFRAC01:
+    name: xefrac01
+    type: VARCHAR
+    years: '1999'
+  XEFRAC02:
+    name: xefrac02
+    type: VARCHAR
+    years: '1999'
+  XEFRAC03:
+    name: xefrac03
+    type: VARCHAR
+    years: '1999'
+  XEFRAC04:
+    name: xefrac04
+    type: VARCHAR
+    years: '1999'
+  XEFRAC05:
+    name: xefrac05
+    type: VARCHAR
+    years: '1999'
+  XEFRAC06:
+    name: xefrac06
+    type: VARCHAR
+    years: '1999'
+  XEFRAC07:
+    name: xefrac07
+    type: VARCHAR
+    years: '1999'
+  XEFRAC08:
+    name: xefrac08
+    type: VARCHAR
+    years: '1999'
+  XEFRAC09:
+    name: xefrac09
+    type: VARCHAR
+    years: '1999'
+  XEFRAC10:
+    name: xefrac10
+    type: VARCHAR
+    years: '1999'
+  XEFRAC11:
+    name: xefrac11
+    type: VARCHAR
+    years: '1999'
+  XEFRAC12:
+    name: xefrac12
+    type: VARCHAR
+    years: '1999'
+  XEFRAC13:
+    name: xefrac13
+    type: VARCHAR
+    years: '1999'
+  XEFRAC14:
+    name: xefrac14
+    type: VARCHAR
+    years: '1999'
+  XEFRAC15:
+    name: xefrac15
+    type: VARCHAR
+    years: '1999'
+  XEFRAC16:
+    name: xefrac16
+    type: VARCHAR
+    years: '1999'
+  XEFRAC17:
+    name: xefrac17
+    type: VARCHAR
+    years: '1999'
+  EFRACE17:
+    name: efrace17
+    type: BIGINT
+    years: '1999'
+  XEFRAC18:
+    name: xefrac18
+    type: VARCHAR
+    years: '1999'
+  EFRACE18:
+    name: efrace18
+    type: BIGINT
+    years: '1999'
+  XEFRAC19:
+    name: xefrac19
+    type: VARCHAR
+    years: '1999'
+  EFRACE19:
+    name: efrace19
+    type: BIGINT
+    years: '1999'
+  XEFRAC20:
+    name: xefrac20
+    type: VARCHAR
+    years: '1999'
+  EFRACE20:
+    name: efrace20
+    type: BIGINT
+    years: '1999'
+  XEFRAC21:
+    name: xefrac21
+    type: VARCHAR
+    years: '1999'
+  EFRACE21:
+    name: efrace21
+    type: BIGINT
+    years: '1999'
+  XEFRAC22:
+    name: xefrac22
+    type: VARCHAR
+    years: '1999'
+  EFRACE22:
+    name: efrace22
+    type: BIGINT
+    years: '1999'
+  XEFRAC23:
+    name: xefrac23
+    type: VARCHAR
+    years: '1999'
+  EFRACE23:
+    name: efrace23
+    type: BIGINT
+    years: '1999'
+  XEFRAC24:
+    name: xefrac24
+    type: VARCHAR
+    years: '1999'
+  EFRACE24:
+    name: efrace24
+    type: BIGINT
+    years: '1999'

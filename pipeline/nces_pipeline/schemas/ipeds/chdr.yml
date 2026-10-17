@@ -1,0 +1,41 @@
+source: ipeds
+family: chdr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1991,1997
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: 1991,1997
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1991'
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: 1991,1997
+  IMPTYPE:
+    name: imptype
+    type: BIGINT
+    years: '1997'
+  IDX:
+    name: idx
+    type: BIGINT
+    years: '1997'
+  SOURCE:
+    name: source
+    type: BIGINT
+    years: '1997'
+  NCESEDIT:
+    name: ncesedit
+    type: BIGINT
+    years: '1997'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: '1997'

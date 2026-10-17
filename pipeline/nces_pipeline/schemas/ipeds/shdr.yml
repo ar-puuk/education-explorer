@@ -1,0 +1,41 @@
+source: ipeds
+family: shdr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1991'
+  HSAMP:
+    name: hsamp
+    type: VARCHAR
+    years: '1991'
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: '1991'
+  SMPLWT:
+    name: smplwt
+    type: BIGINT
+    years: '1991'
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: '1991'
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1991'
+  VARSTRAT:
+    name: varstrat
+    type: BIGINT
+    years: '1991'
+  SOURCE:
+    name: source
+    type: BIGINT
+    years: '1991'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: '1991'

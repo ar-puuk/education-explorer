@@ -1,0 +1,147 @@
+source: ipeds
+family: fk
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1989,1991-1996
+  K011:
+    name: k011
+    type: BIGINT
+    years: 1989,1991-1996
+  K012:
+    name: k012
+    type: BIGINT
+    years: 1989,1991-1996
+  K013:
+    name: k013
+    type: BIGINT
+    years: 1989,1991-1996
+  K014:
+    name: k014
+    type: BIGINT
+    years: 1989,1991-1996
+  K021:
+    name: k021
+    type: BIGINT
+    years: 1989,1991-1996
+  K022:
+    name: k022
+    type: BIGINT
+    years: 1989,1991-1996
+  K023:
+    name: k023
+    type: BIGINT
+    years: 1989,1991-1996
+  K024:
+    name: k024
+    type: BIGINT
+    years: 1989,1991-1996
+  K025:
+    name: k025
+    type: BIGINT
+    years: 1989,1991-1996
+  K031:
+    name: k031
+    type: BIGINT
+    years: 1989,1991-1996
+  K032:
+    name: k032
+    type: BIGINT
+    years: 1989,1991-1996
+  K033:
+    name: k033
+    type: BIGINT
+    years: 1989,1991-1996
+  K034:
+    name: k034
+    type: BIGINT
+    years: 1989,1991-1996
+  K035:
+    name: k035
+    type: BIGINT
+    years: 1989,1991-1996
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: '1991'
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1994-1995
+  XK011:
+    name: k011_flag
+    type: VARCHAR
+    flag_for: k011
+    years: 1992-1996
+  XK012:
+    name: k012_flag
+    type: VARCHAR
+    flag_for: k012
+    years: 1992-1996
+  XK013:
+    name: k013_flag
+    type: VARCHAR
+    flag_for: k013
+    years: 1992-1996
+  XK014:
+    name: k014_flag
+    type: VARCHAR
+    flag_for: k014
+    years: 1992-1996
+  XK021:
+    name: k021_flag
+    type: VARCHAR
+    flag_for: k021
+    years: 1992-1996
+  XK022:
+    name: k022_flag
+    type: VARCHAR
+    flag_for: k022
+    years: 1992-1996
+  XK023:
+    name: k023_flag
+    type: VARCHAR
+    flag_for: k023
+    years: 1992-1996
+  XK024:
+    name: k024_flag
+    type: VARCHAR
+    flag_for: k024
+    years: 1992-1996
+  XK025:
+    name: k025_flag
+    type: VARCHAR
+    flag_for: k025
+    years: 1992-1996
+  XK031:
+    name: k031_flag
+    type: VARCHAR
+    flag_for: k031
+    years: 1992-1996
+  XK032:
+    name: k032_flag
+    type: VARCHAR
+    flag_for: k032
+    years: 1992-1996
+  XK033:
+    name: k033_flag
+    type: VARCHAR
+    flag_for: k033
+    years: 1992-1996
+  XK034:
+    name: k034_flag
+    type: VARCHAR
+    flag_for: k034
+    years: 1992-1996
+  XK035:
+    name: k035_flag
+    type: VARCHAR
+    flag_for: k035
+    years: 1992-1996
+  FILLER:
+    name: filler
+    type: BIGINT
+    years: '1995'

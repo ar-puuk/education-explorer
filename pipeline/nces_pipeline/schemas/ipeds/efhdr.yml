@@ -1,0 +1,53 @@
+source: ipeds
+family: efhdr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1991,1997
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: 1991,1997
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1991'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: 1991,1997
+  H_SAMP:
+    name: h_samp
+    type: BIGINT
+    years: '1991'
+  SMPLWT:
+    name: smplwt
+    type: BIGINT
+    years: '1991'
+  VARSTRAT:
+    name: varstrat
+    type: BIGINT
+    years: '1991'
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: 1991,1997
+  IMPTYPE:
+    name: imptype
+    type: BIGINT
+    years: '1997'
+  IDX:
+    name: idx
+    type: BIGINT
+    years: '1997'
+  SOURCE:
+    name: source
+    type: BIGINT
+    years: '1997'
+  NCESEDIT:
+    name: ncesedit
+    type: BIGINT
+    years: '1997'

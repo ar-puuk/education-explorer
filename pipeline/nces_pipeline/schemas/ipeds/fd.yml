@@ -1,0 +1,35 @@
+source: ipeds
+family: fd
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1989,1991-1996
+  D011:
+    name: d011
+    type: BIGINT
+    years: 1989,1991-1992
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1994-1995
+  XD011:
+    name: d011_flag
+    type: VARCHAR
+    flag_for: d011
+    years: '1992'
+  D01:
+    name: d01
+    type: BIGINT
+    years: 1993-1996
+  XD01:
+    name: d01_flag
+    type: VARCHAR
+    flag_for: d01
+    years: 1993-1996
+  FILLER:
+    name: filler
+    type: BIGINT
+    years: '1995'

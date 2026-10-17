@@ -1,0 +1,81 @@
+source: ipeds
+family: efhd
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1990,1998
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: '1990'
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1990'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: '1990'
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: '1990'
+  FORM_EF:
+    name: form_ef
+    type: BIGINT
+    years: '1998'
+  STAT_EF:
+    name: stat_ef
+    type: BIGINT
+    years: '1998'
+  PRCH_EF:
+    name: prch_ef
+    type: BIGINT
+    years: '1998'
+  IDX_EF:
+    name: idx_ef
+    type: BIGINT
+    years: '1998'
+  IMP_EF:
+    name: imp_ef
+    type: BIGINT
+    years: '1998'
+  REFU_EF:
+    name: refu_ef
+    type: BIGINT
+    years: '1998'
+  SOURCEEF:
+    name: sourceef
+    type: BIGINT
+    years: '1998'
+  EDIT_EF:
+    name: edit_ef
+    type: BIGINT
+    years: '1998'
+  DATE_EF:
+    name: date_ef
+    type: BIGINT
+    years: '1998'
+  PTA99_EF:
+    name: pta99_ef
+    type: BIGINT
+    years: '1998'
+  PTASP_EF:
+    name: ptasp_ef
+    type: BIGINT
+    years: '1998'
+  PTB_EF:
+    name: ptb_ef
+    type: BIGINT
+    years: '1998'
+  PTC_EF:
+    name: ptc_ef
+    type: BIGINT
+    years: '1998'
+  PTD_EF:
+    name: ptd_ef
+    type: BIGINT
+    years: '1998'

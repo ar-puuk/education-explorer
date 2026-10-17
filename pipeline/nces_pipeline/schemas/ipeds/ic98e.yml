@@ -1,0 +1,37 @@
+source: ipeds
+family: ic98e
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1997'
+  ENROLMNT:
+    name: enrolmnt
+    type: BIGINT
+    years: '1997'
+  GENENRL:
+    name: genenrl
+    type: BIGINT
+    years: '1997'
+  MONTH:
+    name: month
+    type: BIGINT
+    years: '1997'
+  TOSTUCU:
+    name: tostucu
+    type: BIGINT
+    years: '1997'
+  TOSTUFRS:
+    name: tostufrs
+    type: BIGINT
+    years: '1997'
+  TOSTUCG:
+    name: tostucg
+    type: BIGINT
+    years: '1997'
+  TOSTUCP:
+    name: tostucp
+    type: BIGINT
+    years: '1997'

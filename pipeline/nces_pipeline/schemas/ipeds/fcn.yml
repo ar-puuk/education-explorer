@@ -1,0 +1,153 @@
+source: ipeds
+family: fcn
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1996,1998-1999
+  CN01:
+    name: cn01
+    type: BIGINT
+    years: 1996,1998-1999
+  CN02:
+    name: cn02
+    type: BIGINT
+    years: 1996,1998-1999
+  CN03:
+    name: cn03
+    type: BIGINT
+    years: 1996,1998-1999
+  CN04:
+    name: cn04
+    type: BIGINT
+    years: 1996,1998-1999
+  CN05:
+    name: cn05
+    type: BIGINT
+    years: 1996,1998-1999
+  CN06:
+    name: cn06
+    type: BIGINT
+    years: 1996,1998-1999
+  CN07:
+    name: cn07
+    type: BIGINT
+    years: 1996,1998-1999
+  CN08:
+    name: cn08
+    type: BIGINT
+    years: 1996,1998-1999
+  CN08A:
+    name: cn08a
+    type: BIGINT
+    years: 1996,1998-1999
+  CN08B:
+    name: cn08b
+    type: BIGINT
+    years: 1996,1998-1999
+  CN08C:
+    name: cn08c
+    type: BIGINT
+    years: 1996,1998-1999
+  CN08D:
+    name: cn08d
+    type: BIGINT
+    years: 1996,1998-1999
+  CN09:
+    name: cn09
+    type: BIGINT
+    years: 1996,1998-1999
+  CN10:
+    name: cn10
+    type: BIGINT
+    years: 1996,1998-1999
+  CN11:
+    name: cn11
+    type: BIGINT
+    years: 1996,1998-1999
+  CN12:
+    name: cn12
+    type: BIGINT
+    years: 1996,1998-1999
+  XCN01:
+    name: cn01_flag
+    type: VARCHAR
+    flag_for: cn01
+    years: 1996,1998-1999
+  XCN02:
+    name: cn02_flag
+    type: VARCHAR
+    flag_for: cn02
+    years: 1996,1998-1999
+  XCN03:
+    name: cn03_flag
+    type: VARCHAR
+    flag_for: cn03
+    years: 1996,1998-1999
+  XCN04:
+    name: cn04_flag
+    type: VARCHAR
+    flag_for: cn04
+    years: 1996,1998-1999
+  XCN05:
+    name: cn05_flag
+    type: VARCHAR
+    flag_for: cn05
+    years: 1996,1998-1999
+  XCN06:
+    name: cn06_flag
+    type: VARCHAR
+    flag_for: cn06
+    years: 1996,1998-1999
+  XCN07:
+    name: cn07_flag
+    type: VARCHAR
+    flag_for: cn07
+    years: 1996,1998-1999
+  XCN08:
+    name: cn08_flag
+    type: VARCHAR
+    flag_for: cn08
+    years: 1996,1998-1999
+  XCN08A:
+    name: cn08a_flag
+    type: VARCHAR
+    flag_for: cn08a
+    years: 1996,1998-1999
+  XCN08B:
+    name: cn08b_flag
+    type: VARCHAR
+    flag_for: cn08b
+    years: 1996,1998-1999
+  XCN08C:
+    name: cn08c_flag
+    type: VARCHAR
+    flag_for: cn08c
+    years: 1996,1998-1999
+  XCN08D:
+    name: cn08d_flag
+    type: VARCHAR
+    flag_for: cn08d
+    years: 1996,1998-1999
+  XCN09:
+    name: cn09_flag
+    type: VARCHAR
+    flag_for: cn09
+    years: 1996,1998-1999
+  XCN10:
+    name: cn10_flag
+    type: VARCHAR
+    flag_for: cn10
+    years: 1996,1998-1999
+  XCN11:
+    name: cn11_flag
+    type: VARCHAR
+    flag_for: cn11
+    years: 1996,1998-1999
+  XCN12:
+    name: cn12_flag
+    type: VARCHAR
+    flag_for: cn12
+    years: 1996,1998-1999

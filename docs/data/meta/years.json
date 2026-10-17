@@ -784,10 +784,35 @@
     2024
    ]
   },
+  "c4ormore2dig": {
+   "survey": "Completions",
+   "title": "Bachelor degrees and above conferred by major discipline (2 digit code), award level and gender: 1979-80",
+   "versions": {
+    "1980": "provisional"
+   },
+   "years": [
+    1980
+   ]
+  },
+  "c4ormorecip": {
+   "survey": "Completions",
+   "title": "Bachelor degrees and above conferred by detailed program, award level and gender: 1979-80",
+   "versions": {
+    "1980": "provisional"
+   },
+   "years": [
+    1980
+   ]
+  },
   "ca": {
    "survey": "Completions",
    "title": "Awards/degrees conferred by program (6-digit CIP code), award level, race/ethnicity, and sex: July 1, 2024 to June 30, 2025",
    "versions": {
+    "1995": "provisional",
+    "1996": "provisional",
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -816,6 +841,11 @@
     "2025": "provisional"
    },
    "years": [
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
     2000,
     2001,
     2002,
@@ -848,10 +878,24 @@
    "survey": "Completions",
    "title": "Awards/degrees conferred by major discipline (2-digit CIP code), award level, race/ethnicity, and gender: 2000-01",
    "versions": {
+    "1984": "provisional",
+    "1986": "provisional",
+    "1988": "provisional",
+    "1995": "provisional",
+    "1996": "provisional",
+    "1997": "provisional",
+    "1998": "provisional",
     "2000": "provisional",
     "2001": "provisional"
    },
    "years": [
+    1984,
+    1986,
+    1988,
+    1995,
+    1996,
+    1997,
+    1998,
     2000,
     2001
    ]
@@ -860,6 +904,11 @@
    "survey": "Completions",
    "title": "Number of students receiving awards/degrees, by race/ethnicity and sex: July 1, 2024 to June 30, 2025",
    "versions": {
+    "1995": "provisional",
+    "1996": "provisional",
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2012": "revised",
     "2013": "revised",
     "2014": "revised",
@@ -876,6 +925,11 @@
     "2025": "provisional"
    },
    "years": [
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
     2012,
     2013,
     2014,
@@ -928,6 +982,36 @@
     2025
    ]
   },
+  "ccip": {
+   "survey": "Completions",
+   "title": "Awards/degrees conferred by program (6-digit CIP code), award level and gender: 1993-94",
+   "versions": {
+    "1984": "provisional",
+    "1985": "provisional",
+    "1986": "provisional",
+    "1987": "provisional",
+    "1988": "provisional",
+    "1989": "provisional",
+    "1990": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional"
+   },
+   "years": [
+    1984,
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994
+   ]
+  },
   "cdep": {
    "survey": "Completions",
    "title": "Number of programs offered and number of programs offered via distance education, by award level: July 1, 2024 to June 30, 2025",
@@ -962,6 +1046,56 @@
     2025
    ]
   },
+  "chd": {
+   "survey": "Completions",
+   "title": "Response status",
+   "versions": {
+    "1990": "provisional",
+    "1998": "provisional"
+   },
+   "years": [
+    1990,
+    1998
+   ]
+  },
+  "chdr": {
+   "survey": "Completions",
+   "title": "Response status",
+   "versions": {
+    "1991": "provisional",
+    "1997": "provisional"
+   },
+   "years": [
+    1991,
+    1997
+   ]
+  },
+  "cic": {
+   "survey": "Completions",
+   "title": "Response status",
+   "versions": {
+    "1985": "provisional",
+    "1987": "provisional",
+    "1988": "provisional",
+    "1989": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1985,
+    1987,
+    1988,
+    1989,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
   "cost1": {
    "survey": "Cost",
    "title": "Application fees, tuition and required fees, food and housing for undergraduate and graduate students",
@@ -980,6 +1114,50 @@
    },
    "years": [
     2024
+   ]
+  },
+  "cre": {
+   "survey": "Completions",
+   "title": "Awards/degrees conferred by major discipline (2-digit CIP code), award level, race/ethnicity, and gender: 1993-94",
+   "versions": {
+    "1985": "provisional",
+    "1987": "provisional",
+    "1989": "provisional",
+    "1990": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional"
+   },
+   "years": [
+    1985,
+    1987,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994
+   ]
+  },
+  "csubba2dig": {
+   "survey": "Completions",
+   "title": "Subbaccalaureate awards/degrees conferred by major discipline (2-digit code), award level and gender: 1979-80",
+   "versions": {
+    "1980": "provisional"
+   },
+   "years": [
+    1980
+   ]
+  },
+  "csubbacip": {
+   "survey": "Completions",
+   "title": "Subbaccalaureate awards/degrees conferred by detailed program, award level and gender: 1979-80",
+   "versions": {
+    "1980": "provisional"
+   },
+   "years": [
+    1980
    ]
   },
   "dfr": {
@@ -1220,10 +1398,31 @@
     2024
    ]
   },
+  "ef": {
+   "survey": "Fall Enrollment",
+   "title": "Gender, attendance status and level of student",
+   "versions": {
+    "1984": "provisional",
+    "1985": "provisional"
+   },
+   "years": [
+    1984,
+    1985
+   ]
+  },
   "efa": {
    "survey": "Fall Enrollment",
    "title": "Race/ethnicity, gender, attendance status, and level of student: Fall 2024",
    "versions": {
+    "1980": "provisional",
+    "1986": "provisional",
+    "1987": "provisional",
+    "1988": "provisional",
+    "1989": "provisional",
+    "1990": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -1251,6 +1450,15 @@
     "2024": "provisional"
    },
    "years": [
+    1980,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
     2000,
     2001,
     2002,
@@ -1276,6 +1484,24 @@
     2022,
     2023,
     2024
+   ]
+  },
+  "efacp": {
+   "survey": "Fall Enrollment",
+   "title": "Major field of study, race/ethnicity, gender, attendance status, and level of student: Fall 1998",
+   "versions": {
+    "1980": "provisional",
+    "1986": "provisional",
+    "1994": "provisional",
+    "1996": "provisional",
+    "1998": "provisional"
+   },
+   "years": [
+    1980,
+    1986,
+    1994,
+    1996,
+    1998
    ]
   },
   "efadist": {
@@ -1312,10 +1538,54 @@
     2024
    ]
   },
+  "efanr": {
+   "survey": "Fall Enrollment",
+   "title": "Race/ethnicity, gender, attendance status, and level of student: Fall 1999",
+   "versions": {
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional",
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional"
+   },
+   "years": [
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    1999
+   ]
+  },
+  "efark": {
+   "survey": "Fall Enrollment",
+   "title": "(Raked Analysis File) Race/ethnicity, gender, attendance status and level of student: Fall 1998",
+   "versions": {
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional",
+    "1997": "provisional",
+    "1998": "provisional"
+   },
+   "years": [
+    1994,
+    1995,
+    1996,
+    1997,
+    1998
+   ]
+  },
   "efb": {
    "survey": "Fall Enrollment",
    "title": "Age category, gender, attendance status, and level of student: Fall 2024",
    "versions": {
+    "1987": "provisional",
+    "1991": "provisional",
+    "1993": "provisional",
+    "1995": "provisional",
+    "1997": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -1343,6 +1613,12 @@
     "2024": "provisional"
    },
    "years": [
+    1987,
+    1991,
+    1993,
+    1995,
+    1997,
+    1999,
     2000,
     2001,
     2002,
@@ -1374,6 +1650,12 @@
    "survey": "Fall Enrollment",
    "title": "Residence and migration of first-time freshman: Fall 2024",
    "versions": {
+    "1986": "provisional",
+    "1988": "provisional",
+    "1992": "provisional",
+    "1994": "provisional",
+    "1996": "provisional",
+    "1998": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -1401,6 +1683,12 @@
     "2024": "provisional"
    },
    "years": [
+    1986,
+    1988,
+    1992,
+    1994,
+    1996,
+    1998,
     2000,
     2001,
     2002,
@@ -1466,6 +1754,15 @@
    "survey": "Fall Enrollment",
    "title": "Total entering class, retention rates, and student-to-faculty ratio: Fall 2024",
    "versions": {
+    "1986": "provisional",
+    "1987": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional",
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2002": "provisional",
     "2003": "provisional",
@@ -1492,6 +1789,15 @@
     "2024": "provisional"
    },
    "years": [
+    1986,
+    1987,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
     2000,
     2002,
     2003,
@@ -1652,6 +1958,30 @@
     2025
    ]
   },
+  "efhd": {
+   "survey": "Fall Enrollment",
+   "title": "Response status",
+   "versions": {
+    "1990": "provisional",
+    "1998": "provisional"
+   },
+   "years": [
+    1990,
+    1998
+   ]
+  },
+  "efhdr": {
+   "survey": "Fall Enrollment",
+   "title": "Response status",
+   "versions": {
+    "1991": "provisional",
+    "1997": "provisional"
+   },
+   "years": [
+    1991,
+    1997
+   ]
+  },
   "efia": {
    "survey": "12-Month Enrollment",
    "title": "12-month instructional activity: 2024-25",
@@ -1708,16 +2038,240 @@
     2025
    ]
   },
+  "efic": {
+   "survey": "Fall Enrollment",
+   "title": "Response status",
+   "versions": {
+    "1986": "provisional",
+    "1987": "provisional",
+    "1988": "provisional",
+    "1989": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1986,
+    1987,
+    1988,
+    1989,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "f": {
+   "survey": "Finance",
+   "title": "Finance",
+   "versions": {
+    "1980": "provisional",
+    "1984": "provisional",
+    "1985": "provisional",
+    "1986": "provisional",
+    "1988": "provisional"
+   },
+   "years": [
+    1980,
+    1984,
+    1985,
+    1986,
+    1988
+   ]
+  },
+  "fa": {
+   "survey": "Finance",
+   "title": "Current funds revenues by source",
+   "versions": {
+    "1987": "provisional",
+    "1989": "provisional",
+    "1990": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1987,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "fb": {
+   "survey": "Finance",
+   "title": "Current funds expenditures by function",
+   "versions": {
+    "1987": "provisional",
+    "1989": "provisional",
+    "1990": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1987,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "fc": {
+   "survey": "Finance",
+   "title": "Clarifying questions regarding total E and G expenditures and revenues",
+   "versions": {
+    "1989": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1989,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "fc5": {
+   "survey": "Finance",
+   "title": "Public 4-year and 2-year - Clarifying Question 5 on subentities: Fiscal year 1999",
+   "versions": {
+    "1995": null,
+    "1996": null,
+    "1998": null,
+    "1999": null
+   },
+   "years": [
+    1995,
+    1996,
+    1998,
+    1999
+   ]
+  },
+  "fcn": {
+   "survey": "Finance",
+   "title": "Consolidated (CN) form - less-than-2-year institutions : Fiscal year 1999",
+   "versions": {
+    "1996": "provisional",
+    "1998": "provisional",
+    "1999": "provisional"
+   },
+   "years": [
+    1996,
+    1998,
+    1999
+   ]
+  },
+  "fd": {
+   "survey": "Finance",
+   "title": "Utitilty expenditures",
+   "versions": {
+    "1989": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1989,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "fe": {
+   "survey": "Finance",
+   "title": "Scholarship and fellowship expenditures by source",
+   "versions": {
+    "1987": "provisional",
+    "1989": "provisional",
+    "1990": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1987,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "ff": {
+   "survey": "Finance",
+   "title": "Expenditures for acquisitions of library materials",
+   "versions": {
+    "1989": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1989,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
   "ff1": {
    "survey": "Finance",
    "title": "Public institutions - GASB Reporting Standards before (GASB 34/35): Fiscal year 2003",
    "versions": {
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
     "2003": null
    },
    "years": [
+    1997,
+    1998,
+    1999,
     2000,
     2001,
     2002,
@@ -1822,6 +2376,9 @@
    "survey": "Finance",
    "title": "Private not-for-profit institutions or Public institutions using FASB: Fiscal year 2024",
    "versions": {
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -1849,6 +2406,9 @@
     "2024": "provisional"
    },
    "years": [
+    1997,
+    1998,
+    1999,
     2000,
     2001,
     2002,
@@ -1880,6 +2440,8 @@
    "survey": "Finance",
    "title": "Private for-profit institutions: Fiscal year 2024",
    "versions": {
+    "1998": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -1907,6 +2469,8 @@
     "2024": "provisional"
    },
    "years": [
+    1998,
+    1999,
     2000,
     2001,
     2002,
@@ -1932,6 +2496,158 @@
     2022,
     2023,
     2024
+   ]
+  },
+  "fg": {
+   "survey": "Finance",
+   "title": "Indebtedness on physical plant",
+   "versions": {
+    "1989": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1989,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "fh": {
+   "survey": "Finance",
+   "title": "Details on endowment assets",
+   "versions": {
+    "1989": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1989,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "fhd": {
+   "survey": "Finance",
+   "title": "Response status",
+   "versions": {
+    "1990": "provisional"
+   },
+   "years": [
+    1990
+   ]
+  },
+  "fhdr": {
+   "survey": "Finance",
+   "title": "Response status",
+   "versions": {
+    "1991": "provisional"
+   },
+   "years": [
+    1991
+   ]
+  },
+  "fi": {
+   "survey": "Finance",
+   "title": "Selected fund balances",
+   "versions": {
+    "1989": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1989,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "fic": {
+   "survey": "Finance",
+   "title": "Response status",
+   "versions": {
+    "1987": "provisional",
+    "1989": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1987,
+    1989,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "fj": {
+   "survey": "Finance",
+   "title": "Hospital revenues",
+   "versions": {
+    "1989": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1989,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
+   ]
+  },
+  "fk": {
+   "survey": "Finance",
+   "title": "Physical plant assets",
+   "versions": {
+    "1989": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1989,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996
    ]
   },
   "flags": {
@@ -1990,6 +2706,9 @@
    "survey": "Graduation Rates",
    "title": "Graduation rate data, 150% of normal time to complete - cohort year 2018 (4-year) and cohort year 2021 (2-year) institutions",
    "versions": {
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -2017,6 +2736,9 @@
     "2024": "provisional"
    },
    "years": [
+    1997,
+    1998,
+    1999,
     2000,
     2001,
     2002,
@@ -2090,6 +2812,9 @@
    "survey": "Graduation Rates",
    "title": "Graduation rate data by sport for full-time, first-time degree/certificate-seeking students receiving athletically-related student aid for cohort year 2000 (4-year) and cohort year 2003 (2-year) institutions (revised May 2018)",
    "versions": {
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -2099,6 +2824,9 @@
     "2006": "revised"
    },
    "years": [
+    1997,
+    1998,
+    1999,
     2000,
     2001,
     2002,
@@ -2112,6 +2840,9 @@
    "survey": "Graduation Rates",
    "title": "Number of full-time undergraduate degree/certificate-seeking students receiving athletically-related student aid in 2005-06 (4-year and 2-year institutions) (revised May 2018)",
    "versions": {
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -2121,6 +2852,9 @@
     "2006": "revised"
    },
    "years": [
+    1997,
+    1998,
+    1999,
     2000,
     2001,
     2002,
@@ -2134,6 +2868,9 @@
    "survey": "Graduation Rates",
    "title": "Graduation rate data, 150% of normal time to complete - cohort year 2021",
    "versions": {
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2004": "revised",
@@ -2159,6 +2896,9 @@
     "2024": "provisional"
    },
    "years": [
+    1997,
+    1998,
+    1999,
     2000,
     2001,
     2004,
@@ -2274,6 +3014,9 @@
    "survey": "Institutional Characteristics",
    "title": "Educational offerings, organization, services and athletic associations",
    "versions": {
+    "1980": "provisional",
+    "1984": "provisional",
+    "1985": "provisional",
     "2000": "provisional",
     "2001": "provisional",
     "2002": "provisional",
@@ -2302,6 +3045,9 @@
     "2025": "provisional"
    },
    "years": [
+    1980,
+    1984,
+    1985,
     2000,
     2001,
     2002,
@@ -2330,13 +3076,179 @@
     2025
    ]
   },
+  "ic96a": {
+   "survey": "Institutional Characteristics",
+   "title": "Directory information, educational offerings, organization and accreditation and admissions",
+   "versions": {
+    "1995": "provisional"
+   },
+   "years": [
+    1995
+   ]
+  },
+  "ic96b": {
+   "survey": "Institutional Characteristics",
+   "title": "Student services, student charges, 12-month enrollment, financial aid and other information",
+   "versions": {
+    "1995": "provisional"
+   },
+   "years": [
+    1995
+   ]
+  },
+  "ic97a": {
+   "survey": "Institutional Characteristics",
+   "title": "Educational offerings",
+   "versions": {
+    "1996": "provisional"
+   },
+   "years": [
+    1996
+   ]
+  },
+  "ic97b": {
+   "survey": "Institutional Characteristics",
+   "title": "Organization and accreditation",
+   "versions": {
+    "1996": "provisional"
+   },
+   "years": [
+    1996
+   ]
+  },
+  "ic97c": {
+   "survey": "Institutional Characteristics",
+   "title": "Admissions and services",
+   "versions": {
+    "1996": "provisional"
+   },
+   "years": [
+    1996
+   ]
+  },
+  "ic98ab": {
+   "survey": "Institutional Characteristics",
+   "title": "Educational offerings, organization and accreditation",
+   "versions": {
+    "1997": "provisional"
+   },
+   "years": [
+    1997
+   ]
+  },
+  "ic98c": {
+   "survey": "Institutional Characteristics",
+   "title": "Admissions and services",
+   "versions": {
+    "1997": "provisional"
+   },
+   "years": [
+    1997
+   ]
+  },
+  "ic98d": {
+   "survey": "Institutional Characteristics",
+   "title": "Student charges",
+   "versions": {
+    "1997": "provisional"
+   },
+   "years": [
+    1997
+   ]
+  },
+  "ic98e": {
+   "survey": "12-Month Enrollment",
+   "title": "12-month enrollment: 1996-97",
+   "versions": {
+    "1997": "provisional"
+   },
+   "years": [
+    1997
+   ]
+  },
+  "ic98f": {
+   "survey": "Institutional Characteristics",
+   "title": "Financial aid, athletic associations and other information",
+   "versions": {
+    "1997": "provisional"
+   },
+   "years": [
+    1997
+   ]
+  },
+  "ic98hdr": {
+   "survey": "Institutional Characteristics",
+   "title": "Directory information, response status and derived variables",
+   "versions": {
+    "1997": "provisional"
+   },
+   "years": [
+    1997
+   ]
+  },
+  "ica": {
+   "survey": "Institutional Characteristics",
+   "title": "Directory information, educational offerings, organization and accreditation",
+   "versions": {
+    "1986": "provisional",
+    "1987": "provisional",
+    "1988": "provisional",
+    "1989": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional"
+   },
+   "years": [
+    1986,
+    1987,
+    1988,
+    1989,
+    1992,
+    1993,
+    1994
+   ]
+  },
+  "icab": {
+   "survey": "Institutional Characteristics",
+   "title": "Educational offerings, organization and accreditation",
+   "versions": {
+    "1991": "provisional",
+    "1998": "provisional"
+   },
+   "years": [
+    1991,
+    1998
+   ]
+  },
+  "icabce": {
+   "survey": "Institutional Characteristics",
+   "title": "Educational offerings, organization, accreditation, admission requirements, and selected services",
+   "versions": {
+    "1990": "provisional"
+   },
+   "years": [
+    1990
+   ]
+  },
+  "icabcf": {
+   "survey": "Institutional Characteristics",
+   "title": "Educational offerings,organization, accreditation, admissions, services and athletic associations",
+   "versions": {
+    "1999": "provisional"
+   },
+   "years": [
+    1999
+   ]
+  },
   "icactot": {
    "survey": "Institutional Characteristics",
    "title": "Accrediting agencies recognized by the Secretary, U.S. Department of Education",
    "versions": {
+    "1999": "provisional",
     "2000": "provisional"
    },
    "years": [
+    1999,
     2000
    ]
   },
@@ -2396,6 +3308,40 @@
     2023
    ]
   },
+  "icb": {
+   "survey": "Institutional Characteristics",
+   "title": "Admissions, services, student charges, 12-month enrollment, financial aid and other information",
+   "versions": {
+    "1986": "provisional",
+    "1987": "provisional",
+    "1988": "provisional",
+    "1989": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional"
+   },
+   "years": [
+    1986,
+    1987,
+    1988,
+    1989,
+    1992,
+    1993,
+    1994
+   ]
+  },
+  "icc": {
+   "survey": "Institutional Characteristics",
+   "title": "Admissions and services",
+   "versions": {
+    "1991": "provisional",
+    "1998": "provisional"
+   },
+   "years": [
+    1991,
+    1998
+   ]
+  },
   "iccampuses": {
    "survey": "Institutional Characteristics",
    "title": "Branch campus locations listed on College Navigator",
@@ -2406,6 +3352,80 @@
    "years": [
     2021,
     2022
+   ]
+  },
+  "icd": {
+   "survey": "Institutional Characteristics",
+   "title": "Student charges - Room and board, and average tuition for undergraduates, graduate and first-professional programs.",
+   "versions": {
+    "1990": "provisional",
+    "1991": "provisional",
+    "1998": "provisional",
+    "1999": "provisional"
+   },
+   "years": [
+    1990,
+    1991,
+    1998,
+    1999
+   ]
+  },
+  "ice": {
+   "survey": "12-Month Enrollment",
+   "title": "12-month enrollment and instructional activity: 1998-99",
+   "versions": {
+    "1991": "provisional",
+    "1998": "provisional",
+    "1999": "provisional"
+   },
+   "years": [
+    1991,
+    1998,
+    1999
+   ]
+  },
+  "icf": {
+   "survey": "Institutional Characteristics",
+   "title": "Financial aid, athletic associations, and other information",
+   "versions": {
+    "1991": "provisional",
+    "1998": "provisional"
+   },
+   "years": [
+    1991,
+    1998
+   ]
+  },
+  "ichd": {
+   "survey": "Institutional Characteristics",
+   "title": "Directory information, response status and derived variables",
+   "versions": {
+    "1990": "provisional",
+    "1999": "provisional"
+   },
+   "years": [
+    1990,
+    1999
+   ]
+  },
+  "ichdac": {
+   "survey": "Institutional Characteristics",
+   "title": "Directory information, response status and derived variables",
+   "versions": {
+    "1998": "provisional"
+   },
+   "years": [
+    1998
+   ]
+  },
+  "ichdr": {
+   "survey": "Institutional Characteristics",
+   "title": "Directory information, response status and derived variables",
+   "versions": {
+    "1991": "provisional"
+   },
+   "years": [
+    1991
    ]
   },
   "icmission": {
@@ -2422,6 +3442,16 @@
     2005,
     2006,
     2007
+   ]
+  },
+  "icother": {
+   "survey": "Institutional Characteristics",
+   "title": "Other levels of offerings, summer session indicators",
+   "versions": {
+    "1991": "provisional"
+   },
+   "years": [
+    1991
    ]
   },
   "icpccampuses": {
@@ -2490,6 +3520,26 @@
     2023
    ]
   },
+  "ipay": {
+   "survey": "Institutional Characteristics",
+   "title": "Price of attendance, academic year programs",
+   "versions": {
+    "1999": "provisional"
+   },
+   "years": [
+    1999
+   ]
+  },
+  "ippy": {
+   "survey": "Institutional Characteristics",
+   "title": "Price of attendance by program (vocational programs)",
+   "versions": {
+    "1999": "provisional"
+   },
+   "years": [
+    1999
+   ]
+  },
   "om": {
    "survey": "Outcome Measures",
    "title": "Award and enrollment data at four, six and eight years of entering degree/certificate-seeking undergraduate cohorts from 2016-17 at degree-granting institutions, by Pell status",
@@ -2518,10 +3568,75 @@
     2024
    ]
   },
+  "pubfinancialaid": {
+   "survey": "Student Financial Aid and Net Price",
+   "title": "Student financial aid (financial aid): Academic year 1998-99",
+   "versions": {
+    "1999": "provisional"
+   },
+   "years": [
+    1999
+   ]
+  },
+  "pubstudentcount": {
+   "survey": "Student Financial Aid and Net Price",
+   "title": "Student financial aid (student counts): Academic year 1998-99",
+   "versions": {
+    "1999": "provisional"
+   },
+   "years": [
+    1999
+   ]
+  },
+  "resic": {
+   "survey": "Fall Enrollment",
+   "title": "Response status - residence and migration",
+   "versions": {
+    "1986": "provisional",
+    "1988": "provisional"
+   },
+   "years": [
+    1986,
+    1988
+   ]
+  },
+  "s": {
+   "survey": "Fall Staff",
+   "title": "Full and part-time staff by primary occupational activity and gender",
+   "versions": {
+    "1987": "provisional",
+    "1989": "provisional"
+   },
+   "years": [
+    1987,
+    1989
+   ]
+  },
+  "sa": {
+   "survey": "Fall Staff",
+   "title": "Full- and part-time employees by gender and primary occupational activity",
+   "versions": {
+    "1991": "provisional"
+   },
+   "years": [
+    1991
+   ]
+  },
+  "sabcef": {
+   "survey": "Fall Staff",
+   "title": "Full- and part-time staff by race/ethnicity, gender, and primary occupational activity (2- and 4-year institutions)",
+   "versions": {
+    "1993": "provisional"
+   },
+   "years": [
+    1993
+   ]
+  },
   "sabd": {
    "survey": "Fall Staff",
    "title": "Employees by primary occupation, salary categories, race/ethnicity, and gender (Degree-granting institutions with 15 or more full-time employees): Fall 2011 (revised December 2013)",
    "versions": {
+    "1999": "provisional",
     "2001": "provisional",
     "2002": "provisional",
     "2003": "provisional",
@@ -2535,6 +3650,7 @@
     "2011": "revised"
    },
    "years": [
+    1999,
     2001,
     2002,
     2003,
@@ -2552,6 +3668,19 @@
    "survey": "Instructional Staff/Salaries",
    "title": "Salaries of full-time instructional staff, by contract length, gender, and academic rank: Academic year 2011-12 (revised December 2013)",
    "versions": {
+    "1980": "provisional",
+    "1984": "provisional",
+    "1985": "provisional",
+    "1987": "provisional",
+    "1989": "provisional",
+    "1990": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2002": "provisional",
     "2003": "provisional",
     "2004": "revised",
@@ -2564,6 +3693,19 @@
     "2011": "revised"
    },
    "years": [
+    1980,
+    1984,
+    1985,
+    1987,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1997,
+    1998,
+    1999,
     2002,
     2003,
     2004,
@@ -2574,6 +3716,18 @@
     2009,
     2010,
     2011
+   ]
+  },
+  "sala1": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Salaries and tenure of full-time instructional faculty",
+   "versions": {
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1995,
+    1996
    ]
   },
   "salalt9": {
@@ -2612,6 +3766,21 @@
    "survey": "Instructional Staff/Salaries",
    "title": "Fringe benefits of full-time instructional staff, by contract length: Academic year 2010-11 (revised January 2013)",
    "versions": {
+    "1980": "provisional",
+    "1984": "provisional",
+    "1985": "provisional",
+    "1987": "provisional",
+    "1989": "provisional",
+    "1990": "provisional",
+    "1991": "provisional",
+    "1992": "provisional",
+    "1993": "provisional",
+    "1994": "provisional",
+    "1995": "provisional",
+    "1996": "provisional",
+    "1997": "provisional",
+    "1998": "provisional",
+    "1999": "provisional",
     "2002": "provisional",
     "2003": "provisional",
     "2004": "revised",
@@ -2623,6 +3792,21 @@
     "2010": "revised"
    },
    "years": [
+    1980,
+    1984,
+    1985,
+    1987,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
     2002,
     2003,
     2004,
@@ -2662,6 +3846,50 @@
     2009,
     2010,
     2011
+   ]
+  },
+  "salhd": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Response status",
+   "versions": {
+    "1990": "provisional",
+    "1998": "provisional"
+   },
+   "years": [
+    1990,
+    1998
+   ]
+  },
+  "salhdr": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Response status",
+   "versions": {
+    "1991": "provisional",
+    "1997": "provisional"
+   },
+   "years": [
+    1991,
+    1997
+   ]
+  },
+  "salic": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Response status",
+   "versions": {
+    "1984": "provisional",
+    "1985": "provisional",
+    "1987": "provisional",
+    "1989": "provisional",
+    "1995": "provisional",
+    "1996": "provisional"
+   },
+   "years": [
+    1984,
+    1985,
+    1987,
+    1989,
+    1995,
+    1996
    ]
   },
   "salis": {
@@ -2732,10 +3960,24 @@
     2024
    ]
   },
+  "sb": {
+   "survey": "Fall Staff",
+   "title": "Contracted or donated services",
+   "versions": {
+    "1991": "provisional"
+   },
+   "years": [
+    1991
+   ]
+  },
   "scn": {
    "survey": "Fall Staff",
    "title": "Employees by primary occupation, race/ethnicity, and gender (Degree-granting institutions with less than 15 full-time employees and all nondegree-granting institutions): Fall 2011",
    "versions": {
+    "1993": "provisional",
+    "1995": "provisional",
+    "1997": "provisional",
+    "1999": "provisional",
     "2001": "provisional",
     "2002": "provisional",
     "2003": "provisional",
@@ -2749,6 +3991,10 @@
     "2011": "revised"
    },
    "years": [
+    1993,
+    1995,
+    1997,
+    1999,
     2001,
     2002,
     2003,
@@ -2762,10 +4008,25 @@
     2011
    ]
   },
+  "se": {
+   "survey": "Fall Staff",
+   "title": "Contracted or donated services by primary occupational activity - fall 1999",
+   "versions": {
+    "1995": "provisional",
+    "1997": "provisional",
+    "1999": "provisional"
+   },
+   "years": [
+    1995,
+    1997,
+    1999
+   ]
+  },
   "sf": {
    "survey": "Fall Staff",
    "title": "Full-time instruction/research/public service staff, by faculty status, academic rank, race/ethnicity, and gender (Degree-granting institutions with 15 or more full-time employees): Fall 2011 (revised December 2013)",
    "versions": {
+    "1999": "provisional",
     "2001": "provisional",
     "2002": "provisional",
     "2003": "provisional",
@@ -2779,6 +4040,7 @@
     "2011": "revised"
    },
    "years": [
+    1999,
     2001,
     2002,
     2003,
@@ -2884,6 +4146,7 @@
    "survey": "Fall Staff",
    "title": "New hires by primary occupation, race/ethnicity, and gender (Degree-granting institutions with 15 or more full-time employees): Fall 2011 (revised December 2013)",
    "versions": {
+    "1999": "provisional",
     "2001": "provisional",
     "2002": "provisional",
     "2003": "provisional",
@@ -2897,6 +4160,7 @@
     "2011": "revised"
    },
    "years": [
+    1999,
     2001,
     2002,
     2003,
@@ -2908,6 +4172,34 @@
     2009,
     2010,
     2011
+   ]
+  },
+  "shdr": {
+   "survey": "Fall Staff",
+   "title": "Response status",
+   "versions": {
+    "1991": "provisional"
+   },
+   "years": [
+    1991
+   ]
+  },
+  "sic": {
+   "survey": "Fall Staff",
+   "title": "Response status",
+   "versions": {
+    "1987": "provisional",
+    "1989": "provisional",
+    "1993": "provisional",
+    "1995": "provisional",
+    "1997": "provisional"
+   },
+   "years": [
+    1987,
+    1989,
+    1993,
+    1995,
+    1997
    ]
   },
   "sis": {
@@ -3010,6 +4302,18 @@
     2022,
     2023,
     2024
+   ]
+  },
+  "ss": {
+   "survey": "Fall Staff",
+   "title": "Full- and part-time staff by race/ethnicity, gender, and primary occupational activity (4-year and 2-year instiutions)",
+   "versions": {
+    "1995": "provisional",
+    "1997": "provisional"
+   },
+   "years": [
+    1995,
+    1997
    ]
   },
   "ssis": {

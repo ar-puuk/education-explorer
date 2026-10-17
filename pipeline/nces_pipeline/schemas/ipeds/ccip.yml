@@ -1,0 +1,27 @@
+source: ipeds
+family: ccip
+key:
+- unitid
+- cipcode
+- awlevel
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1984-1994
+  CIPCODE:
+    name: cipcode
+    type: DOUBLE
+    years: 1984-1994
+  AWLEVEL:
+    name: awlevel
+    type: BIGINT
+    years: 1984-1994
+  CRACE15:
+    name: crace15
+    type: BIGINT
+    years: 1984-1994
+  CRACE16:
+    name: crace16
+    type: BIGINT
+    years: 1984-1994

@@ -6,367 +6,1975 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000-2003
+    years: 1997-2003
+  XA011:
+    name: a011_flag
+    type: VARCHAR
+    flag_for: a011
+    years: 1997-1999
+  A011:
+    name: a011
+    type: BIGINT
+    years: 1997-1999
+  XA012:
+    name: a012_flag
+    type: VARCHAR
+    flag_for: a012
+    years: 1997-1999
+  A012:
+    name: a012
+    type: BIGINT
+    years: 1997-1999
   XA013:
     name: a013_flag
     type: VARCHAR
     flag_for: a013
-    years: 2000-2003
+    years: 1997-2003
   A013:
     name: a013
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA021:
+    name: a021_flag
+    type: VARCHAR
+    flag_for: a021
+    years: 1997-1999
+  A021:
+    name: a021
+    type: BIGINT
+    years: 1997-1999
+  XA022:
+    name: a022_flag
+    type: VARCHAR
+    flag_for: a022
+    years: 1997-1999
+  A022:
+    name: a022
+    type: BIGINT
+    years: 1997-1999
   XA023:
     name: a023_flag
     type: VARCHAR
     flag_for: a023
-    years: 2000-2003
+    years: 1997-2003
   A023:
     name: a023
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XALINE03:
+    name: aline03_flag
+    type: VARCHAR
+    flag_for: aline03
+    years: 1997-1999
+  ALINE03:
+    name: aline03
+    type: BIGINT
+    years: 1997-1999
+  XA041:
+    name: a041_flag
+    type: VARCHAR
+    flag_for: a041
+    years: 1997-1999
+  A041:
+    name: a041
+    type: BIGINT
+    years: 1997-1999
+  XA042:
+    name: a042_flag
+    type: VARCHAR
+    flag_for: a042
+    years: 1997-1999
+  A042:
+    name: a042
+    type: BIGINT
+    years: 1997-1999
   XA043:
     name: a043_flag
     type: VARCHAR
     flag_for: a043
-    years: 2000-2003
+    years: 1997-2003
   A043:
     name: a043
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA051:
+    name: a051_flag
+    type: VARCHAR
+    flag_for: a051
+    years: 1997-1999
+  A051:
+    name: a051
+    type: BIGINT
+    years: 1997-1999
+  XA052:
+    name: a052_flag
+    type: VARCHAR
+    flag_for: a052
+    years: 1997-1999
+  A052:
+    name: a052
+    type: BIGINT
+    years: 1997-1999
   XA053:
     name: a053_flag
     type: VARCHAR
     flag_for: a053
-    years: 2000-2003
+    years: 1997-2003
   A053:
     name: a053
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA061:
+    name: a061_flag
+    type: VARCHAR
+    flag_for: a061
+    years: 1997-1999
+  A061:
+    name: a061
+    type: BIGINT
+    years: 1997-1999
+  XA062:
+    name: a062_flag
+    type: VARCHAR
+    flag_for: a062
+    years: 1997-1999
+  A062:
+    name: a062
+    type: BIGINT
+    years: 1997-1999
   XA063:
     name: a063_flag
     type: VARCHAR
     flag_for: a063
-    years: 2000-2003
+    years: 1997-2003
   A063:
     name: a063
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA071:
+    name: a071_flag
+    type: VARCHAR
+    flag_for: a071
+    years: 1997-1999
+  A071:
+    name: a071
+    type: BIGINT
+    years: 1997-1999
+  XA072:
+    name: a072_flag
+    type: VARCHAR
+    flag_for: a072
+    years: 1997-1999
+  A072:
+    name: a072
+    type: BIGINT
+    years: 1997-1999
   XA073:
     name: a073_flag
     type: VARCHAR
     flag_for: a073
-    years: 2000-2003
+    years: 1997-2003
   A073:
     name: a073
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA081:
+    name: a081_flag
+    type: VARCHAR
+    flag_for: a081
+    years: 1997-1999
+  A081:
+    name: a081
+    type: BIGINT
+    years: 1997-1999
+  XA082:
+    name: a082_flag
+    type: VARCHAR
+    flag_for: a082
+    years: 1997-1999
+  A082:
+    name: a082
+    type: BIGINT
+    years: 1997-1999
   XA083:
     name: a083_flag
     type: VARCHAR
     flag_for: a083
-    years: 2000-2003
+    years: 1997-2003
   A083:
     name: a083
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA091:
+    name: a091_flag
+    type: VARCHAR
+    flag_for: a091
+    years: 1997-1999
+  A091:
+    name: a091
+    type: BIGINT
+    years: 1997-1999
+  XA092:
+    name: a092_flag
+    type: VARCHAR
+    flag_for: a092
+    years: 1997-1999
+  A092:
+    name: a092
+    type: BIGINT
+    years: 1997-1999
   XA093:
     name: a093_flag
     type: VARCHAR
     flag_for: a093
-    years: 2000-2003
+    years: 1997-2003
   A093:
     name: a093
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA101:
+    name: a101_flag
+    type: VARCHAR
+    flag_for: a101
+    years: 1997-1999
+  A101:
+    name: a101
+    type: BIGINT
+    years: 1997-1999
+  XA102:
+    name: a102_flag
+    type: VARCHAR
+    flag_for: a102
+    years: 1997-1999
+  A102:
+    name: a102
+    type: BIGINT
+    years: 1997-1999
   XA103:
     name: a103_flag
     type: VARCHAR
     flag_for: a103
-    years: 2000-2003
+    years: 1997-2003
   A103:
     name: a103
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA111:
+    name: a111_flag
+    type: VARCHAR
+    flag_for: a111
+    years: 1997-1999
+  A111:
+    name: a111
+    type: BIGINT
+    years: 1997-1999
+  XA112:
+    name: a112_flag
+    type: VARCHAR
+    flag_for: a112
+    years: 1997-1999
+  A112:
+    name: a112
+    type: BIGINT
+    years: 1997-1999
   XA113:
     name: a113_flag
     type: VARCHAR
     flag_for: a113
-    years: 2000-2003
+    years: 1997-2003
   A113:
     name: a113
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA121:
+    name: a121_flag
+    type: VARCHAR
+    flag_for: a121
+    years: 1997-1999
+  A121:
+    name: a121
+    type: BIGINT
+    years: 1997-1999
+  XA122:
+    name: a122_flag
+    type: VARCHAR
+    flag_for: a122
+    years: 1997-1999
+  A122:
+    name: a122
+    type: BIGINT
+    years: 1997-1999
   XA123:
     name: a123_flag
     type: VARCHAR
     flag_for: a123
-    years: 2000-2003
+    years: 1997-2003
   A123:
     name: a123
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA131:
+    name: a131_flag
+    type: VARCHAR
+    flag_for: a131
+    years: 1997-1999
+  A131:
+    name: a131
+    type: BIGINT
+    years: 1997-1999
+  XA132:
+    name: a132_flag
+    type: VARCHAR
+    flag_for: a132
+    years: 1997-1999
+  A132:
+    name: a132
+    type: BIGINT
+    years: 1997-1999
   XA133:
     name: a133_flag
     type: VARCHAR
     flag_for: a133
-    years: 2000-2003
+    years: 1997-2003
   A133:
     name: a133
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA141:
+    name: a141_flag
+    type: VARCHAR
+    flag_for: a141
+    years: 1997-1999
+  A141:
+    name: a141
+    type: BIGINT
+    years: 1997-1999
+  XA142:
+    name: a142_flag
+    type: VARCHAR
+    flag_for: a142
+    years: 1997-1999
+  A142:
+    name: a142
+    type: BIGINT
+    years: 1997-1999
   XA143:
     name: a143_flag
     type: VARCHAR
     flag_for: a143
-    years: 2000-2003
+    years: 1997-2003
   A143:
     name: a143
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA151:
+    name: a151_flag
+    type: VARCHAR
+    flag_for: a151
+    years: 1997-1999
+  A151:
+    name: a151
+    type: BIGINT
+    years: 1997-1999
+  XA152:
+    name: a152_flag
+    type: VARCHAR
+    flag_for: a152
+    years: 1997-1999
+  A152:
+    name: a152
+    type: BIGINT
+    years: 1997-1999
   XA153:
     name: a153_flag
     type: VARCHAR
     flag_for: a153
-    years: 2000-2003
+    years: 1997-2003
   A153:
     name: a153
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XA161:
+    name: a161_flag
+    type: VARCHAR
+    flag_for: a161
+    years: 1997-1999
+  A161:
+    name: a161
+    type: BIGINT
+    years: 1997-1999
+  XA162:
+    name: a162_flag
+    type: VARCHAR
+    flag_for: a162
+    years: 1997-1999
+  A162:
+    name: a162
+    type: BIGINT
+    years: 1997-1999
   XA163:
     name: a163_flag
     type: VARCHAR
     flag_for: a163
-    years: 2000-2003
+    years: 1997-2003
   A163:
     name: a163
     type: BIGINT
-    years: 2000-2003
-  XJ013:
-    name: j013_flag
+    years: 1997-2003
+  XB011:
+    name: b011_flag
     type: VARCHAR
-    flag_for: j013
-    years: 2000-2003
-  J013:
-    name: j013
+    flag_for: b011
+    years: 1997-1999
+  B011:
+    name: b011
     type: BIGINT
-    years: 2000-2003
-  XJ023:
-    name: j023_flag
+    years: 1997-1999
+  XB012:
+    name: b012_flag
     type: VARCHAR
-    flag_for: j023
-    years: 2000-2003
-  J023:
-    name: j023
+    flag_for: b012
+    years: 1997-1999
+  B012:
+    name: b012
     type: BIGINT
-    years: 2000-2003
-  XJ033:
-    name: j033_flag
-    type: VARCHAR
-    flag_for: j033
-    years: 2000-2003
-  J033:
-    name: j033
-    type: BIGINT
-    years: 2000-2003
-  XJ043:
-    name: j043_flag
-    type: VARCHAR
-    flag_for: j043
-    years: 2000-2003
-  J043:
-    name: j043
-    type: BIGINT
-    years: 2000-2003
-  XJ053:
-    name: j053_flag
-    type: VARCHAR
-    flag_for: j053
-    years: 2000-2003
-  J053:
-    name: j053
-    type: BIGINT
-    years: 2000-2003
-  XJ063:
-    name: j063_flag
-    type: VARCHAR
-    flag_for: j063
-    years: 2000-2003
-  J063:
-    name: j063
-    type: BIGINT
-    years: 2000-2003
-  XJ073:
-    name: j073_flag
-    type: VARCHAR
-    flag_for: j073
-    years: 2000-2003
-  J073:
-    name: j073
-    type: BIGINT
-    years: 2000-2003
-  XJ083:
-    name: j083_flag
-    type: VARCHAR
-    flag_for: j083
-    years: 2000-2003
-  J083:
-    name: j083
-    type: BIGINT
-    years: 2000-2003
+    years: 1997-1999
   XB013:
     name: b013_flag
     type: VARCHAR
     flag_for: b013
-    years: 2000-2003
+    years: 1997-2003
   B013:
     name: b013
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB014:
+    name: b014_flag
+    type: VARCHAR
+    flag_for: b014
+    years: 1997-1999
+  B014:
+    name: b014
+    type: BIGINT
+    years: 1997-1999
+  XB021:
+    name: b021_flag
+    type: VARCHAR
+    flag_for: b021
+    years: 1997-1999
+  B021:
+    name: b021
+    type: BIGINT
+    years: 1997-1999
+  XB022:
+    name: b022_flag
+    type: VARCHAR
+    flag_for: b022
+    years: 1997-1999
+  B022:
+    name: b022
+    type: BIGINT
+    years: 1997-1999
   XB023:
     name: b023_flag
     type: VARCHAR
     flag_for: b023
-    years: 2000-2003
+    years: 1997-2003
   B023:
     name: b023
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB024:
+    name: b024_flag
+    type: VARCHAR
+    flag_for: b024
+    years: 1997-1999
+  B024:
+    name: b024
+    type: BIGINT
+    years: 1997-1999
+  XB031:
+    name: b031_flag
+    type: VARCHAR
+    flag_for: b031
+    years: 1997-1999
+  B031:
+    name: b031
+    type: BIGINT
+    years: 1997-1999
+  XB032:
+    name: b032_flag
+    type: VARCHAR
+    flag_for: b032
+    years: 1997-1999
+  B032:
+    name: b032
+    type: BIGINT
+    years: 1997-1999
   XB033:
     name: b033_flag
     type: VARCHAR
     flag_for: b033
-    years: 2000-2003
+    years: 1997-2003
   B033:
     name: b033
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB034:
+    name: b034_flag
+    type: VARCHAR
+    flag_for: b034
+    years: 1997-1999
+  B034:
+    name: b034
+    type: BIGINT
+    years: 1997-1999
+  XB041:
+    name: b041_flag
+    type: VARCHAR
+    flag_for: b041
+    years: 1997-1999
+  B041:
+    name: b041
+    type: BIGINT
+    years: 1997-1999
+  XB042:
+    name: b042_flag
+    type: VARCHAR
+    flag_for: b042
+    years: 1997-1999
+  B042:
+    name: b042
+    type: BIGINT
+    years: 1997-1999
   XB043:
     name: b043_flag
     type: VARCHAR
     flag_for: b043
-    years: 2000-2003
+    years: 1997-2003
   B043:
     name: b043
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB044:
+    name: b044_flag
+    type: VARCHAR
+    flag_for: b044
+    years: 1997-1999
+  B044:
+    name: b044
+    type: BIGINT
+    years: 1997-1999
+  XBLINE05:
+    name: bline05_flag
+    type: VARCHAR
+    flag_for: bline05
+    years: 1997-1999
+  BLINE05:
+    name: bline05
+    type: BIGINT
+    years: 1997-1999
+  XB061:
+    name: b061_flag
+    type: VARCHAR
+    flag_for: b061
+    years: 1997-1999
+  B061:
+    name: b061
+    type: BIGINT
+    years: 1997-1999
+  XB062:
+    name: b062_flag
+    type: VARCHAR
+    flag_for: b062
+    years: 1997-1999
+  B062:
+    name: b062
+    type: BIGINT
+    years: 1997-1999
   XB063:
     name: b063_flag
     type: VARCHAR
     flag_for: b063
-    years: 2000-2003
+    years: 1997-2003
   B063:
     name: b063
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB064:
+    name: b064_flag
+    type: VARCHAR
+    flag_for: b064
+    years: 1997-1999
+  B064:
+    name: b064
+    type: BIGINT
+    years: 1997-1999
+  XB071:
+    name: b071_flag
+    type: VARCHAR
+    flag_for: b071
+    years: 1997-1999
+  B071:
+    name: b071
+    type: BIGINT
+    years: 1997-1999
+  XB072:
+    name: b072_flag
+    type: VARCHAR
+    flag_for: b072
+    years: 1997-1999
+  B072:
+    name: b072
+    type: BIGINT
+    years: 1997-1999
   XB073:
     name: b073_flag
     type: VARCHAR
     flag_for: b073
-    years: 2000-2003
+    years: 1997-2003
   B073:
     name: b073
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB074:
+    name: b074_flag
+    type: VARCHAR
+    flag_for: b074
+    years: 1997-1999
+  B074:
+    name: b074
+    type: BIGINT
+    years: 1997-1999
+  XB081:
+    name: b081_flag
+    type: VARCHAR
+    flag_for: b081
+    years: 1997-1999
+  B081:
+    name: b081
+    type: BIGINT
+    years: 1997-1999
+  XB082:
+    name: b082_flag
+    type: VARCHAR
+    flag_for: b082
+    years: 1997-1999
+  B082:
+    name: b082
+    type: BIGINT
+    years: 1997-1999
   XB083:
     name: b083_flag
     type: VARCHAR
     flag_for: b083
-    years: 2000-2003
+    years: 1997-2003
   B083:
     name: b083
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB084:
+    name: b084_flag
+    type: VARCHAR
+    flag_for: b084
+    years: 1997-1999
+  B084:
+    name: b084
+    type: BIGINT
+    years: 1997-1999
+  XB091:
+    name: b091_flag
+    type: VARCHAR
+    flag_for: b091
+    years: 1997-1999
+  B091:
+    name: b091
+    type: BIGINT
+    years: 1997-1999
+  XB092:
+    name: b092_flag
+    type: VARCHAR
+    flag_for: b092
+    years: 1997-1999
+  B092:
+    name: b092
+    type: BIGINT
+    years: 1997-1999
   XB093:
     name: b093_flag
     type: VARCHAR
     flag_for: b093
-    years: 2000-2003
+    years: 1997-2003
   B093:
     name: b093
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB101:
+    name: b101_flag
+    type: VARCHAR
+    flag_for: b101
+    years: 1997-1999
+  B101:
+    name: b101
+    type: BIGINT
+    years: 1997-1999
+  XB102:
+    name: b102_flag
+    type: VARCHAR
+    flag_for: b102
+    years: 1997-1999
+  B102:
+    name: b102
+    type: BIGINT
+    years: 1997-1999
   XB103:
     name: b103_flag
     type: VARCHAR
     flag_for: b103
-    years: 2000-2003
+    years: 1997-2003
   B103:
     name: b103
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB111:
+    name: b111_flag
+    type: VARCHAR
+    flag_for: b111
+    years: 1997-1999
+  B111:
+    name: b111
+    type: BIGINT
+    years: 1997-1999
+  XB112:
+    name: b112_flag
+    type: VARCHAR
+    flag_for: b112
+    years: 1997-1999
+  B112:
+    name: b112
+    type: BIGINT
+    years: 1997-1999
   XB113:
     name: b113_flag
     type: VARCHAR
     flag_for: b113
-    years: 2000-2003
+    years: 1997-2003
   B113:
     name: b113
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB121:
+    name: b121_flag
+    type: VARCHAR
+    flag_for: b121
+    years: 1997-1999
+  B121:
+    name: b121
+    type: BIGINT
+    years: 1997-1999
+  XB122:
+    name: b122_flag
+    type: VARCHAR
+    flag_for: b122
+    years: 1997-1999
+  B122:
+    name: b122
+    type: BIGINT
+    years: 1997-1999
   XB123:
     name: b123_flag
     type: VARCHAR
     flag_for: b123
-    years: 2000-2003
+    years: 1997-2003
   B123:
     name: b123
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB124:
+    name: b124_flag
+    type: VARCHAR
+    flag_for: b124
+    years: 1997-1999
+  B124:
+    name: b124
+    type: BIGINT
+    years: 1997-1999
+  XB131:
+    name: b131_flag
+    type: VARCHAR
+    flag_for: b131
+    years: 1997-1999
+  B131:
+    name: b131
+    type: BIGINT
+    years: 1997-1999
+  XB132:
+    name: b132_flag
+    type: VARCHAR
+    flag_for: b132
+    years: 1997-1999
+  B132:
+    name: b132
+    type: BIGINT
+    years: 1997-1999
   XB133:
     name: b133_flag
     type: VARCHAR
     flag_for: b133
-    years: 2000-2003
+    years: 1997-2003
   B133:
     name: b133
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB134:
+    name: b134_flag
+    type: VARCHAR
+    flag_for: b134
+    years: 1997-1999
+  B134:
+    name: b134
+    type: BIGINT
+    years: 1997-1999
+  XBLINE14:
+    name: bline14_flag
+    type: VARCHAR
+    flag_for: bline14
+    years: 1997-1999
+  BLINE14:
+    name: bline14
+    type: BIGINT
+    years: 1997-1999
   XBLINE15:
     name: bline15_flag
     type: VARCHAR
     flag_for: bline15
-    years: 2000-2003
+    years: 1997-2003
   BLINE15:
     name: bline15
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB161:
+    name: b161_flag
+    type: VARCHAR
+    flag_for: b161
+    years: 1997-1999
+  B161:
+    name: b161
+    type: BIGINT
+    years: 1997-1999
+  XB162:
+    name: b162_flag
+    type: VARCHAR
+    flag_for: b162
+    years: 1997-1999
+  B162:
+    name: b162
+    type: BIGINT
+    years: 1997-1999
   XB163:
     name: b163_flag
     type: VARCHAR
     flag_for: b163
-    years: 2000-2003
+    years: 1997-2003
   B163:
     name: b163
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB164:
+    name: b164_flag
+    type: VARCHAR
+    flag_for: b164
+    years: 1997-1999
+  B164:
+    name: b164
+    type: BIGINT
+    years: 1997-1999
+  XBLINE17:
+    name: bline17_flag
+    type: VARCHAR
+    flag_for: bline17
+    years: 1997-1999
+  BLINE17:
+    name: bline17
+    type: BIGINT
+    years: 1997-1999
   XBLINE18:
     name: bline18_flag
     type: VARCHAR
     flag_for: bline18
-    years: 2000-2003
+    years: 1997-2003
   BLINE18:
     name: bline18
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB191:
+    name: b191_flag
+    type: VARCHAR
+    flag_for: b191
+    years: 1997-1999
+  B191:
+    name: b191
+    type: BIGINT
+    years: 1997-1999
+  XB192:
+    name: b192_flag
+    type: VARCHAR
+    flag_for: b192
+    years: 1997-1999
+  B192:
+    name: b192
+    type: BIGINT
+    years: 1997-1999
   XB193:
     name: b193_flag
     type: VARCHAR
     flag_for: b193
-    years: 2000-2003
+    years: 1997-2003
   B193:
     name: b193
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB194:
+    name: b194_flag
+    type: VARCHAR
+    flag_for: b194
+    years: 1997-1999
+  B194:
+    name: b194
+    type: BIGINT
+    years: 1997-1999
+  XBLINE20:
+    name: bline20_flag
+    type: VARCHAR
+    flag_for: bline20
+    years: 1997-1999
+  BLINE20:
+    name: bline20
+    type: BIGINT
+    years: 1997-1999
   XBLINE21:
     name: bline21_flag
     type: VARCHAR
     flag_for: bline21
-    years: 2000-2003
+    years: 1997-2003
   BLINE21:
     name: bline21
     type: BIGINT
-    years: 2000-2003
+    years: 1997-2003
+  XB221:
+    name: b221_flag
+    type: VARCHAR
+    flag_for: b221
+    years: 1997-1999
+  B221:
+    name: b221
+    type: BIGINT
+    years: 1997-1999
+  XB222:
+    name: b222_flag
+    type: VARCHAR
+    flag_for: b222
+    years: 1997-1999
+  B222:
+    name: b222
+    type: BIGINT
+    years: 1997-1999
+  XB223:
+    name: b223_flag
+    type: VARCHAR
+    flag_for: b223
+    years: 1997-2003
+  B223:
+    name: b223
+    type: BIGINT
+    years: 1997-2003
+  XB224:
+    name: b224_flag
+    type: VARCHAR
+    flag_for: b224
+    years: 1997-1999
+  B224:
+    name: b224
+    type: BIGINT
+    years: 1997-1999
+  XB234:
+    name: b234_flag
+    type: VARCHAR
+    flag_for: b234
+    years: 1997-2003
+  B234:
+    name: b234
+    type: BIGINT
+    years: 1997-2003
+  XB244:
+    name: b244_flag
+    type: VARCHAR
+    flag_for: b244
+    years: 1997-2003
+  B244:
+    name: b244
+    type: BIGINT
+    years: 1997-2003
+  XB254:
+    name: b254_flag
+    type: VARCHAR
+    flag_for: b254
+    years: 1997-2003
+  B254:
+    name: b254
+    type: BIGINT
+    years: 1997-2003
+  XB264:
+    name: b264_flag
+    type: VARCHAR
+    flag_for: b264
+    years: 1997-1999
+  B264:
+    name: b264
+    type: BIGINT
+    years: 1997-1999
+  XB274:
+    name: b274_flag
+    type: VARCHAR
+    flag_for: b274
+    years: 1997-2003
+  B274:
+    name: b274
+    type: BIGINT
+    years: 1997-2003
+  C1_1:
+    name: c1_1
+    type: BIGINT
+    years: 1997-1999
+  C1_2:
+    name: c1_2
+    type: BIGINT
+    years: 1997-1999
+  C1AMT:
+    name: c1amt
+    type: BIGINT
+    years: 1997-1999
+  C2A:
+    name: c2a
+    type: BIGINT
+    years: 1997-1999
+  C2B:
+    name: c2b
+    type: BIGINT
+    years: 1997-1999
+  C2C:
+    name: c2c
+    type: BIGINT
+    years: 1997-1999
+  C2D:
+    name: c2d
+    type: BIGINT
+    years: 1997-1999
+  C3_1:
+    name: c3_1
+    type: BIGINT
+    years: 1997-1999
+  C3_3:
+    name: c3_3
+    type: BIGINT
+    years: 1997-1999
+  C3AMT3:
+    name: c3amt3
+    type: BIGINT
+    years: 1997-1999
+  C3_4:
+    name: c3_4
+    type: BIGINT
+    years: 1997-1999
+  C3AMT4:
+    name: c3amt4
+    type: BIGINT
+    years: 1997-1999
+  C3_5:
+    name: c3_5
+    type: BIGINT
+    years: 1997-1999
+  C3AMT5:
+    name: c3amt5
+    type: BIGINT
+    years: 1997-1999
+  C3_6:
+    name: c3_6
+    type: BIGINT
+    years: 1997-1999
+  C3AMT6:
+    name: c3amt6
+    type: BIGINT
+    years: 1997-1999
+  C4A:
+    name: c4a
+    type: BIGINT
+    years: 1997-1999
+  C4A1:
+    name: c4a1
+    type: BIGINT
+    years: 1997-1999
+  C4REVEN:
+    name: c4reven
+    type: BIGINT
+    years: 1997-1999
+  C4EXPEN:
+    name: c4expen
+    type: BIGINT
+    years: 1997-1999
+  C4B:
+    name: c4b
+    type: BIGINT
+    years: 1997-1999
+  C4C:
+    name: c4c
+    type: BIGINT
+    years: 1997-1999
+  C5:
+    name: c5
+    type: BIGINT
+    years: 1997-1999
+  C5REVEN:
+    name: c5reven
+    type: BIGINT
+    years: 1997-1999
+  C5EXPEN:
+    name: c5expen
+    type: BIGINT
+    years: 1997-1999
+  C6:
+    name: c6
+    type: BIGINT
+    years: 1997-1999
+  C6AMT:
+    name: c6amt
+    type: BIGINT
+    years: 1997-1999
+  C7:
+    name: c7
+    type: BIGINT
+    years: 1997-1999
+  C8A:
+    name: c8a
+    type: BIGINT
+    years: 1997-1999
+  C8B:
+    name: c8b
+    type: BIGINT
+    years: 1997-1999
+  C8C:
+    name: c8c
+    type: BIGINT
+    years: 1997-1999
+  XD01:
+    name: d01_flag
+    type: VARCHAR
+    flag_for: d01
+    years: 1997-1999
+  D01:
+    name: d01
+    type: BIGINT
+    years: 1997-1999
+  XE012:
+    name: e012_flag
+    type: VARCHAR
+    flag_for: e012
+    years: 1997-1999
+  E012:
+    name: e012
+    type: BIGINT
+    years: 1997-1999
+  XE013:
+    name: e013_flag
+    type: VARCHAR
+    flag_for: e013
+    years: 1997-2003
+  E013:
+    name: e013
+    type: BIGINT
+    years: 1997-2003
+  XE021:
+    name: e021_flag
+    type: VARCHAR
+    flag_for: e021
+    years: 1997-1999
+  E021:
+    name: e021
+    type: BIGINT
+    years: 1997-1999
+  XE022:
+    name: e022_flag
+    type: VARCHAR
+    flag_for: e022
+    years: 1997-1999
+  E022:
+    name: e022
+    type: BIGINT
+    years: 1997-1999
+  XE023:
+    name: e023_flag
+    type: VARCHAR
+    flag_for: e023
+    years: 1997-2003
+  E023:
+    name: e023
+    type: BIGINT
+    years: 1997-2003
+  XE031:
+    name: e031_flag
+    type: VARCHAR
+    flag_for: e031
+    years: 1997-1999
+  E031:
+    name: e031
+    type: BIGINT
+    years: 1997-1999
+  XE032:
+    name: e032_flag
+    type: VARCHAR
+    flag_for: e032
+    years: 1997-1999
+  E032:
+    name: e032
+    type: BIGINT
+    years: 1997-1999
+  XE033:
+    name: e033_flag
+    type: VARCHAR
+    flag_for: e033
+    years: 1997-2003
+  E033:
+    name: e033
+    type: BIGINT
+    years: 1997-2003
+  XE041:
+    name: e041_flag
+    type: VARCHAR
+    flag_for: e041
+    years: 1997-1999
+  E041:
+    name: e041
+    type: BIGINT
+    years: 1997-1999
+  XE042:
+    name: e042_flag
+    type: VARCHAR
+    flag_for: e042
+    years: 1997-1999
+  E042:
+    name: e042
+    type: BIGINT
+    years: 1997-1999
+  XE043:
+    name: e043_flag
+    type: VARCHAR
+    flag_for: e043
+    years: 1997-2003
+  E043:
+    name: e043
+    type: BIGINT
+    years: 1997-2003
+  XE051:
+    name: e051_flag
+    type: VARCHAR
+    flag_for: e051
+    years: 1997-1999
+  E051:
+    name: e051
+    type: BIGINT
+    years: 1997-1999
+  XE052:
+    name: e052_flag
+    type: VARCHAR
+    flag_for: e052
+    years: 1997-1999
+  E052:
+    name: e052
+    type: BIGINT
+    years: 1997-1999
+  XE053:
+    name: e053_flag
+    type: VARCHAR
+    flag_for: e053
+    years: 1997-2003
+  E053:
+    name: e053
+    type: BIGINT
+    years: 1997-2003
+  XE061:
+    name: e061_flag
+    type: VARCHAR
+    flag_for: e061
+    years: 1997-1999
+  E061:
+    name: e061
+    type: BIGINT
+    years: 1997-1999
+  XE062:
+    name: e062_flag
+    type: VARCHAR
+    flag_for: e062
+    years: 1997-1999
+  E062:
+    name: e062
+    type: BIGINT
+    years: 1997-1999
+  XE063:
+    name: e063_flag
+    type: VARCHAR
+    flag_for: e063
+    years: 1997-2003
+  E063:
+    name: e063
+    type: BIGINT
+    years: 1997-2003
+  XE071:
+    name: e071_flag
+    type: VARCHAR
+    flag_for: e071
+    years: 1997-1999
+  E071:
+    name: e071
+    type: BIGINT
+    years: 1997-1999
+  XE072:
+    name: e072_flag
+    type: VARCHAR
+    flag_for: e072
+    years: 1997-1999
+  E072:
+    name: e072
+    type: BIGINT
+    years: 1997-1999
+  XE073:
+    name: e073_flag
+    type: VARCHAR
+    flag_for: e073
+    years: 1997-2003
+  E073:
+    name: e073
+    type: BIGINT
+    years: 1997-2003
+  XF01:
+    name: f01_flag
+    type: VARCHAR
+    flag_for: f01
+    years: 1997-1999
+  F01:
+    name: f01
+    type: BIGINT
+    years: 1997-1999
+  XF02:
+    name: f02_flag
+    type: VARCHAR
+    flag_for: f02
+    years: 1997-1999
+  F02:
+    name: f02
+    type: BIGINT
+    years: 1997-1999
+  XF03:
+    name: f03_flag
+    type: VARCHAR
+    flag_for: f03
+    years: 1997-1999
+  F03:
+    name: f03
+    type: BIGINT
+    years: 1997-1999
+  XG01:
+    name: g01_flag
+    type: VARCHAR
+    flag_for: g01
+    years: 1997-2003
+  G01:
+    name: g01
+    type: BIGINT
+    years: 1997-2003
+  XG02:
+    name: g02_flag
+    type: VARCHAR
+    flag_for: g02
+    years: 1997-2003
+  G02:
+    name: g02
+    type: BIGINT
+    years: 1997-2003
+  XG03:
+    name: g03_flag
+    type: VARCHAR
+    flag_for: g03
+    years: 1997-2003
+  G03:
+    name: g03
+    type: BIGINT
+    years: 1997-2003
+  XG04:
+    name: g04_flag
+    type: VARCHAR
+    flag_for: g04
+    years: 1997-2003
+  G04:
+    name: g04
+    type: BIGINT
+    years: 1997-2003
+  XG05:
+    name: g05_flag
+    type: VARCHAR
+    flag_for: g05
+    years: 1997-2003
+  G05:
+    name: g05
+    type: BIGINT
+    years: 1997-2003
+  FHA:
+    name: fha
+    type: BIGINT
+    years: 1997-2003
+  XH011:
+    name: h011_flag
+    type: VARCHAR
+    flag_for: h011
+    years: 1997-2003
+  H011:
+    name: h011
+    type: BIGINT
+    years: 1997-2003
+  XH012:
+    name: h012_flag
+    type: VARCHAR
+    flag_for: h012
+    years: 1997-2003
+  H012:
+    name: h012
+    type: BIGINT
+    years: 1997-2003
+  XH021:
+    name: h021_flag
+    type: VARCHAR
+    flag_for: h021
+    years: 1997-2003
+  H021:
+    name: h021
+    type: BIGINT
+    years: 1997-2003
+  XH022:
+    name: h022_flag
+    type: VARCHAR
+    flag_for: h022
+    years: 1997-2003
+  H022:
+    name: h022
+    type: BIGINT
+    years: 1997-2003
+  XH033:
+    name: h033_flag
+    type: VARCHAR
+    flag_for: h033
+    years: 1997-1999
+  H033:
+    name: h033
+    type: BIGINT
+    years: 1997-1999
+  XH043:
+    name: h043_flag
+    type: VARCHAR
+    flag_for: h043
+    years: 1997-1999
+  H043:
+    name: h043
+    type: BIGINT
+    years: 1997-1999
+  XH053:
+    name: h053_flag
+    type: VARCHAR
+    flag_for: h053
+    years: 1997-1999
+  H053:
+    name: h053
+    type: BIGINT
+    years: 1997-1999
+  XI01:
+    name: i01_flag
+    type: VARCHAR
+    flag_for: i01
+    years: 1997-1999
+  I01:
+    name: i01
+    type: BIGINT
+    years: 1997-1999
+  XI02:
+    name: i02_flag
+    type: VARCHAR
+    flag_for: i02
+    years: 1997-1999
+  I02:
+    name: i02
+    type: BIGINT
+    years: 1997-1999
+  XI03:
+    name: i03_flag
+    type: VARCHAR
+    flag_for: i03
+    years: 1997-1999
+  I03:
+    name: i03
+    type: BIGINT
+    years: 1997-1999
+  XI04:
+    name: i04_flag
+    type: VARCHAR
+    flag_for: i04
+    years: 1997-1999
+  I04:
+    name: i04
+    type: BIGINT
+    years: 1997-1999
+  XI05:
+    name: i05_flag
+    type: VARCHAR
+    flag_for: i05
+    years: 1997-1999
+  I05:
+    name: i05
+    type: BIGINT
+    years: 1997-1999
+  XI06:
+    name: i06_flag
+    type: VARCHAR
+    flag_for: i06
+    years: 1997-1999
+  I06:
+    name: i06
+    type: BIGINT
+    years: 1997-1999
+  XJ011:
+    name: j011_flag
+    type: VARCHAR
+    flag_for: j011
+    years: 1997-1999
+  J011:
+    name: j011
+    type: BIGINT
+    years: 1997-1999
+  XJ012:
+    name: j012_flag
+    type: VARCHAR
+    flag_for: j012
+    years: 1997-1999
+  J012:
+    name: j012
+    type: BIGINT
+    years: 1997-1999
+  XJ013:
+    name: j013_flag
+    type: VARCHAR
+    flag_for: j013
+    years: 1997-2003
+  J013:
+    name: j013
+    type: BIGINT
+    years: 1997-2003
+  XJ021:
+    name: j021_flag
+    type: VARCHAR
+    flag_for: j021
+    years: 1997-1999
+  J021:
+    name: j021
+    type: BIGINT
+    years: 1997-1999
+  XJ022:
+    name: j022_flag
+    type: VARCHAR
+    flag_for: j022
+    years: 1997-1999
+  J022:
+    name: j022
+    type: BIGINT
+    years: 1997-1999
+  XJ023:
+    name: j023_flag
+    type: VARCHAR
+    flag_for: j023
+    years: 1997-2003
+  J023:
+    name: j023
+    type: BIGINT
+    years: 1997-2003
+  XJ031:
+    name: j031_flag
+    type: VARCHAR
+    flag_for: j031
+    years: 1997-1999
+  J031:
+    name: j031
+    type: BIGINT
+    years: 1997-1999
+  XJ032:
+    name: j032_flag
+    type: VARCHAR
+    flag_for: j032
+    years: 1997-1999
+  J032:
+    name: j032
+    type: BIGINT
+    years: 1997-1999
+  XJ033:
+    name: j033_flag
+    type: VARCHAR
+    flag_for: j033
+    years: 1997-2003
+  J033:
+    name: j033
+    type: BIGINT
+    years: 1997-2003
+  XJ041:
+    name: j041_flag
+    type: VARCHAR
+    flag_for: j041
+    years: 1997-1999
+  J041:
+    name: j041
+    type: BIGINT
+    years: 1997-1999
+  XJ042:
+    name: j042_flag
+    type: VARCHAR
+    flag_for: j042
+    years: 1997-1999
+  J042:
+    name: j042
+    type: BIGINT
+    years: 1997-1999
+  XJ043:
+    name: j043_flag
+    type: VARCHAR
+    flag_for: j043
+    years: 1997-2003
+  J043:
+    name: j043
+    type: BIGINT
+    years: 1997-2003
+  XJ051:
+    name: j051_flag
+    type: VARCHAR
+    flag_for: j051
+    years: 1997-1999
+  J051:
+    name: j051
+    type: BIGINT
+    years: 1997-1999
+  XJ052:
+    name: j052_flag
+    type: VARCHAR
+    flag_for: j052
+    years: 1997-1999
+  J052:
+    name: j052
+    type: BIGINT
+    years: 1997-1999
+  XJ053:
+    name: j053_flag
+    type: VARCHAR
+    flag_for: j053
+    years: 1997-2003
+  J053:
+    name: j053
+    type: BIGINT
+    years: 1997-2003
+  XJ061:
+    name: j061_flag
+    type: VARCHAR
+    flag_for: j061
+    years: 1997-1999
+  J061:
+    name: j061
+    type: BIGINT
+    years: 1997-1999
+  XJ062:
+    name: j062_flag
+    type: VARCHAR
+    flag_for: j062
+    years: 1997-1999
+  J062:
+    name: j062
+    type: BIGINT
+    years: 1997-1999
+  XJ063:
+    name: j063_flag
+    type: VARCHAR
+    flag_for: j063
+    years: 1997-2003
+  J063:
+    name: j063
+    type: BIGINT
+    years: 1997-2003
+  XJ071:
+    name: j071_flag
+    type: VARCHAR
+    flag_for: j071
+    years: 1997-1999
+  J071:
+    name: j071
+    type: BIGINT
+    years: 1997-1999
+  XJ072:
+    name: j072_flag
+    type: VARCHAR
+    flag_for: j072
+    years: 1997-1999
+  J072:
+    name: j072
+    type: BIGINT
+    years: 1997-1999
+  XJ073:
+    name: j073_flag
+    type: VARCHAR
+    flag_for: j073
+    years: 1997-2003
+  J073:
+    name: j073
+    type: BIGINT
+    years: 1997-2003
+  XJ081:
+    name: j081_flag
+    type: VARCHAR
+    flag_for: j081
+    years: 1997-1999
+  J081:
+    name: j081
+    type: BIGINT
+    years: 1997-1999
+  XJ082:
+    name: j082_flag
+    type: VARCHAR
+    flag_for: j082
+    years: 1997-1999
+  J082:
+    name: j082
+    type: BIGINT
+    years: 1997-1999
+  XJ083:
+    name: j083_flag
+    type: VARCHAR
+    flag_for: j083
+    years: 1997-2003
+  J083:
+    name: j083
+    type: BIGINT
+    years: 1997-2003
+  XK011:
+    name: k011_flag
+    type: VARCHAR
+    flag_for: k011
+    years: 1997-1999
+  K011:
+    name: k011
+    type: BIGINT
+    years: 1997-1999
+  XK012:
+    name: k012_flag
+    type: VARCHAR
+    flag_for: k012
+    years: 1997-1999
+  K012:
+    name: k012
+    type: BIGINT
+    years: 1997-1999
+  XK013:
+    name: k013_flag
+    type: VARCHAR
+    flag_for: k013
+    years: 1997-1999
+  K013:
+    name: k013
+    type: BIGINT
+    years: 1997-1999
+  XK014:
+    name: k014_flag
+    type: VARCHAR
+    flag_for: k014
+    years: 1997-2003
+  K014:
+    name: k014
+    type: BIGINT
+    years: 1997-2003
+  XK021:
+    name: k021_flag
+    type: VARCHAR
+    flag_for: k021
+    years: 1997-1999
+  K021:
+    name: k021
+    type: BIGINT
+    years: 1997-1999
+  XK022:
+    name: k022_flag
+    type: VARCHAR
+    flag_for: k022
+    years: 1997-1999
+  K022:
+    name: k022
+    type: BIGINT
+    years: 1997-1999
+  XK023:
+    name: k023_flag
+    type: VARCHAR
+    flag_for: k023
+    years: 1997-1999
+  K023:
+    name: k023
+    type: BIGINT
+    years: 1997-1999
+  XK024:
+    name: k024_flag
+    type: VARCHAR
+    flag_for: k024
+    years: 1997-1999
+  K024:
+    name: k024
+    type: BIGINT
+    years: 1997-1999
+  XK025:
+    name: k025_flag
+    type: VARCHAR
+    flag_for: k025
+    years: 1997-2003
+  K025:
+    name: k025
+    type: BIGINT
+    years: 1997-2003
+  XK031:
+    name: k031_flag
+    type: VARCHAR
+    flag_for: k031
+    years: 1997-1999
+  K031:
+    name: k031
+    type: BIGINT
+    years: 1997-1999
+  XK032:
+    name: k032_flag
+    type: VARCHAR
+    flag_for: k032
+    years: 1997-1999
+  K032:
+    name: k032
+    type: BIGINT
+    years: 1997-1999
+  XK033:
+    name: k033_flag
+    type: VARCHAR
+    flag_for: k033
+    years: 1997-1999
+  K033:
+    name: k033
+    type: BIGINT
+    years: 1997-1999
+  XK034:
+    name: k034_flag
+    type: VARCHAR
+    flag_for: k034
+    years: 1997-1999
+  K034:
+    name: k034
+    type: BIGINT
+    years: 1997-1999
+  XK035:
+    name: k035_flag
+    type: VARCHAR
+    flag_for: k035
+    years: 1997-2003
+  K035:
+    name: k035
+    type: BIGINT
+    years: 1997-2003
+  XC1AMT:
+    name: c1amt_flag
+    type: VARCHAR
+    flag_for: c1amt
+    years: 1998-1999
+  XC2A:
+    name: c2a_flag
+    type: VARCHAR
+    flag_for: c2a
+    years: 1998-1999
+  XC2B:
+    name: c2b_flag
+    type: VARCHAR
+    flag_for: c2b
+    years: 1998-1999
+  XC2C:
+    name: c2c_flag
+    type: VARCHAR
+    flag_for: c2c
+    years: 1998-1999
+  XC2D:
+    name: c2d_flag
+    type: VARCHAR
+    flag_for: c2d
+    years: 1998-1999
+  XC3AMT3:
+    name: c3amt3_flag
+    type: VARCHAR
+    flag_for: c3amt3
+    years: 1998-1999
+  XC3AMT4:
+    name: c3amt4_flag
+    type: VARCHAR
+    flag_for: c3amt4
+    years: 1998-1999
+  XC3AMT5:
+    name: c3amt5_flag
+    type: VARCHAR
+    flag_for: c3amt5
+    years: 1998-1999
+  XC3AMT6:
+    name: c3amt6_flag
+    type: VARCHAR
+    flag_for: c3amt6
+    years: 1998-1999
+  XC4REVEN:
+    name: c4reven_flag
+    type: VARCHAR
+    flag_for: c4reven
+    years: 1998-1999
+  XC4EXPEN:
+    name: c4expen_flag
+    type: VARCHAR
+    flag_for: c4expen
+    years: 1998-1999
+  XC5REVEN:
+    name: c5reven_flag
+    type: VARCHAR
+    flag_for: c5reven
+    years: 1998-1999
+  XC5EXPEN:
+    name: c5expen_flag
+    type: VARCHAR
+    flag_for: c5expen
+    years: 1998-1999
+  XC6AMT:
+    name: c6amt_flag
+    type: VARCHAR
+    flag_for: c6amt
+    years: 1998-1999
+  XC8A:
+    name: c8a_flag
+    type: VARCHAR
+    flag_for: c8a
+    years: 1998-1999
+  XC8B:
+    name: c8b_flag
+    type: VARCHAR
+    flag_for: c8b
+    years: 1998-1999
+  XC8C:
+    name: c8c_flag
+    type: VARCHAR
+    flag_for: c8c
+    years: 1998-1999
   XBOTHER:
     name: bother_flag
     type: VARCHAR
@@ -374,225 +1982,5 @@ columns:
     years: 2000-2003
   BOTHER:
     name: bother
-    type: BIGINT
-    years: 2000-2003
-  XB223:
-    name: b223_flag
-    type: VARCHAR
-    flag_for: b223
-    years: 2000-2003
-  B223:
-    name: b223
-    type: BIGINT
-    years: 2000-2003
-  XB234:
-    name: b234_flag
-    type: VARCHAR
-    flag_for: b234
-    years: 2000-2003
-  B234:
-    name: b234
-    type: BIGINT
-    years: 2000-2003
-  XB244:
-    name: b244_flag
-    type: VARCHAR
-    flag_for: b244
-    years: 2000-2003
-  B244:
-    name: b244
-    type: BIGINT
-    years: 2000-2003
-  XB254:
-    name: b254_flag
-    type: VARCHAR
-    flag_for: b254
-    years: 2000-2003
-  B254:
-    name: b254
-    type: BIGINT
-    years: 2000-2003
-  XB274:
-    name: b274_flag
-    type: VARCHAR
-    flag_for: b274
-    years: 2000-2003
-  B274:
-    name: b274
-    type: BIGINT
-    years: 2000-2003
-  XE013:
-    name: e013_flag
-    type: VARCHAR
-    flag_for: e013
-    years: 2000-2003
-  E013:
-    name: e013
-    type: BIGINT
-    years: 2000-2003
-  XE023:
-    name: e023_flag
-    type: VARCHAR
-    flag_for: e023
-    years: 2000-2003
-  E023:
-    name: e023
-    type: BIGINT
-    years: 2000-2003
-  XE033:
-    name: e033_flag
-    type: VARCHAR
-    flag_for: e033
-    years: 2000-2003
-  E033:
-    name: e033
-    type: BIGINT
-    years: 2000-2003
-  XE043:
-    name: e043_flag
-    type: VARCHAR
-    flag_for: e043
-    years: 2000-2003
-  E043:
-    name: e043
-    type: BIGINT
-    years: 2000-2003
-  XE053:
-    name: e053_flag
-    type: VARCHAR
-    flag_for: e053
-    years: 2000-2003
-  E053:
-    name: e053
-    type: BIGINT
-    years: 2000-2003
-  XE063:
-    name: e063_flag
-    type: VARCHAR
-    flag_for: e063
-    years: 2000-2003
-  E063:
-    name: e063
-    type: BIGINT
-    years: 2000-2003
-  XE073:
-    name: e073_flag
-    type: VARCHAR
-    flag_for: e073
-    years: 2000-2003
-  E073:
-    name: e073
-    type: BIGINT
-    years: 2000-2003
-  XG01:
-    name: g01_flag
-    type: VARCHAR
-    flag_for: g01
-    years: 2000-2003
-  G01:
-    name: g01
-    type: BIGINT
-    years: 2000-2003
-  XG02:
-    name: g02_flag
-    type: VARCHAR
-    flag_for: g02
-    years: 2000-2003
-  G02:
-    name: g02
-    type: BIGINT
-    years: 2000-2003
-  XG03:
-    name: g03_flag
-    type: VARCHAR
-    flag_for: g03
-    years: 2000-2003
-  G03:
-    name: g03
-    type: BIGINT
-    years: 2000-2003
-  XG04:
-    name: g04_flag
-    type: VARCHAR
-    flag_for: g04
-    years: 2000-2003
-  G04:
-    name: g04
-    type: BIGINT
-    years: 2000-2003
-  XG05:
-    name: g05_flag
-    type: VARCHAR
-    flag_for: g05
-    years: 2000-2003
-  G05:
-    name: g05
-    type: BIGINT
-    years: 2000-2003
-  FHA:
-    name: fha
-    type: BIGINT
-    years: 2000-2003
-  XH011:
-    name: h011_flag
-    type: VARCHAR
-    flag_for: h011
-    years: 2000-2003
-  H011:
-    name: h011
-    type: BIGINT
-    years: 2000-2003
-  XH012:
-    name: h012_flag
-    type: VARCHAR
-    flag_for: h012
-    years: 2000-2003
-  H012:
-    name: h012
-    type: BIGINT
-    years: 2000-2003
-  XH021:
-    name: h021_flag
-    type: VARCHAR
-    flag_for: h021
-    years: 2000-2003
-  H021:
-    name: h021
-    type: BIGINT
-    years: 2000-2003
-  XH022:
-    name: h022_flag
-    type: VARCHAR
-    flag_for: h022
-    years: 2000-2003
-  H022:
-    name: h022
-    type: BIGINT
-    years: 2000-2003
-  XK014:
-    name: k014_flag
-    type: VARCHAR
-    flag_for: k014
-    years: 2000-2003
-  K014:
-    name: k014
-    type: BIGINT
-    years: 2000-2003
-  XK025:
-    name: k025_flag
-    type: VARCHAR
-    flag_for: k025
-    years: 2000-2003
-  K025:
-    name: k025
-    type: BIGINT
-    years: 2000-2003
-  XK035:
-    name: k035_flag
-    type: VARCHAR
-    flag_for: k035
-    years: 2000-2003
-  K035:
-    name: k035
     type: BIGINT
     years: 2000-2003

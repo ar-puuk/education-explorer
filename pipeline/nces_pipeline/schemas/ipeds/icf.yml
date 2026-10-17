@@ -1,0 +1,173 @@
+source: ipeds
+family: icf
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1991,1998
+  FINAID1:
+    name: finaid1
+    type: BIGINT
+    years: 1991,1998
+  FINAID2:
+    name: finaid2
+    type: BIGINT
+    years: 1991,1998
+  FINAID3:
+    name: finaid3
+    type: BIGINT
+    years: 1991,1998
+  FINAID4:
+    name: finaid4
+    type: BIGINT
+    years: 1991,1998
+  FINAID5:
+    name: finaid5
+    type: BIGINT
+    years: 1991,1998
+  FINAID6:
+    name: finaid6
+    type: BIGINT
+    years: 1991,1998
+  FINAID7:
+    name: finaid7
+    type: BIGINT
+    years: 1991,1998
+  FINAID8:
+    name: finaid8
+    type: BIGINT
+    years: 1991,1998
+  FINAID9:
+    name: finaid9
+    type: BIGINT
+    years: 1991,1998
+  JTPA:
+    name: jtpa
+    type: BIGINT
+    years: 1991,1998
+  ROTC:
+    name: rotc
+    type: BIGINT
+    years: 1991,1998
+  ROTC1:
+    name: rotc1
+    type: BIGINT
+    years: 1991,1998
+  ROTC2:
+    name: rotc2
+    type: BIGINT
+    years: 1991,1998
+  ROTC3:
+    name: rotc3
+    type: BIGINT
+    years: 1991,1998
+  FTSLT15:
+    name: ftslt15
+    type: BIGINT
+    years: 1991,1998
+  FACPT:
+    name: facpt
+    type: BIGINT
+    years: 1991,1998
+  FACML:
+    name: facml
+    type: BIGINT
+    years: 1991,1998
+  FACMD:
+    name: facmd
+    type: BIGINT
+    years: 1991,1998
+  ATHAID:
+    name: athaid
+    type: BIGINT
+    years: '1998'
+  ATHAID1:
+    name: athaid1
+    type: BIGINT
+    years: '1998'
+  ATHAID2:
+    name: athaid2
+    type: BIGINT
+    years: '1998'
+  ATHAID3:
+    name: athaid3
+    type: BIGINT
+    years: '1998'
+  ATHAID4:
+    name: athaid4
+    type: BIGINT
+    years: '1998'
+  ATHAID5:
+    name: athaid5
+    type: BIGINT
+    years: '1998'
+  ATHASSOC:
+    name: athassoc
+    type: BIGINT
+    years: '1998'
+  ASSOC1:
+    name: assoc1
+    type: BIGINT
+    years: '1998'
+  ASSOC2:
+    name: assoc2
+    type: BIGINT
+    years: '1998'
+  ASSOC3:
+    name: assoc3
+    type: BIGINT
+    years: '1998'
+  ASSOC4:
+    name: assoc4
+    type: BIGINT
+    years: '1998'
+  ASSOC5:
+    name: assoc5
+    type: BIGINT
+    years: '1998'
+  ASSOC6:
+    name: assoc6
+    type: BIGINT
+    years: '1998'
+  SPORT1:
+    name: sport1
+    type: BIGINT
+    years: '1998'
+  CONFN01:
+    name: confn01
+    type: BIGINT
+    years: '1998'
+  SPORT2:
+    name: sport2
+    type: BIGINT
+    years: '1998'
+  CONFN02:
+    name: confn02
+    type: BIGINT
+    years: '1998'
+  SPORT3:
+    name: sport3
+    type: BIGINT
+    years: '1998'
+  CONFN03:
+    name: confn03
+    type: BIGINT
+    years: '1998'
+  SPORT4:
+    name: sport4
+    type: BIGINT
+    years: '1998'
+  CONFN04:
+    name: confn04
+    type: BIGINT
+    years: '1998'
+  FACRL:
+    name: facrl
+    type: BIGINT
+    years: '1998'
+  PCTPOST:
+    name: pctpost
+    type: BIGINT
+    years: '1998'

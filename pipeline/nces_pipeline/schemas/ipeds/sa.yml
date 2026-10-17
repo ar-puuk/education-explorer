@@ -1,0 +1,313 @@
+source: ipeds
+family: sa
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1991'
+  CNFTMEN:
+    name: cnftmen
+    type: BIGINT
+    years: '1991'
+  CNFTWOM:
+    name: cnftwom
+    type: BIGINT
+    years: '1991'
+  CNPTMEN:
+    name: cnptmen
+    type: BIGINT
+    years: '1991'
+  CNPTWOM:
+    name: cnptwom
+    type: BIGINT
+    years: '1991'
+  FTMEN1:
+    name: ftmen1
+    type: BIGINT
+    years: '1991'
+  FTMEN2:
+    name: ftmen2
+    type: BIGINT
+    years: '1991'
+  FTMEN4:
+    name: ftmen4
+    type: BIGINT
+    years: '1991'
+  FTMEN5:
+    name: ftmen5
+    type: BIGINT
+    years: '1991'
+  FTMEN6:
+    name: ftmen6
+    type: BIGINT
+    years: '1991'
+  FTMEN7:
+    name: ftmen7
+    type: BIGINT
+    years: '1991'
+  FTMEN8:
+    name: ftmen8
+    type: BIGINT
+    years: '1991'
+  FTMEN9:
+    name: ftmen9
+    type: BIGINT
+    years: '1991'
+  FTWOM1:
+    name: ftwom1
+    type: BIGINT
+    years: '1991'
+  FTWOM2:
+    name: ftwom2
+    type: BIGINT
+    years: '1991'
+  FTWOM4:
+    name: ftwom4
+    type: BIGINT
+    years: '1991'
+  FTWOM5:
+    name: ftwom5
+    type: BIGINT
+    years: '1991'
+  FTWOM6:
+    name: ftwom6
+    type: BIGINT
+    years: '1991'
+  FTWOM7:
+    name: ftwom7
+    type: BIGINT
+    years: '1991'
+  FTWOM8:
+    name: ftwom8
+    type: BIGINT
+    years: '1991'
+  FTWOM9:
+    name: ftwom9
+    type: BIGINT
+    years: '1991'
+  ICNFTMEN:
+    name: icnftmen
+    type: VARCHAR
+    years: '1991'
+  ICNFTWOM:
+    name: icnftwom
+    type: VARCHAR
+    years: '1991'
+  ICNPTMEN:
+    name: icnptmen
+    type: VARCHAR
+    years: '1991'
+  ICNPTWOM:
+    name: icnptwom
+    type: VARCHAR
+    years: '1991'
+  IFTMEN1:
+    name: iftmen1
+    type: VARCHAR
+    years: '1991'
+  IFTMEN2:
+    name: iftmen2
+    type: VARCHAR
+    years: '1991'
+  IFTMEN4:
+    name: iftmen4
+    type: VARCHAR
+    years: '1991'
+  IFTMEN5:
+    name: iftmen5
+    type: VARCHAR
+    years: '1991'
+  IFTMEN6:
+    name: iftmen6
+    type: VARCHAR
+    years: '1991'
+  IFTMEN7:
+    name: iftmen7
+    type: VARCHAR
+    years: '1991'
+  IFTMEN8:
+    name: iftmen8
+    type: VARCHAR
+    years: '1991'
+  IFTMEN9:
+    name: iftmen9
+    type: VARCHAR
+    years: '1991'
+  IFTWOM1:
+    name: iftwom1
+    type: VARCHAR
+    years: '1991'
+  IFTWOM2:
+    name: iftwom2
+    type: VARCHAR
+    years: '1991'
+  IFTWOM4:
+    name: iftwom4
+    type: VARCHAR
+    years: '1991'
+  IFTWOM5:
+    name: iftwom5
+    type: VARCHAR
+    years: '1991'
+  IFTWOM6:
+    name: iftwom6
+    type: VARCHAR
+    years: '1991'
+  IFTWOM7:
+    name: iftwom7
+    type: VARCHAR
+    years: '1991'
+  IFTWOM8:
+    name: iftwom8
+    type: VARCHAR
+    years: '1991'
+  IFTWOM9:
+    name: iftwom9
+    type: VARCHAR
+    years: '1991'
+  IPTMEN1:
+    name: iptmen1
+    type: VARCHAR
+    years: '1991'
+  IPTMEN2:
+    name: iptmen2
+    type: VARCHAR
+    years: '1991'
+  IPTMEN3:
+    name: iptmen3
+    type: VARCHAR
+    years: '1991'
+  IPTMEN4:
+    name: iptmen4
+    type: VARCHAR
+    years: '1991'
+  IPTMEN5:
+    name: iptmen5
+    type: VARCHAR
+    years: '1991'
+  IPTMEN6:
+    name: iptmen6
+    type: VARCHAR
+    years: '1991'
+  IPTMEN7:
+    name: iptmen7
+    type: VARCHAR
+    years: '1991'
+  IPTMEN8:
+    name: iptmen8
+    type: VARCHAR
+    years: '1991'
+  IPTMEN9:
+    name: iptmen9
+    type: VARCHAR
+    years: '1991'
+  IPTWOM1:
+    name: iptwom1
+    type: VARCHAR
+    years: '1991'
+  IPTWOM2:
+    name: iptwom2
+    type: VARCHAR
+    years: '1991'
+  IPTWOM3:
+    name: iptwom3
+    type: VARCHAR
+    years: '1991'
+  IPTWOM4:
+    name: iptwom4
+    type: VARCHAR
+    years: '1991'
+  IPTWOM5:
+    name: iptwom5
+    type: VARCHAR
+    years: '1991'
+  IPTWOM6:
+    name: iptwom6
+    type: VARCHAR
+    years: '1991'
+  IPTWOM7:
+    name: iptwom7
+    type: VARCHAR
+    years: '1991'
+  IPTWOM8:
+    name: iptwom8
+    type: VARCHAR
+    years: '1991'
+  IPTWOM9:
+    name: iptwom9
+    type: VARCHAR
+    years: '1991'
+  PTMEN1:
+    name: ptmen1
+    type: BIGINT
+    years: '1991'
+  PTMEN2:
+    name: ptmen2
+    type: BIGINT
+    years: '1991'
+  PTMEN3:
+    name: ptmen3
+    type: BIGINT
+    years: '1991'
+  PTMEN4:
+    name: ptmen4
+    type: BIGINT
+    years: '1991'
+  PTMEN5:
+    name: ptmen5
+    type: BIGINT
+    years: '1991'
+  PTMEN6:
+    name: ptmen6
+    type: BIGINT
+    years: '1991'
+  PTMEN7:
+    name: ptmen7
+    type: BIGINT
+    years: '1991'
+  PTMEN8:
+    name: ptmen8
+    type: BIGINT
+    years: '1991'
+  PTMEN9:
+    name: ptmen9
+    type: BIGINT
+    years: '1991'
+  PTWOM1:
+    name: ptwom1
+    type: BIGINT
+    years: '1991'
+  PTWOM2:
+    name: ptwom2
+    type: BIGINT
+    years: '1991'
+  PTWOM3:
+    name: ptwom3
+    type: BIGINT
+    years: '1991'
+  PTWOM4:
+    name: ptwom4
+    type: BIGINT
+    years: '1991'
+  PTWOM5:
+    name: ptwom5
+    type: BIGINT
+    years: '1991'
+  PTWOM6:
+    name: ptwom6
+    type: BIGINT
+    years: '1991'
+  PTWOM7:
+    name: ptwom7
+    type: BIGINT
+    years: '1991'
+  PTWOM8:
+    name: ptwom8
+    type: BIGINT
+    years: '1991'
+  PTWOM9:
+    name: ptwom9
+    type: BIGINT
+    years: '1991'

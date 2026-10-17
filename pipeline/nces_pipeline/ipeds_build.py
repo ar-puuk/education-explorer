@@ -11,7 +11,7 @@ import yaml
 from .config import DATA_RAW, DOCS_DATA, SCHEMAS, State
 from .ipeds_files import IpedsFile, data_csv, data_version, dict_xlsx, select
 from .parquet import write_parquet
-from .rawio import header_of, read_sql, run_copy
+from .rawio import header_of, read_sql, run_copy, run_query
 from .schema import SchemaDrift
 
 MAPS = SCHEMAS / "ipeds"
@@ -53,9 +53,10 @@ def _ids_path(state: State) -> Path:
 
 
 def state_unitids(state: State) -> set[str]:
-    """UNITIDs that were ever located in the state according to any year's directory (HD) file."""
-    hd = [f for f in select() if f.family == "hd"]
-    sig = [f"{f.name}:{(DATA_RAW / f.rel).stat().st_size}" for f in hd if (DATA_RAW / f.rel).exists()]
+    """UNITIDs that were ever located in the state: every directory-like file (any family) that has both
+    UNITID and STABBR, in any year."""
+    cand = [f for f in select() if (DATA_RAW / f.rel).exists()]
+    sig = [f"{f.name}:{(DATA_RAW / f.rel).stat().st_size}" for f in cand]
     p = _ids_path(state)
     if p.exists():
         d = json.loads(p.read_text(encoding="utf-8"))
@@ -63,18 +64,17 @@ def state_unitids(state: State) -> set[str]:
             return set(d["ids"])
     con = duckdb.connect()
     ids: set[str] = set()
-    for f in hd:
-        if not (DATA_RAW / f.rel).exists():
-            continue
+    for f in cand:
         csv = data_csv(f)
         cols = {c.upper(): c for c in header_of(csv)}
         if "STABBR" not in cols or "UNITID" not in cols:
-            raise SchemaDrift(f"{f.name}: no STABBR/UNITID in the directory file")
-        rows = con.execute(
-            f"SELECT DISTINCT lpad(trim({q(cols['UNITID'])}), 6, '0') FROM {read_sql(csv)} "
-            f"WHERE upper(trim({q(cols['STABBR'])})) = '{state.abbrev.upper()}'"
-        ).fetchall()
+            continue
+        rows = run_query(con, lambda par, csv=csv, cols=cols: (
+            f"SELECT DISTINCT lpad(trim({q(cols['UNITID'])}), 6, '0') FROM {read_sql(csv, parallel=par)} "
+            f"WHERE upper(trim({q(cols['STABBR'])})) = '{state.abbrev.upper()}'"))
         ids |= {r[0] for r in rows}
+    if not ids:
+        raise SchemaDrift("no institutions found for the state in any IPEDS directory file")
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps({"sig": sig, "ids": sorted(ids)}), encoding="utf-8", newline="\n")
     return ids
@@ -320,6 +320,11 @@ def build_ipeds(state: State, years: list[int] | None = None, families: list[str
         parts.append(f"'{data_csv(f).name}' AS source_file")
         _check_casts(con, sp, d, rawname, f)
         sql = f"SELECT {', '.join(parts)} FROM read_parquet('{sp.as_posix()}')"
+        raw_n = con.execute(f"SELECT count(*) FROM ({sql})").fetchone()[0]
+        uniq_n = con.execute(f"SELECT count(*) FROM (SELECT DISTINCT * FROM ({sql}))").fetchone()[0]
+        if uniq_n < raw_n:  # exact duplicate source rows (a defect in a few old files) carry no information
+            print(f"  note: {f.name}: dropped {raw_n - uniq_n} exact duplicate row(s) from the source file")
+            sql = f"SELECT DISTINCT * FROM ({sql})"
         order = [c for c in d["key"]] or ["unitid"]
         n = write_parquet(con, sql, DOCS_DATA / "ipeds" / f.family / f"{f.year}.parquet", order)
         report.append({"table": f.family, "year": f.year, "rows": n})

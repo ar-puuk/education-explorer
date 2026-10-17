@@ -1,0 +1,349 @@
+source: ipeds
+family: s
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1987,1989
+  AL01C01:
+    name: al01c01
+    type: BIGINT
+    years: 1987,1989
+  AL01C02:
+    name: al01c02
+    type: BIGINT
+    years: 1987,1989
+  AL01C04:
+    name: al01c04
+    type: BIGINT
+    years: 1987,1989
+  AL02C02:
+    name: al02c02
+    type: BIGINT
+    years: 1987,1989
+  AL02C01:
+    name: al02c01
+    type: BIGINT
+    years: 1987,1989
+  AL02C04:
+    name: al02c04
+    type: BIGINT
+    years: 1987,1989
+  AL04C01:
+    name: al04c01
+    type: BIGINT
+    years: 1987,1989
+  AL04C03:
+    name: al04c03
+    type: BIGINT
+    years: 1987,1989
+  AL04C04:
+    name: al04c04
+    type: BIGINT
+    years: 1987,1989
+  AL05C01:
+    name: al05c01
+    type: BIGINT
+    years: 1987,1989
+  AL05C02:
+    name: al05c02
+    type: BIGINT
+    years: 1987,1989
+  AL05C03:
+    name: al05c03
+    type: BIGINT
+    years: 1987,1989
+  AL05C04:
+    name: al05c04
+    type: BIGINT
+    years: 1987,1989
+  AL07C02:
+    name: al07c02
+    type: BIGINT
+    years: 1987,1989
+  AL07C03:
+    name: al07c03
+    type: BIGINT
+    years: 1987,1989
+  AL07C04:
+    name: al07c04
+    type: BIGINT
+    years: 1987,1989
+  AL08C03:
+    name: al08c03
+    type: BIGINT
+    years: 1987,1989
+  AL08C04:
+    name: al08c04
+    type: BIGINT
+    years: 1987,1989
+  AL08C01:
+    name: al08c01
+    type: BIGINT
+    years: 1987,1989
+  AL04C02:
+    name: al04c02
+    type: BIGINT
+    years: 1987,1989
+  AL08C02:
+    name: al08c02
+    type: BIGINT
+    years: 1987,1989
+  BL01:
+    name: bl01
+    type: BIGINT
+    years: 1987,1989
+  BL02:
+    name: bl02
+    type: BIGINT
+    years: 1987,1989
+  BL03:
+    name: bl03
+    type: BIGINT
+    years: 1987,1989
+  BL04:
+    name: bl04
+    type: BIGINT
+    years: 1987,1989
+  BL05:
+    name: bl05
+    type: BIGINT
+    years: 1987,1989
+  AL01C03:
+    name: al01c03
+    type: BIGINT
+    years: 1987,1989
+  AL02C03:
+    name: al02c03
+    type: BIGINT
+    years: 1987,1989
+  AL07C01:
+    name: al07c01
+    type: BIGINT
+    years: 1987,1989
+  AL03C03:
+    name: al03c03
+    type: BIGINT
+    years: 1987,1989
+  AL03C04:
+    name: al03c04
+    type: BIGINT
+    years: 1987,1989
+  AL03C01:
+    name: al03c01
+    type: BIGINT
+    years: '1987'
+  AL03C02:
+    name: al03c02
+    type: BIGINT
+    years: '1987'
+  AL06C02:
+    name: al06c02
+    type: BIGINT
+    years: 1987,1989
+  AL06C03:
+    name: al06c03
+    type: BIGINT
+    years: 1987,1989
+  AL06C04:
+    name: al06c04
+    type: BIGINT
+    years: 1987,1989
+  AL06C01:
+    name: al06c01
+    type: BIGINT
+    years: 1987,1989
+  GENC01:
+    name: genc01
+    type: BIGINT
+    years: '1987'
+  GENC02:
+    name: genc02
+    type: BIGINT
+    years: '1987'
+  GENC03:
+    name: genc03
+    type: BIGINT
+    years: '1987'
+  GENC04:
+    name: genc04
+    type: BIGINT
+    years: '1987'
+  VARSTRAT:
+    name: varstrat
+    type: BIGINT
+    years: '1987'
+  H_SAMP:
+    name: h_samp
+    type: BIGINT
+    years: '1987'
+  SMPLWT:
+    name: smplwt
+    type: BIGINT
+    years: '1987'
+  XL01C01:
+    name: xl01c01
+    type: BIGINT
+    years: 1987,1989
+  XL01C02:
+    name: xl01c02
+    type: BIGINT
+    years: 1987,1989
+  XL01C03:
+    name: xl01c03
+    type: BIGINT
+    years: 1987,1989
+  XL01C04:
+    name: xl01c04
+    type: BIGINT
+    years: 1987,1989
+  XL02C01:
+    name: xl02c01
+    type: BIGINT
+    years: 1987,1989
+  XL02C02:
+    name: xl02c02
+    type: BIGINT
+    years: 1987,1989
+  XL02C03:
+    name: xl02c03
+    type: BIGINT
+    years: 1987,1989
+  XL02C04:
+    name: xl02c04
+    type: BIGINT
+    years: 1987,1989
+  XL03C01:
+    name: xl03c01
+    type: BIGINT
+    years: '1987'
+  XL03C02:
+    name: xl03c02
+    type: BIGINT
+    years: '1987'
+  XL03C03:
+    name: xl03c03
+    type: BIGINT
+    years: 1987,1989
+  XL03C04:
+    name: xl03c04
+    type: BIGINT
+    years: 1987,1989
+  XL04C01:
+    name: xl04c01
+    type: BIGINT
+    years: 1987,1989
+  XL04C02:
+    name: xl04c02
+    type: BIGINT
+    years: 1987,1989
+  XL04C03:
+    name: xl04c03
+    type: BIGINT
+    years: 1987,1989
+  XL04C04:
+    name: xl04c04
+    type: BIGINT
+    years: 1987,1989
+  XL05C01:
+    name: xl05c01
+    type: BIGINT
+    years: 1987,1989
+  XL05C02:
+    name: xl05c02
+    type: BIGINT
+    years: 1987,1989
+  XL05C03:
+    name: xl05c03
+    type: BIGINT
+    years: 1987,1989
+  XL05C04:
+    name: xl05c04
+    type: BIGINT
+    years: 1987,1989
+  XL06C01:
+    name: xl06c01
+    type: BIGINT
+    years: 1987,1989
+  XL06C02:
+    name: xl06c02
+    type: BIGINT
+    years: 1987,1989
+  XL06C03:
+    name: xl06c03
+    type: BIGINT
+    years: 1987,1989
+  XL06C04:
+    name: xl06c04
+    type: BIGINT
+    years: 1987,1989
+  XL07C01:
+    name: xl07c01
+    type: BIGINT
+    years: 1987,1989
+  XL07C02:
+    name: xl07c02
+    type: BIGINT
+    years: 1987,1989
+  XL07C03:
+    name: xl07c03
+    type: BIGINT
+    years: 1987,1989
+  XL07C04:
+    name: xl07c04
+    type: BIGINT
+    years: 1987,1989
+  XL08C01:
+    name: xl08c01
+    type: BIGINT
+    years: 1987,1989
+  XL08C02:
+    name: xl08c02
+    type: BIGINT
+    years: 1987,1989
+  XL08C03:
+    name: xl08c03
+    type: BIGINT
+    years: 1987,1989
+  XL08C04:
+    name: xl08c04
+    type: BIGINT
+    years: 1987,1989
+  XGENC01:
+    name: genc01_flag
+    type: VARCHAR
+    flag_for: genc01
+    years: 1987,1989
+  XGENC02:
+    name: genc02_flag
+    type: VARCHAR
+    flag_for: genc02
+    years: 1987,1989
+  XGENC03:
+    name: genc03_flag
+    type: VARCHAR
+    flag_for: genc03
+    years: 1987,1989
+  XGENC04:
+    name: genc04_flag
+    type: VARCHAR
+    flag_for: genc04
+    years: 1987,1989
+  RPTC01:
+    name: rptc01
+    type: BIGINT
+    years: '1989'
+  RPTC02:
+    name: rptc02
+    type: BIGINT
+    years: '1989'
+  RPTC03:
+    name: rptc03
+    type: BIGINT
+    years: '1989'
+  RPTC04:
+    name: rptc04
+    type: BIGINT
+    years: '1989'

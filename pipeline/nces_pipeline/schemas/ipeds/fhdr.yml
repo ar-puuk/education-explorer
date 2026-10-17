@@ -1,0 +1,25 @@
+source: ipeds
+family: fhdr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1991'
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: '1991'
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1991'
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: '1991'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: '1991'

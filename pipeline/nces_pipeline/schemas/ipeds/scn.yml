@@ -8,11 +8,50 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2001-2011
+    years: 1993,1995,1997,1999,2001-2011
   LINE:
     name: line
     type: BIGINT
-    years: 2001-2011
+    years: 1993,1995,1997,2001-2011
+  STAFF15:
+    name: staff15
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001-2007
+  STAFF16:
+    name: staff16
+    type: BIGINT
+    years: 1993,1995,1997,1999,2001-2007
+  XSTAFF15:
+    name: staff15_flag
+    type: VARCHAR
+    flag_for: staff15
+    years: 1993,1995,1997,1999,2001-2007
+  XSTAFF16:
+    name: staff16_flag
+    type: VARCHAR
+    flag_for: staff16
+    years: 1993,1995,1997,1999,2001-2007
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1995,1997
+  FILLER:
+    name: filler
+    type: BIGINT
+    years: '1995'
+  SCNLEVEL:
+    name: scnlevel
+    type: BIGINT
+    years: 1999,2002-2011
+  XSTAFF24:
+    name: staff24_flag
+    type: VARCHAR
+    flag_for: staff24
+    years: 1999,2002-2007
+  STAFF24:
+    name: staff24
+    type: BIGINT
+    years: 1999,2002-2007
   XSTAFF01:
     name: staff01_flag
     type: VARCHAR
@@ -139,32 +178,10 @@ columns:
     name: staff14
     type: BIGINT
     years: 2001-2007
-  XSTAFF15:
-    name: staff15_flag
-    type: VARCHAR
-    flag_for: staff15
-    years: 2001-2007
-  STAFF15:
-    name: staff15
-    type: BIGINT
-    years: 2001-2007
-  XSTAFF16:
-    name: staff16_flag
-    type: VARCHAR
-    flag_for: staff16
-    years: 2001-2007
-  STAFF16:
-    name: staff16
-    type: BIGINT
-    years: 2001-2007
   STAT_S:
     name: stat_s
     type: BIGINT
     years: '2001'
-  SCNLEVEL:
-    name: scnlevel
-    type: BIGINT
-    years: 2002-2011
   XSTAFF17:
     name: staff17_flag
     type: VARCHAR
@@ -226,15 +243,6 @@ columns:
     years: 2002-2007
   STAFF23:
     name: staff23
-    type: BIGINT
-    years: 2002-2007
-  XSTAFF24:
-    name: staff24_flag
-    type: VARCHAR
-    flag_for: staff24
-    years: 2002-2007
-  STAFF24:
-    name: staff24
     type: BIGINT
     years: 2002-2007
   XHRTOTLT:

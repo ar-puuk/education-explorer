@@ -5,97 +5,2880 @@ key:
 - empcntt
 - contract
 - arank
+- line
 columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2002-2011
-  CONTRACT:
-    name: contract
-    type: BIGINT
-    years: 2002-2011
+    years: 1980,1984-1985,1987,1989-1994,1997-1999,2002-2011
   ARANK:
     name: arank
     type: BIGINT
-    years: 2002-2011
+    years: 1980,1999,2002-2011
+  NUMM:
+    name: numm
+    type: BIGINT
+    years: '1980'
+  SALM:
+    name: salm
+    type: BIGINT
+    years: '1980'
+  TENM:
+    name: tenm
+    type: BIGINT
+    years: '1980'
+  CONM:
+    name: conm
+    type: BIGINT
+    years: '1980'
+  NUMW:
+    name: numw
+    type: BIGINT
+    years: '1980'
+  SALW:
+    name: salw
+    type: BIGINT
+    years: '1980'
+  TENW:
+    name: tenw
+    type: BIGINT
+    years: '1980'
+  CONW:
+    name: conw
+    type: BIGINT
+    years: '1980'
+  IMPCODE:
+    name: impcode
+    type: BIGINT
+    years: 1984-1985
+  CONTRACT:
+    name: contract
+    type: VARCHAR
+    years: 1984-1985,1999,2002-2011
+  LINE:
+    name: line
+    type: BIGINT
+    years: 1984-1985
+  SUPPRESS:
+    name: suppress
+    type: VARCHAR
+    years: 1984-1985
+  SAA1:
+    name: saa1
+    type: BIGINT
+    years: 1984-1985
+  SAA2:
+    name: saa2
+    type: BIGINT
+    years: 1984-1985
+  SAA3:
+    name: saa3
+    type: BIGINT
+    years: 1984-1985
+  SAA4:
+    name: saa4
+    type: BIGINT
+    years: 1984-1985
+  SAA5:
+    name: saa5
+    type: BIGINT
+    years: 1984-1985
+  SAA6:
+    name: saa6
+    type: BIGINT
+    years: 1984-1985
+  XSAA1:
+    name: saa1_flag
+    type: VARCHAR
+    flag_for: saa1
+    years: 1984-1985
+  XSAA2:
+    name: saa2_flag
+    type: VARCHAR
+    flag_for: saa2
+    years: 1984-1985
+  XSAA3:
+    name: saa3_flag
+    type: VARCHAR
+    flag_for: saa3
+    years: 1984-1985
+  XSAA4:
+    name: saa4_flag
+    type: VARCHAR
+    flag_for: saa4
+    years: 1984-1985
+  XSAA5:
+    name: saa5_flag
+    type: VARCHAR
+    flag_for: saa5
+    years: 1984-1985
+  XSAA6:
+    name: saa6_flag
+    type: VARCHAR
+    flag_for: saa6
+    years: 1984-1985
+  A1:
+    name: a1
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A2:
+    name: a2
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A3:
+    name: a3
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A4:
+    name: a4
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A5:
+    name: a5
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A6:
+    name: a6
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A7:
+    name: a7
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A8:
+    name: a8
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A9:
+    name: a9
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A10:
+    name: a10
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A11:
+    name: a11
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A12:
+    name: a12
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A13:
+    name: a13
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A14:
+    name: a14
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A15:
+    name: a15
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A16:
+    name: a16
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A17:
+    name: a17
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A18:
+    name: a18
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A19:
+    name: a19
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A20:
+    name: a20
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A21:
+    name: a21
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A22:
+    name: a22
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A23:
+    name: a23
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A24:
+    name: a24
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A25:
+    name: a25
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A26:
+    name: a26
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A27:
+    name: a27
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A28:
+    name: a28
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A29:
+    name: a29
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A30:
+    name: a30
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A31:
+    name: a31
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A32:
+    name: a32
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A33:
+    name: a33
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A34:
+    name: a34
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A35:
+    name: a35
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A36:
+    name: a36
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A37:
+    name: a37
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A38:
+    name: a38
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A39:
+    name: a39
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A40:
+    name: a40
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A41:
+    name: a41
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A42:
+    name: a42
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A43:
+    name: a43
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A44:
+    name: a44
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A45:
+    name: a45
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A46:
+    name: a46
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A47:
+    name: a47
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A48:
+    name: a48
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A49:
+    name: a49
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A50:
+    name: a50
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A51:
+    name: a51
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A52:
+    name: a52
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A53:
+    name: a53
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A54:
+    name: a54
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A55:
+    name: a55
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A56:
+    name: a56
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A57:
+    name: a57
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A58:
+    name: a58
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A59:
+    name: a59
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A60:
+    name: a60
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A61:
+    name: a61
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A62:
+    name: a62
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A63:
+    name: a63
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A64:
+    name: a64
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A65:
+    name: a65
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A66:
+    name: a66
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A67:
+    name: a67
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A68:
+    name: a68
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A69:
+    name: a69
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A70:
+    name: a70
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A71:
+    name: a71
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A72:
+    name: a72
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A73:
+    name: a73
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A74:
+    name: a74
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A75:
+    name: a75
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A76:
+    name: a76
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A77:
+    name: a77
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A78:
+    name: a78
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A79:
+    name: a79
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A80:
+    name: a80
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A81:
+    name: a81
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A82:
+    name: a82
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A83:
+    name: a83
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A84:
+    name: a84
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A85:
+    name: a85
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A86:
+    name: a86
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A87:
+    name: a87
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A88:
+    name: a88
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A89:
+    name: a89
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A90:
+    name: a90
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A91:
+    name: a91
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A92:
+    name: a92
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A93:
+    name: a93
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A94:
+    name: a94
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A95:
+    name: a95
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A96:
+    name: a96
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A97:
+    name: a97
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A98:
+    name: a98
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A99:
+    name: a99
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A100:
+    name: a100
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A101:
+    name: a101
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A102:
+    name: a102
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A103:
+    name: a103
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A104:
+    name: a104
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A105:
+    name: a105
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A106:
+    name: a106
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A107:
+    name: a107
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A108:
+    name: a108
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A109:
+    name: a109
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A110:
+    name: a110
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A111:
+    name: a111
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A112:
+    name: a112
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A113:
+    name: a113
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A114:
+    name: a114
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A115:
+    name: a115
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A116:
+    name: a116
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A117:
+    name: a117
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A118:
+    name: a118
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A119:
+    name: a119
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A120:
+    name: a120
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A121:
+    name: a121
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A122:
+    name: a122
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A123:
+    name: a123
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A124:
+    name: a124
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A125:
+    name: a125
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A126:
+    name: a126
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A127:
+    name: a127
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A128:
+    name: a128
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A129:
+    name: a129
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A130:
+    name: a130
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A131:
+    name: a131
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A132:
+    name: a132
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A133:
+    name: a133
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A134:
+    name: a134
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A135:
+    name: a135
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A136:
+    name: a136
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A137:
+    name: a137
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A138:
+    name: a138
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A139:
+    name: a139
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A140:
+    name: a140
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A141:
+    name: a141
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A142:
+    name: a142
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A143:
+    name: a143
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A144:
+    name: a144
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A145:
+    name: a145
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A146:
+    name: a146
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A147:
+    name: a147
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A148:
+    name: a148
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A149:
+    name: a149
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A150:
+    name: a150
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A151:
+    name: a151
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A152:
+    name: a152
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A153:
+    name: a153
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A154:
+    name: a154
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  A155:
+    name: a155
+    type: BIGINT
+    years: 1987,1989-1994,1997
+  BOX1:
+    name: box1
+    type: BIGINT
+    years: 1987,1992-1994
+  BOX2:
+    name: box2
+    type: BIGINT
+    years: 1987,1992-1994
+  BOX3:
+    name: box3
+    type: BIGINT
+    years: 1987,1992-1994
+  A4IMP:
+    name: a4imp
+    type: BIGINT
+    years: 1987,1989
+  A5IMP:
+    name: a5imp
+    type: BIGINT
+    years: 1987,1989
+  A9IMP:
+    name: a9imp
+    type: BIGINT
+    years: 1987,1989
+  A10IMP:
+    name: a10imp
+    type: BIGINT
+    years: 1987,1989
+  A14IMP:
+    name: a14imp
+    type: BIGINT
+    years: 1987,1989
+  A15IMP:
+    name: a15imp
+    type: BIGINT
+    years: 1987,1989
+  A19IMP:
+    name: a19imp
+    type: BIGINT
+    years: 1987,1989
+  A20IMP:
+    name: a20imp
+    type: BIGINT
+    years: 1987,1989
+  A24IMP:
+    name: a24imp
+    type: BIGINT
+    years: 1987,1989
+  A25IMP:
+    name: a25imp
+    type: BIGINT
+    years: 1987,1989
+  A29IMP:
+    name: a29imp
+    type: BIGINT
+    years: 1987,1989
+  A30IMP:
+    name: a30imp
+    type: BIGINT
+    years: 1987,1989
+  A34IMP:
+    name: a34imp
+    type: BIGINT
+    years: 1987,1989
+  A35IMP:
+    name: a35imp
+    type: BIGINT
+    years: 1987,1989
+  A39IMP:
+    name: a39imp
+    type: BIGINT
+    years: 1987,1989
+  A40IMP:
+    name: a40imp
+    type: BIGINT
+    years: 1987,1989
+  A44IMP:
+    name: a44imp
+    type: BIGINT
+    years: 1987,1989
+  A45IMP:
+    name: a45imp
+    type: BIGINT
+    years: 1987,1989
+  A49IMP:
+    name: a49imp
+    type: BIGINT
+    years: 1987,1989
+  A50IMP:
+    name: a50imp
+    type: BIGINT
+    years: 1987,1989
+  A54IMP:
+    name: a54imp
+    type: BIGINT
+    years: 1987,1989
+  A55IMP:
+    name: a55imp
+    type: BIGINT
+    years: 1987,1989
+  A59IMP:
+    name: a59imp
+    type: BIGINT
+    years: 1987,1989
+  A60IMP:
+    name: a60imp
+    type: BIGINT
+    years: 1987,1989
+  A64IMP:
+    name: a64imp
+    type: BIGINT
+    years: 1987,1989
+  A65IMP:
+    name: a65imp
+    type: BIGINT
+    years: 1987,1989
+  A69IMP:
+    name: a69imp
+    type: BIGINT
+    years: 1987,1989
+  A70IMP:
+    name: a70imp
+    type: BIGINT
+    years: 1987,1989
+  A74IMP:
+    name: a74imp
+    type: BIGINT
+    years: 1987,1989
+  A75IMP:
+    name: a75imp
+    type: BIGINT
+    years: 1987,1989
+  A79IMP:
+    name: a79imp
+    type: BIGINT
+    years: 1987,1989
+  A80IMP:
+    name: a80imp
+    type: BIGINT
+    years: 1987,1989
+  A84IMP:
+    name: a84imp
+    type: BIGINT
+    years: 1987,1989
+  A85IMP:
+    name: a85imp
+    type: BIGINT
+    years: 1987,1989
+  A89IMP:
+    name: a89imp
+    type: BIGINT
+    years: 1987,1989
+  A90IMP:
+    name: a90imp
+    type: BIGINT
+    years: 1987,1989
+  A94IMP:
+    name: a94imp
+    type: BIGINT
+    years: 1987,1989
+  A95IMP:
+    name: a95imp
+    type: BIGINT
+    years: 1987,1989
+  A99IMP:
+    name: a99imp
+    type: BIGINT
+    years: 1987,1989
+  A100IMP:
+    name: a100imp
+    type: BIGINT
+    years: 1987,1989
+  A104IMP:
+    name: a104imp
+    type: BIGINT
+    years: 1987,1989
+  A105IMP:
+    name: a105imp
+    type: BIGINT
+    years: 1987,1989
+  A109IMP:
+    name: a109imp
+    type: BIGINT
+    years: 1987,1989
+  A110IMP:
+    name: a110imp
+    type: BIGINT
+    years: 1987,1989
+  A114IMP:
+    name: a114imp
+    type: BIGINT
+    years: 1987,1989
+  A115IMP:
+    name: a115imp
+    type: BIGINT
+    years: 1987,1989
+  A119IMP:
+    name: a119imp
+    type: BIGINT
+    years: 1987,1989
+  A120IMP:
+    name: a120imp
+    type: BIGINT
+    years: 1987,1989
+  A124IMP:
+    name: a124imp
+    type: BIGINT
+    years: 1987,1989
+  A125IMP:
+    name: a125imp
+    type: BIGINT
+    years: 1987,1989
+  A129IMP:
+    name: a129imp
+    type: BIGINT
+    years: 1987,1989
+  A130IMP:
+    name: a130imp
+    type: BIGINT
+    years: 1987,1989
+  A134IMP:
+    name: a134imp
+    type: BIGINT
+    years: 1987,1989
+  A135IMP:
+    name: a135imp
+    type: BIGINT
+    years: 1987,1989
+  A139IMP:
+    name: a139imp
+    type: BIGINT
+    years: 1987,1989
+  A140IMP:
+    name: a140imp
+    type: BIGINT
+    years: 1987,1989
+  A144IMP:
+    name: a144imp
+    type: BIGINT
+    years: 1987,1989
+  A145IMP:
+    name: a145imp
+    type: BIGINT
+    years: 1987,1989
+  A149IMP:
+    name: a149imp
+    type: BIGINT
+    years: 1987,1989
+  A150IMP:
+    name: a150imp
+    type: BIGINT
+    years: 1987,1989
+  A154IMP:
+    name: a154imp
+    type: BIGINT
+    years: 1987,1989
+  A155IMP:
+    name: a155imp
+    type: BIGINT
+    years: 1987,1989
+  IMPA4:
+    name: impa4
+    type: BIGINT
+    years: '1990'
+  IMPA5:
+    name: impa5
+    type: BIGINT
+    years: '1990'
+  IMPA9:
+    name: impa9
+    type: BIGINT
+    years: '1990'
+  IMPA10:
+    name: impa10
+    type: BIGINT
+    years: '1990'
+  IMPA14:
+    name: impa14
+    type: BIGINT
+    years: '1990'
+  IMPA15:
+    name: impa15
+    type: BIGINT
+    years: '1990'
+  IMPA19:
+    name: impa19
+    type: BIGINT
+    years: '1990'
+  IMPA20:
+    name: impa20
+    type: BIGINT
+    years: '1990'
+  IMPA24:
+    name: impa24
+    type: BIGINT
+    years: '1990'
+  IMPA25:
+    name: impa25
+    type: BIGINT
+    years: '1990'
+  IMPA29:
+    name: impa29
+    type: BIGINT
+    years: '1990'
+  IMPA30:
+    name: impa30
+    type: BIGINT
+    years: '1990'
+  IMPA34:
+    name: impa34
+    type: BIGINT
+    years: '1990'
+  IMPA35:
+    name: impa35
+    type: BIGINT
+    years: '1990'
+  IMPA39:
+    name: impa39
+    type: BIGINT
+    years: '1990'
+  IMPA40:
+    name: impa40
+    type: BIGINT
+    years: '1990'
+  IMPA44:
+    name: impa44
+    type: BIGINT
+    years: '1990'
+  IMPA45:
+    name: impa45
+    type: BIGINT
+    years: '1990'
+  IMPA49:
+    name: impa49
+    type: BIGINT
+    years: '1990'
+  IMPA50:
+    name: impa50
+    type: BIGINT
+    years: '1990'
+  IMPA54:
+    name: impa54
+    type: BIGINT
+    years: '1990'
+  IMPA55:
+    name: impa55
+    type: BIGINT
+    years: '1990'
+  IMPA59:
+    name: impa59
+    type: BIGINT
+    years: '1990'
+  IMPA60:
+    name: impa60
+    type: BIGINT
+    years: '1990'
+  IMPA64:
+    name: impa64
+    type: BIGINT
+    years: '1990'
+  IMPA65:
+    name: impa65
+    type: BIGINT
+    years: '1990'
+  IMPA69:
+    name: impa69
+    type: BIGINT
+    years: '1990'
+  IMPA70:
+    name: impa70
+    type: BIGINT
+    years: '1990'
+  IMPA74:
+    name: impa74
+    type: BIGINT
+    years: '1990'
+  IMPA75:
+    name: impa75
+    type: BIGINT
+    years: '1990'
+  IMPA79:
+    name: impa79
+    type: BIGINT
+    years: '1990'
+  IMPA80:
+    name: impa80
+    type: BIGINT
+    years: '1990'
+  IMPA84:
+    name: impa84
+    type: BIGINT
+    years: '1990'
+  IMPA85:
+    name: impa85
+    type: BIGINT
+    years: '1990'
+  IMPA89:
+    name: impa89
+    type: BIGINT
+    years: '1990'
+  IMPA90:
+    name: impa90
+    type: BIGINT
+    years: '1990'
+  IMPA94:
+    name: impa94
+    type: BIGINT
+    years: '1990'
+  IMPA95:
+    name: impa95
+    type: BIGINT
+    years: '1990'
+  IMPA99:
+    name: impa99
+    type: BIGINT
+    years: '1990'
+  IMPA100:
+    name: impa100
+    type: BIGINT
+    years: '1990'
+  IMPA104:
+    name: impa104
+    type: BIGINT
+    years: '1990'
+  IMPA105:
+    name: impa105
+    type: BIGINT
+    years: '1990'
+  IMPA109:
+    name: impa109
+    type: BIGINT
+    years: '1990'
+  IMPA110:
+    name: impa110
+    type: BIGINT
+    years: '1990'
+  IMPA114:
+    name: impa114
+    type: BIGINT
+    years: '1990'
+  IMPA115:
+    name: impa115
+    type: BIGINT
+    years: '1990'
+  IMPA119:
+    name: impa119
+    type: BIGINT
+    years: '1990'
+  IMPA120:
+    name: impa120
+    type: BIGINT
+    years: '1990'
+  IMPA124:
+    name: impa124
+    type: BIGINT
+    years: '1990'
+  IMPA125:
+    name: impa125
+    type: BIGINT
+    years: '1990'
+  IMPA129:
+    name: impa129
+    type: BIGINT
+    years: '1990'
+  IMPA130:
+    name: impa130
+    type: BIGINT
+    years: '1990'
+  IMPA134:
+    name: impa134
+    type: BIGINT
+    years: '1990'
+  IMPA135:
+    name: impa135
+    type: BIGINT
+    years: '1990'
+  IMPA139:
+    name: impa139
+    type: BIGINT
+    years: '1990'
+  IMPA140:
+    name: impa140
+    type: BIGINT
+    years: '1990'
+  IMPA144:
+    name: impa144
+    type: BIGINT
+    years: '1990'
+  IMPA145:
+    name: impa145
+    type: BIGINT
+    years: '1990'
+  IMPA149:
+    name: impa149
+    type: BIGINT
+    years: '1990'
+  IMPA150:
+    name: impa150
+    type: BIGINT
+    years: '1990'
+  IMPA154:
+    name: impa154
+    type: BIGINT
+    years: '1990'
+  IMPA155:
+    name: impa155
+    type: BIGINT
+    years: '1990'
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: 1992-1994
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: 1992-1994
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: 1992-1994
+  BOX4:
+    name: box4
+    type: BIGINT
+    years: 1992-1994
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: 1992-1994
+  SOURCE:
+    name: source
+    type: BIGINT
+    years: 1993-1994
+  NCESEDIT:
+    name: ncesedit
+    type: BIGINT
+    years: '1994'
+  GA34:
+    name: ga34
+    type: BIGINT
+    years: 1994,1997
+  GA35:
+    name: ga35
+    type: BIGINT
+    years: 1994,1997
+  GA69:
+    name: ga69
+    type: BIGINT
+    years: 1994,1997
+  GA70:
+    name: ga70
+    type: BIGINT
+    years: 1994,1997
+  GA74:
+    name: ga74
+    type: BIGINT
+    years: 1994,1997
+  GA75:
+    name: ga75
+    type: BIGINT
+    years: 1994,1997
+  GA109:
+    name: ga109
+    type: BIGINT
+    years: 1994,1997
+  GA110:
+    name: ga110
+    type: BIGINT
+    years: 1994,1997
+  GA144:
+    name: ga144
+    type: BIGINT
+    years: 1994,1997
+  GA145:
+    name: ga145
+    type: BIGINT
+    years: 1994,1997
+  GA149:
+    name: ga149
+    type: BIGINT
+    years: 1994,1997
+  GA150:
+    name: ga150
+    type: BIGINT
+    years: 1994,1997
+  PART:
+    name: part
+    type: VARCHAR
+    years: '1997'
+  XSAA011:
+    name: saa011_flag
+    type: VARCHAR
+    flag_for: saa011
+    years: '1998'
+  SAA011:
+    name: saa011
+    type: BIGINT
+    years: '1998'
+  XSAA012:
+    name: saa012_flag
+    type: VARCHAR
+    flag_for: saa012
+    years: '1998'
+  SAA012:
+    name: saa012
+    type: BIGINT
+    years: '1998'
+  XSAA013:
+    name: saa013_flag
+    type: VARCHAR
+    flag_for: saa013
+    years: '1998'
+  SAA013:
+    name: saa013
+    type: BIGINT
+    years: '1998'
+  XSAA014:
+    name: saa014_flag
+    type: VARCHAR
+    flag_for: saa014
+    years: '1998'
+  SAA014:
+    name: saa014
+    type: BIGINT
+    years: '1998'
+  XSAA015:
+    name: saa015_flag
+    type: VARCHAR
+    flag_for: saa015
+    years: '1998'
+  SAA015:
+    name: saa015
+    type: BIGINT
+    years: '1998'
+  XSAA021:
+    name: saa021_flag
+    type: VARCHAR
+    flag_for: saa021
+    years: '1998'
+  SAA021:
+    name: saa021
+    type: BIGINT
+    years: '1998'
+  XSAA022:
+    name: saa022_flag
+    type: VARCHAR
+    flag_for: saa022
+    years: '1998'
+  SAA022:
+    name: saa022
+    type: BIGINT
+    years: '1998'
+  XSAA023:
+    name: saa023_flag
+    type: VARCHAR
+    flag_for: saa023
+    years: '1998'
+  SAA023:
+    name: saa023
+    type: BIGINT
+    years: '1998'
+  XSAA024:
+    name: saa024_flag
+    type: VARCHAR
+    flag_for: saa024
+    years: '1998'
+  SAA024:
+    name: saa024
+    type: BIGINT
+    years: '1998'
+  XSAA025:
+    name: saa025_flag
+    type: VARCHAR
+    flag_for: saa025
+    years: '1998'
+  SAA025:
+    name: saa025
+    type: BIGINT
+    years: '1998'
+  XSAA031:
+    name: saa031_flag
+    type: VARCHAR
+    flag_for: saa031
+    years: '1998'
+  SAA031:
+    name: saa031
+    type: BIGINT
+    years: '1998'
+  XSAA032:
+    name: saa032_flag
+    type: VARCHAR
+    flag_for: saa032
+    years: '1998'
+  SAA032:
+    name: saa032
+    type: BIGINT
+    years: '1998'
+  XSAA033:
+    name: saa033_flag
+    type: VARCHAR
+    flag_for: saa033
+    years: '1998'
+  SAA033:
+    name: saa033
+    type: BIGINT
+    years: '1998'
+  XSAA034:
+    name: saa034_flag
+    type: VARCHAR
+    flag_for: saa034
+    years: '1998'
+  SAA034:
+    name: saa034
+    type: BIGINT
+    years: '1998'
+  XSAA035:
+    name: saa035_flag
+    type: VARCHAR
+    flag_for: saa035
+    years: '1998'
+  SAA035:
+    name: saa035
+    type: BIGINT
+    years: '1998'
+  XSAA041:
+    name: saa041_flag
+    type: VARCHAR
+    flag_for: saa041
+    years: '1998'
+  SAA041:
+    name: saa041
+    type: BIGINT
+    years: '1998'
+  XSAA042:
+    name: saa042_flag
+    type: VARCHAR
+    flag_for: saa042
+    years: '1998'
+  SAA042:
+    name: saa042
+    type: BIGINT
+    years: '1998'
+  XSAA043:
+    name: saa043_flag
+    type: VARCHAR
+    flag_for: saa043
+    years: '1998'
+  SAA043:
+    name: saa043
+    type: BIGINT
+    years: '1998'
+  XSAA044:
+    name: saa044_flag
+    type: VARCHAR
+    flag_for: saa044
+    years: '1998'
+  SAA044:
+    name: saa044
+    type: BIGINT
+    years: '1998'
+  XSAA045:
+    name: saa045_flag
+    type: VARCHAR
+    flag_for: saa045
+    years: '1998'
+  SAA045:
+    name: saa045
+    type: BIGINT
+    years: '1998'
+  XSAA051:
+    name: saa051_flag
+    type: VARCHAR
+    flag_for: saa051
+    years: '1998'
+  SAA051:
+    name: saa051
+    type: BIGINT
+    years: '1998'
+  XSAA052:
+    name: saa052_flag
+    type: VARCHAR
+    flag_for: saa052
+    years: '1998'
+  SAA052:
+    name: saa052
+    type: BIGINT
+    years: '1998'
+  XSAA053:
+    name: saa053_flag
+    type: VARCHAR
+    flag_for: saa053
+    years: '1998'
+  SAA053:
+    name: saa053
+    type: BIGINT
+    years: '1998'
+  XSAA054:
+    name: saa054_flag
+    type: VARCHAR
+    flag_for: saa054
+    years: '1998'
+  SAA054:
+    name: saa054
+    type: BIGINT
+    years: '1998'
+  XSAA055:
+    name: saa055_flag
+    type: VARCHAR
+    flag_for: saa055
+    years: '1998'
+  SAA055:
+    name: saa055
+    type: BIGINT
+    years: '1998'
+  XSAA061:
+    name: saa061_flag
+    type: VARCHAR
+    flag_for: saa061
+    years: '1998'
+  SAA061:
+    name: saa061
+    type: BIGINT
+    years: '1998'
+  XSAA062:
+    name: saa062_flag
+    type: VARCHAR
+    flag_for: saa062
+    years: '1998'
+  SAA062:
+    name: saa062
+    type: BIGINT
+    years: '1998'
+  XSAA063:
+    name: saa063_flag
+    type: VARCHAR
+    flag_for: saa063
+    years: '1998'
+  SAA063:
+    name: saa063
+    type: BIGINT
+    years: '1998'
+  XSAA064:
+    name: saa064_flag
+    type: VARCHAR
+    flag_for: saa064
+    years: '1998'
+  SAA064:
+    name: saa064
+    type: BIGINT
+    years: '1998'
+  XSAA065:
+    name: saa065_flag
+    type: VARCHAR
+    flag_for: saa065
+    years: '1998'
+  SAA065:
+    name: saa065
+    type: BIGINT
+    years: '1998'
+  XSAA071:
+    name: saa071_flag
+    type: VARCHAR
+    flag_for: saa071
+    years: '1998'
+  SAA071:
+    name: saa071
+    type: BIGINT
+    years: '1998'
+  XSAA072:
+    name: saa072_flag
+    type: VARCHAR
+    flag_for: saa072
+    years: '1998'
+  SAA072:
+    name: saa072
+    type: BIGINT
+    years: '1998'
+  XSAA073:
+    name: saa073_flag
+    type: VARCHAR
+    flag_for: saa073
+    years: '1998'
+  SAA073:
+    name: saa073
+    type: BIGINT
+    years: '1998'
+  XSAA074:
+    name: saa074_flag
+    type: VARCHAR
+    flag_for: saa074
+    years: '1998'
+  SAA074:
+    name: saa074
+    type: BIGINT
+    years: '1998'
+  XSAA075:
+    name: saa075_flag
+    type: VARCHAR
+    flag_for: saa075
+    years: '1998'
+  SAA075:
+    name: saa075
+    type: BIGINT
+    years: '1998'
+  XSAA081:
+    name: saa081_flag
+    type: VARCHAR
+    flag_for: saa081
+    years: '1998'
+  SAA081:
+    name: saa081
+    type: BIGINT
+    years: '1998'
+  XSAA082:
+    name: saa082_flag
+    type: VARCHAR
+    flag_for: saa082
+    years: '1998'
+  SAA082:
+    name: saa082
+    type: BIGINT
+    years: '1998'
+  XSAA083:
+    name: saa083_flag
+    type: VARCHAR
+    flag_for: saa083
+    years: '1998'
+  SAA083:
+    name: saa083
+    type: BIGINT
+    years: '1998'
+  XSAA084:
+    name: saa084_flag
+    type: VARCHAR
+    flag_for: saa084
+    years: '1998'
+  SAA084:
+    name: saa084
+    type: BIGINT
+    years: '1998'
+  XSAA085:
+    name: saa085_flag
+    type: VARCHAR
+    flag_for: saa085
+    years: '1998'
+  SAA085:
+    name: saa085
+    type: BIGINT
+    years: '1998'
+  XSAA091:
+    name: saa091_flag
+    type: VARCHAR
+    flag_for: saa091
+    years: '1998'
+  SAA091:
+    name: saa091
+    type: BIGINT
+    years: '1998'
+  XSAA092:
+    name: saa092_flag
+    type: VARCHAR
+    flag_for: saa092
+    years: '1998'
+  SAA092:
+    name: saa092
+    type: BIGINT
+    years: '1998'
+  XSAA093:
+    name: saa093_flag
+    type: VARCHAR
+    flag_for: saa093
+    years: '1998'
+  SAA093:
+    name: saa093
+    type: BIGINT
+    years: '1998'
+  XSAA094:
+    name: saa094_flag
+    type: VARCHAR
+    flag_for: saa094
+    years: '1998'
+  SAA094:
+    name: saa094
+    type: BIGINT
+    years: '1998'
+  XSAA095:
+    name: saa095_flag
+    type: VARCHAR
+    flag_for: saa095
+    years: '1998'
+  SAA095:
+    name: saa095
+    type: BIGINT
+    years: '1998'
+  XSAA101:
+    name: saa101_flag
+    type: VARCHAR
+    flag_for: saa101
+    years: '1998'
+  SAA101:
+    name: saa101
+    type: BIGINT
+    years: '1998'
+  XSAA102:
+    name: saa102_flag
+    type: VARCHAR
+    flag_for: saa102
+    years: '1998'
+  SAA102:
+    name: saa102
+    type: BIGINT
+    years: '1998'
+  XSAA103:
+    name: saa103_flag
+    type: VARCHAR
+    flag_for: saa103
+    years: '1998'
+  SAA103:
+    name: saa103
+    type: BIGINT
+    years: '1998'
+  XSAA104:
+    name: saa104_flag
+    type: VARCHAR
+    flag_for: saa104
+    years: '1998'
+  SAA104:
+    name: saa104
+    type: BIGINT
+    years: '1998'
+  XSAA105:
+    name: saa105_flag
+    type: VARCHAR
+    flag_for: saa105
+    years: '1998'
+  SAA105:
+    name: saa105
+    type: BIGINT
+    years: '1998'
+  XSAA111:
+    name: saa111_flag
+    type: VARCHAR
+    flag_for: saa111
+    years: '1998'
+  SAA111:
+    name: saa111
+    type: BIGINT
+    years: '1998'
+  XSAA112:
+    name: saa112_flag
+    type: VARCHAR
+    flag_for: saa112
+    years: '1998'
+  SAA112:
+    name: saa112
+    type: BIGINT
+    years: '1998'
+  XSAA113:
+    name: saa113_flag
+    type: VARCHAR
+    flag_for: saa113
+    years: '1998'
+  SAA113:
+    name: saa113
+    type: BIGINT
+    years: '1998'
+  XSAA114:
+    name: saa114_flag
+    type: VARCHAR
+    flag_for: saa114
+    years: '1998'
+  SAA114:
+    name: saa114
+    type: BIGINT
+    years: '1998'
+  XSAA115:
+    name: saa115_flag
+    type: VARCHAR
+    flag_for: saa115
+    years: '1998'
+  SAA115:
+    name: saa115
+    type: BIGINT
+    years: '1998'
+  XSAA121:
+    name: saa121_flag
+    type: VARCHAR
+    flag_for: saa121
+    years: '1998'
+  SAA121:
+    name: saa121
+    type: BIGINT
+    years: '1998'
+  XSAA122:
+    name: saa122_flag
+    type: VARCHAR
+    flag_for: saa122
+    years: '1998'
+  SAA122:
+    name: saa122
+    type: BIGINT
+    years: '1998'
+  XSAA123:
+    name: saa123_flag
+    type: VARCHAR
+    flag_for: saa123
+    years: '1998'
+  SAA123:
+    name: saa123
+    type: BIGINT
+    years: '1998'
+  XSAA124:
+    name: saa124_flag
+    type: VARCHAR
+    flag_for: saa124
+    years: '1998'
+  SAA124:
+    name: saa124
+    type: BIGINT
+    years: '1998'
+  XSAA125:
+    name: saa125_flag
+    type: VARCHAR
+    flag_for: saa125
+    years: '1998'
+  SAA125:
+    name: saa125
+    type: BIGINT
+    years: '1998'
+  XSAA131:
+    name: saa131_flag
+    type: VARCHAR
+    flag_for: saa131
+    years: '1998'
+  SAA131:
+    name: saa131
+    type: BIGINT
+    years: '1998'
+  XSAA132:
+    name: saa132_flag
+    type: VARCHAR
+    flag_for: saa132
+    years: '1998'
+  SAA132:
+    name: saa132
+    type: BIGINT
+    years: '1998'
+  XSAA133:
+    name: saa133_flag
+    type: VARCHAR
+    flag_for: saa133
+    years: '1998'
+  SAA133:
+    name: saa133
+    type: BIGINT
+    years: '1998'
+  XSAA134:
+    name: saa134_flag
+    type: VARCHAR
+    flag_for: saa134
+    years: '1998'
+  SAA134:
+    name: saa134
+    type: BIGINT
+    years: '1998'
+  XSAA135:
+    name: saa135_flag
+    type: VARCHAR
+    flag_for: saa135
+    years: '1998'
+  SAA135:
+    name: saa135
+    type: BIGINT
+    years: '1998'
+  XSAA141:
+    name: saa141_flag
+    type: VARCHAR
+    flag_for: saa141
+    years: '1998'
+  SAA141:
+    name: saa141
+    type: BIGINT
+    years: '1998'
+  XSAA142:
+    name: saa142_flag
+    type: VARCHAR
+    flag_for: saa142
+    years: '1998'
+  SAA142:
+    name: saa142
+    type: BIGINT
+    years: '1998'
+  XSAA143:
+    name: saa143_flag
+    type: VARCHAR
+    flag_for: saa143
+    years: '1998'
+  SAA143:
+    name: saa143
+    type: BIGINT
+    years: '1998'
+  XSAA144:
+    name: saa144_flag
+    type: VARCHAR
+    flag_for: saa144
+    years: '1998'
+  SAA144:
+    name: saa144
+    type: BIGINT
+    years: '1998'
+  XSAA145:
+    name: saa145_flag
+    type: VARCHAR
+    flag_for: saa145
+    years: '1998'
+  SAA145:
+    name: saa145
+    type: BIGINT
+    years: '1998'
+  XSAA151:
+    name: saa151_flag
+    type: VARCHAR
+    flag_for: saa151
+    years: '1998'
+  SAA151:
+    name: saa151
+    type: BIGINT
+    years: '1998'
+  XSAA152:
+    name: saa152_flag
+    type: VARCHAR
+    flag_for: saa152
+    years: '1998'
+  SAA152:
+    name: saa152
+    type: BIGINT
+    years: '1998'
+  XSAA153:
+    name: saa153_flag
+    type: VARCHAR
+    flag_for: saa153
+    years: '1998'
+  SAA153:
+    name: saa153
+    type: BIGINT
+    years: '1998'
+  XSAA154:
+    name: saa154_flag
+    type: VARCHAR
+    flag_for: saa154
+    years: '1998'
+  SAA154:
+    name: saa154
+    type: BIGINT
+    years: '1998'
+  XSAA155:
+    name: saa155_flag
+    type: VARCHAR
+    flag_for: saa155
+    years: '1998'
+  SAA155:
+    name: saa155
+    type: BIGINT
+    years: '1998'
+  XSAA161:
+    name: saa161_flag
+    type: VARCHAR
+    flag_for: saa161
+    years: '1998'
+  SAA161:
+    name: saa161
+    type: BIGINT
+    years: '1998'
+  XSAA162:
+    name: saa162_flag
+    type: VARCHAR
+    flag_for: saa162
+    years: '1998'
+  SAA162:
+    name: saa162
+    type: BIGINT
+    years: '1998'
+  XSAA163:
+    name: saa163_flag
+    type: VARCHAR
+    flag_for: saa163
+    years: '1998'
+  SAA163:
+    name: saa163
+    type: BIGINT
+    years: '1998'
+  XSAA164:
+    name: saa164_flag
+    type: VARCHAR
+    flag_for: saa164
+    years: '1998'
+  SAA164:
+    name: saa164
+    type: BIGINT
+    years: '1998'
+  XSAA165:
+    name: saa165_flag
+    type: VARCHAR
+    flag_for: saa165
+    years: '1998'
+  SAA165:
+    name: saa165
+    type: BIGINT
+    years: '1998'
+  XSAA171:
+    name: saa171_flag
+    type: VARCHAR
+    flag_for: saa171
+    years: '1998'
+  SAA171:
+    name: saa171
+    type: BIGINT
+    years: '1998'
+  XSAA172:
+    name: saa172_flag
+    type: VARCHAR
+    flag_for: saa172
+    years: '1998'
+  SAA172:
+    name: saa172
+    type: BIGINT
+    years: '1998'
+  XSAA173:
+    name: saa173_flag
+    type: VARCHAR
+    flag_for: saa173
+    years: '1998'
+  SAA173:
+    name: saa173
+    type: BIGINT
+    years: '1998'
+  XSAA174:
+    name: saa174_flag
+    type: VARCHAR
+    flag_for: saa174
+    years: '1998'
+  SAA174:
+    name: saa174
+    type: BIGINT
+    years: '1998'
+  XSAA175:
+    name: saa175_flag
+    type: VARCHAR
+    flag_for: saa175
+    years: '1998'
+  SAA175:
+    name: saa175
+    type: BIGINT
+    years: '1998'
+  XSAA181:
+    name: saa181_flag
+    type: VARCHAR
+    flag_for: saa181
+    years: '1998'
+  SAA181:
+    name: saa181
+    type: BIGINT
+    years: '1998'
+  XSAA182:
+    name: saa182_flag
+    type: VARCHAR
+    flag_for: saa182
+    years: '1998'
+  SAA182:
+    name: saa182
+    type: BIGINT
+    years: '1998'
+  XSAA183:
+    name: saa183_flag
+    type: VARCHAR
+    flag_for: saa183
+    years: '1998'
+  SAA183:
+    name: saa183
+    type: BIGINT
+    years: '1998'
+  XSAA184:
+    name: saa184_flag
+    type: VARCHAR
+    flag_for: saa184
+    years: '1998'
+  SAA184:
+    name: saa184
+    type: BIGINT
+    years: '1998'
+  XSAA185:
+    name: saa185_flag
+    type: VARCHAR
+    flag_for: saa185
+    years: '1998'
+  SAA185:
+    name: saa185
+    type: BIGINT
+    years: '1998'
+  XSAA191:
+    name: saa191_flag
+    type: VARCHAR
+    flag_for: saa191
+    years: '1998'
+  SAA191:
+    name: saa191
+    type: BIGINT
+    years: '1998'
+  XSAA192:
+    name: saa192_flag
+    type: VARCHAR
+    flag_for: saa192
+    years: '1998'
+  SAA192:
+    name: saa192
+    type: BIGINT
+    years: '1998'
+  XSAA193:
+    name: saa193_flag
+    type: VARCHAR
+    flag_for: saa193
+    years: '1998'
+  SAA193:
+    name: saa193
+    type: BIGINT
+    years: '1998'
+  XSAA194:
+    name: saa194_flag
+    type: VARCHAR
+    flag_for: saa194
+    years: '1998'
+  SAA194:
+    name: saa194
+    type: BIGINT
+    years: '1998'
+  XSAA195:
+    name: saa195_flag
+    type: VARCHAR
+    flag_for: saa195
+    years: '1998'
+  SAA195:
+    name: saa195
+    type: BIGINT
+    years: '1998'
+  XSAA201:
+    name: saa201_flag
+    type: VARCHAR
+    flag_for: saa201
+    years: '1998'
+  SAA201:
+    name: saa201
+    type: BIGINT
+    years: '1998'
+  XSAA202:
+    name: saa202_flag
+    type: VARCHAR
+    flag_for: saa202
+    years: '1998'
+  SAA202:
+    name: saa202
+    type: BIGINT
+    years: '1998'
+  XSAA203:
+    name: saa203_flag
+    type: VARCHAR
+    flag_for: saa203
+    years: '1998'
+  SAA203:
+    name: saa203
+    type: BIGINT
+    years: '1998'
+  XSAA204:
+    name: saa204_flag
+    type: VARCHAR
+    flag_for: saa204
+    years: '1998'
+  SAA204:
+    name: saa204
+    type: BIGINT
+    years: '1998'
+  XSAA205:
+    name: saa205_flag
+    type: VARCHAR
+    flag_for: saa205
+    years: '1998'
+  SAA205:
+    name: saa205
+    type: BIGINT
+    years: '1998'
+  XSAA211:
+    name: saa211_flag
+    type: VARCHAR
+    flag_for: saa211
+    years: '1998'
+  SAA211:
+    name: saa211
+    type: BIGINT
+    years: '1998'
+  XSAA212:
+    name: saa212_flag
+    type: VARCHAR
+    flag_for: saa212
+    years: '1998'
+  SAA212:
+    name: saa212
+    type: BIGINT
+    years: '1998'
+  XSAA213:
+    name: saa213_flag
+    type: VARCHAR
+    flag_for: saa213
+    years: '1998'
+  SAA213:
+    name: saa213
+    type: BIGINT
+    years: '1998'
+  XSAA214:
+    name: saa214_flag
+    type: VARCHAR
+    flag_for: saa214
+    years: '1998'
+  SAA214:
+    name: saa214
+    type: BIGINT
+    years: '1998'
+  XSAA215:
+    name: saa215_flag
+    type: VARCHAR
+    flag_for: saa215
+    years: '1998'
+  SAA215:
+    name: saa215
+    type: BIGINT
+    years: '1998'
+  XSAA221:
+    name: saa221_flag
+    type: VARCHAR
+    flag_for: saa221
+    years: '1998'
+  SAA221:
+    name: saa221
+    type: BIGINT
+    years: '1998'
+  XSAA222:
+    name: saa222_flag
+    type: VARCHAR
+    flag_for: saa222
+    years: '1998'
+  SAA222:
+    name: saa222
+    type: BIGINT
+    years: '1998'
+  XSAA223:
+    name: saa223_flag
+    type: VARCHAR
+    flag_for: saa223
+    years: '1998'
+  SAA223:
+    name: saa223
+    type: BIGINT
+    years: '1998'
+  XSAA224:
+    name: saa224_flag
+    type: VARCHAR
+    flag_for: saa224
+    years: '1998'
+  SAA224:
+    name: saa224
+    type: BIGINT
+    years: '1998'
+  XSAA225:
+    name: saa225_flag
+    type: VARCHAR
+    flag_for: saa225
+    years: '1998'
+  SAA225:
+    name: saa225
+    type: BIGINT
+    years: '1998'
+  XSAA231:
+    name: saa231_flag
+    type: VARCHAR
+    flag_for: saa231
+    years: '1998'
+  SAA231:
+    name: saa231
+    type: BIGINT
+    years: '1998'
+  XSAA232:
+    name: saa232_flag
+    type: VARCHAR
+    flag_for: saa232
+    years: '1998'
+  SAA232:
+    name: saa232
+    type: BIGINT
+    years: '1998'
+  XSAA233:
+    name: saa233_flag
+    type: VARCHAR
+    flag_for: saa233
+    years: '1998'
+  SAA233:
+    name: saa233
+    type: BIGINT
+    years: '1998'
+  XSAA234:
+    name: saa234_flag
+    type: VARCHAR
+    flag_for: saa234
+    years: '1998'
+  SAA234:
+    name: saa234
+    type: BIGINT
+    years: '1998'
+  XSAA235:
+    name: saa235_flag
+    type: VARCHAR
+    flag_for: saa235
+    years: '1998'
+  SAA235:
+    name: saa235
+    type: BIGINT
+    years: '1998'
+  XSAA241:
+    name: saa241_flag
+    type: VARCHAR
+    flag_for: saa241
+    years: '1998'
+  SAA241:
+    name: saa241
+    type: BIGINT
+    years: '1998'
+  XSAA242:
+    name: saa242_flag
+    type: VARCHAR
+    flag_for: saa242
+    years: '1998'
+  SAA242:
+    name: saa242
+    type: BIGINT
+    years: '1998'
+  XSAA243:
+    name: saa243_flag
+    type: VARCHAR
+    flag_for: saa243
+    years: '1998'
+  SAA243:
+    name: saa243
+    type: BIGINT
+    years: '1998'
+  XSAA244:
+    name: saa244_flag
+    type: VARCHAR
+    flag_for: saa244
+    years: '1998'
+  SAA244:
+    name: saa244
+    type: BIGINT
+    years: '1998'
+  XSAA245:
+    name: saa245_flag
+    type: VARCHAR
+    flag_for: saa245
+    years: '1998'
+  SAA245:
+    name: saa245
+    type: BIGINT
+    years: '1998'
+  XSAA251:
+    name: saa251_flag
+    type: VARCHAR
+    flag_for: saa251
+    years: '1998'
+  SAA251:
+    name: saa251
+    type: BIGINT
+    years: '1998'
+  XSAA252:
+    name: saa252_flag
+    type: VARCHAR
+    flag_for: saa252
+    years: '1998'
+  SAA252:
+    name: saa252
+    type: BIGINT
+    years: '1998'
+  XSAA253:
+    name: saa253_flag
+    type: VARCHAR
+    flag_for: saa253
+    years: '1998'
+  SAA253:
+    name: saa253
+    type: BIGINT
+    years: '1998'
+  XSAA254:
+    name: saa254_flag
+    type: VARCHAR
+    flag_for: saa254
+    years: '1998'
+  SAA254:
+    name: saa254
+    type: BIGINT
+    years: '1998'
+  XSAA255:
+    name: saa255_flag
+    type: VARCHAR
+    flag_for: saa255
+    years: '1998'
+  SAA255:
+    name: saa255
+    type: BIGINT
+    years: '1998'
+  XSAA261:
+    name: saa261_flag
+    type: VARCHAR
+    flag_for: saa261
+    years: '1998'
+  SAA261:
+    name: saa261
+    type: BIGINT
+    years: '1998'
+  XSAA262:
+    name: saa262_flag
+    type: VARCHAR
+    flag_for: saa262
+    years: '1998'
+  SAA262:
+    name: saa262
+    type: BIGINT
+    years: '1998'
+  XSAA263:
+    name: saa263_flag
+    type: VARCHAR
+    flag_for: saa263
+    years: '1998'
+  SAA263:
+    name: saa263
+    type: BIGINT
+    years: '1998'
+  XSAA264:
+    name: saa264_flag
+    type: VARCHAR
+    flag_for: saa264
+    years: '1998'
+  SAA264:
+    name: saa264
+    type: BIGINT
+    years: '1998'
+  XSAA265:
+    name: saa265_flag
+    type: VARCHAR
+    flag_for: saa265
+    years: '1998'
+  SAA265:
+    name: saa265
+    type: BIGINT
+    years: '1998'
+  XSAA271:
+    name: saa271_flag
+    type: VARCHAR
+    flag_for: saa271
+    years: '1998'
+  SAA271:
+    name: saa271
+    type: BIGINT
+    years: '1998'
+  XSAA272:
+    name: saa272_flag
+    type: VARCHAR
+    flag_for: saa272
+    years: '1998'
+  SAA272:
+    name: saa272
+    type: BIGINT
+    years: '1998'
+  XSAA273:
+    name: saa273_flag
+    type: VARCHAR
+    flag_for: saa273
+    years: '1998'
+  SAA273:
+    name: saa273
+    type: BIGINT
+    years: '1998'
+  XSAA274:
+    name: saa274_flag
+    type: VARCHAR
+    flag_for: saa274
+    years: '1998'
+  SAA274:
+    name: saa274
+    type: BIGINT
+    years: '1998'
+  XSAA275:
+    name: saa275_flag
+    type: VARCHAR
+    flag_for: saa275
+    years: '1998'
+  SAA275:
+    name: saa275
+    type: BIGINT
+    years: '1998'
+  XSAA281:
+    name: saa281_flag
+    type: VARCHAR
+    flag_for: saa281
+    years: '1998'
+  SAA281:
+    name: saa281
+    type: BIGINT
+    years: '1998'
+  XSAA282:
+    name: saa282_flag
+    type: VARCHAR
+    flag_for: saa282
+    years: '1998'
+  SAA282:
+    name: saa282
+    type: BIGINT
+    years: '1998'
+  XSAA283:
+    name: saa283_flag
+    type: VARCHAR
+    flag_for: saa283
+    years: '1998'
+  SAA283:
+    name: saa283
+    type: BIGINT
+    years: '1998'
+  XSAA284:
+    name: saa284_flag
+    type: VARCHAR
+    flag_for: saa284
+    years: '1998'
+  SAA284:
+    name: saa284
+    type: BIGINT
+    years: '1998'
+  XSAA285:
+    name: saa285_flag
+    type: VARCHAR
+    flag_for: saa285
+    years: '1998'
+  SAA285:
+    name: saa285
+    type: BIGINT
+    years: '1998'
+  XSAA291:
+    name: saa291_flag
+    type: VARCHAR
+    flag_for: saa291
+    years: '1998'
+  SAA291:
+    name: saa291
+    type: BIGINT
+    years: '1998'
+  XSAA292:
+    name: saa292_flag
+    type: VARCHAR
+    flag_for: saa292
+    years: '1998'
+  SAA292:
+    name: saa292
+    type: BIGINT
+    years: '1998'
+  XSAA293:
+    name: saa293_flag
+    type: VARCHAR
+    flag_for: saa293
+    years: '1998'
+  SAA293:
+    name: saa293
+    type: BIGINT
+    years: '1998'
+  XSAA294:
+    name: saa294_flag
+    type: VARCHAR
+    flag_for: saa294
+    years: '1998'
+  SAA294:
+    name: saa294
+    type: BIGINT
+    years: '1998'
+  XSAA295:
+    name: saa295_flag
+    type: VARCHAR
+    flag_for: saa295
+    years: '1998'
+  SAA295:
+    name: saa295
+    type: BIGINT
+    years: '1998'
+  XSAA301:
+    name: saa301_flag
+    type: VARCHAR
+    flag_for: saa301
+    years: '1998'
+  SAA301:
+    name: saa301
+    type: BIGINT
+    years: '1998'
+  XSAA302:
+    name: saa302_flag
+    type: VARCHAR
+    flag_for: saa302
+    years: '1998'
+  SAA302:
+    name: saa302
+    type: BIGINT
+    years: '1998'
+  XSAA303:
+    name: saa303_flag
+    type: VARCHAR
+    flag_for: saa303
+    years: '1998'
+  SAA303:
+    name: saa303
+    type: BIGINT
+    years: '1998'
+  XSAA304:
+    name: saa304_flag
+    type: VARCHAR
+    flag_for: saa304
+    years: '1998'
+  SAA304:
+    name: saa304
+    type: BIGINT
+    years: '1998'
+  XSAA305:
+    name: saa305_flag
+    type: VARCHAR
+    flag_for: saa305
+    years: '1998'
+  SAA305:
+    name: saa305
+    type: BIGINT
+    years: '1998'
+  XSAA311:
+    name: saa311_flag
+    type: VARCHAR
+    flag_for: saa311
+    years: '1998'
+  SAA311:
+    name: saa311
+    type: BIGINT
+    years: '1998'
+  XSAA312:
+    name: saa312_flag
+    type: VARCHAR
+    flag_for: saa312
+    years: '1998'
+  SAA312:
+    name: saa312
+    type: BIGINT
+    years: '1998'
+  XSAA313:
+    name: saa313_flag
+    type: VARCHAR
+    flag_for: saa313
+    years: '1998'
+  SAA313:
+    name: saa313
+    type: BIGINT
+    years: '1998'
+  XSAA314:
+    name: saa314_flag
+    type: VARCHAR
+    flag_for: saa314
+    years: '1998'
+  SAA314:
+    name: saa314
+    type: BIGINT
+    years: '1998'
+  XSAA315:
+    name: saa315_flag
+    type: VARCHAR
+    flag_for: saa315
+    years: '1998'
+  SAA315:
+    name: saa315
+    type: BIGINT
+    years: '1998'
   XEMPCNTM:
     name: empcntm_flag
     type: VARCHAR
     flag_for: empcntm
-    years: 2002-2011
+    years: 1999,2002-2011
   EMPCNTM:
     name: empcntm
     type: BIGINT
-    years: 2002-2011
+    years: 1999,2002-2011
   XOUTLAYM:
     name: outlaym_flag
     type: VARCHAR
     flag_for: outlaym
-    years: 2002-2011
+    years: 1999,2002-2011
   OUTLAYM:
     name: outlaym
     type: BIGINT
-    years: 2002-2011
+    years: 1999,2002-2011
   XAVESALM:
     name: avesalm_flag
     type: VARCHAR
     flag_for: avesalm
-    years: 2002-2011
+    years: 1999,2002-2011
   AVESALM:
     name: avesalm
     type: BIGINT
-    years: 2002-2011
+    years: 1999,2002-2011
   XEMPCNTW:
     name: empcntw_flag
     type: VARCHAR
     flag_for: empcntw
-    years: 2002-2011
+    years: 1999,2002-2011
   EMPCNTW:
     name: empcntw
     type: BIGINT
-    years: 2002-2011
+    years: 1999,2002-2011
   XOUTLAYW:
     name: outlayw_flag
     type: VARCHAR
     flag_for: outlayw
-    years: 2002-2011
+    years: 1999,2002-2011
   OUTLAYW:
     name: outlayw
     type: BIGINT
-    years: 2002-2011
+    years: 1999,2002-2011
   XAVESALW:
     name: avesalw_flag
     type: VARCHAR
     flag_for: avesalw
-    years: 2002-2011
+    years: 1999,2002-2011
   AVESALW:
     name: avesalw
     type: BIGINT
-    years: 2002-2011
+    years: 1999,2002-2011
   XEMPCNTT:
     name: empcntt_flag
     type: VARCHAR
     flag_for: empcntt
-    years: 2002-2011
+    years: 1999,2002-2011
   EMPCNTT:
     name: empcntt
     type: BIGINT
-    years: 2002-2011
+    years: 1999,2002-2011
   XOUTLAYT:
     name: outlayt_flag
     type: VARCHAR
     flag_for: outlayt
-    years: 2002-2011
+    years: 1999,2002-2011
   OUTLAYT:
     name: outlayt
     type: BIGINT
-    years: 2002-2011
+    years: 1999,2002-2011
   XAVESALT:
     name: avesalt_flag
     type: VARCHAR
     flag_for: avesalt
-    years: 2002-2011
+    years: 1999,2002-2011
   AVESALT:
     name: avesalt
     type: BIGINT
-    years: 2002-2011
+    years: 1999,2002-2011
+  XTENUREDM:
+    name: tenuredm_flag
+    type: VARCHAR
+    flag_for: tenuredm
+    years: '1999'
+  TENUREDM:
+    name: tenuredm
+    type: BIGINT
+    years: '1999'
+  XNONTEN1M:
+    name: nonten1m_flag
+    type: VARCHAR
+    flag_for: nonten1m
+    years: '1999'
+  NONTEN1M:
+    name: nonten1m
+    type: BIGINT
+    years: '1999'
+  XNONTEN2M:
+    name: nonten2m_flag
+    type: VARCHAR
+    flag_for: nonten2m
+    years: '1999'
+  NONTEN2M:
+    name: nonten2m
+    type: BIGINT
+    years: '1999'
+  XTENUREDW:
+    name: tenuredw_flag
+    type: VARCHAR
+    flag_for: tenuredw
+    years: '1999'
+  TENUREDW:
+    name: tenuredw
+    type: BIGINT
+    years: '1999'
+  XNONTEN1W:
+    name: nonten1w_flag
+    type: VARCHAR
+    flag_for: nonten1w
+    years: '1999'
+  NONTEN1W:
+    name: nonten1w
+    type: BIGINT
+    years: '1999'
+  XNONTEN2W:
+    name: nonten2w_flag
+    type: VARCHAR
+    flag_for: nonten2w
+    years: '1999'
+  NONTEN2W:
+    name: nonten2w
+    type: BIGINT
+    years: '1999'
+  XTENUREDT:
+    name: tenuredt_flag
+    type: VARCHAR
+    flag_for: tenuredt
+    years: '1999'
+  TENUREDT:
+    name: tenuredt
+    type: BIGINT
+    years: '1999'
+  XNONTEN1T:
+    name: nonten1t_flag
+    type: VARCHAR
+    flag_for: nonten1t
+    years: '1999'
+  NONTEN1T:
+    name: nonten1t
+    type: BIGINT
+    years: '1999'
+  XNONTEN2T:
+    name: nonten2t_flag
+    type: VARCHAR
+    flag_for: nonten2t
+    years: '1999'
+  NONTEN2T:
+    name: nonten2t
+    type: BIGINT
+    years: '1999'

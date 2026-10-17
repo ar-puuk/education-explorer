@@ -1,0 +1,245 @@
+source: ipeds
+family: ichd
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1990,1999
+  INSTNM:
+    name: instnm
+    type: VARCHAR
+    years: 1990,1999
+  CITY:
+    name: city
+    type: VARCHAR
+    years: 1990,1999
+  STABBR:
+    name: stabbr
+    type: VARCHAR
+    years: 1990,1999
+  FIPS:
+    name: fips
+    type: BIGINT
+    years: 1990,1999
+  OBEREG:
+    name: obereg
+    type: BIGINT
+    years: 1990,1999
+  FICE:
+    name: fice
+    type: BIGINT
+    years: '1990'
+  SECTOR:
+    name: sector
+    type: BIGINT
+    years: 1990,1999
+  ICLEVEL:
+    name: iclevel
+    type: BIGINT
+    years: 1990,1999
+  CONTROL:
+    name: control
+    type: BIGINT
+    years: 1990,1999
+  AFFIL:
+    name: affil
+    type: BIGINT
+    years: 1990,1999
+  HLOFFER:
+    name: hloffer
+    type: BIGINT
+    years: 1990,1999
+  FPOFFER:
+    name: fpoffer
+    type: BIGINT
+    years: 1990,1999
+  FORMRT:
+    name: formrt
+    type: BIGINT
+    years: '1990'
+  RESPLAST:
+    name: resplast
+    type: BIGINT
+    years: '1990'
+  RESPSTAT:
+    name: respstat
+    type: BIGINT
+    years: '1990'
+  ADDR:
+    name: addr
+    type: VARCHAR
+    years: 1990,1999
+  ZIP:
+    name: zip
+    type: BIGINT
+    years: 1990,1999
+  COUNTYNM:
+    name: countynm
+    type: VARCHAR
+    years: 1990,1999
+  CONGDIST:
+    name: congdist
+    type: BIGINT
+    years: '1990'
+  GENTELE:
+    name: gentele
+    type: BIGINT
+    years: 1990,1999
+  CHFNM:
+    name: chfnm
+    type: VARCHAR
+    years: 1990,1999
+  CHFTITL:
+    name: chftitl
+    type: BIGINT
+    years: '1990'
+  FORM_IC:
+    name: form_ic
+    type: BIGINT
+    years: '1999'
+  STAT_IC:
+    name: stat_ic
+    type: BIGINT
+    years: '1999'
+  STAT_PTE:
+    name: stat_pte
+    type: BIGINT
+    years: '1999'
+  PRCH_IC:
+    name: prch_ic
+    type: BIGINT
+    years: '1999'
+  IDX_IC:
+    name: idx_ic
+    type: BIGINT
+    years: '1999'
+  IMP_IC:
+    name: imp_ic
+    type: BIGINT
+    years: '1999'
+  CYACTIVE:
+    name: cyactive
+    type: BIGINT
+    years: '1999'
+  CLOSEDAT:
+    name: closedat
+    type: BIGINT
+    years: '1999'
+  CNTYGEO:
+    name: cntygeo
+    type: BIGINT
+    years: '1999'
+  CHFTITLE:
+    name: chftitle
+    type: VARCHAR
+    years: '1999'
+  FINTELE:
+    name: fintele
+    type: BIGINT
+    years: '1999'
+  ADMTELE:
+    name: admtele
+    type: BIGINT
+    years: '1999'
+  EIN:
+    name: ein
+    type: BIGINT
+    years: '1999'
+  DUNS:
+    name: duns
+    type: BIGINT
+    years: '1999'
+  OPEID:
+    name: opeid
+    type: BIGINT
+    years: '1999'
+  OPEFLAG:
+    name: opeflag
+    type: BIGINT
+    years: '1999'
+  WEBADDR:
+    name: webaddr
+    type: VARCHAR
+    years: '1999'
+  REFU_IC:
+    name: refu_ic
+    type: BIGINT
+    years: '1999'
+  SRC_IC:
+    name: src_ic
+    type: BIGINT
+    years: '1999'
+  EDIT_IC:
+    name: edit_ic
+    type: BIGINT
+    years: '1999'
+  DATE_IC:
+    name: date_ic
+    type: BIGINT
+    years: '1999'
+  UGOFFER:
+    name: ugoffer
+    type: BIGINT
+    years: '1999'
+  GROFFER:
+    name: groffer
+    type: BIGINT
+    years: '1999'
+  HDEGOFFR:
+    name: hdegoffr
+    type: BIGINT
+    years: '1999'
+  PCTMIN1:
+    name: pctmin1
+    type: BIGINT
+    years: '1999'
+  PCTMIN2:
+    name: pctmin2
+    type: BIGINT
+    years: '1999'
+  PCTMIN3:
+    name: pctmin3
+    type: BIGINT
+    years: '1999'
+  PCTMIN4:
+    name: pctmin4
+    type: BIGINT
+    years: '1999'
+  HBCU:
+    name: hbcu
+    type: BIGINT
+    years: '1999'
+  HOSPITAL:
+    name: hospital
+    type: BIGINT
+    years: '1999'
+  MEDICAL:
+    name: medical
+    type: BIGINT
+    years: '1999'
+  TRIBAL:
+    name: tribal
+    type: BIGINT
+    years: '1999'
+  CARNEGIE:
+    name: carnegie
+    type: BIGINT
+    years: '1999'
+  LOCALE:
+    name: locale
+    type: BIGINT
+    years: '1999'
+  ACT:
+    name: act
+    type: VARCHAR
+    years: '1999'
+  NEWID:
+    name: newid
+    type: BIGINT
+    years: '1999'
+  DEATHYR:
+    name: deathyr
+    type: BIGINT
+    years: '1999'

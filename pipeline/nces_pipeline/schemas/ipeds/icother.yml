@@ -1,0 +1,49 @@
+source: ipeds
+family: icother
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1991'
+  LEVELOTH:
+    name: leveloth
+    type: BIGINT
+    years: '1991'
+  UWWOU:
+    name: uwwou
+    type: BIGINT
+    years: '1991'
+  PROFOTH:
+    name: profoth
+    type: BIGINT
+    years: '1991'
+  SUMSES:
+    name: sumses
+    type: BIGINT
+    years: '1991'
+  SSSTUD:
+    name: ssstud
+    type: BIGINT
+    years: '1991'
+  MAJEXDIV:
+    name: majexdiv
+    type: BIGINT
+    years: '1991'
+  ENRECSEP:
+    name: enrecsep
+    type: BIGINT
+    years: '1991'
+  FIRECSEP:
+    name: firecsep
+    type: BIGINT
+    years: '1991'
+  SEPFACEM:
+    name: sepfacem
+    type: BIGINT
+    years: '1991'
+  DATINC:
+    name: datinc
+    type: BIGINT
+    years: '1991'

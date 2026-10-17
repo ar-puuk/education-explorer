@@ -9,7 +9,7 @@ from .config import DATA_RAW
 from .fetch import client, download, unzip
 from .ipeds_catalog import build_catalog
 
-FIRST_YEAR = 2000  # earlier files (1980-1999) use different layouts and are not yet ingested
+FIRST_YEAR = 1980  # the oldest Data Center complete data files; layouts before 2000 differ, hence the year-ranged maps
 
 # family names that changed spelling over the years
 FAMILY_ALIASES = {"fahd": "hd", "sfas": "sfa", "icahd": "hd"}

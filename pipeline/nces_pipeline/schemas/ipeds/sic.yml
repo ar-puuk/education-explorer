@@ -1,0 +1,93 @@
+source: ipeds
+family: sic
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1987,1989,1993,1995,1997
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: 1987,1989,1993,1995,1997
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: 1987,1989,1993,1995
+  SOURCE:
+    name: source
+    type: VARCHAR
+    years: 1987,1989,1993,1995,1997
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: 1987,1989,1993,1995,1997
+  H_SAMP:
+    name: h_samp
+    type: BIGINT
+    years: '1989'
+  VARSTRAT:
+    name: varstrat
+    type: BIGINT
+    years: '1989'
+  SMPLWT:
+    name: smplwt
+    type: BIGINT
+    years: '1989'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: 1993,1995,1997
+  D1:
+    name: d1
+    type: BIGINT
+    years: '1993'
+  D2:
+    name: d2
+    type: BIGINT
+    years: '1993'
+  D3:
+    name: d3
+    type: BIGINT
+    years: '1993'
+  D4:
+    name: d4
+    type: BIGINT
+    years: '1993'
+  D5:
+    name: d5
+    type: BIGINT
+    years: '1993'
+  NONEWHIR:
+    name: nonewhir
+    type: BIGINT
+    years: 1993,1995,1997
+  FILLER1:
+    name: filler1
+    type: VARCHAR
+    years: '1995'
+  IMPTYPE:
+    name: imptype
+    type: BIGINT
+    years: 1995,1997
+  FILLER2:
+    name: filler2
+    type: VARCHAR
+    years: '1995'
+  FILLER3:
+    name: filler3
+    type: BIGINT
+    years: '1995'
+  NCESEDIT:
+    name: ncesedit
+    type: BIGINT
+    years: 1995,1997
+  NOSERVIC:
+    name: noservic
+    type: BIGINT
+    years: 1995,1997
+  IDX:
+    name: idx
+    type: BIGINT
+    years: '1997'

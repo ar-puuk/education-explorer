@@ -1,0 +1,73 @@
+source: ipeds
+family: efic
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1986-1989,1992-1996
+  H_SAMP:
+    name: h_samp
+    type: VARCHAR
+    years: 1986-1988,1992
+  VARSTRAT:
+    name: varstrat
+    type: BIGINT
+    years: 1986-1988
+  SMPLWT:
+    name: smplwt
+    type: BIGINT
+    years: 1986-1988
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: 1986-1989,1992-1996
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: 1986-1989,1992-1996
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: 1986-1989,1992-1996
+  SURVEY:
+    name: survey
+    type: VARCHAR
+    years: '1987'
+  FORMID:
+    name: formid
+    type: VARCHAR
+    years: '1989'
+  SMPLTWT:
+    name: smpltwt
+    type: BIGINT
+    years: '1989'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: 1992-1996
+  SOURCE:
+    name: source
+    type: BIGINT
+    years: 1993-1996
+  FILLER1:
+    name: filler1
+    type: VARCHAR
+    years: 1995-1996
+  IMPTYPE:
+    name: imptype
+    type: BIGINT
+    years: 1995-1996
+  FILLER2:
+    name: filler2
+    type: VARCHAR
+    years: 1995-1996
+  FILLER3:
+    name: filler3
+    type: VARCHAR
+    years: 1995-1996
+  NCESEDIT:
+    name: ncesedit
+    type: BIGINT
+    years: 1995-1996

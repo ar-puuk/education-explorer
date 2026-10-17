@@ -1,0 +1,289 @@
+source: ipeds
+family: fe
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1987,1989-1996
+  E011:
+    name: e011
+    type: BIGINT
+    years: 1987,1989
+  E021:
+    name: e021
+    type: BIGINT
+    years: 1987,1989-1996
+  E031:
+    name: e031
+    type: BIGINT
+    years: 1987,1989-1996
+  E041:
+    name: e041
+    type: BIGINT
+    years: 1987,1989-1996
+  E051:
+    name: e051
+    type: BIGINT
+    years: 1987,1989-1996
+  E061:
+    name: e061
+    type: BIGINT
+    years: 1987,1989-1996
+  E071:
+    name: e071
+    type: BIGINT
+    years: 1987,1989-1996
+  E012:
+    name: e012
+    type: BIGINT
+    years: 1987,1989-1996
+  E022:
+    name: e022
+    type: BIGINT
+    years: 1987,1989-1996
+  E032:
+    name: e032
+    type: BIGINT
+    years: 1987,1989-1996
+  E042:
+    name: e042
+    type: BIGINT
+    years: 1987,1989-1996
+  E052:
+    name: e052
+    type: BIGINT
+    years: 1987,1989-1996
+  E062:
+    name: e062
+    type: BIGINT
+    years: 1987,1989-1996
+  E072:
+    name: e072
+    type: BIGINT
+    years: 1987,1989-1996
+  E013:
+    name: e013
+    type: BIGINT
+    years: 1987,1989-1996
+  E023:
+    name: e023
+    type: BIGINT
+    years: 1987,1989-1996
+  E033:
+    name: e033
+    type: BIGINT
+    years: 1987,1989-1996
+  E043:
+    name: e043
+    type: BIGINT
+    years: 1987,1989-1996
+  E053:
+    name: e053
+    type: BIGINT
+    years: 1987,1989-1996
+  E063:
+    name: e063
+    type: BIGINT
+    years: 1987,1989-1996
+  E073:
+    name: e073
+    type: BIGINT
+    years: 1987,1989-1996
+  IE011:
+    name: ie011
+    type: BIGINT
+    years: '1987'
+  IE021:
+    name: ie021
+    type: BIGINT
+    years: '1987'
+  IE031:
+    name: ie031
+    type: BIGINT
+    years: '1987'
+  IE041:
+    name: ie041
+    type: BIGINT
+    years: '1987'
+  IE051:
+    name: ie051
+    type: BIGINT
+    years: '1987'
+  IE061:
+    name: ie061
+    type: BIGINT
+    years: '1987'
+  IE071:
+    name: ie071
+    type: BIGINT
+    years: '1987'
+  IE012:
+    name: ie012
+    type: BIGINT
+    years: '1987'
+  IE022:
+    name: ie022
+    type: BIGINT
+    years: '1987'
+  IE032:
+    name: ie032
+    type: BIGINT
+    years: '1987'
+  IE042:
+    name: ie042
+    type: BIGINT
+    years: '1987'
+  IE052:
+    name: ie052
+    type: BIGINT
+    years: '1987'
+  IE062:
+    name: ie062
+    type: BIGINT
+    years: '1987'
+  IE072:
+    name: ie072
+    type: BIGINT
+    years: '1987'
+  IE013:
+    name: ie013
+    type: BIGINT
+    years: '1987'
+  IE023:
+    name: ie023
+    type: BIGINT
+    years: '1987'
+  IE033:
+    name: ie033
+    type: BIGINT
+    years: '1987'
+  IE043:
+    name: ie043
+    type: BIGINT
+    years: '1987'
+  IE053:
+    name: ie053
+    type: BIGINT
+    years: '1987'
+  IE063:
+    name: ie063
+    type: BIGINT
+    years: '1987'
+  IE073:
+    name: ie073
+    type: BIGINT
+    years: '1987'
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1994-1995
+  XE012:
+    name: e012_flag
+    type: VARCHAR
+    flag_for: e012
+    years: 1992-1996
+  XE013:
+    name: e013_flag
+    type: VARCHAR
+    flag_for: e013
+    years: 1992-1996
+  XE021:
+    name: e021_flag
+    type: VARCHAR
+    flag_for: e021
+    years: 1992-1996
+  XE022:
+    name: e022_flag
+    type: VARCHAR
+    flag_for: e022
+    years: 1992-1996
+  XE023:
+    name: e023_flag
+    type: VARCHAR
+    flag_for: e023
+    years: 1992-1996
+  XE031:
+    name: e031_flag
+    type: VARCHAR
+    flag_for: e031
+    years: 1992-1996
+  XE032:
+    name: e032_flag
+    type: VARCHAR
+    flag_for: e032
+    years: 1992-1996
+  XE033:
+    name: e033_flag
+    type: VARCHAR
+    flag_for: e033
+    years: 1992-1996
+  XE041:
+    name: e041_flag
+    type: VARCHAR
+    flag_for: e041
+    years: 1992-1996
+  XE042:
+    name: e042_flag
+    type: VARCHAR
+    flag_for: e042
+    years: 1992-1996
+  XE043:
+    name: e043_flag
+    type: VARCHAR
+    flag_for: e043
+    years: 1992-1996
+  XE051:
+    name: e051_flag
+    type: VARCHAR
+    flag_for: e051
+    years: 1992-1996
+  XE052:
+    name: e052_flag
+    type: VARCHAR
+    flag_for: e052
+    years: 1992-1996
+  XE053:
+    name: e053_flag
+    type: VARCHAR
+    flag_for: e053
+    years: 1992-1996
+  XE061:
+    name: e061_flag
+    type: VARCHAR
+    flag_for: e061
+    years: 1992-1996
+  XE062:
+    name: e062_flag
+    type: VARCHAR
+    flag_for: e062
+    years: 1992-1996
+  XE063:
+    name: e063_flag
+    type: VARCHAR
+    flag_for: e063
+    years: 1992-1996
+  XE071:
+    name: e071_flag
+    type: VARCHAR
+    flag_for: e071
+    years: 1992-1996
+  XE072:
+    name: e072_flag
+    type: VARCHAR
+    flag_for: e072
+    years: 1992-1996
+  XE073:
+    name: e073_flag
+    type: VARCHAR
+    flag_for: e073
+    years: 1992-1996
+  FILLER1:
+    name: filler1
+    type: BIGINT
+    years: '1995'
+  FILLER2:
+    name: filler2
+    type: BIGINT
+    years: '1995'

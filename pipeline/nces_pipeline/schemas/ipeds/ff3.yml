@@ -6,25 +6,466 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000-2024
+    years: 1998-2024
   XF3A01:
     name: f3a01_flag
     type: VARCHAR
     flag_for: f3a01
-    years: 2000-2024
+    years: 1998-2024
   F3A01:
     name: f3a01
     type: BIGINT
-    years: 2000-2024
+    years: 1998-2024
   XF3A02:
     name: f3a02_flag
     type: VARCHAR
     flag_for: f3a02
-    years: 2000-2024
+    years: 1998-2024
   F3A02:
     name: f3a02
     type: BIGINT
-    years: 2000-2024
+    years: 1998-2024
+  XF3A04:
+    name: f3a04_flag
+    type: VARCHAR
+    flag_for: f3a04
+    years: 1998-2024
+  F3A04:
+    name: f3a04
+    type: BIGINT
+    years: 1998-2024
+  XF3A05:
+    name: f3a05_flag
+    type: VARCHAR
+    flag_for: f3a05
+    years: 1998-1999,2014-2024
+  F3A05:
+    name: f3a05
+    type: BIGINT
+    years: 1998-1999,2014-2024
+  XF3A06:
+    name: f3a06_flag
+    type: VARCHAR
+    flag_for: f3a06
+    years: 1998-1999,2014-2024
+  F3A06:
+    name: f3a06
+    type: BIGINT
+    years: 1998-1999,2014-2024
+  XF3A07:
+    name: f3a07_flag
+    type: VARCHAR
+    flag_for: f3a07
+    years: 1998-1999,2014-2024
+  F3A07:
+    name: f3a07
+    type: BIGINT
+    years: 1998-1999,2014-2024
+  XF3A08:
+    name: f3a08_flag
+    type: VARCHAR
+    flag_for: f3a08
+    years: 1998-1999,2014-2024
+  F3A08:
+    name: f3a08
+    type: BIGINT
+    years: 1998-1999,2014-2024
+  XF3A09:
+    name: f3a09_flag
+    type: VARCHAR
+    flag_for: f3a09
+    years: 1998-1999,2014-2024
+  F3A09:
+    name: f3a09
+    type: BIGINT
+    years: 1998-1999,2014-2024
+  XF3A10:
+    name: f3a10_flag
+    type: VARCHAR
+    flag_for: f3a10
+    years: 1998-1999,2014-2024
+  F3A10:
+    name: f3a10
+    type: BIGINT
+    years: 1998-1999,2014-2024
+  XF3AA01:
+    name: f3aa01_flag
+    type: VARCHAR
+    flag_for: f3aa01
+    years: 1998-1999
+  F3AA01:
+    name: f3aa01
+    type: BIGINT
+    years: 1998-1999
+  XF3AA02:
+    name: f3aa02_flag
+    type: VARCHAR
+    flag_for: f3aa02
+    years: 1998-1999
+  F3AA02:
+    name: f3aa02
+    type: BIGINT
+    years: 1998-1999
+  XF3AA03:
+    name: f3aa03_flag
+    type: VARCHAR
+    flag_for: f3aa03
+    years: 1998-1999
+  F3AA03:
+    name: f3aa03
+    type: BIGINT
+    years: 1998-1999
+  XF3AA04:
+    name: f3aa04_flag
+    type: VARCHAR
+    flag_for: f3aa04
+    years: 1998-1999
+  F3AA04:
+    name: f3aa04
+    type: BIGINT
+    years: 1998-1999
+  XF3AA05:
+    name: f3aa05_flag
+    type: VARCHAR
+    flag_for: f3aa05
+    years: 1998-1999
+  F3AA05:
+    name: f3aa05
+    type: BIGINT
+    years: 1998-1999
+  XF3AA06:
+    name: f3aa06_flag
+    type: VARCHAR
+    flag_for: f3aa06
+    years: 1998-1999
+  F3AA06:
+    name: f3aa06
+    type: BIGINT
+    years: 1998-1999
+  XF3AA07:
+    name: f3aa07_flag
+    type: VARCHAR
+    flag_for: f3aa07
+    years: 1998-1999
+  F3AA07:
+    name: f3aa07
+    type: BIGINT
+    years: 1998-1999
+  XF3B01_1:
+    name: f3b01_1_flag
+    type: VARCHAR
+    flag_for: f3b01_1
+    years: 1998-1999
+  F3B01_1:
+    name: f3b01_1
+    type: BIGINT
+    years: 1998-1999
+  XF3B01_2:
+    name: f3b01_2_flag
+    type: VARCHAR
+    flag_for: f3b01_2
+    years: 1998-1999
+  F3B01_2:
+    name: f3b01_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B02_1:
+    name: f3b02_1_flag
+    type: VARCHAR
+    flag_for: f3b02_1
+    years: 1998-1999
+  F3B02_1:
+    name: f3b02_1
+    type: BIGINT
+    years: 1998-1999
+  XF3B02_2:
+    name: f3b02_2_flag
+    type: VARCHAR
+    flag_for: f3b02_2
+    years: 1998-1999
+  F3B02_2:
+    name: f3b02_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B03_1:
+    name: f3b03_1_flag
+    type: VARCHAR
+    flag_for: f3b03_1
+    years: 1998-1999
+  F3B03_1:
+    name: f3b03_1
+    type: BIGINT
+    years: 1998-1999
+  XF3B03_2:
+    name: f3b03_2_flag
+    type: VARCHAR
+    flag_for: f3b03_2
+    years: 1998-1999
+  F3B03_2:
+    name: f3b03_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B04_1:
+    name: f3b04_1_flag
+    type: VARCHAR
+    flag_for: f3b04_1
+    years: 1998-1999
+  F3B04_1:
+    name: f3b04_1
+    type: BIGINT
+    years: 1998-1999
+  XF3B04_2:
+    name: f3b04_2_flag
+    type: VARCHAR
+    flag_for: f3b04_2
+    years: 1998-1999
+  F3B04_2:
+    name: f3b04_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B05_1:
+    name: f3b05_1_flag
+    type: VARCHAR
+    flag_for: f3b05_1
+    years: 1998-1999
+  F3B05_1:
+    name: f3b05_1
+    type: BIGINT
+    years: 1998-1999
+  XF3B05_2:
+    name: f3b05_2_flag
+    type: VARCHAR
+    flag_for: f3b05_2
+    years: 1998-1999
+  F3B05_2:
+    name: f3b05_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B06_1:
+    name: f3b06_1_flag
+    type: VARCHAR
+    flag_for: f3b06_1
+    years: 1998-1999
+  F3B06_1:
+    name: f3b06_1
+    type: BIGINT
+    years: 1998-1999
+  XF3B06_2:
+    name: f3b06_2_flag
+    type: VARCHAR
+    flag_for: f3b06_2
+    years: 1998-1999
+  F3B06_2:
+    name: f3b06_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B07_1:
+    name: f3b07_1_flag
+    type: VARCHAR
+    flag_for: f3b07_1
+    years: 1998-1999
+  F3B07_1:
+    name: f3b07_1
+    type: BIGINT
+    years: 1998-1999
+  XF3B07_2:
+    name: f3b07_2_flag
+    type: VARCHAR
+    flag_for: f3b07_2
+    years: 1998-1999
+  F3B07_2:
+    name: f3b07_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B08_1:
+    name: f3b08_1_flag
+    type: VARCHAR
+    flag_for: f3b08_1
+    years: 1998-1999
+  F3B08_1:
+    name: f3b08_1
+    type: BIGINT
+    years: 1998-1999
+  XF3B08_2:
+    name: f3b08_2_flag
+    type: VARCHAR
+    flag_for: f3b08_2
+    years: 1998-1999
+  F3B08_2:
+    name: f3b08_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B09_2:
+    name: f3b09_2_flag
+    type: VARCHAR
+    flag_for: f3b09_2
+    years: 1998-1999
+  F3B09_2:
+    name: f3b09_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B10_1:
+    name: f3b10_1_flag
+    type: VARCHAR
+    flag_for: f3b10_1
+    years: 1998-1999
+  F3B10_1:
+    name: f3b10_1
+    type: BIGINT
+    years: 1998-1999
+  XF3B10_2:
+    name: f3b10_2_flag
+    type: VARCHAR
+    flag_for: f3b10_2
+    years: 1998-1999
+  F3B10_2:
+    name: f3b10_2
+    type: BIGINT
+    years: 1998-1999
+  XF3B10_3:
+    name: f3b10_3_flag
+    type: VARCHAR
+    flag_for: f3b10_3
+    years: 1998-1999
+  F3B10_3:
+    name: f3b10_3
+    type: BIGINT
+    years: 1998-1999
+  XF3B10_5:
+    name: f3b10_5_flag
+    type: VARCHAR
+    flag_for: f3b10_5
+    years: 1998-1999
+  F3B10_5:
+    name: f3b10_5
+    type: BIGINT
+    years: 1998-1999
+  XF3B10_6:
+    name: f3b10_6_flag
+    type: VARCHAR
+    flag_for: f3b10_6
+    years: 1998-1999
+  F3B10_6:
+    name: f3b10_6
+    type: BIGINT
+    years: 1998-1999
+  XF3B10_7:
+    name: f3b10_7_flag
+    type: VARCHAR
+    flag_for: f3b10_7
+    years: 1998-1999
+  F3B10_7:
+    name: f3b10_7
+    type: BIGINT
+    years: 1998-1999
+  XF3C01:
+    name: f3c01_flag
+    type: VARCHAR
+    flag_for: f3c01
+    years: 1998-2024
+  F3C01:
+    name: f3c01
+    type: BIGINT
+    years: 1998-2024
+  XF3C02:
+    name: f3c02_flag
+    type: VARCHAR
+    flag_for: f3c02
+    years: 1998-2024
+  F3C02:
+    name: f3c02
+    type: BIGINT
+    years: 1998-2024
+  XF3C0411:
+    name: f3c0411_flag
+    type: VARCHAR
+    flag_for: f3c0411
+    years: 1998-1999
+  F3C0411:
+    name: f3c0411
+    type: BIGINT
+    years: 1998-1999
+  XF3C12:
+    name: f3c12_flag
+    type: VARCHAR
+    flag_for: f3c12
+    years: 1998-1999,2020-2024
+  F3C12:
+    name: f3c12
+    type: BIGINT
+    years: 1998-1999,2020-2024
+  XF3C13:
+    name: f3c13_flag
+    type: VARCHAR
+    flag_for: f3c13
+    years: 1998-1999,2020-2024
+  F3C13:
+    name: f3c13
+    type: BIGINT
+    years: 1998-1999,2020-2024
+  XF3C14:
+    name: f3c14_flag
+    type: VARCHAR
+    flag_for: f3c14
+    years: 1998-1999,2020-2024
+  F3C14:
+    name: f3c14
+    type: BIGINT
+    years: 1998-1999,2020-2024
+  XF3C15:
+    name: f3c15_flag
+    type: VARCHAR
+    flag_for: f3c15
+    years: 1998-1999,2020-2024
+  F3C15:
+    name: f3c15
+    type: BIGINT
+    years: 1998-1999,2020-2024
+  XF3C16:
+    name: f3c16_flag
+    type: VARCHAR
+    flag_for: f3c16
+    years: 1998-1999,2020-2024
+  F3C16:
+    name: f3c16
+    type: BIGINT
+    years: 1998-1999,2020-2024
+  XF3D08:
+    name: f3d08_flag
+    type: VARCHAR
+    flag_for: f3d08
+    years: 1998-2024
+  F3D08:
+    name: f3d08
+    type: BIGINT
+    years: 1998-2024
+  XF3D16:
+    name: f3d16_flag
+    type: VARCHAR
+    flag_for: f3d16
+    years: 1998-1999
+  F3D16:
+    name: f3d16
+    type: BIGINT
+    years: 1998-1999
+  XF3D20:
+    name: f3d20_flag
+    type: VARCHAR
+    flag_for: f3d20
+    years: 1998-1999
+  F3D20:
+    name: f3d20
+    type: BIGINT
+    years: 1998-1999
+  XF3D21:
+    name: f3d21_flag
+    type: VARCHAR
+    flag_for: f3d21
+    years: 1998-1999
+  F3D21:
+    name: f3d21
+    type: BIGINT
+    years: 1998-1999
   XF3A03:
     name: f3a03_flag
     type: VARCHAR
@@ -32,15 +473,6 @@ columns:
     years: 2000-2024
   F3A03:
     name: f3a03
-    type: BIGINT
-    years: 2000-2024
-  XF3A04:
-    name: f3a04_flag
-    type: VARCHAR
-    flag_for: f3a04
-    years: 2000-2024
-  F3A04:
-    name: f3a04
     type: BIGINT
     years: 2000-2024
   XF3B01:
@@ -113,24 +545,6 @@ columns:
     years: 2000-2024
   F3B08:
     name: f3b08
-    type: BIGINT
-    years: 2000-2024
-  XF3C01:
-    name: f3c01_flag
-    type: VARCHAR
-    flag_for: f3c01
-    years: 2000-2024
-  F3C01:
-    name: f3c01
-    type: BIGINT
-    years: 2000-2024
-  XF3C02:
-    name: f3c02_flag
-    type: VARCHAR
-    flag_for: f3c02
-    years: 2000-2024
-  F3C02:
-    name: f3c02
     type: BIGINT
     years: 2000-2024
   XF3C03:
@@ -241,15 +655,6 @@ columns:
     name: f3d07
     type: BIGINT
     years: 2000-2024
-  XF3D08:
-    name: f3d08_flag
-    type: VARCHAR
-    flag_for: f3d08
-    years: 2000-2024
-  F3D08:
-    name: f3d08
-    type: BIGINT
-    years: 2000-2024
   XF3D09:
     name: f3d09_flag
     type: VARCHAR
@@ -356,60 +761,6 @@ columns:
     years: 2014-2024
   F3A02A:
     name: f3a02a
-    type: BIGINT
-    years: 2014-2024
-  XF3A05:
-    name: f3a05_flag
-    type: VARCHAR
-    flag_for: f3a05
-    years: 2014-2024
-  F3A05:
-    name: f3a05
-    type: BIGINT
-    years: 2014-2024
-  XF3A06:
-    name: f3a06_flag
-    type: VARCHAR
-    flag_for: f3a06
-    years: 2014-2024
-  F3A06:
-    name: f3a06
-    type: BIGINT
-    years: 2014-2024
-  XF3A07:
-    name: f3a07_flag
-    type: VARCHAR
-    flag_for: f3a07
-    years: 2014-2024
-  F3A07:
-    name: f3a07
-    type: BIGINT
-    years: 2014-2024
-  XF3A08:
-    name: f3a08_flag
-    type: VARCHAR
-    flag_for: f3a08
-    years: 2014-2024
-  F3A08:
-    name: f3a08
-    type: BIGINT
-    years: 2014-2024
-  XF3A09:
-    name: f3a09_flag
-    type: VARCHAR
-    flag_for: f3a09
-    years: 2014-2024
-  F3A09:
-    name: f3a09
-    type: BIGINT
-    years: 2014-2024
-  XF3A10:
-    name: f3a10_flag
-    type: VARCHAR
-    flag_for: f3a10
-    years: 2014-2024
-  F3A10:
-    name: f3a10
     type: BIGINT
     years: 2014-2024
   XF3A11:
@@ -1253,15 +1604,6 @@ columns:
     name: f3e074
     type: BIGINT
     years: 2016-2024
-  XF3C12:
-    name: f3c12_flag
-    type: VARCHAR
-    flag_for: f3c12
-    years: 2020-2024
-  F3C12:
-    name: f3c12
-    type: BIGINT
-    years: 2020-2024
   XF3C121:
     name: f3c121_flag
     type: VARCHAR
@@ -1278,15 +1620,6 @@ columns:
     years: 2020-2024
   F3C122:
     name: f3c122
-    type: BIGINT
-    years: 2020-2024
-  XF3C13:
-    name: f3c13_flag
-    type: VARCHAR
-    flag_for: f3c13
-    years: 2020-2024
-  F3C13:
-    name: f3c13
     type: BIGINT
     years: 2020-2024
   XF3C131:
@@ -1307,15 +1640,6 @@ columns:
     name: f3c132
     type: BIGINT
     years: 2020-2024
-  XF3C14:
-    name: f3c14_flag
-    type: VARCHAR
-    flag_for: f3c14
-    years: 2020-2024
-  F3C14:
-    name: f3c14
-    type: BIGINT
-    years: 2020-2024
   XF3C141:
     name: f3c141_flag
     type: VARCHAR
@@ -1334,15 +1658,6 @@ columns:
     name: f3c142
     type: BIGINT
     years: 2020-2024
-  XF3C15:
-    name: f3c15_flag
-    type: VARCHAR
-    flag_for: f3c15
-    years: 2020-2024
-  F3C15:
-    name: f3c15
-    type: BIGINT
-    years: 2020-2024
   XF3C151:
     name: f3c151_flag
     type: VARCHAR
@@ -1359,15 +1674,6 @@ columns:
     years: 2020-2024
   F3C152:
     name: f3c152
-    type: BIGINT
-    years: 2020-2024
-  XF3C16:
-    name: f3c16_flag
-    type: VARCHAR
-    flag_for: f3c16
-    years: 2020-2024
-  F3C16:
-    name: f3c16
     type: BIGINT
     years: 2020-2024
   XF3C161:

@@ -84,3 +84,17 @@ def run_copy(con, make_sql, *args) -> None:
             if parallel and "parallel" in str(e).lower():
                 continue
             raise
+
+
+def run_query(con, make_sql):
+    """Like run_copy but returns the rows of make_sql(parallel)."""
+    import duckdb
+
+    for parallel in (True, False):
+        try:
+            return con.execute(make_sql(parallel)).fetchall()
+        except duckdb.Error as e:
+            if parallel and "parallel" in str(e).lower():
+                continue
+            raise
+    return []

@@ -1,0 +1,105 @@
+source: ipeds
+family: ichdr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1991'
+  INSTNM:
+    name: instnm
+    type: VARCHAR
+    years: '1991'
+  CITY:
+    name: city
+    type: VARCHAR
+    years: '1991'
+  STABBR:
+    name: stabbr
+    type: VARCHAR
+    years: '1991'
+  FIPS:
+    name: fips
+    type: BIGINT
+    years: '1991'
+  OBEREG:
+    name: obereg
+    type: BIGINT
+    years: '1991'
+  FICE:
+    name: fice
+    type: BIGINT
+    years: '1991'
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: '1991'
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1991'
+  SECTOR:
+    name: sector
+    type: BIGINT
+    years: '1991'
+  ICLEVEL:
+    name: iclevel
+    type: BIGINT
+    years: '1991'
+  CONTROL:
+    name: control
+    type: BIGINT
+    years: '1991'
+  AFFIL:
+    name: affil
+    type: BIGINT
+    years: '1991'
+  HLOFFER:
+    name: hloffer
+    type: BIGINT
+    years: '1991'
+  FPOFFER:
+    name: fpoffer
+    type: BIGINT
+    years: '1991'
+  FORMRT:
+    name: formrt
+    type: BIGINT
+    years: '1991'
+  RESPLAST:
+    name: resplast
+    type: BIGINT
+    years: '1991'
+  RESPSTAT:
+    name: respstat
+    type: BIGINT
+    years: '1991'
+  ADDR:
+    name: addr
+    type: VARCHAR
+    years: '1991'
+  ZIP:
+    name: zip
+    type: BIGINT
+    years: '1991'
+  COUNTYNM:
+    name: countynm
+    type: VARCHAR
+    years: '1991'
+  CONGDIST:
+    name: congdist
+    type: BIGINT
+    years: '1991'
+  GENTELE:
+    name: gentele
+    type: BIGINT
+    years: '1991'
+  CHFNM:
+    name: chfnm
+    type: VARCHAR
+    years: '1991'
+  CHFTITLE:
+    name: chftitle
+    type: VARCHAR
+    years: '1991'

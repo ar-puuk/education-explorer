@@ -1,0 +1,33 @@
+source: ipeds
+family: fc5
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1995-1996,1998-1999
+  PART:
+    name: part
+    type: BIGINT
+    years: '1995'
+  SUBENTCD:
+    name: subentcd
+    type: BIGINT
+    years: '1995'
+  SUBENTNM:
+    name: subentnm
+    type: BIGINT
+    years: 1995-1996,1998-1999
+  SUBENTRV:
+    name: subentrv
+    type: BIGINT
+    years: 1995-1996,1998-1999
+  SUBENTEX:
+    name: subentex
+    type: BIGINT
+    years: 1995-1996,1998-1999
+  SUBENTNO:
+    name: subentno
+    type: BIGINT
+    years: 1996,1998-1999

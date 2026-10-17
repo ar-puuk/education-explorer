@@ -9,235 +9,383 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000-2025
+    years: 1995-2025
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1995-1997
   CIPCODE:
     name: cipcode
     type: VARCHAR
-    years: 2000-2025
+    years: 1995-2025
   AWLEVEL:
     name: awlevel
     type: BIGINT
-    years: 2000-2025
+    years: 1995-2025
+  CRACE01:
+    name: crace01
+    type: BIGINT
+    years: 1995-2007
+  CRACE02:
+    name: crace02
+    type: BIGINT
+    years: 1995-2007
+  CRACE03:
+    name: crace03
+    type: BIGINT
+    years: 1995-2010
+  CRACE04:
+    name: crace04
+    type: BIGINT
+    years: 1995-2010
+  CRACE05:
+    name: crace05
+    type: BIGINT
+    years: 1995-2010
+  CRACE06:
+    name: crace06
+    type: BIGINT
+    years: 1995-2010
+  CRACE07:
+    name: crace07
+    type: BIGINT
+    years: 1995-2010
+  CRACE08:
+    name: crace08
+    type: BIGINT
+    years: 1995-2010
+  CRACE09:
+    name: crace09
+    type: BIGINT
+    years: 1995-2010
+  CRACE10:
+    name: crace10
+    type: BIGINT
+    years: 1995-2010
+  CRACE11:
+    name: crace11
+    type: BIGINT
+    years: 1995-2010
+  CRACE12:
+    name: crace12
+    type: BIGINT
+    years: 1995-2010
+  CRACE13:
+    name: crace13
+    type: BIGINT
+    years: 1995-2007
+  CRACE14:
+    name: crace14
+    type: BIGINT
+    years: 1995-2007
+  CRACE15:
+    name: crace15
+    type: BIGINT
+    years: 1995-2007
+  CRACE16:
+    name: crace16
+    type: BIGINT
+    years: 1995-2007
+  BAL_M:
+    name: bal_m
+    type: BIGINT
+    years: 1995-1997
+  BAL_W:
+    name: bal_w
+    type: BIGINT
+    years: 1995-1997
+  IMPRAC01:
+    name: imprac01
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC02:
+    name: imprac02
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC03:
+    name: imprac03
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC04:
+    name: imprac04
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC05:
+    name: imprac05
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC06:
+    name: imprac06
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC07:
+    name: imprac07
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC08:
+    name: imprac08
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC09:
+    name: imprac09
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC10:
+    name: imprac10
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC11:
+    name: imprac11
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC12:
+    name: imprac12
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC13:
+    name: imprac13
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC14:
+    name: imprac14
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC15:
+    name: imprac15
+    type: VARCHAR
+    years: 1995-1997
+  IMPRAC16:
+    name: imprac16
+    type: VARCHAR
+    years: 1995-1997
+  IX01:
+    name: ix01
+    type: VARCHAR
+    years: '1998'
+  IX02:
+    name: ix02
+    type: VARCHAR
+    years: '1998'
+  IX03:
+    name: ix03
+    type: VARCHAR
+    years: '1998'
+  IX04:
+    name: ix04
+    type: VARCHAR
+    years: '1998'
+  IX05:
+    name: ix05
+    type: VARCHAR
+    years: '1998'
+  IX06:
+    name: ix06
+    type: VARCHAR
+    years: '1998'
+  IX07:
+    name: ix07
+    type: VARCHAR
+    years: '1998'
+  IX08:
+    name: ix08
+    type: VARCHAR
+    years: '1998'
+  IX09:
+    name: ix09
+    type: VARCHAR
+    years: '1998'
+  IX10:
+    name: ix10
+    type: VARCHAR
+    years: '1998'
+  IX11:
+    name: ix11
+    type: VARCHAR
+    years: '1998'
+  IX12:
+    name: ix12
+    type: VARCHAR
+    years: '1998'
+  IX13:
+    name: ix13
+    type: VARCHAR
+    years: '1998'
+  IX14:
+    name: ix14
+    type: VARCHAR
+    years: '1998'
+  IX15:
+    name: ix15
+    type: VARCHAR
+    years: '1998'
+  IX16:
+    name: ix16
+    type: VARCHAR
+    years: '1998'
+  CBALM:
+    name: cbalm
+    type: BIGINT
+    years: '1998'
+  CBALW:
+    name: cbalw
+    type: BIGINT
+    years: '1998'
   XCRACE01:
     name: crace01_flag
     type: VARCHAR
     flag_for: crace01
-    years: 2000-2007
-  CRACE01:
-    name: crace01
-    type: BIGINT
-    years: 2000-2007
+    years: 1999-2007
   XCRACE02:
     name: crace02_flag
     type: VARCHAR
     flag_for: crace02
-    years: 2000-2007
-  CRACE02:
-    name: crace02
-    type: BIGINT
-    years: 2000-2007
+    years: 1999-2007
   XCRACE03:
     name: crace03_flag
     type: VARCHAR
     flag_for: crace03
-    years: 2000-2010
-  CRACE03:
-    name: crace03
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE04:
     name: crace04_flag
     type: VARCHAR
     flag_for: crace04
-    years: 2000-2010
-  CRACE04:
-    name: crace04
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE05:
     name: crace05_flag
     type: VARCHAR
     flag_for: crace05
-    years: 2000-2010
-  CRACE05:
-    name: crace05
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE06:
     name: crace06_flag
     type: VARCHAR
     flag_for: crace06
-    years: 2000-2010
-  CRACE06:
-    name: crace06
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE07:
     name: crace07_flag
     type: VARCHAR
     flag_for: crace07
-    years: 2000-2010
-  CRACE07:
-    name: crace07
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE08:
     name: crace08_flag
     type: VARCHAR
     flag_for: crace08
-    years: 2000-2010
-  CRACE08:
-    name: crace08
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE09:
     name: crace09_flag
     type: VARCHAR
     flag_for: crace09
-    years: 2000-2010
-  CRACE09:
-    name: crace09
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE10:
     name: crace10_flag
     type: VARCHAR
     flag_for: crace10
-    years: 2000-2010
-  CRACE10:
-    name: crace10
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE11:
     name: crace11_flag
     type: VARCHAR
     flag_for: crace11
-    years: 2000-2010
-  CRACE11:
-    name: crace11
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE12:
     name: crace12_flag
     type: VARCHAR
     flag_for: crace12
-    years: 2000-2010
-  CRACE12:
-    name: crace12
-    type: BIGINT
-    years: 2000-2010
+    years: 1999-2010
   XCRACE13:
     name: crace13_flag
     type: VARCHAR
     flag_for: crace13
-    years: 2000-2007
-  CRACE13:
-    name: crace13
-    type: BIGINT
-    years: 2000-2007
+    years: 1999-2007
   XCRACE14:
     name: crace14_flag
     type: VARCHAR
     flag_for: crace14
-    years: 2000-2007
-  CRACE14:
-    name: crace14
-    type: BIGINT
-    years: 2000-2007
+    years: 1999-2007
   XCRACE15:
     name: crace15_flag
     type: VARCHAR
     flag_for: crace15
-    years: 2000-2007
-  CRACE15:
-    name: crace15
-    type: BIGINT
-    years: 2000-2007
+    years: 1999-2007
   XCRACE16:
     name: crace16_flag
     type: VARCHAR
     flag_for: crace16
-    years: 2000-2007
-  CRACE16:
-    name: crace16
-    type: BIGINT
-    years: 2000-2007
-  MAJORNUM:
-    name: majornum
-    type: BIGINT
-    years: 2001-2025
+    years: 1999-2007
   XCRACE17:
     name: crace17_flag
     type: VARCHAR
     flag_for: crace17
-    years: 2002-2007
+    years: 1999,2002-2007
   CRACE17:
     name: crace17
     type: BIGINT
-    years: 2002-2007
+    years: 1999,2002-2007
   XCRACE18:
     name: crace18_flag
     type: VARCHAR
     flag_for: crace18
-    years: 2002-2010
+    years: 1999,2002-2010
   CRACE18:
     name: crace18
     type: BIGINT
-    years: 2002-2010
+    years: 1999,2002-2010
   XCRACE19:
     name: crace19_flag
     type: VARCHAR
     flag_for: crace19
-    years: 2002-2010
+    years: 1999,2002-2010
   CRACE19:
     name: crace19
     type: BIGINT
-    years: 2002-2010
+    years: 1999,2002-2010
   XCRACE20:
     name: crace20_flag
     type: VARCHAR
     flag_for: crace20
-    years: 2002-2010
+    years: 1999,2002-2010
   CRACE20:
     name: crace20
     type: BIGINT
-    years: 2002-2010
+    years: 1999,2002-2010
   XCRACE21:
     name: crace21_flag
     type: VARCHAR
     flag_for: crace21
-    years: 2002-2010
+    years: 1999,2002-2010
   CRACE21:
     name: crace21
     type: BIGINT
-    years: 2002-2010
+    years: 1999,2002-2010
   XCRACE22:
     name: crace22_flag
     type: VARCHAR
     flag_for: crace22
-    years: 2002-2010
+    years: 1999,2002-2010
   CRACE22:
     name: crace22
     type: BIGINT
-    years: 2002-2010
+    years: 1999,2002-2010
   XCRACE23:
     name: crace23_flag
     type: VARCHAR
     flag_for: crace23
-    years: 2002-2007
+    years: 1999,2002-2007
   CRACE23:
     name: crace23
     type: BIGINT
-    years: 2002-2007
+    years: 1999,2002-2007
   XCRACE24:
     name: crace24_flag
     type: VARCHAR
     flag_for: crace24
-    years: 2002-2007
+    years: 1999,2002-2007
   CRACE24:
     name: crace24
     type: BIGINT
-    years: 2002-2007
+    years: 1999,2002-2007
+  MAJORNUM:
+    name: majornum
+    type: BIGINT
+    years: 2001-2025
   XCNRALM:
     name: cnralm_flag
     type: VARCHAR

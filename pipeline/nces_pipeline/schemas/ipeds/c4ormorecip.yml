@@ -1,0 +1,27 @@
+source: ipeds
+family: c4ormorecip
+key:
+- unitid
+- cipcode
+- awlevel
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1980'
+  AWLEVEL:
+    name: awlevel
+    type: BIGINT
+    years: '1980'
+  CRACE15:
+    name: crace15
+    type: BIGINT
+    years: '1980'
+  CRACE16:
+    name: crace16
+    type: BIGINT
+    years: '1980'
+  CIPCODE:
+    name: cipcode
+    type: BIGINT
+    years: '1980'

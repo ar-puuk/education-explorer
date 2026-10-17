@@ -1,0 +1,80 @@
+source: ipeds
+family: fh
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1989,1991-1996
+  H011:
+    name: h011
+    type: BIGINT
+    years: 1989,1991-1996
+  H012:
+    name: h012
+    type: BIGINT
+    years: 1989,1991-1996
+  H021:
+    name: h021
+    type: BIGINT
+    years: 1989,1991-1996
+  H022:
+    name: h022
+    type: BIGINT
+    years: 1989,1991-1996
+  H033:
+    name: h033
+    type: BIGINT
+    years: 1989,1991-1996
+  H043:
+    name: h043
+    type: BIGINT
+    years: 1989,1991-1996
+  H053:
+    name: h053
+    type: BIGINT
+    years: 1989,1991-1996
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1994-1995
+  XH011:
+    name: h011_flag
+    type: VARCHAR
+    flag_for: h011
+    years: 1992-1996
+  XH012:
+    name: h012_flag
+    type: VARCHAR
+    flag_for: h012
+    years: 1992-1996
+  XH021:
+    name: h021_flag
+    type: VARCHAR
+    flag_for: h021
+    years: 1992-1996
+  XH022:
+    name: h022_flag
+    type: VARCHAR
+    flag_for: h022
+    years: 1992-1996
+  XH033:
+    name: h033_flag
+    type: VARCHAR
+    flag_for: h033
+    years: 1992-1996
+  XH043:
+    name: h043_flag
+    type: VARCHAR
+    flag_for: h043
+    years: 1992-1996
+  XH053:
+    name: h053_flag
+    type: VARCHAR
+    flag_for: h053
+    years: 1992-1996
+  FILLER:
+    name: filler
+    type: BIGINT
+    years: '1995'

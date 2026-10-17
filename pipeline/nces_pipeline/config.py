@@ -1,6 +1,7 @@
 """Repo paths and config loading."""
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -9,7 +10,8 @@ import yaml
 ROOT = Path(__file__).resolve().parents[2]
 CONFIG_DIR = ROOT / "config"
 DATA_RAW = ROOT / "data-raw"
-DOCS_DATA = ROOT / "docs" / "data"
+# EE_DOCS_DATA redirects all processed output (used for smoke runs of other states without touching docs/data)
+DOCS_DATA = Path(os.environ["EE_DOCS_DATA"]) if os.environ.get("EE_DOCS_DATA") else ROOT / "docs" / "data"
 MANIFEST = DATA_RAW / "manifest.json"
 SCHEMAS = Path(__file__).resolve().parent / "schemas"
 SQL_DIR = Path(__file__).resolve().parent / "transform"

@@ -1,0 +1,90 @@
+source: ipeds
+family: ef
+key:
+- unitid
+- line
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1984-1985
+  LINE:
+    name: line
+    type: BIGINT
+    years: 1984-1985
+  EFRACE01:
+    name: efrace01
+    type: BIGINT
+    years: '1984'
+  EFRACE02:
+    name: efrace02
+    type: BIGINT
+    years: '1984'
+  EFRACE03:
+    name: efrace03
+    type: BIGINT
+    years: '1984'
+  EFRACE04:
+    name: efrace04
+    type: BIGINT
+    years: '1984'
+  EFRACE05:
+    name: efrace05
+    type: BIGINT
+    years: '1984'
+  EFRACE06:
+    name: efrace06
+    type: BIGINT
+    years: '1984'
+  EFRACE07:
+    name: efrace07
+    type: BIGINT
+    years: '1984'
+  EFRACE08:
+    name: efrace08
+    type: BIGINT
+    years: '1984'
+  EFRACE09:
+    name: efrace09
+    type: BIGINT
+    years: '1984'
+  EFRACE10:
+    name: efrace10
+    type: BIGINT
+    years: '1984'
+  EFRACE11:
+    name: efrace11
+    type: BIGINT
+    years: '1984'
+  EFRACE12:
+    name: efrace12
+    type: BIGINT
+    years: '1984'
+  EFRACE15:
+    name: efrace15
+    type: BIGINT
+    years: 1984-1985
+  GEFM15:
+    name: gefm15
+    type: BIGINT
+    years: '1984'
+  EFRACE16:
+    name: efrace16
+    type: BIGINT
+    years: 1984-1985
+  GEFW16:
+    name: gefw16
+    type: BIGINT
+    years: '1984'
+  FTEPTR:
+    name: fteptr
+    type: BIGINT
+    years: 1984-1985
+  FTEPTC:
+    name: fteptc
+    type: BIGINT
+    years: 1984-1985
+  IMP_FLAG:
+    name: imp_flag
+    type: BIGINT
+    years: '1984'

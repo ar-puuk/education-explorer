@@ -1,0 +1,301 @@
+source: ipeds
+family: fc
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1989,1991-1996
+  CQ1AB:
+    name: cq1ab
+    type: BIGINT
+    years: 1989,1991
+  CQ1CD:
+    name: cq1cd
+    type: BIGINT
+    years: 1989,1991
+  CQ1AMT:
+    name: cq1amt
+    type: BIGINT
+    years: 1989,1991
+  CQ2AAMT:
+    name: cq2aamt
+    type: BIGINT
+    years: 1989,1991
+  CQ2BAMT:
+    name: cq2bamt
+    type: BIGINT
+    years: 1989,1991
+  CQ2CAMT:
+    name: cq2camt
+    type: BIGINT
+    years: 1989,1991
+  CQ3AB:
+    name: cq3ab
+    type: BIGINT
+    years: 1989,1991
+  CQ3C:
+    name: cq3c
+    type: BIGINT
+    years: 1989,1991
+  CQ3CAMT:
+    name: cq3camt
+    type: BIGINT
+    years: 1989,1991
+  CQ3D:
+    name: cq3d
+    type: BIGINT
+    years: 1989,1991
+  CQ3DAMT:
+    name: cq3damt
+    type: BIGINT
+    years: 1989,1991
+  CQ3E:
+    name: cq3e
+    type: BIGINT
+    years: 1989,1991
+  CQ3EAMT:
+    name: cq3eamt
+    type: BIGINT
+    years: 1989,1991
+  CQ3F:
+    name: cq3f
+    type: BIGINT
+    years: 1989,1991
+  CQ3FAMT:
+    name: cq3famt
+    type: BIGINT
+    years: 1989,1991
+  CQ4AB:
+    name: cq4ab
+    type: BIGINT
+    years: 1989,1991
+  CQ4AMT:
+    name: cq4amt
+    type: BIGINT
+    years: 1989,1991
+  CQ5AB:
+    name: cq5ab
+    type: BIGINT
+    years: 1989,1991
+  CQ6A:
+    name: cq6a
+    type: BIGINT
+    years: 1989,1991
+  CQ6B:
+    name: cq6b
+    type: BIGINT
+    years: 1989,1991
+  CQ6C:
+    name: cq6c
+    type: BIGINT
+    years: 1989,1991
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1994-1995
+  C3_5AMT:
+    name: c3_5amt
+    type: BIGINT
+    years: '1992'
+  C3_6:
+    name: c3_6
+    type: BIGINT
+    years: 1992-1996
+  C3_6AMT:
+    name: c3_6amt
+    type: BIGINT
+    years: '1992'
+  C4:
+    name: c4
+    type: BIGINT
+    years: '1992'
+  C4AMT:
+    name: c4amt
+    type: BIGINT
+    years: '1992'
+  C5:
+    name: c5
+    type: BIGINT
+    years: 1992,1995-1996
+  C6_1:
+    name: c6_1
+    type: BIGINT
+    years: '1992'
+  C6_2:
+    name: c6_2
+    type: BIGINT
+    years: '1992'
+  C6_3:
+    name: c6_3
+    type: BIGINT
+    years: '1992'
+  C1_1:
+    name: c1_1
+    type: BIGINT
+    years: 1992-1996
+  C1_2:
+    name: c1_2
+    type: BIGINT
+    years: 1992-1996
+  C1AMT:
+    name: c1amt
+    type: BIGINT
+    years: 1992-1996
+  C2A:
+    name: c2a
+    type: BIGINT
+    years: 1992-1996
+  C2B:
+    name: c2b
+    type: BIGINT
+    years: 1992-1996
+  C2C:
+    name: c2c
+    type: BIGINT
+    years: 1992-1996
+  C3:
+    name: c3
+    type: BIGINT
+    years: '1992'
+  C3_3:
+    name: c3_3
+    type: BIGINT
+    years: 1992-1996
+  C3_3AMT:
+    name: c3_3amt
+    type: BIGINT
+    years: '1992'
+  C3_4:
+    name: c3_4
+    type: BIGINT
+    years: 1992-1996
+  C3_4AMT:
+    name: c3_4amt
+    type: BIGINT
+    years: '1992'
+  C3_5:
+    name: c3_5
+    type: BIGINT
+    years: 1992-1996
+  C2D:
+    name: c2d
+    type: BIGINT
+    years: 1993-1996
+  C3_1:
+    name: c3_1
+    type: BIGINT
+    years: 1993-1996
+  C3AMT3:
+    name: c3amt3
+    type: BIGINT
+    years: 1993-1996
+  C3AMT4:
+    name: c3amt4
+    type: BIGINT
+    years: 1993-1996
+  C3AMT5:
+    name: c3amt5
+    type: BIGINT
+    years: 1993-1996
+  C3AMT6:
+    name: c3amt6
+    type: BIGINT
+    years: 1993-1996
+  C4A:
+    name: c4a
+    type: BIGINT
+    years: 1993-1996
+  C4A1:
+    name: c4a1
+    type: BIGINT
+    years: 1993-1996
+  C4REVEN:
+    name: c4reven
+    type: BIGINT
+    years: 1993-1996
+  C4EXPEN:
+    name: c4expen
+    type: BIGINT
+    years: 1993-1996
+  C4B:
+    name: c4b
+    type: BIGINT
+    years: 1993-1996
+  C4C:
+    name: c4c
+    type: BIGINT
+    years: 1993-1996
+  C5A:
+    name: c5a
+    type: BIGINT
+    years: 1993-1994
+  C5A1:
+    name: c5a1
+    type: BIGINT
+    years: 1993-1994
+  C5REVEN:
+    name: c5reven
+    type: BIGINT
+    years: 1993-1996
+  C5EXPEN:
+    name: c5expen
+    type: BIGINT
+    years: 1993-1996
+  C5B:
+    name: c5b
+    type: BIGINT
+    years: 1993-1994
+  C5C:
+    name: c5c
+    type: BIGINT
+    years: 1993-1994
+  C6:
+    name: c6
+    type: BIGINT
+    years: 1993-1996
+  C6AMT:
+    name: c6amt
+    type: BIGINT
+    years: 1993-1996
+  C7:
+    name: c7
+    type: BIGINT
+    years: 1993-1996
+  C8_1:
+    name: c8_1
+    type: BIGINT
+    years: 1993-1994
+  C8_2:
+    name: c8_2
+    type: BIGINT
+    years: 1993-1994
+  C8_3:
+    name: c8_3
+    type: BIGINT
+    years: 1993-1994
+  C9A:
+    name: c9a
+    type: BIGINT
+    years: '1994'
+  C9B:
+    name: c9b
+    type: BIGINT
+    years: '1994'
+  C9C:
+    name: c9c
+    type: BIGINT
+    years: '1994'
+  C8A:
+    name: c8a
+    type: BIGINT
+    years: 1995-1996
+  C8B:
+    name: c8b
+    type: BIGINT
+    years: 1995-1996
+  C8C:
+    name: c8c
+    type: BIGINT
+    years: 1995-1996

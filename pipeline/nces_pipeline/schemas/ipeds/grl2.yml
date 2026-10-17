@@ -6,52 +6,52 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   XLINE_10:
     name: line_10_flag
     type: VARCHAR
     flag_for: line_10
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   LINE_10:
     name: line_10
     type: BIGINT
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   XLINE_45:
     name: line_45_flag
     type: VARCHAR
     flag_for: line_45
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   LINE_45:
     name: line_45
     type: BIGINT
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   XLINE_50:
     name: line_50_flag
     type: VARCHAR
     flag_for: line_50
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   LINE_50:
     name: line_50
     type: BIGINT
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   XLINE_11:
     name: line_11_flag
     type: VARCHAR
     flag_for: line_11
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   LINE_11:
     name: line_11
     type: BIGINT
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   XLINE_30:
     name: line_30_flag
     type: VARCHAR
     flag_for: line_30
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   LINE_30:
     name: line_30
     type: BIGINT
-    years: 2000-2001,2004-2024
+    years: 1997-2001,2004-2024
   XLINE_55:
     name: line_55_flag
     type: VARCHAR

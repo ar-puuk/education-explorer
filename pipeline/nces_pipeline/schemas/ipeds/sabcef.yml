@@ -1,0 +1,158 @@
+source: ipeds
+family: sabcef
+key:
+- unitid
+- line
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1993'
+  LINE:
+    name: line
+    type: BIGINT
+    years: '1993'
+  STAFF01:
+    name: staff01
+    type: BIGINT
+    years: '1993'
+  STAFF02:
+    name: staff02
+    type: BIGINT
+    years: '1993'
+  STAFF03:
+    name: staff03
+    type: BIGINT
+    years: '1993'
+  STAFF04:
+    name: staff04
+    type: BIGINT
+    years: '1993'
+  STAFF05:
+    name: staff05
+    type: BIGINT
+    years: '1993'
+  STAFF06:
+    name: staff06
+    type: BIGINT
+    years: '1993'
+  STAFF07:
+    name: staff07
+    type: BIGINT
+    years: '1993'
+  STAFF08:
+    name: staff08
+    type: BIGINT
+    years: '1993'
+  STAFF09:
+    name: staff09
+    type: BIGINT
+    years: '1993'
+  STAFF10:
+    name: staff10
+    type: BIGINT
+    years: '1993'
+  STAFF11:
+    name: staff11
+    type: BIGINT
+    years: '1993'
+  STAFF12:
+    name: staff12
+    type: BIGINT
+    years: '1993'
+  STAFF13:
+    name: staff13
+    type: BIGINT
+    years: '1993'
+  STAFF14:
+    name: staff14
+    type: BIGINT
+    years: '1993'
+  STAFF15:
+    name: staff15
+    type: BIGINT
+    years: '1993'
+  STAFF16:
+    name: staff16
+    type: BIGINT
+    years: '1993'
+  XSTAFF01:
+    name: staff01_flag
+    type: VARCHAR
+    flag_for: staff01
+    years: '1993'
+  XSTAFF02:
+    name: staff02_flag
+    type: VARCHAR
+    flag_for: staff02
+    years: '1993'
+  XSTAFF03:
+    name: staff03_flag
+    type: VARCHAR
+    flag_for: staff03
+    years: '1993'
+  XSTAFF04:
+    name: staff04_flag
+    type: VARCHAR
+    flag_for: staff04
+    years: '1993'
+  XSTAFF05:
+    name: staff05_flag
+    type: VARCHAR
+    flag_for: staff05
+    years: '1993'
+  XSTAFF06:
+    name: staff06_flag
+    type: VARCHAR
+    flag_for: staff06
+    years: '1993'
+  XSTAFF07:
+    name: staff07_flag
+    type: VARCHAR
+    flag_for: staff07
+    years: '1993'
+  XSTAFF08:
+    name: staff08_flag
+    type: VARCHAR
+    flag_for: staff08
+    years: '1993'
+  XSTAFF09:
+    name: staff09_flag
+    type: VARCHAR
+    flag_for: staff09
+    years: '1993'
+  XSTAFF10:
+    name: staff10_flag
+    type: VARCHAR
+    flag_for: staff10
+    years: '1993'
+  XSTAFF11:
+    name: staff11_flag
+    type: VARCHAR
+    flag_for: staff11
+    years: '1993'
+  XSTAFF12:
+    name: staff12_flag
+    type: VARCHAR
+    flag_for: staff12
+    years: '1993'
+  XSTAFF13:
+    name: staff13_flag
+    type: VARCHAR
+    flag_for: staff13
+    years: '1993'
+  XSTAFF14:
+    name: staff14_flag
+    type: VARCHAR
+    flag_for: staff14
+    years: '1993'
+  XSTAFF15:
+    name: staff15_flag
+    type: VARCHAR
+    flag_for: staff15
+    years: '1993'
+  XSTAFF16:
+    name: staff16_flag
+    type: VARCHAR
+    flag_for: staff16
+    years: '1993'

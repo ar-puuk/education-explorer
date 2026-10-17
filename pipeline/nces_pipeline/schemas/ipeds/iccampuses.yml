@@ -49,11 +49,11 @@ columns:
     years: 2021-2022
   PCGENTELE:
     name: pcgentele
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2022
   PCEIN:
     name: pcein
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2022
   PCDUNS:
     name: pcduns
@@ -61,7 +61,7 @@ columns:
     years: '2021'
   PCOPEID:
     name: pcopeid
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2022
   PCOPEFLAG:
     name: pcopeflag
@@ -97,7 +97,7 @@ columns:
     years: 2021-2022
   PCATHURL:
     name: pcathurl
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2022
   PCDISAURL:
     name: pcdisaurl
@@ -845,7 +845,7 @@ columns:
     years: 2021-2022
   PCCIPCODE1:
     name: pccipcode1
-    type: DOUBLE
+    type: VARCHAR
     years: 2021-2022
   XPCCIPLGT1:
     name: xpcciplgt1

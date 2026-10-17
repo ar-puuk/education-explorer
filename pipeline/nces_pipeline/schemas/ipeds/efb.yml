@@ -9,101 +9,150 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000-2024
+    years: 1987,1991,1993,1995,1997,1999-2024
   LINE:
     name: line
     type: BIGINT
-    years: 2000-2024
+    years: 1987,1991,1993,1995,1997,2000-2024
+  LSTUDY:
+    name: lstudy
+    type: BIGINT
+    years: 1987,1999,2001-2024
   SECTION:
     name: section
     type: BIGINT
-    years: '2000'
+    years: 1987,1991,1995,1997,2000
+  EFAGE01:
+    name: efage01
+    type: BIGINT
+    years: 1987,1991,1993,1995,1997,1999-2024
+  EFAGE02:
+    name: efage02
+    type: BIGINT
+    years: 1987,1991,1993,1995,1997,1999-2024
+  EFAGE03:
+    name: efage03
+    type: BIGINT
+    years: 1987,1991,1993,1995,1997,1999,2002-2024
+  EFAGE04:
+    name: efage04
+    type: BIGINT
+    years: 1987,1991,1993,1995,1997,1999,2002-2024
+  EFAGE05:
+    name: efage05
+    type: BIGINT
+    years: 1987,1991,1993,1995,1997,1999,2002-2024
+  EFAGE06:
+    name: efage06
+    type: BIGINT
+    years: 1987,1991,1993,1995,1997,1999,2002-2024
+  EFAGE07:
+    name: efage07
+    type: BIGINT
+    years: 1987,1991,1993,1995,1997,1999,2002-2024
+  EFAGE08:
+    name: efage08
+    type: BIGINT
+    years: 1987,1991,1993,1995,1997,1999,2002-2024
+  EFAGE09:
+    name: efage09
+    type: BIGINT
+    years: 1987,1991,1993,1999,2002-2024
+  EFAGE10:
+    name: efage10
+    type: BIGINT
+    years: 1987,1991,1993
   XEFAGE01:
     name: efage01_flag
     type: VARCHAR
     flag_for: efage01
-    years: 2000-2024
-  EFAGE01:
-    name: efage01
-    type: BIGINT
-    years: 2000-2024
+    years: 1987,1999-2024
   XEFAGE02:
     name: efage02_flag
     type: VARCHAR
     flag_for: efage02
-    years: 2000-2024
-  EFAGE02:
-    name: efage02
-    type: BIGINT
-    years: 2000-2024
-  LSTUDY:
-    name: lstudy
-    type: BIGINT
-    years: 2001-2024
-  EFBAGE:
-    name: efbage
-    type: BIGINT
-    years: 2002-2024
+    years: 1987,1999-2024
   XEFAGE03:
     name: efage03_flag
     type: VARCHAR
     flag_for: efage03
-    years: 2002-2024
-  EFAGE03:
-    name: efage03
-    type: BIGINT
-    years: 2002-2024
+    years: 1987,1999,2002-2024
   XEFAGE04:
     name: efage04_flag
     type: VARCHAR
     flag_for: efage04
-    years: 2002-2024
-  EFAGE04:
-    name: efage04
-    type: BIGINT
-    years: 2002-2024
+    years: 1987,1999,2002-2024
   XEFAGE05:
     name: efage05_flag
     type: VARCHAR
     flag_for: efage05
-    years: 2002-2024
-  EFAGE05:
-    name: efage05
-    type: BIGINT
-    years: 2002-2024
+    years: 1987,1999,2002-2024
   XEFAGE06:
     name: efage06_flag
     type: VARCHAR
     flag_for: efage06
-    years: 2002-2024
-  EFAGE06:
-    name: efage06
-    type: BIGINT
-    years: 2002-2024
+    years: 1987,1999,2002-2024
   XEFAGE07:
     name: efage07_flag
     type: VARCHAR
     flag_for: efage07
-    years: 2002-2024
-  EFAGE07:
-    name: efage07
-    type: BIGINT
-    years: 2002-2024
+    years: 1987,1999,2002-2024
   XEFAGE08:
     name: efage08_flag
     type: VARCHAR
     flag_for: efage08
-    years: 2002-2024
-  EFAGE08:
-    name: efage08
-    type: BIGINT
-    years: 2002-2024
+    years: 1987,1999,2002-2024
   XEFAGE09:
     name: efage09_flag
     type: VARCHAR
     flag_for: efage09
-    years: 2002-2024
-  EFAGE09:
-    name: efage09
+    years: 1987,1999,2002-2024
+  XEFAGE10:
+    name: efage10_flag
+    type: VARCHAR
+    flag_for: efage10
+    years: '1987'
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1995,1997
+  FILLER:
+    name: filler
     type: BIGINT
-    years: 2002-2024
+    years: '1995'
+  IB01:
+    name: ib01
+    type: VARCHAR
+    years: 1995,1997
+  IB02:
+    name: ib02
+    type: VARCHAR
+    years: 1995,1997
+  IB03:
+    name: ib03
+    type: VARCHAR
+    years: 1995,1997
+  IB04:
+    name: ib04
+    type: VARCHAR
+    years: 1995,1997
+  IB05:
+    name: ib05
+    type: VARCHAR
+    years: 1995,1997
+  IB06:
+    name: ib06
+    type: VARCHAR
+    years: 1995,1997
+  IB07:
+    name: ib07
+    type: VARCHAR
+    years: 1995,1997
+  IB08:
+    name: ib08
+    type: VARCHAR
+    years: 1995,1997
+  EFBAGE:
+    name: efbage
+    type: BIGINT
+    years: 1999,2002-2024

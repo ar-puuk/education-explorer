@@ -1,0 +1,217 @@
+source: ipeds
+family: ichdac
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1998'
+  FORM_IC:
+    name: form_ic
+    type: BIGINT
+    years: '1998'
+  STAT_IC:
+    name: stat_ic
+    type: BIGINT
+    years: '1998'
+  STAT_PTE:
+    name: stat_pte
+    type: BIGINT
+    years: '1998'
+  PRCH_IC:
+    name: prch_ic
+    type: BIGINT
+    years: '1998'
+  IDX_IC:
+    name: idx_ic
+    type: BIGINT
+    years: '1998'
+  IMP_IC:
+    name: imp_ic
+    type: BIGINT
+    years: '1998'
+  CYACTIVE:
+    name: cyactive
+    type: BIGINT
+    years: '1998'
+  CLOSEDAT:
+    name: closedat
+    type: BIGINT
+    years: '1998'
+  INSTNM:
+    name: instnm
+    type: VARCHAR
+    years: '1998'
+  ADDR:
+    name: addr
+    type: VARCHAR
+    years: '1998'
+  CITY:
+    name: city
+    type: VARCHAR
+    years: '1998'
+  STABBR:
+    name: stabbr
+    type: VARCHAR
+    years: '1998'
+  ZIP:
+    name: zip
+    type: BIGINT
+    years: '1998'
+  COUNTYNM:
+    name: countynm
+    type: VARCHAR
+    years: '1998'
+  CNTYGEO:
+    name: cntygeo
+    type: BIGINT
+    years: '1998'
+  FIPS:
+    name: fips
+    type: BIGINT
+    years: '1998'
+  OBEREG:
+    name: obereg
+    type: BIGINT
+    years: '1998'
+  CHFNM:
+    name: chfnm
+    type: VARCHAR
+    years: '1998'
+  CHFTITLE:
+    name: chftitle
+    type: VARCHAR
+    years: '1998'
+  GENTELE:
+    name: gentele
+    type: BIGINT
+    years: '1998'
+  FINTELE:
+    name: fintele
+    type: BIGINT
+    years: '1998'
+  ADMTELE:
+    name: admtele
+    type: BIGINT
+    years: '1998'
+  EIN:
+    name: ein
+    type: BIGINT
+    years: '1998'
+  DUNS:
+    name: duns
+    type: BIGINT
+    years: '1998'
+  OPEID:
+    name: opeid
+    type: BIGINT
+    years: '1998'
+  OPEFLAG:
+    name: opeflag
+    type: BIGINT
+    years: '1998'
+  REFU_IC:
+    name: refu_ic
+    type: BIGINT
+    years: '1998'
+  SRC_IC:
+    name: src_ic
+    type: BIGINT
+    years: '1998'
+  EDIT_IC:
+    name: edit_ic
+    type: BIGINT
+    years: '1998'
+  DATE_IC:
+    name: date_ic
+    type: BIGINT
+    years: '1998'
+  SECTOR:
+    name: sector
+    type: BIGINT
+    years: '1998'
+  ICLEVEL:
+    name: iclevel
+    type: BIGINT
+    years: '1998'
+  CONTROL:
+    name: control
+    type: BIGINT
+    years: '1998'
+  AFFIL:
+    name: affil
+    type: BIGINT
+    years: '1998'
+  HLOFFER:
+    name: hloffer
+    type: BIGINT
+    years: '1998'
+  UGOFFER:
+    name: ugoffer
+    type: BIGINT
+    years: '1998'
+  GROFFER:
+    name: groffer
+    type: BIGINT
+    years: '1998'
+  FPOFFER:
+    name: fpoffer
+    type: BIGINT
+    years: '1998'
+  HDEGOFFR:
+    name: hdegoffr
+    type: BIGINT
+    years: '1998'
+  PCTMIN1:
+    name: pctmin1
+    type: BIGINT
+    years: '1998'
+  PCTMIN2:
+    name: pctmin2
+    type: BIGINT
+    years: '1998'
+  PCTMIN3:
+    name: pctmin3
+    type: BIGINT
+    years: '1998'
+  PCTMIN4:
+    name: pctmin4
+    type: BIGINT
+    years: '1998'
+  HBCU:
+    name: hbcu
+    type: BIGINT
+    years: '1998'
+  HOSPITAL:
+    name: hospital
+    type: BIGINT
+    years: '1998'
+  MEDICAL:
+    name: medical
+    type: BIGINT
+    years: '1998'
+  TRIBAL:
+    name: tribal
+    type: BIGINT
+    years: '1998'
+  CARNEGIE:
+    name: carnegie
+    type: BIGINT
+    years: '1998'
+  LOCALE:
+    name: locale
+    type: BIGINT
+    years: '1998'
+  ACT:
+    name: act
+    type: VARCHAR
+    years: '1998'
+  NEWID:
+    name: newid
+    type: BIGINT
+    years: '1998'
+  DEATHYR:
+    name: deathyr
+    type: BIGINT
+    years: '1998'

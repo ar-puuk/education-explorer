@@ -1,0 +1,89 @@
+source: ipeds
+family: salhd
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1990,1998
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: '1990'
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: '1990'
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1990'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: '1990'
+  BOX1:
+    name: box1
+    type: BIGINT
+    years: '1990'
+  BOX2:
+    name: box2
+    type: BIGINT
+    years: '1990'
+  BOX3:
+    name: box3
+    type: BIGINT
+    years: '1990'
+  FORM_SA:
+    name: form_sa
+    type: BIGINT
+    years: '1998'
+  STAT_SA:
+    name: stat_sa
+    type: BIGINT
+    years: '1998'
+  PRCH_SA:
+    name: prch_sa
+    type: BIGINT
+    years: '1998'
+  IDX_SA:
+    name: idx_sa
+    type: BIGINT
+    years: '1998'
+  IMP_SA:
+    name: imp_sa
+    type: BIGINT
+    years: '1998'
+  REFU_SA:
+    name: refu_sa
+    type: BIGINT
+    years: '1998'
+  SRC_SA:
+    name: src_sa
+    type: BIGINT
+    years: '1998'
+  EDIT_SA:
+    name: edit_sa
+    type: BIGINT
+    years: '1998'
+  DATE_SA:
+    name: date_sa
+    type: BIGINT
+    years: '1998'
+  FACPT:
+    name: facpt
+    type: BIGINT
+    years: '1998'
+  FACML:
+    name: facml
+    type: BIGINT
+    years: '1998'
+  FACRL:
+    name: facrl
+    type: BIGINT
+    years: '1998'
+  FACMD:
+    name: facmd
+    type: BIGINT
+    years: '1998'

@@ -1,0 +1,261 @@
+source: ipeds
+family: icc
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1991,1998
+  CALSYS:
+    name: calsys
+    type: BIGINT
+    years: 1991,1998
+  CRSLOC1:
+    name: crsloc1
+    type: BIGINT
+    years: 1991,1998
+  CRSLOC2:
+    name: crsloc2
+    type: BIGINT
+    years: 1991,1998
+  CRSLOC3:
+    name: crsloc3
+    type: BIGINT
+    years: 1991,1998
+  CRSLOC4:
+    name: crsloc4
+    type: BIGINT
+    years: 1991,1998
+  CRSLOC5:
+    name: crsloc5
+    type: BIGINT
+    years: 1991,1998
+  CRSLOC6:
+    name: crsloc6
+    type: BIGINT
+    years: 1991,1998
+  FACLOC1:
+    name: facloc1
+    type: BIGINT
+    years: 1991,1998
+  FACLOC2:
+    name: facloc2
+    type: BIGINT
+    years: 1991,1998
+  FACLOC3:
+    name: facloc3
+    type: BIGINT
+    years: 1991,1998
+  FACLOC4:
+    name: facloc4
+    type: BIGINT
+    years: 1991,1998
+  FACLOC6:
+    name: facloc6
+    type: BIGINT
+    years: 1991,1998
+  FACLOC7:
+    name: facloc7
+    type: BIGINT
+    years: 1991,1998
+  FACLOC8:
+    name: facloc8
+    type: BIGINT
+    years: 1991,1998
+  FACLOC9:
+    name: facloc9
+    type: BIGINT
+    years: 1991,1998
+  FACLOC10:
+    name: facloc10
+    type: BIGINT
+    years: 1991,1998
+  FACLOC12:
+    name: facloc12
+    type: BIGINT
+    years: '1991'
+  MILI:
+    name: mili
+    type: BIGINT
+    years: 1991,1998
+  MIL1INSL:
+    name: mil1insl
+    type: BIGINT
+    years: 1991,1998
+  MIL2INSL:
+    name: mil2insl
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ1:
+    name: admreq1
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ2:
+    name: admreq2
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ3:
+    name: admreq3
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ4:
+    name: admreq4
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ5:
+    name: admreq5
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ6:
+    name: admreq6
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ7:
+    name: admreq7
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ8:
+    name: admreq8
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ9:
+    name: admreq9
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ10:
+    name: admreq10
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ11:
+    name: admreq11
+    type: BIGINT
+    years: 1991,1998
+  ADMREQ12:
+    name: admreq12
+    type: BIGINT
+    years: 1991,1998
+  YRSCOL:
+    name: yrscol
+    type: BIGINT
+    years: '1991'
+  MODE1:
+    name: mode1
+    type: BIGINT
+    years: 1991,1998
+  MODE2:
+    name: mode2
+    type: BIGINT
+    years: 1991,1998
+  MODE3:
+    name: mode3
+    type: BIGINT
+    years: 1991,1998
+  MODE4:
+    name: mode4
+    type: BIGINT
+    years: 1991,1998
+  MODE5:
+    name: mode5
+    type: BIGINT
+    years: 1991,1998
+  MODE6:
+    name: mode6
+    type: BIGINT
+    years: 1991,1998
+  MODE7:
+    name: mode7
+    type: BIGINT
+    years: 1991,1998
+  MODE8:
+    name: mode8
+    type: BIGINT
+    years: 1991,1998
+  MODE9:
+    name: mode9
+    type: BIGINT
+    years: 1991,1998
+  MODE10:
+    name: mode10
+    type: BIGINT
+    years: 1991,1998
+  MODE11:
+    name: mode11
+    type: BIGINT
+    years: 1991,1998
+  MODE12:
+    name: mode12
+    type: BIGINT
+    years: 1991,1998
+  MODE13:
+    name: mode13
+    type: BIGINT
+    years: 1991,1998
+  MODE14:
+    name: mode14
+    type: BIGINT
+    years: 1991,1998
+  STUSRV1:
+    name: stusrv1
+    type: BIGINT
+    years: 1991,1998
+  STUSRV2:
+    name: stusrv2
+    type: BIGINT
+    years: 1991,1998
+  STUSRV3:
+    name: stusrv3
+    type: BIGINT
+    years: 1991,1998
+  STUSRV4:
+    name: stusrv4
+    type: BIGINT
+    years: 1991,1998
+  STUSRV5:
+    name: stusrv5
+    type: BIGINT
+    years: 1991,1998
+  STUSRV6:
+    name: stusrv6
+    type: BIGINT
+    years: 1991,1998
+  STUSRV7:
+    name: stusrv7
+    type: BIGINT
+    years: 1991,1998
+  STUSRV8:
+    name: stusrv8
+    type: BIGINT
+    years: 1991,1998
+  STUSRV9:
+    name: stusrv9
+    type: BIGINT
+    years: 1991,1998
+  LIBFAC:
+    name: libfac
+    type: BIGINT
+    years: 1991,1998
+  LIBSHAR1:
+    name: libshar1
+    type: BIGINT
+    years: 1991,1998
+  LIBSHAR2:
+    name: libshar2
+    type: BIGINT
+    years: 1991,1998
+  LIBSHAR3:
+    name: libshar3
+    type: BIGINT
+    years: 1991,1998
+  FACLOC5:
+    name: facloc5
+    type: BIGINT
+    years: '1998'
+  ADMREQ13:
+    name: admreq13
+    type: BIGINT
+    years: '1998'
+  YRSCOLL:
+    name: yrscoll
+    type: BIGINT
+    years: '1998'

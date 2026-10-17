@@ -1,0 +1,1840 @@
+source: ipeds
+family: f
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1980,1984-1986,1988
+  A01:
+    name: a01
+    type: BIGINT
+    years: 1980,1984-1986
+  A02:
+    name: a02
+    type: BIGINT
+    years: 1980,1984-1986
+  A03:
+    name: a03
+    type: BIGINT
+    years: 1980,1984-1986
+  A04:
+    name: a04
+    type: BIGINT
+    years: 1980,1984-1986
+  A05:
+    name: a05
+    type: BIGINT
+    years: 1980,1984-1986
+  A06:
+    name: a06
+    type: BIGINT
+    years: 1980,1984-1986
+  A07:
+    name: a07
+    type: BIGINT
+    years: 1980,1984-1986
+  A08:
+    name: a08
+    type: BIGINT
+    years: 1980,1984-1986
+  A09:
+    name: a09
+    type: BIGINT
+    years: 1980,1984-1986
+  A10:
+    name: a10
+    type: BIGINT
+    years: 1980,1984-1986
+  A11:
+    name: a11
+    type: BIGINT
+    years: 1980,1984-1986
+  A12:
+    name: a12
+    type: BIGINT
+    years: 1980,1984-1986
+  A13:
+    name: a13
+    type: BIGINT
+    years: 1980,1984-1986
+  A14:
+    name: a14
+    type: BIGINT
+    years: 1980,1984-1986
+  A15:
+    name: a15
+    type: BIGINT
+    years: 1980,1984-1986
+  A16:
+    name: a16
+    type: BIGINT
+    years: 1980,1984-1986
+  A17:
+    name: a17
+    type: BIGINT
+    years: 1980,1984-1986
+  A18:
+    name: a18
+    type: BIGINT
+    years: 1980,1984-1986
+  A19:
+    name: a19
+    type: BIGINT
+    years: 1980,1984-1986
+  A20:
+    name: a20
+    type: BIGINT
+    years: 1980,1984-1986
+  IA01:
+    name: ia01
+    type: BIGINT
+    years: 1980,1986
+  IA02:
+    name: ia02
+    type: BIGINT
+    years: 1980,1986
+  IA03:
+    name: ia03
+    type: BIGINT
+    years: 1980,1986
+  IA04:
+    name: ia04
+    type: BIGINT
+    years: 1980,1986
+  IA05:
+    name: ia05
+    type: BIGINT
+    years: 1980,1986
+  IA06:
+    name: ia06
+    type: BIGINT
+    years: 1980,1986
+  IA07:
+    name: ia07
+    type: BIGINT
+    years: 1980,1986
+  IA08:
+    name: ia08
+    type: BIGINT
+    years: 1980,1986
+  IA09:
+    name: ia09
+    type: BIGINT
+    years: 1980,1986
+  IA10:
+    name: ia10
+    type: BIGINT
+    years: 1980,1986
+  IA11:
+    name: ia11
+    type: BIGINT
+    years: 1980,1986
+  IA12:
+    name: ia12
+    type: BIGINT
+    years: 1980,1986
+  IA13:
+    name: ia13
+    type: BIGINT
+    years: 1980,1986
+  IA14:
+    name: ia14
+    type: BIGINT
+    years: 1980,1986
+  IA15:
+    name: ia15
+    type: BIGINT
+    years: 1980,1986
+  IA16:
+    name: ia16
+    type: BIGINT
+    years: 1980,1986
+  IA17:
+    name: ia17
+    type: BIGINT
+    years: 1980,1986
+  IA18:
+    name: ia18
+    type: BIGINT
+    years: 1980,1986
+  IA19:
+    name: ia19
+    type: BIGINT
+    years: 1980,1986
+  IA20:
+    name: ia20
+    type: BIGINT
+    years: 1980,1986
+  B01:
+    name: b01
+    type: BIGINT
+    years: 1980,1984-1986
+  B02:
+    name: b02
+    type: BIGINT
+    years: 1980,1984-1986
+  B03:
+    name: b03
+    type: BIGINT
+    years: 1980,1984-1986
+  B04:
+    name: b04
+    type: BIGINT
+    years: 1980,1984-1986
+  B05:
+    name: b05
+    type: BIGINT
+    years: 1980,1984-1986
+  B06:
+    name: b06
+    type: BIGINT
+    years: 1980,1984-1986
+  B07:
+    name: b07
+    type: BIGINT
+    years: 1980,1984-1986
+  B08:
+    name: b08
+    type: BIGINT
+    years: 1980,1984-1986
+  B09:
+    name: b09
+    type: BIGINT
+    years: 1980,1984-1986
+  B10:
+    name: b10
+    type: BIGINT
+    years: 1980,1984-1986
+  B11:
+    name: b11
+    type: BIGINT
+    years: 1980,1984-1986
+  B12:
+    name: b12
+    type: BIGINT
+    years: 1980,1984-1986
+  B13:
+    name: b13
+    type: BIGINT
+    years: 1980,1984-1986
+  B14:
+    name: b14
+    type: BIGINT
+    years: 1980,1984-1986
+  B15:
+    name: b15
+    type: BIGINT
+    years: 1980,1984-1986
+  B16:
+    name: b16
+    type: BIGINT
+    years: 1980,1984-1986
+  B17:
+    name: b17
+    type: BIGINT
+    years: 1980,1984-1986
+  B18:
+    name: b18
+    type: BIGINT
+    years: 1980,1984-1986
+  B19:
+    name: b19
+    type: BIGINT
+    years: 1980,1984-1986
+  IB01:
+    name: ib01
+    type: BIGINT
+    years: 1980,1986
+  IB02:
+    name: ib02
+    type: BIGINT
+    years: 1980,1986
+  IB03:
+    name: ib03
+    type: BIGINT
+    years: 1980,1986
+  IB04:
+    name: ib04
+    type: BIGINT
+    years: 1980,1986
+  IB05:
+    name: ib05
+    type: BIGINT
+    years: 1980,1986
+  IB06:
+    name: ib06
+    type: BIGINT
+    years: 1980,1986
+  IB07:
+    name: ib07
+    type: BIGINT
+    years: 1980,1986
+  IB08:
+    name: ib08
+    type: BIGINT
+    years: 1980,1986
+  IB09:
+    name: ib09
+    type: BIGINT
+    years: 1980,1986
+  IB10:
+    name: ib10
+    type: BIGINT
+    years: 1980,1986
+  IB11:
+    name: ib11
+    type: BIGINT
+    years: 1980,1986
+  IB12:
+    name: ib12
+    type: BIGINT
+    years: 1980,1986
+  IB13:
+    name: ib13
+    type: BIGINT
+    years: 1980,1986
+  IB14:
+    name: ib14
+    type: BIGINT
+    years: 1980,1986
+  IB15:
+    name: ib15
+    type: BIGINT
+    years: 1980,1986
+  IB16:
+    name: ib16
+    type: BIGINT
+    years: 1980,1986
+  IB17:
+    name: ib17
+    type: BIGINT
+    years: 1980,1986
+  IB18:
+    name: ib18
+    type: BIGINT
+    years: 1980,1986
+  IB19:
+    name: ib19
+    type: BIGINT
+    years: 1980,1986
+  C12:
+    name: c12
+    type: BIGINT
+    years: 1980,1984-1986
+  C13:
+    name: c13
+    type: BIGINT
+    years: 1980,1984-1986
+  C14:
+    name: c14
+    type: BIGINT
+    years: 1980,1984-1986
+  C15:
+    name: c15
+    type: BIGINT
+    years: 1980,1984-1986
+  C22:
+    name: c22
+    type: BIGINT
+    years: 1980,1984-1986
+  C23:
+    name: c23
+    type: BIGINT
+    years: 1980,1984-1986
+  C24:
+    name: c24
+    type: BIGINT
+    years: 1980,1984-1986
+  C25:
+    name: c25
+    type: BIGINT
+    years: 1980,1984-1986
+  C26:
+    name: c26
+    type: BIGINT
+    years: 1980,1984-1986
+  C32:
+    name: c32
+    type: BIGINT
+    years: 1980,1984-1986
+  C33:
+    name: c33
+    type: BIGINT
+    years: 1980,1984-1986
+  C34:
+    name: c34
+    type: BIGINT
+    years: 1980,1984-1986
+  C35:
+    name: c35
+    type: BIGINT
+    years: 1980,1984-1986
+  IC12:
+    name: ic12
+    type: BIGINT
+    years: 1980,1986
+  IC13:
+    name: ic13
+    type: BIGINT
+    years: 1980,1986
+  IC14:
+    name: ic14
+    type: BIGINT
+    years: 1980,1986
+  IC15:
+    name: ic15
+    type: BIGINT
+    years: 1980,1986
+  IC22:
+    name: ic22
+    type: BIGINT
+    years: 1980,1986
+  IC23:
+    name: ic23
+    type: BIGINT
+    years: 1980,1986
+  IC24:
+    name: ic24
+    type: BIGINT
+    years: 1980,1986
+  IC25:
+    name: ic25
+    type: BIGINT
+    years: 1980,1986
+  IC26:
+    name: ic26
+    type: BIGINT
+    years: 1980,1986
+  IC32:
+    name: ic32
+    type: BIGINT
+    years: 1980,1986
+  IC33:
+    name: ic33
+    type: BIGINT
+    years: 1980,1986
+  IC34:
+    name: ic34
+    type: BIGINT
+    years: 1980,1986
+  IC35:
+    name: ic35
+    type: BIGINT
+    years: 1980,1986
+  D01:
+    name: d01
+    type: BIGINT
+    years: 1980,1984-1986
+  D02:
+    name: d02
+    type: BIGINT
+    years: 1980,1984-1986
+  D03:
+    name: d03
+    type: BIGINT
+    years: 1980,1984-1986
+  D04:
+    name: d04
+    type: BIGINT
+    years: 1980,1984-1986
+  D05:
+    name: d05
+    type: BIGINT
+    years: 1980,1984-1986
+  ID01:
+    name: id01
+    type: BIGINT
+    years: 1980,1986
+  ID02:
+    name: id02
+    type: BIGINT
+    years: 1980,1986
+  ID03:
+    name: id03
+    type: BIGINT
+    years: 1980,1986
+  ID04:
+    name: id04
+    type: BIGINT
+    years: 1980,1986
+  ID05:
+    name: id05
+    type: BIGINT
+    years: 1980,1986
+  E11:
+    name: e11
+    type: BIGINT
+    years: 1980,1984-1986
+  E21:
+    name: e21
+    type: BIGINT
+    years: 1980,1984-1986
+  E30:
+    name: e30
+    type: BIGINT
+    years: 1980,1984-1986
+  E12:
+    name: e12
+    type: BIGINT
+    years: 1980,1984-1986
+  E22:
+    name: e22
+    type: BIGINT
+    years: 1980,1984-1986
+  IE11:
+    name: ie11
+    type: BIGINT
+    years: 1980,1986
+  IE21:
+    name: ie21
+    type: BIGINT
+    years: 1980,1986
+  IE30:
+    name: ie30
+    type: BIGINT
+    years: 1980,1986
+  IE12:
+    name: ie12
+    type: BIGINT
+    years: 1980,1986
+  IE22:
+    name: ie22
+    type: BIGINT
+    years: 1980,1986
+  F11:
+    name: f11
+    type: BIGINT
+    years: 1980,1984-1986
+  F12:
+    name: f12
+    type: BIGINT
+    years: 1980,1984-1986
+  F13:
+    name: f13
+    type: BIGINT
+    years: 1980,1984-1986
+  F14:
+    name: f14
+    type: BIGINT
+    years: 1980,1984-1986
+  F15:
+    name: f15
+    type: BIGINT
+    years: 1980,1984-1986
+  F16:
+    name: f16
+    type: BIGINT
+    years: 1980,1984-1986
+  F21:
+    name: f21
+    type: BIGINT
+    years: 1980,1984-1986
+  F22:
+    name: f22
+    type: BIGINT
+    years: 1980,1984-1986
+  F23:
+    name: f23
+    type: BIGINT
+    years: 1980,1984-1986
+  F24:
+    name: f24
+    type: BIGINT
+    years: 1980,1984-1986
+  F25:
+    name: f25
+    type: BIGINT
+    years: 1980,1984-1986
+  F26:
+    name: f26
+    type: BIGINT
+    years: 1980,1984-1986
+  F31:
+    name: f31
+    type: BIGINT
+    years: 1980,1984-1986
+  F32:
+    name: f32
+    type: BIGINT
+    years: 1980,1984-1986
+  F33:
+    name: f33
+    type: BIGINT
+    years: 1980,1984-1986
+  F34:
+    name: f34
+    type: BIGINT
+    years: 1980,1984-1986
+  F35:
+    name: f35
+    type: BIGINT
+    years: 1980,1984-1986
+  F36:
+    name: f36
+    type: BIGINT
+    years: 1980,1984-1986
+  F41:
+    name: f41
+    type: BIGINT
+    years: 1980,1984-1986
+  F42:
+    name: f42
+    type: BIGINT
+    years: 1980,1984-1986
+  F43:
+    name: f43
+    type: BIGINT
+    years: 1980,1984-1986
+  F44:
+    name: f44
+    type: BIGINT
+    years: 1980,1984-1986
+  F45:
+    name: f45
+    type: BIGINT
+    years: 1980,1984-1986
+  F46:
+    name: f46
+    type: BIGINT
+    years: 1980,1984-1986
+  F51:
+    name: f51
+    type: BIGINT
+    years: 1980,1984-1986
+  F52:
+    name: f52
+    type: BIGINT
+    years: 1980,1984-1986
+  F53:
+    name: f53
+    type: BIGINT
+    years: 1980,1984-1986
+  F54:
+    name: f54
+    type: BIGINT
+    years: 1980,1984-1986
+  F55:
+    name: f55
+    type: BIGINT
+    years: 1980,1984-1986
+  F56:
+    name: f56
+    type: BIGINT
+    years: 1980,1984-1986
+  F61:
+    name: f61
+    type: BIGINT
+    years: 1980,1984-1986
+  F62:
+    name: f62
+    type: BIGINT
+    years: 1980,1984-1986
+  F63:
+    name: f63
+    type: BIGINT
+    years: 1980,1984-1986
+  F64:
+    name: f64
+    type: BIGINT
+    years: 1980,1984-1986
+  F65:
+    name: f65
+    type: BIGINT
+    years: 1980,1984-1986
+  F66:
+    name: f66
+    type: BIGINT
+    years: 1980,1984-1986
+  IF11:
+    name: if11
+    type: BIGINT
+    years: 1980,1986
+  IF12:
+    name: if12
+    type: BIGINT
+    years: 1980,1986
+  IF13:
+    name: if13
+    type: BIGINT
+    years: 1980,1986
+  IF14:
+    name: if14
+    type: BIGINT
+    years: 1980,1986
+  IF15:
+    name: if15
+    type: BIGINT
+    years: 1980,1986
+  IF16:
+    name: if16
+    type: BIGINT
+    years: 1980,1986
+  IF21:
+    name: if21
+    type: BIGINT
+    years: 1980,1986
+  IF22:
+    name: if22
+    type: BIGINT
+    years: 1980,1986
+  IF23:
+    name: if23
+    type: BIGINT
+    years: 1980,1986
+  IF24:
+    name: if24
+    type: BIGINT
+    years: 1980,1986
+  IF25:
+    name: if25
+    type: BIGINT
+    years: 1980,1986
+  IF26:
+    name: if26
+    type: BIGINT
+    years: 1980,1986
+  IF31:
+    name: if31
+    type: BIGINT
+    years: 1980,1986
+  IF32:
+    name: if32
+    type: BIGINT
+    years: 1980,1986
+  IF33:
+    name: if33
+    type: BIGINT
+    years: 1980,1986
+  IF34:
+    name: if34
+    type: BIGINT
+    years: 1980,1986
+  IF35:
+    name: if35
+    type: BIGINT
+    years: 1980,1986
+  IF36:
+    name: if36
+    type: BIGINT
+    years: 1980,1986
+  IF41:
+    name: if41
+    type: BIGINT
+    years: 1980,1986
+  IF42:
+    name: if42
+    type: BIGINT
+    years: 1980,1986
+  IF43:
+    name: if43
+    type: BIGINT
+    years: 1980,1986
+  IF44:
+    name: if44
+    type: BIGINT
+    years: 1980,1986
+  IF45:
+    name: if45
+    type: BIGINT
+    years: 1980,1986
+  IF46:
+    name: if46
+    type: BIGINT
+    years: 1980,1986
+  IF51:
+    name: if51
+    type: BIGINT
+    years: 1980,1986
+  IF52:
+    name: if52
+    type: BIGINT
+    years: 1980,1986
+  IF53:
+    name: if53
+    type: BIGINT
+    years: 1980,1986
+  IF54:
+    name: if54
+    type: BIGINT
+    years: 1980,1986
+  IF55:
+    name: if55
+    type: BIGINT
+    years: 1980,1986
+  IF56:
+    name: if56
+    type: BIGINT
+    years: 1980,1986
+  IF61:
+    name: if61
+    type: BIGINT
+    years: 1980,1986
+  IF62:
+    name: if62
+    type: BIGINT
+    years: 1980,1986
+  IF63:
+    name: if63
+    type: BIGINT
+    years: 1980,1986
+  IF64:
+    name: if64
+    type: BIGINT
+    years: 1980,1986
+  IF65:
+    name: if65
+    type: BIGINT
+    years: 1980,1986
+  IF66:
+    name: if66
+    type: BIGINT
+    years: 1980,1986
+  NONREP:
+    name: nonrep
+    type: BIGINT
+    years: 1984-1985
+  A21:
+    name: a21
+    type: BIGINT
+    years: 1984-1986
+  XA01:
+    name: a01_flag
+    type: VARCHAR
+    flag_for: a01
+    years: '1984'
+  XA02:
+    name: a02_flag
+    type: VARCHAR
+    flag_for: a02
+    years: '1984'
+  XA03:
+    name: a03_flag
+    type: VARCHAR
+    flag_for: a03
+    years: '1984'
+  XA04:
+    name: a04_flag
+    type: VARCHAR
+    flag_for: a04
+    years: '1984'
+  XA05:
+    name: a05_flag
+    type: VARCHAR
+    flag_for: a05
+    years: '1984'
+  XA06:
+    name: a06_flag
+    type: VARCHAR
+    flag_for: a06
+    years: '1984'
+  XA07:
+    name: a07_flag
+    type: VARCHAR
+    flag_for: a07
+    years: '1984'
+  XA08:
+    name: a08_flag
+    type: VARCHAR
+    flag_for: a08
+    years: '1984'
+  XA09:
+    name: a09_flag
+    type: VARCHAR
+    flag_for: a09
+    years: '1984'
+  XA10:
+    name: a10_flag
+    type: VARCHAR
+    flag_for: a10
+    years: '1984'
+  XA11:
+    name: a11_flag
+    type: VARCHAR
+    flag_for: a11
+    years: '1984'
+  XA12:
+    name: a12_flag
+    type: VARCHAR
+    flag_for: a12
+    years: '1984'
+  XA13:
+    name: a13_flag
+    type: VARCHAR
+    flag_for: a13
+    years: '1984'
+  XA14:
+    name: a14_flag
+    type: VARCHAR
+    flag_for: a14
+    years: '1984'
+  XA15:
+    name: a15_flag
+    type: VARCHAR
+    flag_for: a15
+    years: '1984'
+  XA16:
+    name: a16_flag
+    type: VARCHAR
+    flag_for: a16
+    years: '1984'
+  XA17:
+    name: a17_flag
+    type: VARCHAR
+    flag_for: a17
+    years: '1984'
+  XA18:
+    name: a18_flag
+    type: VARCHAR
+    flag_for: a18
+    years: '1984'
+  XA19:
+    name: a19_flag
+    type: VARCHAR
+    flag_for: a19
+    years: '1984'
+  XA20:
+    name: a20_flag
+    type: VARCHAR
+    flag_for: a20
+    years: '1984'
+  XA21:
+    name: a21_flag
+    type: VARCHAR
+    flag_for: a21
+    years: '1984'
+  XB01:
+    name: b01_flag
+    type: VARCHAR
+    flag_for: b01
+    years: '1984'
+  XB02:
+    name: b02_flag
+    type: VARCHAR
+    flag_for: b02
+    years: '1984'
+  XB03:
+    name: b03_flag
+    type: VARCHAR
+    flag_for: b03
+    years: '1984'
+  XB04:
+    name: b04_flag
+    type: VARCHAR
+    flag_for: b04
+    years: '1984'
+  XB05:
+    name: b05_flag
+    type: VARCHAR
+    flag_for: b05
+    years: '1984'
+  XB06:
+    name: b06_flag
+    type: VARCHAR
+    flag_for: b06
+    years: '1984'
+  XB07:
+    name: b07_flag
+    type: VARCHAR
+    flag_for: b07
+    years: '1984'
+  XB08:
+    name: b08_flag
+    type: VARCHAR
+    flag_for: b08
+    years: '1984'
+  XB09:
+    name: b09_flag
+    type: VARCHAR
+    flag_for: b09
+    years: '1984'
+  XB10:
+    name: b10_flag
+    type: VARCHAR
+    flag_for: b10
+    years: '1984'
+  XB11:
+    name: b11_flag
+    type: VARCHAR
+    flag_for: b11
+    years: '1984'
+  XB12:
+    name: b12_flag
+    type: VARCHAR
+    flag_for: b12
+    years: '1984'
+  XB13:
+    name: b13_flag
+    type: VARCHAR
+    flag_for: b13
+    years: '1984'
+  XB14:
+    name: b14_flag
+    type: VARCHAR
+    flag_for: b14
+    years: '1984'
+  XB15:
+    name: b15_flag
+    type: VARCHAR
+    flag_for: b15
+    years: '1984'
+  XB16:
+    name: b16_flag
+    type: VARCHAR
+    flag_for: b16
+    years: '1984'
+  XB17:
+    name: b17_flag
+    type: VARCHAR
+    flag_for: b17
+    years: '1984'
+  XB18:
+    name: b18_flag
+    type: VARCHAR
+    flag_for: b18
+    years: '1984'
+  XB19:
+    name: b19_flag
+    type: VARCHAR
+    flag_for: b19
+    years: '1984'
+  XC12:
+    name: c12_flag
+    type: VARCHAR
+    flag_for: c12
+    years: '1984'
+  XC13:
+    name: c13_flag
+    type: VARCHAR
+    flag_for: c13
+    years: '1984'
+  XC14:
+    name: c14_flag
+    type: VARCHAR
+    flag_for: c14
+    years: '1984'
+  XC15:
+    name: c15_flag
+    type: VARCHAR
+    flag_for: c15
+    years: '1984'
+  XC22:
+    name: c22_flag
+    type: VARCHAR
+    flag_for: c22
+    years: '1984'
+  XC23:
+    name: c23_flag
+    type: VARCHAR
+    flag_for: c23
+    years: '1984'
+  XC24:
+    name: c24_flag
+    type: VARCHAR
+    flag_for: c24
+    years: '1984'
+  XC25:
+    name: c25_flag
+    type: VARCHAR
+    flag_for: c25
+    years: '1984'
+  XC26:
+    name: c26_flag
+    type: VARCHAR
+    flag_for: c26
+    years: '1984'
+  XC32:
+    name: c32_flag
+    type: VARCHAR
+    flag_for: c32
+    years: '1984'
+  XC33:
+    name: c33_flag
+    type: VARCHAR
+    flag_for: c33
+    years: '1984'
+  XC34:
+    name: c34_flag
+    type: VARCHAR
+    flag_for: c34
+    years: '1984'
+  XC35:
+    name: c35_flag
+    type: VARCHAR
+    flag_for: c35
+    years: '1984'
+  XD01:
+    name: d01_flag
+    type: VARCHAR
+    flag_for: d01
+    years: '1984'
+  XD02:
+    name: d02_flag
+    type: VARCHAR
+    flag_for: d02
+    years: '1984'
+  XD03:
+    name: d03_flag
+    type: VARCHAR
+    flag_for: d03
+    years: '1984'
+  XD04:
+    name: d04_flag
+    type: VARCHAR
+    flag_for: d04
+    years: '1984'
+  XD05:
+    name: d05_flag
+    type: VARCHAR
+    flag_for: d05
+    years: '1984'
+  XE11:
+    name: e11_flag
+    type: VARCHAR
+    flag_for: e11
+    years: '1984'
+  XE12:
+    name: e12_flag
+    type: VARCHAR
+    flag_for: e12
+    years: '1984'
+  XE21:
+    name: e21_flag
+    type: VARCHAR
+    flag_for: e21
+    years: '1984'
+  XE22:
+    name: e22_flag
+    type: VARCHAR
+    flag_for: e22
+    years: '1984'
+  XE30:
+    name: e30_flag
+    type: VARCHAR
+    flag_for: e30
+    years: '1984'
+  XF11:
+    name: f11_flag
+    type: VARCHAR
+    flag_for: f11
+    years: '1984'
+  XF12:
+    name: f12_flag
+    type: VARCHAR
+    flag_for: f12
+    years: '1984'
+  XF13:
+    name: f13_flag
+    type: VARCHAR
+    flag_for: f13
+    years: '1984'
+  XF14:
+    name: f14_flag
+    type: VARCHAR
+    flag_for: f14
+    years: '1984'
+  XF15:
+    name: f15_flag
+    type: VARCHAR
+    flag_for: f15
+    years: '1984'
+  XF16:
+    name: f16_flag
+    type: VARCHAR
+    flag_for: f16
+    years: '1984'
+  XF21:
+    name: f21_flag
+    type: VARCHAR
+    flag_for: f21
+    years: '1984'
+  XF22:
+    name: f22_flag
+    type: VARCHAR
+    flag_for: f22
+    years: '1984'
+  XF23:
+    name: f23_flag
+    type: VARCHAR
+    flag_for: f23
+    years: '1984'
+  XF24:
+    name: f24_flag
+    type: VARCHAR
+    flag_for: f24
+    years: '1984'
+  XF25:
+    name: f25_flag
+    type: VARCHAR
+    flag_for: f25
+    years: '1984'
+  XF26:
+    name: f26_flag
+    type: VARCHAR
+    flag_for: f26
+    years: '1984'
+  XF31:
+    name: f31_flag
+    type: VARCHAR
+    flag_for: f31
+    years: '1984'
+  XF32:
+    name: f32_flag
+    type: VARCHAR
+    flag_for: f32
+    years: '1984'
+  XF33:
+    name: f33_flag
+    type: VARCHAR
+    flag_for: f33
+    years: '1984'
+  XF34:
+    name: f34_flag
+    type: VARCHAR
+    flag_for: f34
+    years: '1984'
+  XF35:
+    name: f35_flag
+    type: VARCHAR
+    flag_for: f35
+    years: '1984'
+  XF36:
+    name: f36_flag
+    type: VARCHAR
+    flag_for: f36
+    years: '1984'
+  XF41:
+    name: f41_flag
+    type: VARCHAR
+    flag_for: f41
+    years: '1984'
+  XF42:
+    name: f42_flag
+    type: VARCHAR
+    flag_for: f42
+    years: '1984'
+  XF43:
+    name: f43_flag
+    type: VARCHAR
+    flag_for: f43
+    years: '1984'
+  XF44:
+    name: f44_flag
+    type: VARCHAR
+    flag_for: f44
+    years: '1984'
+  XF45:
+    name: f45_flag
+    type: VARCHAR
+    flag_for: f45
+    years: '1984'
+  XF46:
+    name: f46_flag
+    type: VARCHAR
+    flag_for: f46
+    years: '1984'
+  XF51:
+    name: f51_flag
+    type: VARCHAR
+    flag_for: f51
+    years: '1984'
+  XF52:
+    name: f52_flag
+    type: VARCHAR
+    flag_for: f52
+    years: '1984'
+  XF53:
+    name: f53_flag
+    type: VARCHAR
+    flag_for: f53
+    years: '1984'
+  XF54:
+    name: f54_flag
+    type: VARCHAR
+    flag_for: f54
+    years: '1984'
+  XF55:
+    name: f55_flag
+    type: VARCHAR
+    flag_for: f55
+    years: '1984'
+  XF56:
+    name: f56_flag
+    type: VARCHAR
+    flag_for: f56
+    years: '1984'
+  XF61:
+    name: f61_flag
+    type: VARCHAR
+    flag_for: f61
+    years: '1984'
+  XF62:
+    name: f62_flag
+    type: VARCHAR
+    flag_for: f62
+    years: '1984'
+  XF63:
+    name: f63_flag
+    type: VARCHAR
+    flag_for: f63
+    years: '1984'
+  XF64:
+    name: f64_flag
+    type: VARCHAR
+    flag_for: f64
+    years: '1984'
+  XF65:
+    name: f65_flag
+    type: VARCHAR
+    flag_for: f65
+    years: '1984'
+  XF66:
+    name: f66_flag
+    type: VARCHAR
+    flag_for: f66
+    years: '1984'
+  IMPCD:
+    name: impcd
+    type: BIGINT
+    years: '1985'
+  IA21:
+    name: ia21
+    type: BIGINT
+    years: '1986'
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: '1988'
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1988'
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: '1988'
+  A011:
+    name: a011
+    type: BIGINT
+    years: '1988'
+  A012:
+    name: a012
+    type: BIGINT
+    years: '1988'
+  A013:
+    name: a013
+    type: BIGINT
+    years: '1988'
+  A021:
+    name: a021
+    type: BIGINT
+    years: '1988'
+  A022:
+    name: a022
+    type: BIGINT
+    years: '1988'
+  A023:
+    name: a023
+    type: BIGINT
+    years: '1988'
+  A041:
+    name: a041
+    type: BIGINT
+    years: '1988'
+  A042:
+    name: a042
+    type: BIGINT
+    years: '1988'
+  A043:
+    name: a043
+    type: BIGINT
+    years: '1988'
+  A051:
+    name: a051
+    type: BIGINT
+    years: '1988'
+  A052:
+    name: a052
+    type: BIGINT
+    years: '1988'
+  A053:
+    name: a053
+    type: BIGINT
+    years: '1988'
+  A061:
+    name: a061
+    type: BIGINT
+    years: '1988'
+  A062:
+    name: a062
+    type: BIGINT
+    years: '1988'
+  A063:
+    name: a063
+    type: BIGINT
+    years: '1988'
+  A071:
+    name: a071
+    type: BIGINT
+    years: '1988'
+  A072:
+    name: a072
+    type: BIGINT
+    years: '1988'
+  A073:
+    name: a073
+    type: BIGINT
+    years: '1988'
+  A081:
+    name: a081
+    type: BIGINT
+    years: '1988'
+  A082:
+    name: a082
+    type: BIGINT
+    years: '1988'
+  A083:
+    name: a083
+    type: BIGINT
+    years: '1988'
+  A091:
+    name: a091
+    type: BIGINT
+    years: '1988'
+  A092:
+    name: a092
+    type: BIGINT
+    years: '1988'
+  A093:
+    name: a093
+    type: BIGINT
+    years: '1988'
+  A101:
+    name: a101
+    type: BIGINT
+    years: '1988'
+  A102:
+    name: a102
+    type: BIGINT
+    years: '1988'
+  A103:
+    name: a103
+    type: BIGINT
+    years: '1988'
+  A111:
+    name: a111
+    type: BIGINT
+    years: '1988'
+  A112:
+    name: a112
+    type: BIGINT
+    years: '1988'
+  A113:
+    name: a113
+    type: BIGINT
+    years: '1988'
+  A121:
+    name: a121
+    type: BIGINT
+    years: '1988'
+  A122:
+    name: a122
+    type: BIGINT
+    years: '1988'
+  A123:
+    name: a123
+    type: BIGINT
+    years: '1988'
+  A131:
+    name: a131
+    type: BIGINT
+    years: '1988'
+  A132:
+    name: a132
+    type: BIGINT
+    years: '1988'
+  A133:
+    name: a133
+    type: BIGINT
+    years: '1988'
+  A141:
+    name: a141
+    type: BIGINT
+    years: '1988'
+  A142:
+    name: a142
+    type: BIGINT
+    years: '1988'
+  A143:
+    name: a143
+    type: BIGINT
+    years: '1988'
+  A151:
+    name: a151
+    type: BIGINT
+    years: '1988'
+  A152:
+    name: a152
+    type: BIGINT
+    years: '1988'
+  A153:
+    name: a153
+    type: BIGINT
+    years: '1988'
+  A161:
+    name: a161
+    type: BIGINT
+    years: '1988'
+  A162:
+    name: a162
+    type: BIGINT
+    years: '1988'
+  A163:
+    name: a163
+    type: BIGINT
+    years: '1988'
+  ALINE03:
+    name: aline03
+    type: BIGINT
+    years: '1988'
+  B011:
+    name: b011
+    type: BIGINT
+    years: '1988'
+  B012:
+    name: b012
+    type: BIGINT
+    years: '1988'
+  B013:
+    name: b013
+    type: BIGINT
+    years: '1988'
+  B014:
+    name: b014
+    type: BIGINT
+    years: '1988'
+  B021:
+    name: b021
+    type: BIGINT
+    years: '1988'
+  B022:
+    name: b022
+    type: BIGINT
+    years: '1988'
+  B023:
+    name: b023
+    type: BIGINT
+    years: '1988'
+  B024:
+    name: b024
+    type: BIGINT
+    years: '1988'
+  B031:
+    name: b031
+    type: BIGINT
+    years: '1988'
+  B032:
+    name: b032
+    type: BIGINT
+    years: '1988'
+  B033:
+    name: b033
+    type: BIGINT
+    years: '1988'
+  B034:
+    name: b034
+    type: BIGINT
+    years: '1988'
+  B041:
+    name: b041
+    type: BIGINT
+    years: '1988'
+  B042:
+    name: b042
+    type: BIGINT
+    years: '1988'
+  B043:
+    name: b043
+    type: BIGINT
+    years: '1988'
+  B044:
+    name: b044
+    type: BIGINT
+    years: '1988'
+  B061:
+    name: b061
+    type: BIGINT
+    years: '1988'
+  B062:
+    name: b062
+    type: BIGINT
+    years: '1988'
+  B063:
+    name: b063
+    type: BIGINT
+    years: '1988'
+  B064:
+    name: b064
+    type: BIGINT
+    years: '1988'
+  B071:
+    name: b071
+    type: BIGINT
+    years: '1988'
+  B072:
+    name: b072
+    type: BIGINT
+    years: '1988'
+  B073:
+    name: b073
+    type: BIGINT
+    years: '1988'
+  B074:
+    name: b074
+    type: BIGINT
+    years: '1988'
+  B081:
+    name: b081
+    type: BIGINT
+    years: '1988'
+  B082:
+    name: b082
+    type: BIGINT
+    years: '1988'
+  B083:
+    name: b083
+    type: BIGINT
+    years: '1988'
+  B084:
+    name: b084
+    type: BIGINT
+    years: '1988'
+  B091:
+    name: b091
+    type: BIGINT
+    years: '1988'
+  B092:
+    name: b092
+    type: BIGINT
+    years: '1988'
+  B093:
+    name: b093
+    type: BIGINT
+    years: '1988'
+  B101:
+    name: b101
+    type: BIGINT
+    years: '1988'
+  B102:
+    name: b102
+    type: BIGINT
+    years: '1988'
+  B103:
+    name: b103
+    type: BIGINT
+    years: '1988'
+  B111:
+    name: b111
+    type: BIGINT
+    years: '1988'
+  B112:
+    name: b112
+    type: BIGINT
+    years: '1988'
+  B113:
+    name: b113
+    type: BIGINT
+    years: '1988'
+  B121:
+    name: b121
+    type: BIGINT
+    years: '1988'
+  B122:
+    name: b122
+    type: BIGINT
+    years: '1988'
+  B123:
+    name: b123
+    type: BIGINT
+    years: '1988'
+  B131:
+    name: b131
+    type: BIGINT
+    years: '1988'
+  B132:
+    name: b132
+    type: BIGINT
+    years: '1988'
+  B133:
+    name: b133
+    type: BIGINT
+    years: '1988'
+  B161:
+    name: b161
+    type: BIGINT
+    years: '1988'
+  B162:
+    name: b162
+    type: BIGINT
+    years: '1988'
+  B163:
+    name: b163
+    type: BIGINT
+    years: '1988'
+  B191:
+    name: b191
+    type: BIGINT
+    years: '1988'
+  B192:
+    name: b192
+    type: BIGINT
+    years: '1988'
+  B193:
+    name: b193
+    type: BIGINT
+    years: '1988'
+  B221:
+    name: b221
+    type: BIGINT
+    years: '1988'
+  B222:
+    name: b222
+    type: BIGINT
+    years: '1988'
+  B223:
+    name: b223
+    type: BIGINT
+    years: '1988'
+  B235:
+    name: b235
+    type: BIGINT
+    years: '1988'
+  B245:
+    name: b245
+    type: BIGINT
+    years: '1988'
+  B255:
+    name: b255
+    type: BIGINT
+    years: '1988'
+  B265:
+    name: b265
+    type: BIGINT
+    years: '1988'
+  B275:
+    name: b275
+    type: BIGINT
+    years: '1988'
+  BLINE05:
+    name: bline05
+    type: BIGINT
+    years: '1988'
+  BLINE14:
+    name: bline14
+    type: BIGINT
+    years: '1988'
+  BLINE15:
+    name: bline15
+    type: BIGINT
+    years: '1988'
+  BLINE17:
+    name: bline17
+    type: BIGINT
+    years: '1988'
+  BLINE18:
+    name: bline18
+    type: BIGINT
+    years: '1988'
+  BLINE20:
+    name: bline20
+    type: BIGINT
+    years: '1988'
+  BLINE21:
+    name: bline21
+    type: BIGINT
+    years: '1988'
+  E011:
+    name: e011
+    type: BIGINT
+    years: '1988'
+  E012:
+    name: e012
+    type: BIGINT
+    years: '1988'
+  E013:
+    name: e013
+    type: BIGINT
+    years: '1988'
+  E021:
+    name: e021
+    type: BIGINT
+    years: '1988'
+  E022:
+    name: e022
+    type: BIGINT
+    years: '1988'
+  E023:
+    name: e023
+    type: BIGINT
+    years: '1988'
+  E031:
+    name: e031
+    type: BIGINT
+    years: '1988'
+  E032:
+    name: e032
+    type: BIGINT
+    years: '1988'
+  E033:
+    name: e033
+    type: BIGINT
+    years: '1988'
+  E041:
+    name: e041
+    type: BIGINT
+    years: '1988'
+  E042:
+    name: e042
+    type: BIGINT
+    years: '1988'
+  E043:
+    name: e043
+    type: BIGINT
+    years: '1988'
+  E051:
+    name: e051
+    type: BIGINT
+    years: '1988'
+  E052:
+    name: e052
+    type: BIGINT
+    years: '1988'
+  E053:
+    name: e053
+    type: BIGINT
+    years: '1988'
+  E061:
+    name: e061
+    type: BIGINT
+    years: '1988'
+  E062:
+    name: e062
+    type: BIGINT
+    years: '1988'
+  E063:
+    name: e063
+    type: BIGINT
+    years: '1988'
+  E071:
+    name: e071
+    type: BIGINT
+    years: '1988'
+  E072:
+    name: e072
+    type: BIGINT
+    years: '1988'
+  E073:
+    name: e073
+    type: BIGINT
+    years: '1988'

@@ -1,0 +1,189 @@
+source: ipeds
+family: ic98hdr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1997'
+  INSTNM:
+    name: instnm
+    type: VARCHAR
+    years: '1997'
+  CITY:
+    name: city
+    type: VARCHAR
+    years: '1997'
+  STABBR:
+    name: stabbr
+    type: VARCHAR
+    years: '1997'
+  FIPS:
+    name: fips
+    type: BIGINT
+    years: '1997'
+  OBEREG:
+    name: obereg
+    type: BIGINT
+    years: '1997'
+  FICE:
+    name: fice
+    type: BIGINT
+    years: '1997'
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: '1997'
+  IMPTYPE:
+    name: imptype
+    type: BIGINT
+    years: '1997'
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: '1997'
+  IDX:
+    name: idx
+    type: BIGINT
+    years: '1997'
+  SECTOR:
+    name: sector
+    type: BIGINT
+    years: '1997'
+  ICLEVEL:
+    name: iclevel
+    type: BIGINT
+    years: '1997'
+  CONTROL:
+    name: control
+    type: BIGINT
+    years: '1997'
+  AFFIL:
+    name: affil
+    type: BIGINT
+    years: '1997'
+  HLOFFER:
+    name: hloffer
+    type: BIGINT
+    years: '1997'
+  FPOFFER:
+    name: fpoffer
+    type: BIGINT
+    years: '1997'
+  LOCALE:
+    name: locale
+    type: BIGINT
+    years: '1997'
+  PCTMIN1:
+    name: pctmin1
+    type: BIGINT
+    years: '1997'
+  PCTMIN2:
+    name: pctmin2
+    type: BIGINT
+    years: '1997'
+  PCTMIN3:
+    name: pctmin3
+    type: BIGINT
+    years: '1997'
+  PCTMIN4:
+    name: pctmin4
+    type: BIGINT
+    years: '1997'
+  HBCU:
+    name: hbcu
+    type: BIGINT
+    years: '1997'
+  HOSPITAL:
+    name: hospital
+    type: BIGINT
+    years: '1997'
+  MEDICAL:
+    name: medical
+    type: BIGINT
+    years: '1997'
+  TRIBAL:
+    name: tribal
+    type: BIGINT
+    years: '1997'
+  CARNEGIE:
+    name: carnegie
+    type: BIGINT
+    years: '1997'
+  SOURCE:
+    name: source
+    type: BIGINT
+    years: '1997'
+  OPEID:
+    name: opeid
+    type: BIGINT
+    years: '1997'
+  OPEIND:
+    name: opeind
+    type: BIGINT
+    years: '1997'
+  HDEGOFFR:
+    name: hdegoffr
+    type: BIGINT
+    years: '1997'
+  NCESEDIT:
+    name: ncesedit
+    type: BIGINT
+    years: '1997'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: '1997'
+  CNTYGEO:
+    name: cntygeo
+    type: BIGINT
+    years: '1997'
+  RESPLAST:
+    name: resplast
+    type: BIGINT
+    years: '1997'
+  RESPSTAT:
+    name: respstat
+    type: BIGINT
+    years: '1997'
+  ADDR:
+    name: addr
+    type: VARCHAR
+    years: '1997'
+  ZIP:
+    name: zip
+    type: BIGINT
+    years: '1997'
+  COUNTYNM:
+    name: countynm
+    type: VARCHAR
+    years: '1997'
+  CONGDIST:
+    name: congdist
+    type: BIGINT
+    years: '1997'
+  GENTELE:
+    name: gentele
+    type: BIGINT
+    years: '1997'
+  FINTELE:
+    name: fintele
+    type: BIGINT
+    years: '1997'
+  ADMTELE:
+    name: admtele
+    type: BIGINT
+    years: '1997'
+  EIN:
+    name: ein
+    type: BIGINT
+    years: '1997'
+  CHFNM:
+    name: chfnm
+    type: VARCHAR
+    years: '1997'
+  CHFTITLE:
+    name: chftitle
+    type: VARCHAR
+    years: '1997'

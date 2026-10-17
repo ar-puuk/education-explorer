@@ -1,0 +1,681 @@
+source: ipeds
+family: sala1
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1995-1996
+  A1:
+    name: a1
+    type: BIGINT
+    years: 1995-1996
+  A2:
+    name: a2
+    type: BIGINT
+    years: 1995-1996
+  A3:
+    name: a3
+    type: BIGINT
+    years: 1995-1996
+  A4:
+    name: a4
+    type: BIGINT
+    years: 1995-1996
+  A5:
+    name: a5
+    type: BIGINT
+    years: 1995-1996
+  A6:
+    name: a6
+    type: BIGINT
+    years: 1995-1996
+  A7:
+    name: a7
+    type: BIGINT
+    years: 1995-1996
+  A8:
+    name: a8
+    type: BIGINT
+    years: 1995-1996
+  A9:
+    name: a9
+    type: BIGINT
+    years: 1995-1996
+  A10:
+    name: a10
+    type: BIGINT
+    years: 1995-1996
+  A11:
+    name: a11
+    type: BIGINT
+    years: 1995-1996
+  A12:
+    name: a12
+    type: BIGINT
+    years: 1995-1996
+  A13:
+    name: a13
+    type: BIGINT
+    years: 1995-1996
+  A14:
+    name: a14
+    type: BIGINT
+    years: 1995-1996
+  A15:
+    name: a15
+    type: BIGINT
+    years: 1995-1996
+  A16:
+    name: a16
+    type: BIGINT
+    years: 1995-1996
+  A17:
+    name: a17
+    type: BIGINT
+    years: 1995-1996
+  A18:
+    name: a18
+    type: BIGINT
+    years: 1995-1996
+  A19:
+    name: a19
+    type: BIGINT
+    years: 1995-1996
+  A20:
+    name: a20
+    type: BIGINT
+    years: 1995-1996
+  A21:
+    name: a21
+    type: BIGINT
+    years: 1995-1996
+  A22:
+    name: a22
+    type: BIGINT
+    years: 1995-1996
+  A23:
+    name: a23
+    type: BIGINT
+    years: 1995-1996
+  A24:
+    name: a24
+    type: BIGINT
+    years: 1995-1996
+  A25:
+    name: a25
+    type: BIGINT
+    years: 1995-1996
+  A26:
+    name: a26
+    type: BIGINT
+    years: 1995-1996
+  A27:
+    name: a27
+    type: BIGINT
+    years: 1995-1996
+  A28:
+    name: a28
+    type: BIGINT
+    years: 1995-1996
+  A29:
+    name: a29
+    type: BIGINT
+    years: 1995-1996
+  A30:
+    name: a30
+    type: BIGINT
+    years: 1995-1996
+  A31:
+    name: a31
+    type: BIGINT
+    years: 1995-1996
+  A32:
+    name: a32
+    type: BIGINT
+    years: 1995-1996
+  A33:
+    name: a33
+    type: BIGINT
+    years: 1995-1996
+  A34:
+    name: a34
+    type: BIGINT
+    years: 1995-1996
+  A35:
+    name: a35
+    type: BIGINT
+    years: 1995-1996
+  A36:
+    name: a36
+    type: BIGINT
+    years: 1995-1996
+  A37:
+    name: a37
+    type: BIGINT
+    years: 1995-1996
+  A38:
+    name: a38
+    type: BIGINT
+    years: 1995-1996
+  A39:
+    name: a39
+    type: BIGINT
+    years: 1995-1996
+  A40:
+    name: a40
+    type: BIGINT
+    years: 1995-1996
+  A41:
+    name: a41
+    type: BIGINT
+    years: 1995-1996
+  A42:
+    name: a42
+    type: BIGINT
+    years: 1995-1996
+  A43:
+    name: a43
+    type: BIGINT
+    years: 1995-1996
+  A44:
+    name: a44
+    type: BIGINT
+    years: 1995-1996
+  A45:
+    name: a45
+    type: BIGINT
+    years: 1995-1996
+  A46:
+    name: a46
+    type: BIGINT
+    years: 1995-1996
+  A47:
+    name: a47
+    type: BIGINT
+    years: 1995-1996
+  A48:
+    name: a48
+    type: BIGINT
+    years: 1995-1996
+  A49:
+    name: a49
+    type: BIGINT
+    years: 1995-1996
+  A50:
+    name: a50
+    type: BIGINT
+    years: 1995-1996
+  A51:
+    name: a51
+    type: BIGINT
+    years: 1995-1996
+  A52:
+    name: a52
+    type: BIGINT
+    years: 1995-1996
+  A53:
+    name: a53
+    type: BIGINT
+    years: 1995-1996
+  A54:
+    name: a54
+    type: BIGINT
+    years: 1995-1996
+  A55:
+    name: a55
+    type: BIGINT
+    years: 1995-1996
+  A56:
+    name: a56
+    type: BIGINT
+    years: 1995-1996
+  A57:
+    name: a57
+    type: BIGINT
+    years: 1995-1996
+  A58:
+    name: a58
+    type: BIGINT
+    years: 1995-1996
+  A59:
+    name: a59
+    type: BIGINT
+    years: 1995-1996
+  A60:
+    name: a60
+    type: BIGINT
+    years: 1995-1996
+  A61:
+    name: a61
+    type: BIGINT
+    years: 1995-1996
+  A62:
+    name: a62
+    type: BIGINT
+    years: 1995-1996
+  A63:
+    name: a63
+    type: BIGINT
+    years: 1995-1996
+  A64:
+    name: a64
+    type: BIGINT
+    years: 1995-1996
+  A65:
+    name: a65
+    type: BIGINT
+    years: 1995-1996
+  A66:
+    name: a66
+    type: BIGINT
+    years: 1995-1996
+  A67:
+    name: a67
+    type: BIGINT
+    years: 1995-1996
+  A68:
+    name: a68
+    type: BIGINT
+    years: 1995-1996
+  A69:
+    name: a69
+    type: BIGINT
+    years: 1995-1996
+  A70:
+    name: a70
+    type: BIGINT
+    years: 1995-1996
+  A71:
+    name: a71
+    type: BIGINT
+    years: 1995-1996
+  A72:
+    name: a72
+    type: BIGINT
+    years: 1995-1996
+  A73:
+    name: a73
+    type: BIGINT
+    years: 1995-1996
+  A74:
+    name: a74
+    type: BIGINT
+    years: 1995-1996
+  A75:
+    name: a75
+    type: BIGINT
+    years: 1995-1996
+  A76:
+    name: a76
+    type: BIGINT
+    years: 1995-1996
+  A77:
+    name: a77
+    type: BIGINT
+    years: 1995-1996
+  A78:
+    name: a78
+    type: BIGINT
+    years: 1995-1996
+  A79:
+    name: a79
+    type: BIGINT
+    years: 1995-1996
+  A80:
+    name: a80
+    type: BIGINT
+    years: 1995-1996
+  A81:
+    name: a81
+    type: BIGINT
+    years: 1995-1996
+  A82:
+    name: a82
+    type: BIGINT
+    years: 1995-1996
+  A83:
+    name: a83
+    type: BIGINT
+    years: 1995-1996
+  A84:
+    name: a84
+    type: BIGINT
+    years: 1995-1996
+  A85:
+    name: a85
+    type: BIGINT
+    years: 1995-1996
+  A86:
+    name: a86
+    type: BIGINT
+    years: 1995-1996
+  A87:
+    name: a87
+    type: BIGINT
+    years: 1995-1996
+  A88:
+    name: a88
+    type: BIGINT
+    years: 1995-1996
+  A89:
+    name: a89
+    type: BIGINT
+    years: 1995-1996
+  A90:
+    name: a90
+    type: BIGINT
+    years: 1995-1996
+  A91:
+    name: a91
+    type: BIGINT
+    years: 1995-1996
+  A92:
+    name: a92
+    type: BIGINT
+    years: 1995-1996
+  A93:
+    name: a93
+    type: BIGINT
+    years: 1995-1996
+  A94:
+    name: a94
+    type: BIGINT
+    years: 1995-1996
+  A95:
+    name: a95
+    type: BIGINT
+    years: 1995-1996
+  A96:
+    name: a96
+    type: BIGINT
+    years: 1995-1996
+  A97:
+    name: a97
+    type: BIGINT
+    years: 1995-1996
+  A98:
+    name: a98
+    type: BIGINT
+    years: 1995-1996
+  A99:
+    name: a99
+    type: BIGINT
+    years: 1995-1996
+  A100:
+    name: a100
+    type: BIGINT
+    years: 1995-1996
+  A101:
+    name: a101
+    type: BIGINT
+    years: 1995-1996
+  A102:
+    name: a102
+    type: BIGINT
+    years: 1995-1996
+  A103:
+    name: a103
+    type: BIGINT
+    years: 1995-1996
+  A104:
+    name: a104
+    type: BIGINT
+    years: 1995-1996
+  A105:
+    name: a105
+    type: BIGINT
+    years: 1995-1996
+  A106:
+    name: a106
+    type: BIGINT
+    years: 1995-1996
+  A107:
+    name: a107
+    type: BIGINT
+    years: 1995-1996
+  A108:
+    name: a108
+    type: BIGINT
+    years: 1995-1996
+  A109:
+    name: a109
+    type: BIGINT
+    years: 1995-1996
+  A110:
+    name: a110
+    type: BIGINT
+    years: 1995-1996
+  A111:
+    name: a111
+    type: BIGINT
+    years: 1995-1996
+  A112:
+    name: a112
+    type: BIGINT
+    years: 1995-1996
+  A113:
+    name: a113
+    type: BIGINT
+    years: 1995-1996
+  A114:
+    name: a114
+    type: BIGINT
+    years: 1995-1996
+  A115:
+    name: a115
+    type: BIGINT
+    years: 1995-1996
+  A116:
+    name: a116
+    type: BIGINT
+    years: 1995-1996
+  A117:
+    name: a117
+    type: BIGINT
+    years: 1995-1996
+  A118:
+    name: a118
+    type: BIGINT
+    years: 1995-1996
+  A119:
+    name: a119
+    type: BIGINT
+    years: 1995-1996
+  A120:
+    name: a120
+    type: BIGINT
+    years: 1995-1996
+  A121:
+    name: a121
+    type: BIGINT
+    years: 1995-1996
+  A122:
+    name: a122
+    type: BIGINT
+    years: 1995-1996
+  A123:
+    name: a123
+    type: BIGINT
+    years: 1995-1996
+  A124:
+    name: a124
+    type: BIGINT
+    years: 1995-1996
+  A125:
+    name: a125
+    type: BIGINT
+    years: 1995-1996
+  A126:
+    name: a126
+    type: BIGINT
+    years: 1995-1996
+  A127:
+    name: a127
+    type: BIGINT
+    years: 1995-1996
+  A128:
+    name: a128
+    type: BIGINT
+    years: 1995-1996
+  A129:
+    name: a129
+    type: BIGINT
+    years: 1995-1996
+  A130:
+    name: a130
+    type: BIGINT
+    years: 1995-1996
+  A131:
+    name: a131
+    type: BIGINT
+    years: 1995-1996
+  A132:
+    name: a132
+    type: BIGINT
+    years: 1995-1996
+  A133:
+    name: a133
+    type: BIGINT
+    years: 1995-1996
+  A134:
+    name: a134
+    type: BIGINT
+    years: 1995-1996
+  A135:
+    name: a135
+    type: BIGINT
+    years: 1995-1996
+  A136:
+    name: a136
+    type: BIGINT
+    years: 1995-1996
+  A137:
+    name: a137
+    type: BIGINT
+    years: 1995-1996
+  A138:
+    name: a138
+    type: BIGINT
+    years: 1995-1996
+  A139:
+    name: a139
+    type: BIGINT
+    years: 1995-1996
+  A140:
+    name: a140
+    type: BIGINT
+    years: 1995-1996
+  A141:
+    name: a141
+    type: BIGINT
+    years: 1995-1996
+  A142:
+    name: a142
+    type: BIGINT
+    years: 1995-1996
+  A143:
+    name: a143
+    type: BIGINT
+    years: 1995-1996
+  A144:
+    name: a144
+    type: BIGINT
+    years: 1995-1996
+  A145:
+    name: a145
+    type: BIGINT
+    years: 1995-1996
+  A146:
+    name: a146
+    type: BIGINT
+    years: 1995-1996
+  A147:
+    name: a147
+    type: BIGINT
+    years: 1995-1996
+  A148:
+    name: a148
+    type: BIGINT
+    years: 1995-1996
+  A149:
+    name: a149
+    type: BIGINT
+    years: 1995-1996
+  A150:
+    name: a150
+    type: BIGINT
+    years: 1995-1996
+  A151:
+    name: a151
+    type: BIGINT
+    years: 1995-1996
+  A152:
+    name: a152
+    type: BIGINT
+    years: 1995-1996
+  A153:
+    name: a153
+    type: BIGINT
+    years: 1995-1996
+  A154:
+    name: a154
+    type: BIGINT
+    years: 1995-1996
+  A155:
+    name: a155
+    type: BIGINT
+    years: 1995-1996
+  GA34:
+    name: ga34
+    type: BIGINT
+    years: 1995-1996
+  GA35:
+    name: ga35
+    type: BIGINT
+    years: 1995-1996
+  GA69:
+    name: ga69
+    type: BIGINT
+    years: 1995-1996
+  GA70:
+    name: ga70
+    type: BIGINT
+    years: 1995-1996
+  GA74:
+    name: ga74
+    type: BIGINT
+    years: 1995-1996
+  GA75:
+    name: ga75
+    type: BIGINT
+    years: 1995-1996
+  GA109:
+    name: ga109
+    type: BIGINT
+    years: 1995-1996
+  GA110:
+    name: ga110
+    type: BIGINT
+    years: 1995-1996
+  GA144:
+    name: ga144
+    type: BIGINT
+    years: 1995-1996
+  GA145:
+    name: ga145
+    type: BIGINT
+    years: 1995-1996
+  GA149:
+    name: ga149
+    type: BIGINT
+    years: 1995-1996
+  GA150:
+    name: ga150
+    type: BIGINT
+    years: 1995-1996
+  PART:
+    name: part
+    type: VARCHAR
+    years: '1996'

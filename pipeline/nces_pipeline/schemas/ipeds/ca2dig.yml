@@ -2,86 +2,102 @@ source: ipeds
 family: ca2dig
 key:
 - unitid
-- crace16
+- crace15
 - cipcode
 - awlevel
 columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000-2001
+    years: 1984,1986,1988,1995-1998,2000-2001
   CIPCODE:
     name: cipcode
     type: DOUBLE
-    years: 2000-2001
+    years: 1984,1986,1988,1995-1998,2000-2001
   AWLEVEL:
     name: awlevel
     type: BIGINT
-    years: 2000-2001
-  CRACE01:
-    name: crace01
+    years: 1984,1986,1988,1995-1998,2000-2001
+  _TYPE_:
+    name: _type_
     type: BIGINT
-    years: 2000-2001
-  CRACE02:
-    name: crace02
+    years: 1984,1988
+  _FREQ_:
+    name: _freq_
     type: BIGINT
-    years: 2000-2001
-  CRACE03:
-    name: crace03
-    type: BIGINT
-    years: 2000-2001
-  CRACE04:
-    name: crace04
-    type: BIGINT
-    years: 2000-2001
-  CRACE05:
-    name: crace05
-    type: BIGINT
-    years: 2000-2001
-  CRACE06:
-    name: crace06
-    type: BIGINT
-    years: 2000-2001
-  CRACE07:
-    name: crace07
-    type: BIGINT
-    years: 2000-2001
-  CRACE08:
-    name: crace08
-    type: BIGINT
-    years: 2000-2001
-  CRACE09:
-    name: crace09
-    type: BIGINT
-    years: 2000-2001
-  CRACE10:
-    name: crace10
-    type: BIGINT
-    years: 2000-2001
-  CRACE11:
-    name: crace11
-    type: BIGINT
-    years: 2000-2001
-  CRACE12:
-    name: crace12
-    type: BIGINT
-    years: 2000-2001
-  CRACE13:
-    name: crace13
-    type: BIGINT
-    years: 2000-2001
-  CRACE14:
-    name: crace14
-    type: BIGINT
-    years: 2000-2001
+    years: 1984,1988
   CRACE15:
     name: crace15
     type: BIGINT
-    years: 2000-2001
+    years: 1984,1986,1988,1995-1998,2000-2001
   CRACE16:
     name: crace16
     type: BIGINT
-    years: 2000-2001
+    years: 1984,1986,1988,1995-1998,2000-2001
+  CRACE01:
+    name: crace01
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE02:
+    name: crace02
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE03:
+    name: crace03
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE04:
+    name: crace04
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE05:
+    name: crace05
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE06:
+    name: crace06
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE07:
+    name: crace07
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE08:
+    name: crace08
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE09:
+    name: crace09
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE10:
+    name: crace10
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE11:
+    name: crace11
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE12:
+    name: crace12
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE13:
+    name: crace13
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  CRACE14:
+    name: crace14
+    type: BIGINT
+    years: 1995-1998,2000-2001
+  BAL_M:
+    name: bal_m
+    type: BIGINT
+    years: 1995-1997
+  BAL_W:
+    name: bal_w
+    type: BIGINT
+    years: 1995-1997
   MAJORNUM:
     name: majornum
     type: BIGINT

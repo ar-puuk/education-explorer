@@ -1,0 +1,233 @@
+source: ipeds
+family: fj
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1989,1991-1996
+  J011:
+    name: j011
+    type: BIGINT
+    years: 1989,1991-1996
+  J012:
+    name: j012
+    type: BIGINT
+    years: 1989,1991-1996
+  J013:
+    name: j013
+    type: BIGINT
+    years: 1989,1991-1996
+  J021:
+    name: j021
+    type: BIGINT
+    years: 1989,1991-1996
+  J022:
+    name: j022
+    type: BIGINT
+    years: 1989,1991-1996
+  J023:
+    name: j023
+    type: BIGINT
+    years: 1989,1991-1996
+  J031:
+    name: j031
+    type: BIGINT
+    years: 1989,1991-1996
+  J032:
+    name: j032
+    type: BIGINT
+    years: 1989,1991-1996
+  J033:
+    name: j033
+    type: BIGINT
+    years: 1989,1991-1996
+  J041:
+    name: j041
+    type: BIGINT
+    years: 1989,1991-1996
+  J042:
+    name: j042
+    type: BIGINT
+    years: 1989,1991-1996
+  J043:
+    name: j043
+    type: BIGINT
+    years: 1989,1991-1996
+  J051:
+    name: j051
+    type: BIGINT
+    years: 1989,1991-1996
+  J052:
+    name: j052
+    type: BIGINT
+    years: 1989,1991-1996
+  J053:
+    name: j053
+    type: BIGINT
+    years: 1989,1991-1996
+  J061:
+    name: j061
+    type: BIGINT
+    years: 1989,1991-1996
+  J062:
+    name: j062
+    type: BIGINT
+    years: 1989,1991-1996
+  J063:
+    name: j063
+    type: BIGINT
+    years: 1989,1991-1996
+  J071:
+    name: j071
+    type: BIGINT
+    years: 1989,1991-1996
+  J072:
+    name: j072
+    type: BIGINT
+    years: 1989,1991-1996
+  J073:
+    name: j073
+    type: BIGINT
+    years: 1989,1991-1996
+  J081:
+    name: j081
+    type: BIGINT
+    years: 1989,1991-1996
+  J082:
+    name: j082
+    type: BIGINT
+    years: 1989,1991-1996
+  J083:
+    name: j083
+    type: BIGINT
+    years: 1989,1991-1996
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1994-1995
+  XJ011:
+    name: j011_flag
+    type: VARCHAR
+    flag_for: j011
+    years: 1992-1996
+  XJ012:
+    name: j012_flag
+    type: VARCHAR
+    flag_for: j012
+    years: 1992-1996
+  XJ013:
+    name: j013_flag
+    type: VARCHAR
+    flag_for: j013
+    years: 1992-1996
+  XJ021:
+    name: j021_flag
+    type: VARCHAR
+    flag_for: j021
+    years: 1992-1996
+  XJ022:
+    name: j022_flag
+    type: VARCHAR
+    flag_for: j022
+    years: 1992-1996
+  XJ023:
+    name: j023_flag
+    type: VARCHAR
+    flag_for: j023
+    years: 1992-1996
+  XJ031:
+    name: j031_flag
+    type: VARCHAR
+    flag_for: j031
+    years: 1992-1996
+  XJ032:
+    name: j032_flag
+    type: VARCHAR
+    flag_for: j032
+    years: 1992-1996
+  XJ033:
+    name: j033_flag
+    type: VARCHAR
+    flag_for: j033
+    years: 1992-1996
+  XJ041:
+    name: j041_flag
+    type: VARCHAR
+    flag_for: j041
+    years: 1992-1996
+  XJ042:
+    name: j042_flag
+    type: VARCHAR
+    flag_for: j042
+    years: 1992-1996
+  XJ043:
+    name: j043_flag
+    type: VARCHAR
+    flag_for: j043
+    years: 1992-1996
+  XJ051:
+    name: j051_flag
+    type: VARCHAR
+    flag_for: j051
+    years: 1992-1996
+  XJ052:
+    name: j052_flag
+    type: VARCHAR
+    flag_for: j052
+    years: 1992-1996
+  XJ053:
+    name: j053_flag
+    type: VARCHAR
+    flag_for: j053
+    years: 1992-1996
+  XJ061:
+    name: j061_flag
+    type: VARCHAR
+    flag_for: j061
+    years: 1992-1996
+  XJ062:
+    name: j062_flag
+    type: VARCHAR
+    flag_for: j062
+    years: 1992-1996
+  XJ063:
+    name: j063_flag
+    type: VARCHAR
+    flag_for: j063
+    years: 1992-1996
+  XJ071:
+    name: j071_flag
+    type: VARCHAR
+    flag_for: j071
+    years: 1992-1996
+  XJ072:
+    name: j072_flag
+    type: VARCHAR
+    flag_for: j072
+    years: 1992-1996
+  XJ073:
+    name: j073_flag
+    type: VARCHAR
+    flag_for: j073
+    years: 1992-1996
+  XJ081:
+    name: j081_flag
+    type: VARCHAR
+    flag_for: j081
+    years: 1992-1996
+  XJ082:
+    name: j082_flag
+    type: VARCHAR
+    flag_for: j082
+    years: 1992-1996
+  XJ083:
+    name: j083_flag
+    type: VARCHAR
+    flag_for: j083
+    years: 1992-1996
+  FILLER:
+    name: filler
+    type: BIGINT
+    years: '1995'

@@ -3,39 +3,1255 @@ family: salb
 key:
 - unitid
 - bentype
+- line
+- contract
 columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2002-2010
+    years: 1980,1984-1985,1987,1989-1999,2002-2010
   BENTYPE:
     name: bentype
     type: BIGINT
-    years: 2002-2010
+    years: 1980,1999,2002-2010
+  CONTRACT:
+    name: contract
+    type: BIGINT
+    years: '1980'
+  PROEXP:
+    name: proexp
+    type: BIGINT
+    years: '1980'
+  PRONUM:
+    name: pronum
+    type: BIGINT
+    years: '1980'
+  ASOEXP:
+    name: asoexp
+    type: BIGINT
+    years: '1980'
+  ASONUM:
+    name: asonum
+    type: BIGINT
+    years: '1980'
+  ASTEXP:
+    name: astexp
+    type: BIGINT
+    years: '1980'
+  ASTNUM:
+    name: astnum
+    type: BIGINT
+    years: '1980'
+  INSEXP:
+    name: insexp
+    type: BIGINT
+    years: '1980'
+  INSNUM:
+    name: insnum
+    type: BIGINT
+    years: '1980'
+  LECEXP:
+    name: lecexp
+    type: BIGINT
+    years: '1980'
+  LECNUM:
+    name: lecnum
+    type: BIGINT
+    years: '1980'
+  NOREXP:
+    name: norexp
+    type: BIGINT
+    years: '1980'
+  NORNUM:
+    name: nornum
+    type: BIGINT
+    years: '1980'
+  IMPCODE:
+    name: impcode
+    type: BIGINT
+    years: 1984-1985
+  LINE:
+    name: line
+    type: BIGINT
+    years: 1984-1985
+  SUPPRESS:
+    name: suppress
+    type: VARCHAR
+    years: 1984-1985
+  SAB1:
+    name: sab1
+    type: BIGINT
+    years: 1984-1985
+  SAB2:
+    name: sab2
+    type: BIGINT
+    years: 1984-1985
+  SAB3:
+    name: sab3
+    type: BIGINT
+    years: 1984-1985
+  SAB4:
+    name: sab4
+    type: BIGINT
+    years: 1984-1985
+  XSAB1:
+    name: sab1_flag
+    type: VARCHAR
+    flag_for: sab1
+    years: 1984-1985
+  XSAB2:
+    name: sab2_flag
+    type: VARCHAR
+    flag_for: sab2
+    years: 1984-1985
+  XSAB3:
+    name: sab3_flag
+    type: VARCHAR
+    flag_for: sab3
+    years: 1984-1985
+  XSAB4:
+    name: sab4_flag
+    type: VARCHAR
+    flag_for: sab4
+    years: 1984-1985
+  B1:
+    name: b1
+    type: BIGINT
+    years: 1987,1989-1997
+  B2:
+    name: b2
+    type: BIGINT
+    years: 1987,1989-1997
+  B3:
+    name: b3
+    type: BIGINT
+    years: 1987,1989-1997
+  B4:
+    name: b4
+    type: BIGINT
+    years: 1987,1989-1997
+  B5:
+    name: b5
+    type: BIGINT
+    years: 1987,1989-1997
+  B6:
+    name: b6
+    type: BIGINT
+    years: 1987,1989-1997
+  B7:
+    name: b7
+    type: BIGINT
+    years: 1987,1989-1997
+  B8:
+    name: b8
+    type: BIGINT
+    years: 1987,1989-1997
+  B9:
+    name: b9
+    type: BIGINT
+    years: 1987,1989-1997
+  B10:
+    name: b10
+    type: BIGINT
+    years: 1987,1989-1997
+  B11:
+    name: b11
+    type: BIGINT
+    years: 1987,1989-1997
+  B12:
+    name: b12
+    type: BIGINT
+    years: 1987,1989-1997
+  B13:
+    name: b13
+    type: BIGINT
+    years: 1987,1989-1997
+  B14:
+    name: b14
+    type: BIGINT
+    years: 1987,1989-1997
+  B15:
+    name: b15
+    type: BIGINT
+    years: 1987,1989-1997
+  B16:
+    name: b16
+    type: BIGINT
+    years: 1987,1989-1997
+  B17:
+    name: b17
+    type: BIGINT
+    years: 1987,1989-1997
+  B18:
+    name: b18
+    type: BIGINT
+    years: 1987,1989-1997
+  B19:
+    name: b19
+    type: BIGINT
+    years: 1987,1989-1997
+  B20:
+    name: b20
+    type: BIGINT
+    years: 1987,1989-1997
+  B21:
+    name: b21
+    type: BIGINT
+    years: 1987,1989-1997
+  B22:
+    name: b22
+    type: BIGINT
+    years: 1987,1989-1997
+  B23:
+    name: b23
+    type: BIGINT
+    years: 1987,1989-1997
+  B24:
+    name: b24
+    type: BIGINT
+    years: 1987,1989-1997
+  B25:
+    name: b25
+    type: BIGINT
+    years: 1987,1989-1997
+  B26:
+    name: b26
+    type: BIGINT
+    years: 1987,1989-1997
+  B27:
+    name: b27
+    type: BIGINT
+    years: 1987,1989-1997
+  B28:
+    name: b28
+    type: BIGINT
+    years: 1987,1989-1997
+  B29:
+    name: b29
+    type: BIGINT
+    years: 1987,1989-1997
+  B30:
+    name: b30
+    type: BIGINT
+    years: 1987,1989-1997
+  B31:
+    name: b31
+    type: BIGINT
+    years: 1987,1989-1997
+  B32:
+    name: b32
+    type: BIGINT
+    years: 1987,1989-1997
+  B33:
+    name: b33
+    type: BIGINT
+    years: 1987,1989-1997
+  B34:
+    name: b34
+    type: BIGINT
+    years: 1987,1989-1997
+  B35:
+    name: b35
+    type: BIGINT
+    years: 1987,1989-1997
+  B36:
+    name: b36
+    type: BIGINT
+    years: 1987,1989-1997
+  B37:
+    name: b37
+    type: BIGINT
+    years: 1987,1989-1997
+  B38:
+    name: b38
+    type: BIGINT
+    years: 1987,1989-1997
+  B39:
+    name: b39
+    type: BIGINT
+    years: 1987,1989-1997
+  B40:
+    name: b40
+    type: BIGINT
+    years: 1987,1989-1997
+  B41:
+    name: b41
+    type: BIGINT
+    years: 1987,1989-1997
+  B42:
+    name: b42
+    type: BIGINT
+    years: 1987,1989-1997
+  B43:
+    name: b43
+    type: BIGINT
+    years: 1987,1989-1997
+  B44:
+    name: b44
+    type: BIGINT
+    years: 1987,1989-1997
+  B45:
+    name: b45
+    type: BIGINT
+    years: 1987,1989-1997
+  B47:
+    name: b47
+    type: BIGINT
+    years: 1987,1989-1997
+  HPR:
+    name: hpr
+    type: BIGINT
+    years: 1987,1989-1998
+  TPR:
+    name: tpr
+    type: BIGINT
+    years: 1987,1989-1998
+  SURVEY:
+    name: survey
+    type: VARCHAR
+    years: '1989'
+  B46:
+    name: b46
+    type: BIGINT
+    years: 1993-1997
+  B48:
+    name: b48
+    type: BIGINT
+    years: 1993-1997
+  B49:
+    name: b49
+    type: BIGINT
+    years: 1993-1997
+  B50:
+    name: b50
+    type: BIGINT
+    years: 1993-1997
+  IMPB1:
+    name: impb1
+    type: VARCHAR
+    years: 1993-1995
+  IMPB2:
+    name: impb2
+    type: VARCHAR
+    years: 1993-1995
+  IMPB3:
+    name: impb3
+    type: VARCHAR
+    years: 1993-1995
+  IMPB4:
+    name: impb4
+    type: VARCHAR
+    years: 1993-1995
+  IMPB5:
+    name: impb5
+    type: VARCHAR
+    years: 1993-1995
+  IMPB6:
+    name: impb6
+    type: VARCHAR
+    years: 1993-1995
+  IMPB7:
+    name: impb7
+    type: VARCHAR
+    years: 1993-1995
+  IMPB8:
+    name: impb8
+    type: VARCHAR
+    years: 1993-1995
+  IMPB9:
+    name: impb9
+    type: VARCHAR
+    years: 1993-1995
+  IMPB10:
+    name: impb10
+    type: VARCHAR
+    years: 1993-1995
+  IMPB11:
+    name: impb11
+    type: VARCHAR
+    years: 1993-1995
+  IMPB12:
+    name: impb12
+    type: VARCHAR
+    years: 1993-1995
+  IMPB13:
+    name: impb13
+    type: VARCHAR
+    years: 1993-1995
+  IMPB14:
+    name: impb14
+    type: VARCHAR
+    years: 1993-1995
+  IMPB15:
+    name: impb15
+    type: VARCHAR
+    years: 1993-1995
+  IMPB16:
+    name: impb16
+    type: VARCHAR
+    years: 1993-1995
+  IMPB17:
+    name: impb17
+    type: VARCHAR
+    years: 1993-1995
+  IMPB18:
+    name: impb18
+    type: VARCHAR
+    years: 1993-1995
+  IMPB19:
+    name: impb19
+    type: VARCHAR
+    years: 1993-1995
+  IMPB20:
+    name: impb20
+    type: VARCHAR
+    years: 1993-1995
+  IMPB21:
+    name: impb21
+    type: VARCHAR
+    years: 1993-1995
+  IMPB22:
+    name: impb22
+    type: VARCHAR
+    years: 1993-1995
+  IMPB23:
+    name: impb23
+    type: VARCHAR
+    years: 1993-1995
+  IMPB24:
+    name: impb24
+    type: VARCHAR
+    years: 1993-1995
+  IMPB25:
+    name: impb25
+    type: VARCHAR
+    years: 1993-1995
+  IMPB26:
+    name: impb26
+    type: VARCHAR
+    years: 1993-1995
+  IMPB27:
+    name: impb27
+    type: VARCHAR
+    years: 1993-1995
+  IMPB28:
+    name: impb28
+    type: VARCHAR
+    years: 1993-1995
+  IMPB29:
+    name: impb29
+    type: VARCHAR
+    years: 1993-1995
+  IMPB30:
+    name: impb30
+    type: VARCHAR
+    years: 1993-1995
+  IMPB31:
+    name: impb31
+    type: VARCHAR
+    years: 1993-1995
+  IMPB32:
+    name: impb32
+    type: VARCHAR
+    years: 1993-1995
+  IMPB33:
+    name: impb33
+    type: VARCHAR
+    years: 1993-1995
+  IMPB34:
+    name: impb34
+    type: VARCHAR
+    years: 1993-1995
+  IMPB35:
+    name: impb35
+    type: VARCHAR
+    years: 1993-1995
+  IMPB36:
+    name: impb36
+    type: VARCHAR
+    years: 1993-1995
+  IMPB37:
+    name: impb37
+    type: VARCHAR
+    years: 1993-1995
+  IMPB38:
+    name: impb38
+    type: VARCHAR
+    years: 1993-1995
+  IMPB39:
+    name: impb39
+    type: VARCHAR
+    years: 1993-1995
+  IMPB40:
+    name: impb40
+    type: VARCHAR
+    years: 1993-1995
+  IMPB41:
+    name: impb41
+    type: VARCHAR
+    years: 1993-1995
+  IMPB42:
+    name: impb42
+    type: VARCHAR
+    years: 1993-1995
+  IMPB43:
+    name: impb43
+    type: VARCHAR
+    years: 1993-1995
+  IMPB44:
+    name: impb44
+    type: VARCHAR
+    years: 1993-1995
+  IMPB45:
+    name: impb45
+    type: VARCHAR
+    years: 1993-1995
+  IMPB46:
+    name: impb46
+    type: VARCHAR
+    years: 1993-1995
+  IMPB47:
+    name: impb47
+    type: VARCHAR
+    years: 1993-1995
+  IMPB48:
+    name: impb48
+    type: VARCHAR
+    years: 1993-1995
+  IMPB49:
+    name: impb49
+    type: VARCHAR
+    years: 1993-1995
+  IMPB50:
+    name: impb50
+    type: VARCHAR
+    years: 1993-1995
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1996-1997
+  IB1:
+    name: ib1
+    type: VARCHAR
+    years: 1996-1997
+  IB2:
+    name: ib2
+    type: VARCHAR
+    years: 1996-1997
+  IB3:
+    name: ib3
+    type: VARCHAR
+    years: 1996-1997
+  IB4:
+    name: ib4
+    type: VARCHAR
+    years: 1996-1997
+  IB5:
+    name: ib5
+    type: VARCHAR
+    years: 1996-1997
+  IB6:
+    name: ib6
+    type: VARCHAR
+    years: 1996-1997
+  IB7:
+    name: ib7
+    type: VARCHAR
+    years: 1996-1997
+  IB8:
+    name: ib8
+    type: VARCHAR
+    years: 1996-1997
+  IB9:
+    name: ib9
+    type: VARCHAR
+    years: 1996-1997
+  IB10:
+    name: ib10
+    type: VARCHAR
+    years: 1996-1997
+  IB11:
+    name: ib11
+    type: VARCHAR
+    years: 1996-1997
+  IB12:
+    name: ib12
+    type: VARCHAR
+    years: 1996-1997
+  IB13:
+    name: ib13
+    type: VARCHAR
+    years: 1996-1997
+  IB14:
+    name: ib14
+    type: VARCHAR
+    years: 1996-1997
+  IB15:
+    name: ib15
+    type: VARCHAR
+    years: 1996-1997
+  IB16:
+    name: ib16
+    type: VARCHAR
+    years: 1996-1997
+  IB17:
+    name: ib17
+    type: VARCHAR
+    years: 1996-1997
+  IB18:
+    name: ib18
+    type: VARCHAR
+    years: 1996-1997
+  IB19:
+    name: ib19
+    type: VARCHAR
+    years: 1996-1997
+  IB20:
+    name: ib20
+    type: VARCHAR
+    years: 1996-1997
+  IB21:
+    name: ib21
+    type: VARCHAR
+    years: 1996-1997
+  IB22:
+    name: ib22
+    type: VARCHAR
+    years: 1996-1997
+  IB23:
+    name: ib23
+    type: VARCHAR
+    years: 1996-1997
+  IB24:
+    name: ib24
+    type: VARCHAR
+    years: 1996-1997
+  IB25:
+    name: ib25
+    type: VARCHAR
+    years: 1996-1997
+  IB26:
+    name: ib26
+    type: VARCHAR
+    years: 1996-1997
+  IB27:
+    name: ib27
+    type: VARCHAR
+    years: 1996-1997
+  IB28:
+    name: ib28
+    type: VARCHAR
+    years: 1996-1997
+  IB29:
+    name: ib29
+    type: VARCHAR
+    years: 1996-1997
+  IB30:
+    name: ib30
+    type: VARCHAR
+    years: 1996-1997
+  IB31:
+    name: ib31
+    type: VARCHAR
+    years: 1996-1997
+  IB32:
+    name: ib32
+    type: VARCHAR
+    years: 1996-1997
+  IB33:
+    name: ib33
+    type: VARCHAR
+    years: 1996-1997
+  IB34:
+    name: ib34
+    type: VARCHAR
+    years: 1996-1997
+  IB35:
+    name: ib35
+    type: VARCHAR
+    years: 1996-1997
+  IB36:
+    name: ib36
+    type: VARCHAR
+    years: 1996-1997
+  IB37:
+    name: ib37
+    type: VARCHAR
+    years: 1996-1997
+  IB38:
+    name: ib38
+    type: VARCHAR
+    years: 1996-1997
+  IB39:
+    name: ib39
+    type: VARCHAR
+    years: 1996-1997
+  IB40:
+    name: ib40
+    type: VARCHAR
+    years: 1996-1997
+  IB41:
+    name: ib41
+    type: VARCHAR
+    years: 1996-1997
+  IB42:
+    name: ib42
+    type: VARCHAR
+    years: 1996-1997
+  IB43:
+    name: ib43
+    type: VARCHAR
+    years: 1996-1997
+  IB44:
+    name: ib44
+    type: VARCHAR
+    years: 1996-1997
+  IB45:
+    name: ib45
+    type: VARCHAR
+    years: 1996-1997
+  IB46:
+    name: ib46
+    type: VARCHAR
+    years: 1996-1997
+  IB47:
+    name: ib47
+    type: VARCHAR
+    years: 1996-1997
+  IB48:
+    name: ib48
+    type: VARCHAR
+    years: 1996-1997
+  IB49:
+    name: ib49
+    type: VARCHAR
+    years: 1996-1997
+  IB50:
+    name: ib50
+    type: VARCHAR
+    years: 1996-1997
+  GSAA074:
+    name: gsaa074
+    type: BIGINT
+    years: '1998'
+  GSAA075:
+    name: gsaa075
+    type: BIGINT
+    years: '1998'
+  GSAA144:
+    name: gsaa144
+    type: BIGINT
+    years: '1998'
+  GSAA145:
+    name: gsaa145
+    type: BIGINT
+    years: '1998'
+  GSAA154:
+    name: gsaa154
+    type: BIGINT
+    years: '1998'
+  GSAA155:
+    name: gsaa155
+    type: BIGINT
+    years: '1998'
+  GSAA224:
+    name: gsaa224
+    type: BIGINT
+    years: '1998'
+  GSAA225:
+    name: gsaa225
+    type: BIGINT
+    years: '1998'
+  GSAA294:
+    name: gsaa294
+    type: BIGINT
+    years: '1998'
+  GSAA295:
+    name: gsaa295
+    type: BIGINT
+    years: '1998'
+  GSAA304:
+    name: gsaa304
+    type: BIGINT
+    years: '1998'
+  GSAA305:
+    name: gsaa305
+    type: BIGINT
+    years: '1998'
+  XSAB321:
+    name: sab321_flag
+    type: VARCHAR
+    flag_for: sab321
+    years: '1998'
+  SAB321:
+    name: sab321
+    type: BIGINT
+    years: '1998'
+  XSAB322:
+    name: sab322_flag
+    type: VARCHAR
+    flag_for: sab322
+    years: '1998'
+  SAB322:
+    name: sab322
+    type: BIGINT
+    years: '1998'
+  XSAB323:
+    name: sab323_flag
+    type: VARCHAR
+    flag_for: sab323
+    years: '1998'
+  SAB323:
+    name: sab323
+    type: BIGINT
+    years: '1998'
+  XSAB324:
+    name: sab324_flag
+    type: VARCHAR
+    flag_for: sab324
+    years: '1998'
+  SAB324:
+    name: sab324
+    type: BIGINT
+    years: '1998'
+  XSAB331:
+    name: sab331_flag
+    type: VARCHAR
+    flag_for: sab331
+    years: '1998'
+  SAB331:
+    name: sab331
+    type: BIGINT
+    years: '1998'
+  XSAB332:
+    name: sab332_flag
+    type: VARCHAR
+    flag_for: sab332
+    years: '1998'
+  SAB332:
+    name: sab332
+    type: BIGINT
+    years: '1998'
+  XSAB333:
+    name: sab333_flag
+    type: VARCHAR
+    flag_for: sab333
+    years: '1998'
+  SAB333:
+    name: sab333
+    type: BIGINT
+    years: '1998'
+  XSAB334:
+    name: sab334_flag
+    type: VARCHAR
+    flag_for: sab334
+    years: '1998'
+  SAB334:
+    name: sab334
+    type: BIGINT
+    years: '1998'
+  XSAB341:
+    name: sab341_flag
+    type: VARCHAR
+    flag_for: sab341
+    years: '1998'
+  SAB341:
+    name: sab341
+    type: BIGINT
+    years: '1998'
+  XSAB342:
+    name: sab342_flag
+    type: VARCHAR
+    flag_for: sab342
+    years: '1998'
+  SAB342:
+    name: sab342
+    type: BIGINT
+    years: '1998'
+  XSAB343:
+    name: sab343_flag
+    type: VARCHAR
+    flag_for: sab343
+    years: '1998'
+  SAB343:
+    name: sab343
+    type: BIGINT
+    years: '1998'
+  XSAB344:
+    name: sab344_flag
+    type: VARCHAR
+    flag_for: sab344
+    years: '1998'
+  SAB344:
+    name: sab344
+    type: BIGINT
+    years: '1998'
+  XSAB351:
+    name: sab351_flag
+    type: VARCHAR
+    flag_for: sab351
+    years: '1998'
+  SAB351:
+    name: sab351
+    type: BIGINT
+    years: '1998'
+  XSAB352:
+    name: sab352_flag
+    type: VARCHAR
+    flag_for: sab352
+    years: '1998'
+  SAB352:
+    name: sab352
+    type: BIGINT
+    years: '1998'
+  XSAB353:
+    name: sab353_flag
+    type: VARCHAR
+    flag_for: sab353
+    years: '1998'
+  SAB353:
+    name: sab353
+    type: BIGINT
+    years: '1998'
+  XSAB354:
+    name: sab354_flag
+    type: VARCHAR
+    flag_for: sab354
+    years: '1998'
+  SAB354:
+    name: sab354
+    type: BIGINT
+    years: '1998'
+  XSAB361:
+    name: sab361_flag
+    type: VARCHAR
+    flag_for: sab361
+    years: '1998'
+  SAB361:
+    name: sab361
+    type: BIGINT
+    years: '1998'
+  XSAB362:
+    name: sab362_flag
+    type: VARCHAR
+    flag_for: sab362
+    years: '1998'
+  SAB362:
+    name: sab362
+    type: BIGINT
+    years: '1998'
+  XSAB363:
+    name: sab363_flag
+    type: VARCHAR
+    flag_for: sab363
+    years: '1998'
+  SAB363:
+    name: sab363
+    type: BIGINT
+    years: '1998'
+  XSAB364:
+    name: sab364_flag
+    type: VARCHAR
+    flag_for: sab364
+    years: '1998'
+  SAB364:
+    name: sab364
+    type: BIGINT
+    years: '1998'
+  XSAB371:
+    name: sab371_flag
+    type: VARCHAR
+    flag_for: sab371
+    years: '1998'
+  SAB371:
+    name: sab371
+    type: BIGINT
+    years: '1998'
+  XSAB372:
+    name: sab372_flag
+    type: VARCHAR
+    flag_for: sab372
+    years: '1998'
+  SAB372:
+    name: sab372
+    type: BIGINT
+    years: '1998'
+  XSAB373:
+    name: sab373_flag
+    type: VARCHAR
+    flag_for: sab373
+    years: '1998'
+  SAB373:
+    name: sab373
+    type: BIGINT
+    years: '1998'
+  XSAB374:
+    name: sab374_flag
+    type: VARCHAR
+    flag_for: sab374
+    years: '1998'
+  SAB374:
+    name: sab374
+    type: BIGINT
+    years: '1998'
+  XSAB381:
+    name: sab381_flag
+    type: VARCHAR
+    flag_for: sab381
+    years: '1998'
+  SAB381:
+    name: sab381
+    type: BIGINT
+    years: '1998'
+  XSAB382:
+    name: sab382_flag
+    type: VARCHAR
+    flag_for: sab382
+    years: '1998'
+  SAB382:
+    name: sab382
+    type: BIGINT
+    years: '1998'
+  XSAB383:
+    name: sab383_flag
+    type: VARCHAR
+    flag_for: sab383
+    years: '1998'
+  SAB383:
+    name: sab383
+    type: BIGINT
+    years: '1998'
+  XSAB384:
+    name: sab384_flag
+    type: VARCHAR
+    flag_for: sab384
+    years: '1998'
+  SAB384:
+    name: sab384
+    type: BIGINT
+    years: '1998'
+  XSAB391:
+    name: sab391_flag
+    type: VARCHAR
+    flag_for: sab391
+    years: '1998'
+  SAB391:
+    name: sab391
+    type: BIGINT
+    years: '1998'
+  XSAB392:
+    name: sab392_flag
+    type: VARCHAR
+    flag_for: sab392
+    years: '1998'
+  SAB392:
+    name: sab392
+    type: BIGINT
+    years: '1998'
+  XSAB393:
+    name: sab393_flag
+    type: VARCHAR
+    flag_for: sab393
+    years: '1998'
+  SAB393:
+    name: sab393
+    type: BIGINT
+    years: '1998'
+  XSAB394:
+    name: sab394_flag
+    type: VARCHAR
+    flag_for: sab394
+    years: '1998'
+  SAB394:
+    name: sab394
+    type: BIGINT
+    years: '1998'
+  XSAB401:
+    name: sab401_flag
+    type: VARCHAR
+    flag_for: sab401
+    years: '1998'
+  SAB401:
+    name: sab401
+    type: BIGINT
+    years: '1998'
+  XSAB402:
+    name: sab402_flag
+    type: VARCHAR
+    flag_for: sab402
+    years: '1998'
+  SAB402:
+    name: sab402
+    type: BIGINT
+    years: '1998'
+  XSAB403:
+    name: sab403_flag
+    type: VARCHAR
+    flag_for: sab403
+    years: '1998'
+  SAB403:
+    name: sab403
+    type: BIGINT
+    years: '1998'
+  XSAB404:
+    name: sab404_flag
+    type: VARCHAR
+    flag_for: sab404
+    years: '1998'
+  SAB404:
+    name: sab404
+    type: BIGINT
+    years: '1998'
+  XSAB411:
+    name: sab411_flag
+    type: VARCHAR
+    flag_for: sab411
+    years: '1998'
+  SAB411:
+    name: sab411
+    type: BIGINT
+    years: '1998'
+  XSAB412:
+    name: sab412_flag
+    type: VARCHAR
+    flag_for: sab412
+    years: '1998'
+  SAB412:
+    name: sab412
+    type: BIGINT
+    years: '1998'
+  XSAB413:
+    name: sab413_flag
+    type: VARCHAR
+    flag_for: sab413
+    years: '1998'
+  SAB413:
+    name: sab413
+    type: BIGINT
+    years: '1998'
+  XSAB414:
+    name: sab414_flag
+    type: VARCHAR
+    flag_for: sab414
+    years: '1998'
+  SAB414:
+    name: sab414
+    type: BIGINT
+    years: '1998'
+  XSAB421:
+    name: sab421_flag
+    type: VARCHAR
+    flag_for: sab421
+    years: '1998'
+  SAB421:
+    name: sab421
+    type: BIGINT
+    years: '1998'
+  XSAB422:
+    name: sab422_flag
+    type: VARCHAR
+    flag_for: sab422
+    years: '1998'
+  SAB422:
+    name: sab422
+    type: BIGINT
+    years: '1998'
+  XSAB423:
+    name: sab423_flag
+    type: VARCHAR
+    flag_for: sab423
+    years: '1998'
+  SAB423:
+    name: sab423
+    type: BIGINT
+    years: '1998'
+  XSAB424:
+    name: sab424_flag
+    type: VARCHAR
+    flag_for: sab424
+    years: '1998'
+  SAB424:
+    name: sab424
+    type: BIGINT
+    years: '1998'
+  XSAB431:
+    name: sab431_flag
+    type: VARCHAR
+    flag_for: sab431
+    years: '1998'
+  SAB431:
+    name: sab431
+    type: BIGINT
+    years: '1998'
+  XSAB432:
+    name: sab432_flag
+    type: VARCHAR
+    flag_for: sab432
+    years: '1998'
+  SAB432:
+    name: sab432
+    type: BIGINT
+    years: '1998'
+  XSAB433:
+    name: sab433_flag
+    type: VARCHAR
+    flag_for: sab433
+    years: '1998'
+  SAB433:
+    name: sab433
+    type: BIGINT
+    years: '1998'
+  XSAB434:
+    name: sab434_flag
+    type: VARCHAR
+    flag_for: sab434
+    years: '1998'
+  SAB434:
+    name: sab434
+    type: BIGINT
+    years: '1998'
+  XSAB441:
+    name: sab441_flag
+    type: VARCHAR
+    flag_for: sab441
+    years: '1998'
+  SAB441:
+    name: sab441
+    type: BIGINT
+    years: '1998'
+  XSAB443:
+    name: sab443_flag
+    type: VARCHAR
+    flag_for: sab443
+    years: '1998'
+  SAB443:
+    name: sab443
+    type: BIGINT
+    years: '1998'
   XSAB09:
     name: sab09_flag
     type: VARCHAR
     flag_for: sab09
-    years: 2002-2010
+    years: 1999,2002-2010
   SAB09:
     name: sab09
     type: BIGINT
-    years: 2002-2010
+    years: 1999,2002-2010
   XSAB11:
     name: sab11_flag
     type: VARCHAR
     flag_for: sab11
-    years: 2002-2010
+    years: 1999,2002-2010
   SAB11:
     name: sab11
     type: BIGINT
-    years: 2002-2010
+    years: 1999,2002-2010
   XSABEQ9:
     name: sabeq9_flag
     type: VARCHAR
     flag_for: sabeq9
-    years: 2002-2010
+    years: 1999,2002-2010
   SABEQ9:
     name: sabeq9
     type: BIGINT
-    years: 2002-2010
+    years: 1999,2002-2010

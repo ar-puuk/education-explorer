@@ -1,0 +1,958 @@
+source: ipeds
+family: fb
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1987,1989-1996
+  B011:
+    name: b011
+    type: BIGINT
+    years: 1987,1989-1996
+  B021:
+    name: b021
+    type: BIGINT
+    years: 1987,1989-1996
+  B031:
+    name: b031
+    type: BIGINT
+    years: 1987,1989-1996
+  B041:
+    name: b041
+    type: BIGINT
+    years: 1987,1989-1996
+  B061:
+    name: b061
+    type: BIGINT
+    years: 1987,1989-1996
+  B071:
+    name: b071
+    type: BIGINT
+    years: 1987,1989-1996
+  B081:
+    name: b081
+    type: BIGINT
+    years: 1987,1989-1996
+  B091:
+    name: b091
+    type: BIGINT
+    years: 1987,1989-1996
+  B101:
+    name: b101
+    type: BIGINT
+    years: 1987,1989-1996
+  B111:
+    name: b111
+    type: BIGINT
+    years: 1987,1989-1996
+  B121:
+    name: b121
+    type: BIGINT
+    years: 1987,1989-1996
+  B131:
+    name: b131
+    type: BIGINT
+    years: 1987,1989-1996
+  B161:
+    name: b161
+    type: BIGINT
+    years: 1987,1989-1996
+  B191:
+    name: b191
+    type: BIGINT
+    years: 1987,1989-1996
+  B221:
+    name: b221
+    type: BIGINT
+    years: 1987,1989-1996
+  B012:
+    name: b012
+    type: BIGINT
+    years: 1987,1989-1996
+  B022:
+    name: b022
+    type: BIGINT
+    years: 1987,1989-1996
+  B032:
+    name: b032
+    type: BIGINT
+    years: 1987,1989-1996
+  B042:
+    name: b042
+    type: BIGINT
+    years: 1987,1989-1996
+  B062:
+    name: b062
+    type: BIGINT
+    years: 1987,1989-1996
+  B072:
+    name: b072
+    type: BIGINT
+    years: 1987,1989-1996
+  B082:
+    name: b082
+    type: BIGINT
+    years: 1987,1989-1996
+  B092:
+    name: b092
+    type: BIGINT
+    years: 1987,1989-1996
+  B102:
+    name: b102
+    type: BIGINT
+    years: 1987,1989-1996
+  B112:
+    name: b112
+    type: BIGINT
+    years: 1987,1989-1996
+  B122:
+    name: b122
+    type: BIGINT
+    years: 1987,1989-1996
+  B132:
+    name: b132
+    type: BIGINT
+    years: 1987,1989-1996
+  B162:
+    name: b162
+    type: BIGINT
+    years: 1987,1989-1996
+  B192:
+    name: b192
+    type: BIGINT
+    years: 1987,1989-1996
+  B222:
+    name: b222
+    type: BIGINT
+    years: 1987,1989-1996
+  B013:
+    name: b013
+    type: BIGINT
+    years: 1987,1989-1996
+  B023:
+    name: b023
+    type: BIGINT
+    years: 1987,1989-1996
+  B033:
+    name: b033
+    type: BIGINT
+    years: 1987,1989-1996
+  B043:
+    name: b043
+    type: BIGINT
+    years: 1987,1989-1996
+  B063:
+    name: b063
+    type: BIGINT
+    years: 1987,1989-1996
+  B073:
+    name: b073
+    type: BIGINT
+    years: 1987,1989-1996
+  B083:
+    name: b083
+    type: BIGINT
+    years: 1987,1989-1996
+  B093:
+    name: b093
+    type: BIGINT
+    years: 1987,1989-1996
+  B103:
+    name: b103
+    type: BIGINT
+    years: 1987,1989-1996
+  B113:
+    name: b113
+    type: BIGINT
+    years: 1987,1989-1996
+  B123:
+    name: b123
+    type: BIGINT
+    years: 1987,1989-1996
+  B133:
+    name: b133
+    type: BIGINT
+    years: 1987,1989-1996
+  B163:
+    name: b163
+    type: BIGINT
+    years: 1987,1989-1996
+  B193:
+    name: b193
+    type: BIGINT
+    years: 1987,1989-1996
+  B223:
+    name: b223
+    type: BIGINT
+    years: 1987,1989-1996
+  B014:
+    name: b014
+    type: BIGINT
+    years: 1987,1989-1996
+  B024:
+    name: b024
+    type: BIGINT
+    years: 1987,1989-1996
+  B034:
+    name: b034
+    type: BIGINT
+    years: 1987,1989-1996
+  B044:
+    name: b044
+    type: BIGINT
+    years: 1987,1989-1996
+  B064:
+    name: b064
+    type: BIGINT
+    years: 1987,1989-1996
+  B074:
+    name: b074
+    type: BIGINT
+    years: 1987,1989-1996
+  B084:
+    name: b084
+    type: BIGINT
+    years: 1987,1989-1996
+  B235:
+    name: b235
+    type: BIGINT
+    years: 1987,1991
+  B245:
+    name: b245
+    type: BIGINT
+    years: 1987,1991
+  B255:
+    name: b255
+    type: BIGINT
+    years: 1987,1991
+  B265:
+    name: b265
+    type: BIGINT
+    years: 1987,1991
+  B275:
+    name: b275
+    type: BIGINT
+    years: 1987,1991
+  BLINE05:
+    name: bline05
+    type: BIGINT
+    years: 1987,1989-1996
+  BLINE14:
+    name: bline14
+    type: BIGINT
+    years: 1987,1989-1996
+  BLINE15:
+    name: bline15
+    type: BIGINT
+    years: 1987,1989-1996
+  BLINE17:
+    name: bline17
+    type: BIGINT
+    years: 1987,1989-1996
+  BLINE18:
+    name: bline18
+    type: BIGINT
+    years: 1987,1989-1996
+  BLINE20:
+    name: bline20
+    type: BIGINT
+    years: 1987,1989-1996
+  BLINE21:
+    name: bline21
+    type: BIGINT
+    years: 1987,1989-1996
+  IB011:
+    name: ib011
+    type: BIGINT
+    years: '1987'
+  IB021:
+    name: ib021
+    type: BIGINT
+    years: '1987'
+  IB031:
+    name: ib031
+    type: BIGINT
+    years: '1987'
+  IB041:
+    name: ib041
+    type: BIGINT
+    years: '1987'
+  IB051:
+    name: ib051
+    type: BIGINT
+    years: '1987'
+  IB061:
+    name: ib061
+    type: BIGINT
+    years: '1987'
+  IB071:
+    name: ib071
+    type: BIGINT
+    years: '1987'
+  IB081:
+    name: ib081
+    type: BIGINT
+    years: '1987'
+  IB091:
+    name: ib091
+    type: BIGINT
+    years: '1987'
+  IB101:
+    name: ib101
+    type: BIGINT
+    years: '1987'
+  IB111:
+    name: ib111
+    type: BIGINT
+    years: '1987'
+  IB121:
+    name: ib121
+    type: BIGINT
+    years: '1987'
+  IB131:
+    name: ib131
+    type: BIGINT
+    years: '1987'
+  IB161:
+    name: ib161
+    type: BIGINT
+    years: '1987'
+  IB191:
+    name: ib191
+    type: BIGINT
+    years: '1987'
+  IB221:
+    name: ib221
+    type: BIGINT
+    years: '1987'
+  IB012:
+    name: ib012
+    type: BIGINT
+    years: '1987'
+  IB022:
+    name: ib022
+    type: BIGINT
+    years: '1987'
+  IB032:
+    name: ib032
+    type: BIGINT
+    years: '1987'
+  IB042:
+    name: ib042
+    type: BIGINT
+    years: '1987'
+  IB052:
+    name: ib052
+    type: BIGINT
+    years: '1987'
+  IB062:
+    name: ib062
+    type: BIGINT
+    years: '1987'
+  IB072:
+    name: ib072
+    type: BIGINT
+    years: '1987'
+  IB082:
+    name: ib082
+    type: BIGINT
+    years: '1987'
+  IB092:
+    name: ib092
+    type: BIGINT
+    years: '1987'
+  IB102:
+    name: ib102
+    type: BIGINT
+    years: '1987'
+  IB112:
+    name: ib112
+    type: BIGINT
+    years: '1987'
+  IB122:
+    name: ib122
+    type: BIGINT
+    years: '1987'
+  IB132:
+    name: ib132
+    type: BIGINT
+    years: '1987'
+  IB162:
+    name: ib162
+    type: BIGINT
+    years: '1987'
+  IB192:
+    name: ib192
+    type: BIGINT
+    years: '1987'
+  IB222:
+    name: ib222
+    type: BIGINT
+    years: '1987'
+  IB013:
+    name: ib013
+    type: BIGINT
+    years: '1987'
+  IB023:
+    name: ib023
+    type: BIGINT
+    years: '1987'
+  IB033:
+    name: ib033
+    type: BIGINT
+    years: '1987'
+  IB043:
+    name: ib043
+    type: BIGINT
+    years: '1987'
+  IB053:
+    name: ib053
+    type: BIGINT
+    years: '1987'
+  IB063:
+    name: ib063
+    type: BIGINT
+    years: '1987'
+  IB073:
+    name: ib073
+    type: BIGINT
+    years: '1987'
+  IB083:
+    name: ib083
+    type: BIGINT
+    years: '1987'
+  IB093:
+    name: ib093
+    type: BIGINT
+    years: '1987'
+  IB103:
+    name: ib103
+    type: BIGINT
+    years: '1987'
+  IB113:
+    name: ib113
+    type: BIGINT
+    years: '1987'
+  IB123:
+    name: ib123
+    type: BIGINT
+    years: '1987'
+  IB133:
+    name: ib133
+    type: BIGINT
+    years: '1987'
+  IB163:
+    name: ib163
+    type: BIGINT
+    years: '1987'
+  IB193:
+    name: ib193
+    type: BIGINT
+    years: '1987'
+  IB223:
+    name: ib223
+    type: BIGINT
+    years: '1987'
+  IB014:
+    name: ib014
+    type: BIGINT
+    years: '1987'
+  IB024:
+    name: ib024
+    type: BIGINT
+    years: '1987'
+  IB034:
+    name: ib034
+    type: BIGINT
+    years: '1987'
+  IB044:
+    name: ib044
+    type: BIGINT
+    years: '1987'
+  IB054:
+    name: ib054
+    type: BIGINT
+    years: '1987'
+  IB064:
+    name: ib064
+    type: BIGINT
+    years: '1987'
+  IB074:
+    name: ib074
+    type: BIGINT
+    years: '1987'
+  IB084:
+    name: ib084
+    type: BIGINT
+    years: '1987'
+  IB065:
+    name: ib065
+    type: BIGINT
+    years: '1987'
+  IB235:
+    name: ib235
+    type: BIGINT
+    years: '1987'
+  IB245:
+    name: ib245
+    type: BIGINT
+    years: '1987'
+  IB255:
+    name: ib255
+    type: BIGINT
+    years: '1987'
+  IB265:
+    name: ib265
+    type: BIGINT
+    years: '1987'
+  IB275:
+    name: ib275
+    type: BIGINT
+    years: '1987'
+  IBLINE05:
+    name: ibline05
+    type: BIGINT
+    years: '1987'
+  IBLINE14:
+    name: ibline14
+    type: BIGINT
+    years: '1987'
+  IBLINE15:
+    name: ibline15
+    type: BIGINT
+    years: '1987'
+  IBLINE17:
+    name: ibline17
+    type: BIGINT
+    years: '1987'
+  IBLINE18:
+    name: ibline18
+    type: BIGINT
+    years: '1987'
+  IBLINE20:
+    name: ibline20
+    type: BIGINT
+    years: '1987'
+  IBLINE21:
+    name: ibline21
+    type: BIGINT
+    years: '1987'
+  B234:
+    name: b234
+    type: BIGINT
+    years: 1989-1990,1992-1996
+  B244:
+    name: b244
+    type: BIGINT
+    years: 1989-1990,1992-1996
+  B254:
+    name: b254
+    type: BIGINT
+    years: 1989-1990,1992-1996
+  B264:
+    name: b264
+    type: BIGINT
+    years: 1989-1990,1992-1996
+  B274:
+    name: b274
+    type: BIGINT
+    years: 1989-1990,1992-1996
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1994-1995
+  XB011:
+    name: b011_flag
+    type: VARCHAR
+    flag_for: b011
+    years: 1992-1996
+  XB012:
+    name: b012_flag
+    type: VARCHAR
+    flag_for: b012
+    years: 1992-1996
+  XB013:
+    name: b013_flag
+    type: VARCHAR
+    flag_for: b013
+    years: 1992-1996
+  XB014:
+    name: b014_flag
+    type: VARCHAR
+    flag_for: b014
+    years: 1992-1996
+  XB021:
+    name: b021_flag
+    type: VARCHAR
+    flag_for: b021
+    years: 1992-1996
+  XB022:
+    name: b022_flag
+    type: VARCHAR
+    flag_for: b022
+    years: 1992-1996
+  XB023:
+    name: b023_flag
+    type: VARCHAR
+    flag_for: b023
+    years: 1992-1996
+  XB024:
+    name: b024_flag
+    type: VARCHAR
+    flag_for: b024
+    years: 1992-1996
+  XB031:
+    name: b031_flag
+    type: VARCHAR
+    flag_for: b031
+    years: 1992-1996
+  XB032:
+    name: b032_flag
+    type: VARCHAR
+    flag_for: b032
+    years: 1992-1996
+  XB033:
+    name: b033_flag
+    type: VARCHAR
+    flag_for: b033
+    years: 1992-1996
+  XB034:
+    name: b034_flag
+    type: VARCHAR
+    flag_for: b034
+    years: 1992-1996
+  XB041:
+    name: b041_flag
+    type: VARCHAR
+    flag_for: b041
+    years: 1992-1996
+  XB042:
+    name: b042_flag
+    type: VARCHAR
+    flag_for: b042
+    years: 1992-1996
+  XB043:
+    name: b043_flag
+    type: VARCHAR
+    flag_for: b043
+    years: 1992-1996
+  XB044:
+    name: b044_flag
+    type: VARCHAR
+    flag_for: b044
+    years: 1992-1996
+  XB061:
+    name: b061_flag
+    type: VARCHAR
+    flag_for: b061
+    years: 1992-1996
+  XB062:
+    name: b062_flag
+    type: VARCHAR
+    flag_for: b062
+    years: 1992-1996
+  XB063:
+    name: b063_flag
+    type: VARCHAR
+    flag_for: b063
+    years: 1992-1996
+  XB064:
+    name: b064_flag
+    type: VARCHAR
+    flag_for: b064
+    years: 1992-1996
+  XB071:
+    name: b071_flag
+    type: VARCHAR
+    flag_for: b071
+    years: 1992-1996
+  XB072:
+    name: b072_flag
+    type: VARCHAR
+    flag_for: b072
+    years: 1992-1996
+  XB073:
+    name: b073_flag
+    type: VARCHAR
+    flag_for: b073
+    years: 1992-1996
+  XB074:
+    name: b074_flag
+    type: VARCHAR
+    flag_for: b074
+    years: 1992-1996
+  XB081:
+    name: b081_flag
+    type: VARCHAR
+    flag_for: b081
+    years: 1992-1996
+  XB082:
+    name: b082_flag
+    type: VARCHAR
+    flag_for: b082
+    years: 1992-1996
+  XB083:
+    name: b083_flag
+    type: VARCHAR
+    flag_for: b083
+    years: 1992-1996
+  XB084:
+    name: b084_flag
+    type: VARCHAR
+    flag_for: b084
+    years: 1992-1996
+  XB091:
+    name: b091_flag
+    type: VARCHAR
+    flag_for: b091
+    years: 1992-1996
+  XB092:
+    name: b092_flag
+    type: VARCHAR
+    flag_for: b092
+    years: 1992-1996
+  XB093:
+    name: b093_flag
+    type: VARCHAR
+    flag_for: b093
+    years: 1992-1996
+  XB101:
+    name: b101_flag
+    type: VARCHAR
+    flag_for: b101
+    years: 1992-1996
+  XB102:
+    name: b102_flag
+    type: VARCHAR
+    flag_for: b102
+    years: 1992-1996
+  XB103:
+    name: b103_flag
+    type: VARCHAR
+    flag_for: b103
+    years: 1992-1996
+  XB111:
+    name: b111_flag
+    type: VARCHAR
+    flag_for: b111
+    years: 1992-1996
+  XB112:
+    name: b112_flag
+    type: VARCHAR
+    flag_for: b112
+    years: 1992-1996
+  XB113:
+    name: b113_flag
+    type: VARCHAR
+    flag_for: b113
+    years: 1992-1996
+  XB121:
+    name: b121_flag
+    type: VARCHAR
+    flag_for: b121
+    years: 1992-1996
+  XB122:
+    name: b122_flag
+    type: VARCHAR
+    flag_for: b122
+    years: 1992-1996
+  XB123:
+    name: b123_flag
+    type: VARCHAR
+    flag_for: b123
+    years: 1992-1996
+  XB131:
+    name: b131_flag
+    type: VARCHAR
+    flag_for: b131
+    years: 1992-1996
+  XB132:
+    name: b132_flag
+    type: VARCHAR
+    flag_for: b132
+    years: 1992-1996
+  XB133:
+    name: b133_flag
+    type: VARCHAR
+    flag_for: b133
+    years: 1992-1996
+  XB161:
+    name: b161_flag
+    type: VARCHAR
+    flag_for: b161
+    years: 1992-1996
+  XB162:
+    name: b162_flag
+    type: VARCHAR
+    flag_for: b162
+    years: 1992-1996
+  XB163:
+    name: b163_flag
+    type: VARCHAR
+    flag_for: b163
+    years: 1992-1996
+  XB191:
+    name: b191_flag
+    type: VARCHAR
+    flag_for: b191
+    years: 1992-1996
+  XB192:
+    name: b192_flag
+    type: VARCHAR
+    flag_for: b192
+    years: 1992-1996
+  XB193:
+    name: b193_flag
+    type: VARCHAR
+    flag_for: b193
+    years: 1992-1996
+  XB221:
+    name: b221_flag
+    type: VARCHAR
+    flag_for: b221
+    years: 1992-1996
+  XB222:
+    name: b222_flag
+    type: VARCHAR
+    flag_for: b222
+    years: 1992-1996
+  XB223:
+    name: b223_flag
+    type: VARCHAR
+    flag_for: b223
+    years: 1992-1996
+  XB234:
+    name: b234_flag
+    type: VARCHAR
+    flag_for: b234
+    years: 1992-1996
+  XB244:
+    name: b244_flag
+    type: VARCHAR
+    flag_for: b244
+    years: 1992-1996
+  XB254:
+    name: b254_flag
+    type: VARCHAR
+    flag_for: b254
+    years: 1992-1996
+  XB264:
+    name: b264_flag
+    type: VARCHAR
+    flag_for: b264
+    years: 1992-1996
+  XB274:
+    name: b274_flag
+    type: VARCHAR
+    flag_for: b274
+    years: 1992-1996
+  XBLINE05:
+    name: bline05_flag
+    type: VARCHAR
+    flag_for: bline05
+    years: 1992-1996
+  XBLINE14:
+    name: bline14_flag
+    type: VARCHAR
+    flag_for: bline14
+    years: 1992-1996
+  XBLINE15:
+    name: bline15_flag
+    type: VARCHAR
+    flag_for: bline15
+    years: 1992-1996
+  XBLINE17:
+    name: bline17_flag
+    type: VARCHAR
+    flag_for: bline17
+    years: 1992-1996
+  XBLINE18:
+    name: bline18_flag
+    type: VARCHAR
+    flag_for: bline18
+    years: 1992-1996
+  XBLINE20:
+    name: bline20_flag
+    type: VARCHAR
+    flag_for: bline20
+    years: 1992-1996
+  XBLINE21:
+    name: bline21_flag
+    type: VARCHAR
+    flag_for: bline21
+    years: 1992-1996
+  FILLER1:
+    name: filler1
+    type: BIGINT
+    years: '1995'
+  FILLER2:
+    name: filler2
+    type: BIGINT
+    years: '1995'
+  FILLER3:
+    name: filler3
+    type: BIGINT
+    years: '1995'
+  B124:
+    name: b124
+    type: BIGINT
+    years: 1995-1996
+  B134:
+    name: b134
+    type: BIGINT
+    years: 1995-1996
+  B164:
+    name: b164
+    type: BIGINT
+    years: 1995-1996
+  B194:
+    name: b194
+    type: BIGINT
+    years: 1995-1996
+  B224:
+    name: b224
+    type: BIGINT
+    years: 1995-1996
+  FILLER4:
+    name: filler4
+    type: BIGINT
+    years: '1995'
+  FILLER5:
+    name: filler5
+    type: BIGINT
+    years: '1995'
+  FILLER6:
+    name: filler6
+    type: BIGINT
+    years: '1995'
+  FILLER7:
+    name: filler7
+    type: BIGINT
+    years: '1995'
+  XB124:
+    name: b124_flag
+    type: VARCHAR
+    flag_for: b124
+    years: 1995-1996
+  XB134:
+    name: b134_flag
+    type: VARCHAR
+    flag_for: b134
+    years: 1995-1996
+  XB164:
+    name: b164_flag
+    type: VARCHAR
+    flag_for: b164
+    years: 1995-1996
+  XB194:
+    name: b194_flag
+    type: VARCHAR
+    flag_for: b194
+    years: 1995-1996
+  XB224:
+    name: b224_flag
+    type: VARCHAR
+    flag_for: b224
+    years: 1995-1996

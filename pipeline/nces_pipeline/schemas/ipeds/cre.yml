@@ -1,0 +1,92 @@
+source: ipeds
+family: cre
+key:
+- unitid
+- crace15
+- cipcode
+- awlevel
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1985,1987,1989-1994
+  CIPCODE:
+    name: cipcode
+    type: DOUBLE
+    years: 1985,1987,1989-1994
+  AWLEVEL:
+    name: awlevel
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE01:
+    name: crace01
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE02:
+    name: crace02
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE03:
+    name: crace03
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE04:
+    name: crace04
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE05:
+    name: crace05
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE06:
+    name: crace06
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE07:
+    name: crace07
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE08:
+    name: crace08
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE09:
+    name: crace09
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE10:
+    name: crace10
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE11:
+    name: crace11
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE12:
+    name: crace12
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE15:
+    name: crace15
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE16:
+    name: crace16
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  BAL_M:
+    name: bal_m
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  BAL_W:
+    name: bal_w
+    type: BIGINT
+    years: 1985,1987,1989-1994
+  CRACE13:
+    name: crace13
+    type: BIGINT
+    years: 1990-1994
+  CRACE14:
+    name: crace14
+    type: BIGINT
+    years: 1990-1994

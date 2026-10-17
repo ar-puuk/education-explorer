@@ -6,8 +6,8 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: '2000'
+    years: 1999-2000
   ACCODE:
     name: accode
     type: VARCHAR
-    years: '2000'
+    years: 1999-2000

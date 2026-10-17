@@ -6,7 +6,379 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2012-2025
+    years: 1995-1999,2012-2025
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1995-1997
+  DMAJ01:
+    name: dmaj01
+    type: BIGINT
+    years: 1995-1999
+  DMAJ02:
+    name: dmaj02
+    type: BIGINT
+    years: 1995-1999
+  DMAJ03:
+    name: dmaj03
+    type: BIGINT
+    years: 1995-1999
+  DMAJ04:
+    name: dmaj04
+    type: BIGINT
+    years: 1995-1999
+  DMAJ05:
+    name: dmaj05
+    type: BIGINT
+    years: 1995-1999
+  DMAJ06:
+    name: dmaj06
+    type: BIGINT
+    years: 1995-1999
+  DMAJ07:
+    name: dmaj07
+    type: BIGINT
+    years: 1995-1999
+  DMAJ08:
+    name: dmaj08
+    type: BIGINT
+    years: 1995-1999
+  BRANCH01:
+    name: branch01
+    type: BIGINT
+    years: 1995-1999
+  BRANCH02:
+    name: branch02
+    type: BIGINT
+    years: 1995-1999
+  BRANCH03:
+    name: branch03
+    type: BIGINT
+    years: 1995-1999
+  BRANCH04:
+    name: branch04
+    type: BIGINT
+    years: 1995-1999
+  BRANCH05:
+    name: branch05
+    type: BIGINT
+    years: 1995-1999
+  BRANCH06:
+    name: branch06
+    type: BIGINT
+    years: 1995-1999
+  BRANCH07:
+    name: branch07
+    type: BIGINT
+    years: 1995-1999
+  BRANCH08:
+    name: branch08
+    type: BIGINT
+    years: 1995-1999
+  BRANCH09:
+    name: branch09
+    type: BIGINT
+    years: 1995-1999
+  BRANCH10:
+    name: branch10
+    type: BIGINT
+    years: 1995-1999
+  BRANCH11:
+    name: branch11
+    type: BIGINT
+    years: 1995-1999
+  BRANCH12:
+    name: branch12
+    type: BIGINT
+    years: 1995-1999
+  BRANCH13:
+    name: branch13
+    type: BIGINT
+    years: 1995-1999
+  BRANCH14:
+    name: branch14
+    type: BIGINT
+    years: 1995-1999
+  BRANCH15:
+    name: branch15
+    type: BIGINT
+    years: 1995-1999
+  BRANCH16:
+    name: branch16
+    type: BIGINT
+    years: 1995-1999
+  BRANCH17:
+    name: branch17
+    type: BIGINT
+    years: 1995-1999
+  BRANCH18:
+    name: branch18
+    type: BIGINT
+    years: 1995-1999
+  BRANCH19:
+    name: branch19
+    type: BIGINT
+    years: 1995-1999
+  BRANCH20:
+    name: branch20
+    type: BIGINT
+    years: 1995-1999
+  BRANCH21:
+    name: branch21
+    type: BIGINT
+    years: 1995-1999
+  BRANCH22:
+    name: branch22
+    type: BIGINT
+    years: 1995-1999
+  IMPDM01:
+    name: impdm01
+    type: VARCHAR
+    years: 1995-1997
+  IMPDM02:
+    name: impdm02
+    type: VARCHAR
+    years: 1995-1997
+  IMPDM03:
+    name: impdm03
+    type: VARCHAR
+    years: 1995-1997
+  IMPDM04:
+    name: impdm04
+    type: VARCHAR
+    years: 1995-1997
+  IMPDM05:
+    name: impdm05
+    type: VARCHAR
+    years: 1995-1997
+  IMPDM06:
+    name: impdm06
+    type: VARCHAR
+    years: 1995-1997
+  IMPDM07:
+    name: impdm07
+    type: VARCHAR
+    years: 1995-1997
+  IMPDM08:
+    name: impdm08
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR01:
+    name: impbr01
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR02:
+    name: impbr02
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR03:
+    name: impbr03
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR04:
+    name: impbr04
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR05:
+    name: impbr05
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR06:
+    name: impbr06
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR07:
+    name: impbr07
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR08:
+    name: impbr08
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR09:
+    name: impbr09
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR10:
+    name: impbr10
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR11:
+    name: impbr11
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR12:
+    name: impbr12
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR13:
+    name: impbr13
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR14:
+    name: impbr14
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR15:
+    name: impbr15
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR16:
+    name: impbr16
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR17:
+    name: impbr17
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR18:
+    name: impbr18
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR19:
+    name: impbr19
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR20:
+    name: impbr20
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR21:
+    name: impbr21
+    type: VARCHAR
+    years: 1995-1997
+  IMPBR22:
+    name: impbr22
+    type: VARCHAR
+    years: 1995-1997
+  XDMAJ01:
+    name: dmaj01_flag
+    type: VARCHAR
+    flag_for: dmaj01
+    years: 1998-1999
+  XDMAJ02:
+    name: dmaj02_flag
+    type: VARCHAR
+    flag_for: dmaj02
+    years: 1998-1999
+  XDMAJ03:
+    name: dmaj03_flag
+    type: VARCHAR
+    flag_for: dmaj03
+    years: 1998-1999
+  XDMAJ04:
+    name: dmaj04_flag
+    type: VARCHAR
+    flag_for: dmaj04
+    years: 1998-1999
+  XDMAJ05:
+    name: dmaj05_flag
+    type: VARCHAR
+    flag_for: dmaj05
+    years: 1998-1999
+  XDMAJ06:
+    name: dmaj06_flag
+    type: VARCHAR
+    flag_for: dmaj06
+    years: 1998-1999
+  XDMAJ07:
+    name: dmaj07_flag
+    type: VARCHAR
+    flag_for: dmaj07
+    years: 1998-1999
+  XDMAJ08:
+    name: dmaj08_flag
+    type: VARCHAR
+    flag_for: dmaj08
+    years: 1998-1999
+  XBR01:
+    name: xbr01
+    type: VARCHAR
+    years: 1998-1999
+  XBR02:
+    name: xbr02
+    type: VARCHAR
+    years: 1998-1999
+  XBR03:
+    name: xbr03
+    type: VARCHAR
+    years: 1998-1999
+  XBR04:
+    name: xbr04
+    type: VARCHAR
+    years: 1998-1999
+  XBR05:
+    name: xbr05
+    type: VARCHAR
+    years: 1998-1999
+  XBR06:
+    name: xbr06
+    type: VARCHAR
+    years: 1998-1999
+  XBR07:
+    name: xbr07
+    type: VARCHAR
+    years: 1998-1999
+  XBR08:
+    name: xbr08
+    type: VARCHAR
+    years: 1998-1999
+  XBR09:
+    name: xbr09
+    type: VARCHAR
+    years: 1998-1999
+  XBR10:
+    name: xbr10
+    type: VARCHAR
+    years: 1998-1999
+  XBR11:
+    name: xbr11
+    type: VARCHAR
+    years: 1998-1999
+  XBR12:
+    name: xbr12
+    type: VARCHAR
+    years: 1998-1999
+  XBR13:
+    name: xbr13
+    type: VARCHAR
+    years: 1998-1999
+  XBR14:
+    name: xbr14
+    type: VARCHAR
+    years: 1998-1999
+  XBR15:
+    name: xbr15
+    type: VARCHAR
+    years: 1998-1999
+  XBR16:
+    name: xbr16
+    type: VARCHAR
+    years: 1998-1999
+  XBR17:
+    name: xbr17
+    type: VARCHAR
+    years: 1998-1999
+  XBR18:
+    name: xbr18
+    type: VARCHAR
+    years: 1998-1999
+  XBR19:
+    name: xbr19
+    type: VARCHAR
+    years: 1998-1999
+  XBR20:
+    name: xbr20
+    type: VARCHAR
+    years: 1998-1999
+  XBR21:
+    name: xbr21
+    type: VARCHAR
+    years: 1998-1999
+  XBR22:
+    name: xbr22
+    type: VARCHAR
+    years: 1998-1999
   XCSTOTLT:
     name: cstotlt_flag
     type: VARCHAR

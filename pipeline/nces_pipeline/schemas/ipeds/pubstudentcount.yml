@@ -1,0 +1,21 @@
+source: ipeds
+family: pubstudentcount
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1999'
+  FTUGRAD:
+    name: ftugrad
+    type: BIGINT
+    years: '1999'
+  FTUGRADP:
+    name: ftugradp
+    type: BIGINT
+    years: '1999'
+  FTUGAIDP:
+    name: ftugaidp
+    type: BIGINT
+    years: '1999'

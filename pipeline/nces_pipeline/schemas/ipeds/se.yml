@@ -1,0 +1,161 @@
+source: ipeds
+family: se
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1995,1997,1999
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1995,1997
+  FILLER:
+    name: filler
+    type: BIGINT
+    years: '1995'
+  SRVCFT1:
+    name: srvcft1
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCPT1:
+    name: srvcpt1
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCFT2:
+    name: srvcft2
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCPT2:
+    name: srvcpt2
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCFT3:
+    name: srvcft3
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCPT3:
+    name: srvcpt3
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCFT4:
+    name: srvcft4
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCPT4:
+    name: srvcpt4
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCFT5:
+    name: srvcft5
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCPT5:
+    name: srvcpt5
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCFT6:
+    name: srvcft6
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCPT6:
+    name: srvcpt6
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCFT7:
+    name: srvcft7
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCPT7:
+    name: srvcpt7
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCFT8:
+    name: srvcft8
+    type: BIGINT
+    years: 1995,1997,1999
+  SRVCPT8:
+    name: srvcpt8
+    type: BIGINT
+    years: 1995,1997,1999
+  XSRVCFT1:
+    name: srvcft1_flag
+    type: VARCHAR
+    flag_for: srvcft1
+    years: 1995,1997,1999
+  XSRVCPT1:
+    name: srvcpt1_flag
+    type: VARCHAR
+    flag_for: srvcpt1
+    years: 1995,1997,1999
+  XSRVCFT2:
+    name: srvcft2_flag
+    type: VARCHAR
+    flag_for: srvcft2
+    years: 1995,1997,1999
+  XSRVCPT2:
+    name: srvcpt2_flag
+    type: VARCHAR
+    flag_for: srvcpt2
+    years: 1995,1997,1999
+  XSRVCFT3:
+    name: srvcft3_flag
+    type: VARCHAR
+    flag_for: srvcft3
+    years: 1995,1997,1999
+  XSRVCPT3:
+    name: srvcpt3_flag
+    type: VARCHAR
+    flag_for: srvcpt3
+    years: 1995,1997,1999
+  XSRVCFT4:
+    name: srvcft4_flag
+    type: VARCHAR
+    flag_for: srvcft4
+    years: 1995,1997,1999
+  XSRVCPT4:
+    name: srvcpt4_flag
+    type: VARCHAR
+    flag_for: srvcpt4
+    years: 1995,1997,1999
+  XSRVCFT5:
+    name: srvcft5_flag
+    type: VARCHAR
+    flag_for: srvcft5
+    years: 1995,1997,1999
+  XSRVCPT5:
+    name: srvcpt5_flag
+    type: VARCHAR
+    flag_for: srvcpt5
+    years: 1995,1997,1999
+  XSRVCFT6:
+    name: srvcft6_flag
+    type: VARCHAR
+    flag_for: srvcft6
+    years: 1995,1997,1999
+  XSRVCPT6:
+    name: srvcpt6_flag
+    type: VARCHAR
+    flag_for: srvcpt6
+    years: 1995,1997,1999
+  XSRVCFT7:
+    name: srvcft7_flag
+    type: VARCHAR
+    flag_for: srvcft7
+    years: 1995,1997,1999
+  XSRVCPT7:
+    name: srvcpt7_flag
+    type: VARCHAR
+    flag_for: srvcpt7
+    years: 1995,1997,1999
+  XSRVCFT8:
+    name: srvcft8_flag
+    type: VARCHAR
+    flag_for: srvcft8
+    years: 1995,1997,1999
+  XSRVCPT8:
+    name: srvcpt8_flag
+    type: VARCHAR
+    flag_for: srvcpt8
+    years: 1995,1997,1999

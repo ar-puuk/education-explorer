@@ -1,0 +1,225 @@
+source: ipeds
+family: ipay
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1999'
+  XCHG2AY1:
+    name: chg2ay1_flag
+    type: VARCHAR
+    flag_for: chg2ay1
+    years: '1999'
+  CHG2AY1:
+    name: chg2ay1
+    type: BIGINT
+    years: '1999'
+  XCHG2AY2:
+    name: chg2ay2_flag
+    type: VARCHAR
+    flag_for: chg2ay2
+    years: '1999'
+  CHG2AY2:
+    name: chg2ay2
+    type: BIGINT
+    years: '1999'
+  XCHG2AY3:
+    name: chg2ay3_flag
+    type: VARCHAR
+    flag_for: chg2ay3
+    years: '1999'
+  CHG2AY3:
+    name: chg2ay3
+    type: BIGINT
+    years: '1999'
+  XCHG3AY1:
+    name: chg3ay1_flag
+    type: VARCHAR
+    flag_for: chg3ay1
+    years: '1999'
+  CHG3AY1:
+    name: chg3ay1
+    type: BIGINT
+    years: '1999'
+  XCHG3AY2:
+    name: chg3ay2_flag
+    type: VARCHAR
+    flag_for: chg3ay2
+    years: '1999'
+  CHG3AY2:
+    name: chg3ay2
+    type: BIGINT
+    years: '1999'
+  XCHG3AY3:
+    name: chg3ay3_flag
+    type: VARCHAR
+    flag_for: chg3ay3
+    years: '1999'
+  CHG3AY3:
+    name: chg3ay3
+    type: BIGINT
+    years: '1999'
+  XCHG4AY1:
+    name: chg4ay1_flag
+    type: VARCHAR
+    flag_for: chg4ay1
+    years: '1999'
+  CHG4AY1:
+    name: chg4ay1
+    type: BIGINT
+    years: '1999'
+  XCHG4AY2:
+    name: chg4ay2_flag
+    type: VARCHAR
+    flag_for: chg4ay2
+    years: '1999'
+  CHG4AY2:
+    name: chg4ay2
+    type: BIGINT
+    years: '1999'
+  XCHG4AY3:
+    name: chg4ay3_flag
+    type: VARCHAR
+    flag_for: chg4ay3
+    years: '1999'
+  CHG4AY3:
+    name: chg4ay3
+    type: BIGINT
+    years: '1999'
+  XCHG5AY1:
+    name: chg5ay1_flag
+    type: VARCHAR
+    flag_for: chg5ay1
+    years: '1999'
+  CHG5AY1:
+    name: chg5ay1
+    type: BIGINT
+    years: '1999'
+  XCHG5AY2:
+    name: chg5ay2_flag
+    type: VARCHAR
+    flag_for: chg5ay2
+    years: '1999'
+  CHG5AY2:
+    name: chg5ay2
+    type: BIGINT
+    years: '1999'
+  XCHG5AY3:
+    name: chg5ay3_flag
+    type: VARCHAR
+    flag_for: chg5ay3
+    years: '1999'
+  CHG5AY3:
+    name: chg5ay3
+    type: BIGINT
+    years: '1999'
+  XCHG6AY1:
+    name: chg6ay1_flag
+    type: VARCHAR
+    flag_for: chg6ay1
+    years: '1999'
+  CHG6AY1:
+    name: chg6ay1
+    type: BIGINT
+    years: '1999'
+  XCHG6AY2:
+    name: chg6ay2_flag
+    type: VARCHAR
+    flag_for: chg6ay2
+    years: '1999'
+  CHG6AY2:
+    name: chg6ay2
+    type: BIGINT
+    years: '1999'
+  XCHG6AY3:
+    name: chg6ay3_flag
+    type: VARCHAR
+    flag_for: chg6ay3
+    years: '1999'
+  CHG6AY3:
+    name: chg6ay3
+    type: BIGINT
+    years: '1999'
+  XCHG7AY1:
+    name: chg7ay1_flag
+    type: VARCHAR
+    flag_for: chg7ay1
+    years: '1999'
+  CHG7AY1:
+    name: chg7ay1
+    type: BIGINT
+    years: '1999'
+  XCHG7AY2:
+    name: chg7ay2_flag
+    type: VARCHAR
+    flag_for: chg7ay2
+    years: '1999'
+  CHG7AY2:
+    name: chg7ay2
+    type: BIGINT
+    years: '1999'
+  XCHG7AY3:
+    name: chg7ay3_flag
+    type: VARCHAR
+    flag_for: chg7ay3
+    years: '1999'
+  CHG7AY3:
+    name: chg7ay3
+    type: BIGINT
+    years: '1999'
+  XCHG8AY1:
+    name: chg8ay1_flag
+    type: VARCHAR
+    flag_for: chg8ay1
+    years: '1999'
+  CHG8AY1:
+    name: chg8ay1
+    type: BIGINT
+    years: '1999'
+  XCHG8AY2:
+    name: chg8ay2_flag
+    type: VARCHAR
+    flag_for: chg8ay2
+    years: '1999'
+  CHG8AY2:
+    name: chg8ay2
+    type: BIGINT
+    years: '1999'
+  XCHG8AY3:
+    name: chg8ay3_flag
+    type: VARCHAR
+    flag_for: chg8ay3
+    years: '1999'
+  CHG8AY3:
+    name: chg8ay3
+    type: BIGINT
+    years: '1999'
+  XCHG9AY1:
+    name: chg9ay1_flag
+    type: VARCHAR
+    flag_for: chg9ay1
+    years: '1999'
+  CHG9AY1:
+    name: chg9ay1
+    type: BIGINT
+    years: '1999'
+  XCHG9AY2:
+    name: chg9ay2_flag
+    type: VARCHAR
+    flag_for: chg9ay2
+    years: '1999'
+  CHG9AY2:
+    name: chg9ay2
+    type: BIGINT
+    years: '1999'
+  XCHG9AY3:
+    name: chg9ay3_flag
+    type: VARCHAR
+    flag_for: chg9ay3
+    years: '1999'
+  CHG9AY3:
+    name: chg9ay3
+    type: BIGINT
+    years: '1999'

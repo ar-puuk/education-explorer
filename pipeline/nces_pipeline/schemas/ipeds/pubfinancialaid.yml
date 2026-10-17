@@ -1,0 +1,89 @@
+source: ipeds
+family: pubfinancialaid
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1999'
+  YEARIND:
+    name: yearind
+    type: BIGINT
+    years: '1999'
+  FEDGRNTP:
+    name: fedgrntp
+    type: BIGINT
+    years: '1999'
+  FEDGRNTA:
+    name: fedgrnta
+    type: BIGINT
+    years: '1999'
+  STGRNTP:
+    name: stgrntp
+    type: BIGINT
+    years: '1999'
+  STGRNTA:
+    name: stgrnta
+    type: BIGINT
+    years: '1999'
+  INGRNTP:
+    name: ingrntp
+    type: BIGINT
+    years: '1999'
+  INGRNTA:
+    name: ingrnta
+    type: BIGINT
+    years: '1999'
+  LOANPCT:
+    name: loanpct
+    type: BIGINT
+    years: '1999'
+  LOANAVG:
+    name: loanavg
+    type: BIGINT
+    years: '1999'
+  CAVEAT:
+    name: caveat
+    type: VARCHAR
+    years: '1999'
+  MODDATE:
+    name: moddate
+    type: VARCHAR
+    years: '1999'
+  COLUMN12:
+    name: column12
+    type: VARCHAR
+    years: '1999'
+  COLUMN13:
+    name: column13
+    type: VARCHAR
+    years: '1999'
+  COLUMN14:
+    name: column14
+    type: BIGINT
+    years: '1999'
+  COLUMN15:
+    name: column15
+    type: BIGINT
+    years: '1999'
+  COLUMN16:
+    name: column16
+    type: BIGINT
+    years: '1999'
+  COLUMN17:
+    name: column17
+    type: BIGINT
+    years: '1999'
+  COLUMN18:
+    name: column18
+    type: BIGINT
+    years: '1999'
+  COLUMN19:
+    name: column19
+    type: BIGINT
+    years: '1999'
+  COLUMN20:
+    name: column20
+    type: BIGINT
+    years: '1999'

@@ -1,0 +1,117 @@
+source: ipeds
+family: cic
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1985,1987-1989,1992-1996
+  ED1IMP:
+    name: ed1imp
+    type: BIGINT
+    years: '1985'
+  ED1SUF:
+    name: ed1suf
+    type: BIGINT
+    years: '1985'
+  ED1NEW:
+    name: ed1new
+    type: BIGINT
+    years: '1985'
+  ED1COD:
+    name: ed1cod
+    type: BIGINT
+    years: '1985'
+  L1M_FLAG:
+    name: l1m_flag
+    type: BIGINT
+    years: '1985'
+  L1W_FLAG:
+    name: l1w_flag
+    type: BIGINT
+    years: '1985'
+  L4M_FLAG:
+    name: l4m_flag
+    type: BIGINT
+    years: '1985'
+  L4W_FLAG:
+    name: l4w_flag
+    type: BIGINT
+    years: '1985'
+  ASM_FLAG:
+    name: asm_flag
+    type: BIGINT
+    years: '1985'
+  ASW_FLAG:
+    name: asw_flag
+    type: BIGINT
+    years: '1985'
+  BCM_FLAG:
+    name: bcm_flag
+    type: BIGINT
+    years: '1985'
+  BCW_FLAG:
+    name: bcw_flag
+    type: BIGINT
+    years: '1985'
+  MSM_FLAG:
+    name: msm_flag
+    type: BIGINT
+    years: '1985'
+  MSW_FLAG:
+    name: msw_flag
+    type: BIGINT
+    years: '1985'
+  PHM_FLAG:
+    name: phm_flag
+    type: BIGINT
+    years: '1985'
+  PHW_FLAG:
+    name: phw_flag
+    type: BIGINT
+    years: '1985'
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: 1987-1989,1992-1996
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: 1987-1989,1992-1996
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: 1987-1989,1992-1996
+  SOURCE:
+    name: source
+    type: BIGINT
+    years: 1993-1996
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: 1993-1996
+  FILLER1:
+    name: filler1
+    type: VARCHAR
+    years: 1995-1996
+  IMPTYPE:
+    name: imptype
+    type: BIGINT
+    years: 1995-1996
+  FILLER2:
+    name: filler2
+    type: VARCHAR
+    years: 1995-1996
+  FILLER3:
+    name: filler3
+    type: VARCHAR
+    years: 1995-1996
+  NCESEDIT:
+    name: ncesedit
+    type: BIGINT
+    years: 1995-1996
+  COLUMN11:
+    name: column11
+    type: BIGINT
+    years: '1995'

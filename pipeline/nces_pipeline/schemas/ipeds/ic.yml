@@ -6,7 +6,647 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000-2025
+    years: 1980,1984-1985,2000-2025
+  FICE:
+    name: fice
+    type: BIGINT
+    years: 1980,1984-1985
+  PUBST:
+    name: pubst
+    type: BIGINT
+    years: 1980,1984-1985
+  PBALPH:
+    name: pbalph
+    type: BIGINT
+    years: 1980,1984-1985
+  SYSTEM:
+    name: system
+    type: VARCHAR
+    years: 1980,1984-1985
+  STATUS:
+    name: status
+    type: VARCHAR
+    years: 1980,1984-1985
+  INSTNM:
+    name: instnm
+    type: VARCHAR
+    years: 1980,1984-1985
+  ADDR:
+    name: addr
+    type: VARCHAR
+    years: 1980,1984-1985
+  STABBR:
+    name: stabbr
+    type: VARCHAR
+    years: 1980,1984-1985
+  ZIP:
+    name: zip
+    type: BIGINT
+    years: 1980,1984-1985
+  GENTELE:
+    name: gentele
+    type: VARCHAR
+    years: 1980,1984-1985
+  CNTY:
+    name: cnty
+    type: BIGINT
+    years: 1980,1984-1985
+  CONGDIST:
+    name: congdist
+    type: BIGINT
+    years: 1980,1984-1985
+  CITY:
+    name: city
+    type: VARCHAR
+    years: 1980,1984-1985
+  COUNTYNM:
+    name: countynm
+    type: VARCHAR
+    years: 1980,1984-1985
+  AFFIL:
+    name: affil
+    type: BIGINT
+    years: 1980,1984-1985
+  CALSYS:
+    name: calsys
+    type: BIGINT
+    years: 1980,1984-1985,2000-2025
+  HLOFFER:
+    name: hloffer
+    type: BIGINT
+    years: 1980,1984-1985
+  PR2YR:
+    name: pr2yr
+    type: BIGINT
+    years: 1980,1984-1985
+  PRLIB:
+    name: prlib
+    type: BIGINT
+    years: 1980,1984-1985
+  PRTEA:
+    name: prtea
+    type: BIGINT
+    years: 1980,1984-1985
+  PRPROF:
+    name: prprof
+    type: BIGINT
+    years: 1980,1984-1985
+  ENROLMNT:
+    name: enrolmnt
+    type: BIGINT
+    years: '1980'
+  GEOST:
+    name: geost
+    type: BIGINT
+    years: 1980,1984-1985
+  OEREG:
+    name: oereg
+    type: BIGINT
+    years: 1980,1984-1985
+  OBEREG:
+    name: obereg
+    type: BIGINT
+    years: 1980,1984-1985
+  RACE:
+    name: race
+    type: BIGINT
+    years: 1980,1984-1985
+  CONTROL:
+    name: control
+    type: BIGINT
+    years: 1980,1984-1985
+  TYPE:
+    name: type
+    type: BIGINT
+    years: 1980,1984-1985
+  SEX:
+    name: sex
+    type: BIGINT
+    years: 1980,1984-1985
+  LGRNT:
+    name: lgrnt
+    type: BIGINT
+    years: 1980,1984-1985
+  SURVEY:
+    name: survey
+    type: BIGINT
+    years: '1980'
+  SS_OCCUP:
+    name: ss_occup
+    type: BIGINT
+    years: '1980'
+  SUM2YR:
+    name: sum2yr
+    type: BIGINT
+    years: 1980,1984-1985
+  SUM4YR:
+    name: sum4yr
+    type: BIGINT
+    years: 1980,1984-1985
+  SUMPOS:
+    name: sumpos
+    type: BIGINT
+    years: 1980,1984-1985
+  SS_OTHER:
+    name: ss_other
+    type: BIGINT
+    years: '1980'
+  ES_OCCUP:
+    name: es_occup
+    type: BIGINT
+    years: '1980'
+  EVE2YR:
+    name: eve2yr
+    type: BIGINT
+    years: 1980,1984-1985
+  EVE4YR:
+    name: eve4yr
+    type: BIGINT
+    years: 1980,1984-1985
+  EVEPOS:
+    name: evepos
+    type: BIGINT
+    years: 1980,1984-1985
+  ES_OTHER:
+    name: es_other
+    type: BIGINT
+    years: '1980'
+  EXCNTL:
+    name: excntl
+    type: BIGINT
+    years: 1980,1984-1985
+  CITYSI:
+    name: citysi
+    type: BIGINT
+    years: 1980,1984-1985
+  ADMREQ:
+    name: admreq
+    type: BIGINT
+    years: 1980,1984-1985
+  ESTMOYR:
+    name: estmoyr
+    type: BIGINT
+    years: '1980'
+  FWRKMOYR:
+    name: fwrkmoyr
+    type: BIGINT
+    years: 1980,1984-1985
+  FDGRMOYR:
+    name: fdgrmoyr
+    type: BIGINT
+    years: 1980,1984-1985
+  PRTFU:
+    name: prtfu
+    type: BIGINT
+    years: 1980,1984-1985
+  PBTFUI:
+    name: pbtfui
+    type: BIGINT
+    years: 1980,1984-1985
+  PBTFUO:
+    name: pbtfuo
+    type: BIGINT
+    years: 1980,1984-1985
+  PRTFG:
+    name: prtfg
+    type: BIGINT
+    years: 1980,1984-1985
+  PBTFGI:
+    name: pbtfgi
+    type: BIGINT
+    years: 1980,1984-1985
+  PBTFGO:
+    name: pbtfgo
+    type: BIGINT
+    years: 1980,1984-1985
+  ROOMAMT:
+    name: roomamt
+    type: VARCHAR
+    years: 1980,1984-1985,2000-2023
+  BOARDAMT:
+    name: boardamt
+    type: VARCHAR
+    years: 1980,1984-1985,2000-2023
+  ACC1:
+    name: acc1
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC10:
+    name: acc10
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC11:
+    name: acc11
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC12:
+    name: acc12
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC13:
+    name: acc13
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC14:
+    name: acc14
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC15:
+    name: acc15
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC16:
+    name: acc16
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC17:
+    name: acc17
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC18:
+    name: acc18
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC19:
+    name: acc19
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC2:
+    name: acc2
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC20:
+    name: acc20
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC21:
+    name: acc21
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC22:
+    name: acc22
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC23:
+    name: acc23
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC24:
+    name: acc24
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC25:
+    name: acc25
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC27:
+    name: acc27
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC28:
+    name: acc28
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC29:
+    name: acc29
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC3:
+    name: acc3
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC30:
+    name: acc30
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC31:
+    name: acc31
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC32:
+    name: acc32
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC33:
+    name: acc33
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC34:
+    name: acc34
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC35:
+    name: acc35
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC36:
+    name: acc36
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC37:
+    name: acc37
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC38:
+    name: acc38
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC39:
+    name: acc39
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC4:
+    name: acc4
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC40:
+    name: acc40
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC41:
+    name: acc41
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC42:
+    name: acc42
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC43:
+    name: acc43
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC44:
+    name: acc44
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC45:
+    name: acc45
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC46:
+    name: acc46
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC47:
+    name: acc47
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC48:
+    name: acc48
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC49:
+    name: acc49
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC5:
+    name: acc5
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC50:
+    name: acc50
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC51:
+    name: acc51
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC52:
+    name: acc52
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC53:
+    name: acc53
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC54:
+    name: acc54
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC55:
+    name: acc55
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC56:
+    name: acc56
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC57:
+    name: acc57
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC58:
+    name: acc58
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC59:
+    name: acc59
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC6:
+    name: acc6
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC60:
+    name: acc60
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC61:
+    name: acc61
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC62:
+    name: acc62
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC63:
+    name: acc63
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC64:
+    name: acc64
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC65:
+    name: acc65
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC66:
+    name: acc66
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC67:
+    name: acc67
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC68:
+    name: acc68
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC69:
+    name: acc69
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC7:
+    name: acc7
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC71:
+    name: acc71
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC72:
+    name: acc72
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC73:
+    name: acc73
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC74:
+    name: acc74
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC75:
+    name: acc75
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC76:
+    name: acc76
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC77:
+    name: acc77
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC78:
+    name: acc78
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC8:
+    name: acc8
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC81:
+    name: acc81
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC82:
+    name: acc82
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC83:
+    name: acc83
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC84:
+    name: acc84
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC85:
+    name: acc85
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC86:
+    name: acc86
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC88:
+    name: acc88
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC89:
+    name: acc89
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC9:
+    name: acc9
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC90:
+    name: acc90
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC91:
+    name: acc91
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC92:
+    name: acc92
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC93:
+    name: acc93
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC94:
+    name: acc94
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC_APCP:
+    name: acc_apcp
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC_NURS:
+    name: acc_nurs
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC_ORT:
+    name: acc_ort
+    type: BIGINT
+    years: 1980,1984-1985
+  ACC_CHEM:
+    name: acc_chem
+    type: BIGINT
+    years: 1980,1984-1985
+  REGACCRD:
+    name: regaccrd
+    type: BIGINT
+    years: 1980,1984-1985,2000-2004
+  SEQUEN:
+    name: sequen
+    type: BIGINT
+    years: 1984-1985
+  PROCC:
+    name: procc
+    type: BIGINT
+    years: 1984-1985
+  ICLEVEL:
+    name: iclevel
+    type: BIGINT
+    years: 1984-1985
+  CNCESC:
+    name: cncesc
+    type: VARCHAR
+    years: 1984-1985
+  ESTMO:
+    name: estmo
+    type: BIGINT
+    years: 1984-1985
+  ESTYR:
+    name: estyr
+    type: BIGINT
+    years: 1984-1985
+  PERIOD:
+    name: period
+    type: BIGINT
+    years: 1984-1985
+  STCNTY:
+    name: stcnty
+    type: BIGINT
+    years: 1984-1985
+  INITCY:
+    name: initcy
+    type: BIGINT
+    years: '1985'
+  INTFIC:
+    name: intfic
+    type: BIGINT
+    years: '1985'
+  UPDAT:
+    name: updat
+    type: BIGINT
+    years: '1985'
   PEO1ISTR:
     name: peo1istr
     type: BIGINT
@@ -113,10 +753,6 @@ columns:
     years: 2000-2004
   ACCRD2:
     name: accrd2
-    type: BIGINT
-    years: 2000-2004
-  REGACCRD:
-    name: regaccrd
     type: BIGINT
     years: 2000-2004
   ACCRD3:
@@ -283,10 +919,6 @@ columns:
     name: pctpost
     type: BIGINT
     years: 2000-2009
-  CALSYS:
-    name: calsys
-    type: BIGINT
-    years: 2000-2025
   APFEE:
     name: apfee
     type: BIGINT
@@ -370,16 +1002,8 @@ columns:
     type: VARCHAR
     flag_for: roomamt
     years: 2000-2023
-  ROOMAMT:
-    name: roomamt
-    type: VARCHAR
-    years: 2000-2023
   XBORDAMT:
     name: xbordamt
-    type: VARCHAR
-    years: 2000-2023
-  BOARDAMT:
-    name: boardamt
     type: VARCHAR
     years: 2000-2023
   XRMBDAMT:

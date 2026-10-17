@@ -1,0 +1,69 @@
+source: ipeds
+family: salic
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1984-1985,1987,1989,1995-1996
+  BOX1:
+    name: box1
+    type: BIGINT
+    years: 1984-1985,1989,1995-1996
+  BOX2:
+    name: box2
+    type: BIGINT
+    years: 1984-1985,1989,1995-1996
+  BOX3:
+    name: box3
+    type: BIGINT
+    years: 1984-1985,1989,1995-1996
+  BOX4:
+    name: box4
+    type: BIGINT
+    years: 1984-1985,1995-1996
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: 1984-1985,1987,1989,1995-1996
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: 1987,1989,1995-1996
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: 1987,1989,1995-1996
+  FILLER1:
+    name: filler1
+    type: VARCHAR
+    years: 1995-1996
+  IMPTYPE:
+    name: imptype
+    type: BIGINT
+    years: 1995-1996
+  FILLER2:
+    name: filler2
+    type: VARCHAR
+    years: 1995-1996
+  SOURCE:
+    name: source
+    type: BIGINT
+    years: 1995-1996
+  FILLER3:
+    name: filler3
+    type: VARCHAR
+    years: 1995-1996
+  NCESEDIT:
+    name: ncesedit
+    type: BIGINT
+    years: 1995-1996
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: 1995-1996
+  FILLER4:
+    name: filler4
+    type: BIGINT
+    years: '1995'

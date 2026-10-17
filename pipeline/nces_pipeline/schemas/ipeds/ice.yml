@@ -1,0 +1,149 @@
+source: ipeds
+family: ice
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1991,1998-1999
+  ENROLL90:
+    name: enroll90
+    type: BIGINT
+    years: '1991'
+  XENRLMNT:
+    name: xenrlmnt
+    type: VARCHAR
+    years: '1998'
+  ENROLMNT:
+    name: enrolmnt
+    type: BIGINT
+    years: 1998-1999
+  XGENENRL:
+    name: genenrl_flag
+    type: VARCHAR
+    flag_for: genenrl
+    years: 1998-1999
+  GENENRL:
+    name: genenrl
+    type: BIGINT
+    years: 1998-1999
+  MONTH:
+    name: month
+    type: BIGINT
+    years: 1998-1999
+  XTOSTUCU:
+    name: tostucu_flag
+    type: VARCHAR
+    flag_for: tostucu
+    years: 1998-1999
+  TOSTUCU:
+    name: tostucu
+    type: BIGINT
+    years: 1998-1999
+  XTOSTUFR:
+    name: xtostufr
+    type: VARCHAR
+    years: '1998'
+  TOSTUFRS:
+    name: tostufrs
+    type: BIGINT
+    years: '1998'
+  XTOSTUCG:
+    name: tostucg_flag
+    type: VARCHAR
+    flag_for: tostucg
+    years: 1998-1999
+  TOSTUCG:
+    name: tostucg
+    type: BIGINT
+    years: 1998-1999
+  XTOSTUCP:
+    name: tostucp_flag
+    type: VARCHAR
+    flag_for: tostucp
+    years: 1998-1999
+  TOSTUCP:
+    name: tostucp
+    type: BIGINT
+    years: 1998-1999
+  NOFALL:
+    name: nofall
+    type: BIGINT
+    years: 1998-1999
+  XCDACTUA:
+    name: cdactua_flag
+    type: VARCHAR
+    flag_for: cdactua
+    years: 1998-1999
+  CDACTUA:
+    name: cdactua
+    type: BIGINT
+    years: 1998-1999
+  XCNACTUA:
+    name: cnactua_flag
+    type: VARCHAR
+    flag_for: cnactua
+    years: 1998-1999
+  CNACTUA:
+    name: cnactua
+    type: BIGINT
+    years: 1998-1999
+  XCDACTGA:
+    name: cdactga_flag
+    type: VARCHAR
+    flag_for: cdactga
+    years: 1998-1999
+  CDACTGA:
+    name: cdactga
+    type: BIGINT
+    years: 1998-1999
+  XCDACTPA:
+    name: cdactpa_flag
+    type: VARCHAR
+    flag_for: cdactpa
+    years: 1998-1999
+  CDACTPA:
+    name: cdactpa
+    type: BIGINT
+    years: 1998-1999
+  XCDACTUF:
+    name: cdactuf_flag
+    type: VARCHAR
+    flag_for: cdactuf
+    years: 1998-1999
+  CDACTUF:
+    name: cdactuf
+    type: BIGINT
+    years: 1998-1999
+  XCNACTUF:
+    name: cnactuf_flag
+    type: VARCHAR
+    flag_for: cnactuf
+    years: 1998-1999
+  CNACTUF:
+    name: cnactuf
+    type: BIGINT
+    years: 1998-1999
+  XCDACTGF:
+    name: cdactgf_flag
+    type: VARCHAR
+    flag_for: cdactgf
+    years: 1998-1999
+  CDACTGF:
+    name: cdactgf
+    type: BIGINT
+    years: 1998-1999
+  XCDACTPF:
+    name: cdactpf_flag
+    type: VARCHAR
+    flag_for: cdactpf
+    years: 1998-1999
+  CDACTPF:
+    name: cdactpf
+    type: BIGINT
+    years: 1998-1999
+  XENROLMN:
+    name: xenrolmn
+    type: VARCHAR
+    years: '1999'

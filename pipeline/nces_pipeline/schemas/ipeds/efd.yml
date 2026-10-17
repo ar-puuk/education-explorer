@@ -6,7 +6,294 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000,2002-2024
+    years: 1986-1987,1993-2000,2002-2024
+  D1AFT:
+    name: d1aft
+    type: BIGINT
+    years: 1986-1987,1993-1999
+  D1APT:
+    name: d1apt
+    type: BIGINT
+    years: 1986-1987,1993-1999
+  D1BFT:
+    name: d1bft
+    type: BIGINT
+    years: 1986-1987,1993-1999
+  D1BPT:
+    name: d1bpt
+    type: BIGINT
+    years: 1986-1987,1993-1999
+  D2AFT:
+    name: d2aft
+    type: BIGINT
+    years: 1986-1987
+  D2APT:
+    name: d2apt
+    type: BIGINT
+    years: 1986-1987
+  D2BFT:
+    name: d2bft
+    type: BIGINT
+    years: 1986-1987,1993-1999
+  D2BPT:
+    name: d2bpt
+    type: BIGINT
+    years: 1986-1987,1993-1999
+  D3AFT:
+    name: d3aft
+    type: BIGINT
+    years: 1986-1987,1995-1999
+  D3APT:
+    name: d3apt
+    type: BIGINT
+    years: 1986-1987,1995-1999
+  D3BFT:
+    name: d3bft
+    type: BIGINT
+    years: 1986,1995-1999
+  D3BPT:
+    name: d3bpt
+    type: BIGINT
+    years: 1986,1995-1999
+  D2CFT:
+    name: d2cft
+    type: BIGINT
+    years: 1993-1999
+  D2CPT:
+    name: d2cpt
+    type: BIGINT
+    years: 1993-1999
+  D3FT:
+    name: d3ft
+    type: BIGINT
+    years: 1993-1994
+  D3PT:
+    name: d3pt
+    type: BIGINT
+    years: 1993-1994
+  D2AMARK:
+    name: d2amark
+    type: BIGINT
+    years: 1993-1999
+  D41:
+    name: d41
+    type: BIGINT
+    years: 1994,1996,1998
+  D42:
+    name: d42
+    type: BIGINT
+    years: 1994,1996,1998
+  D43:
+    name: d43
+    type: BIGINT
+    years: 1994,1996,1998
+  D51:
+    name: d51
+    type: BIGINT
+    years: 1994,1996,1998
+  D52:
+    name: d52
+    type: BIGINT
+    years: 1994,1996,1998
+  D53:
+    name: d53
+    type: BIGINT
+    years: 1994,1996,1998
+  D61:
+    name: d61
+    type: BIGINT
+    years: 1994,1996,1998
+  D62:
+    name: d62
+    type: BIGINT
+    years: 1994,1996,1998
+  D63:
+    name: d63
+    type: BIGINT
+    years: 1994,1996,1998
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1994-1997
+  D3CFT:
+    name: d3cft
+    type: BIGINT
+    years: 1995-1999
+  D3CPT:
+    name: d3cpt
+    type: BIGINT
+    years: 1995-1999
+  XD1AFT:
+    name: d1aft_flag
+    type: VARCHAR
+    flag_for: d1aft
+    years: 1996-1997,1999
+  XD1APT:
+    name: d1apt_flag
+    type: VARCHAR
+    flag_for: d1apt
+    years: 1996-1997,1999
+  XD1BFT:
+    name: d1bft_flag
+    type: VARCHAR
+    flag_for: d1bft
+    years: 1996-1997,1999
+  XD1BPT:
+    name: d1bpt_flag
+    type: VARCHAR
+    flag_for: d1bpt
+    years: 1996-1997,1999
+  XD2BFT:
+    name: d2bft_flag
+    type: VARCHAR
+    flag_for: d2bft
+    years: 1996-1997,1999
+  XD2BPT:
+    name: d2bpt_flag
+    type: VARCHAR
+    flag_for: d2bpt
+    years: 1996-1997,1999
+  XD2CFT:
+    name: d2cft_flag
+    type: VARCHAR
+    flag_for: d2cft
+    years: 1996-1997,1999
+  XD2CPT:
+    name: d2cpt_flag
+    type: VARCHAR
+    flag_for: d2cpt
+    years: 1996-1997,1999
+  XD3AFT:
+    name: d3aft_flag
+    type: VARCHAR
+    flag_for: d3aft
+    years: 1996-1997,1999
+  XD3APT:
+    name: d3apt_flag
+    type: VARCHAR
+    flag_for: d3apt
+    years: 1996-1997,1999
+  XD3BFT:
+    name: d3bft_flag
+    type: VARCHAR
+    flag_for: d3bft
+    years: 1996-1997,1999
+  XD3BPT:
+    name: d3bpt_flag
+    type: VARCHAR
+    flag_for: d3bpt
+    years: 1996-1997,1999
+  XD3CFT:
+    name: d3cft_flag
+    type: VARCHAR
+    flag_for: d3cft
+    years: 1996-1997,1999
+  XD3CPT:
+    name: d3cpt_flag
+    type: VARCHAR
+    flag_for: d3cpt
+    years: 1996-1997,1999
+  XD41:
+    name: d41_flag
+    type: VARCHAR
+    flag_for: d41
+    years: 1996,1998
+  XD42:
+    name: d42_flag
+    type: VARCHAR
+    flag_for: d42
+    years: 1996,1998
+  XD43:
+    name: d43_flag
+    type: VARCHAR
+    flag_for: d43
+    years: 1996,1998
+  XD51:
+    name: d51_flag
+    type: VARCHAR
+    flag_for: d51
+    years: 1996,1998
+  XD52:
+    name: d52_flag
+    type: VARCHAR
+    flag_for: d52
+    years: 1996,1998
+  XD53:
+    name: d53_flag
+    type: VARCHAR
+    flag_for: d53
+    years: 1996,1998
+  XD61:
+    name: d61_flag
+    type: VARCHAR
+    flag_for: d61
+    years: 1996,1998
+  XD62:
+    name: d62_flag
+    type: VARCHAR
+    flag_for: d62
+    years: 1996,1998
+  XD63:
+    name: d63_flag
+    type: VARCHAR
+    flag_for: d63
+    years: 1996,1998
+  XD1A1:
+    name: xd1a1
+    type: VARCHAR
+    years: '1998'
+  XD1A2:
+    name: xd1a2
+    type: VARCHAR
+    years: '1998'
+  XD1B1:
+    name: xd1b1
+    type: VARCHAR
+    years: '1998'
+  XD1B2:
+    name: xd1b2
+    type: VARCHAR
+    years: '1998'
+  XD2B1:
+    name: xd2b1
+    type: VARCHAR
+    years: '1998'
+  XD2B2:
+    name: xd2b2
+    type: VARCHAR
+    years: '1998'
+  XD2C1:
+    name: xd2c1
+    type: VARCHAR
+    years: '1998'
+  XD2C2:
+    name: xd2c2
+    type: VARCHAR
+    years: '1998'
+  XD3A1:
+    name: xd3a1
+    type: VARCHAR
+    years: '1998'
+  XD3A2:
+    name: xd3a2
+    type: VARCHAR
+    years: '1998'
+  XD3B1:
+    name: xd3b1
+    type: VARCHAR
+    years: '1998'
+  XD3B2:
+    name: xd3b2
+    type: VARCHAR
+    years: '1998'
+  XD3C1:
+    name: xd3c1
+    type: VARCHAR
+    years: '1998'
+  XD3C2:
+    name: xd3c2
+    type: VARCHAR
+    years: '1998'
   FYRPYEAR:
     name: fyrpyear
     type: BIGINT

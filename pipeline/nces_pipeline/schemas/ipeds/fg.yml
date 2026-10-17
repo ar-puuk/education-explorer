@@ -1,0 +1,107 @@
+source: ipeds
+family: fg
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1989,1991-1996
+  G011:
+    name: g011
+    type: BIGINT
+    years: 1989,1991-1992
+  G021:
+    name: g021
+    type: BIGINT
+    years: 1989,1991-1992
+  G031:
+    name: g031
+    type: BIGINT
+    years: 1989,1991-1992
+  G041:
+    name: g041
+    type: BIGINT
+    years: 1989,1991-1992
+  G051:
+    name: g051
+    type: BIGINT
+    years: 1989,1991-1992
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1994-1995
+  XG011:
+    name: g011_flag
+    type: VARCHAR
+    flag_for: g011
+    years: '1992'
+  XG021:
+    name: g021_flag
+    type: VARCHAR
+    flag_for: g021
+    years: '1992'
+  XG031:
+    name: g031_flag
+    type: VARCHAR
+    flag_for: g031
+    years: '1992'
+  XG041:
+    name: g041_flag
+    type: VARCHAR
+    flag_for: g041
+    years: '1992'
+  XG051:
+    name: g051_flag
+    type: VARCHAR
+    flag_for: g051
+    years: '1992'
+  G01:
+    name: g01
+    type: BIGINT
+    years: 1993-1996
+  G02:
+    name: g02
+    type: BIGINT
+    years: 1993-1996
+  G03:
+    name: g03
+    type: BIGINT
+    years: 1993-1996
+  G04:
+    name: g04
+    type: BIGINT
+    years: 1993-1996
+  G05:
+    name: g05
+    type: BIGINT
+    years: 1993-1996
+  XG01:
+    name: g01_flag
+    type: VARCHAR
+    flag_for: g01
+    years: 1993-1996
+  XG02:
+    name: g02_flag
+    type: VARCHAR
+    flag_for: g02
+    years: 1993-1996
+  XG03:
+    name: g03_flag
+    type: VARCHAR
+    flag_for: g03
+    years: 1993-1996
+  XG04:
+    name: g04_flag
+    type: VARCHAR
+    flag_for: g04
+    years: 1993-1996
+  XG05:
+    name: g05_flag
+    type: VARCHAR
+    flag_for: g05
+    years: 1993-1996
+  FILLER:
+    name: filler
+    type: BIGINT
+    years: '1995'

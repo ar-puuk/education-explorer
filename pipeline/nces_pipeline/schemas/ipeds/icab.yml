@@ -1,0 +1,649 @@
+source: ipeds
+family: icab
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1991,1998
+  PEO1ISTR:
+    name: peo1istr
+    type: BIGINT
+    years: 1991,1998
+  PEO2ISTR:
+    name: peo2istr
+    type: BIGINT
+    years: 1991,1998
+  PEO3ISTR:
+    name: peo3istr
+    type: BIGINT
+    years: 1991,1998
+  PEO4ISTR:
+    name: peo4istr
+    type: BIGINT
+    years: 1991,1998
+  PEO5ISTR:
+    name: peo5istr
+    type: BIGINT
+    years: 1991,1998
+  PEO6ISTR:
+    name: peo6istr
+    type: BIGINT
+    years: 1991,1998
+  MULTYPE:
+    name: multype
+    type: BIGINT
+    years: 1991,1998
+  PUBLIC1:
+    name: public1
+    type: BIGINT
+    years: 1991,1998
+  PUBLIC2:
+    name: public2
+    type: BIGINT
+    years: 1991,1998
+  PUBLIC3:
+    name: public3
+    type: BIGINT
+    years: 1991,1998
+  PUBLIC4:
+    name: public4
+    type: BIGINT
+    years: 1991,1998
+  PUBLIC5:
+    name: public5
+    type: BIGINT
+    years: 1991,1998
+  PUBLIC6:
+    name: public6
+    type: BIGINT
+    years: 1991,1998
+  PUBLIC7:
+    name: public7
+    type: BIGINT
+    years: 1991,1998
+  PUBLIC8:
+    name: public8
+    type: BIGINT
+    years: 1991,1998
+  PUBLIC9:
+    name: public9
+    type: BIGINT
+    years: 1991,1998
+  PRIVATE1:
+    name: private1
+    type: BIGINT
+    years: '1991'
+  PRIVATE2:
+    name: private2
+    type: BIGINT
+    years: '1991'
+  PRIVATE3:
+    name: private3
+    type: BIGINT
+    years: '1991'
+  PRIVATE4:
+    name: private4
+    type: BIGINT
+    years: '1991'
+  PRIVATE5:
+    name: private5
+    type: BIGINT
+    years: '1991'
+  PRIVATE6:
+    name: private6
+    type: BIGINT
+    years: '1991'
+  PRIVATE7:
+    name: private7
+    type: BIGINT
+    years: '1991'
+  PRIVATE8:
+    name: private8
+    type: BIGINT
+    years: '1991'
+  PROTAFFL:
+    name: protaffl
+    type: BIGINT
+    years: '1991'
+  OTHAFFL:
+    name: othaffl
+    type: BIGINT
+    years: '1991'
+  LEVEL1:
+    name: level1
+    type: BIGINT
+    years: 1991,1998
+  LEVEL2:
+    name: level2
+    type: BIGINT
+    years: 1991,1998
+  LEVEL3:
+    name: level3
+    type: BIGINT
+    years: 1991,1998
+  LEVEL4:
+    name: level4
+    type: BIGINT
+    years: 1991,1998
+  LEVEL5:
+    name: level5
+    type: BIGINT
+    years: 1991,1998
+  LEVEL6:
+    name: level6
+    type: BIGINT
+    years: 1991,1998
+  LEVEL7:
+    name: level7
+    type: BIGINT
+    years: 1991,1998
+  LEVEL8:
+    name: level8
+    type: BIGINT
+    years: 1991,1998
+  LEVEL9:
+    name: level9
+    type: BIGINT
+    years: 1991,1998
+  LEVEL10:
+    name: level10
+    type: BIGINT
+    years: 1991,1998
+  LEVEL11:
+    name: level11
+    type: BIGINT
+    years: 1991,1998
+  LEVEL12:
+    name: level12
+    type: BIGINT
+    years: 1991,1998
+  FOPNA:
+    name: fopna
+    type: BIGINT
+    years: 1991,1998
+  FOPNA1:
+    name: fopna1
+    type: BIGINT
+    years: 1991,1998
+  FOPNA2:
+    name: fopna2
+    type: BIGINT
+    years: 1991,1998
+  ACCRD1:
+    name: accrd1
+    type: BIGINT
+    years: 1991,1998
+  ACCRD2:
+    name: accrd2
+    type: BIGINT
+    years: 1991,1998
+  ACCRD3:
+    name: accrd3
+    type: BIGINT
+    years: 1991,1998
+  ACCRD4:
+    name: accrd4
+    type: BIGINT
+    years: 1991,1998
+  SACCR:
+    name: saccr
+    type: BIGINT
+    years: 1991,1998
+  ACC1:
+    name: acc1
+    type: BIGINT
+    years: '1991'
+  ACC102:
+    name: acc102
+    type: BIGINT
+    years: '1991'
+  ACC2:
+    name: acc2
+    type: BIGINT
+    years: '1991'
+  ACC5:
+    name: acc5
+    type: BIGINT
+    years: '1991'
+  ACC3:
+    name: acc3
+    type: BIGINT
+    years: '1991'
+  ACC4:
+    name: acc4
+    type: BIGINT
+    years: '1991'
+  ACC6:
+    name: acc6
+    type: BIGINT
+    years: '1991'
+  ACC99:
+    name: acc99
+    type: BIGINT
+    years: '1991'
+  ACC7:
+    name: acc7
+    type: BIGINT
+    years: '1991'
+  ACC8:
+    name: acc8
+    type: BIGINT
+    years: '1991'
+  ACC9:
+    name: acc9
+    type: BIGINT
+    years: '1991'
+  ACC10:
+    name: acc10
+    type: BIGINT
+    years: '1991'
+  ACC12:
+    name: acc12
+    type: BIGINT
+    years: '1991'
+  ACC13:
+    name: acc13
+    type: BIGINT
+    years: '1991'
+  ACC11:
+    name: acc11
+    type: BIGINT
+    years: '1991'
+  ACC14:
+    name: acc14
+    type: BIGINT
+    years: '1991'
+  ACC15:
+    name: acc15
+    type: BIGINT
+    years: '1991'
+  ACC16:
+    name: acc16
+    type: BIGINT
+    years: '1991'
+  ACC17:
+    name: acc17
+    type: BIGINT
+    years: '1991'
+  ACC97:
+    name: acc97
+    type: BIGINT
+    years: '1991'
+  ACC18:
+    name: acc18
+    type: BIGINT
+    years: '1991'
+  ACC108:
+    name: acc108
+    type: BIGINT
+    years: '1991'
+  ACC19:
+    name: acc19
+    type: BIGINT
+    years: '1991'
+  ACC20:
+    name: acc20
+    type: BIGINT
+    years: '1991'
+  ACC21:
+    name: acc21
+    type: BIGINT
+    years: '1991'
+  ACC22:
+    name: acc22
+    type: BIGINT
+    years: '1991'
+  ACC23:
+    name: acc23
+    type: BIGINT
+    years: '1991'
+  ACC24:
+    name: acc24
+    type: BIGINT
+    years: '1991'
+  ACC25:
+    name: acc25
+    type: BIGINT
+    years: '1991'
+  ACC78:
+    name: acc78
+    type: BIGINT
+    years: '1991'
+  ACC28:
+    name: acc28
+    type: BIGINT
+    years: '1991'
+  ACC29:
+    name: acc29
+    type: BIGINT
+    years: '1991'
+  ACC30:
+    name: acc30
+    type: BIGINT
+    years: '1991'
+  ACC31:
+    name: acc31
+    type: BIGINT
+    years: '1991'
+  ACC32:
+    name: acc32
+    type: BIGINT
+    years: '1991'
+  ACC33:
+    name: acc33
+    type: BIGINT
+    years: '1991'
+  ACC35:
+    name: acc35
+    type: BIGINT
+    years: '1991'
+  ACC34:
+    name: acc34
+    type: BIGINT
+    years: '1991'
+  ACC36:
+    name: acc36
+    type: BIGINT
+    years: '1991'
+  ACC37:
+    name: acc37
+    type: BIGINT
+    years: '1991'
+  ACC38:
+    name: acc38
+    type: BIGINT
+    years: '1991'
+  ACC39:
+    name: acc39
+    type: BIGINT
+    years: '1991'
+  ACC41:
+    name: acc41
+    type: BIGINT
+    years: '1991'
+  ACC40:
+    name: acc40
+    type: BIGINT
+    years: '1991'
+  ACC42:
+    name: acc42
+    type: BIGINT
+    years: '1991'
+  ACC26:
+    name: acc26
+    type: BIGINT
+    years: '1991'
+  ACC46:
+    name: acc46
+    type: BIGINT
+    years: '1991'
+  ACC43:
+    name: acc43
+    type: BIGINT
+    years: '1991'
+  ACC44:
+    name: acc44
+    type: BIGINT
+    years: '1991'
+  ACC45:
+    name: acc45
+    type: BIGINT
+    years: '1991'
+  ACC27:
+    name: acc27
+    type: BIGINT
+    years: '1991'
+  ACC47:
+    name: acc47
+    type: BIGINT
+    years: '1991'
+  ACC48:
+    name: acc48
+    type: BIGINT
+    years: '1991'
+  ACC51:
+    name: acc51
+    type: BIGINT
+    years: '1991'
+  ACC49:
+    name: acc49
+    type: BIGINT
+    years: '1991'
+  ACC50:
+    name: acc50
+    type: BIGINT
+    years: '1991'
+  ACC52:
+    name: acc52
+    type: BIGINT
+    years: '1991'
+  ACC54:
+    name: acc54
+    type: BIGINT
+    years: '1991'
+  ACC53:
+    name: acc53
+    type: BIGINT
+    years: '1991'
+  ACC55:
+    name: acc55
+    type: BIGINT
+    years: '1991'
+  ACC56:
+    name: acc56
+    type: BIGINT
+    years: '1991'
+  ACC57:
+    name: acc57
+    type: BIGINT
+    years: '1991'
+  ACC58:
+    name: acc58
+    type: BIGINT
+    years: '1991'
+  ACC59:
+    name: acc59
+    type: BIGINT
+    years: '1991'
+  ACC60:
+    name: acc60
+    type: BIGINT
+    years: '1991'
+  ACC61:
+    name: acc61
+    type: BIGINT
+    years: '1991'
+  ACC62:
+    name: acc62
+    type: BIGINT
+    years: '1991'
+  ACC63:
+    name: acc63
+    type: BIGINT
+    years: '1991'
+  ACC64:
+    name: acc64
+    type: BIGINT
+    years: '1991'
+  ACC65:
+    name: acc65
+    type: BIGINT
+    years: '1991'
+  ACC66:
+    name: acc66
+    type: BIGINT
+    years: '1991'
+  ACC67:
+    name: acc67
+    type: BIGINT
+    years: '1991'
+  ACC68:
+    name: acc68
+    type: BIGINT
+    years: '1991'
+  ACC69:
+    name: acc69
+    type: BIGINT
+    years: '1991'
+  ACC70:
+    name: acc70
+    type: BIGINT
+    years: '1991'
+  ACC71:
+    name: acc71
+    type: BIGINT
+    years: '1991'
+  ACC96:
+    name: acc96
+    type: BIGINT
+    years: '1991'
+  ACC95:
+    name: acc95
+    type: BIGINT
+    years: '1991'
+  ACC103:
+    name: acc103
+    type: BIGINT
+    years: '1991'
+  ACC72:
+    name: acc72
+    type: BIGINT
+    years: '1991'
+  ACC73:
+    name: acc73
+    type: BIGINT
+    years: '1991'
+  ACC74:
+    name: acc74
+    type: BIGINT
+    years: '1991'
+  ACC75:
+    name: acc75
+    type: BIGINT
+    years: '1991'
+  ACC100:
+    name: acc100
+    type: BIGINT
+    years: '1991'
+  ACC76:
+    name: acc76
+    type: BIGINT
+    years: '1991'
+  ACC77:
+    name: acc77
+    type: BIGINT
+    years: '1991'
+  ACC104:
+    name: acc104
+    type: BIGINT
+    years: '1991'
+  ACC79:
+    name: acc79
+    type: BIGINT
+    years: '1991'
+  ACC80:
+    name: acc80
+    type: BIGINT
+    years: '1991'
+  ACC81:
+    name: acc81
+    type: BIGINT
+    years: '1991'
+  ACC109:
+    name: acc109
+    type: BIGINT
+    years: '1991'
+  ACC82:
+    name: acc82
+    type: BIGINT
+    years: '1991'
+  ACC83:
+    name: acc83
+    type: BIGINT
+    years: '1991'
+  ACC84:
+    name: acc84
+    type: BIGINT
+    years: '1991'
+  ACC105:
+    name: acc105
+    type: BIGINT
+    years: '1991'
+  ACC106:
+    name: acc106
+    type: BIGINT
+    years: '1991'
+  ACC85:
+    name: acc85
+    type: BIGINT
+    years: '1991'
+  ACC86:
+    name: acc86
+    type: BIGINT
+    years: '1991'
+  ACC87:
+    name: acc87
+    type: BIGINT
+    years: '1991'
+  ACC88:
+    name: acc88
+    type: BIGINT
+    years: '1991'
+  ACC89:
+    name: acc89
+    type: BIGINT
+    years: '1991'
+  ACC93:
+    name: acc93
+    type: BIGINT
+    years: '1991'
+  ACC90:
+    name: acc90
+    type: BIGINT
+    years: '1991'
+  ACC91:
+    name: acc91
+    type: BIGINT
+    years: '1991'
+  ACC92:
+    name: acc92
+    type: BIGINT
+    years: '1991'
+  ACC94:
+    name: acc94
+    type: BIGINT
+    years: '1991'
+  ACC107:
+    name: acc107
+    type: BIGINT
+    years: '1991'
+  ACC101:
+    name: acc101
+    type: BIGINT
+    years: '1991'
+  ACC110:
+    name: acc110
+    type: BIGINT
+    years: '1991'
+  PRIVATE:
+    name: private
+    type: BIGINT
+    years: '1998'
+  RELAFFIL:
+    name: relaffil
+    type: BIGINT
+    years: '1998'
+  INSTTOYR:
+    name: insttoyr
+    type: BIGINT
+    years: '1998'
+  LICENSED:
+    name: licensed
+    type: BIGINT
+    years: '1998'
+  REGACCRD:
+    name: regaccrd
+    type: BIGINT
+    years: '1998'

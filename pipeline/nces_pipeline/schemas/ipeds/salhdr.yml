@@ -1,0 +1,57 @@
+source: ipeds
+family: salhdr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1991,1997
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: 1991,1997
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1991'
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: 1991,1997
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: 1991,1997
+  BOX1:
+    name: box1
+    type: BIGINT
+    years: 1991,1997
+  BOX2:
+    name: box2
+    type: BIGINT
+    years: 1991,1997
+  BOX3:
+    name: box3
+    type: BIGINT
+    years: 1991,1997
+  IMPTYPE:
+    name: imptype
+    type: BIGINT
+    years: '1997'
+  IDX:
+    name: idx
+    type: BIGINT
+    years: '1997'
+  SOURCE:
+    name: source
+    type: BIGINT
+    years: '1997'
+  NCESEDIT:
+    name: ncesedit
+    type: BIGINT
+    years: '1997'
+  BOX4:
+    name: box4
+    type: BIGINT
+    years: '1997'

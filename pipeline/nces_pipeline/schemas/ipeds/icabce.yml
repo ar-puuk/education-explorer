@@ -1,0 +1,937 @@
+source: ipeds
+family: icabce
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1990'
+  PEO1ISTR:
+    name: peo1istr
+    type: BIGINT
+    years: '1990'
+  PEO2ISTR:
+    name: peo2istr
+    type: BIGINT
+    years: '1990'
+  PEO3ISTR:
+    name: peo3istr
+    type: BIGINT
+    years: '1990'
+  PEO4ISTR:
+    name: peo4istr
+    type: BIGINT
+    years: '1990'
+  PEO5ISTR:
+    name: peo5istr
+    type: BIGINT
+    years: '1990'
+  PEO6ISTR:
+    name: peo6istr
+    type: BIGINT
+    years: '1990'
+  PUBLIC1:
+    name: public1
+    type: BIGINT
+    years: '1990'
+  PUBLIC2:
+    name: public2
+    type: BIGINT
+    years: '1990'
+  PUBLIC3:
+    name: public3
+    type: BIGINT
+    years: '1990'
+  PUBLIC4:
+    name: public4
+    type: BIGINT
+    years: '1990'
+  PUBLIC5:
+    name: public5
+    type: BIGINT
+    years: '1990'
+  PUBLIC6:
+    name: public6
+    type: BIGINT
+    years: '1990'
+  PUBLIC7:
+    name: public7
+    type: BIGINT
+    years: '1990'
+  PUBLIC8:
+    name: public8
+    type: BIGINT
+    years: '1990'
+  PUBLIC9:
+    name: public9
+    type: BIGINT
+    years: '1990'
+  PRIVATE1:
+    name: private1
+    type: BIGINT
+    years: '1990'
+  PRIVATE2:
+    name: private2
+    type: BIGINT
+    years: '1990'
+  PRIVATE3:
+    name: private3
+    type: BIGINT
+    years: '1990'
+  PRIVATE4:
+    name: private4
+    type: BIGINT
+    years: '1990'
+  PRIVATE5:
+    name: private5
+    type: BIGINT
+    years: '1990'
+  PRIVATE6:
+    name: private6
+    type: BIGINT
+    years: '1990'
+  PRIVATE7:
+    name: private7
+    type: BIGINT
+    years: '1990'
+  PRIVATE8:
+    name: private8
+    type: BIGINT
+    years: '1990'
+  PROTAFFL:
+    name: protaffl
+    type: BIGINT
+    years: '1990'
+  OTHAFFL:
+    name: othaffl
+    type: BIGINT
+    years: '1990'
+  LEVEL1:
+    name: level1
+    type: BIGINT
+    years: '1990'
+  LEVEL2:
+    name: level2
+    type: BIGINT
+    years: '1990'
+  LEVEL3:
+    name: level3
+    type: BIGINT
+    years: '1990'
+  LEVEL4:
+    name: level4
+    type: BIGINT
+    years: '1990'
+  LEVEL5:
+    name: level5
+    type: BIGINT
+    years: '1990'
+  LEVEL6:
+    name: level6
+    type: BIGINT
+    years: '1990'
+  LEVEL7:
+    name: level7
+    type: BIGINT
+    years: '1990'
+  LEVEL8:
+    name: level8
+    type: BIGINT
+    years: '1990'
+  LEVEL9:
+    name: level9
+    type: BIGINT
+    years: '1990'
+  LEVEL10:
+    name: level10
+    type: BIGINT
+    years: '1990'
+  LEVEL11:
+    name: level11
+    type: BIGINT
+    years: '1990'
+  LEVEL12:
+    name: level12
+    type: BIGINT
+    years: '1990'
+  LEVELOTH:
+    name: leveloth
+    type: BIGINT
+    years: '1990'
+  FOPNA:
+    name: fopna
+    type: BIGINT
+    years: '1990'
+  FOPNA1:
+    name: fopna1
+    type: BIGINT
+    years: '1990'
+  FOPNA2:
+    name: fopna2
+    type: BIGINT
+    years: '1990'
+  ACCRD1:
+    name: accrd1
+    type: BIGINT
+    years: '1990'
+  ACCRD2:
+    name: accrd2
+    type: BIGINT
+    years: '1990'
+  ACCRD3:
+    name: accrd3
+    type: BIGINT
+    years: '1990'
+  ACCRD4:
+    name: accrd4
+    type: BIGINT
+    years: '1990'
+  SACCR:
+    name: saccr
+    type: BIGINT
+    years: '1990'
+  ACC1:
+    name: acc1
+    type: BIGINT
+    years: '1990'
+  ACC102:
+    name: acc102
+    type: BIGINT
+    years: '1990'
+  ACC2:
+    name: acc2
+    type: BIGINT
+    years: '1990'
+  ACC5:
+    name: acc5
+    type: BIGINT
+    years: '1990'
+  ACC3:
+    name: acc3
+    type: BIGINT
+    years: '1990'
+  ACC4:
+    name: acc4
+    type: BIGINT
+    years: '1990'
+  ACC6:
+    name: acc6
+    type: BIGINT
+    years: '1990'
+  ACC99:
+    name: acc99
+    type: BIGINT
+    years: '1990'
+  ACC7:
+    name: acc7
+    type: BIGINT
+    years: '1990'
+  ACC8:
+    name: acc8
+    type: BIGINT
+    years: '1990'
+  ACC9:
+    name: acc9
+    type: BIGINT
+    years: '1990'
+  ACC10:
+    name: acc10
+    type: BIGINT
+    years: '1990'
+  ACC12:
+    name: acc12
+    type: BIGINT
+    years: '1990'
+  ACC13:
+    name: acc13
+    type: BIGINT
+    years: '1990'
+  ACC11:
+    name: acc11
+    type: BIGINT
+    years: '1990'
+  ACC14:
+    name: acc14
+    type: BIGINT
+    years: '1990'
+  ACC15:
+    name: acc15
+    type: BIGINT
+    years: '1990'
+  ACC16:
+    name: acc16
+    type: BIGINT
+    years: '1990'
+  ACC17:
+    name: acc17
+    type: BIGINT
+    years: '1990'
+  ACC97:
+    name: acc97
+    type: BIGINT
+    years: '1990'
+  ACC18:
+    name: acc18
+    type: BIGINT
+    years: '1990'
+  ACC19:
+    name: acc19
+    type: BIGINT
+    years: '1990'
+  ACC20:
+    name: acc20
+    type: BIGINT
+    years: '1990'
+  ACC21:
+    name: acc21
+    type: BIGINT
+    years: '1990'
+  ACC22:
+    name: acc22
+    type: BIGINT
+    years: '1990'
+  ACC23:
+    name: acc23
+    type: BIGINT
+    years: '1990'
+  ACC24:
+    name: acc24
+    type: BIGINT
+    years: '1990'
+  ACC25:
+    name: acc25
+    type: BIGINT
+    years: '1990'
+  ACC26:
+    name: acc26
+    type: BIGINT
+    years: '1990'
+  ACC27:
+    name: acc27
+    type: BIGINT
+    years: '1990'
+  ACC28:
+    name: acc28
+    type: BIGINT
+    years: '1990'
+  ACC29:
+    name: acc29
+    type: BIGINT
+    years: '1990'
+  ACC30:
+    name: acc30
+    type: BIGINT
+    years: '1990'
+  ACC31:
+    name: acc31
+    type: BIGINT
+    years: '1990'
+  ACC32:
+    name: acc32
+    type: BIGINT
+    years: '1990'
+  ACC33:
+    name: acc33
+    type: BIGINT
+    years: '1990'
+  ACC35:
+    name: acc35
+    type: BIGINT
+    years: '1990'
+  ACC34:
+    name: acc34
+    type: BIGINT
+    years: '1990'
+  ACC36:
+    name: acc36
+    type: BIGINT
+    years: '1990'
+  ACC37:
+    name: acc37
+    type: BIGINT
+    years: '1990'
+  ACC38:
+    name: acc38
+    type: BIGINT
+    years: '1990'
+  ACC39:
+    name: acc39
+    type: BIGINT
+    years: '1990'
+  ACC40:
+    name: acc40
+    type: BIGINT
+    years: '1990'
+  ACC41:
+    name: acc41
+    type: BIGINT
+    years: '1990'
+  ACC42:
+    name: acc42
+    type: BIGINT
+    years: '1990'
+  ACC43:
+    name: acc43
+    type: BIGINT
+    years: '1990'
+  ACC44:
+    name: acc44
+    type: BIGINT
+    years: '1990'
+  ACC45:
+    name: acc45
+    type: BIGINT
+    years: '1990'
+  ACC46:
+    name: acc46
+    type: BIGINT
+    years: '1990'
+  ACC47:
+    name: acc47
+    type: BIGINT
+    years: '1990'
+  ACC48:
+    name: acc48
+    type: BIGINT
+    years: '1990'
+  ACC49:
+    name: acc49
+    type: BIGINT
+    years: '1990'
+  ACC50:
+    name: acc50
+    type: BIGINT
+    years: '1990'
+  ACC51:
+    name: acc51
+    type: BIGINT
+    years: '1990'
+  ACC52:
+    name: acc52
+    type: BIGINT
+    years: '1990'
+  ACC53:
+    name: acc53
+    type: BIGINT
+    years: '1990'
+  ACC54:
+    name: acc54
+    type: BIGINT
+    years: '1990'
+  ACC55:
+    name: acc55
+    type: BIGINT
+    years: '1990'
+  ACC56:
+    name: acc56
+    type: BIGINT
+    years: '1990'
+  ACC57:
+    name: acc57
+    type: BIGINT
+    years: '1990'
+  ACC58:
+    name: acc58
+    type: BIGINT
+    years: '1990'
+  ACC59:
+    name: acc59
+    type: BIGINT
+    years: '1990'
+  ACC60:
+    name: acc60
+    type: BIGINT
+    years: '1990'
+  ACC61:
+    name: acc61
+    type: BIGINT
+    years: '1990'
+  ACC62:
+    name: acc62
+    type: BIGINT
+    years: '1990'
+  ACC63:
+    name: acc63
+    type: BIGINT
+    years: '1990'
+  ACC64:
+    name: acc64
+    type: BIGINT
+    years: '1990'
+  ACC65:
+    name: acc65
+    type: BIGINT
+    years: '1990'
+  ACC66:
+    name: acc66
+    type: BIGINT
+    years: '1990'
+  ACC67:
+    name: acc67
+    type: BIGINT
+    years: '1990'
+  ACC68:
+    name: acc68
+    type: BIGINT
+    years: '1990'
+  ACC69:
+    name: acc69
+    type: BIGINT
+    years: '1990'
+  ACC70:
+    name: acc70
+    type: BIGINT
+    years: '1990'
+  ACC71:
+    name: acc71
+    type: BIGINT
+    years: '1990'
+  ACC98:
+    name: acc98
+    type: BIGINT
+    years: '1990'
+  ACC95:
+    name: acc95
+    type: BIGINT
+    years: '1990'
+  ACC96:
+    name: acc96
+    type: BIGINT
+    years: '1990'
+  ACC103:
+    name: acc103
+    type: BIGINT
+    years: '1990'
+  ACC72:
+    name: acc72
+    type: BIGINT
+    years: '1990'
+  ACC73:
+    name: acc73
+    type: BIGINT
+    years: '1990'
+  ACC74:
+    name: acc74
+    type: BIGINT
+    years: '1990'
+  ACC75:
+    name: acc75
+    type: BIGINT
+    years: '1990'
+  ACC100:
+    name: acc100
+    type: BIGINT
+    years: '1990'
+  ACC76:
+    name: acc76
+    type: BIGINT
+    years: '1990'
+  ACC77:
+    name: acc77
+    type: BIGINT
+    years: '1990'
+  ACC78:
+    name: acc78
+    type: BIGINT
+    years: '1990'
+  ACC104:
+    name: acc104
+    type: BIGINT
+    years: '1990'
+  ACC79:
+    name: acc79
+    type: BIGINT
+    years: '1990'
+  ACC80:
+    name: acc80
+    type: BIGINT
+    years: '1990'
+  ACC81:
+    name: acc81
+    type: BIGINT
+    years: '1990'
+  ACC82:
+    name: acc82
+    type: BIGINT
+    years: '1990'
+  ACC83:
+    name: acc83
+    type: BIGINT
+    years: '1990'
+  ACC84:
+    name: acc84
+    type: BIGINT
+    years: '1990'
+  ACC105:
+    name: acc105
+    type: BIGINT
+    years: '1990'
+  ACC106:
+    name: acc106
+    type: BIGINT
+    years: '1990'
+  ACC85:
+    name: acc85
+    type: BIGINT
+    years: '1990'
+  ACC86:
+    name: acc86
+    type: BIGINT
+    years: '1990'
+  ACC87:
+    name: acc87
+    type: BIGINT
+    years: '1990'
+  ACC88:
+    name: acc88
+    type: BIGINT
+    years: '1990'
+  ACC89:
+    name: acc89
+    type: BIGINT
+    years: '1990'
+  ACC90:
+    name: acc90
+    type: BIGINT
+    years: '1990'
+  ACC91:
+    name: acc91
+    type: BIGINT
+    years: '1990'
+  ACC92:
+    name: acc92
+    type: BIGINT
+    years: '1990'
+  ACC93:
+    name: acc93
+    type: BIGINT
+    years: '1990'
+  ACC94:
+    name: acc94
+    type: BIGINT
+    years: '1990'
+  ACC107:
+    name: acc107
+    type: BIGINT
+    years: '1990'
+  ACC101:
+    name: acc101
+    type: BIGINT
+    years: '1990'
+  CALSYS:
+    name: calsys
+    type: BIGINT
+    years: '1990'
+  CRSLOC1:
+    name: crsloc1
+    type: BIGINT
+    years: '1990'
+  CRSLOC2:
+    name: crsloc2
+    type: BIGINT
+    years: '1990'
+  CRSLOC3:
+    name: crsloc3
+    type: BIGINT
+    years: '1990'
+  CRSLOC4:
+    name: crsloc4
+    type: BIGINT
+    years: '1990'
+  CRSLOC5:
+    name: crsloc5
+    type: BIGINT
+    years: '1990'
+  CRSLOC6:
+    name: crsloc6
+    type: BIGINT
+    years: '1990'
+  FACLOC1:
+    name: facloc1
+    type: BIGINT
+    years: '1990'
+  FACLOC2:
+    name: facloc2
+    type: BIGINT
+    years: '1990'
+  FACLOC3:
+    name: facloc3
+    type: BIGINT
+    years: '1990'
+  FACLOC4:
+    name: facloc4
+    type: BIGINT
+    years: '1990'
+  FACLOC6:
+    name: facloc6
+    type: BIGINT
+    years: '1990'
+  FACLOC7:
+    name: facloc7
+    type: BIGINT
+    years: '1990'
+  FACLOC8:
+    name: facloc8
+    type: BIGINT
+    years: '1990'
+  FACLOC9:
+    name: facloc9
+    type: BIGINT
+    years: '1990'
+  FACLOC10:
+    name: facloc10
+    type: BIGINT
+    years: '1990'
+  FACLOC12:
+    name: facloc12
+    type: BIGINT
+    years: '1990'
+  MILI:
+    name: mili
+    type: BIGINT
+    years: '1990'
+  MIL1INSL:
+    name: mil1insl
+    type: BIGINT
+    years: '1990'
+  MIL2INSL:
+    name: mil2insl
+    type: BIGINT
+    years: '1990'
+  ADMREQ1:
+    name: admreq1
+    type: BIGINT
+    years: '1990'
+  ADMREQ2:
+    name: admreq2
+    type: BIGINT
+    years: '1990'
+  ADMREQ3:
+    name: admreq3
+    type: BIGINT
+    years: '1990'
+  ADMREQ4:
+    name: admreq4
+    type: BIGINT
+    years: '1990'
+  ADMREQ5:
+    name: admreq5
+    type: BIGINT
+    years: '1990'
+  ADMREQ6:
+    name: admreq6
+    type: BIGINT
+    years: '1990'
+  ADMREQ7:
+    name: admreq7
+    type: BIGINT
+    years: '1990'
+  ADMREQ8:
+    name: admreq8
+    type: BIGINT
+    years: '1990'
+  ADMREQ9:
+    name: admreq9
+    type: BIGINT
+    years: '1990'
+  ADMREQ10:
+    name: admreq10
+    type: BIGINT
+    years: '1990'
+  ADMREQ11:
+    name: admreq11
+    type: BIGINT
+    years: '1990'
+  ADMREQ12:
+    name: admreq12
+    type: BIGINT
+    years: '1990'
+  YRSCOL:
+    name: yrscol
+    type: BIGINT
+    years: '1990'
+  UWWOU:
+    name: uwwou
+    type: BIGINT
+    years: '1990'
+  MODE1:
+    name: mode1
+    type: BIGINT
+    years: '1990'
+  MODE2:
+    name: mode2
+    type: BIGINT
+    years: '1990'
+  MODE3:
+    name: mode3
+    type: BIGINT
+    years: '1990'
+  MODE4:
+    name: mode4
+    type: BIGINT
+    years: '1990'
+  MODE5:
+    name: mode5
+    type: BIGINT
+    years: '1990'
+  MODE6:
+    name: mode6
+    type: BIGINT
+    years: '1990'
+  MODE7:
+    name: mode7
+    type: BIGINT
+    years: '1990'
+  MODE8:
+    name: mode8
+    type: BIGINT
+    years: '1990'
+  MODE9:
+    name: mode9
+    type: BIGINT
+    years: '1990'
+  MODE10:
+    name: mode10
+    type: BIGINT
+    years: '1990'
+  MODE11:
+    name: mode11
+    type: BIGINT
+    years: '1990'
+  MODE12:
+    name: mode12
+    type: BIGINT
+    years: '1990'
+  MODE13:
+    name: mode13
+    type: BIGINT
+    years: '1990'
+  MODE14:
+    name: mode14
+    type: BIGINT
+    years: '1990'
+  STUSRV1:
+    name: stusrv1
+    type: BIGINT
+    years: '1990'
+  STUSRV2:
+    name: stusrv2
+    type: BIGINT
+    years: '1990'
+  STUSRV3:
+    name: stusrv3
+    type: BIGINT
+    years: '1990'
+  STUSRV4:
+    name: stusrv4
+    type: BIGINT
+    years: '1990'
+  STUSRV5:
+    name: stusrv5
+    type: BIGINT
+    years: '1990'
+  STUSRV6:
+    name: stusrv6
+    type: BIGINT
+    years: '1990'
+  STUSRV7:
+    name: stusrv7
+    type: BIGINT
+    years: '1990'
+  STUSRV8:
+    name: stusrv8
+    type: BIGINT
+    years: '1990'
+  STUSRV9:
+    name: stusrv9
+    type: BIGINT
+    years: '1990'
+  LIBFAC:
+    name: libfac
+    type: BIGINT
+    years: '1990'
+  LIBSHAR1:
+    name: libshar1
+    type: BIGINT
+    years: '1990'
+  LIBSHAR2:
+    name: libshar2
+    type: BIGINT
+    years: '1990'
+  LIBSHAR3:
+    name: libshar3
+    type: BIGINT
+    years: '1990'
+  FINAID1:
+    name: finaid1
+    type: BIGINT
+    years: '1990'
+  FINAID2:
+    name: finaid2
+    type: BIGINT
+    years: '1990'
+  FINAID3:
+    name: finaid3
+    type: BIGINT
+    years: '1990'
+  FINAID4:
+    name: finaid4
+    type: BIGINT
+    years: '1990'
+  FINAID5:
+    name: finaid5
+    type: BIGINT
+    years: '1990'
+  FINAID6:
+    name: finaid6
+    type: BIGINT
+    years: '1990'
+  FINAID7:
+    name: finaid7
+    type: BIGINT
+    years: '1990'
+  FINAID8:
+    name: finaid8
+    type: BIGINT
+    years: '1990'
+  FINAID9:
+    name: finaid9
+    type: BIGINT
+    years: '1990'
+  JTPA:
+    name: jtpa
+    type: BIGINT
+    years: '1990'
+  ROTC:
+    name: rotc
+    type: BIGINT
+    years: '1990'
+  ROTC1:
+    name: rotc1
+    type: BIGINT
+    years: '1990'
+  ROTC2:
+    name: rotc2
+    type: BIGINT
+    years: '1990'
+  ROTC3:
+    name: rotc3
+    type: BIGINT
+    years: '1990'
+  FTSLT15:
+    name: ftslt15
+    type: BIGINT
+    years: '1990'
+  FACPT:
+    name: facpt
+    type: BIGINT
+    years: '1990'
+  FACML:
+    name: facml
+    type: BIGINT
+    years: '1990'
+  FACMD:
+    name: facmd
+    type: BIGINT
+    years: '1990'

@@ -1,0 +1,41 @@
+source: ipeds
+family: resic
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1986,1988
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: 1986,1988
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: 1986,1988
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: 1986,1988
+  XEFRES01:
+    name: xefres01
+    type: BIGINT
+    years: 1986,1988
+  XEFRES02:
+    name: xefres02
+    type: BIGINT
+    years: 1986,1988
+  XEFRES03:
+    name: xefres03
+    type: BIGINT
+    years: 1986,1988
+  XEFRES04:
+    name: xefres04
+    type: BIGINT
+    years: 1986,1988
+  XEFRES05:
+    name: xefres05
+    type: BIGINT
+    years: 1986,1988

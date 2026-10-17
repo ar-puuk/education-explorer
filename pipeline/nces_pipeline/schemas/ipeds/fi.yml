@@ -1,0 +1,211 @@
+source: ipeds
+family: fi
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1989,1991-1996
+  I011:
+    name: i011
+    type: BIGINT
+    years: 1989,1991-1992
+  I012:
+    name: i012
+    type: BIGINT
+    years: 1989,1991-1992
+  I013:
+    name: i013
+    type: BIGINT
+    years: 1989,1991-1992
+  I014:
+    name: i014
+    type: BIGINT
+    years: 1989,1991-1992
+  I015:
+    name: i015
+    type: BIGINT
+    years: 1989,1991-1992
+  I016:
+    name: i016
+    type: BIGINT
+    years: 1989,1991-1992
+  I021:
+    name: i021
+    type: BIGINT
+    years: 1989,1991-1992
+  I022:
+    name: i022
+    type: BIGINT
+    years: 1989,1991-1992
+  I023:
+    name: i023
+    type: BIGINT
+    years: 1989,1991-1992
+  I024:
+    name: i024
+    type: BIGINT
+    years: 1989,1991-1992
+  I025:
+    name: i025
+    type: BIGINT
+    years: 1989,1991-1992
+  I026:
+    name: i026
+    type: BIGINT
+    years: 1989,1991-1992
+  I031:
+    name: i031
+    type: BIGINT
+    years: 1989,1991-1992
+  I032:
+    name: i032
+    type: BIGINT
+    years: 1989,1991-1992
+  I033:
+    name: i033
+    type: BIGINT
+    years: 1989,1991-1992
+  I034:
+    name: i034
+    type: BIGINT
+    years: 1989,1991-1992
+  I035:
+    name: i035
+    type: BIGINT
+    years: 1989,1991-1992
+  I036:
+    name: i036
+    type: BIGINT
+    years: 1989,1991-1992
+  I041:
+    name: i041
+    type: BIGINT
+    years: 1989,1991-1992
+  I042:
+    name: i042
+    type: BIGINT
+    years: 1989,1991-1992
+  I043:
+    name: i043
+    type: BIGINT
+    years: 1989,1991-1992
+  I044:
+    name: i044
+    type: BIGINT
+    years: 1989,1991-1992
+  I045:
+    name: i045
+    type: BIGINT
+    years: 1989,1991-1992
+  I046:
+    name: i046
+    type: BIGINT
+    years: 1989,1991-1992
+  I051:
+    name: i051
+    type: BIGINT
+    years: 1989,1991-1992
+  I052:
+    name: i052
+    type: BIGINT
+    years: 1989,1991-1992
+  I053:
+    name: i053
+    type: BIGINT
+    years: 1989,1991-1992
+  I054:
+    name: i054
+    type: BIGINT
+    years: 1989,1991-1992
+  I055:
+    name: i055
+    type: BIGINT
+    years: 1989,1991-1992
+  I056:
+    name: i056
+    type: BIGINT
+    years: 1989,1991-1992
+  I061:
+    name: i061
+    type: BIGINT
+    years: 1989,1991-1992
+  I062:
+    name: i062
+    type: BIGINT
+    years: 1989,1991-1992
+  I063:
+    name: i063
+    type: BIGINT
+    years: 1989,1991-1992
+  I064:
+    name: i064
+    type: BIGINT
+    years: 1989,1991-1992
+  I065:
+    name: i065
+    type: BIGINT
+    years: 1989,1991-1992
+  I066:
+    name: i066
+    type: BIGINT
+    years: 1989,1991-1992
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1991,1994-1995
+  I01:
+    name: i01
+    type: BIGINT
+    years: 1993-1996
+  I02:
+    name: i02
+    type: BIGINT
+    years: 1993-1996
+  I03:
+    name: i03
+    type: BIGINT
+    years: 1993-1996
+  I04:
+    name: i04
+    type: BIGINT
+    years: 1993-1996
+  I05:
+    name: i05
+    type: BIGINT
+    years: 1993-1996
+  I06:
+    name: i06
+    type: BIGINT
+    years: 1993-1996
+  XI01:
+    name: i01_flag
+    type: VARCHAR
+    flag_for: i01
+    years: '1996'
+  XI02:
+    name: i02_flag
+    type: VARCHAR
+    flag_for: i02
+    years: '1996'
+  XI03:
+    name: i03_flag
+    type: VARCHAR
+    flag_for: i03
+    years: '1996'
+  XI04:
+    name: i04_flag
+    type: VARCHAR
+    flag_for: i04
+    years: '1996'
+  XI05:
+    name: i05_flag
+    type: VARCHAR
+    flag_for: i05
+    years: '1996'
+  XI06:
+    name: i06_flag
+    type: VARCHAR
+    flag_for: i06
+    years: '1996'

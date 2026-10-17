@@ -1,0 +1,421 @@
+source: ipeds
+family: ic98f
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1997'
+  FINAID1:
+    name: finaid1
+    type: BIGINT
+    years: '1997'
+  FINAID2:
+    name: finaid2
+    type: BIGINT
+    years: '1997'
+  FINAID3:
+    name: finaid3
+    type: BIGINT
+    years: '1997'
+  FINAID4:
+    name: finaid4
+    type: BIGINT
+    years: '1997'
+  FINAID5:
+    name: finaid5
+    type: BIGINT
+    years: '1997'
+  FINAID6:
+    name: finaid6
+    type: BIGINT
+    years: '1997'
+  FINAID7:
+    name: finaid7
+    type: BIGINT
+    years: '1997'
+  FINAID8:
+    name: finaid8
+    type: BIGINT
+    years: '1997'
+  FINAID9:
+    name: finaid9
+    type: BIGINT
+    years: '1997'
+  JTPA:
+    name: jtpa
+    type: BIGINT
+    years: '1997'
+  ROTC:
+    name: rotc
+    type: BIGINT
+    years: '1997'
+  ROTC1:
+    name: rotc1
+    type: BIGINT
+    years: '1997'
+  ROTC2:
+    name: rotc2
+    type: BIGINT
+    years: '1997'
+  ROTC3:
+    name: rotc3
+    type: BIGINT
+    years: '1997'
+  ATHAID:
+    name: athaid
+    type: BIGINT
+    years: '1997'
+  ATHAID1:
+    name: athaid1
+    type: BIGINT
+    years: '1997'
+  ATHAID2:
+    name: athaid2
+    type: BIGINT
+    years: '1997'
+  ATHAID3:
+    name: athaid3
+    type: BIGINT
+    years: '1997'
+  ATHAID4:
+    name: athaid4
+    type: BIGINT
+    years: '1997'
+  ATHAID5:
+    name: athaid5
+    type: BIGINT
+    years: '1997'
+  FTSLT15:
+    name: ftslt15
+    type: BIGINT
+    years: '1997'
+  FACPT:
+    name: facpt
+    type: BIGINT
+    years: '1997'
+  FACML:
+    name: facml
+    type: BIGINT
+    years: '1997'
+  FACRL:
+    name: facrl
+    type: BIGINT
+    years: '1997'
+  FACMD:
+    name: facmd
+    type: BIGINT
+    years: '1997'
+  PCTPOST:
+    name: pctpost
+    type: BIGINT
+    years: '1997'
+  LICENSED:
+    name: licensed
+    type: BIGINT
+    years: '1997'
+  IMP1:
+    name: imp1
+    type: VARCHAR
+    years: '1997'
+  IMP2:
+    name: imp2
+    type: VARCHAR
+    years: '1997'
+  IMP3:
+    name: imp3
+    type: VARCHAR
+    years: '1997'
+  IMP4:
+    name: imp4
+    type: VARCHAR
+    years: '1997'
+  IMP5:
+    name: imp5
+    type: VARCHAR
+    years: '1997'
+  IMP6:
+    name: imp6
+    type: VARCHAR
+    years: '1997'
+  IMP7:
+    name: imp7
+    type: VARCHAR
+    years: '1997'
+  IMP8:
+    name: imp8
+    type: VARCHAR
+    years: '1997'
+  IMP9:
+    name: imp9
+    type: VARCHAR
+    years: '1997'
+  IMP10:
+    name: imp10
+    type: VARCHAR
+    years: '1997'
+  IMP11:
+    name: imp11
+    type: VARCHAR
+    years: '1997'
+  IMP12:
+    name: imp12
+    type: VARCHAR
+    years: '1997'
+  IMP13:
+    name: imp13
+    type: VARCHAR
+    years: '1997'
+  IMP14:
+    name: imp14
+    type: VARCHAR
+    years: '1997'
+  IMP15:
+    name: imp15
+    type: VARCHAR
+    years: '1997'
+  IMP16:
+    name: imp16
+    type: VARCHAR
+    years: '1997'
+  IMP17:
+    name: imp17
+    type: VARCHAR
+    years: '1997'
+  IMP18:
+    name: imp18
+    type: VARCHAR
+    years: '1997'
+  IMP19:
+    name: imp19
+    type: VARCHAR
+    years: '1997'
+  IMP20:
+    name: imp20
+    type: VARCHAR
+    years: '1997'
+  IMP21:
+    name: imp21
+    type: VARCHAR
+    years: '1997'
+  IMP22:
+    name: imp22
+    type: VARCHAR
+    years: '1997'
+  IMP23:
+    name: imp23
+    type: VARCHAR
+    years: '1997'
+  IMP24:
+    name: imp24
+    type: VARCHAR
+    years: '1997'
+  IMP25:
+    name: imp25
+    type: VARCHAR
+    years: '1997'
+  IMP26:
+    name: imp26
+    type: VARCHAR
+    years: '1997'
+  IMP27:
+    name: imp27
+    type: VARCHAR
+    years: '1997'
+  IMP28:
+    name: imp28
+    type: VARCHAR
+    years: '1997'
+  IMP29:
+    name: imp29
+    type: VARCHAR
+    years: '1997'
+  IMP30:
+    name: imp30
+    type: VARCHAR
+    years: '1997'
+  IMP31:
+    name: imp31
+    type: VARCHAR
+    years: '1997'
+  IMP32:
+    name: imp32
+    type: VARCHAR
+    years: '1997'
+  IMP33:
+    name: imp33
+    type: VARCHAR
+    years: '1997'
+  IMP34:
+    name: imp34
+    type: VARCHAR
+    years: '1997'
+  IMP35:
+    name: imp35
+    type: VARCHAR
+    years: '1997'
+  IMP36:
+    name: imp36
+    type: VARCHAR
+    years: '1997'
+  IMP37:
+    name: imp37
+    type: VARCHAR
+    years: '1997'
+  IMP38:
+    name: imp38
+    type: VARCHAR
+    years: '1997'
+  IMP39:
+    name: imp39
+    type: VARCHAR
+    years: '1997'
+  IMP40:
+    name: imp40
+    type: VARCHAR
+    years: '1997'
+  IMP41:
+    name: imp41
+    type: VARCHAR
+    years: '1997'
+  IMP42:
+    name: imp42
+    type: VARCHAR
+    years: '1997'
+  IMP43:
+    name: imp43
+    type: VARCHAR
+    years: '1997'
+  IMP44:
+    name: imp44
+    type: VARCHAR
+    years: '1997'
+  IMP45:
+    name: imp45
+    type: VARCHAR
+    years: '1997'
+  IMP46:
+    name: imp46
+    type: VARCHAR
+    years: '1997'
+  IMP47:
+    name: imp47
+    type: VARCHAR
+    years: '1997'
+  IMP48:
+    name: imp48
+    type: VARCHAR
+    years: '1997'
+  IMP49:
+    name: imp49
+    type: VARCHAR
+    years: '1997'
+  IMP50:
+    name: imp50
+    type: VARCHAR
+    years: '1997'
+  IMP51:
+    name: imp51
+    type: VARCHAR
+    years: '1997'
+  IMP52:
+    name: imp52
+    type: VARCHAR
+    years: '1997'
+  IMP53:
+    name: imp53
+    type: VARCHAR
+    years: '1997'
+  IMP54:
+    name: imp54
+    type: VARCHAR
+    years: '1997'
+  IMP55:
+    name: imp55
+    type: VARCHAR
+    years: '1997'
+  IMP56:
+    name: imp56
+    type: VARCHAR
+    years: '1997'
+  IMP57:
+    name: imp57
+    type: VARCHAR
+    years: '1997'
+  IMP58:
+    name: imp58
+    type: VARCHAR
+    years: '1997'
+  IMP59:
+    name: imp59
+    type: VARCHAR
+    years: '1997'
+  IMP60:
+    name: imp60
+    type: VARCHAR
+    years: '1997'
+  IMP61:
+    name: imp61
+    type: VARCHAR
+    years: '1997'
+  IMP62:
+    name: imp62
+    type: VARCHAR
+    years: '1997'
+  IMP63:
+    name: imp63
+    type: VARCHAR
+    years: '1997'
+  IMP64:
+    name: imp64
+    type: VARCHAR
+    years: '1997'
+  IMP65:
+    name: imp65
+    type: VARCHAR
+    years: '1997'
+  IMP66:
+    name: imp66
+    type: VARCHAR
+    years: '1997'
+  IMP67:
+    name: imp67
+    type: VARCHAR
+    years: '1997'
+  IMP68:
+    name: imp68
+    type: VARCHAR
+    years: '1997'
+  IMP69:
+    name: imp69
+    type: VARCHAR
+    years: '1997'
+  IMP70:
+    name: imp70
+    type: VARCHAR
+    years: '1997'
+  IMP71:
+    name: imp71
+    type: VARCHAR
+    years: '1997'
+  IMP72:
+    name: imp72
+    type: VARCHAR
+    years: '1997'
+  IMP73:
+    name: imp73
+    type: VARCHAR
+    years: '1997'
+  IMP74:
+    name: imp74
+    type: VARCHAR
+    years: '1997'
+  IMP75:
+    name: imp75
+    type: VARCHAR
+    years: '1997'
+  IMP76:
+    name: imp76
+    type: VARCHAR
+    years: '1997'

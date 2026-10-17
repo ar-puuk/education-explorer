@@ -1,0 +1,1110 @@
+source: ipeds
+family: icb
+key:
+- unitid
+- enrolmnt
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 1986-1989,1992-1994
+  FINAID1:
+    name: finaid1
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  FINAID2:
+    name: finaid2
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  FINAID3:
+    name: finaid3
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  FINAID4:
+    name: finaid4
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  FINAID5:
+    name: finaid5
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  FINAID6:
+    name: finaid6
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  FINAID7:
+    name: finaid7
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  FINAID8:
+    name: finaid8
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  FINAID9:
+    name: finaid9
+    type: BIGINT
+    years: 1986,1988-1989,1992-1994
+  JTPA:
+    name: jtpa
+    type: BIGINT
+    years: 1986-1987,1989,1992-1994
+  JTPADK:
+    name: jtpadk
+    type: BIGINT
+    years: '1986'
+  ROTC:
+    name: rotc
+    type: BIGINT
+    years: 1986-1987,1989,1992-1994
+  ROTC1:
+    name: rotc1
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  ROTC2:
+    name: rotc2
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  ROTC3:
+    name: rotc3
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  FTSLT15:
+    name: ftslt15
+    type: BIGINT
+    years: 1986-1987,1989,1992-1994
+  FTSGE15:
+    name: ftsge15
+    type: BIGINT
+    years: '1986'
+  FACPT:
+    name: facpt
+    type: BIGINT
+    years: 1986-1987,1989,1992-1994
+  FACML:
+    name: facml
+    type: BIGINT
+    years: 1986-1987,1989,1992-1994
+  FACMD:
+    name: facmd
+    type: BIGINT
+    years: 1986-1987,1989,1992-1994
+  ENROLMNT:
+    name: enrolmnt
+    type: BIGINT
+    years: 1986-1988,1992-1994
+  PRGMOFFR:
+    name: prgmoffr
+    type: BIGINT
+    years: 1986-1989,1992-1994
+  PG600:
+    name: pg600
+    type: BIGINT
+    years: 1986-1987,1989
+  SUM2YR:
+    name: sum2yr
+    type: BIGINT
+    years: '1986'
+  SUM4YR:
+    name: sum4yr
+    type: BIGINT
+    years: '1986'
+  SUMPOS:
+    name: sumpos
+    type: BIGINT
+    years: '1986'
+  EVE2YR:
+    name: eve2yr
+    type: BIGINT
+    years: '1986'
+  EVE4YR:
+    name: eve4yr
+    type: BIGINT
+    years: '1986'
+  EVEPOS:
+    name: evepos
+    type: BIGINT
+    years: '1986'
+  CALSYS:
+    name: calsys
+    type: BIGINT
+    years: 1987,1992-1994
+  CRSLOC1:
+    name: crsloc1
+    type: BIGINT
+    years: 1987,1992-1994
+  CRSLOC2:
+    name: crsloc2
+    type: BIGINT
+    years: 1987,1992-1994
+  CRSLOC3:
+    name: crsloc3
+    type: BIGINT
+    years: 1987,1992-1994
+  CRSLOC4:
+    name: crsloc4
+    type: BIGINT
+    years: 1987,1992-1994
+  CRSLOC5:
+    name: crsloc5
+    type: BIGINT
+    years: 1987,1992-1994
+  CRSLOC6:
+    name: crsloc6
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC1:
+    name: facloc1
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC2:
+    name: facloc2
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC3:
+    name: facloc3
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC4:
+    name: facloc4
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC6:
+    name: facloc6
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC7:
+    name: facloc7
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC8:
+    name: facloc8
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC9:
+    name: facloc9
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC10:
+    name: facloc10
+    type: BIGINT
+    years: 1987,1992-1994
+  FACLOC12:
+    name: facloc12
+    type: BIGINT
+    years: 1987,1992-1994
+  MILI:
+    name: mili
+    type: BIGINT
+    years: 1987,1992-1994
+  MIL1INSL:
+    name: mil1insl
+    type: BIGINT
+    years: 1987,1992-1994
+  MIL2INSL:
+    name: mil2insl
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ1:
+    name: admreq1
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ2:
+    name: admreq2
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ3:
+    name: admreq3
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ4:
+    name: admreq4
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ5:
+    name: admreq5
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ6:
+    name: admreq6
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ7:
+    name: admreq7
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ8:
+    name: admreq8
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ9:
+    name: admreq9
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ10:
+    name: admreq10
+    type: BIGINT
+    years: 1987,1992-1994
+  ADMREQ11:
+    name: admreq11
+    type: BIGINT
+    years: 1987,1992-1994
+  AVGPERC:
+    name: avgperc
+    type: BIGINT
+    years: '1987'
+  UWWOU:
+    name: uwwou
+    type: BIGINT
+    years: 1987,1992-1994
+  MODE1:
+    name: mode1
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE2:
+    name: mode2
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE3:
+    name: mode3
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE4:
+    name: mode4
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE5:
+    name: mode5
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE6:
+    name: mode6
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE7:
+    name: mode7
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE8:
+    name: mode8
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE9:
+    name: mode9
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE10:
+    name: mode10
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE11:
+    name: mode11
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE12:
+    name: mode12
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE13:
+    name: mode13
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  MODE14:
+    name: mode14
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  STUSRV1:
+    name: stusrv1
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  STUSRV2:
+    name: stusrv2
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  STUSRV3:
+    name: stusrv3
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  STUSRV4:
+    name: stusrv4
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  STUSRV5:
+    name: stusrv5
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  STUSRV6:
+    name: stusrv6
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  STUSRV7:
+    name: stusrv7
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  STUSRV8:
+    name: stusrv8
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  STUSRV9:
+    name: stusrv9
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  ASLIB1:
+    name: aslib1
+    type: BIGINT
+    years: 1987-1988
+  ASLIB2:
+    name: aslib2
+    type: BIGINT
+    years: 1987-1988
+  ASLIB3:
+    name: aslib3
+    type: BIGINT
+    years: 1987-1988
+  FTSTU:
+    name: ftstu
+    type: BIGINT
+    years: 1987,1992-1994
+  APFEE:
+    name: apfee
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  APPLFEEU:
+    name: applfeeu
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  APPLFEEG:
+    name: applfeeg
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  TFDU:
+    name: tfdu
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  TFDI:
+    name: tfdi
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  FFIND:
+    name: ffind
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  FFAMT:
+    name: ffamt
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  FFPER:
+    name: ffper
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  FFMIN:
+    name: ffmin
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  FFMAX:
+    name: ffmax
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  PHIND:
+    name: phind
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  PHAMT:
+    name: phamt
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  PHPER:
+    name: phper
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  NOFTUG:
+    name: noftug
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  CGHPER:
+    name: cghper
+    type: BIGINT
+    years: '1987'
+  TUITION1:
+    name: tuition1
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  TUITION2:
+    name: tuition2
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  TUITION3:
+    name: tuition3
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  TUITION4:
+    name: tuition4
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  TUITION5:
+    name: tuition5
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  TUITION6:
+    name: tuition6
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  TUITION7:
+    name: tuition7
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  PROF1:
+    name: prof1
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF2:
+    name: prof2
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF3:
+    name: prof3
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF4:
+    name: prof4
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF5:
+    name: prof5
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF6:
+    name: prof6
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF7:
+    name: prof7
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF8:
+    name: prof8
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF9:
+    name: prof9
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF10:
+    name: prof10
+    type: BIGINT
+    years: 1987-1989,1992
+  PROF11:
+    name: prof11
+    type: BIGINT
+    years: 1987-1989,1992
+  PROFOTH:
+    name: profoth
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  PROFNA:
+    name: profna
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  ROOM:
+    name: room
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  ROOMAMT:
+    name: roomamt
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  ROOMCAP:
+    name: roomcap
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  BOARD:
+    name: board
+    type: BIGINT
+    years: 1987,1989,1992-1994
+  BOARDAMT:
+    name: boardamt
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  MEALSWK:
+    name: mealswk
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  AVGAMT1:
+    name: avgamt1
+    type: BIGINT
+    years: 1987-1989,1992
+  AVGAMT2:
+    name: avgamt2
+    type: BIGINT
+    years: 1987-1989,1992
+  AVGAMT3:
+    name: avgamt3
+    type: BIGINT
+    years: 1987-1989,1992
+  AVGAMT4:
+    name: avgamt4
+    type: BIGINT
+    years: 1987-1989,1992
+  CIPCODE1:
+    name: cipcode1
+    type: DOUBLE
+    years: 1987-1989,1992-1994
+  CIPTUIT1:
+    name: ciptuit1
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  CIPLGTH1:
+    name: ciplgth1
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  CIPENRL1:
+    name: cipenrl1
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  CIPCODE2:
+    name: cipcode2
+    type: DOUBLE
+    years: 1987-1989,1992-1994
+  CIPTUIT2:
+    name: ciptuit2
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  CIPLGTH2:
+    name: ciplgth2
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  CIPENRL2:
+    name: cipenrl2
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  CIPCODE3:
+    name: cipcode3
+    type: DOUBLE
+    years: 1987-1989,1992-1994
+  CIPTUIT3:
+    name: ciptuit3
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  CIPLGTH3:
+    name: ciplgth3
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  CIPENRL3:
+    name: cipenrl3
+    type: BIGINT
+    years: 1987-1989,1992-1994
+  LIBFAC:
+    name: libfac
+    type: BIGINT
+    years: 1987-1988,1992-1994
+  FORMRT:
+    name: formrt
+    type: VARCHAR
+    years: '1988'
+  RESPLAST:
+    name: resplast
+    type: BIGINT
+    years: '1988'
+  RESPSTAT:
+    name: respstat
+    type: BIGINT
+    years: '1988'
+  UNITIDX:
+    name: unitidx
+    type: BIGINT
+    years: '1988'
+  RSTATUS:
+    name: rstatus
+    type: BIGINT
+    years: '1988'
+  CHGPER:
+    name: chgper
+    type: BIGINT
+    years: 1989,1992-1994
+  TUITION8:
+    name: tuition8
+    type: BIGINT
+    years: 1989,1992-1994
+  ROOMBORD:
+    name: roombord
+    type: BIGINT
+    years: 1989,1992-1994
+  ENROLL88:
+    name: enroll88
+    type: BIGINT
+    years: '1989'
+  LIBSHAR1:
+    name: libshar1
+    type: BIGINT
+    years: 1992-1994
+  LIBSHAR2:
+    name: libshar2
+    type: BIGINT
+    years: 1992-1994
+  LIBSHAR3:
+    name: libshar3
+    type: BIGINT
+    years: 1992-1994
+  MEALSVRY:
+    name: mealsvry
+    type: BIGINT
+    years: 1992-1994
+  RMBRDAMT:
+    name: rmbrdamt
+    type: BIGINT
+    years: 1992-1994
+  PG300:
+    name: pg300
+    type: BIGINT
+    years: 1992-1994
+  CIPSUPP1:
+    name: cipsupp1
+    type: BIGINT
+    years: 1992-1994
+  CIPSUPP2:
+    name: cipsupp2
+    type: BIGINT
+    years: 1992-1994
+  GENENRL:
+    name: genenrl
+    type: BIGINT
+    years: 1992-1994
+  MONTH:
+    name: month
+    type: BIGINT
+    years: 1992-1994
+  CDACTUA:
+    name: cdactua
+    type: BIGINT
+    years: 1992-1994
+  CNACTUA:
+    name: cnactua
+    type: BIGINT
+    years: 1992-1994
+  CDACTPA:
+    name: cdactpa
+    type: BIGINT
+    years: 1992-1994
+  CDACTGA:
+    name: cdactga
+    type: BIGINT
+    years: 1992-1994
+  CDACTUF:
+    name: cdactuf
+    type: BIGINT
+    years: 1992-1994
+  CNACTUF:
+    name: cnactuf
+    type: BIGINT
+    years: 1992-1994
+  CDACTPF:
+    name: cdactpf
+    type: BIGINT
+    years: 1992-1994
+  CDACTGF:
+    name: cdactgf
+    type: BIGINT
+    years: 1992-1994
+  TOSTUCU:
+    name: tostucu
+    type: BIGINT
+    years: 1992-1994
+  TOSTUCP:
+    name: tostucp
+    type: BIGINT
+    years: 1992-1994
+  TOSTUCG:
+    name: tostucg
+    type: BIGINT
+    years: 1992-1994
+  SUMSES:
+    name: sumses
+    type: BIGINT
+    years: 1992-1994
+  SSSTUD:
+    name: ssstud
+    type: BIGINT
+    years: '1992'
+  MAJEXDIV:
+    name: majexdiv
+    type: BIGINT
+    years: '1992'
+  ENRECSEP:
+    name: enrecsep
+    type: BIGINT
+    years: '1992'
+  FIRECSEP:
+    name: firecsep
+    type: BIGINT
+    years: '1992'
+  SEPFACEM:
+    name: sepfacem
+    type: BIGINT
+    years: '1992'
+  DATINC:
+    name: datinc
+    type: BIGINT
+    years: '1992'
+  IMP1:
+    name: imp1
+    type: VARCHAR
+    years: 1992-1994
+  IMP2:
+    name: imp2
+    type: VARCHAR
+    years: 1992-1994
+  IMP3:
+    name: imp3
+    type: VARCHAR
+    years: 1992-1994
+  IMP4:
+    name: imp4
+    type: VARCHAR
+    years: 1992-1994
+  IMP5:
+    name: imp5
+    type: VARCHAR
+    years: 1992-1994
+  IMP6:
+    name: imp6
+    type: VARCHAR
+    years: 1992-1994
+  IMP7:
+    name: imp7
+    type: VARCHAR
+    years: 1992-1994
+  IMP8:
+    name: imp8
+    type: VARCHAR
+    years: 1992-1994
+  IMP9:
+    name: imp9
+    type: VARCHAR
+    years: 1992-1994
+  IMP10:
+    name: imp10
+    type: VARCHAR
+    years: 1992-1994
+  IMP11:
+    name: imp11
+    type: VARCHAR
+    years: 1992-1994
+  PARCHILD:
+    name: parchild
+    type: BIGINT
+    years: '1992'
+  ADMREQ12:
+    name: admreq12
+    type: BIGINT
+    years: 1992-1994
+  YRSCOL:
+    name: yrscol
+    type: BIGINT
+    years: 1992-1994
+  CIPSUPP3:
+    name: cipsupp3
+    type: BIGINT
+    years: 1992-1994
+  CIPCODE4:
+    name: cipcode4
+    type: DOUBLE
+    years: 1992-1994
+  CIPTUIT4:
+    name: ciptuit4
+    type: BIGINT
+    years: 1992-1994
+  CIPLGTH4:
+    name: ciplgth4
+    type: BIGINT
+    years: 1992-1994
+  CIPENRL4:
+    name: cipenrl4
+    type: BIGINT
+    years: 1992-1994
+  CIPSUPP4:
+    name: cipsupp4
+    type: BIGINT
+    years: 1992-1994
+  CIPCODE5:
+    name: cipcode5
+    type: DOUBLE
+    years: 1992-1994
+  CIPTUIT5:
+    name: ciptuit5
+    type: BIGINT
+    years: 1992-1994
+  CIPLGTH5:
+    name: ciplgth5
+    type: BIGINT
+    years: 1992-1994
+  CIPENRL5:
+    name: cipenrl5
+    type: BIGINT
+    years: 1992-1994
+  CIPSUPP5:
+    name: cipsupp5
+    type: BIGINT
+    years: 1992-1994
+  CIPCODE6:
+    name: cipcode6
+    type: DOUBLE
+    years: 1992-1994
+  CIPTUIT6:
+    name: ciptuit6
+    type: BIGINT
+    years: 1992-1994
+  CIPLGTH6:
+    name: ciplgth6
+    type: BIGINT
+    years: 1992-1994
+  CIPENRL6:
+    name: cipenrl6
+    type: BIGINT
+    years: 1992-1994
+  CIPSUPP6:
+    name: cipsupp6
+    type: BIGINT
+    years: 1992-1994
+  FACRL:
+    name: facrl
+    type: BIGINT
+    years: 1992-1994
+  PRCT:
+    name: prct
+    type: BIGINT
+    years: 1992-1994
+  ADMREQ:
+    name: admreq
+    type: BIGINT
+    years: 1993-1994
+  TPUGCRED:
+    name: tpugcred
+    type: BIGINT
+    years: 1993-1994
+  TPUGCONT:
+    name: tpugcont
+    type: BIGINT
+    years: 1993-1994
+  TPGDCRED:
+    name: tpgdcred
+    type: BIGINT
+    years: 1993-1994
+  ISPROF1:
+    name: isprof1
+    type: BIGINT
+    years: 1993-1994
+  OSPROF1:
+    name: osprof1
+    type: BIGINT
+    years: 1993-1994
+  ISPROF2:
+    name: isprof2
+    type: BIGINT
+    years: 1993-1994
+  OSPROF2:
+    name: osprof2
+    type: BIGINT
+    years: 1993-1994
+  ISPROF3:
+    name: isprof3
+    type: BIGINT
+    years: 1993-1994
+  OSPROF3:
+    name: osprof3
+    type: BIGINT
+    years: 1993-1994
+  ISPROF4:
+    name: isprof4
+    type: BIGINT
+    years: 1993-1994
+  OSPROF4:
+    name: osprof4
+    type: BIGINT
+    years: 1993-1994
+  ISPROF5:
+    name: isprof5
+    type: BIGINT
+    years: 1993-1994
+  OSPROF5:
+    name: osprof5
+    type: BIGINT
+    years: 1993-1994
+  ISPROF6:
+    name: isprof6
+    type: BIGINT
+    years: 1993-1994
+  OSPROF6:
+    name: osprof6
+    type: BIGINT
+    years: 1993-1994
+  ISPROF7:
+    name: isprof7
+    type: BIGINT
+    years: 1993-1994
+  OSPROF7:
+    name: osprof7
+    type: BIGINT
+    years: 1993-1994
+  ISPROF8:
+    name: isprof8
+    type: BIGINT
+    years: 1993-1994
+  OSPROF8:
+    name: osprof8
+    type: BIGINT
+    years: 1993-1994
+  ISPROF9:
+    name: isprof9
+    type: BIGINT
+    years: 1993-1994
+  OSPROF9:
+    name: osprof9
+    type: BIGINT
+    years: 1993-1994
+  ISPROF10:
+    name: isprof10
+    type: BIGINT
+    years: 1993-1994
+  OSPROF10:
+    name: osprof10
+    type: BIGINT
+    years: 1993-1994
+  ISPROF11:
+    name: isprof11
+    type: BIGINT
+    years: 1993-1994
+  OSPROF11:
+    name: osprof11
+    type: BIGINT
+    years: 1993-1994
+  TPFPCRED:
+    name: tpfpcred
+    type: BIGINT
+    years: 1993-1994
+  CIPCOMP1:
+    name: cipcomp1
+    type: BIGINT
+    years: 1993-1994
+  CIPCOMP2:
+    name: cipcomp2
+    type: BIGINT
+    years: 1993-1994
+  CIPCOMP3:
+    name: cipcomp3
+    type: BIGINT
+    years: 1993-1994
+  CIPCOMP4:
+    name: cipcomp4
+    type: BIGINT
+    years: 1993-1994
+  CIPCOMP5:
+    name: cipcomp5
+    type: BIGINT
+    years: 1993-1994
+  CIPCOMP6:
+    name: cipcomp6
+    type: BIGINT
+    years: 1993-1994
+  NOFALL:
+    name: nofall
+    type: BIGINT
+    years: 1993-1994
+  SUMSES_A:
+    name: sumses_a
+    type: BIGINT
+    years: 1993-1994
+  SUMSES_B:
+    name: sumses_b
+    type: BIGINT
+    years: 1993-1994
+  SUMSES_C:
+    name: sumses_c
+    type: BIGINT
+    years: 1993-1994
+  SUMCOUNT:
+    name: sumcount
+    type: BIGINT
+    years: 1993-1994
+  CDACTSSU:
+    name: cdactssu
+    type: BIGINT
+    years: 1993-1994
+  CNACTSSU:
+    name: cnactssu
+    type: BIGINT
+    years: 1993-1994
+  CDACTSSG:
+    name: cdactssg
+    type: BIGINT
+    years: 1993-1994
+  CDACTSSP:
+    name: cdactssp
+    type: BIGINT
+    years: 1993-1994
+  EXTDIV:
+    name: extdiv
+    type: BIGINT
+    years: '1993'
+  EXTDIV_A:
+    name: extdiv_a
+    type: BIGINT
+    years: '1993'
+  EXTDIV_B:
+    name: extdiv_b
+    type: BIGINT
+    years: '1993'
+  EXTDIV_C:
+    name: extdiv_c
+    type: BIGINT
+    years: '1993'
+  EXTDIV_D:
+    name: extdiv_d
+    type: BIGINT
+    years: '1993'
+  EXTCOUNT:
+    name: extcount
+    type: BIGINT
+    years: '1993'
+  CDACTEXU:
+    name: cdactexu
+    type: BIGINT
+    years: '1993'
+  CNACTEXU:
+    name: cnactexu
+    type: BIGINT
+    years: '1993'
+  CDACTEXG:
+    name: cdactexg
+    type: BIGINT
+    years: '1993'
+  CDACTEXP:
+    name: cdactexp
+    type: BIGINT
+    years: '1993'
+  EIN:
+    name: ein
+    type: BIGINT
+    years: 1993-1994
+  LICENSED:
+    name: licensed
+    type: BIGINT
+    years: '1994'
+  AGENNAME:
+    name: agenname
+    type: BIGINT
+    years: '1994'
+  AGENSTRT:
+    name: agenstrt
+    type: BIGINT
+    years: '1994'
+  AGENPLCE:
+    name: agenplce
+    type: BIGINT
+    years: '1994'
+  AGENST:
+    name: agenst
+    type: BIGINT
+    years: '1994'
+  AGENZIP:
+    name: agenzip
+    type: BIGINT
+    years: '1994'

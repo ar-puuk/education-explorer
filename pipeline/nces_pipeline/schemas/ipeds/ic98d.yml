@@ -1,0 +1,377 @@
+source: ipeds
+family: ic98d
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1997'
+  FTSTU:
+    name: ftstu
+    type: BIGINT
+    years: '1997'
+  APFEE:
+    name: apfee
+    type: BIGINT
+    years: '1997'
+  APPLFEEU:
+    name: applfeeu
+    type: BIGINT
+    years: '1997'
+  APPLFEEG:
+    name: applfeeg
+    type: BIGINT
+    years: '1997'
+  APPLFEEP:
+    name: applfeep
+    type: BIGINT
+    years: '1997'
+  CHGPER1:
+    name: chgper1
+    type: BIGINT
+    years: '1997'
+  CHGPER2:
+    name: chgper2
+    type: BIGINT
+    years: '1997'
+  CHGPER3:
+    name: chgper3
+    type: BIGINT
+    years: '1997'
+  CHGPER4:
+    name: chgper4
+    type: BIGINT
+    years: '1997'
+  CHGPER5:
+    name: chgper5
+    type: BIGINT
+    years: '1997'
+  TUITION1:
+    name: tuition1
+    type: BIGINT
+    years: '1997'
+  TUITION2:
+    name: tuition2
+    type: BIGINT
+    years: '1997'
+  TUITION3:
+    name: tuition3
+    type: BIGINT
+    years: '1997'
+  TUITION4:
+    name: tuition4
+    type: BIGINT
+    years: '1997'
+  TPUGCRED:
+    name: tpugcred
+    type: BIGINT
+    years: '1997'
+  TPUGCONT:
+    name: tpugcont
+    type: BIGINT
+    years: '1997'
+  TUITION5:
+    name: tuition5
+    type: BIGINT
+    years: '1997'
+  TUITION6:
+    name: tuition6
+    type: BIGINT
+    years: '1997'
+  TUITION7:
+    name: tuition7
+    type: BIGINT
+    years: '1997'
+  TUITION8:
+    name: tuition8
+    type: BIGINT
+    years: '1997'
+  TPGDCRED:
+    name: tpgdcred
+    type: BIGINT
+    years: '1997'
+  ISPROF1:
+    name: isprof1
+    type: BIGINT
+    years: '1997'
+  OSPROF1:
+    name: osprof1
+    type: BIGINT
+    years: '1997'
+  ISPROF2:
+    name: isprof2
+    type: BIGINT
+    years: '1997'
+  OSPROF2:
+    name: osprof2
+    type: BIGINT
+    years: '1997'
+  ISPROF3:
+    name: isprof3
+    type: BIGINT
+    years: '1997'
+  OSPROF3:
+    name: osprof3
+    type: BIGINT
+    years: '1997'
+  ISPROF4:
+    name: isprof4
+    type: BIGINT
+    years: '1997'
+  OSPROF4:
+    name: osprof4
+    type: BIGINT
+    years: '1997'
+  ISPROF5:
+    name: isprof5
+    type: BIGINT
+    years: '1997'
+  OSPROF5:
+    name: osprof5
+    type: BIGINT
+    years: '1997'
+  ISPROF6:
+    name: isprof6
+    type: BIGINT
+    years: '1997'
+  OSPROF6:
+    name: osprof6
+    type: BIGINT
+    years: '1997'
+  ISPROF7:
+    name: isprof7
+    type: BIGINT
+    years: '1997'
+  OSPROF7:
+    name: osprof7
+    type: BIGINT
+    years: '1997'
+  ISPROF8:
+    name: isprof8
+    type: BIGINT
+    years: '1997'
+  OSPROF8:
+    name: osprof8
+    type: BIGINT
+    years: '1997'
+  ISPROF9:
+    name: isprof9
+    type: BIGINT
+    years: '1997'
+  OSPROF9:
+    name: osprof9
+    type: BIGINT
+    years: '1997'
+  ISPROF10:
+    name: isprof10
+    type: BIGINT
+    years: '1997'
+  OSPROF10:
+    name: osprof10
+    type: BIGINT
+    years: '1997'
+  ISPROF11:
+    name: isprof11
+    type: BIGINT
+    years: '1997'
+  OSPROF11:
+    name: osprof11
+    type: BIGINT
+    years: '1997'
+  PROFNA:
+    name: profna
+    type: BIGINT
+    years: '1997'
+  TPFPCRED:
+    name: tpfpcred
+    type: BIGINT
+    years: '1997'
+  ROOM:
+    name: room
+    type: BIGINT
+    years: '1997'
+  ROOMCAP:
+    name: roomcap
+    type: BIGINT
+    years: '1997'
+  BOARD:
+    name: board
+    type: BIGINT
+    years: '1997'
+  MEALSWK:
+    name: mealswk
+    type: BIGINT
+    years: '1997'
+  MEALSVRY:
+    name: mealsvry
+    type: BIGINT
+    years: '1997'
+  ROOMAMT:
+    name: roomamt
+    type: BIGINT
+    years: '1997'
+  BOARDAMT:
+    name: boardamt
+    type: BIGINT
+    years: '1997'
+  ROOMBORD:
+    name: roombord
+    type: BIGINT
+    years: '1997'
+  RMBRDAMT:
+    name: rmbrdamt
+    type: BIGINT
+    years: '1997'
+  PRGMOFFR:
+    name: prgmoffr
+    type: BIGINT
+    years: '1997'
+  PG300:
+    name: pg300
+    type: BIGINT
+    years: '1997'
+  CIPCODE1:
+    name: cipcode1
+    type: DOUBLE
+    years: '1997'
+  CIPTUIT1:
+    name: ciptuit1
+    type: BIGINT
+    years: '1997'
+  CIPSUPP1:
+    name: cipsupp1
+    type: BIGINT
+    years: '1997'
+  CIPLGTH1:
+    name: ciplgth1
+    type: BIGINT
+    years: '1997'
+  CIPENRL1:
+    name: cipenrl1
+    type: BIGINT
+    years: '1997'
+  CIPCOMP1:
+    name: cipcomp1
+    type: BIGINT
+    years: '1997'
+  CIPCODE2:
+    name: cipcode2
+    type: DOUBLE
+    years: '1997'
+  CIPTUIT2:
+    name: ciptuit2
+    type: BIGINT
+    years: '1997'
+  CIPSUPP2:
+    name: cipsupp2
+    type: BIGINT
+    years: '1997'
+  CIPLGTH2:
+    name: ciplgth2
+    type: BIGINT
+    years: '1997'
+  CIPENRL2:
+    name: cipenrl2
+    type: BIGINT
+    years: '1997'
+  CIPCOMP2:
+    name: cipcomp2
+    type: BIGINT
+    years: '1997'
+  CIPCODE3:
+    name: cipcode3
+    type: DOUBLE
+    years: '1997'
+  CIPTUIT3:
+    name: ciptuit3
+    type: BIGINT
+    years: '1997'
+  CIPSUPP3:
+    name: cipsupp3
+    type: BIGINT
+    years: '1997'
+  CIPLGTH3:
+    name: ciplgth3
+    type: BIGINT
+    years: '1997'
+  CIPENRL3:
+    name: cipenrl3
+    type: BIGINT
+    years: '1997'
+  CIPCOMP3:
+    name: cipcomp3
+    type: BIGINT
+    years: '1997'
+  CIPCODE4:
+    name: cipcode4
+    type: DOUBLE
+    years: '1997'
+  CIPTUIT4:
+    name: ciptuit4
+    type: BIGINT
+    years: '1997'
+  CIPSUPP4:
+    name: cipsupp4
+    type: BIGINT
+    years: '1997'
+  CIPLGTH4:
+    name: ciplgth4
+    type: BIGINT
+    years: '1997'
+  CIPENRL4:
+    name: cipenrl4
+    type: BIGINT
+    years: '1997'
+  CIPCOMP4:
+    name: cipcomp4
+    type: BIGINT
+    years: '1997'
+  CIPCODE5:
+    name: cipcode5
+    type: DOUBLE
+    years: '1997'
+  CIPTUIT5:
+    name: ciptuit5
+    type: BIGINT
+    years: '1997'
+  CIPSUPP5:
+    name: cipsupp5
+    type: BIGINT
+    years: '1997'
+  CIPLGTH5:
+    name: ciplgth5
+    type: BIGINT
+    years: '1997'
+  CIPENRL5:
+    name: cipenrl5
+    type: BIGINT
+    years: '1997'
+  CIPCOMP5:
+    name: cipcomp5
+    type: BIGINT
+    years: '1997'
+  CIPCODE6:
+    name: cipcode6
+    type: DOUBLE
+    years: '1997'
+  CIPTUIT6:
+    name: ciptuit6
+    type: BIGINT
+    years: '1997'
+  CIPSUPP6:
+    name: cipsupp6
+    type: BIGINT
+    years: '1997'
+  CIPLGTH6:
+    name: ciplgth6
+    type: BIGINT
+    years: '1997'
+  CIPENRL6:
+    name: cipenrl6
+    type: BIGINT
+    years: '1997'
+  CIPCOMP6:
+    name: cipcomp6
+    type: BIGINT
+    years: '1997'

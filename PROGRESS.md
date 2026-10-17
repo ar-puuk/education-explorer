@@ -32,7 +32,7 @@ Legend: [x] done, [~] in progress, [ ] todo
 ## Phase 3: IPEDS
 - [x] Catalog (1,213 files 1980-2025), 857 files for 2000-2025 downloaded, 75 table families built for Utah (~30 MB Parquet), maps with drift + type guards, dictionary (9k rows) + value labels, validation incl. keys
 - [x] College layer (diamond/cap markers), filters by control, search, detail panel with fall enrollment (total/level/attendance/gender/race), 12-month headcount, awards, admissions, institution facts, and a table explorer for every IPEDS table (labels, flags, CSV export)
-- [ ] Phase 3b (deferred): IPEDS 1980-1999 files; E.g. curated finance/net-price/graduation charts (available in the explorer)
+- [x] Phase 3b: IPEDS 1980-1999 tables (150 families total); map layer starts in 2000. Not done: curated finance/net-price/graduation charts (data are in the explorer)
 
 ## Phase 4: PSS + geocoding
 - [x] PSS 1989-90..2023-24 (18 surveys) -> schools (all columns, labels), enrollment and teachers long tables; ~4 MB

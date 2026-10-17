@@ -1,0 +1,29 @@
+source: ipeds
+family: sb
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1991'
+  CD_SERV1:
+    name: cd_serv1
+    type: BIGINT
+    years: '1991'
+  CD_SERV2:
+    name: cd_serv2
+    type: BIGINT
+    years: '1991'
+  CD_SERV3:
+    name: cd_serv3
+    type: BIGINT
+    years: '1991'
+  CD_SERV4:
+    name: cd_serv4
+    type: BIGINT
+    years: '1991'
+  CD_SERV5:
+    name: cd_serv5
+    type: BIGINT
+    years: '1991'

@@ -1,0 +1,785 @@
+source: ipeds
+family: ic97b
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1996'
+  CALSYS:
+    name: calsys
+    type: BIGINT
+    years: '1996'
+  CRSLOC1:
+    name: crsloc1
+    type: BIGINT
+    years: '1996'
+  CRSLOC2:
+    name: crsloc2
+    type: BIGINT
+    years: '1996'
+  CRSLOC3:
+    name: crsloc3
+    type: BIGINT
+    years: '1996'
+  CRSLOC4:
+    name: crsloc4
+    type: BIGINT
+    years: '1996'
+  CRSLOC5:
+    name: crsloc5
+    type: BIGINT
+    years: '1996'
+  CRSLOC6:
+    name: crsloc6
+    type: BIGINT
+    years: '1996'
+  FACLOC1:
+    name: facloc1
+    type: BIGINT
+    years: '1996'
+  FACLOC2:
+    name: facloc2
+    type: BIGINT
+    years: '1996'
+  FACLOC3:
+    name: facloc3
+    type: BIGINT
+    years: '1996'
+  FACLOC4:
+    name: facloc4
+    type: BIGINT
+    years: '1996'
+  FACLOC5:
+    name: facloc5
+    type: BIGINT
+    years: '1996'
+  FACLOC6:
+    name: facloc6
+    type: BIGINT
+    years: '1996'
+  FACLOC7:
+    name: facloc7
+    type: BIGINT
+    years: '1996'
+  FACLOC8:
+    name: facloc8
+    type: BIGINT
+    years: '1996'
+  FACLOC9:
+    name: facloc9
+    type: BIGINT
+    years: '1996'
+  FACLOC10:
+    name: facloc10
+    type: BIGINT
+    years: '1996'
+  MILI:
+    name: mili
+    type: BIGINT
+    years: '1996'
+  MIL1INSL:
+    name: mil1insl
+    type: BIGINT
+    years: '1996'
+  MIL2INSL:
+    name: mil2insl
+    type: BIGINT
+    years: '1996'
+  ADMREQ1:
+    name: admreq1
+    type: BIGINT
+    years: '1996'
+  ADMREQ2:
+    name: admreq2
+    type: BIGINT
+    years: '1996'
+  ADMREQ3:
+    name: admreq3
+    type: BIGINT
+    years: '1996'
+  ADMREQ4:
+    name: admreq4
+    type: BIGINT
+    years: '1996'
+  ADMREQ5:
+    name: admreq5
+    type: BIGINT
+    years: '1996'
+  AVSAT:
+    name: avsat
+    type: BIGINT
+    years: '1996'
+  ADMREQ6:
+    name: admreq6
+    type: BIGINT
+    years: '1996'
+  AVACT:
+    name: avact
+    type: BIGINT
+    years: '1996'
+  ADMREQ7:
+    name: admreq7
+    type: BIGINT
+    years: '1996'
+  ADMREQ8:
+    name: admreq8
+    type: BIGINT
+    years: '1996'
+  ADMREQ9:
+    name: admreq9
+    type: BIGINT
+    years: '1996'
+  ADMREQ10:
+    name: admreq10
+    type: BIGINT
+    years: '1996'
+  ADMREQ11:
+    name: admreq11
+    type: BIGINT
+    years: '1996'
+  ADMREQ12:
+    name: admreq12
+    type: BIGINT
+    years: '1996'
+  ADMREQ13:
+    name: admreq13
+    type: BIGINT
+    years: '1996'
+  YRSCOL:
+    name: yrscol
+    type: BIGINT
+    years: '1996'
+  MODE1:
+    name: mode1
+    type: BIGINT
+    years: '1996'
+  MODE2:
+    name: mode2
+    type: BIGINT
+    years: '1996'
+  MODE3:
+    name: mode3
+    type: BIGINT
+    years: '1996'
+  MODE4:
+    name: mode4
+    type: BIGINT
+    years: '1996'
+  MODE5:
+    name: mode5
+    type: BIGINT
+    years: '1996'
+  MODE6:
+    name: mode6
+    type: BIGINT
+    years: '1996'
+  MODE7:
+    name: mode7
+    type: BIGINT
+    years: '1996'
+  MODE8:
+    name: mode8
+    type: BIGINT
+    years: '1996'
+  MODE9:
+    name: mode9
+    type: BIGINT
+    years: '1996'
+  MODE10:
+    name: mode10
+    type: BIGINT
+    years: '1996'
+  MODE11:
+    name: mode11
+    type: BIGINT
+    years: '1996'
+  MODE12:
+    name: mode12
+    type: BIGINT
+    years: '1996'
+  MODE13:
+    name: mode13
+    type: BIGINT
+    years: '1996'
+  MODE14:
+    name: mode14
+    type: BIGINT
+    years: '1996'
+  STUSRV1:
+    name: stusrv1
+    type: BIGINT
+    years: '1996'
+  STUSRV2:
+    name: stusrv2
+    type: BIGINT
+    years: '1996'
+  STUSRV3:
+    name: stusrv3
+    type: BIGINT
+    years: '1996'
+  STUSRV4:
+    name: stusrv4
+    type: BIGINT
+    years: '1996'
+  STUSRV5:
+    name: stusrv5
+    type: BIGINT
+    years: '1996'
+  STUSRV6:
+    name: stusrv6
+    type: BIGINT
+    years: '1996'
+  STUSRV7:
+    name: stusrv7
+    type: BIGINT
+    years: '1996'
+  STUSRV8:
+    name: stusrv8
+    type: BIGINT
+    years: '1996'
+  STUSRV9:
+    name: stusrv9
+    type: BIGINT
+    years: '1996'
+  LIBFAC:
+    name: libfac
+    type: BIGINT
+    years: '1996'
+  LIBSHAR1:
+    name: libshar1
+    type: BIGINT
+    years: '1996'
+  LIBSHAR2:
+    name: libshar2
+    type: BIGINT
+    years: '1996'
+  LIBSHAR3:
+    name: libshar3
+    type: BIGINT
+    years: '1996'
+  FTSTU:
+    name: ftstu
+    type: BIGINT
+    years: '1996'
+  APFEE:
+    name: apfee
+    type: BIGINT
+    years: '1996'
+  APPLFEEU:
+    name: applfeeu
+    type: BIGINT
+    years: '1996'
+  APPLFEEG:
+    name: applfeeg
+    type: BIGINT
+    years: '1996'
+  APPLFEEP:
+    name: applfeep
+    type: BIGINT
+    years: '1996'
+  CHGPER1:
+    name: chgper1
+    type: BIGINT
+    years: '1996'
+  CHGPER2:
+    name: chgper2
+    type: BIGINT
+    years: '1996'
+  CHGPER3:
+    name: chgper3
+    type: BIGINT
+    years: '1996'
+  CHGPER4:
+    name: chgper4
+    type: BIGINT
+    years: '1996'
+  CHGPER5:
+    name: chgper5
+    type: BIGINT
+    years: '1996'
+  TUITION1:
+    name: tuition1
+    type: BIGINT
+    years: '1996'
+  TUITION2:
+    name: tuition2
+    type: BIGINT
+    years: '1996'
+  TUITION3:
+    name: tuition3
+    type: BIGINT
+    years: '1996'
+  TUITION4:
+    name: tuition4
+    type: BIGINT
+    years: '1996'
+  TPUGCRED:
+    name: tpugcred
+    type: BIGINT
+    years: '1996'
+  TPUGCONT:
+    name: tpugcont
+    type: BIGINT
+    years: '1996'
+  TUITION5:
+    name: tuition5
+    type: BIGINT
+    years: '1996'
+  TUITION6:
+    name: tuition6
+    type: BIGINT
+    years: '1996'
+  TUITION7:
+    name: tuition7
+    type: BIGINT
+    years: '1996'
+  TUITION8:
+    name: tuition8
+    type: BIGINT
+    years: '1996'
+  TPGDCRED:
+    name: tpgdcred
+    type: BIGINT
+    years: '1996'
+  ISPROF1:
+    name: isprof1
+    type: BIGINT
+    years: '1996'
+  OSPROF1:
+    name: osprof1
+    type: BIGINT
+    years: '1996'
+  ISPROF2:
+    name: isprof2
+    type: BIGINT
+    years: '1996'
+  OSPROF2:
+    name: osprof2
+    type: BIGINT
+    years: '1996'
+  ISPROF3:
+    name: isprof3
+    type: BIGINT
+    years: '1996'
+  OSPROF3:
+    name: osprof3
+    type: BIGINT
+    years: '1996'
+  ISPROF4:
+    name: isprof4
+    type: BIGINT
+    years: '1996'
+  OSPROF4:
+    name: osprof4
+    type: BIGINT
+    years: '1996'
+  ISPROF5:
+    name: isprof5
+    type: BIGINT
+    years: '1996'
+  OSPROF5:
+    name: osprof5
+    type: BIGINT
+    years: '1996'
+  ISPROF6:
+    name: isprof6
+    type: BIGINT
+    years: '1996'
+  OSPROF6:
+    name: osprof6
+    type: BIGINT
+    years: '1996'
+  ISPROF7:
+    name: isprof7
+    type: BIGINT
+    years: '1996'
+  OSPROF7:
+    name: osprof7
+    type: BIGINT
+    years: '1996'
+  ISPROF8:
+    name: isprof8
+    type: BIGINT
+    years: '1996'
+  OSPROF8:
+    name: osprof8
+    type: BIGINT
+    years: '1996'
+  ISPROF9:
+    name: isprof9
+    type: BIGINT
+    years: '1996'
+  OSPROF9:
+    name: osprof9
+    type: BIGINT
+    years: '1996'
+  ISPROF10:
+    name: isprof10
+    type: BIGINT
+    years: '1996'
+  OSPROF10:
+    name: osprof10
+    type: BIGINT
+    years: '1996'
+  ISPROF11:
+    name: isprof11
+    type: BIGINT
+    years: '1996'
+  OSPROF11:
+    name: osprof11
+    type: BIGINT
+    years: '1996'
+  PROFNA:
+    name: profna
+    type: BIGINT
+    years: '1996'
+  TPFPCRED:
+    name: tpfpcred
+    type: BIGINT
+    years: '1996'
+  ROOM:
+    name: room
+    type: BIGINT
+    years: '1996'
+  ROOMCAP:
+    name: roomcap
+    type: BIGINT
+    years: '1996'
+  BOARD:
+    name: board
+    type: BIGINT
+    years: '1996'
+  MEALSWK:
+    name: mealswk
+    type: BIGINT
+    years: '1996'
+  MEALSVRY:
+    name: mealsvry
+    type: BIGINT
+    years: '1996'
+  ROOMAMT:
+    name: roomamt
+    type: BIGINT
+    years: '1996'
+  BOARDAMT:
+    name: boardamt
+    type: BIGINT
+    years: '1996'
+  ROOMBORD:
+    name: roombord
+    type: BIGINT
+    years: '1996'
+  RMBRDAMT:
+    name: rmbrdamt
+    type: BIGINT
+    years: '1996'
+  PRGMOFFR:
+    name: prgmoffr
+    type: BIGINT
+    years: '1996'
+  PG300:
+    name: pg300
+    type: BIGINT
+    years: '1996'
+  CIPCODE1:
+    name: cipcode1
+    type: DOUBLE
+    years: '1996'
+  CIPTUIT1:
+    name: ciptuit1
+    type: BIGINT
+    years: '1996'
+  CIPSUPP1:
+    name: cipsupp1
+    type: BIGINT
+    years: '1996'
+  CIPLGTH1:
+    name: ciplgth1
+    type: BIGINT
+    years: '1996'
+  CIPENRL1:
+    name: cipenrl1
+    type: BIGINT
+    years: '1996'
+  CIPCOMP1:
+    name: cipcomp1
+    type: BIGINT
+    years: '1996'
+  CIPCODE2:
+    name: cipcode2
+    type: DOUBLE
+    years: '1996'
+  CIPTUIT2:
+    name: ciptuit2
+    type: BIGINT
+    years: '1996'
+  CIPSUPP2:
+    name: cipsupp2
+    type: BIGINT
+    years: '1996'
+  CIPLGTH2:
+    name: ciplgth2
+    type: BIGINT
+    years: '1996'
+  CIPENRL2:
+    name: cipenrl2
+    type: BIGINT
+    years: '1996'
+  CIPCOMP2:
+    name: cipcomp2
+    type: BIGINT
+    years: '1996'
+  CIPCODE3:
+    name: cipcode3
+    type: DOUBLE
+    years: '1996'
+  CIPTUIT3:
+    name: ciptuit3
+    type: BIGINT
+    years: '1996'
+  CIPSUPP3:
+    name: cipsupp3
+    type: BIGINT
+    years: '1996'
+  CIPLGTH3:
+    name: ciplgth3
+    type: BIGINT
+    years: '1996'
+  CIPENRL3:
+    name: cipenrl3
+    type: BIGINT
+    years: '1996'
+  CIPCOMP3:
+    name: cipcomp3
+    type: BIGINT
+    years: '1996'
+  CIPCODE4:
+    name: cipcode4
+    type: DOUBLE
+    years: '1996'
+  CIPTUIT4:
+    name: ciptuit4
+    type: BIGINT
+    years: '1996'
+  CIPSUPP4:
+    name: cipsupp4
+    type: BIGINT
+    years: '1996'
+  CIPLGTH4:
+    name: ciplgth4
+    type: BIGINT
+    years: '1996'
+  CIPENRL4:
+    name: cipenrl4
+    type: BIGINT
+    years: '1996'
+  CIPCOMP4:
+    name: cipcomp4
+    type: BIGINT
+    years: '1996'
+  CIPCODE5:
+    name: cipcode5
+    type: DOUBLE
+    years: '1996'
+  CIPTUIT5:
+    name: ciptuit5
+    type: BIGINT
+    years: '1996'
+  CIPSUPP5:
+    name: cipsupp5
+    type: BIGINT
+    years: '1996'
+  CIPLGTH5:
+    name: ciplgth5
+    type: BIGINT
+    years: '1996'
+  CIPENRL5:
+    name: cipenrl5
+    type: BIGINT
+    years: '1996'
+  CIPCOMP5:
+    name: cipcomp5
+    type: BIGINT
+    years: '1996'
+  CIPCODE6:
+    name: cipcode6
+    type: DOUBLE
+    years: '1996'
+  CIPTUIT6:
+    name: ciptuit6
+    type: BIGINT
+    years: '1996'
+  CIPSUPP6:
+    name: cipsupp6
+    type: BIGINT
+    years: '1996'
+  CIPLGTH6:
+    name: ciplgth6
+    type: BIGINT
+    years: '1996'
+  CIPENRL6:
+    name: cipenrl6
+    type: BIGINT
+    years: '1996'
+  CIPCOMP6:
+    name: cipcomp6
+    type: BIGINT
+    years: '1996'
+  ENROLMNT:
+    name: enrolmnt
+    type: BIGINT
+    years: '1996'
+  GENENRL:
+    name: genenrl
+    type: BIGINT
+    years: '1996'
+  MONTH:
+    name: month
+    type: BIGINT
+    years: '1996'
+  TOSTUCU:
+    name: tostucu
+    type: BIGINT
+    years: '1996'
+  TOSTUFRS:
+    name: tostufrs
+    type: BIGINT
+    years: '1996'
+  TOSTUCG:
+    name: tostucg
+    type: BIGINT
+    years: '1996'
+  TOSTUCP:
+    name: tostucp
+    type: BIGINT
+    years: '1996'
+  NOFALL:
+    name: nofall
+    type: BIGINT
+    years: '1996'
+  CDACTUA:
+    name: cdactua
+    type: BIGINT
+    years: '1996'
+  CNACTUA:
+    name: cnactua
+    type: BIGINT
+    years: '1996'
+  CDACTGA:
+    name: cdactga
+    type: BIGINT
+    years: '1996'
+  CDACTPA:
+    name: cdactpa
+    type: BIGINT
+    years: '1996'
+  CDACTUF:
+    name: cdactuf
+    type: BIGINT
+    years: '1996'
+  CNACTUF:
+    name: cnactuf
+    type: BIGINT
+    years: '1996'
+  CDACTGF:
+    name: cdactgf
+    type: BIGINT
+    years: '1996'
+  CDACTPF:
+    name: cdactpf
+    type: BIGINT
+    years: '1996'
+  SUMSES:
+    name: sumses
+    type: BIGINT
+    years: '1996'
+  SUMSES_A:
+    name: sumses_a
+    type: BIGINT
+    years: '1996'
+  SUMSES_B:
+    name: sumses_b
+    type: BIGINT
+    years: '1996'
+  SUMSES_C:
+    name: sumses_c
+    type: BIGINT
+    years: '1996'
+  SUMCNTUG:
+    name: sumcntug
+    type: BIGINT
+    years: '1996'
+  SUMCNTGR:
+    name: sumcntgr
+    type: BIGINT
+    years: '1996'
+  SUMCNTFP:
+    name: sumcntfp
+    type: BIGINT
+    years: '1996'
+  CDACTSSU:
+    name: cdactssu
+    type: BIGINT
+    years: '1996'
+  CNACTSSU:
+    name: cnactssu
+    type: BIGINT
+    years: '1996'
+  CDACTSSG:
+    name: cdactssg
+    type: BIGINT
+    years: '1996'
+  CDACTSSP:
+    name: cdactssp
+    type: BIGINT
+    years: '1996'
+  EXTDIV:
+    name: extdiv
+    type: BIGINT
+    years: '1996'
+  EXTDIV_A:
+    name: extdiv_a
+    type: BIGINT
+    years: '1996'
+  EXTDIV_B:
+    name: extdiv_b
+    type: BIGINT
+    years: '1996'
+  EXTDIV_C:
+    name: extdiv_c
+    type: BIGINT
+    years: '1996'
+  EXTDIV_D:
+    name: extdiv_d
+    type: BIGINT
+    years: '1996'
+  EXTCNTUG:
+    name: extcntug
+    type: BIGINT
+    years: '1996'
+  EXTCNTGR:
+    name: extcntgr
+    type: BIGINT
+    years: '1996'
+  EXTCNTFP:
+    name: extcntfp
+    type: BIGINT
+    years: '1996'
+  CDACTEXU:
+    name: cdactexu
+    type: BIGINT
+    years: '1996'
+  CNACTEXU:
+    name: cnactexu
+    type: BIGINT
+    years: '1996'
+  CDACTEXG:
+    name: cdactexg
+    type: BIGINT
+    years: '1996'
+  CDACTEXP:
+    name: cdactexp
+    type: BIGINT
+    years: '1996'

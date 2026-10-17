@@ -1,0 +1,609 @@
+source: ipeds
+family: icabcf
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1999'
+  PEO1ISTR:
+    name: peo1istr
+    type: BIGINT
+    years: '1999'
+  PEO2ISTR:
+    name: peo2istr
+    type: BIGINT
+    years: '1999'
+  PEO3ISTR:
+    name: peo3istr
+    type: BIGINT
+    years: '1999'
+  PEO4ISTR:
+    name: peo4istr
+    type: BIGINT
+    years: '1999'
+  PEO5ISTR:
+    name: peo5istr
+    type: BIGINT
+    years: '1999'
+  PEO6ISTR:
+    name: peo6istr
+    type: BIGINT
+    years: '1999'
+  PUBLIC1:
+    name: public1
+    type: BIGINT
+    years: '1999'
+  PUBLIC2:
+    name: public2
+    type: BIGINT
+    years: '1999'
+  PUBLIC3:
+    name: public3
+    type: BIGINT
+    years: '1999'
+  PUBLIC4:
+    name: public4
+    type: BIGINT
+    years: '1999'
+  PUBLIC5:
+    name: public5
+    type: BIGINT
+    years: '1999'
+  PUBLIC6:
+    name: public6
+    type: BIGINT
+    years: '1999'
+  PUBLIC7:
+    name: public7
+    type: BIGINT
+    years: '1999'
+  PUBLIC8:
+    name: public8
+    type: BIGINT
+    years: '1999'
+  PUBLIC9:
+    name: public9
+    type: BIGINT
+    years: '1999'
+  PRIVATE:
+    name: private
+    type: BIGINT
+    years: '1999'
+  RELAFFIL:
+    name: relaffil
+    type: BIGINT
+    years: '1999'
+  LEVEL1:
+    name: level1
+    type: BIGINT
+    years: '1999'
+  LEVEL2:
+    name: level2
+    type: BIGINT
+    years: '1999'
+  LEVEL3:
+    name: level3
+    type: BIGINT
+    years: '1999'
+  LEVEL4:
+    name: level4
+    type: BIGINT
+    years: '1999'
+  LEVEL5:
+    name: level5
+    type: BIGINT
+    years: '1999'
+  LEVEL6:
+    name: level6
+    type: BIGINT
+    years: '1999'
+  LEVEL7:
+    name: level7
+    type: BIGINT
+    years: '1999'
+  LEVEL8:
+    name: level8
+    type: BIGINT
+    years: '1999'
+  LEVEL9:
+    name: level9
+    type: BIGINT
+    years: '1999'
+  LEVEL10:
+    name: level10
+    type: BIGINT
+    years: '1999'
+  LEVEL11:
+    name: level11
+    type: BIGINT
+    years: '1999'
+  LEVEL12:
+    name: level12
+    type: BIGINT
+    years: '1999'
+  MULTYPE:
+    name: multype
+    type: BIGINT
+    years: '1999'
+  FOPNA:
+    name: fopna
+    type: BIGINT
+    years: '1999'
+  FOPNA1:
+    name: fopna1
+    type: BIGINT
+    years: '1999'
+  FOPNA2:
+    name: fopna2
+    type: BIGINT
+    years: '1999'
+  INSTTOYR:
+    name: insttoyr
+    type: BIGINT
+    years: '1999'
+  LICENSED:
+    name: licensed
+    type: BIGINT
+    years: '1999'
+  ACCRD1:
+    name: accrd1
+    type: BIGINT
+    years: '1999'
+  ACCRD2:
+    name: accrd2
+    type: BIGINT
+    years: '1999'
+  ACCRD3:
+    name: accrd3
+    type: BIGINT
+    years: '1999'
+  ACCRD4:
+    name: accrd4
+    type: BIGINT
+    years: '1999'
+  REGACCRD:
+    name: regaccrd
+    type: BIGINT
+    years: '1999'
+  SACCR:
+    name: saccr
+    type: BIGINT
+    years: '1999'
+  CALSYS:
+    name: calsys
+    type: BIGINT
+    years: '1999'
+  CRSLOC1:
+    name: crsloc1
+    type: BIGINT
+    years: '1999'
+  CRSLOC2:
+    name: crsloc2
+    type: BIGINT
+    years: '1999'
+  CRSLOC3:
+    name: crsloc3
+    type: BIGINT
+    years: '1999'
+  CRSLOC4:
+    name: crsloc4
+    type: BIGINT
+    years: '1999'
+  CRSLOC5:
+    name: crsloc5
+    type: BIGINT
+    years: '1999'
+  CRSLOC6:
+    name: crsloc6
+    type: BIGINT
+    years: '1999'
+  FACLOC1:
+    name: facloc1
+    type: BIGINT
+    years: '1999'
+  FACLOC2:
+    name: facloc2
+    type: BIGINT
+    years: '1999'
+  FACLOC3:
+    name: facloc3
+    type: BIGINT
+    years: '1999'
+  FACLOC4:
+    name: facloc4
+    type: BIGINT
+    years: '1999'
+  FACLOC5:
+    name: facloc5
+    type: BIGINT
+    years: '1999'
+  FACLOC6:
+    name: facloc6
+    type: BIGINT
+    years: '1999'
+  FACLOC7:
+    name: facloc7
+    type: BIGINT
+    years: '1999'
+  FACLOC8:
+    name: facloc8
+    type: BIGINT
+    years: '1999'
+  FACLOC9:
+    name: facloc9
+    type: BIGINT
+    years: '1999'
+  FACLOC10:
+    name: facloc10
+    type: BIGINT
+    years: '1999'
+  MILI:
+    name: mili
+    type: BIGINT
+    years: '1999'
+  MIL1INSL:
+    name: mil1insl
+    type: BIGINT
+    years: '1999'
+  MIL2INSL:
+    name: mil2insl
+    type: BIGINT
+    years: '1999'
+  ADMREQ1:
+    name: admreq1
+    type: BIGINT
+    years: '1999'
+  ADMREQ2:
+    name: admreq2
+    type: BIGINT
+    years: '1999'
+  ADMREQ3:
+    name: admreq3
+    type: BIGINT
+    years: '1999'
+  ADMREQ4:
+    name: admreq4
+    type: BIGINT
+    years: '1999'
+  ADMREQ4A:
+    name: admreq4a
+    type: BIGINT
+    years: '1999'
+  ADMREQ4B:
+    name: admreq4b
+    type: BIGINT
+    years: '1999'
+  ADMREQ4C:
+    name: admreq4c
+    type: BIGINT
+    years: '1999'
+  ADMREQ5:
+    name: admreq5
+    type: BIGINT
+    years: '1999'
+  ADMREQ6:
+    name: admreq6
+    type: BIGINT
+    years: '1999'
+  ADMREQ7:
+    name: admreq7
+    type: BIGINT
+    years: '1999'
+  ADMREQ8:
+    name: admreq8
+    type: BIGINT
+    years: '1999'
+  ADMREQ9:
+    name: admreq9
+    type: BIGINT
+    years: '1999'
+  ADMREQ10:
+    name: admreq10
+    type: BIGINT
+    years: '1999'
+  YRSCOLL:
+    name: yrscoll
+    type: BIGINT
+    years: '1999'
+  MODE1:
+    name: mode1
+    type: BIGINT
+    years: '1999'
+  MODE2:
+    name: mode2
+    type: BIGINT
+    years: '1999'
+  MODE3:
+    name: mode3
+    type: BIGINT
+    years: '1999'
+  MODE4:
+    name: mode4
+    type: BIGINT
+    years: '1999'
+  MODE5:
+    name: mode5
+    type: BIGINT
+    years: '1999'
+  MODE6:
+    name: mode6
+    type: BIGINT
+    years: '1999'
+  MODE7:
+    name: mode7
+    type: BIGINT
+    years: '1999'
+  MODE8:
+    name: mode8
+    type: BIGINT
+    years: '1999'
+  MODE9:
+    name: mode9
+    type: BIGINT
+    years: '1999'
+  MODE10:
+    name: mode10
+    type: BIGINT
+    years: '1999'
+  MODE11:
+    name: mode11
+    type: BIGINT
+    years: '1999'
+  MODE12:
+    name: mode12
+    type: BIGINT
+    years: '1999'
+  MODE13:
+    name: mode13
+    type: BIGINT
+    years: '1999'
+  MODE14:
+    name: mode14
+    type: BIGINT
+    years: '1999'
+  STUSRV1:
+    name: stusrv1
+    type: BIGINT
+    years: '1999'
+  STUSRV2:
+    name: stusrv2
+    type: BIGINT
+    years: '1999'
+  STUSRV3:
+    name: stusrv3
+    type: BIGINT
+    years: '1999'
+  STUSRV4:
+    name: stusrv4
+    type: BIGINT
+    years: '1999'
+  STUSRV5:
+    name: stusrv5
+    type: BIGINT
+    years: '1999'
+  STUSRV6:
+    name: stusrv6
+    type: BIGINT
+    years: '1999'
+  STUSRV7:
+    name: stusrv7
+    type: BIGINT
+    years: '1999'
+  STUSRV8:
+    name: stusrv8
+    type: BIGINT
+    years: '1999'
+  STUSRV9:
+    name: stusrv9
+    type: BIGINT
+    years: '1999'
+  LIBFAC:
+    name: libfac
+    type: BIGINT
+    years: '1999'
+  LIBSHAR1:
+    name: libshar1
+    type: BIGINT
+    years: '1999'
+  LIBSHAR2:
+    name: libshar2
+    type: BIGINT
+    years: '1999'
+  LIBSHAR3:
+    name: libshar3
+    type: BIGINT
+    years: '1999'
+  FINAID1:
+    name: finaid1
+    type: BIGINT
+    years: '1999'
+  FINAID2:
+    name: finaid2
+    type: BIGINT
+    years: '1999'
+  FINAID3:
+    name: finaid3
+    type: BIGINT
+    years: '1999'
+  FINAID4:
+    name: finaid4
+    type: BIGINT
+    years: '1999'
+  FINAID5:
+    name: finaid5
+    type: BIGINT
+    years: '1999'
+  FINAID6:
+    name: finaid6
+    type: BIGINT
+    years: '1999'
+  FINAID7:
+    name: finaid7
+    type: BIGINT
+    years: '1999'
+  FINAID8:
+    name: finaid8
+    type: BIGINT
+    years: '1999'
+  FINAID9:
+    name: finaid9
+    type: BIGINT
+    years: '1999'
+  JTPA:
+    name: jtpa
+    type: BIGINT
+    years: '1999'
+  ROTC:
+    name: rotc
+    type: BIGINT
+    years: '1999'
+  ROTC1:
+    name: rotc1
+    type: BIGINT
+    years: '1999'
+  ROTC2:
+    name: rotc2
+    type: BIGINT
+    years: '1999'
+  ROTC3:
+    name: rotc3
+    type: BIGINT
+    years: '1999'
+  WEBIC:
+    name: webic
+    type: BIGINT
+    years: '1999'
+  WEBEF:
+    name: webef
+    type: BIGINT
+    years: '1999'
+  WEBC:
+    name: webc
+    type: BIGINT
+    years: '1999'
+  WEBF:
+    name: webf
+    type: BIGINT
+    years: '1999'
+  WEBSA:
+    name: websa
+    type: BIGINT
+    years: '1999'
+  WEBS:
+    name: webs
+    type: BIGINT
+    years: '1999'
+  WEBGR:
+    name: webgr
+    type: BIGINT
+    years: '1999'
+  ATHAID:
+    name: athaid
+    type: BIGINT
+    years: '1999'
+  ATHAID1:
+    name: athaid1
+    type: BIGINT
+    years: '1999'
+  ATHAID2:
+    name: athaid2
+    type: BIGINT
+    years: '1999'
+  ATHAID3:
+    name: athaid3
+    type: BIGINT
+    years: '1999'
+  ATHAID4:
+    name: athaid4
+    type: BIGINT
+    years: '1999'
+  ATHAID5:
+    name: athaid5
+    type: BIGINT
+    years: '1999'
+  ATHASSOC:
+    name: athassoc
+    type: BIGINT
+    years: '1999'
+  ASSOC1:
+    name: assoc1
+    type: BIGINT
+    years: '1999'
+  ASSOC2:
+    name: assoc2
+    type: BIGINT
+    years: '1999'
+  ASSOC3:
+    name: assoc3
+    type: BIGINT
+    years: '1999'
+  ASSOC4:
+    name: assoc4
+    type: BIGINT
+    years: '1999'
+  ASSOC5:
+    name: assoc5
+    type: BIGINT
+    years: '1999'
+  ASSOC6:
+    name: assoc6
+    type: BIGINT
+    years: '1999'
+  SPORT1:
+    name: sport1
+    type: BIGINT
+    years: '1999'
+  CONFNO1:
+    name: confno1
+    type: BIGINT
+    years: '1999'
+  SPORT2:
+    name: sport2
+    type: BIGINT
+    years: '1999'
+  CONFNO2:
+    name: confno2
+    type: BIGINT
+    years: '1999'
+  SPORT3:
+    name: sport3
+    type: BIGINT
+    years: '1999'
+  CONFNO3:
+    name: confno3
+    type: BIGINT
+    years: '1999'
+  SPORT4:
+    name: sport4
+    type: BIGINT
+    years: '1999'
+  CONFNO4:
+    name: confno4
+    type: BIGINT
+    years: '1999'
+  FTSLT15:
+    name: ftslt15
+    type: BIGINT
+    years: '1999'
+  FACPT:
+    name: facpt
+    type: BIGINT
+    years: '1999'
+  FACML:
+    name: facml
+    type: BIGINT
+    years: '1999'
+  FACRL:
+    name: facrl
+    type: BIGINT
+    years: '1999'
+  FACMD:
+    name: facmd
+    type: BIGINT
+    years: '1999'
+  PCTPOST:
+    name: pctpost
+    type: BIGINT
+    years: '1999'

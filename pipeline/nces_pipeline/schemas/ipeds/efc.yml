@@ -8,28 +8,68 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000-2024
+    years: 1986,1988,1992,1994,1996,1998,2000-2024
   LINE:
     name: line
     type: BIGINT
-    years: 2000-2024
+    years: 1986,1988,1992,1994,1996,1998,2000-2024
+  EFRES01:
+    name: efres01
+    type: BIGINT
+    years: 1986,1988,1992,1994,1996,1998,2000-2024
+  EFRES02:
+    name: efres02
+    type: VARCHAR
+    years: 1986,1988,1992,1994,1996,1998,2000-2024
+  EFRES03:
+    name: efres03
+    type: BIGINT
+    years: 1986,1988
+  EFRES04:
+    name: efres04
+    type: BIGINT
+    years: 1986,1988
+  EFRES05:
+    name: efres05
+    type: BIGINT
+    years: 1986,1988
+  CENTERS:
+    name: centers
+    type: BIGINT
+    years: 1986,1988,1994,1996,1998
+  OUT_STAT:
+    name: out_stat
+    type: BIGINT
+    years: '1992'
+  PART:
+    name: part
+    type: VARCHAR
+    years: 1994,1996
+  IC01:
+    name: ic01
+    type: VARCHAR
+    years: 1994,1996
+  IC02:
+    name: ic02
+    type: VARCHAR
+    years: 1994,1996
+  XEF01:
+    name: xef01
+    type: VARCHAR
+    years: '1998'
+  XEF02:
+    name: xef02
+    type: VARCHAR
+    years: '1998'
   XEFRES01:
     name: efres01_flag
     type: VARCHAR
     flag_for: efres01
     years: 2000-2024
-  EFRES01:
-    name: efres01
-    type: BIGINT
-    years: 2000-2024
   XEFRES02:
     name: efres02_flag
     type: VARCHAR
     flag_for: efres02
-    years: 2000-2024
-  EFRES02:
-    name: efres02
-    type: VARCHAR
     years: 2000-2024
   EFCSTATE:
     name: efcstate

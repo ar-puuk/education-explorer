@@ -1,0 +1,228 @@
+source: ipeds
+family: ippy
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '1999'
+  CIPCODE:
+    name: cipcode
+    type: DOUBLE
+    years: '1999'
+  XCIPLGT1:
+    name: xciplgt1
+    type: VARCHAR
+    years: '1999'
+  CIPLGTH1:
+    name: ciplgth1
+    type: BIGINT
+    years: '1999'
+  XCHG1PY1:
+    name: chg1py1_flag
+    type: VARCHAR
+    flag_for: chg1py1
+    years: '1999'
+  CHG1PY1:
+    name: chg1py1
+    type: BIGINT
+    years: '1999'
+  XCHG1PY2:
+    name: chg1py2_flag
+    type: VARCHAR
+    flag_for: chg1py2
+    years: '1999'
+  CHG1PY2:
+    name: chg1py2
+    type: BIGINT
+    years: '1999'
+  XCHG1PY3:
+    name: chg1py3_flag
+    type: VARCHAR
+    flag_for: chg1py3
+    years: '1999'
+  CHG1PY3:
+    name: chg1py3
+    type: BIGINT
+    years: '1999'
+  XCPENR1:
+    name: cpenr1_flag
+    type: VARCHAR
+    flag_for: cpenr1
+    years: '1999'
+  CPENR1:
+    name: cpenr1
+    type: BIGINT
+    years: '1999'
+  XCPENR2:
+    name: cpenr2_flag
+    type: VARCHAR
+    flag_for: cpenr2
+    years: '1999'
+  CPENR2:
+    name: cpenr2
+    type: BIGINT
+    years: '1999'
+  XCHG4PY1:
+    name: chg4py1_flag
+    type: VARCHAR
+    flag_for: chg4py1
+    years: '1999'
+  CHG4PY1:
+    name: chg4py1
+    type: BIGINT
+    years: '1999'
+  XCHG4PY2:
+    name: chg4py2_flag
+    type: VARCHAR
+    flag_for: chg4py2
+    years: '1999'
+  CHG4PY2:
+    name: chg4py2
+    type: BIGINT
+    years: '1999'
+  XCHG4PY3:
+    name: chg4py3_flag
+    type: VARCHAR
+    flag_for: chg4py3
+    years: '1999'
+  CHG4PY3:
+    name: chg4py3
+    type: BIGINT
+    years: '1999'
+  XCHG5PY1:
+    name: chg5py1_flag
+    type: VARCHAR
+    flag_for: chg5py1
+    years: '1999'
+  CHG5PY1:
+    name: chg5py1
+    type: BIGINT
+    years: '1999'
+  XCHG5PY2:
+    name: chg5py2_flag
+    type: VARCHAR
+    flag_for: chg5py2
+    years: '1999'
+  CHG5PY2:
+    name: chg5py2
+    type: BIGINT
+    years: '1999'
+  XCHG5PY3:
+    name: chg5py3_flag
+    type: VARCHAR
+    flag_for: chg5py3
+    years: '1999'
+  CHG5PY3:
+    name: chg5py3
+    type: BIGINT
+    years: '1999'
+  XCHG6PY1:
+    name: chg6py1_flag
+    type: VARCHAR
+    flag_for: chg6py1
+    years: '1999'
+  CHG6PY1:
+    name: chg6py1
+    type: BIGINT
+    years: '1999'
+  XCHG6PY2:
+    name: chg6py2_flag
+    type: VARCHAR
+    flag_for: chg6py2
+    years: '1999'
+  CHG6PY2:
+    name: chg6py2
+    type: BIGINT
+    years: '1999'
+  XCHG6PY3:
+    name: chg6py3_flag
+    type: VARCHAR
+    flag_for: chg6py3
+    years: '1999'
+  CHG6PY3:
+    name: chg6py3
+    type: BIGINT
+    years: '1999'
+  XCHG7PY1:
+    name: chg7py1_flag
+    type: VARCHAR
+    flag_for: chg7py1
+    years: '1999'
+  CHG7PY1:
+    name: chg7py1
+    type: BIGINT
+    years: '1999'
+  XCHG7PY2:
+    name: chg7py2_flag
+    type: VARCHAR
+    flag_for: chg7py2
+    years: '1999'
+  CHG7PY2:
+    name: chg7py2
+    type: BIGINT
+    years: '1999'
+  XCHG7PY3:
+    name: chg7py3_flag
+    type: VARCHAR
+    flag_for: chg7py3
+    years: '1999'
+  CHG7PY3:
+    name: chg7py3
+    type: BIGINT
+    years: '1999'
+  XCHG8PY1:
+    name: chg8py1_flag
+    type: VARCHAR
+    flag_for: chg8py1
+    years: '1999'
+  CHG8PY1:
+    name: chg8py1
+    type: BIGINT
+    years: '1999'
+  XCHG8PY2:
+    name: chg8py2_flag
+    type: VARCHAR
+    flag_for: chg8py2
+    years: '1999'
+  CHG8PY2:
+    name: chg8py2
+    type: BIGINT
+    years: '1999'
+  XCHG8PY3:
+    name: chg8py3_flag
+    type: VARCHAR
+    flag_for: chg8py3
+    years: '1999'
+  CHG8PY3:
+    name: chg8py3
+    type: BIGINT
+    years: '1999'
+  XCHG9PY1:
+    name: chg9py1_flag
+    type: VARCHAR
+    flag_for: chg9py1
+    years: '1999'
+  CHG9PY1:
+    name: chg9py1
+    type: BIGINT
+    years: '1999'
+  XCHG9PY2:
+    name: chg9py2_flag
+    type: VARCHAR
+    flag_for: chg9py2
+    years: '1999'
+  CHG9PY2:
+    name: chg9py2
+    type: BIGINT
+    years: '1999'
+  XCHG9PY3:
+    name: chg9py3_flag
+    type: VARCHAR
+    flag_for: chg9py3
+    years: '1999'
+  CHG9PY3:
+    name: chg9py3
+    type: BIGINT
+    years: '1999'

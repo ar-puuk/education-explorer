@@ -7,219 +7,219 @@ columns:
   UNITID:
     name: unitid
     type: VARCHAR
-    years: 2000-2024
+    years: 1997-2024
   GRTYPE:
     name: grtype
     type: BIGINT
-    years: 2000-2024
+    years: 1997-2024
   CHRTSTAT:
     name: chrtstat
     type: BIGINT
-    years: 2000-2024
+    years: 1997-2024
   SECTION:
     name: section
     type: BIGINT
-    years: 2000-2024
+    years: 1997-2024
   COHORT:
     name: cohort
     type: BIGINT
-    years: 2000-2024
+    years: 1997-2024
   LINE:
     name: line
     type: VARCHAR
-    years: 2000-2009,2011-2024
+    years: 1997-2009,2011-2024
   XGRRAC01:
     name: xgrrac01
     type: VARCHAR
-    years: 2000-2007
+    years: 1997-2007
   GRRACE01:
     name: grrace01
     type: BIGINT
-    years: 2000-2007
+    years: 1997-2007
   XGRRAC02:
     name: xgrrac02
     type: VARCHAR
-    years: 2000-2007
+    years: 1997-2007
   GRRACE02:
     name: grrace02
     type: BIGINT
-    years: 2000-2007
+    years: 1997-2007
   XGRRAC03:
     name: xgrrac03
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE03:
     name: grrace03
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC04:
     name: xgrrac04
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE04:
     name: grrace04
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC05:
     name: xgrrac05
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE05:
     name: grrace05
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC06:
     name: xgrrac06
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE06:
     name: grrace06
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC07:
     name: xgrrac07
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE07:
     name: grrace07
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC08:
     name: xgrrac08
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE08:
     name: grrace08
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC09:
     name: xgrrac09
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE09:
     name: grrace09
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC10:
     name: xgrrac10
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE10:
     name: grrace10
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC11:
     name: xgrrac11
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE11:
     name: grrace11
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC12:
     name: xgrrac12
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE12:
     name: grrace12
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC13:
     name: xgrrac13
     type: VARCHAR
-    years: 2000-2007
+    years: 1997-2007
   GRRACE13:
     name: grrace13
     type: BIGINT
-    years: 2000-2007
+    years: 1997-2007
   XGRRAC14:
     name: xgrrac14
     type: VARCHAR
-    years: 2000-2007
+    years: 1997-2007
   GRRACE14:
     name: grrace14
     type: BIGINT
-    years: 2000-2007
+    years: 1997-2007
   XGRRAC15:
     name: xgrrac15
     type: VARCHAR
-    years: 2000-2007
+    years: 1997-2007
   GRRACE15:
     name: grrace15
     type: BIGINT
-    years: 2000-2007
+    years: 1997-2007
   XGRRAC16:
     name: xgrrac16
     type: VARCHAR
-    years: 2000-2007
+    years: 1997-2007
   GRRACE16:
     name: grrace16
     type: BIGINT
-    years: 2000-2007
+    years: 1997-2007
   XGRRAC17:
     name: xgrrac17
     type: VARCHAR
-    years: 2000-2007
+    years: 1997-2007
   GRRACE17:
     name: grrace17
     type: BIGINT
-    years: 2000-2007
+    years: 1997-2007
   XGRRAC18:
     name: xgrrac18
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE18:
     name: grrace18
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC19:
     name: xgrrac19
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE19:
     name: grrace19
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC20:
     name: xgrrac20
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE20:
     name: grrace20
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC21:
     name: xgrrac21
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE21:
     name: grrace21
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC22:
     name: xgrrac22
     type: VARCHAR
-    years: 2000-2010
+    years: 1997-2010
   GRRACE22:
     name: grrace22
     type: BIGINT
-    years: 2000-2010
+    years: 1997-2010
   XGRRAC23:
     name: xgrrac23
     type: VARCHAR
-    years: 2000-2007
+    years: 1997-2007
   GRRACE23:
     name: grrace23
     type: BIGINT
-    years: 2000-2007
+    years: 1997-2007
   XGRRAC24:
     name: xgrrac24
     type: VARCHAR
-    years: 2000-2007
+    years: 1997-2007
   GRRACE24:
     name: grrace24
     type: BIGINT
-    years: 2000-2007
+    years: 1997-2007
   XGRTOTLT:
     name: grtotlt_flag
     type: VARCHAR
