@@ -50,7 +50,7 @@ Legend: [x] done, [~] in progress, [ ] todo
 ## Colorado smoke run (not committed; output redirected with EE_DOCS_DATA)
 - [x] CCD 2014+ , EDGE, IPEDS (all families), PSS, geocode, dictionary and points build for Colorado with no schema or type drift (maps use national types)
 - [x] Found and fixed: TIGER .dbf encoding retry (`ISO-8859-1`; GDAL does not know `LATIN1`)
-- [ ] Open: 11 IPEDS uniqueness failures (ca2dig 2001, csubbacip 1980, ff1af/ff1ag 2004-07, iccampuses 2021-22, icpccampuses 2023). Keys are derived from the first state's rows, so they are too narrow for states with multiple rows per entity (affiliated entities, campuses). Fix: derive keys from the national staged files, or re-run `bootstrap-maps --force` for the new state
+- [x] Fixed: IPEDS uniqueness keys are now widened against the national files (`python -m nces_pipeline rekey-ipeds`). 11 families changed (ca2dig, csubbacip, efc, fc5, ff1af, ff1ag, gr, iccampuses, icmission, icpccampuses, pubfinancialaid). Utah data is byte-identical and validates; a Colorado IPEDS build has no uniqueness failures.
 - [ ] Not run: legacy CCD 1997-2013 (re-reads ~25 min of national SAS files), geometry/size/performance for a large state
 
 ## UI redesign ("Atlas", 2026-10-17)
@@ -69,4 +69,4 @@ Legend: [x] done, [~] in progress, [ ] todo
 - Unverified: mobile only lightly tested (Chromium emulation); other browsers; other states beyond the Colorado smoke run
 - Utah Parquet total ~62 MB in docs/data (IPEDS ~38, CCD ~12, PSS ~4, geo ~4)
 - Commits are authored with the work email from git config
-- Recommended next: fix IPEDS key derivation nationally, then run a full Colorado build including legacy
+- Recommended next: run a full Colorado build including legacy CCD (IPEDS is verified), then check large-state size and load time

@@ -2,6 +2,9 @@ source: ipeds
 family: pubfinancialaid
 key:
 - unitid
+- yearind
+- fedgrntp
+- ingrntp
 columns:
   UNITID:
     name: unitid

@@ -106,6 +106,14 @@ def cmd_bootstrap(a, state) -> int:
     return 0
 
 
+def cmd_rekey(a, state) -> int:
+    from .ipeds_build import rekey_all
+
+    changed = rekey_all()
+    print(f"{len(changed)} key(s) changed")
+    return 0
+
+
 def cmd_build(a, state) -> int:
     if a.scaffold_map:
         from .ccd_build import raw_files, raw_path_for
@@ -235,6 +243,9 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("--year", type=int)
     b.add_argument("--force", action="store_true")
     b.set_defaults(fn=cmd_bootstrap)
+
+    rk = sub.add_parser("rekey-ipeds", help="recompute IPEDS uniqueness keys from the national files (state independent)")
+    rk.set_defaults(fn=cmd_rekey)
 
     v = sub.add_parser("validate")
     v.add_argument("--update-baseline", action="store_true", help="record row counts as the new baseline when valid")

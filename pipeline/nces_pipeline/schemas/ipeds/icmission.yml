@@ -2,6 +2,9 @@ source: ipeds
 family: icmission
 key:
 - unitid
+- column05
+- column09
+- column15
 columns:
   UNITID:
     name: unitid

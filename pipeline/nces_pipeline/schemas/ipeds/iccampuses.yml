@@ -2,6 +2,7 @@ source: ipeds
 family: iccampuses
 key:
 - unitid
+- campusid
 columns:
   UNITID:
     name: unitid

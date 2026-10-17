@@ -3,6 +3,7 @@ family: gr
 key:
 - unitid
 - grtype
+- line
 columns:
   UNITID:
     name: unitid

@@ -2,6 +2,7 @@ source: ipeds
 family: ff1af
 key:
 - unitid
+- formid
 columns:
   UNITID:
     name: unitid

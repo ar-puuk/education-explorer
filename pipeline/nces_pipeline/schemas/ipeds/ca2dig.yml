@@ -5,6 +5,7 @@ key:
 - crace15
 - cipcode
 - awlevel
+- majornum
 columns:
   UNITID:
     name: unitid

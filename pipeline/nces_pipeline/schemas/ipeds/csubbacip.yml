@@ -4,6 +4,8 @@ key:
 - unitid
 - cipcode
 - awlevel
+- crace16
+- crace15
 columns:
   UNITID:
     name: unitid

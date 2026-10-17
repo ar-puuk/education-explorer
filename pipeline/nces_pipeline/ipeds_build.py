@@ -215,15 +215,33 @@ def bootstrap_family(family: str, state: State, files: list[IpedsFile], ids: set
         spec["years"] = years_to_str(cols_years[c])
         cols[c] = spec
     # a short, stable unique key for validation
-    key = _find_key(con, [sp for _, sp in staged], cols)
+    key = _extend_key(con, files, cols, _state_key(con, [sp for _, sp in staged], cols))
     doc = {"source": "ipeds", "family": family, "key": key, "columns": cols}
     MAPS.mkdir(parents=True, exist_ok=True)
     p.write_text(yaml.safe_dump(doc, sort_keys=False, width=160), encoding="utf-8", newline="\n")
     return p
 
 
-def _find_key(con, staged: list[Path], cols: dict[str, dict]) -> list[str]:
-    """UNITID plus the fewest dimension columns that make rows unique within each year file.
+def _national_table(con, files: list[IpedsFile]) -> None:
+    """Load every year's NATIONAL raw file for a family into temp table `nat` (all VARCHAR, plus a `filename` column
+    holding the year). Keys must be unique for every state, so they are derived from all institutions, not one state."""
+    files = [f for f in files if "UNITID" in {c.upper() for c in header_of(data_csv(f))}]
+    names: dict[str, str] = {}
+    for f in files:
+        for c in header_of(data_csv(f)):
+            names.setdefault(c.upper(), c)
+    con.execute("DROP TABLE IF EXISTS nat")
+    con.execute(f"CREATE TEMP TABLE nat ({', '.join(q(n) + ' VARCHAR' for n in names.values())}, filename VARCHAR)")
+    for f in files:
+        csv = data_csv(f)
+        run_copy(con, lambda par, csv=csv, f=f: f"INSERT INTO nat BY NAME SELECT *, '{f.year}' AS filename FROM {read_sql(csv, parallel=par)}")
+
+
+def _state_key(con, staged: list[Path], cols: dict[str, dict]) -> list[str]:
+    """First guess at the key, from the configured state's staged rows only (fast, but it can be too narrow for
+    other states; _extend_key widens it using the national files).
+
+    UNITID plus the fewest dimension columns that make rows unique within each year file.
 
     Greedy: repeatedly add the low-cardinality, non-flag column that removes the most duplicate groups
     (ties go to the column that comes first in the file)."""
@@ -260,6 +278,80 @@ def _find_key(con, staged: list[Path], cols: dict[str, dict]) -> list[str]:
         key.append(best)
         cur = best_n
     return [names[k] for k in key]  # validation reports anything still duplicated
+
+
+def _extend_key(con, files: list[IpedsFile], cols: dict[str, dict], seed: list[str]) -> list[str]:
+    """Widen `seed` (mapped column names) until rows are unique within every year file across ALL institutions in the
+    national files, so the key holds for any state. A seed that is already unique nationally is returned unchanged.
+
+    Extra columns come greedily from low-cardinality, non-flag columns (the one removing the most duplicates first)."""
+    _national_table(con, files)
+    names = {raw: spec["name"] for raw, spec in cols.items() if spec.get("name") and not spec.get("ignore")}
+    raw_of = {n: raw for raw, n in names.items()}
+    have = {r[0].upper() for r in con.execute("DESCRIBE nat").fetchall()}
+    key = [raw_of[n] for n in seed if n in raw_of]
+    if not key:
+        key = ["UNITID"]
+
+    def dups(k: list[str]) -> int:
+        kk = ", ".join(q(c) for c in [*k, "filename"])  # unique within each year file
+        return con.execute(f"SELECT coalesce(sum(c - 1), 0) FROM (SELECT count(*) c FROM nat GROUP BY {kk})").fetchone()[0]
+
+    cur = dups(key)
+    if cur:
+        cands = []
+        for raw, spec in cols.items():
+            if raw in key or spec.get("flag_for") or spec.get("ignore") or raw not in have:
+                continue
+            nd = con.execute(f"SELECT count(DISTINCT {q(raw)}) FROM nat").fetchone()[0]
+            if 1 < nd <= 1500:
+                cands.append(raw)
+        while cur and len(key) < 8:
+            best, best_n = None, cur
+            for raw in cands:
+                if raw in key:
+                    continue
+                n = dups([*key, raw])
+                if n < best_n:
+                    best, best_n = raw, n
+            if best is None:
+                break
+            key.append(best)
+            cur = best_n
+    return [names[k] for k in key]  # validation reports anything still duplicated
+
+
+def rekey_all() -> list[tuple[str, list[str], list[str]]]:
+    """Recompute every family's uniqueness key from the national files and rewrite the `key:` block of its map.
+    Returns (family, old, new) for the families whose key changed."""
+    import time
+
+    by: dict[str, list[IpedsFile]] = {}
+    for f in select():
+        if (DATA_RAW / f.rel).exists():
+            by.setdefault(f.family, []).append(f)
+    con = duckdb.connect()
+    changed = []
+    for fam, files in sorted(by.items()):
+        p = map_file(fam)
+        if not p.exists():
+            continue
+        d = load_family_map(fam)
+        t0 = time.time()
+        new = _extend_key(con, sorted(files, key=lambda x: x.year), d["columns"], list(d["key"]))
+        old = list(d["key"])
+        tag = "same" if new == old else f"{old} -> {new}"
+        print(f"  key {fam}: {tag} ({time.time() - t0:.0f}s)", flush=True)
+        if new != old:
+            text = p.read_text(encoding="utf-8")
+            nl = chr(10)
+            block = "key:" + nl + "".join(f"- {c}" + nl for c in new)
+            text2, n = re.subn(r"^key:\r?\n(?:- .*\r?\n)+", block, text, count=1, flags=re.MULTILINE)
+            if n != 1:
+                raise SchemaDrift(f"{p}: could not locate the key block to rewrite")
+            p.write_text(text2, encoding="utf-8", newline=nl)
+            changed.append((fam, old, new))
+    return changed
 
 
 # ---------------------------------------------------------------- build

@@ -2,6 +2,7 @@ source: ipeds
 family: fc5
 key:
 - unitid
+- subentnm
 columns:
   UNITID:
     name: unitid
