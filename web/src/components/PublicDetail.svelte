@@ -398,7 +398,7 @@
           <h3>Status and programs by year</h3>
           {#if stripRows.length}
             <StatusStrip rows={stripRows} years={stripYears} current={app.year} label={`Status and programs by year for ${school.name}`} />
-            <p class="note">Each square is one school year. Coloured squares are values other than “no”/“not”; dashed squares mean no record. Hover a square for its value. Some fields, such as virtual instruction, were added to the data in later years.</p>
+            <p class="note">Each square is one school year. Coloured squares are values other than “no”/“not”; dashed squares mean no record. Hover or tap a square for its value. Some fields, such as virtual instruction, were added to the data in later years.</p>
             <p class="note">{desc('school_characteristics', 'title_i_status')}</p>
           {:else}
             <p class="muted">{loading ? 'Loading…' : 'No program data for this school.'}</p>

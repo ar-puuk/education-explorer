@@ -6,12 +6,13 @@
   import Section from './Section.svelte'
 
   const datasets: Dataset[] = ['public', 'private', 'college']
-  const colorModes: { id: typeof app.colorBy; label: string }[] = [
-    { id: 'dataset', label: 'One colour' },
+  // 'dataset' (the stored value for "no attribute") means one colour for every public school marker
+  const colorModes: { id: Exclude<typeof app.colorBy, 'dataset'>; label: string }[] = [
     { id: 'level', label: 'Level' },
     { id: 'charter', label: 'Charter' },
     { id: 'locale', label: 'Locale' },
   ]
+  const toggle = (id: Exclude<typeof app.colorBy, 'dataset'>) => (app.colorBy = app.colorBy === id ? 'dataset' : id)
   const on = $derived(datasets.filter((d) => app.layers[d]).length)
 </script>
 
@@ -28,12 +29,13 @@
     <p class="hint">Each layer has its own shape as well as colour. Dashed, faded markers were not operating that year.</p>
   </Section>
 
-  <Section title="Public school markers" meta={colorModes.find((m) => m.id === app.colorBy)?.label} open>
+  <Section title="Public school markers" meta={colorModes.find((m) => m.id === app.colorBy)?.label ?? 'One colour'} open>
     <div class="pills" role="group" aria-label="Colour public schools by">
       {#each colorModes as m}
-        <button class:on={app.colorBy === m.id} aria-pressed={app.colorBy === m.id} onclick={() => (app.colorBy = m.id)}>{m.label}</button>
+        <button class:on={app.colorBy === m.id} aria-pressed={app.colorBy === m.id} onclick={() => toggle(m.id)}>{m.label}</button>
       {/each}
     </div>
+    <p class="hint">Pick one to colour public school markers by it; click it again to go back to one colour.</p>
     {#if app.colorBy !== 'dataset'}
       <ul class="legend" aria-label="Marker colours for public schools">
         {#each CATEGORIES[app.colorBy] as c, i}

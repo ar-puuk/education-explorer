@@ -65,8 +65,13 @@
     font-weight: 400;
     text-align: left;
   }
+  /* the attribute names stay at the left and the selected-year value at the right while the years scroll between them */
   .r {
-    white-space: nowrap;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--surface);
+    max-width: 8.5rem;
     padding-right: 8px;
     color: var(--text);
   }
@@ -109,7 +114,12 @@
   }
   .now,
   .nowv {
+    position: sticky;
+    right: 0;
+    z-index: 1;
+    background: var(--surface);
     min-width: 6.5rem;
+    max-width: 9rem;
     font-size: 11px;
     padding-left: 8px;
     white-space: normal;

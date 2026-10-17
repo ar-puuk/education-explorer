@@ -7,6 +7,10 @@ let hideTimer: ReturnType<typeof setTimeout> | undefined
 
 function box(): HTMLDivElement {
   if (!el) {
+    // a tap anywhere else dismisses a touch tooltip
+    document.addEventListener('pointerdown', (e) => {
+      if (owner && !owner.contains(e.target as Node)) hide(owner)
+    })
     el = document.createElement('div')
     el.className = 'ee-tip'
     el.setAttribute('role', 'tooltip')
@@ -50,13 +54,17 @@ export function tooltip(node: HTMLElement, initial: string | null | undefined) {
   let text = initial ?? ''
   const at = (e: PointerEvent) => text && show(node, text, e.clientX, e.clientY)
   const move = (e: PointerEvent) => owner === node && place(e.clientX, e.clientY)
-  const leave = () => hide(node)
+  // a touch tap ends with pointerleave straight away, so touch tooltips stay until a timer or the next tap elsewhere
+  const leave = (e: PointerEvent) => {
+    if (e.pointerType !== 'touch') hide(node)
+  }
   const touch = (e: PointerEvent) => {
     if (e.pointerType !== 'touch') return
     at(e)
     clearTimeout(hideTimer)
-    hideTimer = setTimeout(() => hide(node), 2200)
+    hideTimer = setTimeout(() => hide(node), 2600)
   }
+  const blur = () => hide(node)
   const focus = () => {
     if (!text) return
     const r = node.getBoundingClientRect()
@@ -67,7 +75,7 @@ export function tooltip(node: HTMLElement, initial: string | null | undefined) {
   node.addEventListener('pointerleave', leave)
   node.addEventListener('pointerdown', touch)
   node.addEventListener('focus', focus)
-  node.addEventListener('blur', leave)
+  node.addEventListener('blur', blur)
   return {
     update(next: string | null | undefined) {
       text = next ?? ''
@@ -80,7 +88,7 @@ export function tooltip(node: HTMLElement, initial: string | null | undefined) {
       node.removeEventListener('pointerleave', leave)
       node.removeEventListener('pointerdown', touch)
       node.removeEventListener('focus', focus)
-      node.removeEventListener('blur', leave)
+      node.removeEventListener('blur', blur)
     },
   }
 }

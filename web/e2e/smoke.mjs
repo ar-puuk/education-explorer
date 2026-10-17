@@ -212,7 +212,14 @@ await page.getByRole('group', { name: 'Colour public schools by' }).getByRole('b
 await page.waitForTimeout(600)
 const catIcon = await page.evaluate(() => window.__ee.controller.map.hasImage('public-cat1'))
 catIcon ? ok('colour-by icons registered') : fail('no category icons')
-await page.getByRole('group', { name: 'Colour public schools by' }).getByRole('button', { name: 'One colour', exact: true }).click()
+const colourGroup = page.getByRole('group', { name: 'Colour public schools by' })
+;(await colourGroup.getByRole('button').count()) === 3 ? ok('colour-by offers three options') : fail('colour-by option count')
+await colourGroup.getByRole('button', { name: 'Level', exact: true }).click()
+;(await colourGroup.getByRole('button', { name: 'Charter', exact: true }).getAttribute('aria-pressed')) === 'false' && (await colourGroup.getByRole('button', { name: 'Level', exact: true }).getAttribute('aria-pressed')) === 'true'
+  ? ok('only one colour-by option is active at a time')
+  : fail('colour-by options are not exclusive')
+await colourGroup.getByRole('button', { name: 'Level', exact: true }).click()
+;(await colourGroup.locator('[aria-pressed=true]').count()) === 0 ? ok('clicking the active option returns to one colour') : fail('deselecting did not clear the colour-by choice')
 
 // legacy years (pre-2014) work: map markers and a school panel with its history
 await page.locator('#school-search').fill(SCHOOL)

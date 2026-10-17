@@ -315,7 +315,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 22px;
+      height: 28px;
       width: 100%;
       flex: none;
       border: 0;
