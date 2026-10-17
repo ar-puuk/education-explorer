@@ -14,7 +14,19 @@ export const LOCALE: Record<string, string> = {
   '43': 'Rural, remote',
 }
 
-export const localeLabel = (code: string | null | undefined) => (code ? (LOCALE[code] ?? code) : '')
+/** Pre-2006 CCD locale codes (8-category scheme); 2006+ files use the 12-code urban-centric scheme above. */
+export const LOCALE_OLD: Record<string, string> = {
+  '1': 'Large city (pre-2006 scheme)',
+  '2': 'Mid-size city (pre-2006 scheme)',
+  '3': 'Urban fringe of a large city (pre-2006 scheme)',
+  '4': 'Urban fringe of a mid-size city (pre-2006 scheme)',
+  '5': 'Large town (pre-2006 scheme)',
+  '6': 'Small town (pre-2006 scheme)',
+  '7': 'Rural, outside a metro area (pre-2006 scheme)',
+  '8': 'Rural, inside a metro area (pre-2006 scheme)',
+}
+
+export const localeLabel = (code: string | null | undefined) => (code ? (LOCALE[code] ?? LOCALE_OLD[code] ?? code) : '')
 
 export const GRADE_ORDER = [
   'Pre-Kindergarten',

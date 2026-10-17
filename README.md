@@ -4,7 +4,7 @@ A static, zero-cost, map-first dashboard for exploring **publicly available NCES
 
 | Layer | Source | Years |
 |---|---|---|
-| Public schools and districts | NCES Common Core of Data (CCD) + EDGE locations | 2014-15 onward (annual) |
+| Public schools and districts | NCES Common Core of Data (CCD) + EDGE locations | 1997-98 onward (annual; 1986-87 to 1996-97 only exist as fixed-width text and are not ingested) |
 | Private schools | NCES Private School Universe Survey (PSS) | every survey 1989-90 to 2023-24 (biennial; mappable from 2005-06) |
 | Colleges | NCES IPEDS (all complete data files) | 2000 onward (annual) |
 | School district boundaries | Census TIGER/Line | 2010-11 onward |

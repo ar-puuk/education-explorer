@@ -6,6 +6,7 @@
   import { fmtInt, levelLabel, schoolYearLabel } from '../lib/labels'
   import type { DictEntry, PublicSchool, TrendPoint } from '../lib/types'
   import CompareButton from './CompareButton.svelte'
+  import TableExplorer from './TableExplorer.svelte'
   import TrendChart from './TrendChart.svelte'
 
   let { onSelectSchool }: { onSelectSchool: (id: string, lon: number, lat: number) => void } = $props()
@@ -222,6 +223,8 @@
         {#if dirRow.charter_lea}<dt>Charter agency</dt><dd>{dirRow.charter_lea}</dd>{/if}
       </dl>
     {/if}
+    <TableExplorer dataset="ccd" idKind="district" unitid={leaid} name={name} start="district_directory"
+      only={['district_directory', 'district_membership', 'district_staff', 'district_finance', 'district_graduates', 'district_dropout', 'district_idea', 'district_el', 'legacy_district']} />
   </aside>
 {/if}
 

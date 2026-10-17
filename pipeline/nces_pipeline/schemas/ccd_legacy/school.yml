@@ -1,0 +1,3502 @@
+source: ccd_legacy
+level: school
+key:
+- ncessch
+columns:
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+    years: 1997-2013
+    label: Unique School ID
+  FIPS:
+    name: fips
+    type: BIGINT
+    years: '1997'
+    label: FIPS STATE CODE FOR LOCATION OF SCHOOL
+  LEAID:
+    name: leaid
+    type: VARCHAR
+    years: 1997-2013
+    label: NCES Agency Identification Number
+  SCHNO:
+    name: schno
+    type: VARCHAR
+    years: 1997-2013
+    label: NCES School Identifier
+  STID:
+    name: stid
+    type: VARCHAR
+    years: 1997-2013
+    label: State Local Education Number
+  LEANM:
+    name: leanm
+    type: VARCHAR
+    years: 1997-2013
+    label: LEA Name
+  SEASCH:
+    name: seasch
+    type: VARCHAR
+    years: 1997-2013
+    label: State School Identifier
+  SCHNAM:
+    name: schnam
+    type: VARCHAR
+    years: 1997-2013
+    label: School Name
+  STREET:
+    name: street
+    type: VARCHAR
+    years: '1997'
+    label: MAILING ADDRESS OF SCHOOL
+  CITY:
+    name: city
+    type: VARCHAR
+    years: '1997'
+    label: CITY NAME (MAILING ADDRESS)
+  ST:
+    name: st
+    type: VARCHAR
+    years: '1997'
+    label: STATE ABBREVIATION (POSTAL SERVICE)
+  ZIP:
+    name: zip
+    type: VARCHAR
+    years: '1997'
+    label: 5-DIGIT ZIP CODE
+  ZIP4:
+    name: zip4
+    type: VARCHAR
+    years: '1997'
+    label: ZIP+4 IF ASSIGNED
+  PHONE:
+    name: phone
+    type: VARCHAR
+    years: 1997-2013
+    label: School Phone Number
+  TYPE:
+    name: type
+    type: VARCHAR
+    years: 1997-2013
+    label: School Type
+  STATUS:
+    name: status
+    type: VARCHAR
+    years: 1997-2013
+    label: School Operational Status
+  LOCALE:
+    name: locale
+    type: VARCHAR
+    years: 1997-2005
+    label: Locale Code
+  FTE:
+    name: fte
+    type: DOUBLE
+    years: 1997-2013
+    label: Classroom Teachers
+  GRSPAN:
+    name: grspan
+    type: VARCHAR
+    years: '1997'
+    label: GRADE SPAN OF SCHOOL
+  GSLO:
+    name: gslo
+    type: VARCHAR
+    years: 1997-2013
+    label: Grades Offered - Lowest
+  GSHI:
+    name: gshi
+    type: VARCHAR
+    years: 1997-2013
+    label: Grades Offered - Highest
+  UG:
+    name: ug
+    type: BIGINT
+    years: 1997-2013
+    label: Ungraded Students - Total
+  PK:
+    name: pk
+    type: BIGINT
+    years: 1997-2013
+    label: PK Students - Total
+  KG:
+    name: kg
+    type: BIGINT
+    years: 1997-2013
+    label: KG Students - Total
+  G01:
+    name: g01
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 1 Students - Total
+  G02:
+    name: g02
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 2 Students - Total
+  G03:
+    name: g03
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 3 Students - Total
+  G04:
+    name: g04
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 4 Students - Total
+  G05:
+    name: g05
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 5 Students - Total
+  G06:
+    name: g06
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 6 Students - Total
+  G07:
+    name: g07
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 7 Students - Total
+  G08:
+    name: g08
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 8 Students - Total
+  G09:
+    name: g09
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 9 Students - Total
+  G10:
+    name: g10
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 10 Students - Total
+  G11:
+    name: g11
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 11 Students - Total
+  G12:
+    name: g12
+    type: BIGINT
+    years: 1997-2013
+    label: Grade 12 Students - Total
+  MEMBER:
+    name: member
+    type: BIGINT
+    years: 1997-2013
+    label: All Students - Total
+  FLE:
+    name: fle
+    type: BIGINT
+    years: '1997'
+    label: FREE-LUNCH ELIGIBLE STUDENTS
+  IND:
+    name: ind
+    type: BIGINT
+    years: '1997'
+    label: AM INDIAN/ALASKAN STUDENTS
+  ASIAN:
+    name: asian
+    type: BIGINT
+    years: 1997-2013
+    label: All Students - Asian
+  HISP:
+    name: hisp
+    type: BIGINT
+    years: 1997-2013
+    label: All Students - Hispanic
+  BLACK:
+    name: black
+    type: BIGINT
+    years: 1997-2013
+    label: All Students - Black
+  WHITE:
+    name: white
+    type: BIGINT
+    years: 1997-2013
+    label: All Students - White
+  TOTETH:
+    name: toteth
+    type: BIGINT
+    years: 1997-2013
+    label: Total Ethnic
+  PUPTCH:
+    name: puptch
+    type: DOUBLE
+    years: 1997-2008
+    label: Pupil Teacher Ratio
+  IFTE:
+    name: ifte
+    type: VARCHAR
+    years: 1997-2006
+    label: Classroom Teachers - flag
+  IUG:
+    name: iug
+    type: VARCHAR
+    years: 1997-2006
+    label: Ungraded Students - Total - flag
+  IPK:
+    name: ipk
+    type: VARCHAR
+    years: 1997-2006
+    label: PK Students - Total - flag
+  IKG:
+    name: ikg
+    type: VARCHAR
+    years: 1997-2006
+    label: KG Students - Total - flag
+  IG01:
+    name: ig01
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 1 Students - Total - flag
+  IG02:
+    name: ig02
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 2 Students - Total - flag
+  IG03:
+    name: ig03
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 3 Students - Total - flag
+  IG04:
+    name: ig04
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 4 Students - Total - flag
+  IG05:
+    name: ig05
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 5 Students - Total - flag
+  IG06:
+    name: ig06
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 6 Students - Total - flag
+  IG07:
+    name: ig07
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 7 Students - Total - flag
+  IG08:
+    name: ig08
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 8 Students - Total - flag
+  IG09:
+    name: ig09
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 9 Students - Total - flag
+  IG10:
+    name: ig10
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 10 Students - Total - flag
+  IG11:
+    name: ig11
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 11 Students - Total - flag
+  IG12:
+    name: ig12
+    type: VARCHAR
+    years: 1997-2006
+    label: Grade 12 Students - Total - flag
+  IMEMB:
+    name: imemb
+    type: VARCHAR
+    years: 1997-2006
+    label: All Students - Total - flag
+  IFLE:
+    name: ifle
+    type: VARCHAR
+    years: '1997'
+    label: ADJUSTED FREE-LUNCH ELIGIBLE FLAG
+  IIND:
+    name: iind
+    type: VARCHAR
+    years: '1997'
+    label: ADJUSTED AM INDIAN/ALASKAN STUDENTS FLAG
+  IASIAN:
+    name: iasian
+    type: VARCHAR
+    years: 1997-2006
+    label: All Students - Asian Pacific Islander - flag
+  IHISP:
+    name: ihisp
+    type: VARCHAR
+    years: 1997-2006
+    label: All Students - Hispanic - flag
+  IBLACK:
+    name: iblack
+    type: VARCHAR
+    years: 1997-2006
+    label: All Students - Black - flag
+  IWHITE:
+    name: iwhite
+    type: VARCHAR
+    years: 1997-2006
+    label: All Students - White - flag
+  IETH:
+    name: ieth
+    type: VARCHAR
+    years: 1997-2006
+    label: Race / Ethnicity Count Adjusted - flag
+  IPUTCH:
+    name: iputch
+    type: VARCHAR
+    years: 1997-2006
+    label: Pupil / Teacher Count Adjusted - flag
+  FIPST:
+    name: fipst
+    type: VARCHAR
+    years: 1998-2013
+    label: ANSI State Code
+  MSTREE:
+    name: mstree
+    type: VARCHAR
+    years: 1998-2013
+    label: School Mailing Address 1
+  MCITY:
+    name: mcity
+    type: VARCHAR
+    years: 1998-2013
+    label: School Mailing City
+  MSTATE:
+    name: mstate
+    type: VARCHAR
+    years: 1998-2013
+    label: School Mailing USPS State Abbreviation
+  MZIP:
+    name: mzip
+    type: VARCHAR
+    years: 1998-2013
+    label: School Mailing Zip
+  MZIP4:
+    name: mzip4
+    type: VARCHAR
+    years: 1998-2013
+    label: School Mailing Zip Plus 4
+  LSTREE:
+    name: lstree
+    type: VARCHAR
+    years: 1998-2013
+    label: School Location Address 1
+  LCITY:
+    name: lcity
+    type: VARCHAR
+    years: 1998-2013
+    label: School Location City
+  LSTATE:
+    name: lstate
+    type: VARCHAR
+    years: 1998-2013
+    label: School Location USPS State Abbreviation
+  LZIP:
+    name: lzip
+    type: VARCHAR
+    years: 1998-2013
+    label: School Location Zip
+  LZIP4:
+    name: lzip4
+    type: VARCHAR
+    years: 1998-2013
+    label: School Location Zip Plus 4
+  TITLEI:
+    name: titlei
+    type: VARCHAR
+    years: 1998-2013
+    label: Title I Eligible School
+  STITLI:
+    name: stitli
+    type: VARCHAR
+    years: 1998-2013
+    label: School-wide Title I
+  MAGNET:
+    name: magnet
+    type: VARCHAR
+    years: 1998-2013
+    label: Magnet School Indicator
+  CHARTR:
+    name: chartr
+    type: VARCHAR
+    years: 1998-2013
+    label: Charter School Indicator
+  FRELCH:
+    name: frelch
+    type: BIGINT
+    years: 1998-2013
+    label: Free Lunch Eligible Students
+  REDLCH:
+    name: redlch
+    type: BIGINT
+    years: 1998-2013
+    label: Reduced-Price Lunch Eligible Students
+  TOTFRL:
+    name: totfrl
+    type: BIGINT
+    years: 1998-2013
+    label: Total of Free and Reduced-Lunch Eligible Students
+  MIGRNT:
+    name: migrnt
+    type: BIGINT
+    years: 1998-2007
+    label: Migrant Students Enrolled in Previous Year
+  AMPKM:
+    name: ampkm
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - American Indian/Alaska Native - Male
+  AMPKF:
+    name: ampkf
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - American Indian/Alaska Native - Female
+  AMPKU:
+    name: ampku
+    type: BIGINT
+    years: 1998-2006
+    label: PK Students - American Indian/Alaska Native - Unknown
+  ASPKM:
+    name: aspkm
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - Asian - Male
+  ASPKF:
+    name: aspkf
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - Asian - Female
+  ASPKU:
+    name: aspku
+    type: BIGINT
+    years: 1998-2006
+    label: PK Students - Asian Pacific Islander - Unknown
+  HIPKM:
+    name: hipkm
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - Hispanic - Male
+  HIPKF:
+    name: hipkf
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - Hispanic - Female
+  HIPKU:
+    name: hipku
+    type: BIGINT
+    years: 1998-2006
+    label: PK Students - Hispanic - Unknown
+  BLPKM:
+    name: blpkm
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - Black - Male
+  BLPKF:
+    name: blpkf
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - Black - Female
+  BLPKU:
+    name: blpku
+    type: BIGINT
+    years: 1998-2006
+    label: PK Students - Black - Unknown
+  WHPKM:
+    name: whpkm
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - White - Male
+  WHPKF:
+    name: whpkf
+    type: BIGINT
+    years: 1998-2013
+    label: PK Students - White - Female
+  WHPKU:
+    name: whpku
+    type: BIGINT
+    years: 1998-2006
+    label: PK Students - White - Unknown
+  AMKGM:
+    name: amkgm
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - American Indian/Alaska Native - Male
+  AMKGF:
+    name: amkgf
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - American Indian/Alaska Native - Female
+  AMKGU:
+    name: amkgu
+    type: BIGINT
+    years: 1998-2006
+    label: KG Students - American Indian/Alaska Native - Unknown
+  ASKGM:
+    name: askgm
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - Asian - Male
+  ASKGF:
+    name: askgf
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - Asian - Female
+  ASKGU:
+    name: askgu
+    type: BIGINT
+    years: 1998-2006
+    label: KG Students - Asian Pacific Islander - Unknown
+  HIKGM:
+    name: hikgm
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - Hispanic - Male
+  HIKGF:
+    name: hikgf
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - Hispanic - Female
+  HIKGU:
+    name: hikgu
+    type: BIGINT
+    years: 1998-2006
+    label: KG Students - Hispanic - Unknown
+  BLKGM:
+    name: blkgm
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - Black - Male
+  BLKGF:
+    name: blkgf
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - Black - Female
+  BLKGU:
+    name: blkgu
+    type: BIGINT
+    years: 1998-2006
+    label: KG Students - Black - Unknown
+  WHKGM:
+    name: whkgm
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - White - Male
+  WHKGF:
+    name: whkgf
+    type: BIGINT
+    years: 1998-2013
+    label: KG Students - White - Female
+  WHKGU:
+    name: whkgu
+    type: BIGINT
+    years: 1998-2006
+    label: KG Students - White - Unknown
+  AM01M:
+    name: am01m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - American Indian/Alaska Native - Male
+  AM01F:
+    name: am01f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - American Indian/Alaska Native - Female
+  AM01U:
+    name: am01u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 1 Students - American Indian/Alaska Native - Unknown
+  AS01M:
+    name: as01m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - Asian - Male
+  AS01F:
+    name: as01f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - Asian - Female
+  AS01U:
+    name: as01u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 1 Students - Asian Pacific Islander - Unknown
+  HI01M:
+    name: hi01m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - Hispanic - Male
+  HI01F:
+    name: hi01f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - Hispanic - Female
+  HI01U:
+    name: hi01u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 1 Students - Hispanic - Unknown
+  BL01M:
+    name: bl01m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - Black - Male
+  BL01F:
+    name: bl01f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - Black - Female
+  BL01U:
+    name: bl01u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 1 Students - Black - Unknown
+  WH01M:
+    name: wh01m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - White - Male
+  WH01F:
+    name: wh01f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 1 Students - White - Female
+  WH01U:
+    name: wh01u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 1 Students - White - Unknown
+  AM02M:
+    name: am02m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - American Indian/Alaska Native - Male
+  AM02F:
+    name: am02f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - American Indian/Alaska Native - Female
+  AM02U:
+    name: am02u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 2 Students - American Indian/Alaska Native - Unknown
+  AS02M:
+    name: as02m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - Asian - Male
+  AS02F:
+    name: as02f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - Asian - Female
+  AS02U:
+    name: as02u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 2 Students - Asian Pacific Islander - Unknown
+  HI02M:
+    name: hi02m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - Hispanic - Male
+  HI02F:
+    name: hi02f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - Hispanic - Female
+  HI02U:
+    name: hi02u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 2 Students - Hispanic - Unknown
+  BL02M:
+    name: bl02m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - Black - Male
+  BL02F:
+    name: bl02f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - Black - Female
+  BL02U:
+    name: bl02u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 2 Students - Black - Unknown
+  WH02M:
+    name: wh02m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - White - Male
+  WH02F:
+    name: wh02f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 2 Students - White - Female
+  WH02U:
+    name: wh02u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 2 Students - White - Unknown
+  AM03M:
+    name: am03m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - American Indian/Alaska Native - Male
+  AM03F:
+    name: am03f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - American Indian/Alaska Native - Female
+  AM03U:
+    name: am03u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 3 Students - American Indian/Alaska Native - Unknown
+  AS03M:
+    name: as03m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - Asian - Male
+  AS03F:
+    name: as03f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - Asian - Female
+  AS03U:
+    name: as03u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 3 Students - Asian Pacific Islander - Unknown
+  HI03M:
+    name: hi03m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - Hispanic - Male
+  HI03F:
+    name: hi03f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - Hispanic - Female
+  HI03U:
+    name: hi03u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 3 Students - Hispanic - Unknown
+  BL03M:
+    name: bl03m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - Black - Male
+  BL03F:
+    name: bl03f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - Black - Female
+  BL03U:
+    name: bl03u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 3 Students - Black - Unknown
+  WH03M:
+    name: wh03m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - White - Male
+  WH03F:
+    name: wh03f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 3 Students - White - Female
+  WH03U:
+    name: wh03u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 3 Students - White - Unknown
+  AM04M:
+    name: am04m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - American Indian/Alaska Native - Male
+  AM04F:
+    name: am04f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - American Indian/Alaska Native - Female
+  AM04U:
+    name: am04u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 4 Students - American Indian/Alaska Native - Unknown
+  AS04M:
+    name: as04m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - Asian - Male
+  AS04F:
+    name: as04f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - Asian - Female
+  AS04U:
+    name: as04u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 4 Students - Asian Pacific Islander - Unknown
+  HI04M:
+    name: hi04m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - Hispanic - Male
+  HI04F:
+    name: hi04f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - Hispanic - Female
+  HI04U:
+    name: hi04u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 4 Students - Hispanic - Unknown
+  BL04M:
+    name: bl04m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - Black - Male
+  BL04F:
+    name: bl04f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - Black - Female
+  BL04U:
+    name: bl04u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 4 Students - Black - Unknown
+  WH04M:
+    name: wh04m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - White - Male
+  WH04F:
+    name: wh04f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 4 Students - White - Female
+  WH04U:
+    name: wh04u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 4 Students - White - Unknown
+  AM05M:
+    name: am05m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - American Indian/Alaska Native - Male
+  AM05F:
+    name: am05f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - American Indian/Alaska Native - Female
+  AM05U:
+    name: am05u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 5 Students - American Indian/Alaska Native - Unknown
+  AS05M:
+    name: as05m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - Asian - Male
+  AS05F:
+    name: as05f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - Asian - Female
+  AS05U:
+    name: as05u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 5 Students - Asian Pacific Islander - Unknown
+  HI05M:
+    name: hi05m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - Hispanic - Male
+  HI05F:
+    name: hi05f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - Hispanic - Female
+  HI05U:
+    name: hi05u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 5 Students - Hispanic - Unknown
+  BL05M:
+    name: bl05m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - Black - Male
+  BL05F:
+    name: bl05f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - Black - Female
+  BL05U:
+    name: bl05u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 5 Students - Black - Unknown
+  WH05M:
+    name: wh05m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - White - Male
+  WH05F:
+    name: wh05f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 5 Students - White - Female
+  WH05U:
+    name: wh05u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 5 Students - White - Unknown
+  AM06M:
+    name: am06m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - American Indian/Alaska Native - Male
+  AM06F:
+    name: am06f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - American Indian/Alaska Native - Female
+  AM06U:
+    name: am06u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 6 Students - American Indian/Alaska Native - Unknown
+  AS06M:
+    name: as06m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - Asian - Male
+  AS06F:
+    name: as06f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - Asian - Female
+  AS06U:
+    name: as06u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 6 Students - Asian Pacific Islander - Unknown
+  HI06M:
+    name: hi06m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - Hispanic - Male
+  HI06F:
+    name: hi06f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - Hispanic - Female
+  HI06U:
+    name: hi06u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 6 Students - Hispanic - Unknown
+  BL06M:
+    name: bl06m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - Black - Male
+  BL06F:
+    name: bl06f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - Black - Female
+  BL06U:
+    name: bl06u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 6 Students - Black - Unknown
+  WH06M:
+    name: wh06m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - White - Male
+  WH06F:
+    name: wh06f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 6 Students - White - Female
+  WH06U:
+    name: wh06u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 6 Students - White - Unknown
+  AM07M:
+    name: am07m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - American Indian/Alaska Native - Male
+  AM07F:
+    name: am07f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - American Indian/Alaska Native - Female
+  AM07U:
+    name: am07u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 7 Students - American Indian/Alaska Native - Unknown
+  AS07M:
+    name: as07m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - Asian - Male
+  AS07F:
+    name: as07f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - Asian - Female
+  AS07U:
+    name: as07u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 7 Students - Asian Pacific Islander - Unknown
+  HI07M:
+    name: hi07m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - Hispanic - Male
+  HI07F:
+    name: hi07f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - Hispanic - Female
+  HI07U:
+    name: hi07u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 7 Students - Hispanic - Unknown
+  BL07M:
+    name: bl07m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - Black - Male
+  BL07F:
+    name: bl07f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - Black - Female
+  BL07U:
+    name: bl07u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 7 Students - Black - Unknown
+  WH07M:
+    name: wh07m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - White - Male
+  WH07F:
+    name: wh07f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 7 Students - White - Female
+  WH07U:
+    name: wh07u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 7 Students - White - Unknown
+  AM08M:
+    name: am08m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - American Indian/Alaska Native - Male
+  AM08F:
+    name: am08f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - American Indian/Alaska Native - Female
+  AM08U:
+    name: am08u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 8 Students - American Indian/Alaska Native - Unknown
+  AS08M:
+    name: as08m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - Asian - Male
+  AS08F:
+    name: as08f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - Asian - Female
+  AS08U:
+    name: as08u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 8 Students - Asian Pacific Islander - Unknown
+  HI08M:
+    name: hi08m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - Hispanic - Male
+  HI08F:
+    name: hi08f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - Hispanic - Female
+  HI08U:
+    name: hi08u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 8 Students - Hispanic - Unknown
+  BL08M:
+    name: bl08m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - Black - Male
+  BL08F:
+    name: bl08f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - Black - Female
+  BL08U:
+    name: bl08u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 8 Students - Black - Unknown
+  WH08M:
+    name: wh08m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - White - Male
+  WH08F:
+    name: wh08f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 8 Students - White - Female
+  WH08U:
+    name: wh08u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 8 Students - White - Unknown
+  AM09M:
+    name: am09m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - American Indian/Alaska Native - Male
+  AM09F:
+    name: am09f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - American Indian/Alaska Native - Female
+  AM09U:
+    name: am09u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 9 Students - American Indian/Alaska Native - Unknown
+  AS09M:
+    name: as09m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - Asian - Male
+  AS09F:
+    name: as09f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - Asian - Female
+  AS09U:
+    name: as09u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 9 Students - Asian Pacific Islander - Unknown
+  HI09M:
+    name: hi09m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - Hispanic - Male
+  HI09F:
+    name: hi09f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - Hispanic - Female
+  HI09U:
+    name: hi09u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 9 Students - Hispanic - Unknown
+  BL09M:
+    name: bl09m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - Black - Male
+  BL09F:
+    name: bl09f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - Black - Female
+  BL09U:
+    name: bl09u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 9 Students - Black - Unknown
+  WH09M:
+    name: wh09m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - White - Male
+  WH09F:
+    name: wh09f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 9 Students - White - Female
+  WH09U:
+    name: wh09u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 9 Students - White - Unknown
+  AM10M:
+    name: am10m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - American Indian/Alaska Native - Male
+  AM10F:
+    name: am10f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - American Indian/Alaska Native - Female
+  AM10U:
+    name: am10u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 10 Students - American Indian/Alaska Native - Unknown
+  AS10M:
+    name: as10m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - Asian - Male
+  AS10F:
+    name: as10f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - Asian - Female
+  AS10U:
+    name: as10u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 10 Students - Asian Pacific Islander - Unknown
+  HI10M:
+    name: hi10m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - Hispanic - Male
+  HI10F:
+    name: hi10f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - Hispanic - Female
+  HI10U:
+    name: hi10u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 10 Students - Hispanic - Unknown
+  BL10M:
+    name: bl10m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - Black - Male
+  BL10F:
+    name: bl10f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - Black - Female
+  BL10U:
+    name: bl10u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 10 Students - Black - Unknown
+  WH10M:
+    name: wh10m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - White - Male
+  WH10F:
+    name: wh10f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 10 Students - White - Female
+  WH10U:
+    name: wh10u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 10 Students - White - Unknown
+  AM11M:
+    name: am11m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - American Indian/Alaska Native - Male
+  AM11F:
+    name: am11f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - American Indian/Alaska Native - Female
+  AM11U:
+    name: am11u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 11 Students - American Indian/Alaska Native - Unknown
+  AS11M:
+    name: as11m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - Asian - Male
+  AS11F:
+    name: as11f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - Asian - Female
+  AS11U:
+    name: as11u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 11 Students - Asian Pacific Islander - Unknown
+  HI11M:
+    name: hi11m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - Hispanic - Male
+  HI11F:
+    name: hi11f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - Hispanic - Female
+  HI11U:
+    name: hi11u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 11 Students - Hispanic - Unknown
+  BL11M:
+    name: bl11m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - Black - Male
+  BL11F:
+    name: bl11f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - Black - Female
+  BL11U:
+    name: bl11u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 11 Students - Black - Unknown
+  WH11M:
+    name: wh11m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - White - Male
+  WH11F:
+    name: wh11f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 11 Students - White - Female
+  WH11U:
+    name: wh11u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 11 Students - White - Unknown
+  AM12M:
+    name: am12m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - American Indian/Alaska Native - Male
+  AM12F:
+    name: am12f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - American Indian/Alaska Native - Female
+  AM12U:
+    name: am12u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 12 Students - American Indian/Alaska Native - Unknown
+  AS12M:
+    name: as12m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - Asian - Male
+  AS12F:
+    name: as12f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - Asian - Female
+  AS12U:
+    name: as12u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 12 Students - Asian Pacific Islander - Unknown
+  HI12M:
+    name: hi12m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - Hispanic - Male
+  HI12F:
+    name: hi12f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - Hispanic - Female
+  HI12U:
+    name: hi12u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 12 Students - Hispanic - Unknown
+  BL12M:
+    name: bl12m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - Black - Male
+  BL12F:
+    name: bl12f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - Black - Female
+  BL12U:
+    name: bl12u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 12 Students - Black - Unknown
+  WH12M:
+    name: wh12m
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - White - Male
+  WH12F:
+    name: wh12f
+    type: BIGINT
+    years: 1998-2013
+    label: Grade 12 Students - White - Female
+  WH12U:
+    name: wh12u
+    type: BIGINT
+    years: 1998-2006
+    label: Grade 12 Students - White - Unknown
+  AMUGM:
+    name: amugm
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - American Indian/Alaska Native - Male
+  AMUGF:
+    name: amugf
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - American Indian/Alaska Native - Female
+  AMUGU:
+    name: amugu
+    type: BIGINT
+    years: 1998-2006
+    label: Ungraded Students - American Indian/Alaska Native - Unknown
+  ASUGM:
+    name: asugm
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - Asian - Male
+  ASUGF:
+    name: asugf
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - Asian - Female
+  ASUGU:
+    name: asugu
+    type: BIGINT
+    years: 1998-2006
+    label: Ungraded Students - Asian Pacific Islander - Unknown
+  HIUGM:
+    name: hiugm
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - Hispanic - Male
+  HIUGF:
+    name: hiugf
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - Hispanic - Female
+  HIUGU:
+    name: hiugu
+    type: BIGINT
+    years: 1998-2006
+    label: Ungraded Students - Hispanic - Unknown
+  BLUGM:
+    name: blugm
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - Black - Male
+  BLUGF:
+    name: blugf
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - Black - Female
+  BLUGU:
+    name: blugu
+    type: BIGINT
+    years: 1998-2006
+    label: Ungraded Students - Black - Unknown
+  WHUGM:
+    name: whugm
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - White - Male
+  WHUGF:
+    name: whugf
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - White - Female
+  WHUGU:
+    name: whugu
+    type: BIGINT
+    years: 1998-2006
+    label: Ungraded Students - White - Unknown
+  AM:
+    name: am
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - American Indian/Alaska Native
+  AMALM:
+    name: amalm
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - American Indian/Alaska Native - Male
+  AMALF:
+    name: amalf
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - American Indian/Alaska Native - Female
+  AMALU:
+    name: amalu
+    type: BIGINT
+    years: 1998-2006
+    label: All Students - American Indian/Alaska Native - Unknown
+  ASALM:
+    name: asalm
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - Asian - Male
+  ASALF:
+    name: asalf
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - Asian - Female
+  ASALU:
+    name: asalu
+    type: BIGINT
+    years: 1998-2006
+    label: All Students - Asian Pacific Islander - Unknown
+  HIALM:
+    name: hialm
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - Hispanic - Male
+  HIALF:
+    name: hialf
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - Hispanic - Female
+  HIALU:
+    name: hialu
+    type: BIGINT
+    years: 1998-2006
+    label: All Students - Hispanic - Unknown
+  BLALM:
+    name: blalm
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - Black - Male
+  BLALF:
+    name: blalf
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - Black - Female
+  BLALU:
+    name: blalu
+    type: BIGINT
+    years: 1998-2006
+    label: All Students - Black - Unknown
+  WHALM:
+    name: whalm
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - White - Male
+  WHALF:
+    name: whalf
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - White - Female
+  WHALU:
+    name: whalu
+    type: BIGINT
+    years: 1998-2006
+    label: All Students - White - Unknown
+  TOTGRD:
+    name: totgrd
+    type: BIGINT
+    years: 1998-2007
+    label: All Students - Derived Total
+  ILOCAL:
+    name: ilocal
+    type: VARCHAR
+    years: 1998-2005
+    label: Locale Code Adj Flag
+  ITITLI:
+    name: ititli
+    type: VARCHAR
+    years: 1998-2006
+    label: Title I Eligible School - flag
+  ISTITL:
+    name: istitl
+    type: VARCHAR
+    years: 1998-2006
+    label: School-wide Title I - flag
+  IMAGNE:
+    name: imagne
+    type: VARCHAR
+    years: 1998-2006
+    label: Magnet School Indicator - flag
+  ICHART:
+    name: ichart
+    type: VARCHAR
+    years: 1998-2006
+    label: Charter School Indicator - flag
+  IFRELC:
+    name: ifrelc
+    type: VARCHAR
+    years: 1998-2006
+    label: Free Lunch Eligible Students - flag
+  IREDLC:
+    name: iredlc
+    type: VARCHAR
+    years: 1998-2006
+    label: Reduced-Price Lunch Eligible Students - flag
+  ITOTFR:
+    name: itotfr
+    type: VARCHAR
+    years: 1998-2006
+    label: Total of Free and Reduced-Lunch Eligible Students - flag
+  IMIGRN:
+    name: imigrn
+    type: VARCHAR
+    years: 1998-2006
+    label: Migrant Students Enrolled in Previous Year - flag
+  IAMPKM:
+    name: iampkm
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - American Indian/Alaska Native - Male - flag
+  IAMPKF:
+    name: iampkf
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - American Indian/Alaska Native - Female - flag
+  IAMPKU:
+    name: iampku
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - American Indian/Alaska Native - Unknown - flag
+  IASPKM:
+    name: iaspkm
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - Asian Pacific Islander - Male - flag
+  IASPKF:
+    name: iaspkf
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - Asian Pacific Islander - Female - flag
+  IASPKU:
+    name: iaspku
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - Asian Pacific Islander - Unknown - flag
+  IHIPKM:
+    name: ihipkm
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - Hispanic - Male - flag
+  IHIPKF:
+    name: ihipkf
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - Hispanic - Female - flag
+  IHIPKU:
+    name: ihipku
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - Hispanic - Unknown - flag
+  IBLPKM:
+    name: iblpkm
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - Black - Male - flag
+  IBLPKF:
+    name: iblpkf
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - Black - Female - flag
+  IBLPKU:
+    name: iblpku
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - Black - Unknown - flag
+  IWHPKM:
+    name: iwhpkm
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - White - Male - flag
+  IWHPKF:
+    name: iwhpkf
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - White - Female - flag
+  IWHPKU:
+    name: iwhpku
+    type: VARCHAR
+    years: 1998-2006
+    label: PK Students - White - Unknown - flag
+  IAMKGM:
+    name: iamkgm
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - American Indian/Alaska Native - Male - flag
+  IAMKGF:
+    name: iamkgf
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - American Indian/Alaska Native - Female - flag
+  IAMKGU:
+    name: iamkgu
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - American Indian/Alaska Native - Unknown - flag
+  IASKGM:
+    name: iaskgm
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - Asian Pacific Islander - Male - flag
+  IASKGF:
+    name: iaskgf
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - Asian Pacific Islander - Female - flag
+  IASKGU:
+    name: iaskgu
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - Asian Pacific Islander - Unknown - flag
+  IHIKGM:
+    name: ihikgm
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - Hispanic - Male - flag
+  IHIKGF:
+    name: ihikgf
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - Hispanic - Female - flag
+  IHIKGU:
+    name: ihikgu
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - Hispanic - Unknown - flag
+  IBLKGM:
+    name: iblkgm
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - Black - Male - flag
+  IBLKGF:
+    name: iblkgf
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - Black - Female - flag
+  IBLKGU:
+    name: iblkgu
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - Black - Unknown - flag
+  IWHKGM:
+    name: iwhkgm
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - White - Male - flag
+  IWHKGF:
+    name: iwhkgf
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - White - Female - flag
+  IWHKGU:
+    name: iwhkgu
+    type: VARCHAR
+    years: 1998-2006
+    label: KG Students - White - Unknown - flag
+  IAM01M:
+    name: iam01m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - American Indian/Alaska Native - Male - flag
+  IAM01F:
+    name: iam01f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - American Indian/Alaska Native - Female - flag
+  IAM01U:
+    name: iam01u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - American Indian/Alaska Native - Unknown - flag
+  IAS01M:
+    name: ias01m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - Asian Pacific Islander - Male - flag
+  IAS01F:
+    name: ias01f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - Asian Pacific Islander - Female - flag
+  IAS01U:
+    name: ias01u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - Asian Pacific Islander - Unknown - flag
+  IHI01M:
+    name: ihi01m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - Hispanic - Male - flag
+  IHI01F:
+    name: ihi01f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - Hispanic - Female - flag
+  IHI01U:
+    name: ihi01u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - Hispanic - Unknown - flag
+  IBL01M:
+    name: ibl01m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - Black - Male - flag
+  IBL01F:
+    name: ibl01f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - Black - Female - flag
+  IBL01U:
+    name: ibl01u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - Black - Unknown - flag
+  IWH01M:
+    name: iwh01m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - White - Male - flag
+  IWH01F:
+    name: iwh01f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - White - Female - flag
+  IWH01U:
+    name: iwh01u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 1 Students - White - Unknown - flag
+  IAM02M:
+    name: iam02m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - American Indian/Alaska Native - Male - flag
+  IAM02F:
+    name: iam02f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - American Indian/Alaska Native - Female - flag
+  IAM02U:
+    name: iam02u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - American Indian/Alaska Native - Unknown - flag
+  IAS02M:
+    name: ias02m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - Asian Pacific Islander - Male - flag
+  IAS02F:
+    name: ias02f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - Asian Pacific Islander - Female - flag
+  IAS02U:
+    name: ias02u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - Asian Pacific Islander - Unknown - flag
+  IHI02M:
+    name: ihi02m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - Hispanic - Male - flag
+  IHI02F:
+    name: ihi02f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - Hispanic - Female - flag
+  IHI02U:
+    name: ihi02u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - Hispanic - Unknown - flag
+  IBL02M:
+    name: ibl02m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - Black - Male - flag
+  IBL02F:
+    name: ibl02f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - Black - Female - flag
+  IBL02U:
+    name: ibl02u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - Black - Unknown - flag
+  IWH02M:
+    name: iwh02m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - White - Male - flag
+  IWH02F:
+    name: iwh02f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - White - Female - flag
+  IWH02U:
+    name: iwh02u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 2 Students - White - Unknown - flag
+  IAM03M:
+    name: iam03m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - American Indian/Alaska Native - Male - flag
+  IAM03F:
+    name: iam03f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - American Indian/Alaska Native - Female - flag
+  IAM03U:
+    name: iam03u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - American Indian/Alaska Native - Unknown - flag
+  IAS03M:
+    name: ias03m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - Asian Pacific Islander - Male - flag
+  IAS03F:
+    name: ias03f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - Asian Pacific Islander - Female - flag
+  IAS03U:
+    name: ias03u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - Asian Pacific Islander - Unknown - flag
+  IHI03M:
+    name: ihi03m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - Hispanic - Male - flag
+  IHI03F:
+    name: ihi03f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - Hispanic - Female - flag
+  IHI03U:
+    name: ihi03u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - Hispanic - Unknown - flag
+  IBL03M:
+    name: ibl03m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - Black - Male - flag
+  IBL03F:
+    name: ibl03f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - Black - Female - flag
+  IBL03U:
+    name: ibl03u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - Black - Unknown - flag
+  IWH03M:
+    name: iwh03m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - White - Male - flag
+  IWH03F:
+    name: iwh03f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - White - Female - flag
+  IWH03U:
+    name: iwh03u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 3 Students - White - Unknown - flag
+  IAM04M:
+    name: iam04m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - American Indian/Alaska Native - Male - flag
+  IAM04F:
+    name: iam04f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - American Indian/Alaska Native - Female - flag
+  IAM04U:
+    name: iam04u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - American Indian/Alaska Native - Unknown - flag
+  IAS04M:
+    name: ias04m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - Asian Pacific Islander - Male - flag
+  IAS04F:
+    name: ias04f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - Asian Pacific Islander - Female - flag
+  IAS04U:
+    name: ias04u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - Asian Pacific Islander - Unknown - flag
+  IHI04M:
+    name: ihi04m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - Hispanic - Male - flag
+  IHI04F:
+    name: ihi04f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - Hispanic - Female - flag
+  IHI04U:
+    name: ihi04u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - Hispanic - Unknown - flag
+  IBL04M:
+    name: ibl04m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - Black - Male - flag
+  IBL04F:
+    name: ibl04f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - Black - Female - flag
+  IBL04U:
+    name: ibl04u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - Black - Unknown - flag
+  IWH04M:
+    name: iwh04m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - White - Male - flag
+  IWH04F:
+    name: iwh04f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - White - Female - flag
+  IWH04U:
+    name: iwh04u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 4 Students - White - Unknown - flag
+  IAM05M:
+    name: iam05m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - American Indian/Alaska Native - Male - flag
+  IAM05F:
+    name: iam05f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - American Indian/Alaska Native - Female - flag
+  IAM05U:
+    name: iam05u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - American Indian/Alaska Native - Unknown - flag
+  IAS05M:
+    name: ias05m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - Asian Pacific Islander - Male - flag
+  IAS05F:
+    name: ias05f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - Asian Pacific Islander - Female - flag
+  IAS05U:
+    name: ias05u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - Asian Pacific Islander - Unknown - flag
+  IHI05M:
+    name: ihi05m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - Hispanic - Male - flag
+  IHI05F:
+    name: ihi05f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - Hispanic - Female - flag
+  IHI05U:
+    name: ihi05u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - Hispanic - Unknown - flag
+  IBL05M:
+    name: ibl05m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - Black - Male - flag
+  IBL05F:
+    name: ibl05f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - Black - Female - flag
+  IBL05U:
+    name: ibl05u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - Black - Unknown - flag
+  IWH05M:
+    name: iwh05m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - White - Male - flag
+  IWH05F:
+    name: iwh05f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - White - Female - flag
+  IWH05U:
+    name: iwh05u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 5 Students - White - Unknown - flag
+  IAM06M:
+    name: iam06m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - American Indian/Alaska Native - Male - flag
+  IAM06F:
+    name: iam06f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - American Indian/Alaska Native - Female - flag
+  IAM06U:
+    name: iam06u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - American Indian/Alaska Native - Unknown - flag
+  IAS06M:
+    name: ias06m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - Asian Pacific Islander - Male - flag
+  IAS06F:
+    name: ias06f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - Asian Pacific Islander - Female - flag
+  IAS06U:
+    name: ias06u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - Asian Pacific Islander - Unknown - flag
+  IHI06M:
+    name: ihi06m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - Hispanic - Male - flag
+  IHI06F:
+    name: ihi06f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - Hispanic - Female - flag
+  IHI06U:
+    name: ihi06u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - Hispanic - Unknown - flag
+  IBL06M:
+    name: ibl06m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - Black - Male - flag
+  IBL06F:
+    name: ibl06f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - Black - Female - flag
+  IBL06U:
+    name: ibl06u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - Black - Unknown - flag
+  IWH06M:
+    name: iwh06m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - White - Male - flag
+  IWH06F:
+    name: iwh06f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - White - Female - flag
+  IWH06U:
+    name: iwh06u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 6 Students - White - Unknown - flag
+  IAM07M:
+    name: iam07m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - American Indian/Alaska Native - Male - flag
+  IAM07F:
+    name: iam07f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - American Indian/Alaska Native - Female - flag
+  IAM07U:
+    name: iam07u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - American Indian/Alaska Native - Unknown - flag
+  IAS07M:
+    name: ias07m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - Asian Pacific Islander - Male - flag
+  IAS07F:
+    name: ias07f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - Asian Pacific Islander - Female - flag
+  IAS07U:
+    name: ias07u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - Asian Pacific Islander - Unknown - flag
+  IHI07M:
+    name: ihi07m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - Hispanic - Male - flag
+  IHI07F:
+    name: ihi07f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - Hispanic - Female - flag
+  IHI07U:
+    name: ihi07u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - Hispanic - Unknown - flag
+  IBL07M:
+    name: ibl07m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - Black - Male - flag
+  IBL07F:
+    name: ibl07f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - Black - Female - flag
+  IBL07U:
+    name: ibl07u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - Black - Unknown - flag
+  IWH07M:
+    name: iwh07m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - White - Male - flag
+  IWH07F:
+    name: iwh07f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - White - Female - flag
+  IWH07U:
+    name: iwh07u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 7 Students - White - Unknown - flag
+  IAM08M:
+    name: iam08m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - American Indian/Alaska Native - Male - flag
+  IAM08F:
+    name: iam08f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - American Indian/Alaska Native - Female - flag
+  IAM08U:
+    name: iam08u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - American Indian/Alaska Native - Unknown - flag
+  IAS08M:
+    name: ias08m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - Asian Pacific Islander - Male - flag
+  IAS08F:
+    name: ias08f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - Asian Pacific Islander - Female - flag
+  IAS08U:
+    name: ias08u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - Asian Pacific Islander - Unknown - flag
+  IHI08M:
+    name: ihi08m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - Hispanic - Male - flag
+  IHI08F:
+    name: ihi08f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - Hispanic - Female - flag
+  IHI08U:
+    name: ihi08u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - Hispanic - Unknown - flag
+  IBL08M:
+    name: ibl08m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - Black - Male - flag
+  IBL08F:
+    name: ibl08f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - Black - Female - flag
+  IBL08U:
+    name: ibl08u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - Black - Unknown - flag
+  IWH08M:
+    name: iwh08m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - White - Male - flag
+  IWH08F:
+    name: iwh08f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - White - Female - flag
+  IWH08U:
+    name: iwh08u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 8 Students - White - Unknown - flag
+  IAM09M:
+    name: iam09m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - American Indian/Alaska Native - Male - flag
+  IAM09F:
+    name: iam09f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - American Indian/Alaska Native - Female - flag
+  IAM09U:
+    name: iam09u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - American Indian/Alaska Native - Unknown - flag
+  IAS09M:
+    name: ias09m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - Asian Pacific Islander - Male - flag
+  IAS09F:
+    name: ias09f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - Asian Pacific Islander - Female - flag
+  IAS09U:
+    name: ias09u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - Asian Pacific Islander - Unknown - flag
+  IHI09M:
+    name: ihi09m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - Hispanic - Male - flag
+  IHI09F:
+    name: ihi09f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - Hispanic - Female - flag
+  IHI09U:
+    name: ihi09u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - Hispanic - Unknown - flag
+  IBL09M:
+    name: ibl09m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - Black - Male - flag
+  IBL09F:
+    name: ibl09f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - Black - Female - flag
+  IBL09U:
+    name: ibl09u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - Black - Unknown - flag
+  IWH09M:
+    name: iwh09m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - White - Male - flag
+  IWH09F:
+    name: iwh09f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - White - Female - flag
+  IWH09U:
+    name: iwh09u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 9 Students - White - Unknown - flag
+  IAM10M:
+    name: iam10m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - American Indian/Alaska Native - Male - flag
+  IAM10F:
+    name: iam10f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - American Indian/Alaska Native - Female - flag
+  IAM10U:
+    name: iam10u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - American Indian/Alaska Native - Unknown - flag
+  IAS10M:
+    name: ias10m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - Asian Pacific Islander - Male - flag
+  IAS10F:
+    name: ias10f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - Asian Pacific Islander - Female - flag
+  IAS10U:
+    name: ias10u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - Asian Pacific Islander - Unknown - flag
+  IHI10M:
+    name: ihi10m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - Hispanic - Male - flag
+  IHI10F:
+    name: ihi10f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - Hispanic - Female - flag
+  IHI10U:
+    name: ihi10u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - Hispanic - Unknown - flag
+  IBL10M:
+    name: ibl10m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - Black - Male - flag
+  IBL10F:
+    name: ibl10f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - Black - Female - flag
+  IBL10U:
+    name: ibl10u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - Black - Unknown - flag
+  IWH10M:
+    name: iwh10m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - White - Male - flag
+  IWH10F:
+    name: iwh10f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - White - Female - flag
+  IWH10U:
+    name: iwh10u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 10 Students - White - Unknown - flag
+  IAM11M:
+    name: iam11m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - American Indian/Alaska Native - Male - flag
+  IAM11F:
+    name: iam11f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - American Indian/Alaska Native - Female - flag
+  IAM11U:
+    name: iam11u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - American Indian/Alaska Native - Unknown - flag
+  IAS11M:
+    name: ias11m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - Asian Pacific Islander - Male - flag
+  IAS11F:
+    name: ias11f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - Asian Pacific Islander - Female - flag
+  IAS11U:
+    name: ias11u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - Asian Pacific Islander - Unknown - flag
+  IHI11M:
+    name: ihi11m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - Hispanic - Male - flag
+  IHI11F:
+    name: ihi11f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - Hispanic - Female - flag
+  IHI11U:
+    name: ihi11u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - Hispanic - Unknown - flag
+  IBL11M:
+    name: ibl11m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - Black - Male - flag
+  IBL11F:
+    name: ibl11f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - Black - Female - flag
+  IBL11U:
+    name: ibl11u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - Black - Unknown - flag
+  IWH11M:
+    name: iwh11m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - White - Male - flag
+  IWH11F:
+    name: iwh11f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - White - Female - flag
+  IWH11U:
+    name: iwh11u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 11 Students - White - Unknown - flag
+  IAM12M:
+    name: iam12m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - American Indian/Alaska Native - Male - flag
+  IAM12F:
+    name: iam12f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - American Indian/Alaska Native - Female - flag
+  IAM12U:
+    name: iam12u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - American Indian/Alaska Native - Unknown - flag
+  IAS12M:
+    name: ias12m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - Asian Pacific Islander - Male - flag
+  IAS12F:
+    name: ias12f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - Asian Pacific Islander - Female - flag
+  IAS12U:
+    name: ias12u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - Asian Pacific Islander - Unknown - flag
+  IHI12M:
+    name: ihi12m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - Hispanic - Male - flag
+  IHI12F:
+    name: ihi12f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - Hispanic - Female - flag
+  IHI12U:
+    name: ihi12u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - Hispanic - Unknown - flag
+  IBL12M:
+    name: ibl12m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - Black - Male - flag
+  IBL12F:
+    name: ibl12f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - Black - Female - flag
+  IBL12U:
+    name: ibl12u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - Black - Unknown - flag
+  IWH12M:
+    name: iwh12m
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - White - Male - flag
+  IWH12F:
+    name: iwh12f
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - White - Female - flag
+  IWH12U:
+    name: iwh12u
+    type: VARCHAR
+    years: 1998-2006
+    label: Grade 12 Students - White - Unknown - flag
+  IAMUGM:
+    name: iamugm
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - American Indian/Alaska Native - Male - flag
+  IAMUGF:
+    name: iamugf
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - American Indian/Alaska Native - Female - flag
+  IAMUGU:
+    name: iamugu
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - American Indian/Alaska Native - Unknown - flag
+  IASUGM:
+    name: iasugm
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - Asian Pacific Islander - Male - flag
+  IASUGF:
+    name: iasugf
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - Asian Pacific Islander - Female - flag
+  IASUGU:
+    name: iasugu
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - Asian Pacific Islander - Unknown - flag
+  IHIUGM:
+    name: ihiugm
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - Hispanic - Male - flag
+  IHIUGF:
+    name: ihiugf
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - Hispanic - Female - flag
+  IHIUGU:
+    name: ihiugu
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - Hispanic - Unknown - flag
+  IBLUGM:
+    name: iblugm
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - Black - Male - flag
+  IBLUGF:
+    name: iblugf
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - Black - Female - flag
+  IBLUGU:
+    name: iblugu
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - Black - Unknown - flag
+  IWHUGM:
+    name: iwhugm
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - White - Male - flag
+  IWHUGF:
+    name: iwhugf
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - White - Female - flag
+  IWHUGU:
+    name: iwhugu
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - White - Unknown - flag
+  IAM:
+    name: iam
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - American Indian/Alaska Native - flag
+  IAMALM:
+    name: iamalm
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - American Indian/Alaska Native - Male - flag
+  IAMALF:
+    name: iamalf
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - American Indian/Alaska Native - Female - flag
+  IAMALU:
+    name: iamalu
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - American Indian/Alaska Native - Unknown - flag
+  IASALM:
+    name: iasalm
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Asian Pacific Islander - Male - flag
+  IASALF:
+    name: iasalf
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Asian Pacific Islander - Female - flag
+  IASALU:
+    name: iasalu
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Asian Pacific Islander - Unknown - flag
+  IHIALM:
+    name: ihialm
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Hispanic - Male - flag
+  IHIALF:
+    name: ihialf
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Hispanic - Female - flag
+  IHIALU:
+    name: ihialu
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Hispanic - Unknown - flag
+  IBLALM:
+    name: iblalm
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Black - Male - flag
+  IBLALF:
+    name: iblalf
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Black - Female - flag
+  IBLALU:
+    name: iblalu
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Black - Unknown - flag
+  IWHALM:
+    name: iwhalm
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - White - Male - flag
+  IWHALF:
+    name: iwhalf
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - White - Female - flag
+  IWHALU:
+    name: iwhalu
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - White - Unknown - flag
+  ITOTGR:
+    name: itotgr
+    type: VARCHAR
+    years: 1998-2006
+    label: All Students - Derived Total - flag
+  LATCOD:
+    name: latcod
+    type: DOUBLE
+    years: 2000-2013
+    signed: true
+    label: Latitude
+  LONCOD:
+    name: loncod
+    type: DOUBLE
+    years: 2000-2013
+    signed: true
+    label: Longitude
+  LEVEL:
+    name: level
+    type: VARCHAR
+    years: 2000-2013
+    label: School Level
+  INOUT:
+    name: inout
+    type: VARCHAR
+    years: 2001-2005
+    label: Location Relative to Town Limits
+  IGSLO:
+    name: igslo
+    type: VARCHAR
+    years: 2001-2006
+    label: Grades Offered - Lowest - flag
+  IGSHI:
+    name: igshi
+    type: VARCHAR
+    years: 2001-2006
+    label: Grades Offered - Highest - flag
+  CONUM:
+    name: conum
+    type: VARCHAR
+    years: 2002-2013
+    label: ANSI County Code
+  CONAME:
+    name: coname
+    type: VARCHAR
+    years: 2002-2013
+    label: County Name
+  SHARED:
+    name: shared
+    type: VARCHAR
+    years: 2004-2013
+    label: Shared Time Indicator
+  ISHARE:
+    name: ishare
+    type: VARCHAR
+    years: 2004-2006
+    label: Shared Time Indicator - flag
+  ULOCAL:
+    name: ulocal
+    type: VARCHAR
+    years: 2006-2013
+    label: NCES urban-centric locale code
+  CDCODE:
+    name: cdcode
+    type: VARCHAR
+    years: 2006-2013
+    label: Congressional District Code
+  RACECAT:
+    name: racecat
+    type: BIGINT
+    years: 2008-2012
+    label: Ethnic Categories Indicator
+  HPPKM:
+    name: hppkm
+    type: BIGINT
+    years: 2008-2013
+    label: PK Students - Hawaiian Native/Pacific Islander - Male
+  HPPKF:
+    name: hppkf
+    type: BIGINT
+    years: 2008-2013
+    label: PK Students - Hawaiian Native/Pacific Islander - Female
+  TRPKM:
+    name: trpkm
+    type: BIGINT
+    years: 2008-2013
+    label: PK Students - Two or More Races - Male
+  TRPKF:
+    name: trpkf
+    type: BIGINT
+    years: 2008-2013
+    label: PK Students - Two or More Races - Female
+  HPKGM:
+    name: hpkgm
+    type: BIGINT
+    years: 2008-2013
+    label: KG Students - Hawaiian Native/Pacific Islander - Male
+  HPKGF:
+    name: hpkgf
+    type: BIGINT
+    years: 2008-2013
+    label: KG Students - Hawaiian Native/Pacific Islander - Female
+  TRKGM:
+    name: trkgm
+    type: BIGINT
+    years: 2008-2013
+    label: KG Students - Two or More Races - Male
+  TRKGF:
+    name: trkgf
+    type: BIGINT
+    years: 2008-2013
+    label: KG Students - Two or More Races - Female
+  HP01M:
+    name: hp01m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 1 Students - Hawaiian Native/Pacific Islander - Male
+  HP01F:
+    name: hp01f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 1 Students - Hawaiian Native/Pacific Islander - Female
+  TR01M:
+    name: tr01m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 1 Students - Two or More Races - Male
+  TR01F:
+    name: tr01f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 1 Students - Two or More Races - Female
+  HP02M:
+    name: hp02m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 2 Students - Hawaiian Native/Pacific Islander - Male
+  HP02F:
+    name: hp02f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 2 Students - Hawaiian Native/Pacific Islander - Female
+  TR02M:
+    name: tr02m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 2 Students - Two or More Races - Male
+  TR02F:
+    name: tr02f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 2 Students - Two or More Races - Female
+  HP03M:
+    name: hp03m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 3 Students - Hawaiian Native/Pacific Islander - Male
+  HP03F:
+    name: hp03f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 3 Students - Hawaiian Native/Pacific Islander - Female
+  TR03M:
+    name: tr03m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 3 Students - Two or More Races - Male
+  TR03F:
+    name: tr03f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 3 Students - Two or More Races - Female
+  HP04M:
+    name: hp04m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 4 Students - Hawaiian Native/Pacific Islander - Male
+  HP04F:
+    name: hp04f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 4 Students - Hawaiian Native/Pacific Islander - Female
+  TR04M:
+    name: tr04m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 4 Students - Two or More Races - Male
+  TR04F:
+    name: tr04f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 4 Students - Two or More Races - Female
+  HP05M:
+    name: hp05m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 5 Students - Hawaiian Native/Pacific Islander - Male
+  HP05F:
+    name: hp05f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 5 Students - Hawaiian Native/Pacific Islander - Female
+  TR05M:
+    name: tr05m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 5 Students - Two or More Races - Male
+  TR05F:
+    name: tr05f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 5 Students - Two or More Races - Female
+  HP06M:
+    name: hp06m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 6 Students - Hawaiian Native/Pacific Islander - Male
+  HP06F:
+    name: hp06f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 6 Students - Hawaiian Native/Pacific Islander - Female
+  TR06M:
+    name: tr06m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 6 Students - Two or More Races - Male
+  TR06F:
+    name: tr06f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 6 Students - Two or More Races - Female
+  HP07M:
+    name: hp07m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 7 Students - Hawaiian Native/Pacific Islander - Male
+  HP07F:
+    name: hp07f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 7 Students - Hawaiian Native/Pacific Islander - Female
+  TR07M:
+    name: tr07m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 7 Students - Two or More Races - Male
+  TR07F:
+    name: tr07f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 7 Students - Two or More Races - Female
+  HP08M:
+    name: hp08m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 8 Students - Hawaiian Native/Pacific Islander - Male
+  HP08F:
+    name: hp08f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 8 Students - Hawaiian Native/Pacific Islander - Female
+  TR08M:
+    name: tr08m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 8 Students - Two or More Races - Male
+  TR08F:
+    name: tr08f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 8 Students - Two or More Races - Female
+  HP09M:
+    name: hp09m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 9 Students - Hawaiian Native/Pacific Islander - Male
+  HP09F:
+    name: hp09f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 9 Students - Hawaiian Native/Pacific Islander - Female
+  TR09M:
+    name: tr09m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 9 Students - Two or More Races - Male
+  TR09F:
+    name: tr09f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 9 Students - Two or More Races - Female
+  HP10M:
+    name: hp10m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 10 Students - Hawaiian Native/Pacific Islander - Male
+  HP10F:
+    name: hp10f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 10 Students - Hawaiian Native/Pacific Islander - Female
+  TR10M:
+    name: tr10m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 10 Students - Two or More Races - Male
+  TR10F:
+    name: tr10f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 10 Students - Two or More Races - Female
+  HP11M:
+    name: hp11m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 11 Students - Hawaiian Native/Pacific Islander - Male
+  HP11F:
+    name: hp11f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 11 Students - Hawaiian Native/Pacific Islander - Female
+  TR11M:
+    name: tr11m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 11 Students - Two or More Races - Male
+  TR11F:
+    name: tr11f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 11 Students - Two or More Races - Female
+  HP12M:
+    name: hp12m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 12 Students - Hawaiian Native/Pacific Islander - Male
+  HP12F:
+    name: hp12f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 12 Students - Hawaiian Native/Pacific Islander - Female
+  TR12M:
+    name: tr12m
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 12 Students - Two or More Races - Male
+  TR12F:
+    name: tr12f
+    type: BIGINT
+    years: 2008-2013
+    label: Grade 12 Students - Two or More Races - Female
+  HPUGM:
+    name: hpugm
+    type: BIGINT
+    years: 2008-2013
+    label: Ungraded Students - Hawaiian Native/Pacific Islander - Male
+  HPUGF:
+    name: hpugf
+    type: BIGINT
+    years: 2008-2013
+    label: Ungraded Students - Hawaiian Native/Pacific Islander - Female
+  TRUGM:
+    name: trugm
+    type: BIGINT
+    years: 2008-2013
+    label: Ungraded Students - Two or More Races - Male
+  TRUGF:
+    name: trugf
+    type: BIGINT
+    years: 2008-2013
+    label: Ungraded Students - Two or More Races - Female
+  PACIFIC:
+    name: pacific
+    type: BIGINT
+    years: 2008-2013
+    label: All Students - Hawaiian Native / Pacific Islander
+  HPALM:
+    name: hpalm
+    type: BIGINT
+    years: 2008-2013
+    label: All Students - Hawaiian Native/Pacific Islander - Male
+  HPALF:
+    name: hpalf
+    type: BIGINT
+    years: 2008-2013
+    label: All Students - Hawaiian Native/Pacific Islander - Female
+  TR:
+    name: tr
+    type: BIGINT
+    years: 2008-2013
+    label: All Students - Two or More Races
+  TRALM:
+    name: tralm
+    type: BIGINT
+    years: 2008-2013
+    label: All Students - Two or More Races - Male
+  TRALF:
+    name: tralf
+    type: BIGINT
+    years: 2008-2013
+    label: All Students - Two or More Races - Female
+  BIES:
+    name: bies
+    type: BIGINT
+    years: 2009-2013
+    label: BIE Indicator Flag
+  SURVYEAR:
+    name: survyear
+    type: BIGINT
+    years: 2010-2013
+    label: Year Corresponding to Survey Record
+  RECONSTY:
+    name: reconsty
+    type: VARCHAR
+    years: 2010-2013
+    label: Reconstituted Year
+  RECONSTF:
+    name: reconstf
+    type: VARCHAR
+    years: 2010-2013
+    label: Reconstituted Flag
+  PKOFFRD:
+    name: pkoffrd
+    type: BIGINT
+    years: 2010-2013
+    label: PK Grade Offered
+  KGOFFRD:
+    name: kgoffrd
+    type: BIGINT
+    years: 2010-2013
+    label: KG Grade Offered
+  G01OFFRD:
+    name: g01offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 01 Offered
+  G02OFFRD:
+    name: g02offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 02 Offered
+  G03OFFRD:
+    name: g03offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 03 Offered
+  G04OFFRD:
+    name: g04offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 04 Offered
+  G05OFFRD:
+    name: g05offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 05 Offered
+  G06OFFRD:
+    name: g06offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 06 Offered
+  G07OFFRD:
+    name: g07offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 07 Offered
+  G08OFFRD:
+    name: g08offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 08 Offered
+  G09OFFRD:
+    name: g09offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 09 Offered
+  G10OFFRD:
+    name: g10offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Offered
+  G11OFFRD:
+    name: g11offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Offered
+  G12OFFRD:
+    name: g12offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Offered
+  UGOFFRD:
+    name: ugoffrd
+    type: BIGINT
+    years: 2010-2013
+    label: UG Grade Offered
+  TITLEISTAT:
+    name: titleistat
+    type: VARCHAR
+    years: 2010-2013
+    label: Title I School Status
+  UNION:
+    name: union
+    type: VARCHAR
+    years: 2011-2013
+    label: Supervisory Union Identification Number
+  CDCODE_112:
+    name: cdcode_112
+    type: VARCHAR
+    years: '2011'
+    label: 112th Congressional District Code
+  SMEMPUP:
+    name: smempup
+    type: BIGINT
+    years: '2011'
+    label: School Membership Edit
+  ISMEMPUP:
+    name: ismempup
+    type: VARCHAR
+    years: '2011'
+    label: School Membership Edit Flag
+  SFTEPUP:
+    name: sftepup
+    type: BIGINT
+    years: '2011'
+    label: School Teacher Edit
+  ISFTEPUP:
+    name: isftepup
+    type: VARCHAR
+    years: '2011'
+    label: School Teacher Edit Flag
+  SFLE:
+    name: sfle
+    type: BIGINT
+    years: '2011'
+    label: School Free Lunch Edit
+  ISFLE:
+    name: isfle
+    type: VARCHAR
+    years: '2011'
+    label: School Free Lunch Edit Flag
+  SPFEMALE:
+    name: spfemale
+    type: BIGINT
+    years: '2011'
+    label: School Gender Edit
+  ISPFEMALE:
+    name: ispfemale
+    type: VARCHAR
+    years: '2011'
+    label: School Gender Edit Flag
+  SPWHITE:
+    name: spwhite
+    type: BIGINT
+    years: '2011'
+    label: School Race Edit
+  ISPWHITE:
+    name: ispwhite
+    type: VARCHAR
+    years: '2011'
+    label: School Race Edit Flag
+  SPELM:
+    name: spelm
+    type: BIGINT
+    years: '2011'
+    label: School Grade Edit
+  ISPELM:
+    name: ispelm
+    type: VARCHAR
+    years: '2011'
+    label: School Grade Edit Flag
+  VIRTUALSTAT:
+    name: virtualstat
+    type: VARCHAR
+    years: '2013'
+    label: Virtual School Status
+  NSLPSTATUS:
+    name: nslpstatus
+    type: VARCHAR
+    years: '2013'
+    label: National School Lunch Program
+  CHARTAUTH1:
+    name: chartauth1
+    type: VARCHAR
+    years: '2013'
+    label: Charter Authorizer Primary
+  CHARTAUTH2:
+    name: chartauth2
+    type: VARCHAR
+    years: '2013'
+    label: Charter Authorizer Additional

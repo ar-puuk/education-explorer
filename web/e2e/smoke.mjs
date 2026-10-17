@@ -166,7 +166,7 @@ const nrows = await page.locator('[role=dialog][aria-label="Table of places on t
 nrows > 50 ? ok('table view lists rows: ' + nrows) : fail('table rows ' + nrows)
 await page.screenshot({ path: `${out}/10-table.png` })
 const dl2 = page.waitForEvent('download')
-await page.getByRole('button', { name: 'Download CSV' }).click()
+await page.locator('[role=dialog][aria-label="Table of places on the map"] button', { hasText: 'Download CSV' }).click()
 ok('table CSV download: ' + (await dl2).suggestedFilename())
 await page.getByRole('button', { name: 'Close table' }).click()
 
@@ -177,14 +177,27 @@ await mp.waitForSelector('#versions table', { timeout: 20000 })
 ok('methodology page loads coverage table')
 await mp.close()
 
+// legacy years (pre-2014) work: map markers and a school panel with its history
+await page.locator('#school-search').fill(SCHOOL)
+await page.locator('#search-results li button', { hasText: 'Public school' }).first().click()
+await page.waitForSelector('aside[aria-label="School details"] svg', { timeout: 60000 })
+await page.locator('input[type=range]').fill('2003')
+await page.waitForTimeout(1200)
+await idle()
+const legacyN = (await rendered()).n
+legacyN > 0 ? ok(`2003-04: ${legacyN} rendered features`) : fail('no features in 2003')
+const yl = await page.locator('aside[aria-label="School details"] .yearline').innerText()
+const yearOk = /2003-04/.test(yl)
+yearOk ? ok('school panel follows the year slider into legacy years') : fail('year line: ' + yl)
+
 // URL state round trip
 const url = page.url()
-url.includes('sel=district%3A') || url.includes('sel=district:') ? ok('URL carries selection: ' + url.slice(-70)) : fail('URL missing selection: ' + url)
+url.includes('sel=public%3A') || url.includes('sel=public:') ? ok('URL carries selection: ' + url.slice(-70)) : fail('URL missing selection: ' + url)
 const p2 = await ctx.newPage()
 p2.on('pageerror', (e) => errors.push('pageerror2: ' + e.message))
 await p2.goto(url, { waitUntil: 'domcontentloaded' })
-await p2.waitForSelector('aside[aria-label="District details"] h2', { timeout: 30000 })
-ok('URL restores the selected district')
+await p2.waitForSelector('aside[aria-label="School details"] h2', { timeout: 30000 })
+ok('URL restores the selected school')
 
 // year slider
 await page.locator('input[type=range]').fill('2018')

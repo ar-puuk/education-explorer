@@ -13,6 +13,7 @@
   import { fmtInt, GRADE_ORDER, gradeLabel, localeLabel, schoolYearLabel } from '../lib/labels'
   import type { DictEntry, PublicSchool, TrendPoint } from '../lib/types'
   import CompareButton from './CompareButton.svelte'
+  import TableExplorer from './TableExplorer.svelte'
   import TrendChart from './TrendChart.svelte'
 
   type Tab = 'total' | 'race' | 'sex' | 'grade'
@@ -280,6 +281,8 @@
       </details>
     {/if}
 
+    <TableExplorer dataset="ccd" unitid={school.id} name={school.name} start="school_directory"
+      only={['school_directory', 'school_characteristics', 'school_location', 'membership', 'lunch', 'staff', 'legacy_school']} />
     <p class="ids">NCES school ID {school.id} · district ID {school.leaid}</p>
   </aside>
 {/if}

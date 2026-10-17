@@ -37,6 +37,17 @@ def cmd_fetch(a, state) -> int:
         from .edge import fetch_edge
 
         fetch_edge(check_only=a.check_only)
+    if a.source in (None, "legacy"):
+        from .ccd_legacy import fetch_legacy
+
+        if a.check_only:
+            from .ccd_legacy import legacy_files
+            from .config import DATA_RAW
+
+            miss = [f for f in legacy_files() if not (DATA_RAW / f.rel).exists()]
+            print(f"CCD legacy (1997-98..2013-14): {len(miss)} files not downloaded yet")
+        else:
+            print(f"CCD legacy files present: {fetch_legacy()}")
     if a.source in (None, "boundaries"):
         from .boundaries import fetch_boundaries
 
@@ -116,6 +127,10 @@ def cmd_build(a, state) -> int:
         from .edge import build_carry_forward
 
         build_carry_forward(state)
+    if a.source in (None, "legacy"):
+        from .ccd_legacy_build import build_legacy
+
+        build_legacy(state)
     if a.source in (None, "ipeds"):
         from .ipeds_build import build_ipeds
 
@@ -207,7 +222,7 @@ def main(argv: list[str] | None = None) -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     f = sub.add_parser("fetch")
-    f.add_argument("--source", choices=["ccd", "edge", "pss", "ipeds", "boundaries"])
+    f.add_argument("--source", choices=["ccd", "legacy", "edge", "pss", "ipeds", "boundaries"])
     f.add_argument("--year", type=int)
     f.add_argument("--check-only", action="store_true")
     f.add_argument("--refresh-catalog", action="store_true")
@@ -240,7 +255,7 @@ def main(argv: list[str] | None = None) -> int:
     dc.set_defaults(fn=lambda a, st: print("dictionary rows:", __import__("nces_pipeline.dictionary", fromlist=["x"]).build_dictionary()) or 0)
 
     bd = sub.add_parser("build")
-    bd.add_argument("--source", choices=["ccd", "edge", "pss", "ipeds"])
+    bd.add_argument("--source", choices=["ccd", "legacy", "edge", "pss", "ipeds"])
     bd.add_argument("--year", type=int)
     bd.add_argument("--scaffold-map", nargs=3, metavar=("SOURCE", "TOPIC", "YEAR"))
     bd.set_defaults(fn=cmd_build)

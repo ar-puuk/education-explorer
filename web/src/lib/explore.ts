@@ -11,7 +11,7 @@ export interface ExploreContext {
 /** Numeric columns that are identifiers/codes, shown without thousands separators. */
 const CODELIKE = /tele|phone|zip|fips|opeid|^ein$|ueis|cbsa|csa|county|^cd$|necta|sector|control|level|code|^year$|id$|^unitid/i
 
-export const HIDDEN_COLUMNS = new Set(['year', 'data_version', 'source_file', 'unitid', 'row_id', 'ppin', 'school_year'])
+export const HIDDEN_COLUMNS = new Set(['year', 'data_version', 'source_file', 'unitid', 'row_id', 'ppin', 'school_year', 'ncessch', 'leaid'])
 
 export const isFlag = (c: string) => c.endsWith('_flag')
 

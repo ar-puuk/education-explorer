@@ -194,7 +194,10 @@ def build_dictionary() -> int:
             doc = _companion_for(lvl, comp, cat)
             if doc:
                 desc = _layout_descriptions(doc)
-        maps = _table_columns("ccd" if t else "edge", table)
+        if table.startswith("legacy_"):
+            maps, desc = _legacy_dictionary(table)
+        else:
+            maps = _table_columns("ccd" if t else "edge", table)
         table_cav = (caveats.get(f"ccd.{table}") or {}).get("caveat", "")
         for name, years in _parquet_presence(table_dir).items():
             label, description, unit = GENERIC.get(name, (humanize(name), "", ""))
@@ -229,6 +232,18 @@ def build_dictionary() -> int:
                   ["dataset", '"table"', '"column"', "code"])
     return write_parquet(con, "SELECT * FROM d", DOCS_DATA / "meta" / "dictionary.parquet",
                          ["dataset", '"table"', '"column"'])
+
+
+def _legacy_dictionary(table: str):
+    """maps/desc for the wide legacy CCD tables: SAS labels stored in the map, no raw-name indirection."""
+    from .ccd_legacy_build import _map_file
+    from .ipeds_build import years_from_str
+
+    d = yaml.safe_load(_map_file(table.split("_", 1)[1]).read_text(encoding="utf-8"))
+    maps = {s["name"]: {"raw": {int(y): s["name"] for y in range(2000, 2001)}, "years": sorted(years_from_str(s["years"])), "type": s["type"]}
+            for s in d["columns"].values()}
+    desc = {s["name"]: (s.get("label", ""), s["type"]) for s in d["columns"].values()}
+    return maps, desc
 
 
 # ------------------------------------------------------------------------------------ IPEDS

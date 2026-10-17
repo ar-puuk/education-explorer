@@ -15,5 +15,6 @@ describe('labels', () => {
     expect(gradeLabel('07')).toBe('7')
     expect(localeLabel('21')).toBe('Suburb, large')
     expect(localeLabel('99')).toBe('99')
+    expect(localeLabel('7')).toContain('Rural')
   })
 })

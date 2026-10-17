@@ -64,6 +64,42 @@
    "url": "https://nces.ed.gov/ccd/data/txt/sdf981e.txt"
   },
   {
+   "bytes": 1828257,
+   "path": "ccd/1997/legacy_district_pau97data.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "e377de46186eee042ece2b2296fab3cfd917b1a9ced6b43a69caadf6f35a6054",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/pau97data.zip"
+  },
+  {
+   "bytes": 2585780,
+   "path": "ccd/1997/legacy_school_psu97ai.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "7cf6f8bb0c7a6a3f0fc010ca9f0657e1a2c524e5a19aa14ed64812804672b5d7",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/psu97ai.zip"
+  },
+  {
+   "bytes": 2668568,
+   "path": "ccd/1997/legacy_school_psu97kn.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "12f096af9ad435f50df296cc86229a8927c9c75892992a3755d3677f1a5c9b59",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/psu97kn.zip"
+  },
+  {
+   "bytes": 2688663,
+   "path": "ccd/1997/legacy_school_psu97ow.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "ff4d9cb6ef6f393f6786e24c8fa8baffb079f2d54ed58f34b505ec9f67b58f3f",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/psu97ow.zip"
+  },
+  {
    "bytes": 2362912,
    "path": "ccd/1998/lea_dropout_dr981b.zip",
    "release": "Dropout and Completion v.1b",
@@ -80,6 +116,42 @@
    "sha256": "5683e1f1bdb6d4c407a0296c254f30446f76c287bc5bca8b7eba292e2ed22a8c",
    "source": "ccd",
    "url": "https://nces.ed.gov/ccd/data/txt/sdf991c.txt"
+  },
+  {
+   "bytes": 2077856,
+   "path": "ccd/1998/legacy_district_ag981c.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "3f576226cda7565fb0b7ba921fa0eb205e945ac9de5feb322a7ca7303e985533",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag981c.zip"
+  },
+  {
+   "bytes": 6459854,
+   "path": "ccd/1998/legacy_school_sc981cai.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "8a0ae4a4fc9ba428187935a9ab9f274d00726fabb2d8895d4971757bc5bbcb9f",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc981cai.zip"
+  },
+  {
+   "bytes": 5669926,
+   "path": "ccd/1998/legacy_school_sc981ckn.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "2f824521bf255eac17222c72b599e67c082076e0342de991ad3eafdab5e78b61",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc981ckn.zip"
+  },
+  {
+   "bytes": 6105503,
+   "path": "ccd/1998/legacy_school_sc981cow.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "ebb60bf7e909a35281d7571b3c015bffd9ca2404316a5b1675e38647b4595eaa",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc981cow.zip"
   },
   {
    "bytes": 2550394,
@@ -100,6 +172,42 @@
    "url": "https://nces.ed.gov/ccd/data/zip/sdf001d.data.zip"
   },
   {
+   "bytes": 2121764,
+   "path": "ccd/1999/legacy_district_ag991b.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "95f12326ede613cefa93eafac2f088b2f7c5e1c33619e82d1c32859a49e488b9",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag991b.zip"
+  },
+  {
+   "bytes": 6852836,
+   "path": "ccd/1999/legacy_school_sc991bai.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "b98d63f2ee94adc7455d817a27a58e2dd11570b8b121dbec33af7268e18b5316",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc991bai.zip"
+  },
+  {
+   "bytes": 6723977,
+   "path": "ccd/1999/legacy_school_sc991bkn.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "7c52a0659090c2729e6e9401f001330b528cc7dee3068ea82f55df6299b00059",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc991bkn.zip"
+  },
+  {
+   "bytes": 6413573,
+   "path": "ccd/1999/legacy_school_sc991bow.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "87a9b0daaf61c9912c28a47ef0d0a68436d74e6a679c5a1fc735c1b3a88b4ce4",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc991bow.zip"
+  },
+  {
    "bytes": 2677273,
    "path": "ccd/2000/lea_dropout_dr001b_sd2.zip",
    "release": "Dropout and Completion v.1b",
@@ -116,6 +224,42 @@
    "sha256": "e4b01de67e3a61fadf8af0ac5e0365509d703ff1e17fc2d95847ef0d945d2ff0",
    "source": "ccd",
    "url": "https://nces.ed.gov/ccd/data/txt/sdf011d.txt"
+  },
+  {
+   "bytes": 2394340,
+   "path": "ccd/2000/legacy_district_ag001a.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "40ed6736fa4e08c95eea267780b04b1c455adcf0350ff7a4e84fcaf0396c4e70",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag001a.zip"
+  },
+  {
+   "bytes": 7336249,
+   "path": "ccd/2000/legacy_school_sc001aai.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "7cda4c0063174f1de50e985fdc85830e85052343db717a2c97073bb1781a3657",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc001aai.zip"
+  },
+  {
+   "bytes": 7070594,
+   "path": "ccd/2000/legacy_school_sc001akn.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "ae3f356cd0b507661eb891cbdb35e71a8566753bbe034d252be02a2309285d7e",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc001akn.zip"
+  },
+  {
+   "bytes": 6828405,
+   "path": "ccd/2000/legacy_school_sc001aow.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "b43b06884c61c91d7399f92f05873b70b9f0ca88bd349fd19cee07d9e556831f",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc001aow.zip"
   },
   {
    "bytes": 3020625,
@@ -136,6 +280,42 @@
    "url": "https://nces.ed.gov/ccd/data/zip/sdf021cdata.zip"
   },
   {
+   "bytes": 2209165,
+   "path": "ccd/2001/legacy_district_ag011a.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "3ecbb8108a2ad4f6eae3795a436dd658738ed881874b028d8b29d7fda663d9a0",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag011a.zip"
+  },
+  {
+   "bytes": 7505317,
+   "path": "ccd/2001/legacy_school_sc011aai.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "41c8ef050b7d224c643829187093f7a0e2c88b3074ee630e319c2eda49aa2f63",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc011aai.zip"
+  },
+  {
+   "bytes": 7131791,
+   "path": "ccd/2001/legacy_school_sc011akn.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "082fab2e17304df452e9b4f5c8237ade99c7ab92a8ceceaaea759c1f330b69a5",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc011akn.zip"
+  },
+  {
+   "bytes": 7128309,
+   "path": "ccd/2001/legacy_school_sc011aow.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "61fccc475b924cd5304aabe53e1969b41b41db461720c330f0f33f871e4b0777",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc011aow.zip"
+  },
+  {
    "bytes": 478920,
    "path": "ccd/2002/lea_dropout_agdr021a_dat.zip",
    "release": "Dropout v.1a",
@@ -152,6 +332,42 @@
    "sha256": "26308cf924d77b2372ad4b08b8a65f76be2bfcef9cea67bafce1165c1a94f427",
    "source": "ccd",
    "url": "https://nces.ed.gov/ccd/data/zip/sdf031b.txt.zip"
+  },
+  {
+   "bytes": 2233638,
+   "path": "ccd/2002/legacy_district_ag021a.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "ff3786edd6243663a42443e69b185faf1b3b1257fd2cac38a47126d1d064c679",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag021a.zip"
+  },
+  {
+   "bytes": 7579996,
+   "path": "ccd/2002/legacy_school_sc021aai_sd2.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "0a98452e446eb384360f6f83af14c098663caa62106868ea26a53d8272cd76c7",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc021aai_sd2.zip"
+  },
+  {
+   "bytes": 7179371,
+   "path": "ccd/2002/legacy_school_sc021akn_sd2.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "fdcd756e46d15142990bff0b622c82f8569898d1ae1d55b41bab26810fbcec6f",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc021akn_sd2.zip"
+  },
+  {
+   "bytes": 7076866,
+   "path": "ccd/2002/legacy_school_sc021aow_sd2.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "b920a408eeedf80f1ef5cf94ac158c0c887d6c7c347fc53c4729ffed855201a6",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc021aow_sd2.zip"
   },
   {
    "bytes": 474028,
@@ -172,6 +388,42 @@
    "url": "https://nces.ed.gov/ccd/data/zip/sdf041b.txt.zip"
   },
   {
+   "bytes": 2031242,
+   "path": "ccd/2003/legacy_district_ag031b_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "8b6259c75abc3ef9404ef3225a14a3f75895cf534757e8f5a5b62934ca8dbf64",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag031b_sas.zip"
+  },
+  {
+   "bytes": 7744117,
+   "path": "ccd/2003/legacy_school_sc031aai_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "4fdebfc0b09e61d5dd0623b3ad0c60e55e767090279a5ccb403e90c799a10de4",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc031aai_sas.zip"
+  },
+  {
+   "bytes": 7181292,
+   "path": "ccd/2003/legacy_school_sc031akn_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "7ba973e3a59d02ff5ad1a157b7b2b881a0360f6264f8e3903f7a15da982811b3",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc031akn_sas.zip"
+  },
+  {
+   "bytes": 7145745,
+   "path": "ccd/2003/legacy_school_sc031aow_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "bf49733af2d0f93a8450dd95923e64bc95a274192a69a36bf28f36df0dc450b3",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc031aow_sas.zip"
+  },
+  {
    "bytes": 474454,
    "path": "ccd/2004/lea_dropout_agdr041a_dat.zip",
    "release": "Dropout v.1a",
@@ -188,6 +440,42 @@
    "sha256": "530697946bf230bde54d29b785f8459478a137595cb582cb9915312259ffd68e",
    "source": "ccd",
    "url": "https://nces.ed.gov/ccd/data/zip/sdf051a.txt.zip"
+  },
+  {
+   "bytes": 1935348,
+   "path": "ccd/2004/legacy_district_ag041c_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "5e6470df722383bb004ef202401b0fbf588decff74ea4ac69e75cec0538b558c",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag041c_sas.zip"
+  },
+  {
+   "bytes": 6981756,
+   "path": "ccd/2004/legacy_school_sc041bai_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "ec4623beef67b997230fbee54b0cfb1f44b91021283e938b9927a1b2cda3cbd3",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc041bai_sas.zip"
+  },
+  {
+   "bytes": 6349031,
+   "path": "ccd/2004/legacy_school_sc041bkn_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "bd0d572b8ab382bdd2c31221453318b01cc66a4a083baac71f529bd598be69ae",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc041bkn_sas.zip"
+  },
+  {
+   "bytes": 6469440,
+   "path": "ccd/2004/legacy_school_sc041bow_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "ec6c93b947a5da9782f3ebc48f519014d8f2eaf791b6a85c0ed3a4f3257c669c",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc041bow_sas.zip"
   },
   {
    "bytes": 987621,
@@ -208,6 +496,42 @@
    "url": "https://nces.ed.gov/ccd/data/zip/sdf061a.txt.zip"
   },
   {
+   "bytes": 1936912,
+   "path": "ccd/2005/legacy_district_ag051a_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "8f3e432c59a81b7f55acfc7b20c2232c4ee9c54bf6ab30f9635c42cc58ea9aed",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag051a_sas.zip"
+  },
+  {
+   "bytes": 7268346,
+   "path": "ccd/2005/legacy_school_sc051aai_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "582911c0ab31b5e35670b9bad613359e59b7431e9b7540d191a26c0abf9bb81f",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc051aai_sas.zip"
+  },
+  {
+   "bytes": 6669399,
+   "path": "ccd/2005/legacy_school_sc051akn_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "bc63c31153b94225d10b3277b3199771297cacff38bbc9217d77c9f6a58b785d",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc051akn_sas.zip"
+  },
+  {
+   "bytes": 6930771,
+   "path": "ccd/2005/legacy_school_sc051aow_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "2c36601a32e86af463f94894fb971e1054ba6e2a69b01b5a875cdd2cbe2b3bee",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc051aow_sas.zip"
+  },
+  {
    "bytes": 182507,
    "path": "ccd/2006/lea_dropout_dr06p1b_txt.zip",
    "release": "Dropout and Completion v.1b",
@@ -224,6 +548,42 @@
    "sha256": "286a87d44913e21dc7d2a3e9a6a9f87b6055377f064d08bd480daebc52ea7efa",
    "source": "ccd",
    "url": "https://nces.ed.gov/ccd/data/zip/sdf071a.txt.zip"
+  },
+  {
+   "bytes": 2155538,
+   "path": "ccd/2006/legacy_district_ag061c_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "b12d5df325300bd5a7e357c7bb654f1200dff3725ae63a74737ca44bc2e3e930",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag061c_sas.zip"
+  },
+  {
+   "bytes": 7623698,
+   "path": "ccd/2006/legacy_school_sc061cai_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "7ae7d260f55cf70c6a6684218372de1c5baa1aa7d4b4c8181948c56d0ba4d7ab",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc061cai_sas.zip"
+  },
+  {
+   "bytes": 7041204,
+   "path": "ccd/2006/legacy_school_sc061ckn_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "52246ca944208e8ad0ca86c442a7c4472cefd43af5f32339aef0fdcf0a65f84d",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc061ckn_sas.zip"
+  },
+  {
+   "bytes": 7280015,
+   "path": "ccd/2006/legacy_school_sc061cow_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "9637f3ad5b0678e08ed4140c66dc0405a36c1dd6ae5cb1b60ab598818a099901",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc061cow_sas.zip"
   },
   {
    "bytes": 184314,
@@ -244,6 +604,24 @@
    "url": "https://nces.ed.gov/ccd/data/zip/sdf081a_txt.zip"
   },
   {
+   "bytes": 2189401,
+   "path": "ccd/2007/legacy_district_ag071b_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "f37257cf94e9e7720297127d2443c8821bc7013581086a3101c89335565ad4ec",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag071b_sas.zip"
+  },
+  {
+   "bytes": 19464793,
+   "path": "ccd/2007/legacy_school_sc071b_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "c851387d52b0bdbd83515b1248d1c371ce0719eef597455eb16d52a94a49ac68",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc071b_sas.zip"
+  },
+  {
    "bytes": 181055,
    "path": "ccd/2008/lea_dropout_dr08p1a_txt.zip",
    "release": "Dropout and Completion v.1a",
@@ -260,6 +638,24 @@
    "sha256": "9585eb100858108735b7665c2f53f0d4e93a3d2fa85d91cbbe8dd50558c63a3a",
    "source": "ccd",
    "url": "https://nces.ed.gov/ccd/data/zip/SDF091a_txt.zip"
+  },
+  {
+   "bytes": 2103135,
+   "path": "ccd/2008/legacy_district_ag081a_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "563183563ee3c01f13d4651e3ccebfe8bfb63e6b77d3c0b82d46dbcb1a3b7847",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag081a_sas.zip"
+  },
+  {
+   "bytes": 21172054,
+   "path": "ccd/2008/legacy_school_sc081b_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "8208ea3cd9cecf196b3ac8d0e155225e0d4e29616144e05d94d253fab58249ae",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc081b_sas.zip"
   },
   {
    "bytes": 156832,
@@ -280,6 +676,24 @@
    "url": "https://nces.ed.gov/ccd/data/zip/SDF101a_txt.zip"
   },
   {
+   "bytes": 2390279,
+   "path": "ccd/2009/legacy_district_ag092a_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "e7c3051671357128bf4a6e5b90f4b6afb3230089aa37738c42ffceb8b8399d01",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag092a_sas.zip"
+  },
+  {
+   "bytes": 23410575,
+   "path": "ccd/2009/legacy_school_sc092a_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "da44b87973a55cad5ed0541907c15cdd2eccfb07971d46c47bb6e21f23ec850c",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc092a_sas.zip"
+  },
+  {
    "bytes": 3525339,
    "path": "ccd/2010/lea_finance_f33_sdf11_1a_txt.zip",
    "release": "(v.1a)",
@@ -287,6 +701,24 @@
    "sha256": "451993ba847b753157e62da47a4891f6e062491629ec48333b0cb2f4a1e9749a",
    "source": "ccd",
    "url": "https://nces.ed.gov/ccd/data/zip/sdf11_1a_txt.zip"
+  },
+  {
+   "bytes": 6006333,
+   "path": "ccd/2010/legacy_district_ag102a_sas7bdat.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "65fb8994901a2d424bff4c2757f96cafeeb2d46b668968698eb4c7d11c6e5280",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag102a_sas7bdat.zip"
+  },
+  {
+   "bytes": 21850298,
+   "path": "ccd/2010/legacy_school_sc102a_sas7bdat.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "1e1784dfd3d8869c0af8dee45dcdbfb6d953a1dd5123104ff02a38d5f4c12934",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc102a_sas7bdat.zip"
   },
   {
    "bytes": 3079909,
@@ -298,6 +730,24 @@
    "url": "https://nces.ed.gov/ccd/data/zip/sdf121a.zip"
   },
   {
+   "bytes": 6758720,
+   "path": "ccd/2011/legacy_district_ag111a_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "cbbbe8185f8ec6d1e5221d2e435bad96295a8b021808781a9a19781c5c5b1cb9",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag111a_sas.zip"
+  },
+  {
+   "bytes": 22031889,
+   "path": "ccd/2011/legacy_school_sc111a_supp_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "c2b3a2bb6b7fee71d9877837e0497fcbab190fe8455445ca77b706e19403f8ba",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc111a_supp_sas.zip"
+  },
+  {
    "bytes": 3503182,
    "path": "ccd/2012/lea_finance_f33_sdf13_1a.zip",
    "release": "(v.1a)",
@@ -307,6 +757,24 @@
    "url": "https://nces.ed.gov/ccd/data/zip/sdf13_1a.zip"
   },
   {
+   "bytes": 5763256,
+   "path": "ccd/2012/legacy_district_ag121a_supp_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "9ee924ccc8673480f646d0f4af9ed11993c49fa13d60f947f126303a0dce4265",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag121a_supp_sas.zip"
+  },
+  {
+   "bytes": 20889536,
+   "path": "ccd/2012/legacy_school_sc122a_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "593306bd775c78f169c4961fb45d00ba5cc7efc0f8ff9e63d32fcde70d8d8c7e",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc122a_sas.zip"
+  },
+  {
    "bytes": 3070640,
    "path": "ccd/2013/lea_finance_f33_sdf14_1a_flat.zip",
    "release": "(v.1a)",
@@ -314,6 +782,24 @@
    "sha256": "06a562eed8a3b37d0873ff5fca48e512c8ce60a1000bf3de0f1eab779413fdf5",
    "source": "ccd",
    "url": "https://nces.ed.gov/ccd/data/zip/sdf14_1a_flat.zip"
+  },
+  {
+   "bytes": 5825266,
+   "path": "ccd/2013/legacy_district_ag131a_supp_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "c2314f70906b1448362ed2b56619a77421cd8ed5cff89ec9211183beabce2bc2",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/ag131a_supp_sas.zip"
+  },
+  {
+   "bytes": 22364843,
+   "path": "ccd/2013/legacy_school_sc132a_sas.zip",
+   "release": "legacy",
+   "retrieved": "2026-10-16",
+   "sha256": "c0cc5f8d5e318a0e804380918a059c4007fc5978c5add54ad3772e703d20b02c",
+   "source": "ccd",
+   "url": "https://nces.ed.gov/ccd/data/zip/sc132a_sas.zip"
   },
   {
    "bytes": 947876,

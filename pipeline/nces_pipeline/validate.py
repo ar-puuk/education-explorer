@@ -18,6 +18,7 @@ KEYS = {
     "staff": ["ncessch", "total_indicator"],
     "district_staff": ["leaid", "staff_category", "total_indicator"],
     "district_idea": ["leaid"], "district_el": ["leaid"],
+    "legacy_school": ["ncessch"], "legacy_district": ["leaid"],
     "district_finance": ["leaid"],
     "district_graduates": ["leaid", "credential", "race", "sex", "total_indicator"],
     "district_dropout": ["leaid", "grade", "race", "sex", "total_indicator"],

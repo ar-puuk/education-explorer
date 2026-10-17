@@ -1,0 +1,2217 @@
+source: ccd_legacy
+level: district
+key:
+- leaid
+columns:
+  FIPST:
+    name: fipst
+    type: VARCHAR
+    years: 1998-2013
+    label: ANSI State Code
+  LEAID:
+    name: leaid
+    type: VARCHAR
+    years: 1998-2013
+    label: NCES Agency Identification Number
+  STID:
+    name: stid
+    type: VARCHAR
+    years: 1998-2013
+    label: State Local Education Number
+  NAME:
+    name: name
+    type: VARCHAR
+    years: 1998-2013
+    label: Education Agency Name
+  PHONE:
+    name: phone
+    type: VARCHAR
+    years: 1998-2013
+    label: Telephone Number
+  MSTREE:
+    name: mstree
+    type: VARCHAR
+    years: 1998-2013
+    label: Mailing Address - first line
+  MCITY:
+    name: mcity
+    type: VARCHAR
+    years: 1998-2013
+    label: Mailing City
+  MSTATE:
+    name: mstate
+    type: VARCHAR
+    years: 1998-2013
+    label: Mailing State
+  MZIP:
+    name: mzip
+    type: VARCHAR
+    years: 1998-2013
+    label: Mailing Five Digit Zip Code
+  MZIP4:
+    name: mzip4
+    type: VARCHAR
+    years: 1998-2013
+    label: Mailing Secondary Zip Code
+  LSTREE:
+    name: lstree
+    type: VARCHAR
+    years: 1998-2013
+    label: Location Address
+  LCITY:
+    name: lcity
+    type: VARCHAR
+    years: 1998-2013
+    label: Location City
+  LSTATE:
+    name: lstate
+    type: VARCHAR
+    years: 1998-2013
+    label: Location State
+  LZIP:
+    name: lzip
+    type: VARCHAR
+    years: 1998-2013
+    label: Location Five Digit Zip Code
+  LZIP4:
+    name: lzip4
+    type: VARCHAR
+    years: 1998-2013
+    label: Location Secondary Zip Code
+  TYPE:
+    name: type
+    type: VARCHAR
+    years: 1998-2013
+    label: Education Agency Type Code
+  UNION:
+    name: union
+    type: VARCHAR
+    years: 1998-2013
+    label: Supervisory Union Identification Number
+  CONUM:
+    name: conum
+    type: VARCHAR
+    years: 1998-2013
+    label: ANSI County Code
+  CONAME:
+    name: coname
+    type: VARCHAR
+    years: 1998-2013
+    label: County Name
+  CMSA:
+    name: cmsa
+    type: BIGINT
+    years: 1998-2001
+    label: CMSA/PMSA/MSA Code
+  MSC:
+    name: msc
+    type: VARCHAR
+    years: 1998-2006
+    label: NCES Classification of Agency's Service to CBSA
+  BOUND:
+    name: bound
+    type: BIGINT
+    years: 1998-2013
+    label: Operational Status Code / Boundary Change Indicator
+  GSLO:
+    name: gslo
+    type: VARCHAR
+    years: 1998-2013
+    label: Grades Offered - Lowest
+  GSHI:
+    name: gshi
+    type: VARCHAR
+    years: 1998-2013
+    label: Grades Offered - Highest
+  SCH:
+    name: sch
+    type: BIGINT
+    years: 1998-2013
+    label: Aggregate Number of Schools Associated with Agency
+  TEACH:
+    name: teach
+    type: DOUBLE
+    years: 1998-2007
+    label: Aggregate FTE Classroom Teachers Associated with Agency
+  UG:
+    name: ug
+    type: BIGINT
+    years: 1998-2013
+    label: Ungraded Students - Total
+  PK12:
+    name: pk12
+    type: BIGINT
+    years: 1998-2009
+    label: PK - 12 Students
+  MEMBER:
+    name: member
+    type: BIGINT
+    years: 1998-2013
+    label: All Students - Total
+  MIGRNT:
+    name: migrnt
+    type: BIGINT
+    years: 1998-2007
+    label: Migrant Students Served in a Summer Program
+  SPECED:
+    name: speced
+    type: BIGINT
+    years: 1998-2013
+    label: Special Education - Individualized Education Program (IEP) Students
+  LEP:
+    name: lep
+    type: BIGINT
+    years: 1998-2001
+    label: Limited-English-Proficient Students
+  PKTCH:
+    name: pktch
+    type: DOUBLE
+    years: 1998-2013
+    label: Teachers - Prekindergarten
+  KGTCH:
+    name: kgtch
+    type: DOUBLE
+    years: 1998-2013
+    label: Teachers - Kindergarten
+  ELMTCH:
+    name: elmtch
+    type: DOUBLE
+    years: 1998-2013
+    label: Teachers - Elementary
+  SECTCH:
+    name: sectch
+    type: DOUBLE
+    years: 1998-2013
+    label: Teachers - Secondary
+  UGTCH:
+    name: ugtch
+    type: DOUBLE
+    years: 1998-2013
+    label: Teachers - Ungraded
+  TOTTCH:
+    name: tottch
+    type: DOUBLE
+    years: 1998-2013
+    label: Teachers - Total
+  AIDES:
+    name: aides
+    type: DOUBLE
+    years: 1998-2013
+    label: Instructional Aides / Paraprofessionals
+  CORSUP:
+    name: corsup
+    type: DOUBLE
+    years: 1998-2013
+    label: Instructional Coordinators and Supervisors
+  ELMGUI:
+    name: elmgui
+    type: DOUBLE
+    years: 1998-2013
+    label: Guidance  Counselors - Elementary
+  SECGUI:
+    name: secgui
+    type: DOUBLE
+    years: 1998-2013
+    label: Guidance  Counselors - Secondary
+  TOTGUI:
+    name: totgui
+    type: DOUBLE
+    years: 1998-2013
+    label: Guidance  Counselors - Total
+  LIBSPE:
+    name: libspe
+    type: DOUBLE
+    years: 1998-2013
+    label: Librarians / Media Specialists
+  LIBSUP:
+    name: libsup
+    type: DOUBLE
+    years: 1998-2013
+    label: Librarians / Media Support Staff
+  LEAADM:
+    name: leaadm
+    type: DOUBLE
+    years: 1998-2013
+    label: LEA Administrators
+  LEASUP:
+    name: leasup
+    type: DOUBLE
+    years: 1998-2013
+    label: LEA Administrative Support Staff
+  SCHADM:
+    name: schadm
+    type: DOUBLE
+    years: 1998-2013
+    label: School Administrators
+  SCHSUP:
+    name: schsup
+    type: DOUBLE
+    years: 1998-2013
+    label: School Administrative Support Staff
+  STUSUP:
+    name: stusup
+    type: DOUBLE
+    years: 1998-2013
+    label: Student Support Services Staff
+  OTHSUP:
+    name: othsup
+    type: DOUBLE
+    years: 1998-2013
+    label: All Other Support Staff
+  TOTDPL:
+    name: totdpl
+    type: BIGINT
+    years: 1998-2005
+    label: Diploma Recip (Total)
+  AMDPLM:
+    name: amdplm
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Amer Ind/AK Nat-Male)
+  AMDPLF:
+    name: amdplf
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Amer Ind/AK Nat-Female)
+  AMDPLU:
+    name: amdplu
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Amer Ind/AK Nat-Unknown)
+  ASDPLM:
+    name: asdplm
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Asian/Pac Isl-Male)
+  ASDPLF:
+    name: asdplf
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Asian/Pac Isl-Female)
+  ASDPLU:
+    name: asdplu
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Asian/Pac Isl-Unknown)
+  HIDPLM:
+    name: hidplm
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Hispanic-Male)
+  HIDPLF:
+    name: hidplf
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Hispanic-Female)
+  HIDPLU:
+    name: hidplu
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Hispanic-Unknown)
+  BLDPLM:
+    name: bldplm
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Black-Male)
+  BLDPLF:
+    name: bldplf
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Black-Female)
+  BLDPLU:
+    name: bldplu
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (Black-Unknown)
+  WHDPLM:
+    name: whdplm
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (White-Male)
+  WHDPLF:
+    name: whdplf
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (White-Female)
+  WHDPLU:
+    name: whdplu
+    type: BIGINT
+    years: 1998-2003
+    label: Diploma Recip (White-Unknown)
+  TOTOHC:
+    name: totohc
+    type: BIGINT
+    years: 1998-2005
+    label: Other HS Completers (Total)
+  AMOHCM:
+    name: amohcm
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Amer Ind/AK Nat-Male)
+  AMOHCF:
+    name: amohcf
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Amer Ind/AK Nat-Female
+  AMOHCU:
+    name: amohcu
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Amer Ind/AK Nat-Unknow
+  ASOHCM:
+    name: asohcm
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Asian/Pac Isl-Male)
+  ASOHCF:
+    name: asohcf
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Asian/Pac Isl-Female)
+  ASOHCU:
+    name: asohcu
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Asian/Pac Isl-Unknown)
+  HIOHCM:
+    name: hiohcm
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Hispanic-Male)
+  HIOHCF:
+    name: hiohcf
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Hispanic-Female)
+  HIOHCU:
+    name: hiohcu
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Hispanic-Unknown)
+  BLOHCM:
+    name: blohcm
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Black-Male)
+  BLOHCF:
+    name: blohcf
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Black-Female)
+  BLOHCU:
+    name: blohcu
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (Black-Unknown)
+  WHOHCM:
+    name: whohcm
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (White-Male)
+  WHOHCF:
+    name: whohcf
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (White-Female)
+  WHOHCU:
+    name: whohcu
+    type: BIGINT
+    years: 1998-2003
+    label: Other HS Complet (White-Unknown)
+  ISCH:
+    name: isch
+    type: VARCHAR
+    years: 1998-2006
+    label: Aggregate Number of Schools Associated with Agency - flag
+  ITEACH:
+    name: iteach
+    type: VARCHAR
+    years: 1998-2006
+    label: Aggregate FTE Classroom Teachers Associated with Agency - flag
+  IUG:
+    name: iug
+    type: VARCHAR
+    years: 1998-2006
+    label: Ungraded Students - flag
+  IPK12:
+    name: ipk12
+    type: VARCHAR
+    years: 1998-2006
+    label: PK - 12 Students - flag
+  IMEMB:
+    name: imemb
+    type: VARCHAR
+    years: 1998-2006
+    label: Calculated Total Student Membership of the LEA - flag
+  IMIGRN:
+    name: imigrn
+    type: VARCHAR
+    years: 1998-2006
+    label: Migrant Students Served in a Summer Program - flag
+  ISPEC:
+    name: ispec
+    type: VARCHAR
+    years: 1998-2006
+    label: Special Education - Individualized Education Program (IEP) Students - flag
+  ILEP:
+    name: ilep
+    type: VARCHAR
+    years: 1998-2001
+    label: Limited-Eng-Proficient Students Adj Flag
+  IPKTCH:
+    name: ipktch
+    type: VARCHAR
+    years: 1998-2006
+    label: Teachers - Prekindergarten - flag
+  IKGTCH:
+    name: ikgtch
+    type: VARCHAR
+    years: 1998-2006
+    label: Teachers - Kindergarten - flag
+  IELTCH:
+    name: ieltch
+    type: VARCHAR
+    years: 1998-2006
+    label: Teachers - Elementary - flag
+  ISETCH:
+    name: isetch
+    type: VARCHAR
+    years: 1998-2006
+    label: Teachers - Secondary - flag
+  IUGTCH:
+    name: iugtch
+    type: VARCHAR
+    years: 1998-2006
+    label: Teachers - Ungraded - flag
+  ITOTCH:
+    name: itotch
+    type: VARCHAR
+    years: 1998-2006
+    label: Teachers - Total - flag
+  IAIDES:
+    name: iaides
+    type: VARCHAR
+    years: 1998-2006
+    label: Instructional Aides / Paraprofessionals - flag
+  ICOSUP:
+    name: icosup
+    type: VARCHAR
+    years: 1998-2006
+    label: Instructional Coordinators and Supervisors - flag
+  IELGUI:
+    name: ielgui
+    type: VARCHAR
+    years: 1998-2006
+    label: Guidance  Counselors - Elementary - flag
+  ISEGUI:
+    name: isegui
+    type: VARCHAR
+    years: 1998-2006
+    label: Guidance  Counselors - Secondary - flag
+  ITOGUI:
+    name: itogui
+    type: VARCHAR
+    years: 1998-2006
+    label: Guidance  Counselors - Total - flag
+  ILISPE:
+    name: ilispe
+    type: VARCHAR
+    years: 1998-2006
+    label: Librarians / Media Specialists - flag
+  ILISUP:
+    name: ilisup
+    type: VARCHAR
+    years: 1998-2006
+    label: Librarians / Media Support Staff - flag
+  ILEADM:
+    name: ileadm
+    type: VARCHAR
+    years: 1998-2006
+    label: LEA Administrators - flag
+  ILESUP:
+    name: ilesup
+    type: VARCHAR
+    years: 1998-2006
+    label: LEA Administrative Support Staff - flag
+  ISCADM:
+    name: iscadm
+    type: VARCHAR
+    years: 1998-2006
+    label: School Administrators - flag
+  ISCSUP:
+    name: iscsup
+    type: VARCHAR
+    years: 1998-2006
+    label: School Administrative Support Staff - flag
+  ISTSUP:
+    name: istsup
+    type: VARCHAR
+    years: 1998-2006
+    label: Student Support Services Staff - flag
+  IOTSUP:
+    name: iotsup
+    type: VARCHAR
+    years: 1998-2006
+    label: All Other Support Staff - flag
+  ITDPL:
+    name: itdpl
+    type: VARCHAR
+    years: 1998-2005
+    label: Dipl Recip (Total) Adj Flag
+  IAMDPM:
+    name: iamdpm
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Amer Ind/AK Nat-Male Adj Flag
+  IAMDPF:
+    name: iamdpf
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Amer Ind/AK Nat-Fem Adj Flag
+  IAMDPU:
+    name: iamdpu
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Amer Ind/AK Nat-Unk Adj Flag
+  IASDPM:
+    name: iasdpm
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Asian/Pac Isl-Male Adj Flag
+  IASDPF:
+    name: iasdpf
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Asian/Pac Isl-Fem Adj Flag
+  IASDPU:
+    name: iasdpu
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Asian/Pac Isl-Unk Adj Flag
+  IHIDPM:
+    name: ihidpm
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Hispanic-Male Adj Flag
+  IHIDPF:
+    name: ihidpf
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Hispanic-Female Adj Flag
+  IHIDPU:
+    name: ihidpu
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Hispanic-Unknown Adj Flag
+  IBLDPM:
+    name: ibldpm
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Black-Male Adj Flag
+  IBLDPF:
+    name: ibldpf
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Black-Female Adj Flag
+  IBLDPU:
+    name: ibldpu
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip Black-Unknown Adj Flag
+  IWHDPM:
+    name: iwhdpm
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip White-Male Adj Flag
+  IWHDPF:
+    name: iwhdpf
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip White-Female Adj Flag
+  IWHDPU:
+    name: iwhdpu
+    type: VARCHAR
+    years: 1998-2003
+    label: Dipl Recip White-Unknown Adj Flag
+  ITOHC:
+    name: itohc
+    type: VARCHAR
+    years: 1998-2005
+    label: Oth HS Completers (Total) Adj Flag
+  IAMOCM:
+    name: iamocm
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Am Ind/AK Nat-Male Adj Flag
+  IAMOCF:
+    name: iamocf
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Am Ind/AK Nat-Fem Adj Flag
+  IAMOCU:
+    name: iamocu
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Am Ind/AK Nat-Unk Adj Flag
+  IASOCM:
+    name: iasocm
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Asian/Pac Isl-Male Adj Flag
+  IASOCF:
+    name: iasocf
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Asian/Pac Isl-Fem Adj Flag
+  IASOCU:
+    name: iasocu
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Asian/Pac Isl-Unk Adj Flag
+  IHIOCM:
+    name: ihiocm
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Hispanic-Male Adj Flag
+  IHIOCF:
+    name: ihiocf
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Hispanic-Female Adj Flag
+  IHIOCU:
+    name: ihiocu
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Hispanic-Unknown Adj Flag
+  IBLOCM:
+    name: iblocm
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Black-Male Adj Flag
+  IBLOCF:
+    name: iblocf
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Black-Female Adj Flag
+  IBLOCU:
+    name: iblocu
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl Black-Unknown Adj Flag
+  IWHOCM:
+    name: iwhocm
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl White-Male Adj Flag
+  IWHOCF:
+    name: iwhocf
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl White-Female Adj Flag
+  IWHOCU:
+    name: iwhocu
+    type: VARCHAR
+    years: 1998-2003
+    label: Oth HS Compl White-Unknown Adj Flag
+  LOCALE:
+    name: locale
+    type: VARCHAR
+    years: 2000-2005
+    label: Agency Locale Code
+  IGSLO:
+    name: igslo
+    type: VARCHAR
+    years: 2001-2006
+    label: Grades Offered - Lowest - flag
+  IGSHI:
+    name: igshi
+    type: VARCHAR
+    years: 2001-2006
+    label: Grades Offered - Highest - flag
+  CSA:
+    name: csa
+    type: VARCHAR
+    years: 2002-2013
+    label: Combined Statistical Area
+  CBSA:
+    name: cbsa
+    type: VARCHAR
+    years: 2002-2013
+    label: Core Based Statistical Area
+  METMIC:
+    name: metmic
+    type: BIGINT
+    years: 2002-2013
+    label: Metropolitan or Micropolitan Area
+  AGCHRT:
+    name: agchrt
+    type: VARCHAR
+    years: 2002-2007,2009-2013
+    label: Agency Charter
+  ELL:
+    name: ell
+    type: BIGINT
+    years: 2002-2013
+    label: English Language Learner Students
+  IELL:
+    name: iell
+    type: VARCHAR
+    years: 2002-2006
+    label: English Language Learner Students - flag
+  ULOCAL:
+    name: ulocal
+    type: VARCHAR
+    years: 2006-2013
+    label: NCES urban-centric locale code
+  CDCODE:
+    name: cdcode
+    type: VARCHAR
+    years: 2006-2013
+    label: Congressional District Code
+  LATCOD:
+    name: latcod
+    type: DOUBLE
+    years: 2006-2013
+    signed: true
+    label: Latitude
+  LONCOD:
+    name: loncod
+    type: DOUBLE
+    years: 2006-2013
+    signed: true
+    label: Longitude
+  OTHGUI:
+    name: othgui
+    type: BIGINT
+    years: 2008-2013
+    label: Guidance  Counselors - Other
+  BIEA:
+    name: biea
+    type: BIGINT
+    years: 2009-2013
+    label: BIE Indicator Flag
+  RACECAT:
+    name: racecat
+    type: BIGINT
+    years: 2009-2012
+    label: Ethnic Categories Indicator
+  SURVYEAR:
+    name: survyear
+    type: BIGINT
+    years: 2010-2013
+    label: Year Corresponding to Survey Record
+  PKOFFRD:
+    name: pkoffrd
+    type: BIGINT
+    years: 2010-2013
+    label: PK Grade Offered
+  KGOFFRD:
+    name: kgoffrd
+    type: BIGINT
+    years: 2010-2013
+    label: KG Grade Offered
+  G01OFFRD:
+    name: g01offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 01 Offered
+  G02OFFRD:
+    name: g02offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 02 Offered
+  G03OFFRD:
+    name: g03offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 03 Offered
+  G04OFFRD:
+    name: g04offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 04 Offered
+  G05OFFRD:
+    name: g05offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 05 Offered
+  G06OFFRD:
+    name: g06offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 06 Offered
+  G07OFFRD:
+    name: g07offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 07 Offered
+  G08OFFRD:
+    name: g08offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 08 Offered
+  G09OFFRD:
+    name: g09offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 09 Offered
+  G10OFFRD:
+    name: g10offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Offered
+  G11OFFRD:
+    name: g11offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Offered
+  G12OFFRD:
+    name: g12offrd
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Offered
+  UGOFFRD:
+    name: ugoffrd
+    type: BIGINT
+    years: 2010-2013
+    label: UG Grade Offered
+  PK:
+    name: pk
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Total
+  AMPKM:
+    name: ampkm
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - American Indian/Alaska Native - Male
+  AMPKF:
+    name: ampkf
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - American Indian/Alaska Native - Female
+  ASPKM:
+    name: aspkm
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Asian - Male
+  ASPKF:
+    name: aspkf
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Asian - Female
+  HIPKM:
+    name: hipkm
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Hispanic - Male
+  HIPKF:
+    name: hipkf
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Hispanic - Female
+  BLPKM:
+    name: blpkm
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Black - Male
+  BLPKF:
+    name: blpkf
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Black - Female
+  WHPKM:
+    name: whpkm
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - White - Male
+  WHPKF:
+    name: whpkf
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - White - Female
+  HPPKM:
+    name: hppkm
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Hawaiian Native/Pacific Islander - Male
+  HPPKF:
+    name: hppkf
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Hawaiian Native/Pacific Islander - Female
+  TRPKM:
+    name: trpkm
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Two or More Races - Male
+  TRPKF:
+    name: trpkf
+    type: BIGINT
+    years: 2010-2013
+    label: PK Students - Two or More Races - Female
+  KG:
+    name: kg
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Total
+  AMKGM:
+    name: amkgm
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - American Indian/Alaska Native - Male
+  AMKGF:
+    name: amkgf
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - American Indian/Alaska Native - Female
+  ASKGM:
+    name: askgm
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Asian - Male
+  ASKGF:
+    name: askgf
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Asian - Female
+  HIKGM:
+    name: hikgm
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Hispanic - Male
+  HIKGF:
+    name: hikgf
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Hispanic - Female
+  BLKGM:
+    name: blkgm
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Black - Male
+  BLKGF:
+    name: blkgf
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Black - Female
+  WHKGM:
+    name: whkgm
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - White - Male
+  WHKGF:
+    name: whkgf
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - White - Female
+  HPKGM:
+    name: hpkgm
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Hawaiian Native/Pacific Islander - Male
+  HPKGF:
+    name: hpkgf
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Hawaiian Native/Pacific Islander - Female
+  TRKGM:
+    name: trkgm
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Two or More Races - Male
+  TRKGF:
+    name: trkgf
+    type: BIGINT
+    years: 2010-2013
+    label: KG Students - Two or More Races - Female
+  G01:
+    name: g01
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Total
+  AM01M:
+    name: am01m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - American Indian/Alaska Native - Male
+  AM01F:
+    name: am01f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - American Indian/Alaska Native - Female
+  AS01M:
+    name: as01m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Asian - Male
+  AS01F:
+    name: as01f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Asian - Female
+  HI01M:
+    name: hi01m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Hispanic - Male
+  HI01F:
+    name: hi01f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Hispanic - Female
+  BL01M:
+    name: bl01m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Black - Male
+  BL01F:
+    name: bl01f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Black - Female
+  WH01M:
+    name: wh01m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - White - Male
+  WH01F:
+    name: wh01f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - White - Female
+  HP01M:
+    name: hp01m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Hawaiian Native/Pacific Islander - Male
+  HP01F:
+    name: hp01f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Hawaiian Native/Pacific Islander - Female
+  TR01M:
+    name: tr01m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Two or More Races - Male
+  TR01F:
+    name: tr01f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 1 Students - Two or More Races - Female
+  G02:
+    name: g02
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Total
+  AM02M:
+    name: am02m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - American Indian/Alaska Native - Male
+  AM02F:
+    name: am02f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - American Indian/Alaska Native - Female
+  AS02M:
+    name: as02m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Asian - Male
+  AS02F:
+    name: as02f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Asian - Female
+  HI02M:
+    name: hi02m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Hispanic - Male
+  HI02F:
+    name: hi02f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Hispanic - Female
+  BL02M:
+    name: bl02m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Black - Male
+  BL02F:
+    name: bl02f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Black - Female
+  WH02M:
+    name: wh02m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - White - Male
+  WH02F:
+    name: wh02f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - White - Female
+  HP02M:
+    name: hp02m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Hawaiian Native/Pacific Islander - Male
+  HP02F:
+    name: hp02f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Hawaiian Native/Pacific Islander - Female
+  TR02M:
+    name: tr02m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Two or More Races - Male
+  TR02F:
+    name: tr02f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 2 Students - Two or More Races - Female
+  G03:
+    name: g03
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Total
+  AM03M:
+    name: am03m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - American Indian/Alaska Native - Male
+  AM03F:
+    name: am03f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - American Indian/Alaska Native - Female
+  AS03M:
+    name: as03m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Asian - Male
+  AS03F:
+    name: as03f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Asian - Female
+  HI03M:
+    name: hi03m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Hispanic - Male
+  HI03F:
+    name: hi03f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Hispanic - Female
+  BL03M:
+    name: bl03m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Black - Male
+  BL03F:
+    name: bl03f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Black - Female
+  WH03M:
+    name: wh03m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - White - Male
+  WH03F:
+    name: wh03f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - White - Female
+  HP03M:
+    name: hp03m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Hawaiian Native/Pacific Islander - Male
+  HP03F:
+    name: hp03f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Hawaiian Native/Pacific Islander - Female
+  TR03M:
+    name: tr03m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Two or More Races - Male
+  TR03F:
+    name: tr03f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 3 Students - Two or More Races - Female
+  G04:
+    name: g04
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Total
+  AM04M:
+    name: am04m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - American Indian/Alaska Native - Male
+  AM04F:
+    name: am04f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - American Indian/Alaska Native - Female
+  AS04M:
+    name: as04m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Asian - Male
+  AS04F:
+    name: as04f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Asian - Female
+  HI04M:
+    name: hi04m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Hispanic - Male
+  HI04F:
+    name: hi04f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Hispanic - Female
+  BL04M:
+    name: bl04m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Black - Male
+  BL04F:
+    name: bl04f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Black - Female
+  WH04M:
+    name: wh04m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - White - Male
+  WH04F:
+    name: wh04f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - White - Female
+  HP04M:
+    name: hp04m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Hawaiian Native/Pacific Islander - Male
+  HP04F:
+    name: hp04f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Hawaiian Native/Pacific Islander - Female
+  TR04M:
+    name: tr04m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Two or More Races - Male
+  TR04F:
+    name: tr04f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 4 Students - Two or More Races - Female
+  G05:
+    name: g05
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Total
+  AM05M:
+    name: am05m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - American Indian/Alaska Native - Male
+  AM05F:
+    name: am05f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - American Indian/Alaska Native - Female
+  AS05M:
+    name: as05m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Asian - Male
+  AS05F:
+    name: as05f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Asian - Female
+  HI05M:
+    name: hi05m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Hispanic - Male
+  HI05F:
+    name: hi05f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Hispanic - Female
+  BL05M:
+    name: bl05m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Black - Male
+  BL05F:
+    name: bl05f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Black - Female
+  WH05M:
+    name: wh05m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - White - Male
+  WH05F:
+    name: wh05f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - White - Female
+  HP05M:
+    name: hp05m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Hawaiian Native/Pacific Islander - Male
+  HP05F:
+    name: hp05f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Hawaiian Native/Pacific Islander - Female
+  TR05M:
+    name: tr05m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Two or More Races - Male
+  TR05F:
+    name: tr05f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 5 Students - Two or More Races - Female
+  G06:
+    name: g06
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Total
+  AM06M:
+    name: am06m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - American Indian/Alaska Native - Male
+  AM06F:
+    name: am06f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - American Indian/Alaska Native - Female
+  AS06M:
+    name: as06m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Asian - Male
+  AS06F:
+    name: as06f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Asian - Female
+  HI06M:
+    name: hi06m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Hispanic - Male
+  HI06F:
+    name: hi06f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Hispanic - Female
+  BL06M:
+    name: bl06m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Black - Male
+  BL06F:
+    name: bl06f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Black - Female
+  WH06M:
+    name: wh06m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - White - Male
+  WH06F:
+    name: wh06f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - White - Female
+  HP06M:
+    name: hp06m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Hawaiian Native/Pacific Islander - Male
+  HP06F:
+    name: hp06f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Hawaiian Native/Pacific Islander - Female
+  TR06M:
+    name: tr06m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Two or More Races - Male
+  TR06F:
+    name: tr06f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 6 Students - Two or More Races - Female
+  G07:
+    name: g07
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Total
+  AM07M:
+    name: am07m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - American Indian/Alaska Native - Male
+  AM07F:
+    name: am07f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - American Indian/Alaska Native - Female
+  AS07M:
+    name: as07m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Asian - Male
+  AS07F:
+    name: as07f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Asian - Female
+  HI07M:
+    name: hi07m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Hispanic - Male
+  HI07F:
+    name: hi07f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Hispanic - Female
+  BL07M:
+    name: bl07m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Black - Male
+  BL07F:
+    name: bl07f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Black - Female
+  WH07M:
+    name: wh07m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - White - Male
+  WH07F:
+    name: wh07f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - White - Female
+  HP07M:
+    name: hp07m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Hawaiian Native/Pacific Islander - Male
+  HP07F:
+    name: hp07f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Hawaiian Native/Pacific Islander - Female
+  TR07M:
+    name: tr07m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Two or More Races - Male
+  TR07F:
+    name: tr07f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 7 Students - Two or More Races - Female
+  G08:
+    name: g08
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Total
+  AM08M:
+    name: am08m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - American Indian/Alaska Native - Male
+  AM08F:
+    name: am08f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - American Indian/Alaska Native - Female
+  AS08M:
+    name: as08m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Asian - Male
+  AS08F:
+    name: as08f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Asian - Female
+  HI08M:
+    name: hi08m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Hispanic - Male
+  HI08F:
+    name: hi08f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Hispanic - Female
+  BL08M:
+    name: bl08m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Black - Male
+  BL08F:
+    name: bl08f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Black - Female
+  WH08M:
+    name: wh08m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - White - Male
+  WH08F:
+    name: wh08f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - White - Female
+  HP08M:
+    name: hp08m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Hawaiian Native/Pacific Islander - Male
+  HP08F:
+    name: hp08f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Hawaiian Native/Pacific Islander - Female
+  TR08M:
+    name: tr08m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Two or More Races - Male
+  TR08F:
+    name: tr08f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 8 Students - Two or More Races - Female
+  G09:
+    name: g09
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Total
+  AM09M:
+    name: am09m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - American Indian/Alaska Native - Male
+  AM09F:
+    name: am09f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - American Indian/Alaska Native - Female
+  AS09M:
+    name: as09m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Asian - Male
+  AS09F:
+    name: as09f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Asian - Female
+  HI09M:
+    name: hi09m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Hispanic - Male
+  HI09F:
+    name: hi09f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Hispanic - Female
+  BL09M:
+    name: bl09m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Black - Male
+  BL09F:
+    name: bl09f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Black - Female
+  WH09M:
+    name: wh09m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - White - Male
+  WH09F:
+    name: wh09f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - White - Female
+  HP09M:
+    name: hp09m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Hawaiian Native/Pacific Islander - Male
+  HP09F:
+    name: hp09f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Hawaiian Native/Pacific Islander - Female
+  TR09M:
+    name: tr09m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Two or More Races - Male
+  TR09F:
+    name: tr09f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 9 Students - Two or More Races - Female
+  G10:
+    name: g10
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Total
+  AM10M:
+    name: am10m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - American Indian/Alaska Native - Male
+  AM10F:
+    name: am10f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - American Indian/Alaska Native - Female
+  AS10M:
+    name: as10m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Asian - Male
+  AS10F:
+    name: as10f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Asian - Female
+  HI10M:
+    name: hi10m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Hispanic - Male
+  HI10F:
+    name: hi10f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Hispanic - Female
+  BL10M:
+    name: bl10m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Black - Male
+  BL10F:
+    name: bl10f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Black - Female
+  WH10M:
+    name: wh10m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - White - Male
+  WH10F:
+    name: wh10f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - White - Female
+  HP10M:
+    name: hp10m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Hawaiian Native/Pacific Islander - Male
+  HP10F:
+    name: hp10f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Hawaiian Native/Pacific Islander - Female
+  TR10M:
+    name: tr10m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Two or More Races - Male
+  TR10F:
+    name: tr10f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 10 Students - Two or More Races - Female
+  G11:
+    name: g11
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Total
+  AM11M:
+    name: am11m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - American Indian/Alaska Native - Male
+  AM11F:
+    name: am11f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - American Indian/Alaska Native - Female
+  AS11M:
+    name: as11m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Asian - Male
+  AS11F:
+    name: as11f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Asian - Female
+  HI11M:
+    name: hi11m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Hispanic - Male
+  HI11F:
+    name: hi11f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Hispanic - Female
+  BL11M:
+    name: bl11m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Black - Male
+  BL11F:
+    name: bl11f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Black - Female
+  WH11M:
+    name: wh11m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - White - Male
+  WH11F:
+    name: wh11f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - White - Female
+  HP11M:
+    name: hp11m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Hawaiian Native/Pacific Islander - Male
+  HP11F:
+    name: hp11f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Hawaiian Native/Pacific Islander - Female
+  TR11M:
+    name: tr11m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Two or More Races - Male
+  TR11F:
+    name: tr11f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 11 Students - Two or More Races - Female
+  G12:
+    name: g12
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Total
+  AM12M:
+    name: am12m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - American Indian/Alaska Native - Male
+  AM12F:
+    name: am12f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - American Indian/Alaska Native - Female
+  AS12M:
+    name: as12m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Asian - Male
+  AS12F:
+    name: as12f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Asian - Female
+  HI12M:
+    name: hi12m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Hispanic - Male
+  HI12F:
+    name: hi12f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Hispanic - Female
+  BL12M:
+    name: bl12m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Black - Male
+  BL12F:
+    name: bl12f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Black - Female
+  WH12M:
+    name: wh12m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - White - Male
+  WH12F:
+    name: wh12f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - White - Female
+  HP12M:
+    name: hp12m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Hawaiian Native/Pacific Islander - Male
+  HP12F:
+    name: hp12f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Hawaiian Native/Pacific Islander - Female
+  TR12M:
+    name: tr12m
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Two or More Races - Male
+  TR12F:
+    name: tr12f
+    type: BIGINT
+    years: 2010-2013
+    label: Grade 12 Students - Two or More Races - Female
+  AMUGM:
+    name: amugm
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - American Indian/Alaska Native - Male
+  AMUGF:
+    name: amugf
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - American Indian/Alaska Native - Female
+  ASUGM:
+    name: asugm
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Asian - Male
+  ASUGF:
+    name: asugf
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Asian - Female
+  HIUGM:
+    name: hiugm
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Hispanic - Male
+  HIUGF:
+    name: hiugf
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Hispanic - Female
+  BLUGM:
+    name: blugm
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Black - Male
+  BLUGF:
+    name: blugf
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Black - Female
+  WHUGM:
+    name: whugm
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - White - Male
+  WHUGF:
+    name: whugf
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - White - Female
+  HPUGM:
+    name: hpugm
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Hawaiian Native/Pacific Islander - Male
+  HPUGF:
+    name: hpugf
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Hawaiian Native/Pacific Islander - Female
+  TRUGM:
+    name: trugm
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Two or More Races - Male
+  TRUGF:
+    name: trugf
+    type: BIGINT
+    years: 2010-2013
+    label: Ungraded Students - Two or More Races - Female
+  AM:
+    name: am
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - American Indian/Alaska Native
+  AMALM:
+    name: amalm
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - American Indian/Alaska Native - Male
+  AMALF:
+    name: amalf
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - American Indian/Alaska Native - Female
+  ASIAN:
+    name: asian
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Asian
+  ASALM:
+    name: asalm
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Asian - Male
+  ASALF:
+    name: asalf
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Asian - Female
+  HISP:
+    name: hisp
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Hispanic
+  HIALM:
+    name: hialm
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Hispanic - Male
+  HIALF:
+    name: hialf
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Hispanic - Female
+  BLACK:
+    name: black
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Black
+  BLALM:
+    name: blalm
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Black - Male
+  BLALF:
+    name: blalf
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Black - Female
+  WHITE:
+    name: white
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - White
+  WHALM:
+    name: whalm
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - White - Male
+  WHALF:
+    name: whalf
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - White - Female
+  PACIFIC:
+    name: pacific
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Hawaiian Native / Pacific Islander
+  HPALM:
+    name: hpalm
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Hawaiian Native/Pacific Islander - Male
+  HPALF:
+    name: hpalf
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Hawaiian Native/Pacific Islander - Female
+  TR:
+    name: tr
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Two or More Races
+  TRALM:
+    name: tralm
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Two or More Races - Male
+  TRALF:
+    name: tralf
+    type: BIGINT
+    years: 2010-2013
+    label: All Students - Two or More Races - Female
+  TOTETH:
+    name: toteth
+    type: BIGINT
+    years: 2010-2013
+    label: Total Ethnic
+  CDCODE_112:
+    name: cdcode_112
+    type: VARCHAR
+    years: '2011'
+    label: 112th Congressional District Code
+  AMEMPUP:
+    name: amempup
+    type: BIGINT
+    years: 2011-2013
+    label: Agency Membership Edit
+  IAMEMPUP:
+    name: iamempup
+    type: VARCHAR
+    years: 2011-2013
+    label: Agency Membership Edit Flag
+  AFTEPUP:
+    name: aftepup
+    type: BIGINT
+    years: 2011-2013
+    label: Agency Teacher Edit
+  IAFTEPUP:
+    name: iaftepup
+    type: VARCHAR
+    years: 2011-2013
+    label: Agency Teacher Edit Flag
+  ASPECED:
+    name: aspeced
+    type: BIGINT
+    years: 2012-2013
+    label: Agency Special Education Edit
+  IASPECED:
+    name: iaspeced
+    type: VARCHAR
+    years: 2012-2013
+    label: Agency Special Education Edit Flag
+  AELL:
+    name: aell
+    type: BIGINT
+    years: 2012-2013
+    label: Agency English Language Learners Edit
+  IAELL:
+    name: iaell
+    type: VARCHAR
+    years: 2012-2013
+    label: Agency English Language Learners Edit Flag
+  AAIDCORSUP:
+    name: aaidcorsup
+    type: BIGINT
+    years: 2012-2013
+    label: Agency Aides and Instructional Coordinators Edit
+  IAAIDCORSUP:
+    name: iaaidcorsup
+    type: VARCHAR
+    years: 2012-2013
+    label: Agency Aides and Instructional Coordinators Edit Flag
+  AGUID:
+    name: aguid
+    type: BIGINT
+    years: 2012-2013
+    label: Agency Guidance Counselors Edit
+  IAGUID:
+    name: iaguid
+    type: VARCHAR
+    years: 2012-2013
+    label: Agency Guidance Counselors Edit Flag
+  ALIBSTF:
+    name: alibstf
+    type: BIGINT
+    years: 2012-2013
+    label: Agency Library Staff Edit
+  IALIBSTF:
+    name: ialibstf
+    type: VARCHAR
+    years: 2012-2013
+    label: Agency Library Staff Edit Flag
+  ALEAADM:
+    name: aleaadm
+    type: BIGINT
+    years: 2012-2013
+    label: Agency LEA Admin Edit
+  IALEAADM:
+    name: ialeaadm
+    type: VARCHAR
+    years: 2012-2013
+    label: Agency LEA Admin Edit Flag
+  ASCHADM:
+    name: aschadm
+    type: BIGINT
+    years: 2012-2013
+    label: Agency School Admin Edit
+  IASCHADM:
+    name: iaschadm
+    type: VARCHAR
+    years: 2012-2013
+    label: Agency School Admin Edit Flag
+  ASUPSTF:
+    name: asupstf
+    type: BIGINT
+    years: 2012-2013
+    label: Agency Support Staff Edit
+  IASUPSTF:
+    name: iasupstf
+    type: VARCHAR
+    years: 2012-2013
+    label: Agency Support Staff Edit Flag
+  CHRTLEASTAT:
+    name: chrtleastat
+    type: VARCHAR
+    years: '2013'
+    label: Charter School LEA Status

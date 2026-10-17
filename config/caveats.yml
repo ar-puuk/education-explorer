@@ -11,7 +11,8 @@ ccd.membership:
     or "Not Specified" are totals or unclassified students, and "Derived" or "Education Unit Total" rows are
     subtotals; do not add them to the detail rows. Counts can be suppressed, missing or not reported (see value_flag).
     Race/ethnicity categories were revised in 2009-10 (adding "Two or more races"), so older detail is not
-    strictly comparable.
+    strictly comparable. In 1997-98 to 2013-14 some states or schools reported totals without race/sex detail
+    (RACECAT in the legacy files), so detail rows may not add up to the total.
 ccd.district_membership:
   caveat: >-
     Same conventions as school membership. District totals may differ slightly from the sum of school rows
@@ -97,3 +98,10 @@ ccd.district_graduates:
   caveat: Counts of regular high school diploma recipients and other completers (not a graduation rate). Counts can be suppressed or missing (see value_flag).
 ccd.district_dropout:
   caveat: Counts of students who dropped out of grades 9-12 (not a dropout rate). Reporting rules differ by state and some counts are suppressed.
+ccd.legacy_school:
+  caveat: >-
+    The school universe file exactly as NCES published it for 1997-98 to 2013-14 (all columns; names lower-cased and the
+    survey-year suffix removed). Negative codes (-1 missing, -2 not applicable, -9 not meeting standards) and M/N are
+    left as published here; the harmonized tables (directory, membership, lunch, staff) convert them to empty values with flags.
+ccd.legacy_district:
+  caveat: The district (agency) universe file as published for 1998-99 to 2013-14 (all columns; the 1997-98 file has no machine-readable version). Codes as published.

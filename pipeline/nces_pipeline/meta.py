@@ -12,6 +12,8 @@ CCD_TITLES = {
     "school_characteristics": "School characteristics", "school_location": "School locations (EDGE)",
     "membership": "School membership (enrollment)", "district_membership": "District membership (enrollment)",
     "lunch": "Free/reduced-price lunch eligibility", "staff": "School staff (FTE)", "district_staff": "District staff (FTE)",
+    "legacy_school": "School universe file, 1997-98 to 2013-14 (as published, all columns)",
+    "legacy_district": "District universe file, 1997-98 to 2013-14 (as published, all columns)",
     "district_finance": "District finance (F-33)", "district_graduates": "Graduates and completers, by district",
     "district_dropout": "Dropouts (grades 9-12), by district",
     "district_idea": "Students with disabilities (IDEA), by district", "district_el": "English learners, by district",
