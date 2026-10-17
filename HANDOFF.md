@@ -320,3 +320,17 @@ Requires the DuckDB CLI installed. Use `read-file` to profile each raw NCES file
 ## First session prompt (paste this to Claude Code)
 
 > Read HANDOFF.md fully. Do not write app code yet. Start with Phase 0 (spikes): set up the project skeleton (uv, Vite+Svelte+TS), install the duckdb-skills plugin if available, download one real file each from CCD, PSS, and IPEDS for the state in `config/states/utah.yml` (create that config first), profile them with DuckDB, run the Pages range-request test and OpenFreeMap style test, then write `SPIKES.md` with real URLs, schemas, sentinel codes, sizes, and any corrections to HANDOFF.md. Stop and show me the findings before starting Phase 1.
+
+
+---
+
+## Phase 0 corrections (2026-10-16, from live verification; details in SPIKES.md)
+
+1. Pages range requests work (206, CORS `*`); DuckDB-WASM queries Parquet over HTTP from Pages. Locked decision stands. Pages has a 10-minute CDN cache.
+2. **CCD school directory has no lat/lon.** Use NCES EDGE `EDGE_GEOCODE_PUBLICSCH_<yyyy>` (2015-16..2024-25; headerless pipe-delimited TXT, header in SPIKES.md). Earlier years: check old CCD columns, else geocode.
+3. CCD file list comes from a JSON API (`/ccd/datatables/api/...`), not guessable URLs. 2025-26 is directory only.
+4. CCD membership national CSV is 2.3 GB; stream with DuckDB. A Utah year is about 130 KB of Parquet.
+5. PSS 2023-24 public-use files exist (CSV) and include lat/lon. All cycles since 1989-90 are downloadable; column names are year-specific.
+6. IPEDS bulk path is `/ipeds/complete-data-files/<NAME>.zip`; availability by HEAD probing; CSV has a BOM; value columns have `X`-prefixed status flag columns.
+7. Census batch geocoder: 90% match on Utah private addresses.
+8. OpenFreeMap: all five styles work; overlays survive `setStyle` if re-added on `style.load`; Liberty already has a `building-3d` layer.

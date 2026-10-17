@@ -3,16 +3,16 @@
 Legend: [x] done, [~] in progress, [ ] todo
 
 ## Setup
-- [~] uv project, git, .gitignore, skeleton, config, LICENSE, README, attribution
-- [ ] GitHub repo created and pushed
+- [x] uv project, git, .gitignore, skeleton, config, LICENSE, README, attribution
+- [x] GitHub repo created and pushed
 
 ## Phase 0: Spikes
-- [ ] Pages range-request + DuckDB-WASM spike
-- [ ] Real files: CCD directory, CCD membership, PSS, IPEDS HD + EF
-- [ ] OpenFreeMap styles + setStyle overlay survival
-- [ ] Census batch geocoder test
-- [ ] Utah Parquet size estimate
-- [ ] SPIKES.md and HANDOFF.md corrections
+- [x] Pages range-request + DuckDB-WASM spike
+- [x] Real files: CCD directory, CCD membership, PSS, IPEDS HD + EF
+- [x] OpenFreeMap styles + setStyle overlay survival
+- [x] Census batch geocoder test
+- [x] Utah Parquet size estimate
+- [x] SPIKES.md and HANDOFF.md corrections
 
 ## Phase 1 .. 6
 - [ ] not started
