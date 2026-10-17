@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 from .canon import alias
 
@@ -113,7 +113,7 @@ def _wide(topic: Topic, raw_cols: list[str], cols: dict, unpivot: list[dict]) ->
                 un(c, grade=GRADES[m.group(2)], race=RACES[m.group(1)], sex=SEXES[m.group(3)],
                    total_indicator="Category Set A - By Race/Ethnicity; Sex; Grade")
             elif (m := re.match(r"^(PK|KG|G\d\d|UG|AE)$", c)):
-                g = m.group(1)[1:] if m.group(1).startswith("G") else m.group(1)
+                g = m.group(1).removeprefix("G")
                 un(c, grade=GRADES[g], race=NOCAT, sex=NOCAT, total_indicator="Subtotal 4 - By Grade")
             elif c in ("TOTAL", "MEMBER"):
                 un(c, grade=NOCAT, race=NOCAT, sex=NOCAT,

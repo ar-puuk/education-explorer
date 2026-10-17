@@ -97,9 +97,7 @@ def cmd_validate(a, state) -> int:
 
 
 def cmd_update(a, state) -> int:
-    import json
 
-    from .config import DOCS_DATA
     from .dictionary import build_dictionary
     from .meta import write_meta
     from .validate import current_rowcounts

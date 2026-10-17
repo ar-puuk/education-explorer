@@ -2,13 +2,12 @@
 from __future__ import annotations
 
 import re
-from urllib.parse import urljoin
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import urljoin
 
 from .catalog import build_catalog, year_of
-from .config import DATA_RAW
-from .fetch import download, unzip, client
+from .fetch import client, download, unzip
 
 # Component keys used in schema file names. Catalog component strings are
 # normalized to these; anything unmapped is listed by `fetch --check-only`.
@@ -23,7 +22,7 @@ COMPONENTS = {
 }
 LEVELS = {"School": "sch", "District": "lea"}  # state (SEA) files are not used: totals come from LEA files
 
-_SKIP = re.compile(r"(sas7bdat|_sas|sas\.zip|_sps|spss|_xlsx|xlsx|\.sps|\.sas|stata|read_|_dict|edge_geoids)", re.I)
+_SKIP = re.compile(r"(sas7bdat|_sas|sas\.zip|_sps|spss|_xlsx|xlsx|\.sps|\.sas|stata|read_|_dict|edge_geoids)", re.IGNORECASE)
 
 
 @dataclass(frozen=True)

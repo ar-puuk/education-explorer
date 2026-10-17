@@ -6,7 +6,6 @@ from pathlib import Path
 
 import duckdb
 
-from .ccd_topics import TOPICS
 from .config import DOCS_DATA, State
 
 KEYS = {

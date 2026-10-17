@@ -16,8 +16,8 @@ import yaml
 
 from .catalog import build_catalog, year_of
 from .ccd_topics import TOPICS
-from .config import CONFIG_DIR, DATA_RAW, DOCS_DATA, SCHEMAS
-from .fetch import client, download
+from .config import CONFIG_DIR, DOCS_DATA, SCHEMAS
+from .fetch import download
 from .parquet import write_parquet
 
 LEVEL = {"sch": "School", "lea": "District"}

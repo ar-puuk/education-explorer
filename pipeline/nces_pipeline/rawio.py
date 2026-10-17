@@ -1,6 +1,7 @@
 """Reading raw delimited files through DuckDB (everything as VARCHAR first)."""
 from __future__ import annotations
 
+import codecs
 from pathlib import Path
 
 import duckdb
@@ -33,15 +34,15 @@ def ensure_utf8(path: Path) -> Path:
 
     (DuckDB's latin-1 reader rejects cp1252-only bytes such as curly quotes.)
     """
-    with path.open("rb") as f:
-        while chunk := f.read(64 << 20):
-            try:
-                chunk.decode("utf-8")
-            except UnicodeDecodeError as e:
-                if e.start < len(chunk) - 4:
-                    break
-        else:
-            return path
+    dec = codecs.getincrementaldecoder("utf-8")()
+    try:
+        with path.open("rb") as f:
+            while chunk := f.read(64 << 20):
+                dec.decode(chunk)
+            dec.decode(b"", final=True)
+        return path
+    except UnicodeDecodeError:
+        pass
     out = path.with_name(path.stem + ".utf8" + path.suffix)
     if not out.exists():
         tmp = out.with_suffix(out.suffix + ".part")

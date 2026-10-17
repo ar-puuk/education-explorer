@@ -63,16 +63,16 @@ def edge_table_source(year: int) -> tuple[str, Path] | None:
 
 
 # ---------------------------------------------------------------- map bootstrap + build
-import re  # noqa: E402
+import re
 
-import duckdb  # noqa: E402
-import yaml  # noqa: E402
+import duckdb
+import yaml
 
-from .ccd_build import col_expr, q, sql_str  # noqa: E402
-from .config import DOCS_DATA, State  # noqa: E402
-from .parquet import write_parquet  # noqa: E402
-from .rawio import read_sql  # noqa: E402
-from .schema import check_header, load_map, map_path  # noqa: E402
+from .ccd_build import col_expr, q, sql_str
+from .config import DOCS_DATA, State
+from .parquet import write_parquet
+from .rawio import read_sql
+from .schema import check_header, load_map, map_path
 
 EDGE_NAMES = {
     "NCESSCH": ("ncessch", "VARCHAR"), "LEAID": ("leaid", "VARCHAR"), "NAME": ("school_name", "VARCHAR"),
