@@ -6,6 +6,7 @@ import { cssVar, makeIcon, type Dataset } from './icons'
 ;(maplibregl as unknown as { setWorkerUrl(u: string): void }).setWorkerUrl(workerUrl)
 
 const DATASETS: Dataset[] = ['public', 'private', 'college']
+const VARIANTS = ['open', 'closed', 'approx'] as const
 
 export type PointFeature = GeoJSON.Feature<GeoJSON.Point, Record<string, unknown>>
 
@@ -68,10 +69,10 @@ export class MapController {
     for (const ds of DATASETS) {
       const fill = cssVar(`--c-${ds}`)
       const ring = cssVar('--ring')
-      for (const closed of [false, true]) {
-        const name = closed ? `${ds}-closed` : ds
+      for (const v of VARIANTS) {
+        const name = v === 'open' ? ds : `${ds}-${v}`
         if (this.map.hasImage(name)) this.map.removeImage(name)
-        this.map.addImage(name, makeIcon(ds, { fill, ring, closed }, ratio), { pixelRatio: ratio })
+        this.map.addImage(name, makeIcon(ds, { fill, ring, closed: v === 'closed', approx: v === 'approx' }, ratio), { pixelRatio: ratio })
       }
       this.addDataset(ds)
     }
@@ -260,10 +261,10 @@ export class MapController {
   private install2() {
     const ratio = 2
     for (const ds of DATASETS) {
-      for (const closed of [false, true]) {
-        const name = closed ? `${ds}-closed` : ds
+      for (const v of VARIANTS) {
+        const name = v === 'open' ? ds : `${ds}-${v}`
         if (this.map.hasImage(name)) this.map.removeImage(name)
-        this.map.addImage(name, makeIcon(ds, { fill: cssVar(`--c-${ds}`), ring: cssVar('--ring'), closed }, ratio), { pixelRatio: ratio })
+        this.map.addImage(name, makeIcon(ds, { fill: cssVar(`--c-${ds}`), ring: cssVar('--ring'), closed: v === 'closed', approx: v === 'approx' }, ratio), { pixelRatio: ratio })
       }
       if (this.map.getLayer(`${ds}-clusters`)) {
         this.map.setPaintProperty(`${ds}-clusters`, 'circle-color', cssVar(`--c-${ds}`))

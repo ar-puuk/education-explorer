@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onDestroy } from 'svelte'
-  import { allYears, app } from '../lib/app.svelte'
+  import { allYears, app, surveyYearFor } from '../lib/app.svelte'
   import { schoolYearLabel } from '../lib/labels'
 
   const years = $derived(allYears())
@@ -11,6 +11,13 @@
   })
   const publicFrom = $derived(app.points?.years[0] ?? 0)
   const publicNote = $derived(app.layers.public && app.year < publicFrom ? `Public school data start in ${schoolYearLabel(publicFrom)}.` : '')
+
+  const survey = $derived(surveyYearFor(app.year))
+  const privateNote = $derived.by(() => {
+    if (!app.layers.private || !app.private) return ''
+    if (survey == null) return `Private school data start with the ${schoolYearLabel(app.private.years[0])} survey.`
+    return survey === app.year ? '' : `Private schools: ${schoolYearLabel(survey)} survey (surveys are biennial).`
+  })
 
   let timer: ReturnType<typeof setInterval> | undefined
   function stop() {
@@ -39,6 +46,7 @@
       <strong>{schoolYearLabel(app.year)}</strong>
       {#if version && app.year >= publicFrom}<span class="badge {version}" title="Release status of the public school files for this year">{version}</span>{/if}
       {#if publicNote}<span class="note">{publicNote}</span>{/if}
+      {#if privateNote}<span class="note">{privateNote}</span>{/if}
     </div>
     <input
       type="range"

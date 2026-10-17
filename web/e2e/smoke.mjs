@@ -23,6 +23,8 @@ const col = await (await fetch(base_ + 'data/geo/points_college.json')).json()
 const biggest = (arr) => arr.reduce((a, b) => ((b.enroll.at(-2) ?? 0) > (a.enroll.at(-2) ?? 0) ? b : a))
 const SCHOOL = biggest(pub.schools).name
 const COLLEGE = biggest(col.institutions).name
+const priv = await (await fetch(base_ + 'data/geo/points_private.json')).json()
+const PRIVATE = priv.schools.reduce((a, b) => ((b.enroll.at(-1) ?? 0) > (a.enroll.at(-1) ?? 0) ? b : a)).name
 
 const fail = (msg) => {
   console.error('FAIL:', msg)
@@ -116,14 +118,30 @@ await page.getByRole('button', { name: 'Download CSV' }).click()
 const dl = await dls
 ok('CSV download: ' + dl.suggestedFilename())
 
+// private school: search, panel, biennial note
+await page.locator('#school-search').fill(PRIVATE)
+await page.locator('#search-results li button', { hasText: 'Private school' }).first().click()
+await page.waitForSelector('aside[aria-label="Private school details"] h2', { timeout: 20000 })
+await page.waitForSelector('aside[aria-label="Private school details"] svg', { timeout: 60000 })
+ok('private school panel with chart rendered')
+for (const t of ['Grade', 'Race/ethnicity', 'Sex']) {
+  await page.getByRole('tab', { name: t }).click()
+  await page.waitForTimeout(300)
+}
+await page.locator('input[type=range]').fill('2024')
+await page.waitForTimeout(500)
+const note = await page.locator('.slider .note').allInnerTexts()
+note.some((t) => /biennial/.test(t)) ? ok('slider explains biennial survey: ' + note.join(' / ')) : fail('no biennial note at 2024: ' + note.join('|'))
+await page.screenshot({ path: `${out}/07-private.png` })
+
 // URL state round trip
 const url = page.url()
-url.includes('sel=college%3A') || url.includes('sel=college:') ? ok('URL carries selection: ' + url.slice(-70)) : fail('URL missing selection: ' + url)
+url.includes('sel=private%3A') || url.includes('sel=private:') ? ok('URL carries selection: ' + url.slice(-70)) : fail('URL missing selection: ' + url)
 const p2 = await ctx.newPage()
 p2.on('pageerror', (e) => errors.push('pageerror2: ' + e.message))
 await p2.goto(url, { waitUntil: 'domcontentloaded' })
-await p2.waitForSelector('aside[aria-label="College details"] h2', { timeout: 30000 })
-ok('URL restores the selected college')
+await p2.waitForSelector('aside[aria-label="Private school details"] h2', { timeout: 30000 })
+ok('URL restores the selected private school')
 
 // year slider
 await page.locator('input[type=range]').fill('2018')

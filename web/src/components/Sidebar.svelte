@@ -5,7 +5,7 @@
 
   const datasets: { id: Dataset; ready: boolean }[] = [
     { id: 'public', ready: true },
-    { id: 'private', ready: false },
+    { id: 'private', ready: true },
     { id: 'college', ready: true },
   ]
 
@@ -19,6 +19,15 @@
     const labels = app.college?.labels.control ?? {}
     return [1, 2, 3].map((c) => ({ code: c, label: labels[String(c)] ?? String(c) }))
   })
+
+  const affils = $derived.by(() => {
+    const labels = app.private?.labels.relig ?? {}
+    return [1, 2, 3].map((c) => ({ code: c, label: (labels[String(c)] ?? String(c)).replace(/ *\(.*\)/, '') }))
+  })
+
+  function toggleAffil(c: number) {
+    app.privateAffil = app.privateAffil.includes(c) ? app.privateAffil.filter((x) => x !== c) : [...app.privateAffil, c]
+  }
 
   function toggleControl(c: number) {
     app.collegeControls = app.collegeControls.includes(c) ? app.collegeControls.filter((x) => x !== c) : [...app.collegeControls, c]
@@ -85,6 +94,23 @@
           <button class="link" onclick={() => (app.levels = [])}>Clear levels</button>
         {/if}
       </fieldset>
+    </section>
+
+    <section>
+      <h2>Private schools</h2>
+      <fieldset>
+        <legend>Affiliation</legend>
+        {#each affils as c}
+          <label class="row">
+            <input type="checkbox" checked={app.privateAffil.includes(c.code)} onchange={() => toggleAffil(c.code)} />
+            <span>{c.label}</span>
+          </label>
+        {/each}
+        {#if app.privateAffil.length}
+          <button class="link" onclick={() => (app.privateAffil = [])}>Show all</button>
+        {/if}
+      </fieldset>
+      <p class="hint">The Private School Universe Survey runs every two years. Dotted outlines mark approximate (geocoded) locations.</p>
     </section>
 
     <section>

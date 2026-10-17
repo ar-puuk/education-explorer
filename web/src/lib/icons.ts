@@ -81,6 +81,8 @@ export interface IconStyle {
   fill: string
   ring: string
   closed?: boolean
+  /** approximate (geocoded) location: dotted outline */
+  approx?: boolean
 }
 
 export function makeIcon(kind: Dataset, st: IconStyle, ratio = 2): ImageData {
@@ -95,6 +97,7 @@ export function makeIcon(kind: Dataset, st: IconStyle, ratio = 2): ImageData {
   ctx.lineWidth = 2
   ctx.strokeStyle = st.ring
   if (st.closed) ctx.setLineDash([3, 2])
+  else if (st.approx) ctx.setLineDash([1.5, 2.5])
   ctx.stroke()
   ctx.setLineDash([])
   glyph(ctx, kind, SIZE)

@@ -148,6 +148,12 @@
       {#if enrollNow != null}<span class="enr">{fmtInt(enrollNow)} students (fall)</span>{/if}
     </p>
 
+    {#if inst.approx}
+      <p class="note">Approximate location: geocoded from the street address by the U.S. Census Geocoder (non-exact match). NCES provides no coordinates for this institution.</p>
+    {:else if inst.coordSource === 'geocode'}
+      <p class="note">Location geocoded from the street address by the U.S. Census Geocoder (exact match); NCES provides no coordinates for this institution.</p>
+    {/if}
+
     <h3>Fall enrollment</h3>
     <div class="tabs" role="tablist" aria-label="Enrollment breakdown">
       {#each tabs as t}

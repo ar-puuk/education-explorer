@@ -4,7 +4,7 @@
   import { theme, type ThemePref } from '../lib/theme.svelte'
   import Search from './Search.svelte'
 
-  let { onPick }: { onPick: (dataset: 'public' | 'college', id: string, lon: number, lat: number) => void } = $props()
+  let { onPick }: { onPick: (dataset: 'public' | 'private' | 'college', id: string, lon: number, lat: number) => void } = $props()
 
   const themes: { id: ThemePref; label: string }[] = [
     { id: 'system', label: 'System' },

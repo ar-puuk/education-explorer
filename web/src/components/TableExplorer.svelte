@@ -1,22 +1,23 @@
 <script lang="ts">
   import { app } from '../lib/app.svelte'
-  import { ipedsRows, loadDictionary, loadValueLabels } from '../lib/data'
+  import { ipedsRows, loadDictionary, loadValueLabels, pssRows } from '../lib/data'
   import type { Row } from '../lib/db'
   import {
     cellText, colDesc, colLabel, dataColumns, download, isMultiRow, pivot, toCsv, type ExploreContext,
   } from '../lib/explore'
   import type { DictEntry } from '../lib/types'
 
-  let { unitid, name }: { unitid: string; name: string } = $props()
+  let { dataset = 'ipeds', unitid, name, start = 'hd' }: { dataset?: 'ipeds' | 'pss'; unitid: string; name: string; start?: string } = $props()
 
   const tables = $derived(
-    Object.entries(app.years?.ipeds ?? {})
+    Object.entries(app.years?.[dataset] ?? {})
       .map(([id, t]) => ({ id, title: (t as { title?: string }).title ?? id, survey: (t as { survey?: string }).survey ?? 'Other', years: t.years }))
       .sort((a, b) => a.survey.localeCompare(b.survey) || a.title.localeCompare(b.title)),
   )
   const surveys = $derived([...new Set(tables.map((t) => t.survey))])
 
-  let table = $state('hd')
+  // svelte-ignore state_referenced_locally
+  let table = $state(start)
   let rows = $state<Row[]>([])
   let loading = $state(false)
   let error = $state('')
@@ -25,7 +26,7 @@
   let dict = $state<Map<string, DictEntry>>(new Map())
   let labels = $state<Map<string, string>>(new Map())
 
-  const ctx = $derived<ExploreContext>({ dataset: 'ipeds', table, dict, labels })
+  const ctx = $derived<ExploreContext>({ dataset, table, dict, labels })
 
   $effect(() => {
     const t = table
@@ -33,7 +34,7 @@
     let cancelled = false
     loading = true
     error = ''
-    Promise.all([ipedsRows(t, id), loadDictionary(), loadValueLabels()])
+    Promise.all([dataset === 'pss' ? pssRows(t, id) : ipedsRows(t, id), loadDictionary(), loadValueLabels()])
       .then(([r, d, l]) => {
         if (cancelled) return
         rows = r
@@ -58,7 +59,7 @@
   const yearsAvail = $derived([...new Set(rows.map((r) => r.year as number))].sort((a, b) => a - b))
   const yearRows = $derived(rows.filter((r) => r.year === year))
   const cols = $derived(dataColumns(yearRows))
-  const tableNote = $derived(dict.get(`ipeds.${table}.unitid`)?.caveat ?? '')
+  const tableNote = $derived(dict.get(`${dataset}.${table}.${dataset === 'pss' ? 'row_id' : 'unitid'}`)?.caveat ?? '')
 
   function exportCsv() {
     if (piv) {
@@ -72,7 +73,7 @@
 
 <section class="explorer">
   <h3>All data tables</h3>
-  <p class="muted">Every IPEDS table published for this institution, with NCES variable names and labels.</p>
+  <p class="muted">Every {dataset === 'pss' ? 'PSS' : 'IPEDS'} table published for this {dataset === 'pss' ? 'school' : 'institution'}, with NCES variable names and labels.</p>
   <label class="pick">
     <span class="sr-only">Table</span>
     <select bind:value={table}>

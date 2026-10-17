@@ -2,7 +2,7 @@ import { defaultBasemap, type BasemapId } from './basemaps'
 import type { Dataset } from './icons'
 import { theme } from './theme.svelte'
 import { parseUrl, serializeUrl, type UrlState } from './urlstate'
-import type { CollegePointsFile, PointsFile, PublicSchool, StateMeta, YearsMeta } from './types'
+import type { CollegePointsFile, PointsFile, PrivatePointsFile, PublicSchool, StateMeta, YearsMeta } from './types'
 
 export const app = $state({
   ready: false,
@@ -11,6 +11,7 @@ export const app = $state({
   years: null as YearsMeta | null,
   points: null as PointsFile | null,
   college: null as CollegePointsFile | null,
+  private: null as PrivatePointsFile | null,
   year: 0,
   selected: null as { dataset: Dataset; id: string } | null,
   /** explicit user choice; null = follow the theme default */
@@ -22,6 +23,8 @@ export const app = $state({
   levels: [] as string[],
   /** college control codes to show (1 public, 2 private not-for-profit, 3 for-profit); empty = all */
   collegeControls: [] as number[],
+  /** private school affiliation codes (RELIG: 1 Catholic, 2 other religious, 3 nonsectarian); empty = all */
+  privateAffil: [] as number[],
   view: null as { center: [number, number]; zoom: number } | null,
   playing: false,
   panelOpen: typeof matchMedia === 'function' ? !matchMedia('(max-width: 720px)').matches : true,
@@ -50,10 +53,16 @@ export function publicYears(): number[] {
   return app.points?.years ?? []
 }
 
-/** Slider range: every year any dataset has. */
+/** Slider range: every year any dataset has (PSS surveys are biennial, so they add no new years). */
 export function allYears(): number[] {
   const set = new Set<number>([...(app.points?.years ?? []), ...(app.college?.years ?? [])])
   return [...set].sort((a, b) => a - b)
+}
+
+/** The PSS survey shown for a slider year: the latest survey that began in or before it (surveys are biennial). */
+export function surveyYearFor(year: number): number | null {
+  const ys = (app.private?.years ?? []).filter((y) => y <= year)
+  return ys.length ? ys[ys.length - 1] : null
 }
 
 export function applyUrl(u: UrlState) {
@@ -67,6 +76,7 @@ export function applyUrl(u: UrlState) {
   if (u.charter) app.charter = u.charter
   if (u.levels) app.levels = u.levels
   if (u.collegeControls) app.collegeControls = u.collegeControls
+  if (u.privateAffil) app.privateAffil = u.privateAffil
   if (u.view) app.view = u.view
 }
 
@@ -82,6 +92,7 @@ export function currentUrlState(): UrlState {
     charter: app.charter,
     levels: app.levels,
     collegeControls: app.collegeControls,
+    privateAffil: app.privateAffil,
     view: app.view ?? undefined,
   }
 }

@@ -76,6 +76,8 @@ export interface CollegeInstitution {
   locale: number | null
   hbcu: number | null
   web: string | null
+  coordSource?: string
+  approx?: boolean
 }
 
 export interface CollegePointsFile {
@@ -90,4 +92,32 @@ export interface ValueLabel {
   column: string
   code: string
   label: string
+}
+
+export interface PrivateSchool {
+  id: string
+  name: string
+  address: string | null
+  city: string | null
+  zip: string | null
+  lat: number
+  lon: number
+  /** 'pss' (provided by NCES) or 'geocode' (Census geocoder, see approx) */
+  coordSource: string
+  approx: boolean
+  /** survey years in which the school appears (biennial), with aligned enrollment and teachers (FTE) */
+  years: number[]
+  enroll: (number | null)[]
+  teachers: (number | null)[]
+  level: number | null
+  typology: number | null
+  relig: number | null
+  ulocale: string | null
+}
+
+export interface PrivatePointsFile {
+  dataset: 'private'
+  years: number[]
+  labels: { level: { [c: string]: string }; typology: { [c: string]: string }; relig: { [c: string]: string } }
+  schools: PrivateSchool[]
 }

@@ -1,12 +1,12 @@
 <script lang="ts">
   import { app } from '../lib/app.svelte'
 
-  let { onPick }: { onPick: (dataset: 'public' | 'college', id: string, lon: number, lat: number) => void } = $props()
+  let { onPick }: { onPick: (dataset: 'public' | 'private' | 'college', id: string, lon: number, lat: number) => void } = $props()
   let q = $state('')
   let open = $state(false)
   let active = $state(0)
 
-  type Hit = { dataset: 'public' | 'college'; id: string; name: string; sub: string; lon: number; lat: number }
+  type Hit = { dataset: 'public' | 'private' | 'college'; id: string; name: string; sub: string; lon: number; lat: number }
   const results = $derived.by((): Hit[] => {
     const term = q.trim().toLowerCase()
     if (term.length < 2) return []
@@ -15,6 +15,13 @@
       if (s.name.toLowerCase().includes(term) || s.id.startsWith(term) || s.lea.toLowerCase().includes(term)) {
         out.push({ dataset: 'public', id: s.id, name: s.name, sub: `Public school · ${s.lea} · ${s.id}`, lon: s.lon, lat: s.lat })
         if (out.length >= 8) break
+      }
+    }
+    let np = 0
+    for (const c of app.private?.schools ?? []) {
+      if (c.name.toLowerCase().includes(term) || c.id.toLowerCase().startsWith(term)) {
+        out.push({ dataset: 'private', id: c.id, name: c.name, sub: `Private school · ${c.city ?? ''} · ${c.id}`, lon: c.lon, lat: c.lat })
+        if (++np >= 6) break
       }
     }
     let n = 0

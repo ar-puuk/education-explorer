@@ -12,6 +12,7 @@ export interface UrlState {
   charter?: 'all' | 'yes' | 'no'
   levels?: string[]
   collegeControls?: number[]
+  privateAffil?: number[]
   view?: { center: [number, number]; zoom: number }
 }
 
@@ -44,6 +45,8 @@ export function parseUrl(search: string): UrlState {
   if (lv) out.levels = lv.split('|').filter(Boolean)
   const cc = q.get('ctl')
   if (cc) out.collegeControls = cc.split('|').map(Number).filter((n) => Number.isInteger(n))
+  const pa = q.get('affil')
+  if (pa) out.privateAffil = pa.split('|').map(Number).filter((n) => Number.isInteger(n))
   const v = q.get('v')
   if (v) {
     const [lon, lat, z] = v.split(',').map(Number)
@@ -67,6 +70,7 @@ export function serializeUrl(s: UrlState, defaults: { year: number }): string {
   if (s.charter && s.charter !== 'all') q.set('charter', s.charter)
   if (s.levels?.length) q.set('level', s.levels.join('|'))
   if (s.collegeControls?.length) q.set('ctl', s.collegeControls.join('|'))
+  if (s.privateAffil?.length) q.set('affil', s.privateAffil.join('|'))
   if (s.view) q.set('v', `${s.view.center[0].toFixed(4)},${s.view.center[1].toFixed(4)},${s.view.zoom.toFixed(2)}`)
   const str = q.toString()
   return str ? `?${str}` : ''

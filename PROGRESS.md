@@ -34,5 +34,10 @@ Legend: [x] done, [~] in progress, [ ] todo
 - [x] College layer (diamond/cap markers), filters by control, search, detail panel with fall enrollment (total/level/attendance/gender/race), 12-month headcount, awards, admissions, institution facts, and a table explorer for every IPEDS table (labels, flags, CSV export)
 - [ ] Phase 3b (deferred): IPEDS 1980-1999 files; E.g. curated finance/net-price/graduation charts (available in the explorer)
 
-## Phase 4 .. 6
-- [ ] not started
+## Phase 4: PSS + geocoding
+- [x] PSS 1989-90..2023-24 (18 surveys) -> schools (all columns, labels), enrollment and teachers long tables; ~4 MB
+- [x] Census batch geocoder with committed cache (163 addresses: 146 matched); applied to CCD school locations and college points; private points (292 schools, PSS 2005-06+)
+- [x] Private layer (square/house markers), affiliation filter, biennial-survey note on the slider, private detail panel (enrollment tabs, teachers, facts, table explorer for PSS tables), approximate-location outline
+
+## Phase 5 .. 6
+- [ ] Phase 5 not started: remaining CCD topics (finance F-33, graduation/dropout), boundaries + rollups, compare mode, table/CSV export, methodology page

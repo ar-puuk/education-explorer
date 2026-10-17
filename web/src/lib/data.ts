@@ -1,5 +1,5 @@
 import { dataUrl, queryParquet, type Row } from './db'
-import type { CollegePointsFile, DictEntry, PointsFile, StateMeta, ValueLabel, YearsMeta } from './types'
+import type { CollegePointsFile, DictEntry, PointsFile, PrivatePointsFile, StateMeta, ValueLabel, YearsMeta } from './types'
 
 async function getJson<T>(rel: string): Promise<T> {
   const r = await fetch(dataUrl(rel))
@@ -11,6 +11,7 @@ export const loadState = () => getJson<StateMeta>('meta/state.json')
 export const loadYears = () => getJson<YearsMeta>('meta/years.json')
 export const loadPublicPoints = () => getJson<PointsFile>('geo/points_public.json')
 export const loadCollegePoints = () => getJson<CollegePointsFile>('geo/points_college.json')
+export const loadPrivatePoints = () => getJson<PrivatePointsFile>('geo/points_private.json')
 
 let dictCache: Map<string, DictEntry> | null = null
 
@@ -93,4 +94,12 @@ export const ipedsTables = () => available?.ipeds ?? {}
 /** All rows of an IPEDS table for one institution (every year the table has), newest last. */
 export async function ipedsRows(table: string, unitid: string, years?: number[]): Promise<Row[]> {
   return queryParquet(ipedsFiles(table, years), 'SELECT * FROM {files} WHERE unitid = ? ORDER BY year', [unitid])
+}
+
+
+// ---------------------------------------------------------------------- PSS
+/** Rows of a PSS table (schools, enrollment, teachers) for one school (by PPIN), every survey year. */
+export async function pssRows(table: string, ppin: string): Promise<Row[]> {
+  const have = available?.pss?.[table]?.years ?? []
+  return queryParquet(have.map((y) => `pss/${table}/${y}.parquet`), 'SELECT * FROM {files} WHERE ppin = ? ORDER BY year', [ppin])
 }

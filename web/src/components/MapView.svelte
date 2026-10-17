@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import { MapController, type PointFeature } from '../lib/map'
-  import { app, basemap, isOperating } from '../lib/app.svelte'
+  import { app, basemap, isOperating, surveyYearFor } from '../lib/app.svelte'
   import { levelLabel } from '../lib/labels'
   import { theme } from '../lib/theme.svelte'
 
@@ -43,7 +43,25 @@
       out.push({
         type: 'Feature',
         geometry: { type: 'Point', coordinates: [s.lon, s.lat] },
-        properties: { id: s.id, name: s.name, enroll: s.enroll[i], icon: operating ? 'college' : 'college-closed' },
+        properties: { id: s.id, name: s.name, enroll: s.enroll[i], icon: !operating ? 'college-closed' : s.approx ? 'college-approx' : 'college' },
+      })
+    }
+    return out
+  })
+
+  const privateFeatures = $derived.by((): PointFeature[] => {
+    const p = app.private
+    const sy = surveyYearFor(app.year)
+    if (!p || sy == null) return []
+    const out: PointFeature[] = []
+    for (const s of p.schools) {
+      const i = s.years.indexOf(sy)
+      if (i < 0) continue
+      if (app.privateAffil.length && !app.privateAffil.includes(s.relig ?? -9)) continue
+      out.push({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [s.lon, s.lat] },
+        properties: { id: s.id, name: s.name, enroll: s.enroll[i], icon: s.approx ? 'private-approx' : 'private' },
       })
     }
     return out
@@ -76,6 +94,7 @@
 
   $effect(() => ctl?.setData('public', features))
   $effect(() => ctl?.setData('college', collegeFeatures))
+  $effect(() => ctl?.setData('private', privateFeatures))
   $effect(() => ctl?.setBasemap(basemap.id))
   $effect(() => {
     theme.effective
