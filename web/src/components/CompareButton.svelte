@@ -17,26 +17,24 @@
   title={full && !inSet ? 'Compare holds up to six places' : 'Overlay this place with others in the Compare view'}>
   {inSet ? '✓ In compare' : '+ Compare'}
 </button>
-{#if app.compare.length}
-  <button class="open" onclick={() => (app.showCompare = true)}>Open compare ({app.compare.length})</button>
-{/if}
 
 <style>
   button {
-    background: var(--surface-2);
+    background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 2px 10px;
-    font-size: 12px;
+    border-radius: 7px;
+    padding: 0 10px;
+    min-height: 26px;
+    font-size: 12.5px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  button:hover {
+    background: var(--surface-2);
   }
   .on {
     background: var(--accent);
     color: var(--accent-text);
     border-color: var(--accent);
-  }
-  .open {
-    margin-left: 6px;
-    background: none;
-    color: var(--accent);
   }
 </style>

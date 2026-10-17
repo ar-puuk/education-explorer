@@ -53,6 +53,15 @@ Legend: [x] done, [~] in progress, [ ] todo
 - [ ] Open: 11 IPEDS uniqueness failures (ca2dig 2001, csubbacip 1980, ff1af/ff1ag 2004-07, iccampuses 2021-22, icpccampuses 2023). Keys are derived from the first state's rows, so they are too narrow for states with multiple rows per entity (affiliated entities, campuses). Fix: derive keys from the national staged files, or re-run `bootstrap-maps --force` for the new state
 - [ ] Not run: legacy CCD 1997-2013 (re-reads ~25 min of national SAS files), geometry/size/performance for a large state
 
+## UI redesign ("Atlas", 2026-10-17)
+- [x] New shell: top bar (search with Ctrl K, dataset chips with live counts, theme toggle), left rail (Layers, Filters, Basemap and appearance, Table, Compare, About) opening one foldable drawer at a time, timeline docked at the bottom with a stacked histogram of places per year and survey-year marks
+- [x] Basemap and appearance moved out of Layers into their own rail item (swatch cards, Auto follows theme)
+- [x] One Inspector for school, college, private school and district: header with tags, tabs (Overview, Trends, Details, Data; districts add Schools), headline figures, cards, and an Expand button for a two-column workspace; bottom sheet on phones
+- [x] Self-hosted fonts (Latin subsets): Bricolage Grotesque, Instrument Sans, IBM Plex Mono; dark theme gets its own data colours
+- [x] e2e updated (smoke, a11y with extra scans for drawers and the expanded inspector, mobile); all pass on dev and the built preview
+- [ ] Not done from the plan: pipeline additions (year summary JSON, per-entity profile files, derived metrics table, state median reference lines, search index). The timeline counts and headline figures are computed in the browser from the existing files, and no measured slowdown justified new files yet.
+- [ ] Not done: compare tray inside the inspector (compare still opens as a dialog), phone bottom sheet has one snap height
+
 ## Next / unverified / known issues
 - Known gaps: CCD 1986-87..1996-97 (fixed-width text) and the 1997-98 district file; IPEDS map layer and chart integration before 2000 (tables are in the explorer); curated finance, net-price and graduation charts
 - Unverified: mobile only lightly tested (Chromium emulation); other browsers; other states beyond the Colorado smoke run

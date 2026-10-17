@@ -6,10 +6,13 @@
   import type { CollegeInstitution, DictEntry, TrendPoint } from '../lib/types'
   import TableExplorer from './TableExplorer.svelte'
   import CompareButton from './CompareButton.svelte'
+  import Inspector from './Inspector.svelte'
+  import Kpis from './Kpis.svelte'
   import TrendChart from './TrendChart.svelte'
 
   type Tab = 'total' | 'level' | 'attend' | 'gender' | 'race'
   let tab = $state<Tab>('total')
+  let view = $state('overview')
   let loading = $state(false)
   let error = $state('')
   let hd = $state<Row[]>([])
@@ -125,214 +128,116 @@
   ]
   const caveat = (t: string) => dict.get(`ipeds.${t}.unitid`)?.caveat ?? ''
   const web = $derived(row?.webaddr ? String(row.webaddr) : (inst?.web ?? ''))
+
+  const effyNow = $derived(effySeries.find((d) => d.year === app.year && d.key === 'All students')?.value ?? null)
+  const awardsNow = $derived.by(() => {
+    const rows = awardSeries.filter((d) => d.year === app.year)
+    return rows.length ? rows.reduce((t, d) => t + (d.value ?? 0), 0) : null
+  })
+  const kpis = $derived([
+    { label: 'Fall enrollment', value: enrollNow != null ? fmtInt(enrollNow) : null, sub: schoolYearLabel(app.year) },
+    { label: '12-month headcount', value: effyNow != null ? fmtInt(effyNow) : null, sub: 'unduplicated' },
+    { label: 'Awards conferred', value: awardsNow != null ? fmtInt(awardsNow) : null, sub: 'first majors' },
+    { label: 'Status', value: inYear ? (active ? 'Active' : 'Not active') : null },
+  ])
+  const views = [
+    { id: 'overview', label: 'Overview' },
+    { id: 'trends', label: 'Trends' },
+    { id: 'details', label: 'Details' },
+    { id: 'data', label: 'Data' },
+  ]
+  const tags = $derived(
+    [row ? lab('control', row.control) : '', row ? lab('iclevel', row.iclevel) : '', row?.hbcu === 1 ? 'HBCU' : '', inst?.approx ? 'Approximate location' : '']
+      .filter(Boolean)
+      .map(String),
+  )
 </script>
 
 {#if inst}
-  <aside class="panel" aria-label="College details">
-    <div class="head">
-      <div>
-        <h2>{inst.name}</h2>
-        <p class="sub">{[inst.city, lab('sector', inst.sector)].filter(Boolean).join(' · ')}</p>
-      </div>
-      <button class="close" onclick={() => (app.selected = null)} aria-label="Close details">×</button>
-    </div>
-    <p class="cmprow"><CompareButton dataset="college" id={inst.id} /></p>
+  <Inspector label="College details" kind="College" dataset="college" title={inst.name} bind:tab={view} tabs={views} {tags}>
+    {#snippet sub()}{[inst.city, lab('sector', inst.sector)].filter(Boolean).join(' · ')}{/snippet}
+    {#snippet actions()}<CompareButton dataset="college" id={inst.id} />{/snippet}
+
     {#if error}<p class="err" role="alert">Could not load details: {error}</p>{/if}
     {#if loading && !row}<p class="muted">Loading…</p>{/if}
 
     <p class="yearline">
       <strong>{schoolYearLabel(app.year)}</strong>
-      {#if !inYear}
-        <span class="warn">Not in the IPEDS directory for this year; showing the closest year.</span>
-      {:else}
-        <span class="chip" class:closed={!active}>{active ? 'Active' : 'Not active'}</span>
-      {/if}
-      {#if enrollNow != null}<span class="enr">{fmtInt(enrollNow)} students (fall)</span>{/if}
+      {#if !inYear}<span class="warn">Not in the IPEDS directory for this year; showing the closest year.</span>{/if}
     </p>
-
     {#if inst.approx}
       <p class="note">Approximate location: geocoded from the street address by the U.S. Census Geocoder (non-exact match). NCES provides no coordinates for this institution.</p>
     {:else if inst.coordSource === 'geocode'}
       <p class="note">Location geocoded from the street address by the U.S. Census Geocoder (exact match); NCES provides no coordinates for this institution.</p>
     {/if}
 
-    <h3>Fall enrollment</h3>
-    <div class="tabs" role="tablist" aria-label="Enrollment breakdown">
-      {#each tabs as t}
-        <button role="tab" aria-selected={tab === t.id} class:on={tab === t.id} onclick={() => (tab = t.id)}>{t.label}</button>
-      {/each}
+    <div class="tabbody">
+      {#if view === 'overview'}
+        <div class="span"><Kpis items={kpis} /></div>
+        <section class="card span">
+          <h3>Fall enrollment <small>students</small></h3>
+          <div class="subtabs" role="group" aria-label="Enrollment breakdown">
+            {#each tabs as t}
+              <button class:on={tab === t.id} aria-pressed={tab === t.id} onclick={() => (tab = t.id)}>{t.label}</button>
+            {/each}
+          </div>
+          {#if enrollSeries.length}
+            <TrendChart data={enrollSeries} currentYear={app.year} height={240} alt={`Fall enrollment at ${inst.name}, ${tab}`} />
+            {#if tab === 'race'}<p class="note">Race/ethnicity categories before 2010 are not comparable; the chart starts in 2010.</p>{/if}
+          {:else if !loading}
+            <p class="muted">No fall enrollment data for this view.</p>
+          {/if}
+          {#if caveat('efa')}<details class="cav"><summary>About these counts</summary><p>{caveat('efa')}</p></details>{/if}
+        </section>
+      {:else if view === 'trends'}
+        <section class="card">
+          <h3>12-month unduplicated headcount <small>students</small></h3>
+          {#if effySeries.length}
+            <TrendChart data={effySeries} currentYear={app.year} alt={`12-month enrollment at ${inst.name}`} height={200} />
+          {:else if !loading}
+            <p class="muted">No 12-month enrollment data.</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Awards conferred <small>completions</small></h3>
+          {#if awardSeries.length}
+            <TrendChart data={awardSeries} yLabel="Awards" currentYear={app.year} alt={`Awards conferred at ${inst.name}`} height={200} />
+            <p class="note">First majors only; 2008 onward in this chart (older years are in the data tables).</p>
+          {:else if !loading}
+            <p class="muted">No completions data.</p>
+          {/if}
+        </section>
+        {#if admSeries.some((d) => d.value != null)}
+          <section class="card span">
+            <h3>Admissions <small>first-time undergraduates</small></h3>
+            <TrendChart data={admSeries} yLabel="Students" currentYear={app.year} alt={`Applicants, admitted and enrolled at ${inst.name}`} height={210} />
+            <p class="note">{caveat('adm')}</p>
+          </section>
+        {/if}
+      {:else if view === 'details'}
+        <section class="card span">
+          <h3>Institution details {#if row}<small>{schoolYearLabel(Number(row.year))}</small>{/if}</h3>
+          {#if row}
+            <dl class="facts">
+              <dt>Control</dt><dd>{lab('control', row.control)}</dd>
+              <dt>Level</dt><dd>{lab('iclevel', row.iclevel)}</dd>
+              <dt>Sector</dt><dd>{lab('sector', row.sector)}</dd>
+              {#if row.locale != null}<dt>Locale</dt><dd>{lab('locale', row.locale)}</dd>{/if}
+              {#if row.addr}<dt>Address</dt><dd>{row.addr}, {row.city} {row.stabbr} {row.zip}</dd>{/if}
+              {#if row.countynm}<dt>County</dt><dd>{row.countynm}</dd>{/if}
+              {#if row.hbcu === 1}<dt>HBCU</dt><dd>Yes</dd>{/if}
+              {#if web}<dt>Website</dt><dd><a href={web.startsWith('http') ? web : `https://${web}`} target="_blank" rel="noopener noreferrer">{web}</a></dd>{/if}
+            </dl>
+          {:else if !loading}
+            <p class="muted">No directory record found.</p>
+          {/if}
+        </section>
+      {:else}
+        <section class="card span">
+          <TableExplorer unitid={inst.id} name={inst.name} />
+          <p class="ids">IPEDS unit ID {inst.id}</p>
+        </section>
+      {/if}
     </div>
-    {#if enrollSeries.length}
-      <TrendChart data={enrollSeries} currentYear={app.year} alt={`Fall enrollment at ${inst.name}, ${tab}`} />
-      {#if tab === 'race'}<p class="note">Race/ethnicity categories before 2010 are not comparable; the chart starts in 2010.</p>{/if}
-    {:else if !loading}
-      <p class="muted">No fall enrollment data for this view.</p>
-    {/if}
-    {#if caveat('efa')}<details class="cav"><summary>About these counts</summary><p>{caveat('efa')}</p></details>{/if}
-
-    {#if effySeries.length}
-      <h3>12-month unduplicated headcount</h3>
-      <TrendChart data={effySeries} currentYear={app.year} alt={`12-month enrollment at ${inst.name}`} height={180} />
-    {/if}
-    {#if awardSeries.length}
-      <h3>Awards conferred (completions)</h3>
-      <TrendChart data={awardSeries} yLabel="Awards" currentYear={app.year} alt={`Awards conferred at ${inst.name}`} height={200} />
-      <p class="note">First majors only; 2008 onward in this chart (older years are in the data tables below).</p>
-    {/if}
-    {#if admSeries.some((d) => d.value != null)}
-      <h3>Admissions (first-time undergraduates)</h3>
-      <TrendChart data={admSeries} yLabel="Students" currentYear={app.year} alt={`Applicants, admitted and enrolled at ${inst.name}`} height={190} />
-      <p class="note">{caveat('adm')}</p>
-    {/if}
-
-    {#if row}
-      <h3>Institution details ({schoolYearLabel(Number(row.year))})</h3>
-      <dl class="facts">
-        <dt>Control</dt><dd>{lab('control', row.control)}</dd>
-        <dt>Level</dt><dd>{lab('iclevel', row.iclevel)}</dd>
-        <dt>Sector</dt><dd>{lab('sector', row.sector)}</dd>
-        {#if row.locale != null}<dt>Locale</dt><dd>{lab('locale', row.locale)}</dd>{/if}
-        {#if row.addr}<dt>Address</dt><dd>{row.addr}, {row.city} {row.stabbr} {row.zip}</dd>{/if}
-        {#if row.countynm}<dt>County</dt><dd>{row.countynm}</dd>{/if}
-        {#if row.hbcu === 1}<dt>HBCU</dt><dd>Yes</dd>{/if}
-        {#if web}<dt>Website</dt><dd><a href={web.startsWith('http') ? web : `https://${web}`} target="_blank" rel="noopener noreferrer">{web}</a></dd>{/if}
-      </dl>
-    {/if}
-
-    <TableExplorer unitid={inst.id} name={inst.name} />
-    <p class="ids">IPEDS unit ID {inst.id}</p>
-  </aside>
+  </Inspector>
 {/if}
-
-<style>
-  .panel {
-    position: absolute;
-    z-index: 6;
-    top: 12px;
-    right: 12px;
-    bottom: 100px;
-    width: 430px;
-    overflow: auto;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    padding: 12px 16px 16px;
-  }
-  .head {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-  }
-  h2 {
-    font-size: 17px;
-    margin: 0;
-  }
-  h3 {
-    font-size: 13px;
-    margin: 14px 0 6px;
-  }
-  .sub {
-    margin: 2px 0 0;
-    color: var(--muted);
-  }
-  .close {
-    border: 1px solid var(--border);
-    background: var(--surface-2);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    line-height: 1;
-  }
-  .yearline {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-    margin: 10px 0;
-  }
-  .chip {
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 0 8px;
-    font-size: 12px;
-  }
-  .chip.closed {
-    border-style: dashed;
-    color: var(--muted);
-  }
-  .enr {
-    margin-left: auto;
-    color: var(--muted);
-  }
-  .warn {
-    background: var(--warn-bg);
-    color: var(--warn-text);
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-size: 12px;
-  }
-  .facts {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 3px 12px;
-    margin: 0;
-  }
-  dt {
-    color: var(--muted);
-  }
-  dd {
-    margin: 0;
-    overflow-wrap: anywhere;
-  }
-  a {
-    color: var(--accent);
-  }
-  .tabs {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 6px;
-    flex-wrap: wrap;
-  }
-  .tabs button {
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 2px 10px;
-  }
-  .tabs button.on {
-    background: var(--accent);
-    color: var(--accent-text);
-    border-color: var(--accent);
-  }
-  .note,
-  .muted,
-  .cav p,
-  .ids {
-    color: var(--muted);
-    font-size: 12px;
-  }
-  .err {
-    color: #c62828;
-  }
-  details {
-    margin-top: 6px;
-  }
-  summary {
-    cursor: pointer;
-    color: var(--accent);
-  }
-  @media (max-width: 720px) {
-    .panel {
-      top: auto;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: auto;
-      height: 62%;
-      border-radius: 14px 14px 0 0;
-      z-index: 20;
-    }
-  }
-</style>

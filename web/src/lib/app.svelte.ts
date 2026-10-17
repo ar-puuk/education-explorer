@@ -4,6 +4,8 @@ import { theme } from './theme.svelte'
 import { parseUrl, serializeUrl, type UrlState } from './urlstate'
 import type { CollegePointsFile, PointsFile, PrivatePointsFile, PublicSchool, StateMeta, YearsMeta } from './types'
 
+export type Drawer = 'layers' | 'filters' | 'basemap' | 'about'
+
 export const app = $state({
   ready: false,
   error: '' as string,
@@ -34,7 +36,10 @@ export const app = $state({
   privateAffil: [] as number[],
   view: null as { center: [number, number]; zoom: number } | null,
   playing: false,
-  panelOpen: typeof matchMedia === 'function' ? !matchMedia('(max-width: 720px)').matches : true,
+  /** which left drawer is open (the rail on the left switches between them) */
+  drawer: (typeof matchMedia === 'function' && matchMedia('(max-width: 720px)').matches ? null : 'layers') as Drawer | null,
+  /** inspector expanded to the wide workspace */
+  inspectorWide: false,
 })
 
 export const basemap = {

@@ -6,10 +6,13 @@
   import type { DictEntry, PrivateSchool, TrendPoint } from '../lib/types'
   import TableExplorer from './TableExplorer.svelte'
   import CompareButton from './CompareButton.svelte'
+  import Inspector from './Inspector.svelte'
+  import Kpis from './Kpis.svelte'
   import TrendChart from './TrendChart.svelte'
 
   type Tab = 'total' | 'grade' | 'race' | 'sex'
   let tab = $state<Tab>('total')
+  let view = $state('overview')
   let loading = $state(false)
   let error = $state('')
   let schools = $state<Row[]>([])
@@ -84,18 +87,31 @@
   ]
   const caveat = $derived(dict.get('pss.schools.row_id')?.caveat ?? '')
   const ratio = $derived(row?.student_teacher_ratio != null ? Number(row.student_teacher_ratio).toFixed(1) : '')
+
+  const kpis = $derived([
+    { label: 'Students', value: enrollNow != null ? fmtInt(enrollNow) : null, sub: survey != null ? `${schoolYearLabel(survey)} survey` : undefined },
+    { label: 'Teachers (FTE)', value: row?.teachers_fte != null ? String(row.teachers_fte) : null },
+    { label: 'Students per teacher', value: ratio || null, title: 'Student-teacher ratio as reported in the survey. A descriptive figure, not a quality measure.' },
+    { label: 'Survey years', value: school ? String(school.years.length) : null, sub: 'this school appears in' },
+  ])
+  const views = [
+    { id: 'overview', label: 'Overview' },
+    { id: 'trends', label: 'Trends' },
+    { id: 'details', label: 'Details' },
+    { id: 'data', label: 'Data' },
+  ]
+  const tags = $derived(
+    [row ? lab('level', row.level) : '', row ? lab('relig', row.relig) : '', school?.approx ? 'Approximate location' : '']
+      .filter(Boolean)
+      .map(String),
+  )
 </script>
 
 {#if school}
-  <aside class="panel" aria-label="Private school details">
-    <div class="head">
-      <div>
-        <h2>{school.name}</h2>
-        <p class="sub">{[school.city, lab('typology', school.typology)].filter(Boolean).join(' · ')}</p>
-      </div>
-      <button class="close" onclick={() => (app.selected = null)} aria-label="Close details">×</button>
-    </div>
-    <p class="cmprow"><CompareButton dataset="private" id={school.id} /></p>
+  <Inspector label="Private school details" kind="Private school" dataset="private" title={school.name} bind:tab={view} tabs={views} {tags}>
+    {#snippet sub()}{[school.city, lab('typology', school.typology)].filter(Boolean).join(' · ')}{/snippet}
+    {#snippet actions()}<CompareButton dataset="private" id={school.id} />{/snippet}
+
     {#if error}<p class="err" role="alert">Could not load details: {error}</p>{/if}
     {#if loading && !row}<p class="muted">Loading…</p>{/if}
 
@@ -107,174 +123,63 @@
       {:else}
         <span class="warn">Private school data start with the {schoolYearLabel(school.years[0])} survey.</span>
       {/if}
-      {#if enrollNow != null}<span class="enr">{fmtInt(enrollNow)} students</span>{/if}
     </p>
     {#if school.approx}
       <p class="note">Approximate location: geocoded from the street address by the U.S. Census Geocoder (non-exact match).</p>
     {/if}
 
-    <h3>Enrollment by survey year</h3>
-    <div class="tabs" role="tablist" aria-label="Enrollment breakdown">
-      {#each tabs as t}
-        <button role="tab" aria-selected={tab === t.id} class:on={tab === t.id} onclick={() => (tab = t.id)}>{t.label}</button>
-      {/each}
+    <div class="tabbody">
+      {#if view === 'overview'}
+        <div class="span"><Kpis items={kpis} /></div>
+        <section class="card span">
+          <h3>Enrollment by survey year <small>students</small></h3>
+          <div class="subtabs" role="group" aria-label="Enrollment breakdown">
+            {#each tabs as t}
+              <button class:on={tab === t.id} aria-pressed={tab === t.id} onclick={() => (tab = t.id)}>{t.label}</button>
+            {/each}
+          </div>
+          {#if hasData(series)}
+            <TrendChart data={series} currentYear={survey ?? undefined} mode={tab === 'grade' ? 'heat' : 'line'} height={240} alt={`Enrollment by survey year for ${school.name}, ${tab}`} />
+            <p class="note">Only survey years are shown (the survey is biennial); gaps between surveys are not missing data.</p>
+          {:else if !loading}
+            <p class="muted">No enrollment data for this view.</p>
+          {/if}
+          {#if caveat}<details class="cav"><summary>About these data</summary><p>{caveat}</p></details>{/if}
+        </section>
+      {:else if view === 'trends'}
+        <section class="card span">
+          <h3>Teachers <small>FTE</small></h3>
+          {#if hasData(teachers)}
+            <TrendChart data={teachers} yLabel="FTE" currentYear={survey ?? undefined} alt={`Teachers (FTE) by survey year for ${school.name}`} height={210} />
+          {:else if !loading}
+            <p class="muted">No teacher counts for this school.</p>
+          {/if}
+        </section>
+      {:else if view === 'details'}
+        <section class="card span">
+          <h3>School details {#if row}<small>{schoolYearLabel(Number(row.year))} survey</small>{/if}</h3>
+          {#if row}
+            <dl class="facts">
+              {#if row.address}<dt>Address</dt><dd>{row.address}, {row.city} {row.state_abbrev} {row.zip}</dd>{/if}
+              <dt>Level</dt><dd>{lab('level', row.level)}</dd>
+              <dt>Typology</dt><dd>{lab('typology', row.typology)}</dd>
+              {#if row.relig != null}<dt>Affiliation</dt><dd>{lab('relig', row.relig)}</dd>{/if}
+              {#if row.orient != null}<dt>Orientation</dt><dd>{lab('orient', row.orient)}</dd>{/if}
+              {#if row.ulocale}<dt>Locale</dt><dd>{localeLabel(String(row.ulocale))}</dd>{/if}
+              {#if row.teachers_fte != null}<dt>Teachers (FTE)</dt><dd>{row.teachers_fte}</dd>{/if}
+              {#if ratio}<dt>Student-teacher ratio</dt><dd>{ratio}</dd>{/if}
+              <dt>Location source</dt><dd>{school.coordSource === 'geocode' ? 'U.S. Census Geocoder (approximate)' : 'NCES (provided in the survey file)'}</dd>
+            </dl>
+          {:else if !loading}
+            <p class="muted">No survey record found.</p>
+          {/if}
+        </section>
+      {:else}
+        <section class="card span">
+          <TableExplorer dataset="pss" unitid={school.id} name={school.name} start="schools" />
+          <p class="ids">NCES private school PIN {school.id}</p>
+        </section>
+      {/if}
     </div>
-    {#if hasData(series)}
-      <TrendChart data={series} currentYear={survey ?? undefined} mode={tab === 'grade' ? 'heat' : 'line'} alt={`Enrollment by survey year for ${school.name}, ${tab}`} />
-      <p class="note">Only survey years are shown (the survey is biennial); gaps between surveys are not missing data.</p>
-    {:else if !loading}
-      <p class="muted">No enrollment data for this view.</p>
-    {/if}
-
-    {#if hasData(teachers)}
-      <h3>Teachers (full-time equivalent)</h3>
-      <TrendChart data={teachers} yLabel="FTE" currentYear={survey ?? undefined} alt={`Teachers (FTE) by survey year for ${school.name}`} height={170} />
-    {/if}
-    {#if caveat}<details class="cav"><summary>About these data</summary><p>{caveat}</p></details>{/if}
-
-    {#if row}
-      <h3>School details ({schoolYearLabel(Number(row.year))} survey)</h3>
-      <dl class="facts">
-        {#if row.address}<dt>Address</dt><dd>{row.address}, {row.city} {row.state_abbrev} {row.zip}</dd>{/if}
-        <dt>Level</dt><dd>{lab('level', row.level)}</dd>
-        <dt>Typology</dt><dd>{lab('typology', row.typology)}</dd>
-        {#if row.relig != null}<dt>Affiliation</dt><dd>{lab('relig', row.relig)}</dd>{/if}
-        {#if row.orient != null}<dt>Orientation</dt><dd>{lab('orient', row.orient)}</dd>{/if}
-        {#if row.ulocale}<dt>Locale</dt><dd>{localeLabel(String(row.ulocale))}</dd>{/if}
-        {#if row.teachers_fte != null}<dt>Teachers (FTE)</dt><dd>{row.teachers_fte}</dd>{/if}
-        {#if ratio}<dt>Student-teacher ratio</dt><dd>{ratio}</dd>{/if}
-        <dt>Location source</dt><dd>{school.coordSource === 'geocode' ? 'U.S. Census Geocoder (approximate)' : 'NCES (provided in the survey file)'}</dd>
-      </dl>
-    {/if}
-
-    <TableExplorer dataset="pss" unitid={school.id} name={school.name} start="schools" />
-    <p class="ids">NCES private school PIN {school.id}</p>
-  </aside>
+  </Inspector>
 {/if}
-
-<style>
-  .panel {
-    position: absolute;
-    z-index: 6;
-    top: 12px;
-    right: 12px;
-    bottom: 100px;
-    width: 430px;
-    overflow: auto;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    padding: 12px 16px 16px;
-  }
-  .head {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-  }
-  h2 {
-    font-size: 17px;
-    margin: 0;
-  }
-  h3 {
-    font-size: 13px;
-    margin: 14px 0 6px;
-  }
-  .sub {
-    margin: 2px 0 0;
-    color: var(--muted);
-  }
-  .close {
-    border: 1px solid var(--border);
-    background: var(--surface-2);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    line-height: 1;
-  }
-  .yearline {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-    margin: 10px 0;
-  }
-  .chip {
-    border: 1px dashed var(--border);
-    border-radius: 999px;
-    padding: 0 8px;
-    font-size: 12px;
-    color: var(--muted);
-  }
-  .enr {
-    margin-left: auto;
-    color: var(--muted);
-  }
-  .warn {
-    background: var(--warn-bg);
-    color: var(--warn-text);
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-size: 12px;
-  }
-  .facts {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 3px 12px;
-    margin: 0;
-  }
-  dt {
-    color: var(--muted);
-  }
-  dd {
-    margin: 0;
-    overflow-wrap: anywhere;
-  }
-  .tabs {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 6px;
-    flex-wrap: wrap;
-  }
-  .tabs button {
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 2px 10px;
-  }
-  .tabs button.on {
-    background: var(--accent);
-    color: var(--accent-text);
-    border-color: var(--accent);
-  }
-  .note,
-  .muted,
-  .cav p,
-  .ids {
-    color: var(--muted);
-    font-size: 12px;
-  }
-  .err {
-    color: #c62828;
-  }
-  details {
-    margin-top: 6px;
-  }
-  summary {
-    cursor: pointer;
-    color: var(--accent);
-  }
-  @media (max-width: 720px) {
-    .panel {
-      top: auto;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: auto;
-      height: 62%;
-      border-radius: 14px 14px 0 0;
-      z-index: 20;
-    }
-  }
-</style>

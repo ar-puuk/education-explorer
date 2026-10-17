@@ -14,7 +14,7 @@ const overflow = await page.evaluate(() => document.documentElement.scrollWidth 
 console.log(overflow ? 'FAIL: horizontal page scroll' : 'ok: no horizontal page scroll')
 await page.locator('#school-search').fill(process.env.E2E_SCHOOL ?? 'High')
 await page.locator('#search-results li button').first().click()
-await page.waitForSelector('aside[aria-label="School details"] svg', { timeout: 60000 })
+await page.waitForSelector('aside[aria-label="School details"] .card svg', { timeout: 60000 })
 await page.waitForTimeout(800)
 await page.screenshot({ path: `${out}/m2-detail.png` })
 await browser.close()

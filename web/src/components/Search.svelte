@@ -1,10 +1,12 @@
 <script lang="ts">
   import { app } from '../lib/app.svelte'
+  import Icon from './Icon.svelte'
 
   let { onPick }: { onPick: (dataset: 'public' | 'private' | 'college' | 'district', id: string, lon: number, lat: number) => void } = $props()
   let q = $state('')
   let open = $state(false)
   let active = $state(0)
+  let input = $state<HTMLInputElement>()
 
   type Hit = { dataset: 'public' | 'private' | 'college' | 'district'; id: string; name: string; sub: string; lon: number; lat: number }
   const results = $derived.by((): Hit[] => {
@@ -60,12 +62,16 @@
   }
 </script>
 
+<svelte:window onkeydown={(e) => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); input?.focus(); input?.select() } }} />
+
 <div class="search">
+  <span class="ico"><Icon name="search" size={15} /></span>
   <label class="sr-only" for="school-search">Search schools by name, district or ID</label>
   <input
     id="school-search"
+    bind:this={input}
     type="search"
-    placeholder="Search schools, districts, IDs…"
+    placeholder="Search schools, districts, colleges"
     autocomplete="off"
     role="combobox"
     aria-expanded={open && results.length > 0}
@@ -76,6 +82,7 @@
     onkeydown={key}
     onblur={() => setTimeout(() => (open = false), 150)}
   />
+  <kbd class="hint" aria-hidden="true">Ctrl K</kbd>
   {#if open && results.length}
     <ul id="search-results" role="listbox">
       {#each results as s, i}
@@ -98,10 +105,42 @@
   }
   input {
     width: 100%;
-    padding: 6px 10px;
+    height: 34px;
+    padding: 0 58px 0 32px;
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 10px;
+    background: var(--surface-2);
+  }
+  input::placeholder {
+    color: var(--muted);
+  }
+  input:focus {
     background: var(--surface);
+  }
+  .ico {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    display: inline-flex;
+    pointer-events: none;
+  }
+  .hint {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font: 11px var(--f-data);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0 5px;
+    background: var(--surface);
+    pointer-events: none;
+  }
+  .search:focus-within .hint {
+    display: none;
   }
   ul {
     position: absolute;
@@ -114,7 +153,7 @@
     padding: 4px;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
     max-height: 60vh;
     overflow: auto;

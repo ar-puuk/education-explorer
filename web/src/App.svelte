@@ -6,10 +6,14 @@
   import CompareView from './components/CompareView.svelte'
   import DetailPanel from './components/DetailPanel.svelte'
   import MapView from './components/MapView.svelte'
-  import Sidebar from './components/Sidebar.svelte'
+  import AboutPanel from './components/AboutPanel.svelte'
+  import BasemapPanel from './components/BasemapPanel.svelte'
+  import FiltersPanel from './components/FiltersPanel.svelte'
+  import LayersPanel from './components/LayersPanel.svelte'
+  import Rail from './components/Rail.svelte'
   import TableView from './components/TableView.svelte'
+  import Timeline from './components/Timeline.svelte'
   import TopBar from './components/TopBar.svelte'
-  import YearSlider from './components/YearSlider.svelte'
 
   let map = $state<MapView>()
   let defaultYear = 0
@@ -47,6 +51,14 @@
     if (url !== location.pathname + location.search + location.hash) history.replaceState(null, '', url)
   })
 
+  const phone = typeof matchMedia === 'function' ? matchMedia('(max-width: 720px)') : null
+  $effect(() => {
+    if (app.selected && phone?.matches) app.drawer = null
+  })
+  // the left panels and the inspector push the map controls aside (see app.css)
+  const drawerW = $derived(phone?.matches ? 0 : app.drawer ? 68 + 304 + 8 : 68)
+  const inspW = $derived(phone?.matches || !app.selected ? 0 : 444 + 12)
+
   function pick(dataset: 'public' | 'private' | 'college' | 'district', id: string, lon: number, lat: number) {
     app.selected = { dataset, id }
     if (dataset === 'district') {
@@ -76,12 +88,13 @@
       app.showTable = false
       app.showCompare = false
     } else if (app.selected && !(e.target instanceof HTMLInputElement)) app.selected = null
+    else if (app.drawer && !(e.target instanceof HTMLInputElement)) app.drawer = null
   }}
 />
 
 <div class="shell">
   <TopBar onPick={pick} />
-  <main>
+  <main style:--drawer-w={`${drawerW}px`} style:--insp-w={`${inspW}px`}>
     {#if app.error}
       <div class="fail" role="alert">
         <h2>Could not load the data</h2>
@@ -89,42 +102,31 @@
       </div>
     {:else if app.ready}
       <MapView bind:this={map} />
-      <Sidebar />
+      <Rail />
+      <LayersPanel />
+      <FiltersPanel />
+      <BasemapPanel />
+      <AboutPanel />
       <DetailPanel onSelectSchool={(id, lon, lat) => pick('public', id, lon, lat)} />
-      <YearSlider />
       <TableView />
       <CompareView />
     {:else}
       <p class="loading">Loading…</p>
     {/if}
   </main>
-  <footer>
-    Data: U.S. Dept. of Education, NCES Common Core of Data (public schools); U.S. Census Bureau (geocoding &amp;
-    boundaries). Basemap: OpenFreeMap, OpenMapTiles &copy; OpenStreetMap contributors. Statistical use only; this
-    site does not rank or evaluate schools.
-    <a href="./methodology.html">Sources, versions and caveats</a>
-  </footer>
+  {#if app.ready}<Timeline />{/if}
 </div>
 
 <style>
   .shell {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
     height: 100%;
   }
   main {
     position: relative;
     min-height: 0;
-  }
-  footer {
-    padding: 4px 14px;
-    font-size: 11.5px;
-    color: var(--muted);
-    background: var(--surface);
-    border-top: 1px solid var(--border);
-  }
-  footer a {
-    color: var(--accent);
   }
   .loading,
   .fail {

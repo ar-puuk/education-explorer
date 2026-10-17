@@ -1,15 +1,32 @@
-/* Design tokens. Light by default; dark via the OS preference unless the user chose a theme. */
+/* Latin subsets only (self-hosted from @fontsource; no third-party font requests). */
+@font-face {
+  font-family: 'Bricolage Grotesque Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url('@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2') format('woff2-variations');
+}
+@font-face {
+  font-family: 'Instrument Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2') format('woff2-variations');
+}
+
+/* Design tokens. "Atlas": near-monochrome, blue-tinted chrome; colour is reserved for the data.
+   Light by default; dark via the OS preference unless the user chose a theme. */
 :root {
-  --bg: #f4f6f8;
+  --bg: #f3f4f7;
   --surface: #ffffff;
-  --surface-2: #eef1f4;
-  --text: #1a1f26;
-  --muted: #55606d;
-  --border: #d3d9e0;
-  --accent: #1b5cb8;
+  --surface-2: #f1f3f8;
+  --text: #131a27;
+  --muted: #566074;
+  --border: #dde1e9;
+  --accent: #1b2a47;
   --accent-text: #ffffff;
   --focus: #1b5cb8;
-  --shadow: 0 2px 10px rgb(16 24 40 / 14%);
+  --shadow: 0 1px 2px rgb(20 28 45 / 8%), 0 8px 28px rgb(20 28 45 / 13%);
   --c-public: #0072b2;
   --c-private: #bd4b00;
   --c-college: #00735a;
@@ -25,22 +42,31 @@
   --chart-8: #666d77;
   --warn-bg: #fff4d6;
   --warn-text: #5c4300;
+  --err: #b3261e;
+  --f-display: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, sans-serif;
+  --f-body: 'Instrument Sans Variable', 'Segoe UI', system-ui, sans-serif;
+  --f-data: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  --r-panel: 14px;
+  --r-ctl: 8px;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #0e1217;
-    --surface: #171c23;
-    --surface-2: #1f262e;
-    --text: #e8ecf1;
-    --muted: #a0abb8;
-    --border: #2d3641;
-    --accent: #7db0ff;
-    --accent-text: #0b1220;
+    --bg: #0e131c;
+    --surface: #161d29;
+    --surface-2: #1d2634;
+    --text: #e8ecf3;
+    --muted: #9aa4b8;
+    --border: #2a3447;
+    --accent: #c9d6f2;
+    --accent-text: #0e131c;
     --focus: #9cc2ff;
-    --shadow: 0 2px 12px rgb(0 0 0 / 55%);
-    --ring: #e8ecf1;
+    --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 10px 30px rgb(0 0 0 / 50%);
+    --ring: #e8ecf3;
+    --c-public: #3fa0dc;
+    --c-private: #e8793a;
+    --c-college: #2fb48f;
     --closed: #707a87;
     --chart-1: #56b4e9;
     --chart-2: #f08a3c;
@@ -52,22 +78,26 @@
     --chart-8: #aab2bd;
     --warn-bg: #3a2f10;
     --warn-text: #f3dba0;
+    --err: #ff8a80;
     color-scheme: dark;
   }
 }
 
 :root[data-theme='dark'] {
-  --bg: #0e1217;
-  --surface: #171c23;
-  --surface-2: #1f262e;
-  --text: #e8ecf1;
-  --muted: #a0abb8;
-  --border: #2d3641;
-  --accent: #7db0ff;
-  --accent-text: #0b1220;
+  --bg: #0e131c;
+  --surface: #161d29;
+  --surface-2: #1d2634;
+  --text: #e8ecf3;
+  --muted: #9aa4b8;
+  --border: #2a3447;
+  --accent: #c9d6f2;
+  --accent-text: #0e131c;
   --focus: #9cc2ff;
-  --shadow: 0 2px 12px rgb(0 0 0 / 55%);
-  --ring: #e8ecf1;
+  --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 10px 30px rgb(0 0 0 / 50%);
+  --ring: #e8ecf3;
+  --c-public: #3fa0dc;
+  --c-private: #e8793a;
+  --c-college: #2fb48f;
   --closed: #707a87;
   --chart-1: #56b4e9;
   --chart-2: #f08a3c;
@@ -79,6 +109,7 @@
   --chart-8: #aab2bd;
   --warn-bg: #3a2f10;
   --warn-text: #f3dba0;
+  --err: #ff8a80;
   color-scheme: dark;
 }
 
@@ -96,7 +127,7 @@ body,
 body {
   background: var(--bg);
   color: var(--text);
-  font: 14px/1.45 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font: 14px/1.45 var(--f-body);
 }
 
 button,
@@ -124,10 +155,182 @@ button {
   white-space: nowrap;
 }
 
-/* MapLibre controls inherit the theme */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ---------- shared building blocks (used by several components) ---------- */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-panel);
+  box-shadow: var(--shadow);
+}
+
+.iconbtn {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border: 0;
+  border-radius: var(--r-ctl);
+  background: none;
+  color: var(--muted);
+  padding: 0;
+}
+.iconbtn:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+.iconbtn[aria-pressed='true'],
+.iconbtn.on {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 0 11px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-weight: 500;
+}
+.btn:hover {
+  background: var(--surface-2);
+}
+.btn[aria-pressed='true'],
+.btn.pri {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: var(--surface);
+  min-width: 0;
+}
+.card > h3 {
+  font: 600 13px var(--f-body);
+  margin: 0 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+.card > h3 small {
+  font: 400 11.5px var(--f-data);
+  color: var(--muted);
+}
+
+.subtabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.subtabs button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.subtabs button.on {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+.yearline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+.yearline strong {
+  font: 500 13px var(--f-data);
+}
+.chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+.chip.closed {
+  border-style: dashed;
+  color: var(--muted);
+}
+.warn {
+  background: var(--warn-bg);
+  color: var(--warn-text);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.note,
+.muted,
+.ids {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 6px 0 0;
+}
+.err {
+  color: var(--err);
+}
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 14px;
+  margin: 0;
+}
+.facts dt {
+  color: var(--muted);
+}
+.facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.link {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--accent);
+  text-decoration: underline;
+  font: inherit;
+}
+a {
+  color: var(--accent);
+}
+details.more > summary,
+details.cav > summary {
+  cursor: pointer;
+  color: var(--accent);
+  margin-top: 8px;
+}
+details.cav p {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ---------- MapLibre controls follow the theme and move out from under panels ---------- */
 .maplibregl-ctrl-group {
   background: var(--surface) !important;
   box-shadow: var(--shadow) !important;
+  border-radius: 10px !important;
 }
 .maplibregl-ctrl-group button + button {
   border-top: 1px solid var(--border) !important;
@@ -146,4 +349,25 @@ button {
 }
 .maplibregl-ctrl-attrib a {
   color: var(--text) !important;
+}
+.maplibregl-ctrl-top-right,
+.maplibregl-ctrl-bottom-right {
+  right: var(--insp-w, 0px);
+  transition: right 0.18s ease;
+}
+.maplibregl-ctrl-bottom-left {
+  left: var(--drawer-w, 0px);
+  transition: left 0.18s ease;
+}
+@media (max-width: 720px) {
+  .maplibregl-ctrl-top-right,
+  .maplibregl-ctrl-bottom-right {
+    right: 0;
+  }
+  .maplibregl-ctrl-bottom-left {
+    left: 0;
+  }
+  .maplibregl-ctrl-top-right {
+    top: 56px;
+  }
 }
