@@ -9,12 +9,28 @@ let dbPromise: Promise<duckdb.AsyncDuckDB> | null = null
 let connPromise: Promise<duckdb.AsyncDuckDBConnection> | null = null
 const registered = new Set<string>()
 
+/** Production builds ship the engine gzipped (Pages does not compress .wasm); dev serves it raw. */
+async function wasmSource(): Promise<string> {
+  const url = new URL(wasmUrl, document.baseURI).href
+  if (import.meta.env.DEV) return url
+  const res = await fetch(url + '.gz')
+  if (!res.ok) throw new Error(`DuckDB engine: HTTP ${res.status}`)
+  let bytes = new Uint8Array(await res.arrayBuffer())
+  // Some servers add Content-Encoding: gzip, in which case the browser already inflated it.
+  if (bytes[0] === 0x1f && bytes[1] === 0x8b) {
+    const inflated = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))
+    bytes = new Uint8Array(await new Response(inflated).arrayBuffer())
+  }
+  const blob = new Blob([bytes], { type: 'application/wasm' })
+  return URL.createObjectURL(blob)
+}
+
 function getDb(): Promise<duckdb.AsyncDuckDB> {
   dbPromise ??= (async () => {
     // The worker is loaded from a same-origin Vite asset URL (no CDN at runtime).
     const worker = new Worker(workerUrl)
     const db = new duckdb.AsyncDuckDB(new duckdb.ConsoleLogger(duckdb.LogLevel.WARNING), worker)
-    await db.instantiate(new URL(wasmUrl, document.baseURI).href)
+    await db.instantiate(await wasmSource())
     return db
   })()
   return dbPromise

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/clean.mjs && vite build",
+    "build": "node scripts/clean.mjs && vite build && node scripts/gzip-wasm.mjs",
     "preview": "vite preview --outDir ../docs",
     "check": "svelte-check --tsconfig ./tsconfig.app.json",
     "test": "vitest run"
