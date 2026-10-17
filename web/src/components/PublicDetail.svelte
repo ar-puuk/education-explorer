@@ -3,6 +3,7 @@
   import {
     loadDictionary,
     membershipHistory,
+    schoolRows,
     schoolCharacteristics,
     schoolDirectoryHistory,
     schoolLocationHistory,
@@ -11,6 +12,7 @@
   import type { Row } from '../lib/db'
   import { fmtInt, GRADE_ORDER, gradeLabel, localeLabel, schoolYearLabel } from '../lib/labels'
   import type { DictEntry, PublicSchool, TrendPoint } from '../lib/types'
+  import CompareButton from './CompareButton.svelte'
   import TrendChart from './TrendChart.svelte'
 
   type Tab = 'total' | 'race' | 'sex' | 'grade'
@@ -23,6 +25,8 @@
   let mem = $state<MembershipRow[]>([])
   let dict = $state<Map<string, DictEntry>>(new Map())
   let showAll = $state(false)
+  let lunch = $state<Row[]>([])
+  let staffRows = $state<Row[]>([])
 
   const school = $derived<PublicSchool | undefined>(
     app.selected?.dataset === 'public' ? app.points?.schools.find((s) => s.id === app.selected!.id) : undefined,
@@ -41,14 +45,18 @@
       schoolCharacteristics(years, s.id),
       membershipHistory(years, s.id),
       loadDictionary(),
+      schoolRows('lunch', s.id),
+      schoolRows('staff', s.id),
     ])
-      .then(([d, l, c, m, dc]) => {
+      .then(([d, l, c, m, dc, lu, st]) => {
         if (cancelled) return
         dir = d
         loc = l
         chars = c
         mem = m
         dict = dc
+        lunch = lu
+        staffRows = st
       })
       .catch((e) => {
         if (!cancelled) error = String(e?.message ?? e)
@@ -137,6 +145,22 @@
     return sumBy(detail, (r) => r.grade, GRADE_ORDER)
   })
 
+  const num = (v: unknown) => (typeof v === 'number' ? v : null)
+  const lunchSeries = $derived.by((): TrendPoint[] => {
+    const out: TrendPoint[] = []
+    for (const r of lunch) {
+      if (r.data_group === 'Free and Reduced-price Lunch Table' && r.total_indicator === 'Category Set A') {
+        if (r.lunch_program === 'Free lunch qualified') out.push({ year: r.year as number, key: 'Free lunch qualified', value: num(r.student_count) })
+        if (r.lunch_program === 'Reduced-price lunch qualified') out.push({ year: r.year as number, key: 'Reduced-price lunch qualified', value: num(r.student_count) })
+      }
+      if (r.data_group === 'Direct Certification' && r.total_indicator === 'Education Unit Total') out.push({ year: r.year as number, key: 'Directly certified', value: num(r.student_count) })
+    }
+    return out.sort((a, b) => a.year - b.year)
+  })
+  const staffSeries = $derived(
+    staffRows.filter((r) => r.total_indicator === 'Education Unit Total').map((r): TrendPoint => ({ year: r.year as number, key: 'Teachers (FTE)', value: num(r.teachers) })),
+  )
+  const lunchCaveat = $derived(dict.get('ccd.lunch.student_count')?.caveat ?? '')
   const flagged = $derived(mem.some((r) => r.value_flag && ['missing', 'suppressed', 'not_reported', 'not_applicable', 'not_meeting_standards'].includes(r.value_flag)))
   const caveat = $derived(dict.get('ccd.membership.student_count')?.caveat ?? '')
   const tabs: { id: Tab; label: string }[] = [
@@ -153,11 +177,12 @@
     <div class="head">
       <div>
         <h2>{school.name}</h2>
-        <p class="sub">{school.lea}</p>
+        <p class="sub"><button class="link" onclick={() => (app.selected = { dataset: 'district', id: school.leaid })}>{school.lea}</button></p>
       </div>
       <button class="close" onclick={() => (app.selected = null)} aria-label="Close details">×</button>
     </div>
 
+    <p class="cmprow"><CompareButton dataset="public" id={school.id} /></p>
     {#if error}
       <p class="err" role="alert">Could not load details: {error}</p>
     {/if}
@@ -233,6 +258,16 @@
       </dl>
     {/if}
 
+    {#if lunchSeries.some((d) => d.value != null)}
+      <h3>Free and reduced-price lunch eligibility</h3>
+      <TrendChart data={lunchSeries} yLabel="Students" currentYear={app.year} alt={`Lunch program eligibility counts for ${school.name}`} height={190} />
+      {#if lunchCaveat}<p class="note">{lunchCaveat}</p>{/if}
+    {/if}
+    {#if staffSeries.some((d) => d.value != null)}
+      <h3>Teachers</h3>
+      <TrendChart data={staffSeries} yLabel="FTE" currentYear={app.year} alt={`Teachers (FTE) at ${school.name}`} height={170} />
+    {/if}
+
     {#if otherFields.length}
       <details class="more" bind:open={showAll}>
         <summary>All directory fields for {schoolYearLabel(Number(dirRow?.year ?? app.year))} ({otherFields.length})</summary>
@@ -280,6 +315,14 @@
   .sub {
     margin: 2px 0 0;
     color: var(--muted);
+  }
+  .link {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: var(--accent);
+    text-decoration: underline;
+    font: inherit;
   }
   .close {
     border: 1px solid var(--border);

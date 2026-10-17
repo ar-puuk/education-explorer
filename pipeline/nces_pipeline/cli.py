@@ -37,6 +37,10 @@ def cmd_fetch(a, state) -> int:
         from .edge import fetch_edge
 
         fetch_edge(check_only=a.check_only)
+    if a.source in (None, "boundaries"):
+        from .boundaries import fetch_boundaries
+
+        print(f"TIGER school district files present: {fetch_boundaries(state)}")
     if a.source in (None, "pss"):
         from .pss import fetch_pss
 
@@ -140,6 +144,14 @@ def cmd_geocode(a, state) -> int:
     return 0
 
 
+def cmd_boundaries(a, state) -> int:
+    from .boundaries import build_boundaries, fetch_boundaries
+
+    fetch_boundaries(state)
+    build_boundaries(state)
+    return 0
+
+
 def cmd_points(a, state) -> int:
     from .geo import build_points_college, build_points_private, build_points_public
 
@@ -160,6 +172,7 @@ def cmd_update(a, state) -> int:
     cmd_fetch(ns, state)
     cmd_build(ns, state)
     cmd_geocode(argparse.Namespace(limit=None), state)
+    cmd_boundaries(argparse.Namespace(), state)
     build_dictionary()
     from .geo import build_points_college, build_points_private, build_points_public
 
@@ -194,7 +207,7 @@ def main(argv: list[str] | None = None) -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     f = sub.add_parser("fetch")
-    f.add_argument("--source", choices=["ccd", "edge", "pss", "ipeds"])
+    f.add_argument("--source", choices=["ccd", "edge", "pss", "ipeds", "boundaries"])
     f.add_argument("--year", type=int)
     f.add_argument("--check-only", action="store_true")
     f.add_argument("--refresh-catalog", action="store_true")
@@ -216,6 +229,9 @@ def main(argv: list[str] | None = None) -> int:
     gc = sub.add_parser("geocode", help="geocode addresses that lack source coordinates (Census batch geocoder, cached)")
     gc.add_argument("--limit", type=int)
     gc.set_defaults(fn=cmd_geocode)
+
+    bd2 = sub.add_parser("boundaries", help="build simplified school district boundary GeoJSON files")
+    bd2.set_defaults(fn=cmd_boundaries)
 
     pt = sub.add_parser("points", help="build first-paint points files in docs/data/geo")
     pt.set_defaults(fn=cmd_points)

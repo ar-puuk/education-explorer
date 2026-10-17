@@ -1,12 +1,12 @@
 <script lang="ts">
   import { app } from '../lib/app.svelte'
 
-  let { onPick }: { onPick: (dataset: 'public' | 'private' | 'college', id: string, lon: number, lat: number) => void } = $props()
+  let { onPick }: { onPick: (dataset: 'public' | 'private' | 'college' | 'district', id: string, lon: number, lat: number) => void } = $props()
   let q = $state('')
   let open = $state(false)
   let active = $state(0)
 
-  type Hit = { dataset: 'public' | 'private' | 'college'; id: string; name: string; sub: string; lon: number; lat: number }
+  type Hit = { dataset: 'public' | 'private' | 'college' | 'district'; id: string; name: string; sub: string; lon: number; lat: number }
   const results = $derived.by((): Hit[] => {
     const term = q.trim().toLowerCase()
     if (term.length < 2) return []
@@ -15,6 +15,12 @@
       if (s.name.toLowerCase().includes(term) || s.id.startsWith(term) || s.lea.toLowerCase().includes(term)) {
         out.push({ dataset: 'public', id: s.id, name: s.name, sub: `Public school · ${s.lea} · ${s.id}`, lon: s.lon, lat: s.lat })
         if (out.length >= 8) break
+      }
+    }
+    for (const f of app.districts?.features ?? []) {
+      const nm = String(f.properties?.name ?? '')
+      if (nm.toLowerCase().includes(term) || String(f.properties?.leaid).startsWith(term)) {
+        out.unshift({ dataset: 'district', id: String(f.properties?.leaid), name: nm, sub: `School district · ${f.properties?.leaid}`, lon: 0, lat: 0 })
       }
     }
     let np = 0

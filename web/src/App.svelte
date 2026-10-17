@@ -3,9 +3,11 @@
   import { allYears, app, applyUrl, readUrl, urlFor } from './lib/app.svelte'
   import { loadCollegePoints, loadPrivatePoints, loadPublicPoints, loadState, loadYears, setAvailable } from './lib/data'
   import { warmUp } from './lib/db'
+  import CompareView from './components/CompareView.svelte'
   import DetailPanel from './components/DetailPanel.svelte'
   import MapView from './components/MapView.svelte'
   import Sidebar from './components/Sidebar.svelte'
+  import TableView from './components/TableView.svelte'
   import TopBar from './components/TopBar.svelte'
   import YearSlider from './components/YearSlider.svelte'
 
@@ -45,8 +47,13 @@
     if (url !== location.pathname + location.search + location.hash) history.replaceState(null, '', url)
   })
 
-  function pick(dataset: 'public' | 'private' | 'college', id: string, lon: number, lat: number) {
+  function pick(dataset: 'public' | 'private' | 'college' | 'district', id: string, lon: number, lat: number) {
     app.selected = { dataset, id }
+    if (dataset === 'district') {
+      app.showDistricts = true
+      map?.fitDistrict(id)
+      return
+    }
     map?.flyTo(lon, lat)
     // make sure the place is visible in the current year
     const years = dataset === 'public'
@@ -73,8 +80,10 @@
     {:else if app.ready}
       <MapView bind:this={map} />
       <Sidebar />
-      <DetailPanel />
+      <DetailPanel onSelectSchool={(id, lon, lat) => pick('public', id, lon, lat)} />
       <YearSlider />
+      <TableView />
+      <CompareView />
     {:else}
       <p class="loading">Loading…</p>
     {/if}

@@ -97,6 +97,37 @@ export async function ipedsRows(table: string, unitid: string, years?: number[])
 }
 
 
+// ---------------------------------------------------------------------- districts
+const districtCache = new Map<number, GeoJSON.FeatureCollection>()
+
+/** District boundary vintage for a fall year: that year's file, else the newest earlier one (else the oldest). */
+export function districtVintage(year: number): number | null {
+  const ys = available?.geo?.districts?.years ?? []
+  if (!ys.length) return null
+  const le = ys.filter((y) => y <= year)
+  return le.length ? le[le.length - 1] : ys[0]
+}
+
+export async function loadDistricts(year: number): Promise<GeoJSON.FeatureCollection | null> {
+  const v = districtVintage(year)
+  if (v == null) return null
+  const hit = districtCache.get(v)
+  if (hit) return hit
+  const fc = await getJson<GeoJSON.FeatureCollection>(`geo/districts_${v}.geojson`)
+  districtCache.set(v, fc)
+  return fc
+}
+
+/** Rows of a CCD district table for one district (by leaid), every year the table has. */
+export async function districtRows(table: string, leaid: string): Promise<Row[]> {
+  return queryParquet(files(table, available?.ccd?.[table]?.years ?? []), 'SELECT * FROM {files} WHERE leaid = ? ORDER BY year', [leaid])
+}
+
+/** Rows of a CCD school table for one school (by ncessch). */
+export async function schoolRows(table: string, ncessch: string): Promise<Row[]> {
+  return queryParquet(files(table, available?.ccd?.[table]?.years ?? []), 'SELECT * FROM {files} WHERE ncessch = ? ORDER BY year', [ncessch])
+}
+
 // ---------------------------------------------------------------------- PSS
 /** Rows of a PSS table (schools, enrollment, teachers) for one school (by PPIN), every survey year. */
 export async function pssRows(table: string, ppin: string): Promise<Row[]> {

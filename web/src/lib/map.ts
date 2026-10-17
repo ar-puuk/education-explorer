@@ -1,7 +1,7 @@
 import * as maplibregl from 'maplibre-gl'
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
 import { BASEMAPS, basemapById, styleUrl, type BasemapId } from './basemaps'
-import { cssVar, makeIcon, type Dataset } from './icons'
+import { cssVar, makeIcon, type Dataset, type Selectable } from './icons'
 
 ;(maplibregl as unknown as { setWorkerUrl(u: string): void }).setWorkerUrl(workerUrl)
 
@@ -16,7 +16,7 @@ export interface MapOptions {
   center: [number, number]
   zoom: number
   pitch?: number
-  onSelect: (dataset: Dataset, id: string | null) => void
+  onSelect: (dataset: Selectable, id: string | null) => void
   onMove: (center: [number, number], zoom: number) => void
   onStyleReady?: () => void
 }
@@ -31,7 +31,9 @@ export class MapController {
     college: { type: 'FeatureCollection', features: [] },
   }
   private visible: Record<Dataset, boolean> = { public: true, private: true, college: true }
-  private selected: { dataset: Dataset; id: string } | null = null
+  private selected: { dataset: Selectable; id: string } | null = null
+  private districts: GeoJSON.FeatureCollection = { type: 'FeatureCollection', features: [] }
+  private districtsVisible = false
   private sizeByEnroll = true
   private wired = new Set<string>()
   private popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 16, className: 'ee-popup' })
@@ -65,6 +67,7 @@ export class MapController {
 
   // -------------------------------------------------------------------- install overlays
   private install() {
+    this.addDistricts()
     const ratio = 2
     for (const ds of DATASETS) {
       const fill = cssVar(`--c-${ds}`)
@@ -78,6 +81,79 @@ export class MapController {
     }
     this.addSelection()
     this.setBasemapExtras()
+  }
+
+  /** School district polygons sit under the point layers. */
+  private addDistricts() {
+    const m = this.map
+    if (!m.getSource('districts')) m.addSource('districts', { type: 'geojson', data: this.districts, promoteId: 'leaid' })
+    const vis = this.districtsVisible ? 'visible' : 'none'
+    if (!m.getLayer('districts-fill')) {
+      m.addLayer({
+        id: 'districts-fill',
+        type: 'fill',
+        source: 'districts',
+        layout: { visibility: vis },
+        paint: {
+          'fill-color': cssVar('--accent'),
+          'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.22, 0.07],
+        },
+      })
+      m.addLayer({
+        id: 'districts-line',
+        type: 'line',
+        source: 'districts',
+        layout: { visibility: vis },
+        paint: { 'line-color': cssVar('--accent'), 'line-width': 1.2, 'line-opacity': 0.75 },
+      })
+      m.addLayer({
+        id: 'districts-label',
+        type: 'symbol',
+        source: 'districts',
+        minzoom: 7,
+        layout: {
+          visibility: vis,
+          'text-field': ['get', 'name'],
+          'text-font': ['Noto Sans Regular'],
+          'text-size': 11,
+          'text-max-width': 8,
+        },
+        paint: { 'text-color': cssVar('--text'), 'text-halo-color': cssVar('--surface'), 'text-halo-width': 1.5 },
+      })
+      m.addLayer({
+        id: 'districts-selected',
+        type: 'line',
+        source: 'districts',
+        filter: this.districtFilter(),
+        layout: { visibility: vis },
+        paint: { 'line-color': cssVar('--accent'), 'line-width': 4 },
+      })
+    }
+    if (!this.wired.has('districts')) {
+      this.wired.add('districts')
+      let hovered: string | number | undefined
+      m.on('mousemove', 'districts-fill', (e) => {
+        const f = e.features?.[0]
+        if (!f || f.id === hovered) return
+        if (hovered !== undefined) m.setFeatureState({ source: 'districts', id: hovered }, { hover: false })
+        hovered = f.id
+        m.setFeatureState({ source: 'districts', id: hovered! }, { hover: true })
+      })
+      m.on('mouseleave', 'districts-fill', () => {
+        if (hovered !== undefined) m.setFeatureState({ source: 'districts', id: hovered }, { hover: false })
+        hovered = undefined
+      })
+      m.on('click', 'districts-fill', (e) => {
+        const layers = DATASETS.flatMap((d) => [`${d}-points`, `${d}-clusters`]).filter((l) => m.getLayer(l))
+        if (layers.length && m.queryRenderedFeatures(e.point, { layers }).length) return // a school/college was clicked
+        const f = e.features?.[0]
+        if (f) this.opts.onSelect('district', String(f.properties.leaid))
+      })
+    }
+  }
+
+  private districtFilter(): maplibregl.FilterSpecification {
+    return ['==', ['get', 'leaid'], this.selected?.dataset === 'district' ? this.selected.id : '__none__']
   }
 
   private addDataset(ds: Dataset) {
@@ -197,6 +273,10 @@ export class MapController {
     }
   }
 
+  private selectionFilterFor(ds: Dataset): maplibregl.FilterSpecification {
+    return this.selectionFilter(ds)
+  }
+
   private selectionFilter(ds: Dataset): maplibregl.FilterSpecification {
     const id = this.selected?.dataset === ds ? this.selected.id : '__none__'
     return ['all', ['!', ['has', 'point_count']], ['==', ['get', 'id'], id]]
@@ -231,8 +311,35 @@ export class MapController {
     }
   }
 
-  setSelected(ds: Dataset | null, id: string | null) {
+  setDistricts(fc: GeoJSON.FeatureCollection) {
+    this.districts = fc
+    ;(this.map.getSource('districts') as maplibregl.GeoJSONSource | undefined)?.setData(fc)
+  }
+
+  setDistrictsVisible(v: boolean) {
+    this.districtsVisible = v
+    for (const l of ['districts-fill', 'districts-line', 'districts-label', 'districts-selected']) {
+      if (this.map.getLayer(l)) this.map.setLayoutProperty(l, 'visibility', v ? 'visible' : 'none')
+    }
+  }
+
+  fitDistrict(leaid: string) {
+    const f = this.districts.features.find((x) => x.properties?.leaid === leaid)
+    if (!f) return
+    let [w, s, e, n] = [180, 90, -180, -90]
+    const walk = (c: unknown): void => {
+      if (Array.isArray(c) && typeof c[0] === 'number') {
+        w = Math.min(w, c[0] as number); e = Math.max(e, c[0] as number)
+        s = Math.min(s, c[1] as number); n = Math.max(n, c[1] as number)
+      } else if (Array.isArray(c)) c.forEach(walk)
+    }
+    walk((f.geometry as GeoJSON.Polygon).coordinates)
+    this.map.fitBounds([[w, s], [e, n]], { padding: 60, duration: 600 })
+  }
+
+  setSelected(ds: Selectable | null, id: string | null) {
     this.selected = ds && id ? { dataset: ds, id } : null
+    if (this.map.getLayer('districts-selected')) this.map.setFilter('districts-selected', this.districtFilter())
     for (const d of DATASETS) {
       if (this.map.getLayer(`${d}-selected`)) this.map.setFilter(`${d}-selected`, this.selectionFilter(d))
     }
@@ -269,6 +376,13 @@ export class MapController {
       if (this.map.getLayer(`${ds}-clusters`)) {
         this.map.setPaintProperty(`${ds}-clusters`, 'circle-color', cssVar(`--c-${ds}`))
         this.map.setPaintProperty(`${ds}-clusters`, 'circle-stroke-color', cssVar('--ring'))
+      }
+      for (const l of ['districts-fill', 'districts-line', 'districts-selected']) {
+        if (this.map.getLayer(l)) this.map.setPaintProperty(l, l === 'districts-fill' ? 'fill-color' : 'line-color', cssVar('--accent'))
+      }
+      if (this.map.getLayer('districts-label')) {
+        this.map.setPaintProperty('districts-label', 'text-color', cssVar('--text'))
+        this.map.setPaintProperty('districts-label', 'text-halo-color', cssVar('--surface'))
       }
     }
     for (const d of DATASETS) {

@@ -38,7 +38,9 @@ export interface StateMeta {
 }
 
 export interface YearsMeta {
-  [dataset: string]: { [table: string]: { years: number[]; versions: { [year: string]: string | string[] | null } } }
+  [dataset: string]: {
+    [table: string]: { years: number[]; versions?: { [year: string]: string | string[] | null }; title?: string; survey?: string }
+  }
 }
 
 export interface DictEntry {

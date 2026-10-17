@@ -65,6 +65,15 @@
     </section>
 
     <section>
+      <h2>Boundaries</h2>
+      <label class="row">
+        <input type="checkbox" bind:checked={app.showDistricts} />
+        <span>School district boundaries</span>
+      </label>
+      <p class="hint">Census TIGER/Line boundaries for the selected school year. Click a district for its enrollment, staff, finance and schools.</p>
+    </section>
+
+    <section>
       <h2>Public schools &amp; shared options</h2>
       <label class="row">
         <input type="checkbox" bind:checked={app.includeClosed} />

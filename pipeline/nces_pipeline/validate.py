@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 import duckdb
@@ -53,6 +54,15 @@ class Report:
 
 
 PSS_KEYS = {"schools": ["row_id"], "enrollment": ["row_id", "dimension", "category"], "teachers": ["row_id", "category"]}
+
+
+def _collect(c, xs: list[float], ys: list[float]) -> None:
+    if isinstance(c[0], (int, float)):
+        xs.append(c[0])
+        ys.append(c[1])
+    else:
+        for k in c:
+            _collect(k, xs, ys)
 
 
 def _ipeds_key(family: str) -> list[str] | None:
@@ -116,6 +126,21 @@ def validate(state: State, update_baseline: bool = False) -> Report:
             ).fetchone()[0]
             if bad:
                 r.err(f"ccd.school_location/{f.stem}: {bad} coordinate(s) outside the expanded state bbox")
+
+    # 3b. district boundaries: inside the expanded bbox, 7-digit LEA ids
+    import json as _json
+
+    for gj in sorted((DOCS_DATA / "geo").glob("districts_*.geojson")):
+        doc = _json.loads(gj.read_text(encoding="utf-8"))
+        xs: list[float] = []
+        ys: list[float] = []
+
+        for f in doc["features"]:
+            _collect(f["geometry"]["coordinates"], xs, ys)
+            if not re.fullmatch(r"[0-9]{7}", str(f["properties"]["leaid"])):
+                r.err(f"{gj.name}: bad leaid {f['properties']['leaid']!r}")
+        if xs and (min(xs) < w - EXPAND_DEG or max(xs) > e + EXPAND_DEG or min(ys) < s - EXPAND_DEG or max(ys) > n + EXPAND_DEG):
+            r.err(f"{gj.name}: geometry outside the expanded state bbox")
 
     # 4. membership reconciliation: school-level unit totals vs district-level unit totals (same year)
     mem, dmem = DOCS_DATA / "ccd" / "membership", DOCS_DATA / "ccd" / "district_membership"

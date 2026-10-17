@@ -1,6 +1,118 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Data and methods</title>
-<style>:root{color-scheme:light dark}body{font:16px/1.5 system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem}</style></head>
-<body><p><a href="./">&larr; Back to the map</a></p><h1>Data and methods</h1>
-<p>This page is being written. Sources are NCES CCD, PSS and IPEDS, the U.S. Census Bureau geocoder and boundaries, and OpenFreeMap basemaps. See the project README and DATA_ATTRIBUTION.md in the repository.</p></body></html>
+<script>
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t } catch (e) {}
+</script>
+<style>
+  :root { --bg:#f4f6f8; --surface:#fff; --text:#1a1f26; --muted:#55606d; --border:#d3d9e0; --accent:#1b5cb8; --warn-bg:#fff4d6; --warn-text:#5c4300; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme='light']) { --bg:#0e1217; --surface:#171c23; --text:#e8ecf1; --muted:#a0abb8; --border:#2d3641; --accent:#7db0ff; --warn-bg:#3a2f10; --warn-text:#f3dba0; color-scheme: dark; } }
+  :root[data-theme='dark'] { --bg:#0e1217; --surface:#171c23; --text:#e8ecf1; --muted:#a0abb8; --border:#2d3641; --accent:#7db0ff; --warn-bg:#3a2f10; --warn-text:#f3dba0; color-scheme: dark; }
+  body { background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; margin: 0; }
+  main { max-width: 56rem; margin: 0 auto; padding: 1.2rem 1rem 3rem; }
+  a { color: var(--accent); }
+  h1 { font-size: 1.7rem; margin: .6rem 0; }
+  h2 { font-size: 1.25rem; margin: 2rem 0 .4rem; border-bottom: 1px solid var(--border); padding-bottom: .2rem; }
+  h3 { font-size: 1rem; margin: 1.2rem 0 .2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; background: var(--surface); }
+  th, td { border: 1px solid var(--border); padding: .3rem .5rem; text-align: left; vertical-align: top; }
+  th { background: color-mix(in srgb, var(--surface) 85%, var(--border)); }
+  .note { background: var(--warn-bg); color: var(--warn-text); padding: .5rem .8rem; border-radius: 8px; }
+  .muted { color: var(--muted); }
+  code { background: color-mix(in srgb, var(--surface) 80%, var(--border)); padding: 0 .25em; border-radius: 4px; }
+  .scroll { overflow-x: auto; }
+  nav a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">&larr; Back to the map</a></nav>
+<h1>Data and methods</h1>
+<p>This site shows public data that the U.S. Department of Education's National Center for Education Statistics (NCES) and the U.S. Census Bureau publish, for one state at a time and for every year that could be ingested. Its aim is to make the data easier to find and read. <strong>It does not rank, rate or recommend schools or colleges</strong>, and counts are not measures of quality. Everything is built from the original files by the open-source pipeline in the repository, and nothing is fetched from a third-party data API.</p>
+<p class="note">NCES public-use data are for statistical purposes only. Do not use them to try to identify individuals.</p>
+
+<h2>Sources</h2>
+<div class="scroll"><table>
+<thead><tr><th>Dataset</th><th>What it contains here</th><th>Original source</th></tr></thead>
+<tbody>
+<tr><td>Public schools and districts</td><td>CCD directories, membership (enrollment by grade, race/ethnicity and sex), free and reduced-price lunch eligibility, staff (FTE), school characteristics, students with disabilities (IDEA) and English learners by district (while published), district finance (F-33), graduates/completers and dropouts by district, for school years 2014-15 onward.</td><td><a href="https://nces.ed.gov/ccd/files.asp">NCES Common Core of Data</a></td></tr>
+<tr><td>Public school locations</td><td>School points, locale codes and geography (EDGE). The CCD directory itself has no coordinates.</td><td><a href="https://nces.ed.gov/programs/edge/Geographic/SchoolLocations">NCES EDGE school locations</a></td></tr>
+<tr><td>Private schools</td><td>All Private School Universe Survey public-use files (1989-90 to the latest survey); enrollment (total, grade, race, sex) and teacher tables are derived from them.</td><td><a href="https://nces.ed.gov/surveys/pss/pssdata.asp">NCES PSS</a></td></tr>
+<tr><td>Colleges</td><td>Every IPEDS Data Center complete data file from 2000 onward for the state's institutions: directory, characteristics, enrollment, completions, graduation rates, outcome measures, admissions, student aid, finance, staff, libraries and derived variables.</td><td><a href="https://nces.ed.gov/ipeds/use-the-data">NCES IPEDS</a></td></tr>
+<tr><td>School district boundaries</td><td>Unified, elementary and secondary school district polygons, simplified for display.</td><td><a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html">Census TIGER/Line</a></td></tr>
+<tr><td>Geocoding</td><td>Addresses without source coordinates were located with the <a href="https://geocoding.geo.census.gov/geocoder/">U.S. Census Geocoder</a>; results are cached in the repository.</td><td>U.S. Census Bureau</td></tr>
+<tr><td>Basemaps</td><td>OpenFreeMap vector tiles with OpenMapTiles, &copy; OpenStreetMap contributors.</td><td><a href="https://openfreemap.org">OpenFreeMap</a></td></tr>
+</tbody></table></div>
+
+<h2>Releases, versions and coverage</h2>
+<p class="muted">Generated from <code>data/meta/years.json</code> when this page loads. A version of <em>preliminary</em>, <em>provisional</em> or <em>final</em> is the label NCES gives the release (CCD: 0a preliminary, 1a provisional, 2a final; IPEDS: <em>revised</em> files replace the original <em>provisional</em> ones).</p>
+<div id="versions" class="scroll"><p>Loading…</p></div>
+
+<h2>How values are handled</h2>
+<ul>
+  <li><strong>Missing and suppressed values are never zero.</strong> Source codes such as -1 (missing), -2 (not applicable), -3 (suppressed), M, N or text flags become empty values, and a companion flag column (<code>value_flag</code> or <code>&lt;column&gt;_flag</code>) records the reason: reported, derived, adjusted, missing, not_applicable, not_reported, suppressed, not_meeting_standards.</li>
+  <li><strong>IPEDS</strong> keeps its negative codes as published because in code columns they are labelled categories (for example "Not available") and finance values can really be negative. NCES's own status columns appear as <code>&lt;column&gt;_flag</code>.</li>
+  <li><strong>Identifiers</strong> are text with leading zeros preserved. <strong>Years</strong> are the fall year of the school year (2024 means 2024-25); IPEDS uses the file year.</li>
+  <li>Every table column has a dictionary entry (label, description, unit, years, caveat) built from NCES's own documentation; hover a field name in a detail panel to read it.</li>
+</ul>
+
+<h2>Things to know when reading the data</h2>
+<h3>Public schools (CCD)</h3>
+<ul>
+  <li>The latest year may be a <em>preliminary</em> directory with no membership, staff or lunch files yet; the app opens on the latest year with enrollment.</li>
+  <li><strong>Free and reduced-price lunch</strong> counts are not comparable across schools or years where the Community Eligibility Provision or similar provisions are used, because eligibility may be reported for all students or carried forward.</li>
+  <li><strong>Race/ethnicity</strong> categories were revised in 2009-10 (adding "Two or more races"). Totals are comparable; some detail rows are subtotals ("No Category Codes", "Education Unit Total"): do not add them to detail rows.</li>
+  <li>Counts can be <strong>suppressed</strong> to protect privacy; district totals can differ slightly from the sum of school rows because of reconciliation and adult-education adjustments.</li>
+  <li>Status (open, closed, new, future, changed boundary) is as reported for that school year. Closed schools are hidden unless you ask to include them.</li>
+  <li>District finance (F-33) amounts are in dollars, not inflation-adjusted, and item definitions changed over time. The CCD files used here contain counts of graduates and dropouts, not graduation or dropout rates.</li>
+  <li>CCD school years before 2014-15 use older file layouts and are not yet included.</li>
+</ul>
+<h3>Locations</h3>
+<ul>
+  <li>Public school coordinates come from NCES EDGE (2014-15 through 2024-25). Where a school year has no EDGE file yet, each school's most recent EDGE point is used; schools with no earlier point, and colleges or private schools without source coordinates, were geocoded from their address. <strong>Dotted marker outlines mark approximate (non-exact) geocodes.</strong> PO boxes cannot be located, and some addresses do not match.</li>
+  <li>IPEDS directory files carry coordinates only from about 2008, so institutions that closed earlier have no map location.</li>
+  <li>District boundaries are TIGER/Line vintages: the file labelled <em>Y</em> describes the school year ending in <em>Y</em> (as of January 1 of that year). The newest school year reuses the latest vintage.</li>
+</ul>
+<h3>Private schools (PSS)</h3>
+<ul>
+  <li>The survey is conducted <strong>every two years</strong> (fall of the first year shown). Years in between are not missing data; the map shows the latest survey that began in or before the selected year and says so.</li>
+  <li>School names and permanent IDs are in the public-use files from 2005-06 (PPIN also in 1993-94, 2001-02 and 2003-04), so earlier surveys cannot be linked to schools or mapped, but they are in the data tables.</li>
+  <li>Questionnaire item numbers (P###) belong to each survey; value labels come from the 2023-24 codebook and definitions can differ in earlier years. Values may be imputed by NCES (see the imputation flags). Not every private school is captured by the survey.</li>
+</ul>
+<h3>Colleges (IPEDS)</h3>
+<ul>
+  <li>Fall enrollment race/ethnicity categories changed in 2010; the race chart starts there. 12-month headcount, completions (awards, not students) and admissions are separate surveys with their own definitions.</li>
+  <li>Student aid columns ending in a digit (for example <code>npist0</code>) are positional: the same name refers to different award years in different files.</li>
+  <li>Finance forms differ by institution type (public GASB, private not-for-profit or FASB, for-profit) and are not directly comparable.</li>
+  <li>Graduation rate files hold cohort counts, exclusions and completions: compute a rate only from rows of the same cohort. Admissions are shown as counts only.</li>
+  <li>IPEDS files before 2000 use different layouts and are not yet included.</li>
+</ul>
+
+<h2>Reproducing and extending</h2>
+<p>The code, the data pipeline, the schema maps and every processed Parquet file are in the <a href="https://github.com/ar-puuk/education-explorer">project repository</a> (MIT license; data are U.S. public data, see <code>DATA_ATTRIBUTION.md</code>). The pipeline fails loudly if an NCES release adds, drops or renames a column, so a new release is usually a short edit to a column map. The state shown is chosen by one configuration file, so another state is built by adding a file and running the pipeline.</p>
+</main>
+<script>
+(async function () {
+  var box = document.getElementById('versions')
+  try {
+    var r = await fetch('./data/meta/years.json'); var y = await r.json()
+    var rows = []
+    Object.keys(y).sort().forEach(function (ds) {
+      Object.keys(y[ds]).sort().forEach(function (t) {
+        var e = y[ds][t]; var ys = e.years || []
+        if (!ys.length) return
+        var vers = {}
+        Object.keys(e.versions || {}).forEach(function (yr) { var v = e.versions[yr]; v = Array.isArray(v) ? v.join('/') : v; if (v) (vers[v] = vers[v] || []).push(yr) })
+        var vtxt = Object.keys(vers).map(function (v) { return v + ' (' + (vers[v].length > 3 ? vers[v][0] + '–' + vers[v][vers[v].length - 1] + ', ' + vers[v].length + ' yrs' : vers[v].join(', ')) + ')' }).join('; ')
+        rows.push('<tr><td>' + ds.toUpperCase() + '</td><td>' + (e.title || t).replace(/</g, '&lt;') + '</td><td>' + ys[0] + '–' + ys[ys.length - 1] + ' (' + ys.length + ')</td><td>' + (vtxt || '') + '</td></tr>')
+      })
+    })
+    box.innerHTML = '<table><thead><tr><th>Dataset</th><th>Table</th><th>Years (count)</th><th>Release versions</th></tr></thead><tbody>' + rows.join('') + '</tbody></table>'
+  } catch (e) { box.textContent = 'Could not load coverage information: ' + e }
+})()
+</script>
+</body>
+</html>

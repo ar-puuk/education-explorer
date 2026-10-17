@@ -1,6 +1,8 @@
 /** Runtime marker icons: coloured shape + white glyph. Shape and glyph differ per dataset so
  *  meaning never depends on colour alone. */
 export type Dataset = 'public' | 'private' | 'college'
+/** What can be selected on the map: a point dataset or a school district polygon. */
+export type Selectable = Dataset | 'district'
 
 export const DATASET_LABEL: Record<Dataset, string> = {
   public: 'Public schools (CCD)',

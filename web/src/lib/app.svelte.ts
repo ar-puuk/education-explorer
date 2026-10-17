@@ -1,5 +1,5 @@
 import { defaultBasemap, type BasemapId } from './basemaps'
-import type { Dataset } from './icons'
+import type { Dataset, Selectable } from './icons'
 import { theme } from './theme.svelte'
 import { parseUrl, serializeUrl, type UrlState } from './urlstate'
 import type { CollegePointsFile, PointsFile, PrivatePointsFile, PublicSchool, StateMeta, YearsMeta } from './types'
@@ -13,7 +13,12 @@ export const app = $state({
   college: null as CollegePointsFile | null,
   private: null as PrivatePointsFile | null,
   year: 0,
-  selected: null as { dataset: Dataset; id: string } | null,
+  selected: null as { dataset: Selectable; id: string } | null,
+  showDistricts: false,
+  compare: [] as { dataset: Selectable; id: string }[],
+  showCompare: false,
+  showTable: false,
+  districts: null as GeoJSON.FeatureCollection | null,
   /** explicit user choice; null = follow the theme default */
   basemapChoice: null as BasemapId | null,
   layers: { public: true, private: true, college: true } as Record<Dataset, boolean>,
@@ -77,6 +82,8 @@ export function applyUrl(u: UrlState) {
   if (u.levels) app.levels = u.levels
   if (u.collegeControls) app.collegeControls = u.collegeControls
   if (u.privateAffil) app.privateAffil = u.privateAffil
+  if (u.districts) app.showDistricts = true
+  if (u.compare) app.compare = u.compare
   if (u.view) app.view = u.view
 }
 
@@ -93,6 +100,8 @@ export function currentUrlState(): UrlState {
     levels: app.levels,
     collegeControls: app.collegeControls,
     privateAffil: app.privateAffil,
+    districts: app.showDistricts,
+    compare: app.compare,
     view: app.view ?? undefined,
   }
 }

@@ -1,9 +1,9 @@
 import { basemapById, type BasemapId } from './basemaps'
-import type { Dataset } from './icons'
+import type { Dataset, Selectable } from './icons'
 
 export interface UrlState {
   year?: number
-  selected?: { dataset: Dataset; id: string }
+  selected?: { dataset: Selectable; id: string }
   basemap?: BasemapId
   layers?: Partial<Record<Dataset, boolean>>
   theme?: 'system' | 'light' | 'dark'
@@ -13,6 +13,8 @@ export interface UrlState {
   levels?: string[]
   collegeControls?: number[]
   privateAffil?: number[]
+  districts?: boolean
+  compare?: { dataset: Selectable; id: string }[]
   view?: { center: [number, number]; zoom: number }
 }
 
@@ -26,7 +28,7 @@ export function parseUrl(search: string): UrlState {
   const sel = q.get('sel')
   if (sel) {
     const [ds, ...rest] = sel.split(':')
-    if (DATASETS.includes(ds as Dataset) && rest.length) out.selected = { dataset: ds as Dataset, id: rest.join(':') }
+    if ((DATASETS.includes(ds as Dataset) || ds === 'district') && rest.length) out.selected = { dataset: ds as Selectable, id: rest.join(':') }
   }
   const b = q.get('base')
   if (b && basemapById(b)) out.basemap = b as BasemapId
@@ -45,6 +47,14 @@ export function parseUrl(search: string): UrlState {
   if (lv) out.levels = lv.split('|').filter(Boolean)
   const cc = q.get('ctl')
   if (cc) out.collegeControls = cc.split('|').map(Number).filter((n) => Number.isInteger(n))
+  if (q.get('districts') === '1') out.districts = true
+  const cmp = q.get('cmp')
+  if (cmp) {
+    out.compare = cmp.split('|').flatMap((x) => {
+      const [ds, ...rest] = x.split(':')
+      return (DATASETS.includes(ds as Dataset) || ds === 'district') && rest.length ? [{ dataset: ds as Selectable, id: rest.join(':') }] : []
+    }).slice(0, 6)
+  }
   const pa = q.get('affil')
   if (pa) out.privateAffil = pa.split('|').map(Number).filter((n) => Number.isInteger(n))
   const v = q.get('v')
@@ -70,6 +80,8 @@ export function serializeUrl(s: UrlState, defaults: { year: number }): string {
   if (s.charter && s.charter !== 'all') q.set('charter', s.charter)
   if (s.levels?.length) q.set('level', s.levels.join('|'))
   if (s.collegeControls?.length) q.set('ctl', s.collegeControls.join('|'))
+  if (s.districts) q.set('districts', '1')
+  if (s.compare?.length) q.set('cmp', s.compare.map((c) => `${c.dataset}:${c.id}`).join('|'))
   if (s.privateAffil?.length) q.set('affil', s.privateAffil.join('|'))
   if (s.view) q.set('v', `${s.view.center[0].toFixed(4)},${s.view.center[1].toFixed(4)},${s.view.zoom.toFixed(2)}`)
   const str = q.toString()

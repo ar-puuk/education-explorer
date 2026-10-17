@@ -17261,6 +17261,141 @@
    "sha256": "a3a4f2f440d445b698f29d93b00dbb3e5af41439f3616ac138e7f69f77f0c785",
    "source": "pss",
    "url": "https://nces.ed.gov/surveys/pss/zip/pss2324_pu_sas7bdat.zip"
+  },
+  {
+   "bytes": 1250053,
+   "path": "tiger/2011/unsd_49.zip",
+   "release": "TIGER2011",
+   "retrieved": "2026-10-16",
+   "sha256": "a0bd0954bc4b435b7b5affc231b2dd0012c0f1ffb02b27cb127be5a1745b7f2e",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2011/UNSD/tl_2011_49_unsd.zip"
+  },
+  {
+   "bytes": 1241789,
+   "path": "tiger/2012/unsd_49.zip",
+   "release": "TIGER2012",
+   "retrieved": "2026-10-16",
+   "sha256": "a58b1debe20d2609fa859783c42ad2f1ff4fe38d1a243902c90786ca0187a9e3",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2012/UNSD/tl_2012_49_unsd.zip"
+  },
+  {
+   "bytes": 1260204,
+   "path": "tiger/2013/unsd_49.zip",
+   "release": "TIGER2013",
+   "retrieved": "2026-10-16",
+   "sha256": "af52233bdca7bdb23e1befa03042d9126fb7f033378cb9c36cc6535af8057289",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2013/UNSD/tl_2013_49_unsd.zip"
+  },
+  {
+   "bytes": 1298956,
+   "path": "tiger/2014/unsd_49.zip",
+   "release": "TIGER2014",
+   "retrieved": "2026-10-16",
+   "sha256": "d4d6df822166790c83c5ec2680aa7fc1e785ad2fd7fe6e55eecfb6bab19db57f",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2014/UNSD/tl_2014_49_unsd.zip"
+  },
+  {
+   "bytes": 1483919,
+   "path": "tiger/2015/unsd_49.zip",
+   "release": "TIGER2015",
+   "retrieved": "2026-10-16",
+   "sha256": "ea45a2a74d11e761d77933c2eb304e7bda84024a7f9977edc8ddb6cc262f34ca",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2015/UNSD/tl_2015_49_unsd.zip"
+  },
+  {
+   "bytes": 1485013,
+   "path": "tiger/2016/unsd_49.zip",
+   "release": "TIGER2016",
+   "retrieved": "2026-10-16",
+   "sha256": "0e2c4a849ae7bed24fdff3847484886d3769e13966915896f8658fe6fe292fa8",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2016/UNSD/tl_2016_49_unsd.zip"
+  },
+  {
+   "bytes": 1487884,
+   "path": "tiger/2017/unsd_49.zip",
+   "release": "TIGER2017",
+   "retrieved": "2026-10-16",
+   "sha256": "4abb94f34f4408dc855769d59dd2a772b886357945e365207aa8c28f6b46ea00",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2017/UNSD/tl_2017_49_unsd.zip"
+  },
+  {
+   "bytes": 1481374,
+   "path": "tiger/2018/unsd_49.zip",
+   "release": "TIGER2018",
+   "retrieved": "2026-10-16",
+   "sha256": "a055542b06b303c47cb6b1c5228f19278440419ea01b9eb624952a00c0ba88f3",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2018/UNSD/tl_2018_49_unsd.zip"
+  },
+  {
+   "bytes": 1484009,
+   "path": "tiger/2019/unsd_49.zip",
+   "release": "TIGER2019",
+   "retrieved": "2026-10-16",
+   "sha256": "04c3cc59f36a68ff4f3f6a8944304b14c0333d87b2cdba9205b2f095d18ed95f",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2019/UNSD/tl_2019_49_unsd.zip"
+  },
+  {
+   "bytes": 1485816,
+   "path": "tiger/2020/unsd_49.zip",
+   "release": "TIGER2020",
+   "retrieved": "2026-10-16",
+   "sha256": "755c731a4d8787927fb14e4488de860ce73a2efbe2165a7e2e637ca996188689",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2020/UNSD/tl_2020_49_unsd.zip"
+  },
+  {
+   "bytes": 1500749,
+   "path": "tiger/2021/unsd_49.zip",
+   "release": "TIGER2021",
+   "retrieved": "2026-10-16",
+   "sha256": "dc20fb3b1c660b5ed5c9486ec1edc05bad5997baee19f54533e000b3480645d7",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2021/UNSD/tl_2021_49_unsd.zip"
+  },
+  {
+   "bytes": 1867887,
+   "path": "tiger/2022/unsd_49.zip",
+   "release": "TIGER2022",
+   "retrieved": "2026-10-16",
+   "sha256": "7f11efb0312e575bd84433fea30ab034f96ea1544bee3f1821c02cf0b8fd8616",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2022/UNSD/tl_2022_49_unsd.zip"
+  },
+  {
+   "bytes": 1868425,
+   "path": "tiger/2023/unsd_49.zip",
+   "release": "TIGER2023",
+   "retrieved": "2026-10-16",
+   "sha256": "299b904de632aff48811d9e43790a36dee586c3bafb6d8288274bf2a0feee457",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2023/UNSD/tl_2023_49_unsd.zip"
+  },
+  {
+   "bytes": 1868257,
+   "path": "tiger/2024/unsd_49.zip",
+   "release": "TIGER2024",
+   "retrieved": "2026-10-16",
+   "sha256": "f150e09df1d92625d677f5feb595e71e9f0be669295508756fce06c555eea941",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2024/UNSD/tl_2024_49_unsd.zip"
+  },
+  {
+   "bytes": 1868566,
+   "path": "tiger/2025/unsd_49.zip",
+   "release": "TIGER2025",
+   "retrieved": "2026-10-16",
+   "sha256": "9783b07171c028503a5ea56c75ecf907aa659bddf1df1a6db5d020100bcdae32",
+   "source": "census-tiger",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2025/UNSD/tl_2025_49_unsd.zip"
   }
  ]
 }

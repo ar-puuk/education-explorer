@@ -134,14 +134,55 @@ const note = await page.locator('.slider .note').allInnerTexts()
 note.some((t) => /biennial/.test(t)) ? ok('slider explains biennial survey: ' + note.join(' / ')) : fail('no biennial note at 2024: ' + note.join('|'))
 await page.screenshot({ path: `${out}/07-private.png` })
 
+// district: boundaries, search, panel with trends and rollup
+await page.locator('#school-search').fill('school district')
+await page.locator('#search-results li button', { hasText: 'School district' }).first().click()
+await page.waitForSelector('aside[aria-label="District details"] h2', { timeout: 20000 })
+await page.waitForSelector('aside[aria-label="District details"] svg', { timeout: 60000 })
+ok('district panel with chart rendered')
+for (const t of ['Staff', 'Finance', 'Students', 'Enrollment']) {
+  await page.getByRole('tab', { name: t }).click()
+  await page.waitForTimeout(400)
+}
+await page.waitForSelector('aside[aria-label="District details"] .schools li', { timeout: 20000 })
+ok('district school rollup listed')
+const boundaryOn = await page.evaluate(() => window.__ee.controller.map.getLayoutProperty('districts-fill', 'visibility'))
+boundaryOn === 'visible' ? ok('district boundaries shown after selecting a district') : fail('boundaries not visible: ' + boundaryOn)
+await page.waitForTimeout(800)
+await page.screenshot({ path: `${out}/08-district.png` })
+
+// compare + table view
+await page.getByRole('button', { name: /^\+ Compare$/ }).click()
+await page.getByRole('button', { name: /^Compare/ }).first().click()
+await page.waitForSelector('[role=dialog][aria-label="Compare places"] svg', { timeout: 30000 })
+ok('compare view renders a chart')
+await page.screenshot({ path: `${out}/09-compare.png` })
+await page.getByRole('button', { name: 'Close compare' }).click()
+await page.getByRole('button', { name: 'Table', exact: true }).click()
+await page.waitForSelector('[role=dialog][aria-label="Table of places on the map"] tbody tr', { timeout: 20000 })
+const nrows = await page.locator('[role=dialog][aria-label="Table of places on the map"] tbody tr').count()
+nrows > 50 ? ok('table view lists rows: ' + nrows) : fail('table rows ' + nrows)
+await page.screenshot({ path: `${out}/10-table.png` })
+const dl2 = page.waitForEvent('download')
+await page.getByRole('button', { name: 'Download CSV' }).click()
+ok('table CSV download: ' + (await dl2).suggestedFilename())
+await page.getByRole('button', { name: 'Close table' }).click()
+
+// methodology page
+const mp = await ctx.newPage()
+await mp.goto(base_ + 'methodology.html')
+await mp.waitForSelector('#versions table', { timeout: 20000 })
+ok('methodology page loads coverage table')
+await mp.close()
+
 // URL state round trip
 const url = page.url()
-url.includes('sel=private%3A') || url.includes('sel=private:') ? ok('URL carries selection: ' + url.slice(-70)) : fail('URL missing selection: ' + url)
+url.includes('sel=district%3A') || url.includes('sel=district:') ? ok('URL carries selection: ' + url.slice(-70)) : fail('URL missing selection: ' + url)
 const p2 = await ctx.newPage()
 p2.on('pageerror', (e) => errors.push('pageerror2: ' + e.message))
 await p2.goto(url, { waitUntil: 'domcontentloaded' })
-await p2.waitForSelector('aside[aria-label="Private school details"] h2', { timeout: 30000 })
-ok('URL restores the selected private school')
+await p2.waitForSelector('aside[aria-label="District details"] h2', { timeout: 30000 })
+ok('URL restores the selected district')
 
 // year slider
 await page.locator('input[type=range]').fill('2018')

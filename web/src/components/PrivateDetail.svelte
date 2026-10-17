@@ -5,6 +5,7 @@
   import { fmtInt, localeLabel, schoolYearLabel } from '../lib/labels'
   import type { DictEntry, PrivateSchool, TrendPoint } from '../lib/types'
   import TableExplorer from './TableExplorer.svelte'
+  import CompareButton from './CompareButton.svelte'
   import TrendChart from './TrendChart.svelte'
 
   type Tab = 'total' | 'grade' | 'race' | 'sex'
@@ -94,6 +95,7 @@
       </div>
       <button class="close" onclick={() => (app.selected = null)} aria-label="Close details">×</button>
     </div>
+    <p class="cmprow"><CompareButton dataset="private" id={school.id} /></p>
     {#if error}<p class="err" role="alert">Could not load details: {error}</p>{/if}
     {#if loading && !row}<p class="muted">Loading…</p>{/if}
 

@@ -4,7 +4,7 @@
   import { theme, type ThemePref } from '../lib/theme.svelte'
   import Search from './Search.svelte'
 
-  let { onPick }: { onPick: (dataset: 'public' | 'private' | 'college', id: string, lon: number, lat: number) => void } = $props()
+  let { onPick }: { onPick: (dataset: 'public' | 'private' | 'college' | 'district', id: string, lon: number, lat: number) => void } = $props()
 
   const themes: { id: ThemePref; label: string }[] = [
     { id: 'system', label: 'System' },
@@ -37,6 +37,8 @@
     </select>
   </label>
   <span id="bm-note" class="sr-only">{current?.note ?? ''}</span>
+  <button class="tool" onclick={() => (app.showTable = true)}>Table</button>
+  <button class="tool" onclick={() => (app.showCompare = true)}>Compare{app.compare.length ? ` (${app.compare.length})` : ''}</button>
   <a class="link" href="./methodology.html">Data &amp; methods</a>
 </header>
 
@@ -82,6 +84,12 @@
   .link {
     color: var(--accent);
     margin-left: auto;
+  }
+  .tool {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 5px 11px;
   }
   @media (max-width: 720px) {
     h1 {
