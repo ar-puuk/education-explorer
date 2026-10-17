@@ -9,6 +9,7 @@
   import Inspector from './Inspector.svelte'
   import Kpis from './Kpis.svelte'
   import BarList from './BarList.svelte'
+  import StatusStrip, { type StripRow } from './StatusStrip.svelte'
   import TrendChart from './TrendChart.svelte'
 
   type Tab = 'total' | 'grade' | 'race' | 'sex'
@@ -125,6 +126,31 @@
     schools.filter((r) => num(r.student_teacher_ratio) != null).map((r): TrendPoint => ({ year: r.year as number, key: 'Students per teacher', value: num(r.student_teacher_ratio) })),
   )
   const hasPts = (s: TrendPoint[]) => s.some((d) => (d.value ?? 0) > 0)
+  const preK = $derived(
+    schools.flatMap((r): TrendPoint[] => [
+      { year: r.year as number, key: 'Prekindergarten students', value: num(r.pkenroll) },
+      { year: r.year as number, key: 'Prekindergarten teachers (FTE)', value: num(r.pkteach) },
+    ]),
+  )
+
+  // the same fields in every survey year, shown as a history strip
+  const profileYears = $derived(schools.map((r) => r.year as number))
+  const profileRow = (col: string, label: string, fmt?: (v: unknown) => string): StripRow => ({
+    label,
+    values: Object.fromEntries(
+      schools.filter((r) => r[col] != null && r[col] !== '').map((r) => [r.year as number, fmt ? fmt(r[col]) : lab(col, r[col])]),
+    ),
+  })
+  const profileRows = $derived<StripRow[]>(
+    [
+      profileRow('level', 'Level'),
+      profileRow('relig', 'Affiliation'),
+      profileRow('orient', 'Religious orientation'),
+      profileRow('typology', 'Typology'),
+      profileRow('ulocale', 'Locale', (v) => localeLabel(String(v))),
+      profileRow('region', 'Census region'),
+    ].filter((r) => Object.keys(r.values).length),
+  )
 
   const views = [
     { id: 'overview', label: 'Overview' },
@@ -214,6 +240,12 @@
             <p class="muted">{loading ? 'Loading…' : 'No ratio reported.'}</p>
           {/if}
         </section>
+        {#if hasPts(preK)}
+          <section class="card span">
+            <h3>Prekindergarten <small>students and teachers</small></h3>
+            <TrendChart data={preK} yLabel="Count" currentYear={survey ?? undefined} height={190} alt={`Prekindergarten students and teachers at ${school.name}`} />
+          </section>
+        {/if}
       {:else if view === 'trends'}
         <section class="card span">
           <h3>Teachers <small>FTE</small></h3>
@@ -224,8 +256,15 @@
           {/if}
         </section>
       {:else if view === 'details'}
+        {#if profileRows.length > 1}
+          <section class="card span">
+            <h3>Profile by survey year</h3>
+            <StatusStrip rows={profileRows} years={profileYears} current={survey ?? app.year} label={`Profile by survey year for ${school.name}`} />
+            <p class="note">One square per biennial survey. Colours show different values within a row; the selected survey is outlined.</p>
+          </section>
+        {/if}
         <section class="card span">
-          <h3>School details {#if row}<small>{schoolYearLabel(Number(row.year))} survey</small>{/if}</h3>
+          <h3>School details{#if row}<small>{schoolYearLabel(Number(row.year))} survey</small>{/if}</h3>
           {#if row}
             <dl class="facts">
               {#if row.address}<dt>Address</dt><dd>{row.address}, {row.city} {row.state_abbrev} {row.zip}</dd>{/if}

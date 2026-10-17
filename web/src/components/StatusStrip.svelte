@@ -108,11 +108,15 @@
   }
   .now,
   .nowv {
+    min-width: 6.5rem;
+    font-size: 11px;
     padding-left: 8px;
-    white-space: nowrap;
+    white-space: normal;
     color: var(--muted);
   }
   .nowv {
+    min-width: 6.5rem;
+    font-size: 11px;
     color: var(--text);
   }
   .sr {

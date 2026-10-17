@@ -3,6 +3,7 @@
 // checks that charts drew (svg or list), that nothing threw, and saves screenshots.
 import { chromium } from 'playwright'
 import { mkdirSync } from 'node:fs'
+import AxeBuilder from '@axe-core/playwright'
 
 const base = process.argv[2] ?? 'http://localhost:5173/'
 const out = process.argv[3] ?? 'e2e/shots'
@@ -17,10 +18,10 @@ const fail = (m) => {
 const errors = []
 
 const CASES = [
-  { kind: 'College', term: 'university', label: /College/, aside: 'College details', tabs: ['Overview', 'Students', 'Outcomes', 'Costs'], min: { Overview: 2, Students: 4, Outcomes: 2, Costs: 4 } },
-  { kind: 'Public school', term: 'elementary', label: /Public school/, aside: 'School details', tabs: ['Students', 'Programs'], min: { Students: 2, Programs: 1 } },
-  { kind: 'Private school', term: 'academy', label: /Private school/, aside: 'Private school details', tabs: ['Students'], min: { Students: 1 } },
-  { kind: 'District', term: 'district', label: /district/i, aside: 'District details', tabs: ['Students', 'Money'], min: { Students: 1, Money: 1 } },
+  { kind: 'College', term: 'university', label: /College/, aside: 'College details', tabs: ['Overview', 'Students', 'Outcomes', 'Costs'], min: { Overview: 2, Students: 10, Outcomes: 2, Costs: 9 } },
+  { kind: 'Public school', term: 'elementary', label: /Public school/, aside: 'School details', tabs: ['Students', 'Programs'], min: { Students: 4, Programs: 1 } },
+  { kind: 'Private school', term: 'academy', label: /Private school/, aside: 'Private school details', tabs: ['Students', 'Details'], min: { Students: 1, Details: 1 } },
+  { kind: 'District', term: 'district', label: /district/i, aside: 'District details', tabs: ['Students', 'Money'], min: { Students: 6, Money: 2 } },
 ]
 
 for (const scheme of ['light', 'dark']) {
@@ -49,12 +50,14 @@ for (const scheme of ['light', 'dark']) {
     for (const t of c.tabs) {
       await aside.getByRole('tab', { name: t, exact: true }).click()
       await page.waitForTimeout(2200)
-      await aside.locator('.chart svg[role=img], ul.bars, table[aria-label]').first().waitFor({ timeout: 30000 }).catch(() => {})
+      await aside.locator('.chart svg[role=img], ul.bars, .gb, table[aria-label]').first().waitFor({ timeout: 30000 }).catch(() => {})
       await page.waitForTimeout(800)
-      const charts = await aside.locator('.chart svg[role=img], ul.bars, table[aria-label]').count()
+      const charts = await aside.locator('.chart svg[role=img], ul.bars, .gb, table[aria-label]').count()
       charts >= c.min[t] ? ok(`${scheme} ${c.kind} ${t}: ${charts} charts`) : fail(`${scheme} ${c.kind} ${t}: only ${charts} charts (want ${c.min[t]})`)
       const empties = await aside.locator('.muted').allTextContents()
       if (empties.length) console.log(`   (${t}) empty states:`, empties.map((x) => x.trim().slice(0, 50)).join(' | '))
+      const ax = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).exclude('.maplibregl-canvas').analyze()
+      ax.violations.length ? fail(`${scheme} ${c.kind} ${t}: axe ${ax.violations.map((v) => v.id + ' ' + v.nodes[0].target).join('; ')}`) : ok(`${scheme} ${c.kind} ${t}: axe clean`)
       await page.screenshot({ path: `${out}/ins-${scheme}-${c.kind.replace(' ', '')}-${t}.png` })
     }
     await ctx.close()

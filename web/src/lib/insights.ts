@@ -139,5 +139,28 @@ export function tally<T extends { year: number }>(rows: T[], keyOf: (r: T) => st
   return [...m.values()].sort(sortYear)
 }
 
+/** Rows grouped by `rowKey` (e.g. grade) with the amount in each `segKey` (e.g. race), for the year nearest `year`. */
+export function withinGroups<T extends { year: number }>(
+  rows: T[], year: number, rowKey: (r: T) => string, segKey: (r: T) => string, valOf: (r: T) => number | null,
+): { year: number; groups: { group: string; total: number; segs: { key: string; value: number }[] }[] } | null {
+  const ys = [...new Set(rows.filter((r) => valOf(r) != null).map((r) => r.year))].sort((a, b) => a - b)
+  if (!ys.length) return null
+  const y = ys.includes(year) ? year : ([...ys].reverse().find((v) => v < year) ?? ys[0])
+  const m = new Map<string, Map<string, number>>()
+  for (const r of rows) {
+    if (r.year !== y) continue
+    const v = valOf(r)
+    if (v == null) continue
+    const g = rowKey(r)
+    const e = m.get(g) ?? new Map<string, number>()
+    e.set(segKey(r), (e.get(segKey(r)) ?? 0) + v)
+    m.set(g, e)
+  }
+  const groups = [...m]
+    .map(([group, segs]) => ({ group, total: [...segs.values()].reduce((a, b) => a + b, 0), segs: [...segs].map(([key, value]) => ({ key, value })) }))
+    .filter((g) => g.total > 0)
+  return groups.length ? { year: y, groups } : null
+}
+
 /** Round a percentage for display. */
 export const pct1 = (v: number) => `${Math.round(v * 10) / 10}%`

@@ -21,7 +21,8 @@
   import BarList from './BarList.svelte'
   import StatusStrip, { type StripRow } from './StatusStrip.svelte'
   import TrendChart from './TrendChart.svelte'
-  import { atYear, tally } from '../lib/insights'
+  import { atYear, tally, withinGroups } from '../lib/insights'
+  import GroupBars from './GroupBars.svelte'
 
   type Tab = 'total' | 'race' | 'sex' | 'grade'
   let tab = $state<Tab>('total')
@@ -240,6 +241,15 @@
       .map((d) => ({ label: gradeLabel(d.key), value: d.value as number, text: fmtInt(d.value as number) }))
     return { year: at.year, items }
   })
+  const raceByGrade = $derived.by(() => {
+    const r = withinGroups(detailRows, app.year, (x) => x.grade, (x) => x.race, (x) => x.student_count)
+    if (!r) return null
+    const groups = r.groups
+      .sort((a, b) => GRADE_ORDER.indexOf(a.group) - GRADE_ORDER.indexOf(b.group))
+      .map((g) => ({ ...g, group: gradeLabel(g.group) }))
+    const keys = [...new Set(r.groups.flatMap((g) => g.segs.map((x) => x.key)))]
+    return { year: r.year, groups, keys }
+  })
   const lunchStack = $derived(lunchSeries.filter((d) => d.key !== 'Directly certified'))
   const hasPts = (s: TrendPoint[]) => s.some((d) => (d.value ?? 0) > 0)
 
@@ -252,6 +262,17 @@
   const stripRows = $derived<StripRow[]>(
     [
       strip(dir, 'status', 'Operating status'),
+      {
+        label: 'Grades offered',
+        values: Object.fromEntries(
+          dir.filter((r) => r.grade_low && r.grade_high).map((r) => [r.year as number, gradeLabel(String(r.grade_low)) + '–' + gradeLabel(String(r.grade_high))]),
+        ),
+      },
+      strip(dir, 'level', 'School level'),
+      {
+        label: 'Locale',
+        values: Object.fromEntries(loc.filter((r) => r.locale).map((r) => [r.year as number, localeLabel(String(r.locale))])),
+      },
       strip(dir, 'school_type', 'School type'),
       strip(dir, 'charter', 'Charter school'),
       strip(chars, 'virtual', 'Virtual instruction'),
@@ -343,6 +364,15 @@
             <BarList items={gradeNow.items} label={`Students by grade at ${school.name}`} />
           {:else}
             <p class="muted">{loading ? 'Loading…' : 'No grade counts.'}</p>
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Race and ethnicity within each grade <small>{raceByGrade ? schoolYearLabel(raceByGrade.year) : ''}</small></h3>
+          {#if raceByGrade}
+            <GroupBars groups={raceByGrade.groups} keys={raceByGrade.keys} label={`Race and ethnicity within each grade at ${school.name}`} />
+            <p class="note">Each bar is one grade. Small cells are suppressed in the source and left out, so very small grades may not sum to the grade total.</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No race-by-grade detail.'}</p>
           {/if}
         </section>
         <section class="card">

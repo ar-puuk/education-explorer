@@ -3,9 +3,10 @@
   import { districtRows, loadDictionary } from '../lib/data'
   import type { Row } from '../lib/db'
   import { download, toCsv } from '../lib/explore'
-  import { atYear, n } from '../lib/insights'
+  import { atYear, n, withinGroups } from '../lib/insights'
   import { fmtInt, GRADE_ORDER, gradeLabel, levelLabel, schoolYearLabel } from '../lib/labels'
   import BarList from './BarList.svelte'
+  import GroupBars from './GroupBars.svelte'
   import type { DictEntry, PublicSchool, TrendPoint } from '../lib/types'
   import CompareButton from './CompareButton.svelte'
   import Inspector from './Inspector.svelte'
@@ -192,6 +193,25 @@
   })
   const hasPts = (s: TrendPoint[]) => s.some((d) => (d.value ?? 0) > 0)
 
+  // ---------------------------------------------------------------- graduates and dropouts
+  const gradDetail = $derived(grads.filter((r) => String(r.total_indicator).startsWith('Category Set A')))
+  const dropDetail = $derived(drops.filter((r) => String(r.total_indicator).startsWith('Category Set A')))
+  const REGULAR = 'Regular secondary school diploma'
+  const gradByCredential = $derived(
+    sumBy(gradDetail.filter((r) => r.credential !== 'No Category Codes'), (r) => String(r.credential)).sort((a, b) => a.year - b.year),
+  )
+  const gradByRace = $derived(sumBy(gradDetail.filter((r) => r.credential === REGULAR), (r) => String(r.race)).sort((a, b) => a.year - b.year))
+  const gradBySex = $derived(sumBy(gradDetail.filter((r) => r.credential === REGULAR && r.sex !== 'Not Specified'), (r) => String(r.sex)).sort((a, b) => a.year - b.year))
+  const dropByRace = $derived(sumBy(dropDetail, (r) => String(r.race)).sort((a, b) => a.year - b.year))
+  const dropBySex = $derived(sumBy(dropDetail.filter((r) => r.sex !== 'Not Specified'), (r) => String(r.sex)).sort((a, b) => a.year - b.year))
+  const raceByGrade = $derived.by(() => {
+    const rows = mem.filter(catA).map((r) => ({ year: r.year as number, grade: String(r.grade), race: String(r.race), v: num(r.student_count) }))
+    const r = withinGroups(rows, app.year, (x) => x.grade, (x) => x.race, (x) => x.v)
+    if (!r) return null
+    const groups = r.groups.sort((a, b) => GRADE_ORDER.indexOf(a.group) - GRADE_ORDER.indexOf(b.group)).map((g) => ({ ...g, group: gradeLabel(g.group) }))
+    return { year: r.year, groups, keys: [...new Set(r.groups.flatMap((g) => g.segs.map((x) => x.key)))] }
+  })
+
   // ---------------------------------------------------------------- money, per pupil
   const perPupil = (parts: [string, string][]): TrendPoint[] => {
     const out: TrendPoint[] = []
@@ -276,6 +296,57 @@
             <p class="muted">{loading ? 'Loading…' : 'No sex breakdown.'}</p>
           {/if}
         </section>
+        <section class="card span">
+          <h3>Race and ethnicity within each grade <small>{raceByGrade ? schoolYearLabel(raceByGrade.year) : ''}</small></h3>
+          {#if raceByGrade}
+            <GroupBars groups={raceByGrade.groups} keys={raceByGrade.keys} label={`Race and ethnicity within each grade in ${name}`} />
+            <p class="note">Each bar is one grade. Small cells are suppressed in the source and left out.</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No race-by-grade detail.'}</p>
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Diplomas and other completion credentials <small>graduates</small></h3>
+          {#if hasPts(gradByCredential)}
+            <TrendChart mode="stack" data={gradByCredential} yLabel="Graduates" currentYear={app.year} height={210} alt={`Graduates by credential in ${name}`} />
+            <p class="note">Counts of students who completed in the school year, not a graduation rate. Small counts are suppressed by the state and left out of the totals shown; only some years are collected (2018, 2022, 2023).</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No graduate counts for this district.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Diploma recipients <small>race and ethnicity, share</small></h3>
+          {#if hasPts(gradByRace)}
+            <TrendChart mode="stack" percent data={gradByRace} yLabel="% of graduates" currentYear={app.year} height={220} alt={`Race and ethnicity of diploma recipients in ${name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No data.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Diploma recipients <small>girls and boys, share</small></h3>
+          {#if hasPts(gradBySex)}
+            <TrendChart mode="stack" percent data={gradBySex} yLabel="% of graduates" currentYear={app.year} height={220} alt={`Sex of diploma recipients in ${name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No data.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Dropouts, grades 9–12 <small>race and ethnicity, share</small></h3>
+          {#if hasPts(dropByRace)}
+            <TrendChart mode="stack" percent data={dropByRace} yLabel="% of dropouts" currentYear={app.year} height={220} alt={`Race and ethnicity of dropouts in ${name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No dropout counts for this district.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Dropouts, grades 9–12 <small>girls and boys, share</small></h3>
+          {#if hasPts(dropBySex)}
+            <TrendChart mode="stack" percent data={dropBySex} yLabel="% of dropouts" currentYear={app.year} height={220} alt={`Sex of dropouts in ${name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No data.'}</p>
+          {/if}
+        </section>
+        <p class="note span">Shares describe who is counted; they do not compare groups’ rates, which would need each group’s enrollment.</p>
         <section class="card span">
           <h3>Students with additional needs <small>% of reported enrollment</small></h3>
           {#if hasPts(needShare)}

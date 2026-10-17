@@ -1,5 +1,6 @@
 <script lang="ts">
   import * as Plot from '@observablehq/plot'
+  import { paletteFor } from '../lib/palette'
   import { theme } from '../lib/theme.svelte'
 
   import type { TrendPoint as Point } from '../lib/types'
@@ -34,6 +35,9 @@
 
   const fmt = (v: number | null | undefined) =>
     v == null ? '' : unit === '$' ? `$${Math.round(v).toLocaleString()}` : unit === '%' ? `${Math.round(v * 10) / 10}%` : v.toLocaleString()
+  const compact = new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 })
+  /** y-axis tick text: large dollar amounts are abbreviated so they never clip; tooltips keep the full value */
+  const axis = (d: number) => (unit === '$' ? `$${Math.abs(d) >= 10000 ? compact.format(d) : d.toLocaleString()}` : unit === '%' ? `${d}%` : Math.abs(d) >= 1e6 ? compact.format(d) : d.toLocaleString())
   const css = (v: string) => getComputedStyle(document.documentElement).getPropertyValue(v).trim()
 
   $effect(() => {
@@ -63,7 +67,7 @@ ${d.year}: ${d.value?.toLocaleString()}` })),
         ],
       })
     } else if (mode === 'stack') {
-      const palette = keys.map((_, i) => (i < 8 ? css(`--chart-${i + 1}`) : `color-mix(in srgb, ${css(`--chart-${(i % 8) + 1}`)} 55%, ${css('--surface')})`))
+      const palette = paletteFor(keys, css)
       const yrs = [...new Set(present.map((d) => d.year))].sort((a, b) => a - b)
       const every = Math.max(1, Math.ceil(yrs.length / Math.max(2, Math.floor((w - 60) / 38))))
       const stack = { offset: percent ? ('normalize' as const) : undefined, order: keys }
@@ -74,7 +78,7 @@ ${d.year}: ${d.value?.toLocaleString()}` })),
         marginLeft: 48,
         style: { background: 'transparent', color: css('--text'), fontSize: '11px' },
         x: { type: 'band', domain: yrs, label: null, padding: 0.18, tickFormat: (d: number) => (yrs.indexOf(d) % every === 0 ? String(d) : '') },
-        y: { grid: true, label: yLabel, nice: true, percent },
+        y: { grid: true, label: yLabel, nice: true, percent, tickFormat: percent ? undefined : axis },
         color: { domain: keys, range: palette, legend: keys.length > 1 },
         marks: [
           Plot.barY(present, Plot.stackY(stack, { x: 'year', y: 'value', z: 'key', fill: 'key' })),
@@ -83,14 +87,14 @@ ${d.year}: ${d.value?.toLocaleString()}` })),
         ],
       })
     } else {
-      const palette = keys.map((_, i) => (i < 8 ? css(`--chart-${i + 1}`) : `color-mix(in srgb, ${css(`--chart-${(i % 8) + 1}`)} 55%, ${css('--surface')})`))
+      const palette = paletteFor(keys, css)
       chart = Plot.plot({
         width: w,
         height,
         marginLeft: 48,
         style: { background: 'transparent', color: css('--text'), fontSize: '11px' },
         x: { tickFormat: 'd', label: null, ticks: years.filter((_, i) => i % Math.max(1, Math.ceil(years.length / Math.max(2, Math.floor((w - 60) / 40)))) === 0) },
-        y: { grid: true, label: yLabel, nice: true, zero: true, tickFormat: unit === '$' ? (d: number) => `$${d.toLocaleString()}` : unit === '%' ? (d: number) => `${d}%` : undefined },
+        y: { grid: true, label: yLabel, nice: true, zero: true, tickFormat: axis },
         color: { domain: keys, range: palette, legend: keys.length > 1 },
         marks: [
           Plot.ruleY([0]),

@@ -8,6 +8,7 @@
   } from '../lib/insights'
   import { fmtInt, schoolYearLabel } from '../lib/labels'
   import type { CollegeInstitution, DictEntry, TrendPoint } from '../lib/types'
+  import { ageMix, financeHistory, originBars, salaryByRank, staffByRank } from '../lib/collegeInsights'
   import BarList from './BarList.svelte'
   import CompareButton from './CompareButton.svelte'
   import Inspector from './Inspector.svelte'
@@ -20,6 +21,7 @@
   let tab = $state<Tab>('total')
   let mode = $state<Mode>('all')
   let modeShare = $state(true)
+  let ageLevel = $state<Mode>('all')
   let view = $state('overview')
   let loading = $state(false)
   let error = $state('')
@@ -31,9 +33,9 @@
   const BASE = ['hd', 'efa', 'effy', 'ca', 'efadist']
   const NEEDS: Record<string, string[]> = {
     overview: [],
-    students: ['adm', 'drvef', 'efd', 'drvhr'],
+    students: ['adm', 'drvef', 'efd', 'drvhr', 'efb', 'efc', 'salis'],
     outcomes: ['efd', 'drvgr', 'om'],
-    costs: ['icay', 'drvic', 'drvcost', 'sfa', 'drvf'],
+    costs: ['icay', 'drvic', 'drvcost', 'sfa', 'drvf', 'ff1a', 'ff2', 'ff3'],
   }
 
   const inst = $derived<CollegeInstitution | undefined>(
@@ -245,6 +247,17 @@
   ]
   const staffSeries = $derived(STAFF.flatMap(([label, cols]) => summed(R('drvhr'), cols, label)).filter((d) => (d.value ?? 0) > 0).sort((x, y) => x.year - y.year))
 
+  // ------------------------------------------------------------------ age, origin, faculty, finance history
+  const AGE_CODE: Record<Mode, number> = { all: 1, ug: 2, grad: 5 }
+  const ageSeries = $derived(ageMix(R('efb'), AGE_CODE[ageLevel]))
+  const origin = $derived(originBars(R('efc'), app.year, (line) => labels.get(`ipeds.efc.line|${line}`) ?? `State ${line}`))
+  const originBarItems = $derived((origin?.items ?? []).map((d) => ({ ...d, text: fmtInt(d.value) })))
+  const rankStaff = $derived(staffByRank(R('salis')))
+  const salaries = $derived(salaryByRank(R('drvhr'), R('salis')))
+  const money = $derived(
+    financeHistory({ public: R('ff1a'), nonprofit: R('ff2'), forprofit: R('ff3') }),
+  )
+
   const tabs: { id: Tab; label: string }[] = [
     { id: 'total', label: 'Total' }, { id: 'level', label: 'Level' }, { id: 'attend', label: 'Full/part-time' },
     { id: 'gender', label: 'Gender' }, { id: 'race', label: 'Race/ethnicity' },
@@ -348,6 +361,20 @@
           {/if}
         </section>
         <section class="card span">
+          <h3>Age of students <small>share of fall enrollment</small></h3>
+          <div class="subtabs" role="group" aria-label="Student level for age">
+            {#each modeTabs as t}
+              <button class:on={ageLevel === t.id} aria-pressed={ageLevel === t.id} onclick={() => (ageLevel = t.id)}>{t.label}</button>
+            {/each}
+          </div>
+          {#if has(ageSeries)}
+            <TrendChart mode="stack" percent data={ageSeries} yLabel="% of students" currentYear={app.year} height={240} alt={`Age of students at ${inst.name}`} />
+            <p class="note">Ages as of fall. Reported every year from 2003; earlier surveys used different categories.</p>
+          {:else}
+            {@render empty('No age data for this view.')}
+          {/if}
+        </section>
+        <section class="card span">
           <h3>Admissions <small>first-time undergraduates</small></h3>
           {#if has(admSeries)}
             <TrendChart data={admSeries} yLabel="Students" currentYear={app.year} alt={`Applicants, admitted and enrolled at ${inst.name}`} height={210} />
@@ -365,6 +392,15 @@
             {@render empty('No residence data (reported in alternate years).')}
           {/if}
         </section>
+        <section class="card span">
+          <h3>Where first-time students come from <small>{origin ? `${schoolYearLabel(origin.year)}, state of residence when first admitted` : ''}</small></h3>
+          {#if originBarItems.length}
+            <BarList items={originBarItems} label={`State of residence of first-time students at ${inst.name}`} />
+            <p class="note">First-time degree- or certificate-seeking undergraduates. Reported in alternate years, so the closest earlier report is shown.</p>
+          {:else}
+            {@render empty('No residence-by-state data.')}
+          {/if}
+        </section>
         <section class="card">
           <h3>12-month headcount <small>students</small></h3>
           {#if effySeries.length}
@@ -380,6 +416,23 @@
             <p class="note">Full-time-equivalent students per full-time-equivalent instructional staff. A descriptive ratio, not a quality measure.</p>
           {:else}
             {@render empty('No ratio reported.')}
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Who teaches <small>instructional staff by academic rank</small></h3>
+          {#if has(rankStaff)}
+            <TrendChart mode="stack" data={rankStaff} yLabel="Staff" currentYear={app.year} height={220} alt={`Instructional staff by rank at ${inst.name}`} />
+          {:else}
+            {@render empty('No instructional staff data (reported from 2012).')}
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Average faculty salary <small>by rank, equated to a 9-month contract</small></h3>
+          {#if has(salaries)}
+            <TrendChart data={salaries} unit="$" yLabel="Dollars" currentYear={app.year} height={230} alt={`Average faculty salary by rank at ${inst.name}`} />
+            <p class="note">2021 onward: NCES-derived averages. 2012 to 2015: average monthly salary times nine. The 2016 to 2020 files report only total outlays, so those years are blank. Averages mix part-year and full-year staff.</p>
+          {:else}
+            {@render empty('No salary data reported.')}
           {/if}
         </section>
         <section class="card span">
@@ -474,6 +527,23 @@
             <TrendChart data={aidAmount} unit="$" yLabel="Dollars" currentYear={app.year} height={220} alt={`Average aid amounts at ${inst.name}`} />
           {:else}
             {@render empty('No aid amount data.')}
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Revenue by source, every year <small>dollars</small></h3>
+          {#if has(money.revenue)}
+            <TrendChart mode="stack" unit="$" data={money.revenue} yLabel="Dollars" currentYear={app.year} height={250} alt={`Revenue by source at ${inst.name}`} />
+            <p class="note">From the IPEDS finance survey (the form filed by public, private nonprofit or for-profit institutions). Categories are grouped across forms and not adjusted for inflation; hospital revenue can dominate at some universities.</p>
+          {:else}
+            {@render empty('No finance data (reported from 1997 or 2002 depending on form).')}
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Expenses by purpose, every year <small>dollars</small></h3>
+          {#if has(money.expense)}
+            <TrendChart mode="stack" unit="$" data={money.expense} yLabel="Dollars" currentYear={app.year} height={250} alt={`Expenses by purpose at ${inst.name}`} />
+          {:else}
+            {@render empty('No expense data.')}
           {/if}
         </section>
         <section class="card span">
