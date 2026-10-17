@@ -23,7 +23,7 @@ def _load() -> dict:
 
 def _save(m: dict) -> None:
     m["files"].sort(key=lambda f: f["path"])
-    MANIFEST.write_text(json.dumps(m, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    MANIFEST.write_text(json.dumps(m, indent=1, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
 
 
 def sha256_file(p: Path) -> str:

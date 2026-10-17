@@ -48,7 +48,7 @@ def build_catalog(refresh: bool = False) -> list[dict]:
                         files[f["fileId"]] = {k: f.get(k) for k in KEEP}
     out = sorted(files.values(), key=lambda f: (f["schoolYear"], f["level"], str(f["component"]), f["fileId"]))
     CATALOG.parent.mkdir(parents=True, exist_ok=True)
-    CATALOG.write_text(json.dumps(out, indent=0), encoding="utf-8")
+    CATALOG.write_text(json.dumps(out, indent=0), encoding="utf-8", newline="\n")
     return out
 
 

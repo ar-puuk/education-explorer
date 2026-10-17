@@ -125,7 +125,7 @@ def write_edge_map(year: int, force: bool = False) -> Path:
         return p
     p.parent.mkdir(parents=True, exist_ok=True)
     doc = {"source": "edge", "topic": "school_location", "year": year, "columns": edge_bootstrap(edge_columns(year))}
-    p.write_text(yaml.safe_dump(doc, sort_keys=False, width=140), encoding="utf-8")
+    p.write_text(yaml.safe_dump(doc, sort_keys=False, width=140), encoding="utf-8", newline="\n")
     return p
 
 

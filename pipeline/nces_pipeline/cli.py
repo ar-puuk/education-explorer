@@ -122,9 +122,16 @@ def cmd_update(a, state) -> int:
     return cmd_validate(argparse.Namespace(update_baseline=True), state)
 
 
+def _default_state() -> str | None:
+    from .config import CONFIG_DIR
+
+    found = sorted(p.stem for p in (CONFIG_DIR / "states").glob("*.yml"))
+    return found[0] if len(found) == 1 else None
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="nces_pipeline")
-    ap.add_argument("--state", default="utah", help="config/states/<name>.yml")
+    ap.add_argument("--state", default=_default_state(), help="config/states/<name>.yml (default: the only one present)")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     f = sub.add_parser("fetch")
@@ -157,6 +164,8 @@ def main(argv: list[str] | None = None) -> int:
     bd.set_defaults(fn=cmd_build)
 
     a = ap.parse_args(argv)
+    if not a.state:
+        ap.error("--state is required when several state configs exist")
     return a.fn(a, load_state(a.state))
 
 

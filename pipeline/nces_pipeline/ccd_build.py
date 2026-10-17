@@ -198,5 +198,5 @@ def write_bootstrap_map(topic: Topic, year: int, raw_cols: list[str], force: boo
     doc = {"source": "ccd", "topic": topic.name, "year": year, "columns": cols}
     if unpivot:
         doc["unpivot"] = unpivot
-    p.write_text(yaml.safe_dump(doc, sort_keys=False, width=140, allow_unicode=True), encoding="utf-8")
+    p.write_text(yaml.safe_dump(doc, sort_keys=False, width=140, allow_unicode=True), encoding="utf-8", newline="\n")
     return p

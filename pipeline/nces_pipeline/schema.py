@@ -108,5 +108,5 @@ def scaffold(source: str, topic: str, year: int, raw_cols: list[str]) -> Path:
     header = (f"# Scaffolded from {prev[-1] if prev else 'nothing'}. Resolve every `todo` and verify types.\n"
               + (f"# Columns in the previous map but absent from this file: {', '.join(gone)}\n" if gone else ""))
     p.write_text(header + yaml.safe_dump({"source": source, "topic": topic, "year": year, "columns": cols},
-                                         sort_keys=False, width=120), encoding="utf-8")
+                                         sort_keys=False, width=120), encoding="utf-8", newline="\n")
     return p

@@ -179,5 +179,5 @@ def validate(state: State, update_baseline: bool = False) -> Report:
                 elif n and now < n * (1 - DROP_FAIL):
                     r.err(f"{t}/{y}: row count fell {n} -> {now} (> {DROP_FAIL:.0%} drop)")
     if update_baseline and not r.errors:
-        ROWCOUNTS.write_text(json.dumps(rc, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+        ROWCOUNTS.write_text(json.dumps(rc, indent=1, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
     return r

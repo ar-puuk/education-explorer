@@ -31,4 +31,4 @@ def write_meta(state: State) -> None:
                     ver = [r[0] for r in con.execute(f"SELECT DISTINCT data_version FROM read_parquet('{f.as_posix()}') ORDER BY 1").fetchall()]
                 entry[f.stem] = ver[0] if ver and len(ver) == 1 else (ver or None)
             out[ds][d.name] = {"years": [int(y) for y in entry], "versions": entry}
-    (meta / "years.json").write_text(json.dumps(out, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    (meta / "years.json").write_text(json.dumps(out, indent=1, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
