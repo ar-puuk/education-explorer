@@ -8,6 +8,7 @@
   import CompareButton from './CompareButton.svelte'
   import Inspector from './Inspector.svelte'
   import Kpis from './Kpis.svelte'
+  import BarList from './BarList.svelte'
   import TrendChart from './TrendChart.svelte'
 
   type Tab = 'total' | 'grade' | 'race' | 'sex'
@@ -94,8 +95,40 @@
     { label: 'Students per teacher', value: ratio || null, title: 'Student-teacher ratio as reported in the survey. A descriptive figure, not a quality measure.' },
     { label: 'Survey years', value: school ? String(school.years.length) : null, sub: 'this school appears in' },
   ])
+  // ------------------------------------------------------------------ who the students are
+  const isTotal = (r: Row) => r.dimension === 'total' && r.category === 'All students'
+  const raceComp = $derived(
+    enr.filter((r) => r.dimension === 'race' && num(r.value) != null).map((r): TrendPoint => ({ year: r.year as number, key: String(r.category), value: num(r.value) })),
+  )
+  const sexComp = $derived.by((): TrendPoint[] => {
+    const out: TrendPoint[] = []
+    for (const t of enr.filter(isTotal)) {
+      const male = enr.find((m) => m.year === t.year && m.dimension === 'sex')
+      const total = num(t.value)
+      const m = male ? num(male.value) : null
+      if (total != null && m != null && total >= m) out.push({ year: t.year as number, key: 'Male', value: m }, { year: t.year as number, key: 'Female (total minus male)', value: total - m })
+    }
+    return out.sort((a, b) => a.year - b.year)
+  })
+  const gradeNow = $derived.by(() => {
+    const g = enr.filter((r) => r.dimension === 'grade' && (num(r.value) ?? 0) > 0)
+    if (!g.length || survey == null) return null
+    const y = g.some((r) => r.year === survey) ? survey : Math.max(...g.map((r) => r.year as number))
+    const order = ['Nursery/prekindergarten', 'Transitional kindergarten', 'Kindergarten', 'Transitional first grade', ...Array.from({ length: 12 }, (_, i) => `Grade ${i + 1}`), 'Ungraded']
+    const items = g
+      .filter((r) => r.year === y)
+      .sort((a, b) => order.indexOf(String(a.category)) - order.indexOf(String(b.category)))
+      .map((r) => ({ label: String(r.category), value: num(r.value) as number, text: fmtInt(num(r.value) as number) }))
+    return { year: y, items }
+  })
+  const ratioSeries = $derived(
+    schools.filter((r) => num(r.student_teacher_ratio) != null).map((r): TrendPoint => ({ year: r.year as number, key: 'Students per teacher', value: num(r.student_teacher_ratio) })),
+  )
+  const hasPts = (s: TrendPoint[]) => s.some((d) => (d.value ?? 0) > 0)
+
   const views = [
     { id: 'overview', label: 'Overview' },
+    { id: 'students', label: 'Students' },
     { id: 'trends', label: 'Trends' },
     { id: 'details', label: 'Details' },
     { id: 'data', label: 'Data' },
@@ -145,6 +178,41 @@
             <p class="muted">No enrollment data for this view.</p>
           {/if}
           {#if caveat}<details class="cav"><summary>About these data</summary><p>{caveat}</p></details>{/if}
+        </section>
+      {:else if view === 'students'}
+        <section class="card span">
+          <h3>Race and ethnicity <small>share of students, by survey year</small></h3>
+          {#if hasPts(raceComp)}
+            <TrendChart mode="stack" percent data={raceComp} yLabel="% of students" currentYear={survey ?? undefined} height={240} alt={`Race and ethnicity share of enrollment at ${school.name}`} />
+            <p class="note">Only survey years are shown (the survey is biennial). Race categories before 2007 were reported differently.</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No race/ethnicity data for this school.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Grades <small>{gradeNow ? `${schoolYearLabel(gradeNow.year)} survey` : ''}</small></h3>
+          {#if gradeNow?.items.length}
+            <BarList items={gradeNow.items} label={`Students by grade at ${school.name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No grade counts.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Girls and boys <small>share of students</small></h3>
+          {#if hasPts(sexComp)}
+            <TrendChart mode="stack" percent data={sexComp} yLabel="% of students" currentYear={survey ?? undefined} height={200} alt={`Sex of students at ${school.name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No sex breakdown.'}</p>
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Students per teacher <small>as reported</small></h3>
+          {#if hasPts(ratioSeries)}
+            <TrendChart data={ratioSeries} yLabel="Students per teacher" currentYear={survey ?? undefined} height={190} alt={`Student-teacher ratio at ${school.name}`} />
+            <p class="note">A descriptive ratio from the survey, not a quality measure.</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No ratio reported.'}</p>
+          {/if}
         </section>
       {:else if view === 'trends'}
         <section class="card span">

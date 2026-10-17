@@ -18,7 +18,10 @@
   import Inspector from './Inspector.svelte'
   import Kpis from './Kpis.svelte'
   import TableExplorer from './TableExplorer.svelte'
+  import BarList from './BarList.svelte'
+  import StatusStrip, { type StripRow } from './StatusStrip.svelte'
   import TrendChart from './TrendChart.svelte'
+  import { atYear, tally } from '../lib/insights'
 
   type Tab = 'total' | 'race' | 'sex' | 'grade'
   let tab = $state<Tab>('total')
@@ -223,8 +226,47 @@
     { label: 'Students per teacher', value: ratioNow, title: 'Enrollment divided by full-time-equivalent teachers. A descriptive ratio, not a quality measure.' },
     { label: 'Free or reduced lunch', value: lunchShare, sub: 'of enrollment', title: lunchCaveat || 'Eligibility counts as reported to NCES' },
   ])
+  // ------------------------------------------------------------------ who the students are
+  const detailRows = $derived(mem.filter(catA))
+  const raceComp = $derived(tally(detailRows, (r) => r.race, (r) => r.student_count))
+  const sexComp = $derived(tally(detailRows.filter((r) => r.sex !== 'Not Specified'), (r) => r.sex, (r) => r.student_count))
+  const gradeAll = $derived(tally(detailRows, (r) => r.grade, (r) => r.student_count))
+  const gradeNow = $derived.by(() => {
+    const at = atYear(gradeAll, app.year)
+    if (!at) return null
+    const items = at.items
+      .filter((d) => (d.value ?? 0) > 0)
+      .sort((a, b) => GRADE_ORDER.indexOf(a.key) - GRADE_ORDER.indexOf(b.key))
+      .map((d) => ({ label: gradeLabel(d.key), value: d.value as number, text: fmtInt(d.value as number) }))
+    return { year: at.year, items }
+  })
+  const lunchStack = $derived(lunchSeries.filter((d) => d.key !== 'Directly certified'))
+  const hasPts = (s: TrendPoint[]) => s.some((d) => (d.value ?? 0) > 0)
+
+  // ------------------------------------------------------------------ programs and status history
+  const stripYears = $derived([...new Set([...dir, ...chars].map((r) => r.year as number))].sort((a, b) => a - b))
+  const strip = (rs: Row[], col: string, label: string): StripRow => ({
+    label,
+    values: Object.fromEntries(rs.filter((r) => r[col] != null && r[col] !== '').map((r) => [r.year as number, String(r[col])])),
+  })
+  const stripRows = $derived<StripRow[]>(
+    [
+      strip(dir, 'status', 'Operating status'),
+      strip(dir, 'school_type', 'School type'),
+      strip(dir, 'charter', 'Charter school'),
+      strip(chars, 'virtual', 'Virtual instruction'),
+      strip(chars, 'title_i_status', 'Title I status'),
+      strip(chars, 'school_wide_title_i_flag', 'Title I school-wide program'),
+      strip(chars, 'magnet', 'Magnet school'),
+      strip(chars, 'shared_time', 'Shared-time school'),
+      strip(chars, 'nslp_status', 'National School Lunch Program'),
+    ].filter((r) => Object.keys(r.values).length),
+  )
+
   const views = [
     { id: 'overview', label: 'Overview' },
+    { id: 'students', label: 'Students' },
+    { id: 'programs', label: 'Programs' },
     { id: 'trends', label: 'Trends' },
     { id: 'details', label: 'Details' },
     { id: 'data', label: 'Data' },
@@ -284,6 +326,52 @@
             <p class="muted">No membership data for this school.</p>
           {/if}
           {#if caveat}<details class="cav"><summary>About these counts</summary><p>{caveat}</p></details>{/if}
+        </section>
+      {:else if view === 'students'}
+        <section class="card span">
+          <h3>Race and ethnicity <small>share of students</small></h3>
+          {#if hasPts(raceComp)}
+            <TrendChart mode="stack" percent data={raceComp} yLabel="% of students" currentYear={app.year} height={240} alt={`Race and ethnicity share of enrollment at ${school.name}`} />
+            <p class="note">Shares of the students counted in the race × sex × grade categories. Descriptive only.</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No race/ethnicity data for this school.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Grades <small>{gradeNow ? schoolYearLabel(gradeNow.year) : ''}</small></h3>
+          {#if gradeNow?.items.length}
+            <BarList items={gradeNow.items} label={`Students by grade at ${school.name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No grade counts.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Girls and boys <small>share of students</small></h3>
+          {#if hasPts(sexComp)}
+            <TrendChart mode="stack" percent data={sexComp} yLabel="% of students" currentYear={app.year} height={200} alt={`Sex of students at ${school.name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No sex breakdown.'}</p>
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Lunch program eligibility <small>students</small></h3>
+          {#if hasPts(lunchStack)}
+            <TrendChart mode="stack" data={lunchStack} yLabel="Students" currentYear={app.year} height={200} alt={`Free and reduced-price lunch eligible students at ${school.name}`} />
+            <p class="note">{lunchCaveat}</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No lunch program data for this school.'}</p>
+          {/if}
+        </section>
+      {:else if view === 'programs'}
+        <section class="card span">
+          <h3>Status and programs by year</h3>
+          {#if stripRows.length}
+            <StatusStrip rows={stripRows} years={stripYears} current={app.year} label={`Status and programs by year for ${school.name}`} />
+            <p class="note">Each square is one school year. Coloured squares are values other than “no”/“not”; dashed squares mean no record. Hover a square for its value. Some fields, such as virtual instruction, were added to the data in later years.</p>
+            <p class="note">{desc('school_characteristics', 'title_i_status')}</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No program data for this school.'}</p>
+          {/if}
         </section>
       {:else if view === 'trends'}
         <section class="card">

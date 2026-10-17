@@ -223,6 +223,7 @@
     margin-top: 8px;
   }
   .tabs {
+    flex: 1;
     display: flex;
     gap: 2px;
     overflow-x: auto;
@@ -236,7 +237,9 @@
   .tabs button {
     background: none;
     border: 0;
-    padding: 9px 11px;
+    padding: 9px 6px;
+    flex: 1 1 auto;
+    font-size: 12.5px;
     color: var(--muted);
     font-weight: 500;
     border-bottom: 2px solid transparent;

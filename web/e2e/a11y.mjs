@@ -29,6 +29,11 @@ for (const scheme of ['light', 'dark']) {
   await page.getByRole('tab', { name: 'Trends' }).click()
   await page.waitForTimeout(800)
   await scan('school trends tab')
+  for (const t of ['Students', 'Programs']) {
+    await page.getByRole('tab', { name: t, exact: true }).click()
+    await page.waitForTimeout(900)
+    await scan('school ' + t + ' tab')
+  }
   await page.getByRole('button', { name: 'Expand panel' }).click()
   await page.waitForTimeout(500)
   await scan('school panel expanded')

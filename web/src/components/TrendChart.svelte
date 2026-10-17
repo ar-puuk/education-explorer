@@ -12,13 +12,19 @@
     alt,
     mode = 'line',
     reference,
+    unit = '',
+    percent = false,
   }: {
     data: Point[]
     yLabel?: string
     currentYear?: number
     height?: number
     alt: string
-    mode?: 'line' | 'heat'
+    mode?: 'line' | 'heat' | 'stack'
+    /** value prefix/suffix in tooltips and on the axis */
+    unit?: '' | '%' | '$'
+    /** stack mode: normalise each year to 100% */
+    percent?: boolean
     /** state median (dashed line) and middle-half band for context; years need not match the data */
     reference?: { year: number; value: number; lo: number; hi: number }[]
   } = $props()
@@ -26,6 +32,8 @@
   let el: HTMLDivElement
   let width = $state(380)
 
+  const fmt = (v: number | null | undefined) =>
+    v == null ? '' : unit === '$' ? `$${Math.round(v).toLocaleString()}` : unit === '%' ? `${Math.round(v * 10) / 10}%` : v.toLocaleString()
   const css = (v: string) => getComputedStyle(document.documentElement).getPropertyValue(v).trim()
 
   $effect(() => {
@@ -54,15 +62,35 @@
 ${d.year}: ${d.value?.toLocaleString()}` })),
         ],
       })
-    } else {
-      const palette = keys.map((_, i) => css(`--chart-${(i % 8) + 1}`))
+    } else if (mode === 'stack') {
+      const palette = keys.map((_, i) => (i < 8 ? css(`--chart-${i + 1}`) : `color-mix(in srgb, ${css(`--chart-${(i % 8) + 1}`)} 55%, ${css('--surface')})`))
+      const yrs = [...new Set(present.map((d) => d.year))].sort((a, b) => a - b)
+      const every = Math.max(1, Math.ceil(yrs.length / Math.max(2, Math.floor((w - 60) / 38))))
+      const stack = { offset: percent ? ('normalize' as const) : undefined, order: keys }
+      const tipText = (d: Point) => `${d.key}\n${d.year}: ${fmt(d.value)}`
       chart = Plot.plot({
         width: w,
         height,
         marginLeft: 48,
         style: { background: 'transparent', color: css('--text'), fontSize: '11px' },
-        x: { tickFormat: 'd', label: null, ticks: years.filter((_, i) => i % 2 === 0) },
-        y: { grid: true, label: yLabel, nice: true, zero: true },
+        x: { type: 'band', domain: yrs, label: null, padding: 0.18, tickFormat: (d: number) => (yrs.indexOf(d) % every === 0 ? String(d) : '') },
+        y: { grid: true, label: yLabel, nice: true, percent },
+        color: { domain: keys, range: palette, legend: keys.length > 1 },
+        marks: [
+          Plot.barY(present, Plot.stackY(stack, { x: 'year', y: 'value', z: 'key', fill: 'key' })),
+          Plot.ruleY([0]),
+          Plot.tip(present, Plot.pointerX(Plot.stackY(stack, { x: 'year', y: 'value', z: 'key', fill: css('--surface'), stroke: css('--border'), title: tipText }))),
+        ],
+      })
+    } else {
+      const palette = keys.map((_, i) => (i < 8 ? css(`--chart-${i + 1}`) : `color-mix(in srgb, ${css(`--chart-${(i % 8) + 1}`)} 55%, ${css('--surface')})`))
+      chart = Plot.plot({
+        width: w,
+        height,
+        marginLeft: 48,
+        style: { background: 'transparent', color: css('--text'), fontSize: '11px' },
+        x: { tickFormat: 'd', label: null, ticks: years.filter((_, i) => i % Math.max(1, Math.ceil(years.length / Math.max(2, Math.floor((w - 60) / 40)))) === 0) },
+        y: { grid: true, label: yLabel, nice: true, zero: true, tickFormat: unit === '$' ? (d: number) => `$${d.toLocaleString()}` : unit === '%' ? (d: number) => `${d}%` : undefined },
         color: { domain: keys, range: palette, legend: keys.length > 1 },
         marks: [
           Plot.ruleY([0]),
@@ -72,7 +100,7 @@ ${d.year}: ${d.value?.toLocaleString()}` })),
           Plot.lineY(present, { x: 'year', y: 'value', stroke: 'key', strokeWidth: 2 }),
           Plot.dot(present, { x: 'year', y: 'value', stroke: 'key', fill: 'key', r: 3 }),
           Plot.tip(present, Plot.pointer({ x: 'year', y: 'value', fill: css('--surface'), stroke: css('--border'), title: (d: Point) => `${d.key}
-${d.year}: ${d.value?.toLocaleString()}` })),
+${d.year}: ${fmt(d.value)}` })),
         ].filter(Boolean) as Plot.Markish[],
       })
     }

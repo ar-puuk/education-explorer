@@ -3,7 +3,9 @@
   import { districtRows, loadDictionary } from '../lib/data'
   import type { Row } from '../lib/db'
   import { download, toCsv } from '../lib/explore'
-  import { fmtInt, levelLabel, schoolYearLabel } from '../lib/labels'
+  import { atYear, n } from '../lib/insights'
+  import { fmtInt, GRADE_ORDER, gradeLabel, levelLabel, schoolYearLabel } from '../lib/labels'
+  import BarList from './BarList.svelte'
   import type { DictEntry, PublicSchool, TrendPoint } from '../lib/types'
   import CompareButton from './CompareButton.svelte'
   import Inspector from './Inspector.svelte'
@@ -164,8 +166,52 @@
     { label: 'Sum of school enrollment', value: schools.length && haveEnroll ? fmtInt(schoolSum) : null, title: 'Adds up the enrollment of the district schools in the school directory. It can differ from the district-reported total.' },
     { label: 'Grades', value: dirRow?.grade_low ? `${dirRow.grade_low}–${dirRow.grade_high}` : null },
   ])
+  // ---------------------------------------------------------------- who the students are
+  const sexComp = $derived(sumBy(mem.filter(catA).filter((r) => r.sex !== 'Not Specified'), (r) => String(r.sex)).sort((a, b) => a.year - b.year))
+  const gradeNow = $derived.by(() => {
+    const g = sumBy(mem.filter(catA), (r) => String(r.grade)).filter((d) => (d.value ?? 0) > 0)
+    const at = atYear(g, app.year)
+    if (!at) return null
+    const items = at.items
+      .sort((a, b) => GRADE_ORDER.indexOf(a.key) - GRADE_ORDER.indexOf(b.key))
+      .map((d) => ({ label: gradeLabel(d.key), value: d.value as number, text: fmtInt(d.value as number) }))
+    return { year: at.year, items }
+  })
+  /** English learners and students with disabilities as a share of reported enrollment. */
+  const needShare = $derived.by((): TrendPoint[] => {
+    const tot = new Map(enrollTotal.map((d) => [d.year, d.value]))
+    const out: TrendPoint[] = []
+    for (const [rs, col, key] of [[el, 'lep_count', 'English learners'], [idea, 'idea_count', 'Students with disabilities (IDEA)']] as const) {
+      for (const r of rs) {
+        const c = n(r[col])
+        const t = tot.get(r.year as number)
+        if (c != null && t) out.push({ year: r.year as number, key, value: Math.round((c / t) * 1000) / 10 })
+      }
+    }
+    return out.sort((a, b) => a.year - b.year)
+  })
+  const hasPts = (s: TrendPoint[]) => s.some((d) => (d.value ?? 0) > 0)
+
+  // ---------------------------------------------------------------- money, per pupil
+  const perPupil = (parts: [string, string][]): TrendPoint[] => {
+    const out: TrendPoint[] = []
+    for (const r of fin) {
+      const pupils = n(r.v33)
+      if (!pupils || pupils <= 0) continue
+      for (const [c, key] of parts) {
+        const v = n(r[c])
+        if (v != null && v >= 0) out.push({ year: r.year as number, key, value: Math.round(v / pupils) })
+      }
+    }
+    return out.sort((a, b) => a.year - b.year)
+  }
+  const revenuePP = $derived(perPupil([['tfedrev', 'Federal'], ['tstrev', 'State'], ['tlocrev', 'Local']]))
+  const spendPP = $derived(perPupil([['tcurinst', 'Instruction'], ['tcurssvc', 'Support services'], ['tcuroth', 'Other current spending'], ['tnonelse', 'Non-K-12 programs'], ['tcapout', 'Capital outlay']]))
+
   const views = [
     { id: 'overview', label: 'Overview' },
+    { id: 'students', label: 'Students' },
+    { id: 'money', label: 'Money' },
     { id: 'trends', label: 'Trends' },
     { id: 'schools', label: 'Schools' },
     { id: 'details', label: 'Details' },
@@ -203,6 +249,58 @@
           {/if}
           {#if dict.get('ccd.district_membership.student_count')?.caveat}
             <details class="cav"><summary>About these counts</summary><p>{dict.get('ccd.district_membership.student_count')?.caveat}</p></details>
+          {/if}
+        </section>
+      {:else if view === 'students'}
+        <section class="card span">
+          <h3>Race and ethnicity <small>share of students</small></h3>
+          {#if hasPts(enrollRace)}
+            <TrendChart mode="stack" percent data={enrollRace} yLabel="% of students" currentYear={app.year} height={250} alt={`Race and ethnicity share of enrollment in ${name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No race/ethnicity data for this district.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Grades <small>{gradeNow ? schoolYearLabel(gradeNow.year) : ''}</small></h3>
+          {#if gradeNow?.items.length}
+            <BarList items={gradeNow.items} label={`Students by grade in ${name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No grade counts.'}</p>
+          {/if}
+        </section>
+        <section class="card">
+          <h3>Girls and boys <small>share of students</small></h3>
+          {#if hasPts(sexComp)}
+            <TrendChart mode="stack" percent data={sexComp} yLabel="% of students" currentYear={app.year} height={210} alt={`Sex of students in ${name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No sex breakdown.'}</p>
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Students with additional needs <small>% of reported enrollment</small></h3>
+          {#if hasPts(needShare)}
+            <TrendChart data={needShare} unit="%" yLabel="% of enrollment" currentYear={app.year} height={200} alt={`English learners and students with disabilities as a share of enrollment in ${name}`} />
+            <p class="note">Counts of English learners (to 2018) and students served under IDEA (to 2019) divided by district enrollment in the same year. Definitions and identification practices differ by state and over time.</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No English-learner or IDEA counts for this district.'}</p>
+          {/if}
+        </section>
+      {:else if view === 'money'}
+        <section class="card span">
+          <h3>Revenue per student <small>dollars, by source</small></h3>
+          {#if hasPts(revenuePP)}
+            <TrendChart mode="stack" unit="$" data={revenuePP} yLabel="Dollars per student" currentYear={app.year} height={240} alt={`Revenue per student by source in ${name}`} />
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No finance data for this district.'}</p>
+          {/if}
+        </section>
+        <section class="card span">
+          <h3>Spending per student <small>dollars, by purpose</small></h3>
+          {#if hasPts(spendPP)}
+            <TrendChart mode="stack" unit="$" data={spendPP} yLabel="Dollars per student" currentYear={app.year} height={240} alt={`Spending per student by purpose in ${name}`} />
+            <p class="note">Total dollars divided by fall membership from the finance survey (F-33). Not adjusted for inflation or local costs, and not a measure of quality.</p>
+          {:else}
+            <p class="muted">{loading ? 'Loading…' : 'No expenditure data for this district.'}</p>
           {/if}
         </section>
       {:else if view === 'trends'}

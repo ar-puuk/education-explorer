@@ -64,8 +64,13 @@ Legend: [x] done, [~] in progress, [ ] todo
 - [x] Compare tray: picked places stay visible as removable chips above the timeline (Compare/Open button, Clear); on phones it docks above the timeline and lifts the sheet
 - [x] Phone bottom sheet has three snap points (peek, half, full): drag or tap the handle, arrow keys step, drag well below peek to dismiss (web/e2e/tray_sheet.mjs)
 - [x] Search: stale blur timer no longer closes the results right after Ctrl K
+- [x] Insight charts for every kind of place, drawn from tables that were already ingested (no pipeline change): TrendChart gained a stacked mode (counts or 100% share), plus BarList (one-year breakdown) and StatusStrip (yes/no history by year)
+- [x] Colleges: tabs Overview, Students, Outcomes, Costs, Details, Data. Online-course load (online only / mix / in person only, by level, from IPEDS distance-education counts), race share, admissions and admit rate, residence of first-time students, 12-month headcount, student-faculty ratio, staff by occupation, retention, graduation rates, Outcome Measures 8-year awards, awards by level, tuition, total price, net price (by income band), aid shares and amounts, revenue sources and spending per FTE. Tables load per tab, on first open
+- [x] Public schools: Students (race share, grades, sex share, lunch eligibility) and Programs (status/charter/virtual/Title I/magnet/shared-time/lunch-program history by year). Private schools: Students (race share, grades, sex share, student-teacher ratio). Districts: Students (race share, grades, sex share, English-learner and IDEA share) and Money (revenue and spending per student)
+- [x] e2e/insights.mjs visits the new tabs for all four kinds in both themes; a11y scans the new school tabs
 
 ## Next / unverified / known issues
+- Not yet charted (data is ingested and in the Data tab): college age distribution (efb), residence by state (efc), faculty salaries (sal tables), state-level IPEDS finance before 2021, CCD district graduation and dropout by race and sex, PSS school characteristics (religious orientation, school day) as history, school-level race-by-grade detail.
 - Known gaps: CCD 1986-87..1996-97 (fixed-width text) and the 1997-98 district file; IPEDS map layer and chart integration before 2000 (tables are in the explorer); curated finance, net-price and graduation charts
 - Unverified: mobile only lightly tested (Chromium emulation); other browsers; other states beyond the Colorado smoke run
 - Utah Parquet total ~62 MB in docs/data (IPEDS ~38, CCD ~12, PSS ~4, geo ~4)
