@@ -1,0 +1,298 @@
+{
+ "ccd": {
+  "district_directory": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "provisional",
+    "2025": "preliminary"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "district_el": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ]
+  },
+  "district_idea": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+   ]
+  },
+  "district_membership": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "provisional"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "district_staff": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "provisional"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "lunch": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "final",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "final"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "membership": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "final",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "final"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "school_characteristics": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "final",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "final"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "school_directory": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "final",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "final",
+    "2025": "preliminary"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "school_location": {
+   "versions": {
+    "2014": null,
+    "2015": null,
+    "2016": null,
+    "2017": null,
+    "2018": null,
+    "2019": null,
+    "2020": null,
+    "2021": null,
+    "2022": null,
+    "2023": null,
+    "2024": null,
+    "2025": null
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "staff": {
+   "versions": {
+    "2014": "provisional",
+    "2015": "final",
+    "2016": "final",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "final"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  }
+ },
+ "ipeds": {},
+ "pss": {}
+}

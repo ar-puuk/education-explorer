@@ -1,0 +1,81 @@
+source: edge
+topic: school_location
+year: 2020
+columns:
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+  LEAID:
+    name: leaid
+    type: VARCHAR
+  NAME:
+    name: school_name
+    type: VARCHAR
+  OPSTFIPS:
+    name: opstfips
+    type: VARCHAR
+  STREET:
+    name: street
+    type: VARCHAR
+  CITY:
+    name: city
+    type: VARCHAR
+  STATE:
+    name: state
+    type: VARCHAR
+  ZIP:
+    name: zip
+    type: VARCHAR
+  STFIP:
+    name: fipst
+    type: VARCHAR
+  CNTY:
+    name: county_fips
+    type: VARCHAR
+  NMCNTY:
+    name: county_name
+    type: VARCHAR
+  LOCALE:
+    name: locale
+    type: VARCHAR
+  LAT:
+    name: lat
+    type: DOUBLE
+    signed: true
+  LON:
+    name: lon
+    type: DOUBLE
+    signed: true
+  CBSA:
+    name: cbsa
+    type: VARCHAR
+  NMCBSA:
+    name: cbsa_name
+    type: VARCHAR
+  CBSATYPE:
+    name: cbsa_type
+    type: VARCHAR
+  CSA:
+    name: csa
+    type: VARCHAR
+  NMCSA:
+    name: csa_name
+    type: VARCHAR
+  NECTA:
+    name: necta
+    type: VARCHAR
+  NMNECTA:
+    name: necta_name
+    type: VARCHAR
+  CD:
+    name: cd
+    type: VARCHAR
+  SLDL:
+    name: sldl
+    type: VARCHAR
+  SLDU:
+    name: sldu
+    type: VARCHAR
+  SCHOOLYEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns

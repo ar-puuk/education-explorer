@@ -1,0 +1,34 @@
+# Human-curated caveats shown next to data in the app. Keys are "<dataset>.<table>" or
+# "<dataset>.<table>.<column>". Keep statements factual and tied to NCES documentation;
+# the app never ranks schools or implies quality.
+ccd.school_directory:
+  caveat: >-
+    Status (Open, Closed, New, Future, Changed Boundary/Agency...) is as reported for that school year.
+    The latest year may be a preliminary NCES release (see data_version) and can change.
+ccd.membership:
+  caveat: >-
+    Counts are as reported by the state for the fall membership count date. Rows labelled "No Category Codes"
+    or "Not Specified" are totals or unclassified students, and "Derived" or "Education Unit Total" rows are
+    subtotals; do not add them to the detail rows. Counts can be suppressed, missing or not reported (see value_flag).
+    Race/ethnicity categories were revised in 2009-10 (adding "Two or more races"), so older detail is not
+    strictly comparable.
+ccd.district_membership:
+  caveat: >-
+    Same conventions as school membership. District totals may differ slightly from the sum of school rows
+    because of reconciliation and adult-education adjustments.
+ccd.lunch:
+  caveat: >-
+    Free and reduced-price lunch counts are not comparable across schools or years when a school or district
+    participates in the Community Eligibility Provision (CEP) or similar provisions, because eligibility may be
+    reported for all students or carried forward. Direct certification counts follow a different definition.
+ccd.staff:
+  caveat: Staff are reported as full-time equivalent (FTE). Counts may be missing or suppressed (see value_flag).
+ccd.district_staff:
+  caveat: Staff are reported as full-time equivalent (FTE). Category definitions changed across years.
+ccd.school_location:
+  caveat: >-
+    Locations come from the NCES EDGE school geocodes. Where EDGE had not yet been released for a school year,
+    the coordinates of the school's most recent earlier EDGE record are used (coord_source = edge_prior_year).
+    Schools may have moved; some schools have no coordinates.
+ccd.school_characteristics:
+  caveat: Title I, magnet, virtual and shared-time statuses are reported by states and their definitions evolved over time.

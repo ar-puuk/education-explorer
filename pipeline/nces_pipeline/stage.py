@@ -16,7 +16,8 @@ from .rawio import header_of, read_sql
 # Raw column that carries the state, tried in order. The value is compared as text.
 STATE_COLUMNS = [("FIPST", "fips"), ("FIPS", "fips"), ("STATE_FIPS", "fips"), ("STABR", "abbrev"),
                  ("ST", "abbrev"), ("STABBR", "abbrev"), ("PSTABB", "abbrev"), ("PSTANSI", "fips"),
-                 ("STFIP", "fips"), ("STATE", "abbrev")]
+                 ("STFIP", "fips"), ("STFIP15", "fips"), ("OPSTFIPS", "fips"), ("LSTATE", "abbrev"),
+                 ("STATE", "abbrev")]
 
 
 def state_filter(cols: list[str], state: State, override: tuple[str, str] | None = None) -> str:
@@ -50,5 +51,22 @@ def stage(raw: Path, state: State, override: tuple[str, str] | None = None) -> P
     tmp = dest.with_suffix(".tmp")
     t = str(tmp).replace("\\", "/")
     con.execute(f"COPY (SELECT * FROM {src} WHERE {where}) TO '{t}' (FORMAT PARQUET, COMPRESSION ZSTD)")
+    tmp.replace(dest)
+    return dest
+
+
+def stage_frame(con: duckdb.DuckDBPyConnection, select_sql: str, name: str, state: State,
+                override: tuple[str, str] | None = None) -> Path:
+    """Stage an arbitrary SELECT (e.g. an ST_Read of a dbf/gdb) as VARCHAR Parquet filtered to the state."""
+    dest = DATA_RAW / "_stage" / state.abbrev.lower() / f"{name}.parquet"
+    if dest.exists():
+        return dest
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    cols = [r[0] for r in con.execute(f"DESCRIBE {select_sql}").fetchall()]
+    where = state_filter(cols, state, override)
+    casted = ", ".join(f'CAST("{c}" AS VARCHAR) AS "{c}"' for c in cols)
+    tmp = dest.with_suffix(".tmp")
+    con.execute(f"COPY (SELECT {casted} FROM ({select_sql}) WHERE {where}) TO '{tmp.as_posix()}' "
+                f"(FORMAT PARQUET, COMPRESSION ZSTD)")
     tmp.replace(dest)
     return dest

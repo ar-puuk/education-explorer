@@ -103,7 +103,7 @@ columns:
     type: VARCHAR
   EFFECTIVE_DATE:
     name: effective_date
-    type: VARCHAR
+    type: DATE
   SCH_TYPE_TEXT:
     name: school_type
     type: VARCHAR

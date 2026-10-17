@@ -1,0 +1,60 @@
+source: edge
+topic: school_location
+year: 2014
+columns:
+  SURVYEAR:
+    ignore: true
+    reason: replaced by derived year/school_year columns
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+  FIPST:
+    name: fipst
+    type: VARCHAR
+  LSTREE:
+    name: street
+    type: VARCHAR
+  LCITY:
+    name: city
+    type: VARCHAR
+  LSTATE:
+    name: state
+    type: VARCHAR
+  LZIP:
+    name: zip
+    type: VARCHAR
+  LZIP4:
+    name: zip4
+    type: VARCHAR
+  LATCODE:
+    name: lat
+    type: DOUBLE
+    signed: true
+  LONGCODE:
+    name: lon
+    type: DOUBLE
+    signed: true
+  CONUM:
+    name: county_fips
+    type: VARCHAR
+  CONAME:
+    name: county_name
+    type: VARCHAR
+  CD:
+    name: cd
+    type: VARCHAR
+  LOCALE:
+    name: locale
+    type: VARCHAR
+  CSA:
+    name: csa
+    type: VARCHAR
+  CBSA:
+    name: cbsa
+    type: VARCHAR
+  NECTA:
+    name: necta
+    type: VARCHAR
+  METMIC:
+    name: metmic
+    type: VARCHAR

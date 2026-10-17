@@ -1,0 +1,78 @@
+source: edge
+topic: school_location
+year: 2015
+columns:
+  NCESSCH:
+    name: ncessch
+    type: VARCHAR
+  NAME:
+    name: school_name
+    type: VARCHAR
+  OPSTFIPS:
+    name: opstfips
+    type: VARCHAR
+  LSTREE:
+    name: street
+    type: VARCHAR
+  LCITY:
+    name: city
+    type: VARCHAR
+  LSTATE:
+    name: state
+    type: VARCHAR
+  LZIP:
+    name: zip
+    type: VARCHAR
+  LZIP4:
+    name: zip4
+    type: VARCHAR
+  STFIP15:
+    name: fipst
+    type: VARCHAR
+  CNTY15:
+    name: county_fips
+    type: VARCHAR
+  NMCNTY15:
+    name: county_name
+    type: VARCHAR
+  LOCALE15:
+    name: locale
+    type: VARCHAR
+  LAT1516:
+    name: lat
+    type: DOUBLE
+    signed: true
+  LON1516:
+    name: lon
+    type: DOUBLE
+    signed: true
+  CBSA15:
+    name: cbsa
+    type: VARCHAR
+  NMCBSA15:
+    name: cbsa_name
+    type: VARCHAR
+  CBSATYPE15:
+    name: cbsa_type
+    type: VARCHAR
+  CSA15:
+    name: csa
+    type: VARCHAR
+  NMCSA15:
+    name: csa_name
+    type: VARCHAR
+  NECTA15:
+    name: necta
+    type: VARCHAR
+  NMNECTA15:
+    name: necta_name
+    type: VARCHAR
+  CD15:
+    name: cd
+    type: VARCHAR
+  SLDL15:
+    name: sldl
+    type: VARCHAR
+  SLDU15:
+    name: sldu
+    type: VARCHAR

@@ -91,7 +91,7 @@ columns:
     type: VARCHAR
   EFFECTIVE_DATE:
     name: effective_date
-    type: VARCHAR
+    type: DATE
   LEA_TYPE:
     name: lea_type_code
     type: VARCHAR

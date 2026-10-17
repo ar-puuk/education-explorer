@@ -58,9 +58,11 @@ def col_expr(raw: str, spec: dict) -> str:
             return f"CASE WHEN {s} IS NULL THEN NULL ELSE lpad({s}, {PAD[name]}, '0') END"
         return s
     if t == "DATE":
-        return f"CAST(COALESCE(TRY_STRPTIME({s}, '%m/%d/%Y'), TRY_STRPTIME({s}, '%m/%d/%y')) AS DATE)"
+        return f"CAST(COALESCE(TRY_STRPTIME({s}, '%m/%d/%Y'), TRY_STRPTIME({s}, '%m/%d/%y'), TRY_STRPTIME({s}, '%d%b%Y:%H:%M:%S')) AS DATE)"
     if t == "BOOLEAN":
         return f"CASE upper({s}) WHEN 'Y' THEN TRUE WHEN 'N' THEN FALSE WHEN 'YES' THEN TRUE WHEN 'NO' THEN FALSE END"
+    if spec.get("signed"):  # coordinates etc.: negative values are real, not sentinels
+        return f"CAST(TRY_CAST({s} AS DOUBLE) AS {t})"
     return num_value(s, t)
 
 
