@@ -8,6 +8,7 @@
   import MapView from './components/MapView.svelte'
   import AboutPanel from './components/AboutPanel.svelte'
   import BasemapPanel from './components/BasemapPanel.svelte'
+  import CompareTray from './components/CompareTray.svelte'
   import FiltersPanel from './components/FiltersPanel.svelte'
   import LayersPanel from './components/LayersPanel.svelte'
   import Rail from './components/Rail.svelte'
@@ -57,6 +58,7 @@
   })
   // the left panels and the inspector push the map controls aside (see app.css)
   const drawerW = $derived(phone?.matches ? 0 : app.drawer ? 68 + 304 + 8 : 68)
+  const trayH = $derived(phone?.matches && app.compare.length ? 46 : 0)
   const inspW = $derived(phone?.matches || !app.selected ? 0 : 444 + 12)
 
   function pick(dataset: 'public' | 'private' | 'college' | 'district', id: string, lon: number, lat: number) {
@@ -94,7 +96,7 @@
 
 <div class="shell">
   <TopBar onPick={pick} />
-  <main style:--drawer-w={`${drawerW}px`} style:--insp-w={`${inspW}px`}>
+  <main style:--drawer-w={`${drawerW}px`} style:--insp-w={`${inspW}px`} style:--tray-h={`${trayH}px`}>
     {#if app.error}
       <div class="fail" role="alert">
         <h2>Could not load the data</h2>
@@ -108,6 +110,7 @@
       <BasemapPanel />
       <AboutPanel />
       <DetailPanel onSelectSchool={(id, lon, lat) => pick('public', id, lon, lat)} />
+      <CompareTray />
       <TableView />
       <CompareView />
     {:else}

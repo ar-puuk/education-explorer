@@ -49,7 +49,7 @@
       left: 8px;
       right: 8px;
       top: auto;
-      bottom: 8px;
+      bottom: calc(8px + var(--tray-h, 0px));
       width: auto;
       max-height: 58%;
       z-index: 15;

@@ -32,7 +32,8 @@
   button:hover {
     background: var(--surface-2);
   }
-  .on {
+  .on,
+  .on:hover {
     background: var(--accent);
     color: var(--accent-text);
     border-color: var(--accent);

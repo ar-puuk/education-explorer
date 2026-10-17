@@ -189,6 +189,7 @@
   .tl {
     flex: 1;
     min-width: 0;
+    overflow: hidden;
   }
   .track {
     cursor: pointer;
@@ -203,7 +204,7 @@
   .ticks {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    grid-auto-columns: minmax(0, 1fr);
     text-align: center;
     font: 10px var(--f-data);
     color: var(--muted);

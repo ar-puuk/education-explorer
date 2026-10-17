@@ -21,6 +21,60 @@
 
   const color = $derived(dataset === 'district' ? 'var(--muted)' : `var(--c-${dataset})`)
 
+  // ---- phone bottom sheet: drag the handle between peek / half / full, or drag below peek to dismiss
+  const ORDER = ['peek', 'half', 'full'] as const
+  let sheetEl: HTMLElement | undefined = $state()
+  let headEl: HTMLElement | undefined = $state()
+  let dragH = $state<number | null>(null)
+  let startY = 0
+  let startH = 0
+  let moved = false
+
+  function snapHeights(parentH: number) {
+    const peek = Math.min((headEl?.offsetHeight ?? 110) + 30, parentH * 0.4)
+    return { peek, half: parentH * 0.52, full: parentH - 8 }
+  }
+  function gdown(e: PointerEvent) {
+    if (!sheetEl) return
+    startY = e.clientY
+    startH = sheetEl.getBoundingClientRect().height
+    moved = false
+    ;(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId)
+    dragH = startH
+  }
+  function gmove(e: PointerEvent) {
+    if (dragH == null || !sheetEl?.parentElement) return
+    const dy = e.clientY - startY
+    if (Math.abs(dy) > 4) moved = true
+    dragH = Math.max(40, Math.min(sheetEl.parentElement.clientHeight - 8, startH - dy))
+  }
+  function gup() {
+    if (dragH == null || !sheetEl?.parentElement) return
+    const h = snapHeights(sheetEl.parentElement.clientHeight)
+    const cur = dragH
+    dragH = null
+    if (!moved) return
+    if (cur < h.peek - 50) {
+      app.selected = null
+      return
+    }
+    app.sheet = ORDER.reduce((best, k) => (Math.abs(h[k] - cur) < Math.abs(h[best] - cur) ? k : best), 'half' as (typeof ORDER)[number])
+  }
+  function gclick() {
+    if (moved) {
+      moved = false
+      return
+    }
+    app.sheet = ORDER[(ORDER.indexOf(app.sheet) + 1) % ORDER.length]
+  }
+  function gkey(e: KeyboardEvent) {
+    const i = ORDER.indexOf(app.sheet)
+    if (e.key === 'ArrowUp') app.sheet = ORDER[Math.min(2, i + 1)]
+    else if (e.key === 'ArrowDown') app.sheet = ORDER[Math.max(0, i - 1)]
+    else return
+    e.preventDefault()
+  }
+
   let body: HTMLDivElement | undefined = $state()
   // reset scroll when the place or the tab changes
   $effect(() => {
@@ -43,8 +97,26 @@
   }
 </script>
 
-<aside class="panel insp" class:wide={app.inspectorWide} aria-label={label}>
-  <header class="ih">
+<aside
+  class="panel insp"
+  class:wide={app.inspectorWide}
+  class:dragging={dragH != null}
+  data-snap={app.sheet}
+  style:height={dragH != null ? `${dragH}px` : undefined}
+  aria-label={label}
+  bind:this={sheetEl}
+>
+  <button
+    class="grab"
+    aria-label={`Panel size: ${app.sheet}. Press or drag to change`}
+    onpointerdown={gdown}
+    onpointermove={gmove}
+    onpointerup={gup}
+    onpointercancel={gup}
+    onclick={gclick}
+    onkeydown={gkey}
+  ><span></span></button>
+  <header class="ih" bind:this={headEl}>
     <div class="hd">
       <span class="kind"><span class="dot" style:background={color}></span>{kind}</span>
       <h2>{title}</h2>
@@ -204,23 +276,65 @@
   .wide .body :global(.tabbody > .span) {
     grid-column: 1 / -1;
   }
+  .grab {
+    display: none;
+  }
   @media (max-width: 720px) {
     .insp,
     .insp.wide {
       top: auto;
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: var(--tray-h, 0px);
       width: auto;
-      height: 64%;
+      height: 52%;
       border-radius: 16px 16px 0 0;
       z-index: 20;
+      transition: height 0.2s ease;
+    }
+    .insp[data-snap='peek'] {
+      height: auto;
+      max-height: 40%;
+      transition: none;
+    }
+    .insp[data-snap='full'] {
+      height: calc(100% - 8px - var(--tray-h, 0px));
+    }
+    .insp.dragging {
+      transition: none;
+      max-height: none;
+    }
+    .insp[data-snap='peek']:not(.dragging) .tabrow,
+    .insp[data-snap='peek']:not(.dragging) .body {
+      display: none;
+    }
+    .grab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 22px;
+      width: 100%;
+      flex: none;
+      border: 0;
+      background: none;
+      padding: 0;
+      touch-action: none;
+      cursor: grab;
+    }
+    .grab span {
+      width: 38px;
+      height: 4px;
+      border-radius: 4px;
+      background: var(--border);
+    }
+    .grab:focus-visible span {
+      background: var(--focus);
     }
     .expand {
       display: none;
     }
     .ih {
-      padding-top: 12px;
+      padding-top: 2px;
     }
     h2 {
       font-size: 18px;

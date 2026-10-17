@@ -7,6 +7,7 @@
   let open = $state(false)
   let active = $state(0)
   let input = $state<HTMLInputElement>()
+  let blurTimer: ReturnType<typeof setTimeout> | undefined
 
   type Hit = { dataset: 'public' | 'private' | 'college' | 'district'; id: string; name: string; sub: string; lon: number; lat: number }
   const results = $derived.by((): Hit[] => {
@@ -77,10 +78,13 @@
     aria-expanded={open && results.length > 0}
     aria-controls="search-results"
     bind:value={q}
-    onfocus={() => (open = true)}
+    onfocus={() => {
+      clearTimeout(blurTimer)
+      open = true
+    }}
     oninput={() => ((open = true), (active = 0))}
     onkeydown={key}
-    onblur={() => setTimeout(() => (open = false), 150)}
+    onblur={() => (blurTimer = setTimeout(() => (open = false), 150))}
   />
   <kbd class="hint" aria-hidden="true">Ctrl K</kbd>
   {#if open && results.length}

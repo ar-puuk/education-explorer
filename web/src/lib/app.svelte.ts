@@ -4,6 +4,7 @@ import { theme } from './theme.svelte'
 import { parseUrl, serializeUrl, type UrlState } from './urlstate'
 import type { CollegePointsFile, PointsFile, PrivatePointsFile, PublicSchool, StateMeta, YearsMeta } from './types'
 
+export type Sheet = 'peek' | 'half' | 'full'
 export type Drawer = 'layers' | 'filters' | 'basemap' | 'about'
 
 export const app = $state({
@@ -40,6 +41,8 @@ export const app = $state({
   drawer: (typeof matchMedia === 'function' && matchMedia('(max-width: 720px)').matches ? null : 'layers') as Drawer | null,
   /** inspector expanded to the wide workspace */
   inspectorWide: false,
+  /** phone bottom-sheet snap point for the inspector */
+  sheet: 'half' as Sheet,
 })
 
 export const basemap = {

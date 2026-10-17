@@ -60,7 +60,9 @@ Legend: [x] done, [~] in progress, [ ] todo
 - [x] Self-hosted fonts (Latin subsets): Bricolage Grotesque, Instrument Sans, IBM Plex Mono; dark theme gets its own data colours
 - [x] e2e updated (smoke, a11y with extra scans for drawers and the expanded inspector, mobile); all pass on dev and the built preview
 - [ ] Not done from the plan: pipeline additions (year summary JSON, per-entity profile files, derived metrics table, state median reference lines, search index). The timeline counts and headline figures are computed in the browser from the existing files, and no measured slowdown justified new files yet.
-- [ ] Not done: compare tray inside the inspector (compare still opens as a dialog), phone bottom sheet has one snap height
+- [x] Compare tray: picked places stay visible as removable chips above the timeline (Compare/Open button, Clear); on phones it docks above the timeline and lifts the sheet
+- [x] Phone bottom sheet has three snap points (peek, half, full): drag or tap the handle, arrow keys step, drag well below peek to dismiss (web/e2e/tray_sheet.mjs)
+- [x] Search: stale blur timer no longer closes the results right after Ctrl K
 
 ## Next / unverified / known issues
 - Known gaps: CCD 1986-87..1996-97 (fixed-width text) and the 1997-98 district file; IPEDS map layer and chart integration before 2000 (tables are in the explorer); curated finance, net-price and graduation charts
