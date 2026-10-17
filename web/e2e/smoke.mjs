@@ -33,7 +33,7 @@ const fail = (msg) => {
   process.exitCode = 1
 }
 const ok = (msg) => console.log('ok:', msg)
-const BM = { positron: 'Positron', dark: 'Dark', liberty: 'Liberty', liberty3d: 'Liberty 3D', bright: 'Bright', fiord: 'Fiord' }
+const BM = { positron: 'Positron', dark: 'Dark', liberty: 'Liberty', bright: 'Bright', fiord: 'Fiord' }
 const setYear = async (y) => {
   const sl = page.getByRole('slider', { name: 'School year' })
   await sl.focus()
@@ -74,7 +74,7 @@ r.n > 0 ? ok(`dark: ${r.n} rendered features`) : fail('no features in dark mode'
 await page.screenshot({ path: `${out}/02-dark.png` })
 
 // every basemap keeps overlays
-for (const id of ['liberty', 'liberty3d', 'bright', 'fiord', 'positron', 'dark']) {
+for (const id of ['liberty', 'bright', 'fiord', 'positron', 'dark']) {
   if (!(await page.getByRole('radiogroup', { name: 'Basemap style' }).isVisible())) await page.getByRole('button', { name: 'Basemap & appearance' }).click()
   await page.getByRole('radiogroup', { name: 'Basemap style' }).getByRole('radio', { name: BM[id], exact: true }).click()
   await page.waitForTimeout(800)

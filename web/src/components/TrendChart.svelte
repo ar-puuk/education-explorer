@@ -38,7 +38,7 @@
         color: { type: 'sqrt', scheme: 'viridis', legend: false },
         marks: [
           Plot.cell(cells, { x: 'year', y: 'key', fill: 'value', inset: 0.5 }),
-          Plot.tip(cells, Plot.pointer({ x: 'year', y: 'key', title: (d: Point) => `${d.key}
+          Plot.tip(cells, Plot.pointer({ x: 'year', y: 'key', fill: css('--surface'), stroke: css('--border'), title: (d: Point) => `${d.key}
 ${d.year}: ${d.value?.toLocaleString()}` })),
         ],
       })
@@ -57,7 +57,7 @@ ${d.year}: ${d.value?.toLocaleString()}` })),
           currentYear ? Plot.ruleX([currentYear], { stroke: css('--muted'), strokeDasharray: '3,3' }) : null,
           Plot.lineY(present, { x: 'year', y: 'value', stroke: 'key', strokeWidth: 2 }),
           Plot.dot(present, { x: 'year', y: 'value', stroke: 'key', fill: 'key', r: 3 }),
-          Plot.tip(present, Plot.pointer({ x: 'year', y: 'value', title: (d: Point) => `${d.key}
+          Plot.tip(present, Plot.pointer({ x: 'year', y: 'value', fill: css('--surface'), stroke: css('--border'), title: (d: Point) => `${d.key}
 ${d.year}: ${d.value?.toLocaleString()}` })),
         ].filter(Boolean) as Plot.Markish[],
       })

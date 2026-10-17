@@ -154,7 +154,12 @@
     display: flex;
     gap: 2px;
     overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
     min-width: 0;
+  }
+  .tabs::-webkit-scrollbar {
+    display: none;
   }
   .tabs button {
     background: none;

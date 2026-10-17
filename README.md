@@ -19,7 +19,7 @@ It shows data and caveats only: it does not rank schools, compute quality scores
 - Detail panels with enrollment trends (total, race/ethnicity, sex, grade), free/reduced-price lunch, staff, finance, graduates and dropouts, IPEDS enrollment/awards/admissions, a table explorer for every IPEDS and PSS table, dictionary labels and caveats, CSV export.
 - Colour public school markers by charter status, locale or school level (shape stays fixed); the year slider marks private-school survey years (biennial).
 - Compare mode, table view with column picker and CSV export, shareable URLs (year, selection, filters, basemap, layers, theme).
-- Light, dark and system themes; six OpenFreeMap basemaps (Positron, Dark, Liberty, Liberty 3D, Bright, Fiord); overlays survive basemap switches.
+- Light, dark and system themes; five OpenFreeMap basemaps (Positron, Dark, Liberty, Bright, Fiord); overlays survive basemap switches.
 - A [Data and methods](https://ar-puuk.github.io/education-explorer/methodology.html) page with sources, release versions and caveats.
 
 ## How it works

@@ -16,7 +16,6 @@
     positron: 'linear-gradient(135deg,#f2f2f0 55%,#d6e3ec 55%)',
     dark: 'linear-gradient(135deg,#1c2026 55%,#0f2233 55%)',
     liberty: 'linear-gradient(135deg,#eef3e3 55%,#9cc7e6 55%)',
-    liberty3d: 'linear-gradient(135deg,#e7ecdc 40%,#c9c2b4 40% 62%,#9cc7e6 62%)',
     bright: 'linear-gradient(135deg,#fbf6e9 55%,#79b8e6 55%)',
     fiord: 'linear-gradient(135deg,#45517a 55%,#2d3659 55%)',
   }

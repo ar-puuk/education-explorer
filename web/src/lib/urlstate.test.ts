@@ -6,7 +6,7 @@ describe('url state', () => {
     const s = {
       year: 2019,
       selected: { dataset: 'public' as const, id: '490081000459' },
-      basemap: 'liberty3d' as const,
+      basemap: 'bright' as const,
       layers: { public: true, private: false, college: true },
       theme: 'dark' as const,
       sizeByEnroll: false,
@@ -19,7 +19,7 @@ describe('url state', () => {
     const back = parseUrl(q)
     expect(back.year).toBe(2019)
     expect(back.selected).toEqual(s.selected)
-    expect(back.basemap).toBe('liberty3d')
+    expect(back.basemap).toBe('bright')
     expect(back.layers).toEqual({ public: true, private: false, college: true })
     expect(back.theme).toBe('dark')
     expect(back.sizeByEnroll).toBe(false)

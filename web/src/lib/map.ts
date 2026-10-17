@@ -50,7 +50,7 @@ export class MapController {
       style: styleUrl(b),
       center: opts.center,
       zoom: opts.zoom,
-      pitch: opts.basemap === 'liberty3d' ? 60 : (opts.pitch ?? 0),
+      pitch: opts.pitch ?? 0,
       attributionControl: { compact: true },
       canvasContextAttributes: { antialias: true },
     })
@@ -82,7 +82,6 @@ export class MapController {
     }
     this.addCategoryIcons()
     this.addSelection()
-    this.setBasemapExtras()
   }
 
   /** Public school icons in the categorical chart colours (for "colour by"). */
@@ -293,14 +292,6 @@ export class MapController {
     return ['all', ['!', ['has', 'point_count']], ['==', ['get', 'id'], id]]
   }
 
-  /** Liberty 3D: tilted camera on top of the Liberty style, which already has a building-3d layer. */
-  private setBasemapExtras() {
-    const is3d = this.basemap === 'liberty3d'
-    if (this.map.getLayer('building-3d')) {
-      this.map.setLayoutProperty('building-3d', 'visibility', is3d ? 'visible' : 'none')
-    }
-  }
-
   // -------------------------------------------------------------------- public API
   setData(ds: Dataset, features: PointFeature[]) {
     this.data[ds] = { type: 'FeatureCollection', features }
@@ -360,15 +351,8 @@ export class MapController {
     const b = basemapById(id)
     if (!b) return
     if (id === this.basemap) return
-    const prev = basemapById(this.basemap)
     this.basemap = id
-    if (prev && prev.style === b.style) {
-      // Liberty <-> Liberty 3D: no style reload, just camera and the building layer
-      this.setBasemapExtras()
-    } else {
-      this.map.setStyle(styleUrl(b)) // overlays are re-added in the style.load handler
-    }
-    this.map.easeTo({ pitch: id === 'liberty3d' ? 60 : 0, duration: 600 })
+    this.map.setStyle(styleUrl(b)) // overlays are re-added in the style.load handler
   }
 
   /** Refresh theme-dependent paint (icons, cluster colours) after a light/dark change. */
