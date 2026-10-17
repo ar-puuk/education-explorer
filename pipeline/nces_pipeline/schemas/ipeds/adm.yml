@@ -1,0 +1,489 @@
+source: ipeds
+family: adm
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2014-2024
+  ADMCON1:
+    name: admcon1
+    type: BIGINT
+    years: 2014-2024
+  ADMCON2:
+    name: admcon2
+    type: BIGINT
+    years: 2014-2024
+  ADMCON3:
+    name: admcon3
+    type: BIGINT
+    years: 2014-2024
+  ADMCON4:
+    name: admcon4
+    type: BIGINT
+    years: 2014-2024
+  ADMCON5:
+    name: admcon5
+    type: BIGINT
+    years: 2014-2024
+  ADMCON6:
+    name: admcon6
+    type: BIGINT
+    years: 2014-2024
+  ADMCON7:
+    name: admcon7
+    type: BIGINT
+    years: 2014-2024
+  ADMCON8:
+    name: admcon8
+    type: BIGINT
+    years: 2014-2024
+  ADMCON9:
+    name: admcon9
+    type: BIGINT
+    years: 2014-2024
+  XAPPLCN:
+    name: applcn_flag
+    type: VARCHAR
+    flag_for: applcn
+    years: 2014-2024
+  APPLCN:
+    name: applcn
+    type: BIGINT
+    years: 2014-2024
+  XAPPLCNM:
+    name: applcnm_flag
+    type: VARCHAR
+    flag_for: applcnm
+    years: 2014-2024
+  APPLCNM:
+    name: applcnm
+    type: BIGINT
+    years: 2014-2024
+  XAPPLCNW:
+    name: applcnw_flag
+    type: VARCHAR
+    flag_for: applcnw
+    years: 2014-2024
+  APPLCNW:
+    name: applcnw
+    type: BIGINT
+    years: 2014-2024
+  XADMSSN:
+    name: admssn_flag
+    type: VARCHAR
+    flag_for: admssn
+    years: 2014-2024
+  ADMSSN:
+    name: admssn
+    type: BIGINT
+    years: 2014-2024
+  XADMSSNM:
+    name: admssnm_flag
+    type: VARCHAR
+    flag_for: admssnm
+    years: 2014-2024
+  ADMSSNM:
+    name: admssnm
+    type: BIGINT
+    years: 2014-2024
+  XADMSSNW:
+    name: admssnw_flag
+    type: VARCHAR
+    flag_for: admssnw
+    years: 2014-2024
+  ADMSSNW:
+    name: admssnw
+    type: BIGINT
+    years: 2014-2024
+  XENRLT:
+    name: enrlt_flag
+    type: VARCHAR
+    flag_for: enrlt
+    years: 2014-2024
+  ENRLT:
+    name: enrlt
+    type: BIGINT
+    years: 2014-2024
+  XENRLM:
+    name: enrlm_flag
+    type: VARCHAR
+    flag_for: enrlm
+    years: 2014-2024
+  ENRLM:
+    name: enrlm
+    type: BIGINT
+    years: 2014-2024
+  XENRLW:
+    name: enrlw_flag
+    type: VARCHAR
+    flag_for: enrlw
+    years: 2014-2024
+  ENRLW:
+    name: enrlw
+    type: BIGINT
+    years: 2014-2024
+  XENRLFT:
+    name: enrlft_flag
+    type: VARCHAR
+    flag_for: enrlft
+    years: 2014-2024
+  ENRLFT:
+    name: enrlft
+    type: BIGINT
+    years: 2014-2024
+  XENRLFTM:
+    name: enrlftm_flag
+    type: VARCHAR
+    flag_for: enrlftm
+    years: 2014-2024
+  ENRLFTM:
+    name: enrlftm
+    type: BIGINT
+    years: 2014-2024
+  XENRLFTW:
+    name: enrlftw_flag
+    type: VARCHAR
+    flag_for: enrlftw
+    years: 2014-2024
+  ENRLFTW:
+    name: enrlftw
+    type: BIGINT
+    years: 2014-2024
+  XENRLPT:
+    name: enrlpt_flag
+    type: VARCHAR
+    flag_for: enrlpt
+    years: 2014-2024
+  ENRLPT:
+    name: enrlpt
+    type: BIGINT
+    years: 2014-2024
+  XENRLPTM:
+    name: enrlptm_flag
+    type: VARCHAR
+    flag_for: enrlptm
+    years: 2014-2024
+  ENRLPTM:
+    name: enrlptm
+    type: BIGINT
+    years: 2014-2024
+  XENRLPTW:
+    name: enrlptw_flag
+    type: VARCHAR
+    flag_for: enrlptw
+    years: 2014-2024
+  ENRLPTW:
+    name: enrlptw
+    type: BIGINT
+    years: 2014-2024
+  XSATNUM:
+    name: satnum_flag
+    type: VARCHAR
+    flag_for: satnum
+    years: 2014-2024
+  SATNUM:
+    name: satnum
+    type: BIGINT
+    years: 2014-2024
+  XSATPCT:
+    name: satpct_flag
+    type: VARCHAR
+    flag_for: satpct
+    years: 2014-2024
+  SATPCT:
+    name: satpct
+    type: BIGINT
+    years: 2014-2024
+  XACTNUM:
+    name: actnum_flag
+    type: VARCHAR
+    flag_for: actnum
+    years: 2014-2024
+  ACTNUM:
+    name: actnum
+    type: BIGINT
+    years: 2014-2024
+  XACTPCT:
+    name: actpct_flag
+    type: VARCHAR
+    flag_for: actpct
+    years: 2014-2024
+  ACTPCT:
+    name: actpct
+    type: BIGINT
+    years: 2014-2024
+  XSATVR25:
+    name: satvr25_flag
+    type: VARCHAR
+    flag_for: satvr25
+    years: 2014-2024
+  SATVR25:
+    name: satvr25
+    type: BIGINT
+    years: 2014-2024
+  XSATVR75:
+    name: satvr75_flag
+    type: VARCHAR
+    flag_for: satvr75
+    years: 2014-2024
+  SATVR75:
+    name: satvr75
+    type: BIGINT
+    years: 2014-2024
+  XSATMT25:
+    name: satmt25_flag
+    type: VARCHAR
+    flag_for: satmt25
+    years: 2014-2024
+  SATMT25:
+    name: satmt25
+    type: BIGINT
+    years: 2014-2024
+  XSATMT75:
+    name: satmt75_flag
+    type: VARCHAR
+    flag_for: satmt75
+    years: 2014-2024
+  SATMT75:
+    name: satmt75
+    type: BIGINT
+    years: 2014-2024
+  XSATWR25:
+    name: satwr25_flag
+    type: VARCHAR
+    flag_for: satwr25
+    years: 2014-2015
+  SATWR25:
+    name: satwr25
+    type: BIGINT
+    years: 2014-2015
+  XSATWR75:
+    name: satwr75_flag
+    type: VARCHAR
+    flag_for: satwr75
+    years: 2014-2015
+  SATWR75:
+    name: satwr75
+    type: BIGINT
+    years: 2014-2015
+  XACTCM25:
+    name: actcm25_flag
+    type: VARCHAR
+    flag_for: actcm25
+    years: 2014-2024
+  ACTCM25:
+    name: actcm25
+    type: BIGINT
+    years: 2014-2024
+  XACTCM75:
+    name: actcm75_flag
+    type: VARCHAR
+    flag_for: actcm75
+    years: 2014-2024
+  ACTCM75:
+    name: actcm75
+    type: BIGINT
+    years: 2014-2024
+  XACTEN25:
+    name: acten25_flag
+    type: VARCHAR
+    flag_for: acten25
+    years: 2014-2024
+  ACTEN25:
+    name: acten25
+    type: BIGINT
+    years: 2014-2024
+  XACTEN75:
+    name: acten75_flag
+    type: VARCHAR
+    flag_for: acten75
+    years: 2014-2024
+  ACTEN75:
+    name: acten75
+    type: BIGINT
+    years: 2014-2024
+  XACTMT25:
+    name: actmt25_flag
+    type: VARCHAR
+    flag_for: actmt25
+    years: 2014-2024
+  ACTMT25:
+    name: actmt25
+    type: BIGINT
+    years: 2014-2024
+  XACTMT75:
+    name: actmt75_flag
+    type: VARCHAR
+    flag_for: actmt75
+    years: 2014-2024
+  ACTMT75:
+    name: actmt75
+    type: BIGINT
+    years: 2014-2024
+  XACTWR25:
+    name: actwr25_flag
+    type: VARCHAR
+    flag_for: actwr25
+    years: 2014-2015
+  ACTWR25:
+    name: actwr25
+    type: BIGINT
+    years: 2014-2015
+  XACTWR75:
+    name: actwr75_flag
+    type: VARCHAR
+    flag_for: actwr75
+    years: 2014-2015
+  ACTWR75:
+    name: actwr75
+    type: BIGINT
+    years: 2014-2015
+  ADMCON10:
+    name: admcon10
+    type: BIGINT
+    years: 2022-2024
+  ADMCON11:
+    name: admcon11
+    type: BIGINT
+    years: 2022-2024
+  ADMCON12:
+    name: admcon12
+    type: BIGINT
+    years: 2022-2024
+  XAPPLCNAN:
+    name: applcnan_flag
+    type: VARCHAR
+    flag_for: applcnan
+    years: 2022-2024
+  APPLCNAN:
+    name: applcnan
+    type: BIGINT
+    years: 2022-2024
+  XAPPLCNUN:
+    name: applcnun_flag
+    type: VARCHAR
+    flag_for: applcnun
+    years: 2022-2024
+  APPLCNUN:
+    name: applcnun
+    type: BIGINT
+    years: 2022-2024
+  XADMSSNAN:
+    name: admssnan_flag
+    type: VARCHAR
+    flag_for: admssnan
+    years: 2022-2024
+  ADMSSNAN:
+    name: admssnan
+    type: BIGINT
+    years: 2022-2024
+  XADMSSNUN:
+    name: admssnun_flag
+    type: VARCHAR
+    flag_for: admssnun
+    years: 2022-2024
+  ADMSSNUN:
+    name: admssnun
+    type: BIGINT
+    years: 2022-2024
+  XENRLAN:
+    name: enrlan_flag
+    type: VARCHAR
+    flag_for: enrlan
+    years: 2022-2024
+  ENRLAN:
+    name: enrlan
+    type: BIGINT
+    years: 2022-2024
+  XENRLUN:
+    name: enrlun_flag
+    type: VARCHAR
+    flag_for: enrlun
+    years: 2022-2024
+  ENRLUN:
+    name: enrlun
+    type: BIGINT
+    years: 2022-2024
+  XENRLFTAN:
+    name: enrlftan_flag
+    type: VARCHAR
+    flag_for: enrlftan
+    years: 2022-2024
+  ENRLFTAN:
+    name: enrlftan
+    type: BIGINT
+    years: 2022-2024
+  XENRLFTUN:
+    name: enrlftun_flag
+    type: VARCHAR
+    flag_for: enrlftun
+    years: 2022-2024
+  ENRLFTUN:
+    name: enrlftun
+    type: BIGINT
+    years: 2022-2024
+  XENRLPTAN:
+    name: enrlptan_flag
+    type: VARCHAR
+    flag_for: enrlptan
+    years: 2022-2024
+  ENRLPTAN:
+    name: enrlptan
+    type: BIGINT
+    years: 2022-2024
+  XENRLPTUN:
+    name: enrlptun_flag
+    type: VARCHAR
+    flag_for: enrlptun
+    years: 2022-2024
+  ENRLPTUN:
+    name: enrlptun
+    type: BIGINT
+    years: 2022-2024
+  XSATVR50:
+    name: satvr50_flag
+    type: VARCHAR
+    flag_for: satvr50
+    years: 2022-2024
+  SATVR50:
+    name: satvr50
+    type: BIGINT
+    years: 2022-2024
+  XSATMT50:
+    name: satmt50_flag
+    type: VARCHAR
+    flag_for: satmt50
+    years: 2022-2024
+  SATMT50:
+    name: satmt50
+    type: BIGINT
+    years: 2022-2024
+  XACTCM50:
+    name: actcm50_flag
+    type: VARCHAR
+    flag_for: actcm50
+    years: 2022-2024
+  ACTCM50:
+    name: actcm50
+    type: BIGINT
+    years: 2022-2024
+  XACTEN50:
+    name: acten50_flag
+    type: VARCHAR
+    flag_for: acten50
+    years: 2022-2024
+  ACTEN50:
+    name: acten50
+    type: BIGINT
+    years: 2022-2024
+  XACTMT50:
+    name: actmt50_flag
+    type: VARCHAR
+    flag_for: actmt50
+    years: 2022-2024
+  ACTMT50:
+    name: actmt50
+    type: BIGINT
+    years: 2022-2024

@@ -1,0 +1,261 @@
+source: ipeds
+family: salnis
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2012-2024
+  XSANIN01:
+    name: sanin01_flag
+    type: VARCHAR
+    flag_for: sanin01
+    years: 2012-2024
+  SANIN01:
+    name: sanin01
+    type: BIGINT
+    years: 2012-2024
+  XSANIT01:
+    name: sanit01_flag
+    type: VARCHAR
+    flag_for: sanit01
+    years: 2012-2024
+  SANIT01:
+    name: sanit01
+    type: BIGINT
+    years: 2012-2024
+  XSANIN02:
+    name: sanin02_flag
+    type: VARCHAR
+    flag_for: sanin02
+    years: 2012-2024
+  SANIN02:
+    name: sanin02
+    type: BIGINT
+    years: 2012-2024
+  XSANIT02:
+    name: sanit02_flag
+    type: VARCHAR
+    flag_for: sanit02
+    years: 2012-2024
+  SANIT02:
+    name: sanit02
+    type: BIGINT
+    years: 2012-2024
+  XSANIN03:
+    name: sanin03_flag
+    type: VARCHAR
+    flag_for: sanin03
+    years: 2012-2024
+  SANIN03:
+    name: sanin03
+    type: BIGINT
+    years: 2012-2024
+  XSANIT03:
+    name: sanit03_flag
+    type: VARCHAR
+    flag_for: sanit03
+    years: 2012-2024
+  SANIT03:
+    name: sanit03
+    type: BIGINT
+    years: 2012-2024
+  XSANIN04:
+    name: sanin04_flag
+    type: VARCHAR
+    flag_for: sanin04
+    years: 2012-2024
+  SANIN04:
+    name: sanin04
+    type: BIGINT
+    years: 2012-2024
+  XSANIT04:
+    name: sanit04_flag
+    type: VARCHAR
+    flag_for: sanit04
+    years: 2012-2024
+  SANIT04:
+    name: sanit04
+    type: BIGINT
+    years: 2012-2024
+  XSANIN05:
+    name: sanin05_flag
+    type: VARCHAR
+    flag_for: sanin05
+    years: 2012-2024
+  SANIN05:
+    name: sanin05
+    type: BIGINT
+    years: 2012-2024
+  XSANIT05:
+    name: sanit05_flag
+    type: VARCHAR
+    flag_for: sanit05
+    years: 2012-2024
+  SANIT05:
+    name: sanit05
+    type: BIGINT
+    years: 2012-2024
+  XSANIN06:
+    name: sanin06_flag
+    type: VARCHAR
+    flag_for: sanin06
+    years: 2012-2024
+  SANIN06:
+    name: sanin06
+    type: BIGINT
+    years: 2012-2024
+  XSANIT06:
+    name: sanit06_flag
+    type: VARCHAR
+    flag_for: sanit06
+    years: 2012-2024
+  SANIT06:
+    name: sanit06
+    type: BIGINT
+    years: 2012-2024
+  XSANIN07:
+    name: sanin07_flag
+    type: VARCHAR
+    flag_for: sanin07
+    years: 2012-2024
+  SANIN07:
+    name: sanin07
+    type: BIGINT
+    years: 2012-2024
+  XSANIT07:
+    name: sanit07_flag
+    type: VARCHAR
+    flag_for: sanit07
+    years: 2012-2024
+  SANIT07:
+    name: sanit07
+    type: BIGINT
+    years: 2012-2024
+  XSANIN08:
+    name: sanin08_flag
+    type: VARCHAR
+    flag_for: sanin08
+    years: 2012-2024
+  SANIN08:
+    name: sanin08
+    type: BIGINT
+    years: 2012-2024
+  XSANIT08:
+    name: sanit08_flag
+    type: VARCHAR
+    flag_for: sanit08
+    years: 2012-2024
+  SANIT08:
+    name: sanit08
+    type: BIGINT
+    years: 2012-2024
+  XSANIN09:
+    name: sanin09_flag
+    type: VARCHAR
+    flag_for: sanin09
+    years: 2012-2024
+  SANIN09:
+    name: sanin09
+    type: BIGINT
+    years: 2012-2024
+  XSANIT09:
+    name: sanit09_flag
+    type: VARCHAR
+    flag_for: sanit09
+    years: 2012-2024
+  SANIT09:
+    name: sanit09
+    type: BIGINT
+    years: 2012-2024
+  XSANIN10:
+    name: sanin10_flag
+    type: VARCHAR
+    flag_for: sanin10
+    years: 2012-2024
+  SANIN10:
+    name: sanin10
+    type: BIGINT
+    years: 2012-2024
+  XSANIT10:
+    name: sanit10_flag
+    type: VARCHAR
+    flag_for: sanit10
+    years: 2012-2024
+  SANIT10:
+    name: sanit10
+    type: BIGINT
+    years: 2012-2024
+  XSANIN11:
+    name: sanin11_flag
+    type: VARCHAR
+    flag_for: sanin11
+    years: 2012-2024
+  SANIN11:
+    name: sanin11
+    type: BIGINT
+    years: 2012-2024
+  XSANIT11:
+    name: sanit11_flag
+    type: VARCHAR
+    flag_for: sanit11
+    years: 2012-2024
+  SANIT11:
+    name: sanit11
+    type: BIGINT
+    years: 2012-2024
+  XSANIN12:
+    name: sanin12_flag
+    type: VARCHAR
+    flag_for: sanin12
+    years: 2012-2024
+  SANIN12:
+    name: sanin12
+    type: BIGINT
+    years: 2012-2024
+  XSANIT12:
+    name: sanit12_flag
+    type: VARCHAR
+    flag_for: sanit12
+    years: 2012-2024
+  SANIT12:
+    name: sanit12
+    type: BIGINT
+    years: 2012-2024
+  XSANIN13:
+    name: sanin13_flag
+    type: VARCHAR
+    flag_for: sanin13
+    years: 2012-2024
+  SANIN13:
+    name: sanin13
+    type: BIGINT
+    years: 2012-2024
+  XSANIT13:
+    name: sanit13_flag
+    type: VARCHAR
+    flag_for: sanit13
+    years: 2012-2024
+  SANIT13:
+    name: sanit13
+    type: BIGINT
+    years: 2012-2024
+  XSANIN14:
+    name: sanin14_flag
+    type: VARCHAR
+    flag_for: sanin14
+    years: 2012-2024
+  SANIN14:
+    name: sanin14
+    type: BIGINT
+    years: 2012-2024
+  XSANIT14:
+    name: sanit14_flag
+    type: VARCHAR
+    flag_for: sanit14
+    years: 2012-2024
+  SANIT14:
+    name: sanit14
+    type: BIGINT
+    years: 2012-2024

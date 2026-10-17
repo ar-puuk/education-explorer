@@ -7,11 +7,13 @@ from pathlib import Path
 import duckdb
 
 
-def _opts(delim: str | None, header: bool = True) -> str:
+def _opts(delim: str | None, header: bool = True, parallel: bool = True) -> str:
     parts = ["all_varchar=true", "sample_size=20000", "ignore_errors=false",
              "strict_mode=false", "null_padding=true", f"header={'true' if header else 'false'}"]
     if delim:
         parts.append(f"delim='{delim}'")
+    if not parallel:
+        parts.append("parallel=false")
     return ", ".join(parts)
 
 
@@ -53,11 +55,11 @@ def ensure_utf8(path: Path) -> Path:
     return out
 
 
-def read_sql(path: Path, delim: str | None = None, header: bool = True) -> str:
+def read_sql(path: Path, delim: str | None = None, header: bool = True, parallel: bool = True) -> str:
     d, readable = detect(path)
     delim = delim or d
     p = str(readable).replace("\\", "/").replace("'", "''")
-    return f"read_csv('{p}', {_opts(delim, header)})"
+    return f"read_csv('{p}', {_opts(delim, header, parallel)})"
 
 
 def header_of(path: Path) -> list[str]:
@@ -67,3 +69,18 @@ def header_of(path: Path) -> list[str]:
     # strip BOM that DuckDB may leave on the first header cell
     cols[0] = cols[0].lstrip("﻿")
     return cols
+
+
+def run_copy(con, make_sql, *args) -> None:
+    """Run make_sql(read_sql_text) with the parallel CSV reader, falling back to the serial reader
+    for files with quoted newlines (which DuckDB's parallel reader rejects together with null_padding)."""
+    import duckdb
+
+    for parallel in (True, False):
+        try:
+            con.execute(make_sql(parallel))
+            return
+        except duckdb.Error as e:
+            if parallel and "parallel" in str(e).lower():
+                continue
+            raise

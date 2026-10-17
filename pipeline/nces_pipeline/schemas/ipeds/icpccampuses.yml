@@ -1,0 +1,1146 @@
+source: ipeds
+family: icpccampuses
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2023'
+  CAMPUSID:
+    name: campusid
+    type: BIGINT
+    years: '2023'
+  PCINSTNM:
+    name: pcinstnm
+    type: VARCHAR
+    years: '2023'
+  PCADDR:
+    name: pcaddr
+    type: VARCHAR
+    years: '2023'
+  PCCITY:
+    name: pccity
+    type: VARCHAR
+    years: '2023'
+  PCSTABBR:
+    name: pcstabbr
+    type: VARCHAR
+    years: '2023'
+  PCZIP:
+    name: pczip
+    type: VARCHAR
+    years: '2023'
+  PCFIPS:
+    name: pcfips
+    type: BIGINT
+    years: '2023'
+  PCOBEREG:
+    name: pcobereg
+    type: BIGINT
+    years: '2023'
+  PCCHFNM:
+    name: pcchfnm
+    type: VARCHAR
+    years: '2023'
+  PCCHFTITLE:
+    name: pcchftitle
+    type: VARCHAR
+    years: '2023'
+  PCGENTELE:
+    name: pcgentele
+    type: VARCHAR
+    years: '2023'
+  PCEIN:
+    name: pcein
+    type: VARCHAR
+    years: '2023'
+  PCUEIS:
+    name: pcueis
+    type: VARCHAR
+    years: '2023'
+  PCOPEID:
+    name: pcopeid
+    type: VARCHAR
+    years: '2023'
+  PCOPEFLAG:
+    name: pcopeflag
+    type: BIGINT
+    years: '2023'
+  OLDUNITID:
+    name: oldunitid
+    type: BIGINT
+    years: '2023'
+  PCWEBADDR:
+    name: pcwebaddr
+    type: VARCHAR
+    years: '2023'
+  PCADMINURL:
+    name: pcadminurl
+    type: VARCHAR
+    years: '2023'
+  PCFAIDURL:
+    name: pcfaidurl
+    type: VARCHAR
+    years: '2023'
+  PCAPPLURL:
+    name: pcapplurl
+    type: VARCHAR
+    years: '2023'
+  PCNPRICURL:
+    name: pcnpricurl
+    type: VARCHAR
+    years: '2023'
+  PCVETURL:
+    name: pcveturl
+    type: VARCHAR
+    years: '2023'
+  PCATHURL:
+    name: pcathurl
+    type: VARCHAR
+    years: '2023'
+  PCDISAURL:
+    name: pcdisaurl
+    type: VARCHAR
+    years: '2023'
+  PCSECTOR:
+    name: pcsector
+    type: BIGINT
+    years: '2023'
+  PCICLEVEL:
+    name: pciclevel
+    type: BIGINT
+    years: '2023'
+  PCCONTROL:
+    name: pccontrol
+    type: BIGINT
+    years: '2023'
+  PCHLOFFER:
+    name: pchloffer
+    type: BIGINT
+    years: '2023'
+  PCUGOFFER:
+    name: pcugoffer
+    type: BIGINT
+    years: '2023'
+  PCGROFFER:
+    name: pcgroffer
+    type: BIGINT
+    years: '2023'
+  PCHDEGOFR1:
+    name: pchdegofr1
+    type: BIGINT
+    years: '2023'
+  PCDEGGRANT:
+    name: pcdeggrant
+    type: BIGINT
+    years: '2023'
+  PCHBCU:
+    name: pchbcu
+    type: BIGINT
+    years: '2023'
+  PCTRIBAL:
+    name: pctribal
+    type: BIGINT
+    years: '2023'
+  PCLOCALE:
+    name: pclocale
+    type: BIGINT
+    years: '2023'
+  PCOPENPUBL:
+    name: pcopenpubl
+    type: BIGINT
+    years: '2023'
+  PCACT:
+    name: pcact
+    type: VARCHAR
+    years: '2023'
+  PCCYACTIVE:
+    name: pccyactive
+    type: BIGINT
+    years: '2023'
+  PCPOSTSEC:
+    name: pcpostsec
+    type: BIGINT
+    years: '2023'
+  PCPSEFLAG:
+    name: pcpseflag
+    type: BIGINT
+    years: '2023'
+  PCPSET4FLG:
+    name: pcpset4flg
+    type: BIGINT
+    years: '2023'
+  PCCBSA:
+    name: pccbsa
+    type: BIGINT
+    years: '2023'
+  PCCBSATYPE:
+    name: pccbsatype
+    type: BIGINT
+    years: '2023'
+  PCCSA:
+    name: pccsa
+    type: BIGINT
+    years: '2023'
+  PCCOUNTYCD:
+    name: pccountycd
+    type: BIGINT
+    years: '2023'
+  PCCOUNTYNM:
+    name: pccountynm
+    type: VARCHAR
+    years: '2023'
+  PCCNGDSTCD:
+    name: pccngdstcd
+    type: BIGINT
+    years: '2023'
+  PCLONGITUD:
+    name: pclongitud
+    type: DOUBLE
+    years: '2023'
+  PCLATITUDE:
+    name: pclatitude
+    type: DOUBLE
+    years: '2023'
+  PCLEVEL1:
+    name: pclevel1
+    type: BIGINT
+    years: '2023'
+  PCLEVEL1A:
+    name: pclevel1a
+    type: BIGINT
+    years: '2023'
+  PCLEVEL1B:
+    name: pclevel1b
+    type: BIGINT
+    years: '2023'
+  PCLEVEL2:
+    name: pclevel2
+    type: BIGINT
+    years: '2023'
+  PCLEVEL3:
+    name: pclevel3
+    type: BIGINT
+    years: '2023'
+  PCLEVEL4:
+    name: pclevel4
+    type: BIGINT
+    years: '2023'
+  PCLEVEL5:
+    name: pclevel5
+    type: BIGINT
+    years: '2023'
+  PCLEVEL6:
+    name: pclevel6
+    type: BIGINT
+    years: '2023'
+  PCLEVEL7:
+    name: pclevel7
+    type: BIGINT
+    years: '2023'
+  PCLEVEL8:
+    name: pclevel8
+    type: BIGINT
+    years: '2023'
+  PCLEVEL17:
+    name: pclevel17
+    type: BIGINT
+    years: '2023'
+  PCLEVEL18:
+    name: pclevel18
+    type: BIGINT
+    years: '2023'
+  PCLEVEL19:
+    name: pclevel19
+    type: BIGINT
+    years: '2023'
+  PCFT_FTUG:
+    name: pcft_ftug
+    type: BIGINT
+    years: '2023'
+  PCALLONCAM:
+    name: pcalloncam
+    type: BIGINT
+    years: '2023'
+  XPCAPPLFEEU:
+    name: pcapplfeeu_flag
+    type: VARCHAR
+    flag_for: pcapplfeeu
+    years: '2023'
+  PCAPPLFEEU:
+    name: pcapplfeeu
+    type: BIGINT
+    years: '2023'
+  PCROOM:
+    name: pcroom
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AT0:
+    name: pcchg1at0_flag
+    type: VARCHAR
+    flag_for: pcchg1at0
+    years: '2023'
+  PCCHG1AT0:
+    name: pcchg1at0
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AF0:
+    name: pcchg1af0_flag
+    type: VARCHAR
+    flag_for: pcchg1af0
+    years: '2023'
+  PCCHG1AF0:
+    name: pcchg1af0
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AY0:
+    name: pcchg1ay0_flag
+    type: VARCHAR
+    flag_for: pcchg1ay0
+    years: '2023'
+  PCCHG1AY0:
+    name: pcchg1ay0
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AT1:
+    name: pcchg1at1_flag
+    type: VARCHAR
+    flag_for: pcchg1at1
+    years: '2023'
+  PCCHG1AT1:
+    name: pcchg1at1
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AF1:
+    name: pcchg1af1_flag
+    type: VARCHAR
+    flag_for: pcchg1af1
+    years: '2023'
+  PCCHG1AF1:
+    name: pcchg1af1
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AY1:
+    name: pcchg1ay1_flag
+    type: VARCHAR
+    flag_for: pcchg1ay1
+    years: '2023'
+  PCCHG1AY1:
+    name: pcchg1ay1
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AT2:
+    name: pcchg1at2_flag
+    type: VARCHAR
+    flag_for: pcchg1at2
+    years: '2023'
+  PCCHG1AT2:
+    name: pcchg1at2
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AF2:
+    name: pcchg1af2_flag
+    type: VARCHAR
+    flag_for: pcchg1af2
+    years: '2023'
+  PCCHG1AF2:
+    name: pcchg1af2
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AY2:
+    name: pcchg1ay2_flag
+    type: VARCHAR
+    flag_for: pcchg1ay2
+    years: '2023'
+  PCCHG1AY2:
+    name: pcchg1ay2
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AT3:
+    name: pcchg1at3_flag
+    type: VARCHAR
+    flag_for: pcchg1at3
+    years: '2023'
+  PCCHG1AT3:
+    name: pcchg1at3
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AF3:
+    name: pcchg1af3_flag
+    type: VARCHAR
+    flag_for: pcchg1af3
+    years: '2023'
+  PCCHG1AF3:
+    name: pcchg1af3
+    type: BIGINT
+    years: '2023'
+  XPCCHG1AY3:
+    name: pcchg1ay3_flag
+    type: VARCHAR
+    flag_for: pcchg1ay3
+    years: '2023'
+  PCCHG1AY3:
+    name: pcchg1ay3
+    type: BIGINT
+    years: '2023'
+  PCCHG1TGTD:
+    name: pcchg1tgtd
+    type: BIGINT
+    years: '2023'
+  PCCHG1FGTD:
+    name: pcchg1fgtd
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AT0:
+    name: pcchg2at0_flag
+    type: VARCHAR
+    flag_for: pcchg2at0
+    years: '2023'
+  PCCHG2AT0:
+    name: pcchg2at0
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AF0:
+    name: pcchg2af0_flag
+    type: VARCHAR
+    flag_for: pcchg2af0
+    years: '2023'
+  PCCHG2AF0:
+    name: pcchg2af0
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AY0:
+    name: pcchg2ay0_flag
+    type: VARCHAR
+    flag_for: pcchg2ay0
+    years: '2023'
+  PCCHG2AY0:
+    name: pcchg2ay0
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AT1:
+    name: pcchg2at1_flag
+    type: VARCHAR
+    flag_for: pcchg2at1
+    years: '2023'
+  PCCHG2AT1:
+    name: pcchg2at1
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AF1:
+    name: pcchg2af1_flag
+    type: VARCHAR
+    flag_for: pcchg2af1
+    years: '2023'
+  PCCHG2AF1:
+    name: pcchg2af1
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AY1:
+    name: pcchg2ay1_flag
+    type: VARCHAR
+    flag_for: pcchg2ay1
+    years: '2023'
+  PCCHG2AY1:
+    name: pcchg2ay1
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AT2:
+    name: pcchg2at2_flag
+    type: VARCHAR
+    flag_for: pcchg2at2
+    years: '2023'
+  PCCHG2AT2:
+    name: pcchg2at2
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AF2:
+    name: pcchg2af2_flag
+    type: VARCHAR
+    flag_for: pcchg2af2
+    years: '2023'
+  PCCHG2AF2:
+    name: pcchg2af2
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AY2:
+    name: pcchg2ay2_flag
+    type: VARCHAR
+    flag_for: pcchg2ay2
+    years: '2023'
+  PCCHG2AY2:
+    name: pcchg2ay2
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AT3:
+    name: pcchg2at3_flag
+    type: VARCHAR
+    flag_for: pcchg2at3
+    years: '2023'
+  PCCHG2AT3:
+    name: pcchg2at3
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AF3:
+    name: pcchg2af3_flag
+    type: VARCHAR
+    flag_for: pcchg2af3
+    years: '2023'
+  PCCHG2AF3:
+    name: pcchg2af3
+    type: BIGINT
+    years: '2023'
+  XPCCHG2AY3:
+    name: pcchg2ay3_flag
+    type: VARCHAR
+    flag_for: pcchg2ay3
+    years: '2023'
+  PCCHG2AY3:
+    name: pcchg2ay3
+    type: BIGINT
+    years: '2023'
+  PCCHG2TGTD:
+    name: pcchg2tgtd
+    type: BIGINT
+    years: '2023'
+  PCCHG2FGTD:
+    name: pcchg2fgtd
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AT0:
+    name: pcchg3at0_flag
+    type: VARCHAR
+    flag_for: pcchg3at0
+    years: '2023'
+  PCCHG3AT0:
+    name: pcchg3at0
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AF0:
+    name: pcchg3af0_flag
+    type: VARCHAR
+    flag_for: pcchg3af0
+    years: '2023'
+  PCCHG3AF0:
+    name: pcchg3af0
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AY0:
+    name: pcchg3ay0_flag
+    type: VARCHAR
+    flag_for: pcchg3ay0
+    years: '2023'
+  PCCHG3AY0:
+    name: pcchg3ay0
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AT1:
+    name: pcchg3at1_flag
+    type: VARCHAR
+    flag_for: pcchg3at1
+    years: '2023'
+  PCCHG3AT1:
+    name: pcchg3at1
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AF1:
+    name: pcchg3af1_flag
+    type: VARCHAR
+    flag_for: pcchg3af1
+    years: '2023'
+  PCCHG3AF1:
+    name: pcchg3af1
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AY1:
+    name: pcchg3ay1_flag
+    type: VARCHAR
+    flag_for: pcchg3ay1
+    years: '2023'
+  PCCHG3AY1:
+    name: pcchg3ay1
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AT2:
+    name: pcchg3at2_flag
+    type: VARCHAR
+    flag_for: pcchg3at2
+    years: '2023'
+  PCCHG3AT2:
+    name: pcchg3at2
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AF2:
+    name: pcchg3af2_flag
+    type: VARCHAR
+    flag_for: pcchg3af2
+    years: '2023'
+  PCCHG3AF2:
+    name: pcchg3af2
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AY2:
+    name: pcchg3ay2_flag
+    type: VARCHAR
+    flag_for: pcchg3ay2
+    years: '2023'
+  PCCHG3AY2:
+    name: pcchg3ay2
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AT3:
+    name: pcchg3at3_flag
+    type: VARCHAR
+    flag_for: pcchg3at3
+    years: '2023'
+  PCCHG3AT3:
+    name: pcchg3at3
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AF3:
+    name: pcchg3af3_flag
+    type: VARCHAR
+    flag_for: pcchg3af3
+    years: '2023'
+  PCCHG3AF3:
+    name: pcchg3af3
+    type: BIGINT
+    years: '2023'
+  XPCCHG3AY3:
+    name: pcchg3ay3_flag
+    type: VARCHAR
+    flag_for: pcchg3ay3
+    years: '2023'
+  PCCHG3AY3:
+    name: pcchg3ay3
+    type: BIGINT
+    years: '2023'
+  PCCHG3TGTD:
+    name: pcchg3tgtd
+    type: BIGINT
+    years: '2023'
+  PCCHG3FGTD:
+    name: pcchg3fgtd
+    type: BIGINT
+    years: '2023'
+  XPCCHG4AY0:
+    name: pcchg4ay0_flag
+    type: VARCHAR
+    flag_for: pcchg4ay0
+    years: '2023'
+  PCCHG4AY0:
+    name: pcchg4ay0
+    type: BIGINT
+    years: '2023'
+  XPCCHG4AY1:
+    name: pcchg4ay1_flag
+    type: VARCHAR
+    flag_for: pcchg4ay1
+    years: '2023'
+  PCCHG4AY1:
+    name: pcchg4ay1
+    type: BIGINT
+    years: '2023'
+  XPCCHG4AY2:
+    name: pcchg4ay2_flag
+    type: VARCHAR
+    flag_for: pcchg4ay2
+    years: '2023'
+  PCCHG4AY2:
+    name: pcchg4ay2
+    type: BIGINT
+    years: '2023'
+  XPCCHG4AY3:
+    name: pcchg4ay3_flag
+    type: VARCHAR
+    flag_for: pcchg4ay3
+    years: '2023'
+  PCCHG4AY3:
+    name: pcchg4ay3
+    type: BIGINT
+    years: '2023'
+  XPCCHG5AY0:
+    name: pcchg5ay0_flag
+    type: VARCHAR
+    flag_for: pcchg5ay0
+    years: '2023'
+  PCCHG5AY0:
+    name: pcchg5ay0
+    type: BIGINT
+    years: '2023'
+  XPCCHG5AY1:
+    name: pcchg5ay1_flag
+    type: VARCHAR
+    flag_for: pcchg5ay1
+    years: '2023'
+  PCCHG5AY1:
+    name: pcchg5ay1
+    type: BIGINT
+    years: '2023'
+  XPCCHG5AY2:
+    name: pcchg5ay2_flag
+    type: VARCHAR
+    flag_for: pcchg5ay2
+    years: '2023'
+  PCCHG5AY2:
+    name: pcchg5ay2
+    type: BIGINT
+    years: '2023'
+  XPCCHG5AY3:
+    name: pcchg5ay3_flag
+    type: VARCHAR
+    flag_for: pcchg5ay3
+    years: '2023'
+  PCCHG5AY3:
+    name: pcchg5ay3
+    type: BIGINT
+    years: '2023'
+  XPCCHG6AY0:
+    name: pcchg6ay0_flag
+    type: VARCHAR
+    flag_for: pcchg6ay0
+    years: '2023'
+  PCCHG6AY0:
+    name: pcchg6ay0
+    type: BIGINT
+    years: '2023'
+  XPCCHG6AY1:
+    name: pcchg6ay1_flag
+    type: VARCHAR
+    flag_for: pcchg6ay1
+    years: '2023'
+  PCCHG6AY1:
+    name: pcchg6ay1
+    type: BIGINT
+    years: '2023'
+  XPCCHG6AY2:
+    name: pcchg6ay2_flag
+    type: VARCHAR
+    flag_for: pcchg6ay2
+    years: '2023'
+  PCCHG6AY2:
+    name: pcchg6ay2
+    type: BIGINT
+    years: '2023'
+  XPCCHG6AY3:
+    name: pcchg6ay3_flag
+    type: VARCHAR
+    flag_for: pcchg6ay3
+    years: '2023'
+  PCCHG6AY3:
+    name: pcchg6ay3
+    type: BIGINT
+    years: '2023'
+  XPCCHG7AY0:
+    name: pcchg7ay0_flag
+    type: VARCHAR
+    flag_for: pcchg7ay0
+    years: '2023'
+  PCCHG7AY0:
+    name: pcchg7ay0
+    type: BIGINT
+    years: '2023'
+  XPCCHG7AY1:
+    name: pcchg7ay1_flag
+    type: VARCHAR
+    flag_for: pcchg7ay1
+    years: '2023'
+  PCCHG7AY1:
+    name: pcchg7ay1
+    type: BIGINT
+    years: '2023'
+  XPCCHG7AY2:
+    name: pcchg7ay2_flag
+    type: VARCHAR
+    flag_for: pcchg7ay2
+    years: '2023'
+  PCCHG7AY2:
+    name: pcchg7ay2
+    type: BIGINT
+    years: '2023'
+  XPCCHG7AY3:
+    name: pcchg7ay3_flag
+    type: VARCHAR
+    flag_for: pcchg7ay3
+    years: '2023'
+  PCCHG7AY3:
+    name: pcchg7ay3
+    type: BIGINT
+    years: '2023'
+  XPCCHG8AY0:
+    name: pcchg8ay0_flag
+    type: VARCHAR
+    flag_for: pcchg8ay0
+    years: '2023'
+  PCCHG8AY0:
+    name: pcchg8ay0
+    type: BIGINT
+    years: '2023'
+  XPCCHG8AY1:
+    name: pcchg8ay1_flag
+    type: VARCHAR
+    flag_for: pcchg8ay1
+    years: '2023'
+  PCCHG8AY1:
+    name: pcchg8ay1
+    type: BIGINT
+    years: '2023'
+  XPCCHG8AY2:
+    name: pcchg8ay2_flag
+    type: VARCHAR
+    flag_for: pcchg8ay2
+    years: '2023'
+  PCCHG8AY2:
+    name: pcchg8ay2
+    type: BIGINT
+    years: '2023'
+  XPCCHG8AY3:
+    name: pcchg8ay3_flag
+    type: VARCHAR
+    flag_for: pcchg8ay3
+    years: '2023'
+  PCCHG8AY3:
+    name: pcchg8ay3
+    type: BIGINT
+    years: '2023'
+  XPCCHG9AY0:
+    name: pcchg9ay0_flag
+    type: VARCHAR
+    flag_for: pcchg9ay0
+    years: '2023'
+  PCCHG9AY0:
+    name: pcchg9ay0
+    type: BIGINT
+    years: '2023'
+  XPCCHG9AY1:
+    name: pcchg9ay1_flag
+    type: VARCHAR
+    flag_for: pcchg9ay1
+    years: '2023'
+  PCCHG9AY1:
+    name: pcchg9ay1
+    type: BIGINT
+    years: '2023'
+  XPCCHG9AY2:
+    name: pcchg9ay2_flag
+    type: VARCHAR
+    flag_for: pcchg9ay2
+    years: '2023'
+  PCCHG9AY2:
+    name: pcchg9ay2
+    type: BIGINT
+    years: '2023'
+  XPCCHG9AY3:
+    name: pcchg9ay3_flag
+    type: VARCHAR
+    flag_for: pcchg9ay3
+    years: '2023'
+  PCCHG9AY3:
+    name: pcchg9ay3
+    type: BIGINT
+    years: '2023'
+  PCCIPCODE1:
+    name: pccipcode1
+    type: VARCHAR
+    years: '2023'
+  XPCCIPLGT1:
+    name: xpcciplgt1
+    type: VARCHAR
+    years: '2023'
+  PCCIPLGTH1:
+    name: pcciplgth1
+    type: BIGINT
+    years: '2023'
+  PCPRGMSR1:
+    name: pcprgmsr1
+    type: BIGINT
+    years: '2023'
+  XPCMTHCMP1:
+    name: pcmthcmp1_flag
+    type: VARCHAR
+    flag_for: pcmthcmp1
+    years: '2023'
+  PCMTHCMP1:
+    name: pcmthcmp1
+    type: BIGINT
+    years: '2023'
+  XPCWKCMP1:
+    name: pcwkcmp1_flag
+    type: VARCHAR
+    flag_for: pcwkcmp1
+    years: '2023'
+  PCWKCMP1:
+    name: pcwkcmp1
+    type: BIGINT
+    years: '2023'
+  XPCLNAYHR1:
+    name: pclnayhr1_flag
+    type: VARCHAR
+    flag_for: pclnayhr1
+    years: '2023'
+  PCLNAYHR1:
+    name: pclnayhr1
+    type: BIGINT
+    years: '2023'
+  XPCLNAYWK1:
+    name: pclnaywk1_flag
+    type: VARCHAR
+    flag_for: pclnaywk1
+    years: '2023'
+  PCLNAYWK1:
+    name: pclnaywk1
+    type: BIGINT
+    years: '2023'
+  XPCCHG1PY0:
+    name: pcchg1py0_flag
+    type: VARCHAR
+    flag_for: pcchg1py0
+    years: '2023'
+  PCCHG1PY0:
+    name: pcchg1py0
+    type: BIGINT
+    years: '2023'
+  XPCCHG1PY1:
+    name: pcchg1py1_flag
+    type: VARCHAR
+    flag_for: pcchg1py1
+    years: '2023'
+  PCCHG1PY1:
+    name: pcchg1py1
+    type: BIGINT
+    years: '2023'
+  XPCCHG1PY2:
+    name: pcchg1py2_flag
+    type: VARCHAR
+    flag_for: pcchg1py2
+    years: '2023'
+  PCCHG1PY2:
+    name: pcchg1py2
+    type: BIGINT
+    years: '2023'
+  XPCCHG1PY3:
+    name: pcchg1py3_flag
+    type: VARCHAR
+    flag_for: pcchg1py3
+    years: '2023'
+  PCCHG1PY3:
+    name: pcchg1py3
+    type: BIGINT
+    years: '2023'
+  XPCCHG4PY0:
+    name: pcchg4py0_flag
+    type: VARCHAR
+    flag_for: pcchg4py0
+    years: '2023'
+  PCCHG4PY0:
+    name: pcchg4py0
+    type: BIGINT
+    years: '2023'
+  XPCCHG4PY1:
+    name: pcchg4py1_flag
+    type: VARCHAR
+    flag_for: pcchg4py1
+    years: '2023'
+  PCCHG4PY1:
+    name: pcchg4py1
+    type: BIGINT
+    years: '2023'
+  XPCCHG4PY2:
+    name: pcchg4py2_flag
+    type: VARCHAR
+    flag_for: pcchg4py2
+    years: '2023'
+  PCCHG4PY2:
+    name: pcchg4py2
+    type: BIGINT
+    years: '2023'
+  XPCCHG4PY3:
+    name: pcchg4py3_flag
+    type: VARCHAR
+    flag_for: pcchg4py3
+    years: '2023'
+  PCCHG4PY3:
+    name: pcchg4py3
+    type: BIGINT
+    years: '2023'
+  XPCCHG5PY0:
+    name: pcchg5py0_flag
+    type: VARCHAR
+    flag_for: pcchg5py0
+    years: '2023'
+  PCCHG5PY0:
+    name: pcchg5py0
+    type: BIGINT
+    years: '2023'
+  XPCCHG5PY1:
+    name: pcchg5py1_flag
+    type: VARCHAR
+    flag_for: pcchg5py1
+    years: '2023'
+  PCCHG5PY1:
+    name: pcchg5py1
+    type: BIGINT
+    years: '2023'
+  XPCCHG5PY2:
+    name: pcchg5py2_flag
+    type: VARCHAR
+    flag_for: pcchg5py2
+    years: '2023'
+  PCCHG5PY2:
+    name: pcchg5py2
+    type: BIGINT
+    years: '2023'
+  XPCCHG5PY3:
+    name: pcchg5py3_flag
+    type: VARCHAR
+    flag_for: pcchg5py3
+    years: '2023'
+  PCCHG5PY3:
+    name: pcchg5py3
+    type: BIGINT
+    years: '2023'
+  XPCCHG6PY0:
+    name: pcchg6py0_flag
+    type: VARCHAR
+    flag_for: pcchg6py0
+    years: '2023'
+  PCCHG6PY0:
+    name: pcchg6py0
+    type: BIGINT
+    years: '2023'
+  XPCCHG6PY1:
+    name: pcchg6py1_flag
+    type: VARCHAR
+    flag_for: pcchg6py1
+    years: '2023'
+  PCCHG6PY1:
+    name: pcchg6py1
+    type: BIGINT
+    years: '2023'
+  XPCCHG6PY2:
+    name: pcchg6py2_flag
+    type: VARCHAR
+    flag_for: pcchg6py2
+    years: '2023'
+  PCCHG6PY2:
+    name: pcchg6py2
+    type: BIGINT
+    years: '2023'
+  XPCCHG6PY3:
+    name: pcchg6py3_flag
+    type: VARCHAR
+    flag_for: pcchg6py3
+    years: '2023'
+  PCCHG6PY3:
+    name: pcchg6py3
+    type: BIGINT
+    years: '2023'
+  XPCCHG7PY0:
+    name: pcchg7py0_flag
+    type: VARCHAR
+    flag_for: pcchg7py0
+    years: '2023'
+  PCCHG7PY0:
+    name: pcchg7py0
+    type: BIGINT
+    years: '2023'
+  XPCCHG7PY1:
+    name: pcchg7py1_flag
+    type: VARCHAR
+    flag_for: pcchg7py1
+    years: '2023'
+  PCCHG7PY1:
+    name: pcchg7py1
+    type: BIGINT
+    years: '2023'
+  XPCCHG7PY2:
+    name: pcchg7py2_flag
+    type: VARCHAR
+    flag_for: pcchg7py2
+    years: '2023'
+  PCCHG7PY2:
+    name: pcchg7py2
+    type: BIGINT
+    years: '2023'
+  XPCCHG7PY3:
+    name: pcchg7py3_flag
+    type: VARCHAR
+    flag_for: pcchg7py3
+    years: '2023'
+  PCCHG7PY3:
+    name: pcchg7py3
+    type: BIGINT
+    years: '2023'
+  XPCCHG8PY0:
+    name: pcchg8py0_flag
+    type: VARCHAR
+    flag_for: pcchg8py0
+    years: '2023'
+  PCCHG8PY0:
+    name: pcchg8py0
+    type: BIGINT
+    years: '2023'
+  XPCCHG8PY1:
+    name: pcchg8py1_flag
+    type: VARCHAR
+    flag_for: pcchg8py1
+    years: '2023'
+  PCCHG8PY1:
+    name: pcchg8py1
+    type: BIGINT
+    years: '2023'
+  XPCCHG8PY2:
+    name: pcchg8py2_flag
+    type: VARCHAR
+    flag_for: pcchg8py2
+    years: '2023'
+  PCCHG8PY2:
+    name: pcchg8py2
+    type: BIGINT
+    years: '2023'
+  XPCCHG8PY3:
+    name: pcchg8py3_flag
+    type: VARCHAR
+    flag_for: pcchg8py3
+    years: '2023'
+  PCCHG8PY3:
+    name: pcchg8py3
+    type: BIGINT
+    years: '2023'
+  XPCCHG9PY0:
+    name: pcchg9py0_flag
+    type: VARCHAR
+    flag_for: pcchg9py0
+    years: '2023'
+  PCCHG9PY0:
+    name: pcchg9py0
+    type: BIGINT
+    years: '2023'
+  XPCCHG9PY1:
+    name: pcchg9py1_flag
+    type: VARCHAR
+    flag_for: pcchg9py1
+    years: '2023'
+  PCCHG9PY1:
+    name: pcchg9py1
+    type: BIGINT
+    years: '2023'
+  XPCCHG9PY2:
+    name: pcchg9py2_flag
+    type: VARCHAR
+    flag_for: pcchg9py2
+    years: '2023'
+  PCCHG9PY2:
+    name: pcchg9py2
+    type: BIGINT
+    years: '2023'
+  XPCCHG9PY3:
+    name: pcchg9py3_flag
+    type: VARCHAR
+    flag_for: pcchg9py3
+    years: '2023'
+  PCCHG9PY3:
+    name: pcchg9py3
+    type: BIGINT
+    years: '2023'

@@ -1,0 +1,183 @@
+source: ipeds
+family: sfav
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2014-2024
+  XUGPO9_N:
+    name: ugpo9_n_flag
+    type: VARCHAR
+    flag_for: ugpo9_n
+    years: 2014-2024
+  UGPO9_N:
+    name: ugpo9_n
+    type: BIGINT
+    years: 2014-2024
+  XUGPO9_T:
+    name: ugpo9_t_flag
+    type: VARCHAR
+    flag_for: ugpo9_t
+    years: 2014-2024
+  UGPO9_T:
+    name: ugpo9_t
+    type: BIGINT
+    years: 2014-2024
+  XUGPO9_A:
+    name: ugpo9_a_flag
+    type: VARCHAR
+    flag_for: ugpo9_a
+    years: 2014-2024
+  UGPO9_A:
+    name: ugpo9_a
+    type: BIGINT
+    years: 2014-2024
+  XGPO9_N:
+    name: gpo9_n_flag
+    type: VARCHAR
+    flag_for: gpo9_n
+    years: 2014-2024
+  GPO9_N:
+    name: gpo9_n
+    type: BIGINT
+    years: 2014-2024
+  XGPO9_T:
+    name: gpo9_t_flag
+    type: VARCHAR
+    flag_for: gpo9_t
+    years: 2014-2024
+  GPO9_T:
+    name: gpo9_t
+    type: BIGINT
+    years: 2014-2024
+  XGPO9_A:
+    name: gpo9_a_flag
+    type: VARCHAR
+    flag_for: gpo9_a
+    years: 2014-2024
+  GPO9_A:
+    name: gpo9_a
+    type: BIGINT
+    years: 2014-2024
+  XPO9_N:
+    name: po9_n_flag
+    type: VARCHAR
+    flag_for: po9_n
+    years: 2014-2024
+  PO9_N:
+    name: po9_n
+    type: BIGINT
+    years: 2014-2024
+  XPO9_T:
+    name: po9_t_flag
+    type: VARCHAR
+    flag_for: po9_t
+    years: 2014-2024
+  PO9_T:
+    name: po9_t
+    type: BIGINT
+    years: 2014-2024
+  XPO9_A:
+    name: po9_a_flag
+    type: VARCHAR
+    flag_for: po9_a
+    years: 2014-2024
+  PO9_A:
+    name: po9_a
+    type: BIGINT
+    years: 2014-2024
+  XUGDOD_N:
+    name: ugdod_n_flag
+    type: VARCHAR
+    flag_for: ugdod_n
+    years: 2014-2024
+  UGDOD_N:
+    name: ugdod_n
+    type: BIGINT
+    years: 2014-2024
+  XUGDOD_T:
+    name: ugdod_t_flag
+    type: VARCHAR
+    flag_for: ugdod_t
+    years: 2014-2024
+  UGDOD_T:
+    name: ugdod_t
+    type: BIGINT
+    years: 2014-2024
+  XUGDOD_A:
+    name: ugdod_a_flag
+    type: VARCHAR
+    flag_for: ugdod_a
+    years: 2014-2024
+  UGDOD_A:
+    name: ugdod_a
+    type: BIGINT
+    years: 2014-2024
+  XGDOD_N:
+    name: gdod_n_flag
+    type: VARCHAR
+    flag_for: gdod_n
+    years: 2014-2024
+  GDOD_N:
+    name: gdod_n
+    type: BIGINT
+    years: 2014-2024
+  XGDOD_T:
+    name: gdod_t_flag
+    type: VARCHAR
+    flag_for: gdod_t
+    years: 2014-2024
+  GDOD_T:
+    name: gdod_t
+    type: BIGINT
+    years: 2014-2024
+  XGDOD_A:
+    name: gdod_a_flag
+    type: VARCHAR
+    flag_for: gdod_a
+    years: 2014-2024
+  GDOD_A:
+    name: gdod_a
+    type: BIGINT
+    years: 2014-2024
+  XDOD_N:
+    name: dod_n_flag
+    type: VARCHAR
+    flag_for: dod_n
+    years: 2014-2024
+  DOD_N:
+    name: dod_n
+    type: BIGINT
+    years: 2014-2024
+  XDOD_T:
+    name: dod_t_flag
+    type: VARCHAR
+    flag_for: dod_t
+    years: 2014-2024
+  DOD_T:
+    name: dod_t
+    type: BIGINT
+    years: 2014-2024
+  XDOD_A:
+    name: dod_a_flag
+    type: VARCHAR
+    flag_for: dod_a
+    years: 2014-2024
+  DOD_A:
+    name: dod_a
+    type: BIGINT
+    years: 2014-2024
+  PARTVT:
+    name: partvt
+    type: BIGINT
+    years: '2024'
+  PO9:
+    name: po9
+    type: BIGINT
+    years: '2024'
+  DOD:
+    name: dod
+    type: BIGINT
+    years: '2024'

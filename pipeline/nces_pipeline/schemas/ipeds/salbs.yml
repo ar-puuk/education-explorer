@@ -1,0 +1,683 @@
+source: ipeds
+family: salbs
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2001'
+  XSAB321:
+    name: sab321_flag
+    type: VARCHAR
+    flag_for: sab321
+    years: '2001'
+  SAB321:
+    name: sab321
+    type: BIGINT
+    years: '2001'
+  XSAB322:
+    name: sab322_flag
+    type: VARCHAR
+    flag_for: sab322
+    years: '2001'
+  SAB322:
+    name: sab322
+    type: BIGINT
+    years: '2001'
+  XSAB325:
+    name: sab325_flag
+    type: VARCHAR
+    flag_for: sab325
+    years: '2001'
+  SAB325:
+    name: sab325
+    type: BIGINT
+    years: '2001'
+  XSAB323:
+    name: sab323_flag
+    type: VARCHAR
+    flag_for: sab323
+    years: '2001'
+  SAB323:
+    name: sab323
+    type: BIGINT
+    years: '2001'
+  XSAB324:
+    name: sab324_flag
+    type: VARCHAR
+    flag_for: sab324
+    years: '2001'
+  SAB324:
+    name: sab324
+    type: BIGINT
+    years: '2001'
+  XSAB326:
+    name: sab326_flag
+    type: VARCHAR
+    flag_for: sab326
+    years: '2001'
+  SAB326:
+    name: sab326
+    type: BIGINT
+    years: '2001'
+  XSAB331:
+    name: sab331_flag
+    type: VARCHAR
+    flag_for: sab331
+    years: '2001'
+  SAB331:
+    name: sab331
+    type: BIGINT
+    years: '2001'
+  XSAB332:
+    name: sab332_flag
+    type: VARCHAR
+    flag_for: sab332
+    years: '2001'
+  SAB332:
+    name: sab332
+    type: BIGINT
+    years: '2001'
+  XSAB335:
+    name: sab335_flag
+    type: VARCHAR
+    flag_for: sab335
+    years: '2001'
+  SAB335:
+    name: sab335
+    type: BIGINT
+    years: '2001'
+  XSAB333:
+    name: sab333_flag
+    type: VARCHAR
+    flag_for: sab333
+    years: '2001'
+  SAB333:
+    name: sab333
+    type: BIGINT
+    years: '2001'
+  XSAB334:
+    name: sab334_flag
+    type: VARCHAR
+    flag_for: sab334
+    years: '2001'
+  SAB334:
+    name: sab334
+    type: BIGINT
+    years: '2001'
+  XSAB336:
+    name: sab336_flag
+    type: VARCHAR
+    flag_for: sab336
+    years: '2001'
+  SAB336:
+    name: sab336
+    type: BIGINT
+    years: '2001'
+  XSAB341:
+    name: sab341_flag
+    type: VARCHAR
+    flag_for: sab341
+    years: '2001'
+  SAB341:
+    name: sab341
+    type: BIGINT
+    years: '2001'
+  XSAB342:
+    name: sab342_flag
+    type: VARCHAR
+    flag_for: sab342
+    years: '2001'
+  SAB342:
+    name: sab342
+    type: BIGINT
+    years: '2001'
+  XSAB345:
+    name: sab345_flag
+    type: VARCHAR
+    flag_for: sab345
+    years: '2001'
+  SAB345:
+    name: sab345
+    type: BIGINT
+    years: '2001'
+  XSAB343:
+    name: sab343_flag
+    type: VARCHAR
+    flag_for: sab343
+    years: '2001'
+  SAB343:
+    name: sab343
+    type: BIGINT
+    years: '2001'
+  XSAB344:
+    name: sab344_flag
+    type: VARCHAR
+    flag_for: sab344
+    years: '2001'
+  SAB344:
+    name: sab344
+    type: BIGINT
+    years: '2001'
+  XSAB346:
+    name: sab346_flag
+    type: VARCHAR
+    flag_for: sab346
+    years: '2001'
+  SAB346:
+    name: sab346
+    type: BIGINT
+    years: '2001'
+  XSAB351:
+    name: sab351_flag
+    type: VARCHAR
+    flag_for: sab351
+    years: '2001'
+  SAB351:
+    name: sab351
+    type: BIGINT
+    years: '2001'
+  XSAB352:
+    name: sab352_flag
+    type: VARCHAR
+    flag_for: sab352
+    years: '2001'
+  SAB352:
+    name: sab352
+    type: BIGINT
+    years: '2001'
+  XSAB355:
+    name: sab355_flag
+    type: VARCHAR
+    flag_for: sab355
+    years: '2001'
+  SAB355:
+    name: sab355
+    type: BIGINT
+    years: '2001'
+  XSAB353:
+    name: sab353_flag
+    type: VARCHAR
+    flag_for: sab353
+    years: '2001'
+  SAB353:
+    name: sab353
+    type: BIGINT
+    years: '2001'
+  XSAB354:
+    name: sab354_flag
+    type: VARCHAR
+    flag_for: sab354
+    years: '2001'
+  SAB354:
+    name: sab354
+    type: BIGINT
+    years: '2001'
+  XSAB356:
+    name: sab356_flag
+    type: VARCHAR
+    flag_for: sab356
+    years: '2001'
+  SAB356:
+    name: sab356
+    type: BIGINT
+    years: '2001'
+  XSAB361:
+    name: sab361_flag
+    type: VARCHAR
+    flag_for: sab361
+    years: '2001'
+  SAB361:
+    name: sab361
+    type: BIGINT
+    years: '2001'
+  XSAB362:
+    name: sab362_flag
+    type: VARCHAR
+    flag_for: sab362
+    years: '2001'
+  SAB362:
+    name: sab362
+    type: BIGINT
+    years: '2001'
+  XSAB365:
+    name: sab365_flag
+    type: VARCHAR
+    flag_for: sab365
+    years: '2001'
+  SAB365:
+    name: sab365
+    type: BIGINT
+    years: '2001'
+  XSAB363:
+    name: sab363_flag
+    type: VARCHAR
+    flag_for: sab363
+    years: '2001'
+  SAB363:
+    name: sab363
+    type: BIGINT
+    years: '2001'
+  XSAB364:
+    name: sab364_flag
+    type: VARCHAR
+    flag_for: sab364
+    years: '2001'
+  SAB364:
+    name: sab364
+    type: BIGINT
+    years: '2001'
+  XSAB366:
+    name: sab366_flag
+    type: VARCHAR
+    flag_for: sab366
+    years: '2001'
+  SAB366:
+    name: sab366
+    type: BIGINT
+    years: '2001'
+  XSAB371:
+    name: sab371_flag
+    type: VARCHAR
+    flag_for: sab371
+    years: '2001'
+  SAB371:
+    name: sab371
+    type: BIGINT
+    years: '2001'
+  XSAB372:
+    name: sab372_flag
+    type: VARCHAR
+    flag_for: sab372
+    years: '2001'
+  SAB372:
+    name: sab372
+    type: BIGINT
+    years: '2001'
+  XSAB375:
+    name: sab375_flag
+    type: VARCHAR
+    flag_for: sab375
+    years: '2001'
+  SAB375:
+    name: sab375
+    type: BIGINT
+    years: '2001'
+  XSAB373:
+    name: sab373_flag
+    type: VARCHAR
+    flag_for: sab373
+    years: '2001'
+  SAB373:
+    name: sab373
+    type: BIGINT
+    years: '2001'
+  XSAB374:
+    name: sab374_flag
+    type: VARCHAR
+    flag_for: sab374
+    years: '2001'
+  SAB374:
+    name: sab374
+    type: BIGINT
+    years: '2001'
+  XSAB376:
+    name: sab376_flag
+    type: VARCHAR
+    flag_for: sab376
+    years: '2001'
+  SAB376:
+    name: sab376
+    type: BIGINT
+    years: '2001'
+  TPR:
+    name: tpr
+    type: BIGINT
+    years: '2001'
+  XSAB381:
+    name: sab381_flag
+    type: VARCHAR
+    flag_for: sab381
+    years: '2001'
+  SAB381:
+    name: sab381
+    type: BIGINT
+    years: '2001'
+  XSAB382:
+    name: sab382_flag
+    type: VARCHAR
+    flag_for: sab382
+    years: '2001'
+  SAB382:
+    name: sab382
+    type: BIGINT
+    years: '2001'
+  XSAB385:
+    name: sab385_flag
+    type: VARCHAR
+    flag_for: sab385
+    years: '2001'
+  SAB385:
+    name: sab385
+    type: BIGINT
+    years: '2001'
+  XSAB383:
+    name: sab383_flag
+    type: VARCHAR
+    flag_for: sab383
+    years: '2001'
+  SAB383:
+    name: sab383
+    type: BIGINT
+    years: '2001'
+  XSAB384:
+    name: sab384_flag
+    type: VARCHAR
+    flag_for: sab384
+    years: '2001'
+  SAB384:
+    name: sab384
+    type: BIGINT
+    years: '2001'
+  XSAB386:
+    name: sab386_flag
+    type: VARCHAR
+    flag_for: sab386
+    years: '2001'
+  SAB386:
+    name: sab386
+    type: BIGINT
+    years: '2001'
+  HPR:
+    name: hpr
+    type: BIGINT
+    years: '2001'
+  XSAB391:
+    name: sab391_flag
+    type: VARCHAR
+    flag_for: sab391
+    years: '2001'
+  SAB391:
+    name: sab391
+    type: BIGINT
+    years: '2001'
+  XSAB392:
+    name: sab392_flag
+    type: VARCHAR
+    flag_for: sab392
+    years: '2001'
+  SAB392:
+    name: sab392
+    type: BIGINT
+    years: '2001'
+  XSAB395:
+    name: sab395_flag
+    type: VARCHAR
+    flag_for: sab395
+    years: '2001'
+  SAB395:
+    name: sab395
+    type: BIGINT
+    years: '2001'
+  XSAB393:
+    name: sab393_flag
+    type: VARCHAR
+    flag_for: sab393
+    years: '2001'
+  SAB393:
+    name: sab393
+    type: BIGINT
+    years: '2001'
+  XSAB394:
+    name: sab394_flag
+    type: VARCHAR
+    flag_for: sab394
+    years: '2001'
+  SAB394:
+    name: sab394
+    type: BIGINT
+    years: '2001'
+  XSAB396:
+    name: sab396_flag
+    type: VARCHAR
+    flag_for: sab396
+    years: '2001'
+  SAB396:
+    name: sab396
+    type: BIGINT
+    years: '2001'
+  XSAB401:
+    name: sab401_flag
+    type: VARCHAR
+    flag_for: sab401
+    years: '2001'
+  SAB401:
+    name: sab401
+    type: BIGINT
+    years: '2001'
+  XSAB402:
+    name: sab402_flag
+    type: VARCHAR
+    flag_for: sab402
+    years: '2001'
+  SAB402:
+    name: sab402
+    type: BIGINT
+    years: '2001'
+  XSAB405:
+    name: sab405_flag
+    type: VARCHAR
+    flag_for: sab405
+    years: '2001'
+  SAB405:
+    name: sab405
+    type: BIGINT
+    years: '2001'
+  XSAB403:
+    name: sab403_flag
+    type: VARCHAR
+    flag_for: sab403
+    years: '2001'
+  SAB403:
+    name: sab403
+    type: BIGINT
+    years: '2001'
+  XSAB404:
+    name: sab404_flag
+    type: VARCHAR
+    flag_for: sab404
+    years: '2001'
+  SAB404:
+    name: sab404
+    type: BIGINT
+    years: '2001'
+  XSAB406:
+    name: sab406_flag
+    type: VARCHAR
+    flag_for: sab406
+    years: '2001'
+  SAB406:
+    name: sab406
+    type: BIGINT
+    years: '2001'
+  XSAB411:
+    name: sab411_flag
+    type: VARCHAR
+    flag_for: sab411
+    years: '2001'
+  SAB411:
+    name: sab411
+    type: BIGINT
+    years: '2001'
+  XSAB412:
+    name: sab412_flag
+    type: VARCHAR
+    flag_for: sab412
+    years: '2001'
+  SAB412:
+    name: sab412
+    type: BIGINT
+    years: '2001'
+  XSAB415:
+    name: sab415_flag
+    type: VARCHAR
+    flag_for: sab415
+    years: '2001'
+  SAB415:
+    name: sab415
+    type: BIGINT
+    years: '2001'
+  XSAB413:
+    name: sab413_flag
+    type: VARCHAR
+    flag_for: sab413
+    years: '2001'
+  SAB413:
+    name: sab413
+    type: BIGINT
+    years: '2001'
+  XSAB414:
+    name: sab414_flag
+    type: VARCHAR
+    flag_for: sab414
+    years: '2001'
+  SAB414:
+    name: sab414
+    type: BIGINT
+    years: '2001'
+  XSAB416:
+    name: sab416_flag
+    type: VARCHAR
+    flag_for: sab416
+    years: '2001'
+  SAB416:
+    name: sab416
+    type: BIGINT
+    years: '2001'
+  XSAB421:
+    name: sab421_flag
+    type: VARCHAR
+    flag_for: sab421
+    years: '2001'
+  SAB421:
+    name: sab421
+    type: BIGINT
+    years: '2001'
+  XSAB422:
+    name: sab422_flag
+    type: VARCHAR
+    flag_for: sab422
+    years: '2001'
+  SAB422:
+    name: sab422
+    type: BIGINT
+    years: '2001'
+  XSAB425:
+    name: sab425_flag
+    type: VARCHAR
+    flag_for: sab425
+    years: '2001'
+  SAB425:
+    name: sab425
+    type: BIGINT
+    years: '2001'
+  XSAB423:
+    name: sab423_flag
+    type: VARCHAR
+    flag_for: sab423
+    years: '2001'
+  SAB423:
+    name: sab423
+    type: BIGINT
+    years: '2001'
+  XSAB424:
+    name: sab424_flag
+    type: VARCHAR
+    flag_for: sab424
+    years: '2001'
+  SAB424:
+    name: sab424
+    type: BIGINT
+    years: '2001'
+  XSAB426:
+    name: sab426_flag
+    type: VARCHAR
+    flag_for: sab426
+    years: '2001'
+  SAB426:
+    name: sab426
+    type: BIGINT
+    years: '2001'
+  XSAB431:
+    name: sab431_flag
+    type: VARCHAR
+    flag_for: sab431
+    years: '2001'
+  SAB431:
+    name: sab431
+    type: BIGINT
+    years: '2001'
+  XSAB432:
+    name: sab432_flag
+    type: VARCHAR
+    flag_for: sab432
+    years: '2001'
+  SAB432:
+    name: sab432
+    type: BIGINT
+    years: '2001'
+  XSAB435:
+    name: sab435_flag
+    type: VARCHAR
+    flag_for: sab435
+    years: '2001'
+  SAB435:
+    name: sab435
+    type: BIGINT
+    years: '2001'
+  XSAB433:
+    name: sab433_flag
+    type: VARCHAR
+    flag_for: sab433
+    years: '2001'
+  SAB433:
+    name: sab433
+    type: BIGINT
+    years: '2001'
+  XSAB434:
+    name: sab434_flag
+    type: VARCHAR
+    flag_for: sab434
+    years: '2001'
+  SAB434:
+    name: sab434
+    type: BIGINT
+    years: '2001'
+  XSAB436:
+    name: sab436_flag
+    type: VARCHAR
+    flag_for: sab436
+    years: '2001'
+  SAB436:
+    name: sab436
+    type: BIGINT
+    years: '2001'
+  XSAB441:
+    name: sab441_flag
+    type: VARCHAR
+    flag_for: sab441
+    years: '2001'
+  SAB441:
+    name: sab441
+    type: BIGINT
+    years: '2001'
+  XSAB443:
+    name: sab443_flag
+    type: VARCHAR
+    flag_for: sab443
+    years: '2001'
+  SAB443:
+    name: sab443
+    type: BIGINT
+    years: '2001'

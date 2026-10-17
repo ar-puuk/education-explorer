@@ -189,8 +189,103 @@ def build_dictionary() -> int:
             caveat = col_cav or (table_cav if name in CAVEAT_COLUMNS or base else "")
             yrs = years or [int(f.stem) for f in table_dir.glob("*.parquet")]
             rows.append(("ccd", table, name, label, description, unit, min(yrs), max(yrs), caveat))
+    irows, ivals = ipeds_dictionary_rows()
+    rows += irows
     con = duckdb.connect()
     con.execute('CREATE TABLE d(dataset VARCHAR, "table" VARCHAR, "column" VARCHAR, label VARCHAR, description VARCHAR, unit VARCHAR, first_year INTEGER, last_year INTEGER, caveat VARCHAR)')
     con.executemany("INSERT INTO d VALUES (?,?,?,?,?,?,?,?,?)", rows)
+    con.execute('CREATE TABLE v(dataset VARCHAR, "table" VARCHAR, "column" VARCHAR, code VARCHAR, label VARCHAR)')
+    con.executemany("INSERT INTO v VALUES (?,?,?,?,?)", ivals)
+    write_parquet(con, "SELECT * FROM v", DOCS_DATA / "meta" / "value_labels.parquet",
+                  ["dataset", '"table"', '"column"', "code"])
     return write_parquet(con, "SELECT * FROM d", DOCS_DATA / "meta" / "dictionary.parquet",
                          ["dataset", '"table"', '"column"'])
+
+
+# ------------------------------------------------------------------------------------ IPEDS
+def _sheet_rows(con, x: Path, *names: str) -> list[tuple]:
+    """Rows of the first sheet that exists under any of the given spellings (sheet names vary by year)."""
+    for n in names:
+        for variant in dict.fromkeys([n, n.lower(), n.capitalize(), n.upper()]):
+            try:
+                return con.execute(f"SELECT * FROM read_xlsx('{x.as_posix()}', sheet='{variant}', all_varchar=true)").fetchall()
+            except duckdb.Error:
+                continue
+    return []
+
+
+def _ipeds_dict_tables() -> dict[str, dict]:
+    """family -> {'labels': {COL: title}, 'desc': {COL: long description}, 'values': {COL: {code: label}}}
+    from the newest data dictionary that lists each column."""
+    from .ipeds_build import years_from_str
+    from .ipeds_files import dict_xlsx, select
+
+    con = duckdb.connect()
+    con.execute("INSTALL excel; LOAD excel;")
+    fams: dict[str, dict] = {}
+    for f in sorted(select(), key=lambda x: -x.year):
+        x = dict_xlsx(f)
+        if not x:
+            continue
+        e = fams.setdefault(f.family, {"labels": {}, "desc": {}, "values": {}, "title": {}, "survey": f.survey})
+        e["title"].setdefault(f.year, f.title)
+        for r in _sheet_rows(con, x, "Varlist"):
+            if r[1]:
+                e["labels"].setdefault(r[1].upper(), (r[6] or "").strip() if len(r) > 6 else "")
+        for r in _sheet_rows(con, x, "Description"):
+            if r[1] and len(r) > 2 and r[2]:
+                e["desc"].setdefault(r[1].upper(), re.sub(r"_x000D_|" + chr(13), "", r[2]).strip())
+        seen = set()
+        for r in _sheet_rows(con, x, "Frequencies"):
+            if r[0] and len(r) > 4 and r[3] is not None:
+                col = r[0].upper()
+                if col in e["values"] and col not in seen:
+                    continue  # a newer year already supplied this column's labels
+                seen.add(col)
+                e["values"].setdefault(col, {}).setdefault(r[3], (r[4] or "").strip())
+    _ = years_from_str
+    return fams
+
+
+def ipeds_dictionary_rows() -> tuple[list[tuple], list[tuple]]:
+    """(dictionary rows, value-label rows) for every IPEDS table present in docs/data/ipeds."""
+    from .ipeds_build import load_family_map, years_from_str
+
+    caveats = yaml.safe_load((CONFIG_DIR / "caveats.yml").read_text(encoding="utf-8")) or {}
+    fams = _ipeds_dict_tables()
+    rows, vals = [], []
+    base = DOCS_DATA / "ipeds"
+    if not base.exists():
+        return rows, vals
+    for table_dir in sorted(p for p in base.iterdir() if p.is_dir()):
+        fam = table_dir.name
+        info = fams.get(fam, {"labels": {}, "desc": {}, "values": {}})
+        try:
+            m = load_family_map(fam)
+        except SystemExit:
+            continue
+        table_cav = (caveats.get(f"ipeds.{fam}") or {}).get("caveat", "")
+        by_name = {spec["name"]: (raw, spec) for raw, spec in m["columns"].items()}
+        presence = _parquet_presence(table_dir)
+        for name, years in presence.items():
+            if name in ("year", "data_version", "source_file"):
+                label, description, unit = GENERIC.get(name, (humanize(name), "", ""))
+                rows.append(("ipeds", fam, name, label, description, unit, min(years or [0]) or None, max(years or [0]) or None, ""))
+                continue
+            raw, spec = by_name.get(name, (name.upper(), {"years": ""}))
+            yrs = sorted(years_from_str(spec.get("years", ""))) or [int(f.stem) for f in table_dir.glob("*.parquet")]
+            flag_for = spec.get("flag_for")
+            if flag_for:
+                label = f"{info['labels'].get(flag_for.upper(), humanize(flag_for))} (status flag)"
+                description = ("NCES status/imputation code for the value: R reported, B/Z/A and other letters mark values "
+                               "that were imputed, implied, not applicable or otherwise adjusted. See the NCES data dictionary for this table.")
+                unit = "category"
+            else:
+                label = info["labels"].get(raw) or humanize(name)
+                description = info["desc"].get(raw) or ""
+                unit = ""
+                if raw in info["values"] and 1 < len(info["values"][raw]) <= 120:
+                    for code, lab in info["values"][raw].items():
+                        vals.append(("ipeds", fam, name, str(code), lab))
+            rows.append(("ipeds", fam, name, label, description, unit, yrs[0], yrs[-1], table_cav if name in ("unitid",) else ""))
+    return rows, vals

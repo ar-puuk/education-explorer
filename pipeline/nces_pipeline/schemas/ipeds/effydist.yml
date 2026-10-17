@@ -1,0 +1,46 @@
+source: ipeds
+family: effydist
+key:
+- unitid
+- effydlev
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2020-2025
+  EFFYDLEV:
+    name: effydlev
+    type: BIGINT
+    years: 2020-2025
+  XEYDETOT:
+    name: xeydetot
+    type: VARCHAR
+    years: 2020-2025
+  EFYDETOT:
+    name: efydetot
+    type: BIGINT
+    years: 2020-2025
+  XEYDEEXC:
+    name: xeydeexc
+    type: VARCHAR
+    years: 2020-2025
+  EFYDEEXC:
+    name: efydeexc
+    type: BIGINT
+    years: 2020-2025
+  XEYDESOM:
+    name: xeydesom
+    type: VARCHAR
+    years: 2020-2025
+  EFYDESOM:
+    name: efydesom
+    type: BIGINT
+    years: 2020-2025
+  XEYDENON:
+    name: xeydenon
+    type: VARCHAR
+    years: 2020-2025
+  EFYDENON:
+    name: efydenon
+    type: BIGINT
+    years: 2020-2025

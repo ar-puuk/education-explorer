@@ -1,0 +1,189 @@
+source: ipeds
+family: icmission
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2004-2007
+  MISSIONURL:
+    name: missionurl
+    type: VARCHAR
+    years: 2004-2006
+  MISSION:
+    name: mission
+    type: VARCHAR
+    years: 2004-2006
+  MISSIONURL,MISSION:
+    name: missionurl,mission
+    type: VARCHAR
+    years: '2007'
+  COLUMN02:
+    name: column02
+    type: VARCHAR
+    years: '2007'
+  COLUMN03:
+    name: column03
+    type: VARCHAR
+    years: '2007'
+  COLUMN04:
+    name: column04
+    type: VARCHAR
+    years: '2007'
+  COLUMN05:
+    name: column05
+    type: VARCHAR
+    years: '2007'
+  COLUMN06:
+    name: column06
+    type: VARCHAR
+    years: '2007'
+  COLUMN07:
+    name: column07
+    type: VARCHAR
+    years: '2007'
+  COLUMN08:
+    name: column08
+    type: VARCHAR
+    years: '2007'
+  COLUMN09:
+    name: column09
+    type: VARCHAR
+    years: '2007'
+  COLUMN10:
+    name: column10
+    type: VARCHAR
+    years: '2007'
+  COLUMN11:
+    name: column11
+    type: VARCHAR
+    years: '2007'
+  COLUMN12:
+    name: column12
+    type: VARCHAR
+    years: '2007'
+  COLUMN13:
+    name: column13
+    type: VARCHAR
+    years: '2007'
+  COLUMN14:
+    name: column14
+    type: VARCHAR
+    years: '2007'
+  COLUMN15:
+    name: column15
+    type: VARCHAR
+    years: '2007'
+  COLUMN16:
+    name: column16
+    type: VARCHAR
+    years: '2007'
+  COLUMN17:
+    name: column17
+    type: VARCHAR
+    years: '2007'
+  COLUMN18:
+    name: column18
+    type: VARCHAR
+    years: '2007'
+  COLUMN19:
+    name: column19
+    type: VARCHAR
+    years: '2007'
+  COLUMN20:
+    name: column20
+    type: VARCHAR
+    years: '2007'
+  COLUMN21:
+    name: column21
+    type: VARCHAR
+    years: '2007'
+  COLUMN22:
+    name: column22
+    type: VARCHAR
+    years: '2007'
+  COLUMN23:
+    name: column23
+    type: VARCHAR
+    years: '2007'
+  COLUMN24:
+    name: column24
+    type: BIGINT
+    years: '2007'
+  COLUMN25:
+    name: column25
+    type: BIGINT
+    years: '2007'
+  COLUMN26:
+    name: column26
+    type: BIGINT
+    years: '2007'
+  COLUMN27:
+    name: column27
+    type: BIGINT
+    years: '2007'
+  COLUMN28:
+    name: column28
+    type: BIGINT
+    years: '2007'
+  COLUMN29:
+    name: column29
+    type: BIGINT
+    years: '2007'
+  COLUMN30:
+    name: column30
+    type: BIGINT
+    years: '2007'
+  COLUMN31:
+    name: column31
+    type: BIGINT
+    years: '2007'
+  COLUMN32:
+    name: column32
+    type: BIGINT
+    years: '2007'
+  COLUMN33:
+    name: column33
+    type: BIGINT
+    years: '2007'
+  COLUMN34:
+    name: column34
+    type: BIGINT
+    years: '2007'
+  COLUMN35:
+    name: column35
+    type: BIGINT
+    years: '2007'
+  COLUMN36:
+    name: column36
+    type: BIGINT
+    years: '2007'
+  COLUMN37:
+    name: column37
+    type: BIGINT
+    years: '2007'
+  COLUMN38:
+    name: column38
+    type: BIGINT
+    years: '2007'
+  COLUMN39:
+    name: column39
+    type: BIGINT
+    years: '2007'
+  COLUMN40:
+    name: column40
+    type: BIGINT
+    years: '2007'
+  COLUMN41:
+    name: column41
+    type: BIGINT
+    years: '2007'
+  COLUMN42:
+    name: column42
+    type: BIGINT
+    years: '2007'
+  COLUMN43:
+    name: column43
+    type: BIGINT
+    years: '2007'

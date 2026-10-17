@@ -1,0 +1,61 @@
+source: ipeds
+family: drvcost
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2024'
+  TUFEYR0:
+    name: tufeyr0
+    type: BIGINT
+    years: '2024'
+  TUFEYR1:
+    name: tufeyr1
+    type: BIGINT
+    years: '2024'
+  TUFEYR2:
+    name: tufeyr2
+    type: BIGINT
+    years: '2024'
+  TUFEYR3:
+    name: tufeyr3
+    type: BIGINT
+    years: '2024'
+  CINDON:
+    name: cindon
+    type: BIGINT
+    years: '2024'
+  CINSON:
+    name: cinson
+    type: BIGINT
+    years: '2024'
+  COTSON:
+    name: cotson
+    type: BIGINT
+    years: '2024'
+  CINDOFF:
+    name: cindoff
+    type: BIGINT
+    years: '2024'
+  CINSOFF:
+    name: cinsoff
+    type: BIGINT
+    years: '2024'
+  COTSOFF:
+    name: cotsoff
+    type: BIGINT
+    years: '2024'
+  CINDFAM:
+    name: cindfam
+    type: BIGINT
+    years: '2024'
+  CINSFAM:
+    name: cinsfam
+    type: BIGINT
+    years: '2024'
+  COTSFAM:
+    name: cotsfam
+    type: BIGINT
+    years: '2024'

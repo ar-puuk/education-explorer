@@ -1,0 +1,253 @@
+source: ipeds
+family: drvef12
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2025
+  FTE12MN:
+    name: fte12mn
+    type: BIGINT
+    years: 2021-2025
+  UNDUP:
+    name: undup
+    type: BIGINT
+    years: 2021-2025
+  UNDUPUG:
+    name: undupug
+    type: BIGINT
+    years: 2021-2025
+  E12UG1ST:
+    name: e12ug1st
+    type: BIGINT
+    years: 2021-2025
+  E12UGTRN:
+    name: e12ugtrn
+    type: BIGINT
+    years: 2021-2025
+  E12UGCNT:
+    name: e12ugcnt
+    type: BIGINT
+    years: 2021-2025
+  E12UGNDG:
+    name: e12ugndg
+    type: BIGINT
+    years: 2021-2025
+  E12GRAD:
+    name: e12grad
+    type: BIGINT
+    years: 2021-2025
+  E12UGFT:
+    name: e12ugft
+    type: BIGINT
+    years: 2021-2025
+  E12UG1SFT:
+    name: e12ug1sft
+    type: BIGINT
+    years: 2021-2025
+  E12UGTRFT:
+    name: e12ugtrft
+    type: BIGINT
+    years: 2021-2025
+  E12UGCNFT:
+    name: e12ugcnft
+    type: BIGINT
+    years: 2021-2025
+  E12UGNDFT:
+    name: e12ugndft
+    type: BIGINT
+    years: 2021-2025
+  E12UGPT:
+    name: e12ugpt
+    type: BIGINT
+    years: 2021-2025
+  E12UG1SPT:
+    name: e12ug1spt
+    type: BIGINT
+    years: 2021-2025
+  E12UGTRPT:
+    name: e12ugtrpt
+    type: BIGINT
+    years: 2021-2025
+  E12UGCNPT:
+    name: e12ugcnpt
+    type: BIGINT
+    years: 2021-2025
+  E12UGNDPT:
+    name: e12ugndpt
+    type: BIGINT
+    years: 2021-2025
+  PCTE12AN:
+    name: pcte12an
+    type: BIGINT
+    years: 2021-2025
+  PCTE12AS:
+    name: pcte12as
+    type: BIGINT
+    years: 2021-2025
+  PCTE12BK:
+    name: pcte12bk
+    type: BIGINT
+    years: 2021-2025
+  PCTE12HS:
+    name: pcte12hs
+    type: BIGINT
+    years: 2021-2025
+  PCTE12NH:
+    name: pcte12nh
+    type: BIGINT
+    years: 2021-2025
+  PCTE12WH:
+    name: pcte12wh
+    type: BIGINT
+    years: 2021-2025
+  PCTE122M:
+    name: pcte122m
+    type: BIGINT
+    years: 2021-2025
+  PCTE12UN:
+    name: pcte12un
+    type: BIGINT
+    years: 2021-2025
+  PCTE12NR:
+    name: pcte12nr
+    type: BIGINT
+    years: 2021-2025
+  PCTE12W:
+    name: pcte12w
+    type: BIGINT
+    years: 2021-2025
+  PCTE12UGAN:
+    name: pcte12ugan
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGAS:
+    name: pcte12ugas
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGBK:
+    name: pcte12ugbk
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGHS:
+    name: pcte12ughs
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGNH:
+    name: pcte12ugnh
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGWH:
+    name: pcte12ugwh
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UG2M:
+    name: pcte12ug2m
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGUN:
+    name: pcte12ugun
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGNR:
+    name: pcte12ugnr
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGW:
+    name: pcte12ugw
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADAN:
+    name: pcte12gradan
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADAS:
+    name: pcte12gradas
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADBK:
+    name: pcte12gradbk
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADHS:
+    name: pcte12gradhs
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADNH:
+    name: pcte12gradnh
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADWH:
+    name: pcte12gradwh
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRAD2M:
+    name: pcte12grad2m
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADUN:
+    name: pcte12gradun
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADNR:
+    name: pcte12gradnr
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADW:
+    name: pcte12gradw
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12DEEXC:
+    name: pcte12deexc
+    type: BIGINT
+    years: 2021-2025
+  PCTE12DESOM:
+    name: pcte12desom
+    type: BIGINT
+    years: 2021-2025
+  PCTE12DENON:
+    name: pcte12denon
+    type: BIGINT
+    years: 2021-2025
+  PCTE12UGDEEXC:
+    name: pcte12ugdeexc
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGDESOM:
+    name: pcte12ugdesom
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12UGDENON:
+    name: pcte12ugdenon
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADDEEXC:
+    name: pcte12graddeexc
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADDESOM:
+    name: pcte12graddesom
+    type: VARCHAR
+    years: 2021-2025
+  PCTE12GRADDENON:
+    name: pcte12graddenon
+    type: VARCHAR
+    years: 2021-2025
+  E12FT:
+    name: e12ft
+    type: BIGINT
+    years: 2022-2025
+  E12PT:
+    name: e12pt
+    type: BIGINT
+    years: 2022-2025
+  E12GRADFT:
+    name: e12gradft
+    type: BIGINT
+    years: 2022-2025
+  E12GRADPT:
+    name: e12gradpt
+    type: BIGINT
+    years: 2022-2025

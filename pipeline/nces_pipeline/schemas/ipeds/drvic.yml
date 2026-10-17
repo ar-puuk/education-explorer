@@ -1,0 +1,61 @@
+source: ipeds
+family: drvic
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2023
+  TUFEYR0:
+    name: tufeyr0
+    type: VARCHAR
+    years: 2021-2023
+  TUFEYR1:
+    name: tufeyr1
+    type: VARCHAR
+    years: 2021-2023
+  TUFEYR2:
+    name: tufeyr2
+    type: BIGINT
+    years: 2021-2023
+  TUFEYR3:
+    name: tufeyr3
+    type: BIGINT
+    years: 2021-2023
+  CINDON:
+    name: cindon
+    type: VARCHAR
+    years: 2021-2023
+  CINSON:
+    name: cinson
+    type: VARCHAR
+    years: 2021-2023
+  COTSON:
+    name: cotson
+    type: VARCHAR
+    years: 2021-2023
+  CINDOFF:
+    name: cindoff
+    type: BIGINT
+    years: 2021-2023
+  CINSOFF:
+    name: cinsoff
+    type: BIGINT
+    years: 2021-2023
+  COTSOFF:
+    name: cotsoff
+    type: BIGINT
+    years: 2021-2023
+  CINDFAM:
+    name: cindfam
+    type: BIGINT
+    years: 2021-2023
+  CINSFAM:
+    name: cinsfam
+    type: BIGINT
+    years: 2021-2023
+  COTSFAM:
+    name: cotsfam
+    type: BIGINT
+    years: 2021-2023

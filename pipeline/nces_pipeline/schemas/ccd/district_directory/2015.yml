@@ -103,7 +103,7 @@ columns:
     type: VARCHAR
   EFFECTIVE_DATE:
     name: effective_date
-    type: DATE
+    type: VARCHAR
   CHARTER_LEA_TEXT:
     name: charter_lea
     type: VARCHAR

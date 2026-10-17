@@ -1,0 +1,37 @@
+source: ipeds
+family: efc
+key:
+- unitid
+- line
+- efres01
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2024
+  LINE:
+    name: line
+    type: BIGINT
+    years: 2000-2024
+  XEFRES01:
+    name: efres01_flag
+    type: VARCHAR
+    flag_for: efres01
+    years: 2000-2024
+  EFRES01:
+    name: efres01
+    type: BIGINT
+    years: 2000-2024
+  XEFRES02:
+    name: efres02_flag
+    type: VARCHAR
+    flag_for: efres02
+    years: 2000-2024
+  EFRES02:
+    name: efres02
+    type: VARCHAR
+    years: 2000-2024
+  EFCSTATE:
+    name: efcstate
+    type: BIGINT
+    years: 2002-2024

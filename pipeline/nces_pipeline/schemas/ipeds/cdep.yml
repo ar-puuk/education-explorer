@@ -1,0 +1,178 @@
+source: ipeds
+family: cdep
+key:
+- unitid
+- cipcode
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2013-2025
+  CIPCODE:
+    name: cipcode
+    type: VARCHAR
+    years: 2013-2025
+  PTOTAL:
+    name: ptotal
+    type: BIGINT
+    years: 2013-2025
+  PTOTALDE:
+    name: ptotalde
+    type: BIGINT
+    years: 2013-2025
+  PASSOC:
+    name: passoc
+    type: BIGINT
+    years: 2013-2025
+  PASSOCDE:
+    name: passocde
+    type: BIGINT
+    years: 2013-2025
+  PBACHL:
+    name: pbachl
+    type: BIGINT
+    years: 2013-2025
+  PBACHLDE:
+    name: pbachlde
+    type: BIGINT
+    years: 2013-2025
+  PMASTR:
+    name: pmastr
+    type: BIGINT
+    years: 2013-2025
+  PMASTRDE:
+    name: pmastrde
+    type: BIGINT
+    years: 2013-2025
+  PDOCRS:
+    name: pdocrs
+    type: BIGINT
+    years: 2013-2025
+  PDOCRSDE:
+    name: pdocrsde
+    type: BIGINT
+    years: 2013-2025
+  PDOCPP:
+    name: pdocpp
+    type: BIGINT
+    years: 2013-2025
+  PDOCPPDE:
+    name: pdocppde
+    type: BIGINT
+    years: 2013-2025
+  PDOCOT:
+    name: pdocot
+    type: BIGINT
+    years: 2013-2025
+  PDOCOTDE:
+    name: pdocotde
+    type: BIGINT
+    years: 2013-2025
+  PCERT1:
+    name: pcert1
+    type: BIGINT
+    years: 2013-2019
+  PCERT1DE:
+    name: pcert1de
+    type: BIGINT
+    years: 2013-2019
+  PCERT2:
+    name: pcert2
+    type: BIGINT
+    years: 2013-2025
+  PCERT2DE:
+    name: pcert2de
+    type: BIGINT
+    years: 2013-2025
+  PCERT4:
+    name: pcert4
+    type: BIGINT
+    years: 2013-2025
+  PCERT4DE:
+    name: pcert4de
+    type: BIGINT
+    years: 2013-2025
+  PPBACC:
+    name: ppbacc
+    type: BIGINT
+    years: 2013-2025
+  PPBACCDE:
+    name: ppbaccde
+    type: BIGINT
+    years: 2013-2025
+  PPMAST:
+    name: ppmast
+    type: BIGINT
+    years: 2013-2025
+  PPMASTDE:
+    name: ppmastde
+    type: BIGINT
+    years: 2013-2025
+  PTOTALDES:
+    name: ptotaldes
+    type: BIGINT
+    years: 2020-2025
+  PASSOCDES:
+    name: passocdes
+    type: BIGINT
+    years: 2020-2025
+  PBACHLDES:
+    name: pbachldes
+    type: BIGINT
+    years: 2020-2025
+  PMASTRDES:
+    name: pmastrdes
+    type: BIGINT
+    years: 2020-2025
+  PDOCRSDES:
+    name: pdocrsdes
+    type: BIGINT
+    years: 2020-2025
+  PDOCPPDES:
+    name: pdocppdes
+    type: BIGINT
+    years: 2020-2025
+  PDOCOTDES:
+    name: pdocotdes
+    type: BIGINT
+    years: 2020-2025
+  PCERT1A:
+    name: pcert1a
+    type: BIGINT
+    years: 2020-2025
+  PCERT1ADE:
+    name: pcert1ade
+    type: BIGINT
+    years: 2020-2025
+  PCERT1ADES:
+    name: pcert1ades
+    type: BIGINT
+    years: 2020-2025
+  PCERT1B:
+    name: pcert1b
+    type: BIGINT
+    years: 2020-2025
+  PCERT1BDE:
+    name: pcert1bde
+    type: BIGINT
+    years: 2020-2025
+  PCERT1BDES:
+    name: pcert1bdes
+    type: BIGINT
+    years: 2020-2025
+  PCERT2DES:
+    name: pcert2des
+    type: BIGINT
+    years: 2020-2025
+  PCERT4DES:
+    name: pcert4des
+    type: BIGINT
+    years: 2020-2025
+  PPBACCDES:
+    name: ppbaccdes
+    type: BIGINT
+    years: 2020-2025
+  PPMASTDES:
+    name: ppmastdes
+    type: BIGINT
+    years: 2020-2025

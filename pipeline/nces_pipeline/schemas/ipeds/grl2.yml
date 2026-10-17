@@ -1,0 +1,189 @@
+source: ipeds
+family: grl2
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2001,2004-2024
+  XLINE_10:
+    name: line_10_flag
+    type: VARCHAR
+    flag_for: line_10
+    years: 2000-2001,2004-2024
+  LINE_10:
+    name: line_10
+    type: BIGINT
+    years: 2000-2001,2004-2024
+  XLINE_45:
+    name: line_45_flag
+    type: VARCHAR
+    flag_for: line_45
+    years: 2000-2001,2004-2024
+  LINE_45:
+    name: line_45
+    type: BIGINT
+    years: 2000-2001,2004-2024
+  XLINE_50:
+    name: line_50_flag
+    type: VARCHAR
+    flag_for: line_50
+    years: 2000-2001,2004-2024
+  LINE_50:
+    name: line_50
+    type: BIGINT
+    years: 2000-2001,2004-2024
+  XLINE_11:
+    name: line_11_flag
+    type: VARCHAR
+    flag_for: line_11
+    years: 2000-2001,2004-2024
+  LINE_11:
+    name: line_11
+    type: BIGINT
+    years: 2000-2001,2004-2024
+  XLINE_30:
+    name: line_30_flag
+    type: VARCHAR
+    flag_for: line_30
+    years: 2000-2001,2004-2024
+  LINE_30:
+    name: line_30
+    type: BIGINT
+    years: 2000-2001,2004-2024
+  XLINE_55:
+    name: line_55_flag
+    type: VARCHAR
+    flag_for: line_55
+    years: 2009-2024
+  LINE_55:
+    name: line_55
+    type: BIGINT
+    years: 2009-2024
+  XLINE_51:
+    name: line_51_flag
+    type: VARCHAR
+    flag_for: line_51
+    years: 2011-2024
+  LINE_51:
+    name: line_51
+    type: BIGINT
+    years: 2011-2024
+  XLINE_52:
+    name: line_52_flag
+    type: VARCHAR
+    flag_for: line_52
+    years: 2011-2024
+  LINE_52:
+    name: line_52
+    type: BIGINT
+    years: 2011-2024
+  XPGLIN10:
+    name: pglin10_flag
+    type: VARCHAR
+    flag_for: pglin10
+    years: 2016-2024
+  PGLIN10:
+    name: pglin10
+    type: BIGINT
+    years: 2016-2024
+  XPGLIN45:
+    name: pglin45_flag
+    type: VARCHAR
+    flag_for: pglin45
+    years: 2016-2024
+  PGLIN45:
+    name: pglin45
+    type: BIGINT
+    years: 2016-2024
+  XPGLIN50:
+    name: pglin50_flag
+    type: VARCHAR
+    flag_for: pglin50
+    years: 2016-2024
+  PGLIN50:
+    name: pglin50
+    type: BIGINT
+    years: 2016-2024
+  XPGLIN11:
+    name: pglin11_flag
+    type: VARCHAR
+    flag_for: pglin11
+    years: 2016-2024
+  PGLIN11:
+    name: pglin11
+    type: BIGINT
+    years: 2016-2024
+  XSSLIN10:
+    name: sslin10_flag
+    type: VARCHAR
+    flag_for: sslin10
+    years: 2016-2024
+  SSLIN10:
+    name: sslin10
+    type: BIGINT
+    years: 2016-2024
+  XSSLIN45:
+    name: sslin45_flag
+    type: VARCHAR
+    flag_for: sslin45
+    years: 2016-2024
+  SSLIN45:
+    name: sslin45
+    type: BIGINT
+    years: 2016-2024
+  XSSLIN50:
+    name: sslin50_flag
+    type: VARCHAR
+    flag_for: sslin50
+    years: 2016-2024
+  SSLIN50:
+    name: sslin50
+    type: BIGINT
+    years: 2016-2024
+  XSSLIN11:
+    name: sslin11_flag
+    type: VARCHAR
+    flag_for: sslin11
+    years: 2016-2024
+  SSLIN11:
+    name: sslin11
+    type: BIGINT
+    years: 2016-2024
+  XNRLIN10:
+    name: nrlin10_flag
+    type: VARCHAR
+    flag_for: nrlin10
+    years: 2016-2024
+  NRLIN10:
+    name: nrlin10
+    type: BIGINT
+    years: 2016-2024
+  XNRLIN45:
+    name: nrlin45_flag
+    type: VARCHAR
+    flag_for: nrlin45
+    years: 2016-2024
+  NRLIN45:
+    name: nrlin45
+    type: BIGINT
+    years: 2016-2024
+  XNRLIN50:
+    name: nrlin50_flag
+    type: VARCHAR
+    flag_for: nrlin50
+    years: 2016-2024
+  NRLIN50:
+    name: nrlin50
+    type: BIGINT
+    years: 2016-2024
+  XNRLIN11:
+    name: nrlin11_flag
+    type: VARCHAR
+    flag_for: nrlin11
+    years: 2016-2024
+  NRLIN11:
+    name: nrlin11
+    type: BIGINT
+    years: 2016-2024

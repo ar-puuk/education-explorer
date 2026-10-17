@@ -1,0 +1,93 @@
+source: ipeds
+family: drvc
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2025
+  ASCDEG:
+    name: ascdeg
+    type: BIGINT
+    years: 2021-2025
+  BASDEG:
+    name: basdeg
+    type: VARCHAR
+    years: 2021-2025
+  MASDEG:
+    name: masdeg
+    type: VARCHAR
+    years: 2021-2025
+  DOCDEGRS:
+    name: docdegrs
+    type: VARCHAR
+    years: 2021-2025
+  DOCDEGPP:
+    name: docdegpp
+    type: VARCHAR
+    years: 2021-2025
+  DOCDEGOT:
+    name: docdegot
+    type: VARCHAR
+    years: 2021-2025
+  CERT1:
+    name: cert1
+    type: BIGINT
+    years: 2021-2025
+  CERT1A:
+    name: cert1a
+    type: BIGINT
+    years: 2021-2025
+  CERT1B:
+    name: cert1b
+    type: BIGINT
+    years: 2021-2025
+  CERT2:
+    name: cert2
+    type: BIGINT
+    years: 2021-2025
+  CERT4:
+    name: cert4
+    type: BIGINT
+    years: 2021-2025
+  PBACERT:
+    name: pbacert
+    type: VARCHAR
+    years: 2021-2025
+  PMACERT:
+    name: pmacert
+    type: VARCHAR
+    years: 2021-2025
+  SASCDEG:
+    name: sascdeg
+    type: BIGINT
+    years: 2021-2025
+  SBASDEG:
+    name: sbasdeg
+    type: VARCHAR
+    years: 2021-2025
+  SMASDEG:
+    name: smasdeg
+    type: VARCHAR
+    years: 2021-2025
+  SDOCDEG:
+    name: sdocdeg
+    type: VARCHAR
+    years: 2021-2025
+  SCERT1A:
+    name: scert1a
+    type: BIGINT
+    years: 2021-2025
+  SCERT1B:
+    name: scert1b
+    type: BIGINT
+    years: 2021-2025
+  SCERT24:
+    name: scert24
+    type: BIGINT
+    years: 2021-2025
+  SBAMACRT:
+    name: sbamacrt
+    type: VARCHAR
+    years: 2021-2025

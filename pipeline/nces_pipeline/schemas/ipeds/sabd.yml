@@ -1,0 +1,644 @@
+source: ipeds
+family: sabd
+key:
+- unitid
+- sabdtype
+- line
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2001-2011
+  LINE:
+    name: line
+    type: BIGINT
+    years: 2001-2011
+  XSTAFF01:
+    name: staff01_flag
+    type: VARCHAR
+    flag_for: staff01
+    years: 2001-2007
+  STAFF01:
+    name: staff01
+    type: BIGINT
+    years: 2001-2007
+  XSTAFF02:
+    name: staff02_flag
+    type: VARCHAR
+    flag_for: staff02
+    years: 2001-2007
+  STAFF02:
+    name: staff02
+    type: BIGINT
+    years: 2001-2007
+  XSTAFF03:
+    name: staff03_flag
+    type: VARCHAR
+    flag_for: staff03
+    years: 2001-2009
+  STAFF03:
+    name: staff03
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF04:
+    name: staff04_flag
+    type: VARCHAR
+    flag_for: staff04
+    years: 2001-2009
+  STAFF04:
+    name: staff04
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF05:
+    name: staff05_flag
+    type: VARCHAR
+    flag_for: staff05
+    years: 2001-2009
+  STAFF05:
+    name: staff05
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF06:
+    name: staff06_flag
+    type: VARCHAR
+    flag_for: staff06
+    years: 2001-2009
+  STAFF06:
+    name: staff06
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF07:
+    name: staff07_flag
+    type: VARCHAR
+    flag_for: staff07
+    years: 2001-2009
+  STAFF07:
+    name: staff07
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF08:
+    name: staff08_flag
+    type: VARCHAR
+    flag_for: staff08
+    years: 2001-2009
+  STAFF08:
+    name: staff08
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF09:
+    name: staff09_flag
+    type: VARCHAR
+    flag_for: staff09
+    years: 2001-2009
+  STAFF09:
+    name: staff09
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF10:
+    name: staff10_flag
+    type: VARCHAR
+    flag_for: staff10
+    years: 2001-2009
+  STAFF10:
+    name: staff10
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF11:
+    name: staff11_flag
+    type: VARCHAR
+    flag_for: staff11
+    years: 2001-2009
+  STAFF11:
+    name: staff11
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF12:
+    name: staff12_flag
+    type: VARCHAR
+    flag_for: staff12
+    years: 2001-2009
+  STAFF12:
+    name: staff12
+    type: BIGINT
+    years: 2001-2009
+  XSTAFF13:
+    name: staff13_flag
+    type: VARCHAR
+    flag_for: staff13
+    years: 2001-2007
+  STAFF13:
+    name: staff13
+    type: BIGINT
+    years: 2001-2007
+  XSTAFF14:
+    name: staff14_flag
+    type: VARCHAR
+    flag_for: staff14
+    years: 2001-2007
+  STAFF14:
+    name: staff14
+    type: BIGINT
+    years: 2001-2007
+  XSTAFF15:
+    name: staff15_flag
+    type: VARCHAR
+    flag_for: staff15
+    years: 2001-2007
+  STAFF15:
+    name: staff15
+    type: BIGINT
+    years: 2001-2007
+  XSTAFF16:
+    name: staff16_flag
+    type: VARCHAR
+    flag_for: staff16
+    years: 2001-2007
+  STAFF16:
+    name: staff16
+    type: BIGINT
+    years: 2001-2007
+  STAT_S:
+    name: stat_s
+    type: BIGINT
+    years: '2001'
+  SABDTYPE:
+    name: sabdtype
+    type: BIGINT
+    years: 2002-2011
+  XSTAFF17:
+    name: staff17_flag
+    type: VARCHAR
+    flag_for: staff17
+    years: 2002-2007
+  STAFF17:
+    name: staff17
+    type: BIGINT
+    years: 2002-2007
+  XSTAFF18:
+    name: staff18_flag
+    type: VARCHAR
+    flag_for: staff18
+    years: 2002-2009
+  STAFF18:
+    name: staff18
+    type: BIGINT
+    years: 2002-2009
+  XSTAFF19:
+    name: staff19_flag
+    type: VARCHAR
+    flag_for: staff19
+    years: 2002-2009
+  STAFF19:
+    name: staff19
+    type: BIGINT
+    years: 2002-2009
+  XSTAFF20:
+    name: staff20_flag
+    type: VARCHAR
+    flag_for: staff20
+    years: 2002-2009
+  STAFF20:
+    name: staff20
+    type: BIGINT
+    years: 2002-2009
+  XSTAFF21:
+    name: staff21_flag
+    type: VARCHAR
+    flag_for: staff21
+    years: 2002-2009
+  STAFF21:
+    name: staff21
+    type: BIGINT
+    years: 2002-2009
+  XSTAFF22:
+    name: staff22_flag
+    type: VARCHAR
+    flag_for: staff22
+    years: 2002-2009
+  STAFF22:
+    name: staff22
+    type: BIGINT
+    years: 2002-2009
+  XSTAFF23:
+    name: staff23_flag
+    type: VARCHAR
+    flag_for: staff23
+    years: 2002-2007
+  STAFF23:
+    name: staff23
+    type: BIGINT
+    years: 2002-2007
+  XSTAFF24:
+    name: staff24_flag
+    type: VARCHAR
+    flag_for: staff24
+    years: 2002-2007
+  STAFF24:
+    name: staff24
+    type: BIGINT
+    years: 2002-2007
+  XHRTOTLT:
+    name: hrtotlt_flag
+    type: VARCHAR
+    flag_for: hrtotlt
+    years: 2008-2011
+  HRTOTLT:
+    name: hrtotlt
+    type: BIGINT
+    years: 2008-2011
+  XHRTOTLM:
+    name: hrtotlm_flag
+    type: VARCHAR
+    flag_for: hrtotlm
+    years: 2008-2011
+  HRTOTLM:
+    name: hrtotlm
+    type: BIGINT
+    years: 2008-2011
+  XHRTOTLW:
+    name: hrtotlw_flag
+    type: VARCHAR
+    flag_for: hrtotlw
+    years: 2008-2011
+  HRTOTLW:
+    name: hrtotlw
+    type: BIGINT
+    years: 2008-2011
+  XDVHRAIT:
+    name: dvhrait_flag
+    type: VARCHAR
+    flag_for: dvhrait
+    years: 2008-2009
+  DVHRAIT:
+    name: dvhrait
+    type: BIGINT
+    years: 2008-2009
+  XDVHRAIM:
+    name: dvhraim_flag
+    type: VARCHAR
+    flag_for: dvhraim
+    years: 2008-2009
+  DVHRAIM:
+    name: dvhraim
+    type: BIGINT
+    years: 2008-2009
+  XDVHRAIW:
+    name: dvhraiw_flag
+    type: VARCHAR
+    flag_for: dvhraiw
+    years: 2008-2009
+  DVHRAIW:
+    name: dvhraiw
+    type: BIGINT
+    years: 2008-2009
+  XDVHRAPT:
+    name: dvhrapt_flag
+    type: VARCHAR
+    flag_for: dvhrapt
+    years: 2008-2009
+  DVHRAPT:
+    name: dvhrapt
+    type: BIGINT
+    years: 2008-2009
+  XDVHRAPM:
+    name: dvhrapm_flag
+    type: VARCHAR
+    flag_for: dvhrapm
+    years: 2008-2009
+  DVHRAPM:
+    name: dvhrapm
+    type: BIGINT
+    years: 2008-2009
+  XDVHRAPW:
+    name: dvhrapw_flag
+    type: VARCHAR
+    flag_for: dvhrapw
+    years: 2008-2009
+  DVHRAPW:
+    name: dvhrapw
+    type: BIGINT
+    years: 2008-2009
+  XDVHRBKT:
+    name: dvhrbkt_flag
+    type: VARCHAR
+    flag_for: dvhrbkt
+    years: 2008-2009
+  DVHRBKT:
+    name: dvhrbkt
+    type: BIGINT
+    years: 2008-2009
+  XDVHRBKM:
+    name: dvhrbkm_flag
+    type: VARCHAR
+    flag_for: dvhrbkm
+    years: 2008-2009
+  DVHRBKM:
+    name: dvhrbkm
+    type: BIGINT
+    years: 2008-2009
+  XDVHRBKW:
+    name: dvhrbkw_flag
+    type: VARCHAR
+    flag_for: dvhrbkw
+    years: 2008-2009
+  DVHRBKW:
+    name: dvhrbkw
+    type: BIGINT
+    years: 2008-2009
+  XDVHRHST:
+    name: dvhrhst_flag
+    type: VARCHAR
+    flag_for: dvhrhst
+    years: 2008-2009
+  DVHRHST:
+    name: dvhrhst
+    type: BIGINT
+    years: 2008-2009
+  XDVHRHSM:
+    name: dvhrhsm_flag
+    type: VARCHAR
+    flag_for: dvhrhsm
+    years: 2008-2009
+  DVHRHSM:
+    name: dvhrhsm
+    type: BIGINT
+    years: 2008-2009
+  XDVHRHSW:
+    name: dvhrhsw_flag
+    type: VARCHAR
+    flag_for: dvhrhsw
+    years: 2008-2009
+  DVHRHSW:
+    name: dvhrhsw
+    type: BIGINT
+    years: 2008-2009
+  XDVHRWHT:
+    name: dvhrwht_flag
+    type: VARCHAR
+    flag_for: dvhrwht
+    years: 2008-2009
+  DVHRWHT:
+    name: dvhrwht
+    type: BIGINT
+    years: 2008-2009
+  XDVHRWHM:
+    name: dvhrwhm_flag
+    type: VARCHAR
+    flag_for: dvhrwhm
+    years: 2008-2009
+  DVHRWHM:
+    name: dvhrwhm
+    type: BIGINT
+    years: 2008-2009
+  XDVHRWHW:
+    name: dvhrwhw_flag
+    type: VARCHAR
+    flag_for: dvhrwhw
+    years: 2008-2009
+  DVHRWHW:
+    name: dvhrwhw
+    type: BIGINT
+    years: 2008-2009
+  XHRAIANT:
+    name: hraiant_flag
+    type: VARCHAR
+    flag_for: hraiant
+    years: 2008-2011
+  HRAIANT:
+    name: hraiant
+    type: BIGINT
+    years: 2008-2011
+  XHRAIANM:
+    name: hraianm_flag
+    type: VARCHAR
+    flag_for: hraianm
+    years: 2008-2011
+  HRAIANM:
+    name: hraianm
+    type: BIGINT
+    years: 2008-2011
+  XHRAIANW:
+    name: hraianw_flag
+    type: VARCHAR
+    flag_for: hraianw
+    years: 2008-2011
+  HRAIANW:
+    name: hraianw
+    type: BIGINT
+    years: 2008-2011
+  XHRASIAT:
+    name: hrasiat_flag
+    type: VARCHAR
+    flag_for: hrasiat
+    years: 2008-2011
+  HRASIAT:
+    name: hrasiat
+    type: BIGINT
+    years: 2008-2011
+  XHRASIAM:
+    name: hrasiam_flag
+    type: VARCHAR
+    flag_for: hrasiam
+    years: 2008-2011
+  HRASIAM:
+    name: hrasiam
+    type: BIGINT
+    years: 2008-2011
+  XHRASIAW:
+    name: hrasiaw_flag
+    type: VARCHAR
+    flag_for: hrasiaw
+    years: 2008-2011
+  HRASIAW:
+    name: hrasiaw
+    type: BIGINT
+    years: 2008-2011
+  XHRBKAAT:
+    name: hrbkaat_flag
+    type: VARCHAR
+    flag_for: hrbkaat
+    years: 2008-2011
+  HRBKAAT:
+    name: hrbkaat
+    type: BIGINT
+    years: 2008-2011
+  XHRBKAAM:
+    name: hrbkaam_flag
+    type: VARCHAR
+    flag_for: hrbkaam
+    years: 2008-2011
+  HRBKAAM:
+    name: hrbkaam
+    type: BIGINT
+    years: 2008-2011
+  XHRBKAAW:
+    name: hrbkaaw_flag
+    type: VARCHAR
+    flag_for: hrbkaaw
+    years: 2008-2011
+  HRBKAAW:
+    name: hrbkaaw
+    type: BIGINT
+    years: 2008-2011
+  XHRHISPT:
+    name: hrhispt_flag
+    type: VARCHAR
+    flag_for: hrhispt
+    years: 2008-2011
+  HRHISPT:
+    name: hrhispt
+    type: BIGINT
+    years: 2008-2011
+  XHRHISPM:
+    name: hrhispm_flag
+    type: VARCHAR
+    flag_for: hrhispm
+    years: 2008-2011
+  HRHISPM:
+    name: hrhispm
+    type: BIGINT
+    years: 2008-2011
+  XHRHISPW:
+    name: hrhispw_flag
+    type: VARCHAR
+    flag_for: hrhispw
+    years: 2008-2011
+  HRHISPW:
+    name: hrhispw
+    type: BIGINT
+    years: 2008-2011
+  XHRNHPIT:
+    name: hrnhpit_flag
+    type: VARCHAR
+    flag_for: hrnhpit
+    years: 2008-2011
+  HRNHPIT:
+    name: hrnhpit
+    type: BIGINT
+    years: 2008-2011
+  XHRNHPIM:
+    name: hrnhpim_flag
+    type: VARCHAR
+    flag_for: hrnhpim
+    years: 2008-2011
+  HRNHPIM:
+    name: hrnhpim
+    type: BIGINT
+    years: 2008-2011
+  XHRNHPIW:
+    name: hrnhpiw_flag
+    type: VARCHAR
+    flag_for: hrnhpiw
+    years: 2008-2011
+  HRNHPIW:
+    name: hrnhpiw
+    type: BIGINT
+    years: 2008-2011
+  XHRWHITT:
+    name: hrwhitt_flag
+    type: VARCHAR
+    flag_for: hrwhitt
+    years: 2008-2011
+  HRWHITT:
+    name: hrwhitt
+    type: BIGINT
+    years: 2008-2011
+  XHRWHITM:
+    name: hrwhitm_flag
+    type: VARCHAR
+    flag_for: hrwhitm
+    years: 2008-2011
+  HRWHITM:
+    name: hrwhitm
+    type: BIGINT
+    years: 2008-2011
+  XHRWHITW:
+    name: hrwhitw_flag
+    type: VARCHAR
+    flag_for: hrwhitw
+    years: 2008-2011
+  HRWHITW:
+    name: hrwhitw
+    type: BIGINT
+    years: 2008-2011
+  XHR2MORT:
+    name: hr2mort_flag
+    type: VARCHAR
+    flag_for: hr2mort
+    years: 2008-2011
+  HR2MORT:
+    name: hr2mort
+    type: BIGINT
+    years: 2008-2011
+  XHR2MORM:
+    name: hr2morm_flag
+    type: VARCHAR
+    flag_for: hr2morm
+    years: 2008-2011
+  HR2MORM:
+    name: hr2morm
+    type: BIGINT
+    years: 2008-2011
+  XHR2MORW:
+    name: hr2morw_flag
+    type: VARCHAR
+    flag_for: hr2morw
+    years: 2008-2011
+  HR2MORW:
+    name: hr2morw
+    type: BIGINT
+    years: 2008-2011
+  XHRUNKNT:
+    name: hrunknt_flag
+    type: VARCHAR
+    flag_for: hrunknt
+    years: 2008-2011
+  HRUNKNT:
+    name: hrunknt
+    type: BIGINT
+    years: 2008-2011
+  XHRUNKNM:
+    name: hrunknm_flag
+    type: VARCHAR
+    flag_for: hrunknm
+    years: 2008-2011
+  HRUNKNM:
+    name: hrunknm
+    type: BIGINT
+    years: 2008-2011
+  XHRUNKNW:
+    name: hrunknw_flag
+    type: VARCHAR
+    flag_for: hrunknw
+    years: 2008-2011
+  HRUNKNW:
+    name: hrunknw
+    type: BIGINT
+    years: 2008-2011
+  XHRNRALT:
+    name: hrnralt_flag
+    type: VARCHAR
+    flag_for: hrnralt
+    years: 2008-2011
+  HRNRALT:
+    name: hrnralt
+    type: BIGINT
+    years: 2008-2011
+  XHRNRALM:
+    name: hrnralm_flag
+    type: VARCHAR
+    flag_for: hrnralm
+    years: 2008-2011
+  HRNRALM:
+    name: hrnralm
+    type: BIGINT
+    years: 2008-2011
+  XHRNRALW:
+    name: hrnralw_flag
+    type: VARCHAR
+    flag_for: hrnralw
+    years: 2008-2011
+  HRNRALW:
+    name: hrnralw
+    type: BIGINT
+    years: 2008-2011

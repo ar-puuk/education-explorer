@@ -1,0 +1,36 @@
+source: ipeds
+family: efd2
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2001'
+  XCDACTUA:
+    name: cdactua_flag
+    type: VARCHAR
+    flag_for: cdactua
+    years: '2001'
+  CDACTUA:
+    name: cdactua
+    type: BIGINT
+    years: '2001'
+  XCNACTUA:
+    name: cnactua_flag
+    type: VARCHAR
+    flag_for: cnactua
+    years: '2001'
+  CNACTUA:
+    name: cnactua
+    type: BIGINT
+    years: '2001'
+  XCDACTGA:
+    name: cdactga_flag
+    type: VARCHAR
+    flag_for: cdactga
+    years: '2001'
+  CDACTGA:
+    name: cdactga
+    type: BIGINT
+    years: '2001'

@@ -1,0 +1,773 @@
+source: ipeds
+family: flags
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2004-2025
+  STAT_IC:
+    name: stat_ic
+    type: BIGINT
+    years: 2004-2025
+  LOCK_IC:
+    name: lock_ic
+    type: BIGINT
+    years: 2004-2025
+  IMP_IC:
+    name: imp_ic
+    type: BIGINT
+    years: 2004-2025
+  STAT_C:
+    name: stat_c
+    type: BIGINT
+    years: 2004-2025
+  LOCK_C:
+    name: lock_c
+    type: BIGINT
+    years: 2004-2025
+  PRCH_C:
+    name: prch_c
+    type: BIGINT
+    years: 2004-2025
+  IDX_C:
+    name: idx_c
+    type: BIGINT
+    years: 2004-2025
+  IMP_C:
+    name: imp_c
+    type: BIGINT
+    years: 2004-2025
+  STAT_EF:
+    name: stat_ef
+    type: BIGINT
+    years: 2004-2024
+  LOCK_EF:
+    name: lock_ef
+    type: BIGINT
+    years: 2004-2024
+  PRCH_EF:
+    name: prch_ef
+    type: BIGINT
+    years: 2004-2024
+  IDX_EF:
+    name: idx_ef
+    type: BIGINT
+    years: 2004-2024
+  IMP_EF:
+    name: imp_ef
+    type: BIGINT
+    years: 2004-2024
+  PTA99_EF:
+    name: pta99_ef
+    type: BIGINT
+    years: 2004-2024
+  PTACIPEF:
+    name: ptacipef
+    type: BIGINT
+    years: 2004-2024
+  PTB_EF:
+    name: ptb_ef
+    type: BIGINT
+    years: 2004-2024
+  PTC_EF:
+    name: ptc_ef
+    type: BIGINT
+    years: 2004-2024
+  PTD_EF:
+    name: ptd_ef
+    type: BIGINT
+    years: 2004-2024
+  PTEEFFY:
+    name: pteeffy
+    type: BIGINT
+    years: 2004-2006
+  PTEEFIA:
+    name: pteefia
+    type: BIGINT
+    years: 2004-2006
+  FYRPYEAR:
+    name: fyrpyear
+    type: BIGINT
+    years: 2004-2010
+  STAT_SA:
+    name: stat_sa
+    type: BIGINT
+    years: 2004-2024
+  LOCK_SA:
+    name: lock_sa
+    type: BIGINT
+    years: '2004'
+  PRCH_SA:
+    name: prch_sa
+    type: BIGINT
+    years: '2004'
+  IDX_SA:
+    name: idx_sa
+    type: BIGINT
+    years: '2004'
+  IMP_SA:
+    name: imp_sa
+    type: BIGINT
+    years: '2004'
+  STAT_S:
+    name: stat_s
+    type: BIGINT
+    years: 2004-2024
+  LOCK_S:
+    name: lock_s
+    type: BIGINT
+    years: '2004'
+  PRCH_S:
+    name: prch_s
+    type: BIGINT
+    years: '2004'
+  IDX_S:
+    name: idx_s
+    type: BIGINT
+    years: '2004'
+  IMP_S:
+    name: imp_s
+    type: BIGINT
+    years: '2004'
+  STAT_EAP:
+    name: stat_eap
+    type: BIGINT
+    years: 2004-2024
+  LOCK_EAP:
+    name: lock_eap
+    type: BIGINT
+    years: '2004'
+  PRCH_EAP:
+    name: prch_eap
+    type: BIGINT
+    years: '2004'
+  IDX_EAP:
+    name: idx_eap
+    type: BIGINT
+    years: '2004'
+  IMP_EAP:
+    name: imp_eap
+    type: BIGINT
+    years: '2004'
+  FTEMP15:
+    name: ftemp15
+    type: BIGINT
+    years: 2004-2024
+  SA_EXCL:
+    name: sa_excl
+    type: BIGINT
+    years: 2004-2024
+  FORM_F:
+    name: form_f
+    type: BIGINT
+    years: 2004-2024
+  STAT_F:
+    name: stat_f
+    type: BIGINT
+    years: 2004-2024
+  LOCK_F:
+    name: lock_f
+    type: BIGINT
+    years: 2004-2024
+  PRCH_F:
+    name: prch_f
+    type: BIGINT
+    years: 2004-2024
+  IDX_F:
+    name: idx_f
+    type: BIGINT
+    years: 2004-2024
+  IMP_F:
+    name: imp_f
+    type: BIGINT
+    years: 2004-2024
+  FYBEG:
+    name: fybeg
+    type: VARCHAR
+    years: 2004-2024
+  FYEND:
+    name: fyend
+    type: VARCHAR
+    years: 2004-2024
+  GPFS:
+    name: gpfs
+    type: BIGINT
+    years: 2004-2024
+  F1GASBAL:
+    name: f1gasbal
+    type: BIGINT
+    years: 2004-2024
+  STAT_SFA:
+    name: stat_sfa
+    type: BIGINT
+    years: 2004-2024
+  LOCK_SFA:
+    name: lock_sfa
+    type: BIGINT
+    years: 2004-2024
+  PRCH_SFA:
+    name: prch_sfa
+    type: BIGINT
+    years: 2004-2024
+  IDX_SFA:
+    name: idx_sfa
+    type: BIGINT
+    years: 2004-2024
+  IMP_SFA:
+    name: imp_sfa
+    type: BIGINT
+    years: 2004-2024
+  STAT_GR:
+    name: stat_gr
+    type: BIGINT
+    years: 2004-2024
+  LOCK_GR:
+    name: lock_gr
+    type: BIGINT
+    years: 2004-2024
+  PRCH_GR:
+    name: prch_gr
+    type: BIGINT
+    years: 2004-2024
+  IDX_GR:
+    name: idx_gr
+    type: BIGINT
+    years: 2004-2024
+  IMP_GR:
+    name: imp_gr
+    type: BIGINT
+    years: 2004-2024
+  COHRTSTU:
+    name: cohrtstu
+    type: BIGINT
+    years: 2004-2024
+  PYAID:
+    name: pyaid
+    type: BIGINT
+    years: 2004-2006
+  COHRTAID:
+    name: cohrtaid
+    type: BIGINT
+    years: '2004'
+  SPORT1:
+    name: sport1
+    type: BIGINT
+    years: 2004-2006
+  SPORT2:
+    name: sport2
+    type: BIGINT
+    years: 2004-2006
+  SPORT3:
+    name: sport3
+    type: BIGINT
+    years: 2004-2006
+  SPORT4:
+    name: sport4
+    type: BIGINT
+    years: 2004-2006
+  SPORT5:
+    name: sport5
+    type: BIGINT
+    years: 2004-2006
+  LONGPGM:
+    name: longpgm
+    type: BIGINT
+    years: 2004-2010
+  CUFASB:
+    name: cufasb
+    type: BIGINT
+    years: 2004-2009
+  CUGASB:
+    name: cugasb
+    type: BIGINT
+    years: 2004-2009
+  F1SYSTYP:
+    name: f1systyp
+    type: BIGINT
+    years: 2004-2009
+  F1SYSNAM:
+    name: f1sysnam
+    type: VARCHAR
+    years: 2004-2009
+  PCF_M:
+    name: pcf_m
+    type: BIGINT
+    years: '2004'
+  PCF_F:
+    name: pcf_f
+    type: VARCHAR
+    years: 2004,2006-2024
+  PCFFP_M:
+    name: pcffp_m
+    type: BIGINT
+    years: '2004'
+  PCFFP_F:
+    name: pcffp_f
+    type: BIGINT
+    years: '2004'
+  PCC_M:
+    name: pcc_m
+    type: BIGINT
+    years: '2004'
+  PCC_F:
+    name: pcc_f
+    type: VARCHAR
+    years: 2004,2006-2025
+  PCEF_M:
+    name: pcef_m
+    type: BIGINT
+    years: '2004'
+  PCEF_F:
+    name: pcef_f
+    type: VARCHAR
+    years: 2004,2006-2024
+  PCGR_M:
+    name: pcgr_m
+    type: BIGINT
+    years: '2004'
+  PCGR_F:
+    name: pcgr_f
+    type: VARCHAR
+    years: 2004,2006-2024
+  PCSFA_M:
+    name: pcsfa_m
+    type: BIGINT
+    years: '2004'
+  PCSFA_F:
+    name: pcsfa_f
+    type: VARCHAR
+    years: 2004,2006-2024
+  PCEAP_M:
+    name: pceap_m
+    type: BIGINT
+    years: '2004'
+  PCEAP_F:
+    name: pceap_f
+    type: BIGINT
+    years: '2004'
+  PCSA_M:
+    name: pcsa_m
+    type: BIGINT
+    years: '2004'
+  PCSA_F:
+    name: pcsa_f
+    type: BIGINT
+    years: '2004'
+  PCS_M:
+    name: pcs_m
+    type: BIGINT
+    years: '2004'
+  PCS_F:
+    name: pcs_f
+    type: BIGINT
+    years: '2004'
+  REV_C:
+    name: rev_c
+    type: BIGINT
+    years: 2004-2024
+  REV_EF:
+    name: rev_ef
+    type: BIGINT
+    years: 2004-2023
+  REV_SA:
+    name: rev_sa
+    type: BIGINT
+    years: '2004'
+  REV_S:
+    name: rev_s
+    type: BIGINT
+    years: '2004'
+  REV_EAP:
+    name: rev_eap
+    type: BIGINT
+    years: '2004'
+  REV_F:
+    name: rev_f
+    type: BIGINT
+    years: 2004-2023
+  REV_SFA:
+    name: rev_sfa
+    type: BIGINT
+    years: 2004-2023
+  REV_GR:
+    name: rev_gr
+    type: BIGINT
+    years: 2004-2023
+  STAT_HR:
+    name: stat_hr
+    type: BIGINT
+    years: 2005-2024
+  LOCK_HR:
+    name: lock_hr
+    type: BIGINT
+    years: 2005-2024
+  PRCH_HR:
+    name: prch_hr
+    type: BIGINT
+    years: 2005-2024
+  IDX_HR:
+    name: idx_hr
+    type: BIGINT
+    years: 2005-2024
+  IMP_HR:
+    name: imp_hr
+    type: BIGINT
+    years: 2005-2024
+  F2PELL:
+    name: f2pell
+    type: BIGINT
+    years: 2005-2024
+  F_ATHLTC:
+    name: f_athltc
+    type: BIGINT
+    years: 2005-2021
+  REV_HR:
+    name: rev_hr
+    type: BIGINT
+    years: 2005-2023
+  PCHR_F:
+    name: pchr_f
+    type: VARCHAR
+    years: 2006-2024
+  NDST2005:
+    name: ndst2005
+    type: BIGINT
+    years: '2006'
+  STAT_E12:
+    name: stat_e12
+    type: BIGINT
+    years: 2007-2025
+  LOCK_E12:
+    name: lock_e12
+    type: BIGINT
+    years: 2007-2025
+  PRCH_E12:
+    name: prch_e12
+    type: BIGINT
+    years: 2007-2025
+  IDX_E12:
+    name: idx_e12
+    type: BIGINT
+    years: 2007-2025
+  PCE12_F:
+    name: pce12_f
+    type: VARCHAR
+    years: 2007-2025
+  IMP_E12:
+    name: imp_e12
+    type: BIGINT
+    years: 2007-2025
+  HASGRURL:
+    name: hasgrurl
+    type: BIGINT
+    years: 2007-2013
+  GRDISURL:
+    name: grdisurl
+    type: VARCHAR
+    years: 2007-2013
+  REV_E12:
+    name: rev_e12
+    type: BIGINT
+    years: 2007-2024
+  FP_IC:
+    name: fp_ic
+    type: BIGINT
+    years: '2008'
+  FP_C:
+    name: fp_c
+    type: BIGINT
+    years: 2008-2009
+  RE_C:
+    name: re_c
+    type: BIGINT
+    years: 2008-2010
+  FP_E12:
+    name: fp_e12
+    type: BIGINT
+    years: 2008-2009
+  RE_E12:
+    name: re_e12
+    type: BIGINT
+    years: 2008-2010
+  RE_HR:
+    name: re_hr
+    type: BIGINT
+    years: 2008-2009
+  FP_EF:
+    name: fp_ef
+    type: BIGINT
+    years: '2008'
+  RE_EF:
+    name: re_ef
+    type: BIGINT
+    years: 2008-2009
+  F_VER:
+    name: f_ver
+    type: BIGINT
+    years: 2008-2009
+  RE_GR:
+    name: re_gr
+    type: BIGINT
+    years: 2008-2010
+  NTRLDSTR:
+    name: ntrldstr
+    type: BIGINT
+    years: 2008-2024
+  REV_IC:
+    name: rev_ic
+    type: BIGINT
+    years: 2008-2024
+  STAT_GR2:
+    name: stat_gr2
+    type: BIGINT
+    years: 2009-2024
+  LOCK_GR2:
+    name: lock_gr2
+    type: BIGINT
+    years: 2009-2024
+  PRCH_GR2:
+    name: prch_gr2
+    type: BIGINT
+    years: 2009-2024
+  IDX_GR2:
+    name: idx_gr2
+    type: BIGINT
+    years: 2009-2024
+  IMP_GR2:
+    name: imp_gr2
+    type: BIGINT
+    years: 2009-2024
+  PCF_F_RV:
+    name: pcf_f_rv
+    type: VARCHAR
+    years: 2009-2010,2013-2014
+  REV_GR2:
+    name: rev_gr2
+    type: BIGINT
+    years: 2009-2023
+  F3PELL:
+    name: f3pell
+    type: BIGINT
+    years: 2011-2024
+  TENURSYS:
+    name: tenursys
+    type: BIGINT
+    years: 2012-2024
+  SFAFORM:
+    name: sfaform
+    type: BIGINT
+    years: 2014-2024
+  STAT_ADM:
+    name: stat_adm
+    type: BIGINT
+    years: 2014-2024
+  LOCK_ADM:
+    name: lock_adm
+    type: BIGINT
+    years: 2014-2024
+  IMP_ADM:
+    name: imp_adm
+    type: BIGINT
+    years: 2014-2024
+  F3BIST:
+    name: f3bist
+    type: BIGINT
+    years: 2014-2024
+  STAT_AL:
+    name: stat_al
+    type: BIGINT
+    years: 2014-2024
+  LOCK_AL:
+    name: lock_al
+    type: BIGINT
+    years: 2014-2024
+  PRCH_AL:
+    name: prch_al
+    type: BIGINT
+    years: 2014-2024
+  IDX_AL:
+    name: idx_al
+    type: BIGINT
+    years: 2014-2024
+  PCAL_F:
+    name: pcal_f
+    type: VARCHAR
+    years: 2014-2024
+  IMP_AL:
+    name: imp_al
+    type: BIGINT
+    years: 2014-2024
+  HASAL:
+    name: hasal
+    type: BIGINT
+    years: 2014-2024
+  REV_ADM:
+    name: rev_adm
+    type: BIGINT
+    years: 2014-2023
+  REV_AL:
+    name: rev_al
+    type: BIGINT
+    years: 2014-2023
+  PCGR2_F:
+    name: pcgr2_f
+    type: VARCHAR
+    years: 2015-2024
+  STAT_OM:
+    name: stat_om
+    type: BIGINT
+    years: 2015-2024
+  LOCK_OM:
+    name: lock_om
+    type: BIGINT
+    years: 2015-2024
+  PRCH_OM:
+    name: prch_om
+    type: BIGINT
+    years: 2015-2024
+  IDX_OM:
+    name: idx_om
+    type: BIGINT
+    years: 2015-2024
+  PCOM_F:
+    name: pcom_f
+    type: VARCHAR
+    years: 2015-2024
+  IMP_OM:
+    name: imp_om
+    type: BIGINT
+    years: 2015-2024
+  REV_OM:
+    name: rev_om
+    type: BIGINT
+    years: 2015-2023
+  OMFLG1GR:
+    name: omflg1gr
+    type: BIGINT
+    years: '2015'
+  OMFLG2GR:
+    name: omflg2gr
+    type: BIGINT
+    years: '2015'
+  OMFLG3GR:
+    name: omflg3gr
+    type: BIGINT
+    years: '2015'
+  OMFLG4:
+    name: omflg4
+    type: BIGINT
+    years: '2015'
+  OMFLG5:
+    name: omflg5
+    type: BIGINT
+    years: '2015'
+  OMFLG6GR:
+    name: omflg6gr
+    type: BIGINT
+    years: '2015'
+  PRCHTP_F:
+    name: prchtp_f
+    type: BIGINT
+    years: 2016-2024
+  PRCH_ADM:
+    name: prch_adm
+    type: BIGINT
+    years: 2019-2024
+  IDX_ADM:
+    name: idx_adm
+    type: BIGINT
+    years: 2019-2024
+  PCADM_F:
+    name: pcadm_f
+    type: VARCHAR
+    years: 2019-2024
+  F_ATHRV1:
+    name: f_athrv1
+    type: BIGINT
+    years: 2020-2024
+  F_ATHRV2:
+    name: f_athrv2
+    type: BIGINT
+    years: 2020-2024
+  F_ATHRV3:
+    name: f_athrv3
+    type: BIGINT
+    years: 2020-2021
+  F_ATHRV9:
+    name: f_athrv9
+    type: BIGINT
+    years: 2020-2024
+  FCOLATHL:
+    name: fcolathl
+    type: BIGINT
+    years: 2022-2024
+  F_ATHEX1:
+    name: f_athex1
+    type: BIGINT
+    years: 2022-2024
+  F_ATHEX2:
+    name: f_athex2
+    type: BIGINT
+    years: 2022-2024
+  F_ATHEX9:
+    name: f_athex9
+    type: BIGINT
+    years: 2022-2024
+  F_ATHRV:
+    name: f_athrv
+    type: BIGINT
+    years: 2022-2024
+  ENRHSST:
+    name: enrhsst
+    type: BIGINT
+    years: 2024-2025
+  ENRHSST1:
+    name: enrhsst1
+    type: BIGINT
+    years: 2024-2025
+  ENRHSST2:
+    name: enrhsst2
+    type: BIGINT
+    years: 2024-2025
+  STAT_COS:
+    name: stat_cos
+    type: BIGINT
+    years: '2024'
+  STAT_COS1:
+    name: stat_cos1
+    type: BIGINT
+    years: '2024'
+  LOCK_COS1:
+    name: lock_cos1
+    type: BIGINT
+    years: '2024'
+  PRCH_COS:
+    name: prch_cos
+    type: BIGINT
+    years: '2024'
+  IDX_COS:
+    name: idx_cos
+    type: BIGINT
+    years: '2024'
+  PCCOS_F:
+    name: pccos_f
+    type: BIGINT
+    years: '2024'
+  IMP_COS1:
+    name: imp_cos1
+    type: BIGINT
+    years: '2024'
+  STAT_COS2:
+    name: stat_cos2
+    type: BIGINT
+    years: '2024'
+  LOCK_COS2:
+    name: lock_cos2
+    type: BIGINT
+    years: '2024'
+  IMP_COS2:
+    name: imp_cos2
+    type: BIGINT
+    years: '2024'

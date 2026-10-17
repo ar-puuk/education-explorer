@@ -1,0 +1,306 @@
+source: ipeds
+family: om
+key:
+- unitid
+- omchrt
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2015-2024
+  OMCHRT:
+    name: omchrt
+    type: BIGINT
+    years: 2015-2024
+  XOMRCHT6:
+    name: omrcht6_flag
+    type: VARCHAR
+    flag_for: omrcht6
+    years: 2015-2016
+  OMRCHT6:
+    name: omrcht6
+    type: BIGINT
+    years: 2015-2016
+  XOMEXCL6:
+    name: omexcl6_flag
+    type: VARCHAR
+    flag_for: omexcl6
+    years: 2015-2016
+  OMEXCL6:
+    name: omexcl6
+    type: BIGINT
+    years: 2015-2016
+  XOMACHT6:
+    name: omacht6_flag
+    type: VARCHAR
+    flag_for: omacht6
+    years: 2015-2016
+  OMACHT6:
+    name: omacht6
+    type: BIGINT
+    years: 2015-2016
+  XOMAWDN6:
+    name: omawdn6_flag
+    type: VARCHAR
+    flag_for: omawdn6
+    years: 2015-2024
+  OMAWDN6:
+    name: omawdn6
+    type: BIGINT
+    years: 2015-2024
+  XOMAWDP6:
+    name: omawdp6_flag
+    type: VARCHAR
+    flag_for: omawdp6
+    years: 2015-2024
+  OMAWDP6:
+    name: omawdp6
+    type: BIGINT
+    years: 2015-2024
+  XOMRCHT8:
+    name: omrcht8_flag
+    type: VARCHAR
+    flag_for: omrcht8
+    years: '2015'
+  OMRCHT8:
+    name: omrcht8
+    type: BIGINT
+    years: '2015'
+  XOMEXCL8:
+    name: omexcl8_flag
+    type: VARCHAR
+    flag_for: omexcl8
+    years: 2015-2016
+  OMEXCL8:
+    name: omexcl8
+    type: BIGINT
+    years: 2015-2016
+  XOMACHT8:
+    name: omacht8_flag
+    type: VARCHAR
+    flag_for: omacht8
+    years: 2015-2016
+  OMACHT8:
+    name: omacht8
+    type: BIGINT
+    years: 2015-2016
+  XOMAWDN8:
+    name: omawdn8_flag
+    type: VARCHAR
+    flag_for: omawdn8
+    years: 2015-2024
+  OMAWDN8:
+    name: omawdn8
+    type: BIGINT
+    years: 2015-2024
+  XOMENRYI:
+    name: omenryi_flag
+    type: VARCHAR
+    flag_for: omenryi
+    years: 2015-2024
+  OMENRYI:
+    name: omenryi
+    type: BIGINT
+    years: 2015-2024
+  XOMENRAI:
+    name: omenrai_flag
+    type: VARCHAR
+    flag_for: omenrai
+    years: 2015-2024
+  OMENRAI:
+    name: omenrai
+    type: BIGINT
+    years: 2015-2024
+  XOMENRUN:
+    name: omenrun_flag
+    type: VARCHAR
+    flag_for: omenrun
+    years: 2015-2024
+  OMENRUN:
+    name: omenrun
+    type: BIGINT
+    years: 2015-2024
+  XOMNOAWD:
+    name: omnoawd_flag
+    type: VARCHAR
+    flag_for: omnoawd
+    years: 2015-2024
+  OMNOAWD:
+    name: omnoawd
+    type: BIGINT
+    years: 2015-2024
+  XOMAWDP8:
+    name: omawdp8_flag
+    type: VARCHAR
+    flag_for: omawdp8
+    years: 2015-2024
+  OMAWDP8:
+    name: omawdp8
+    type: BIGINT
+    years: 2015-2024
+  XOMENRTP:
+    name: omenrtp_flag
+    type: VARCHAR
+    flag_for: omenrtp
+    years: 2015-2024
+  OMENRTP:
+    name: omenrtp
+    type: BIGINT
+    years: 2015-2024
+  XOMENRYP:
+    name: omenryp_flag
+    type: VARCHAR
+    flag_for: omenryp
+    years: 2015-2024
+  OMENRYP:
+    name: omenryp
+    type: BIGINT
+    years: 2015-2024
+  XOMENRAP:
+    name: omenrap_flag
+    type: VARCHAR
+    flag_for: omenrap
+    years: 2015-2024
+  OMENRAP:
+    name: omenrap
+    type: BIGINT
+    years: 2015-2024
+  OMFLAG:
+    name: omflag
+    type: BIGINT
+    years: '2015'
+  XOMRCHRT:
+    name: omrchrt_flag
+    type: VARCHAR
+    flag_for: omrchrt
+    years: 2017-2024
+  OMRCHRT:
+    name: omrchrt
+    type: BIGINT
+    years: 2017-2024
+  XOMEXCLS:
+    name: omexcls_flag
+    type: VARCHAR
+    flag_for: omexcls
+    years: 2017-2024
+  OMEXCLS:
+    name: omexcls
+    type: BIGINT
+    years: 2017-2024
+  XOMACHRT:
+    name: omachrt_flag
+    type: VARCHAR
+    flag_for: omachrt
+    years: 2017-2024
+  OMACHRT:
+    name: omachrt
+    type: BIGINT
+    years: 2017-2024
+  XOMCERT4:
+    name: omcert4_flag
+    type: VARCHAR
+    flag_for: omcert4
+    years: 2017-2024
+  OMCERT4:
+    name: omcert4
+    type: BIGINT
+    years: 2017-2024
+  XOMASSC4:
+    name: omassc4_flag
+    type: VARCHAR
+    flag_for: omassc4
+    years: 2017-2024
+  OMASSC4:
+    name: omassc4
+    type: BIGINT
+    years: 2017-2024
+  XOMBACH4:
+    name: ombach4_flag
+    type: VARCHAR
+    flag_for: ombach4
+    years: 2017-2024
+  OMBACH4:
+    name: ombach4
+    type: BIGINT
+    years: 2017-2024
+  XOMAWDN4:
+    name: omawdn4_flag
+    type: VARCHAR
+    flag_for: omawdn4
+    years: 2017-2024
+  OMAWDN4:
+    name: omawdn4
+    type: BIGINT
+    years: 2017-2024
+  XOMAWDP4:
+    name: omawdp4_flag
+    type: VARCHAR
+    flag_for: omawdp4
+    years: 2017-2024
+  OMAWDP4:
+    name: omawdp4
+    type: BIGINT
+    years: 2017-2024
+  XOMCERT6:
+    name: omcert6_flag
+    type: VARCHAR
+    flag_for: omcert6
+    years: 2017-2024
+  OMCERT6:
+    name: omcert6
+    type: BIGINT
+    years: 2017-2024
+  XOMASSC6:
+    name: omassc6_flag
+    type: VARCHAR
+    flag_for: omassc6
+    years: 2017-2024
+  OMASSC6:
+    name: omassc6
+    type: BIGINT
+    years: 2017-2024
+  XOMBACH6:
+    name: ombach6_flag
+    type: VARCHAR
+    flag_for: ombach6
+    years: 2017-2024
+  OMBACH6:
+    name: ombach6
+    type: BIGINT
+    years: 2017-2024
+  XOMCERT8:
+    name: omcert8_flag
+    type: VARCHAR
+    flag_for: omcert8
+    years: 2017-2024
+  OMCERT8:
+    name: omcert8
+    type: BIGINT
+    years: 2017-2024
+  XOMASSC8:
+    name: omassc8_flag
+    type: VARCHAR
+    flag_for: omassc8
+    years: 2017-2024
+  OMASSC8:
+    name: omassc8
+    type: BIGINT
+    years: 2017-2024
+  XOMBACH8:
+    name: ombach8_flag
+    type: VARCHAR
+    flag_for: ombach8
+    years: 2017-2024
+  OMBACH8:
+    name: ombach8
+    type: BIGINT
+    years: 2017-2024
+  XOMENRUP:
+    name: omenrup_flag
+    type: VARCHAR
+    flag_for: omenrup
+    years: 2017-2024
+  OMENRUP:
+    name: omenrup
+    type: BIGINT
+    years: 2017-2024

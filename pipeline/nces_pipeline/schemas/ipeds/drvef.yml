@@ -1,0 +1,369 @@
+source: ipeds
+family: drvef
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2024
+  ENRTOT:
+    name: enrtot
+    type: BIGINT
+    years: 2021-2024
+  FTE:
+    name: fte
+    type: BIGINT
+    years: 2021-2024
+  ENRFT:
+    name: enrft
+    type: BIGINT
+    years: 2021-2024
+  ENRPT:
+    name: enrpt
+    type: BIGINT
+    years: 2021-2024
+  PCTENRWH:
+    name: pctenrwh
+    type: BIGINT
+    years: 2021-2024
+  PCTENRBK:
+    name: pctenrbk
+    type: BIGINT
+    years: 2021-2024
+  PCTENRHS:
+    name: pctenrhs
+    type: BIGINT
+    years: 2021-2024
+  PCTENRAP:
+    name: pctenrap
+    type: BIGINT
+    years: 2021-2024
+  PCTENRAS:
+    name: pctenras
+    type: BIGINT
+    years: 2021-2024
+  PCTENRNH:
+    name: pctenrnh
+    type: BIGINT
+    years: 2021-2024
+  PCTENRAN:
+    name: pctenran
+    type: BIGINT
+    years: 2021-2024
+  PCTENR2M:
+    name: pctenr2m
+    type: BIGINT
+    years: 2021-2024
+  PCTENRUN:
+    name: pctenrun
+    type: BIGINT
+    years: 2021-2024
+  PCTENRNR:
+    name: pctenrnr
+    type: BIGINT
+    years: 2021-2024
+  PCTENRW:
+    name: pctenrw
+    type: BIGINT
+    years: 2021-2024
+  PCTFT1ST:
+    name: pctft1st
+    type: VARCHAR
+    years: 2021-2024
+  EFUG:
+    name: efug
+    type: BIGINT
+    years: 2021-2024
+  EFUG1ST:
+    name: efug1st
+    type: BIGINT
+    years: 2021-2024
+  EFUGTRN:
+    name: efugtrn
+    type: BIGINT
+    years: 2021-2024
+  EFUGCNT:
+    name: efugcnt
+    type: BIGINT
+    years: 2021-2024
+  EFUGNDG:
+    name: efugndg
+    type: BIGINT
+    years: 2021-2024
+  EFUGFT:
+    name: efugft
+    type: BIGINT
+    years: 2021-2024
+  EFUG1SFT:
+    name: efug1sft
+    type: BIGINT
+    years: 2021-2024
+  EFUGTRFT:
+    name: efugtrft
+    type: BIGINT
+    years: 2021-2024
+  EFUGCNFT:
+    name: efugcnft
+    type: BIGINT
+    years: 2021-2024
+  EFUGNDFT:
+    name: efugndft
+    type: BIGINT
+    years: 2021-2024
+  EFUGPT:
+    name: efugpt
+    type: BIGINT
+    years: 2021-2024
+  EFUG1SPT:
+    name: efug1spt
+    type: BIGINT
+    years: 2021-2024
+  EFUGTRPT:
+    name: efugtrpt
+    type: BIGINT
+    years: 2021-2024
+  EFUGCNPT:
+    name: efugcnpt
+    type: BIGINT
+    years: 2021-2024
+  EFUGNDPT:
+    name: efugndpt
+    type: BIGINT
+    years: 2021-2024
+  PCUENRWH:
+    name: pcuenrwh
+    type: VARCHAR
+    years: 2021-2024
+  PCUENRBK:
+    name: pcuenrbk
+    type: VARCHAR
+    years: 2021-2024
+  PCUENRHS:
+    name: pcuenrhs
+    type: VARCHAR
+    years: 2021-2024
+  PCUENRAP:
+    name: pcuenrap
+    type: VARCHAR
+    years: 2021-2024
+  PCUENRAS:
+    name: pcuenras
+    type: VARCHAR
+    years: 2021-2024
+  PCUENRNH:
+    name: pcuenrnh
+    type: VARCHAR
+    years: 2021-2024
+  PCUENRAN:
+    name: pcuenran
+    type: VARCHAR
+    years: 2021-2024
+  PCUENR2M:
+    name: pcuenr2m
+    type: VARCHAR
+    years: 2021-2024
+  PCUENRUN:
+    name: pcuenrun
+    type: VARCHAR
+    years: 2021-2024
+  PCUENRNR:
+    name: pcuenrnr
+    type: VARCHAR
+    years: 2021-2024
+  PCUENRW:
+    name: pcuenrw
+    type: VARCHAR
+    years: 2021-2024
+  EFGRAD:
+    name: efgrad
+    type: BIGINT
+    years: 2021-2024
+  EFGRADFT:
+    name: efgradft
+    type: BIGINT
+    years: 2021-2024
+  EFGRADPT:
+    name: efgradpt
+    type: BIGINT
+    years: 2021-2024
+  PCGENRWH:
+    name: pcgenrwh
+    type: VARCHAR
+    years: 2021-2024
+  PCGENRBK:
+    name: pcgenrbk
+    type: VARCHAR
+    years: 2021-2024
+  PCGENRHS:
+    name: pcgenrhs
+    type: VARCHAR
+    years: 2021-2024
+  PCGENRAP:
+    name: pcgenrap
+    type: VARCHAR
+    years: 2021-2024
+  PCGENRAS:
+    name: pcgenras
+    type: VARCHAR
+    years: 2021-2024
+  PCGENRNH:
+    name: pcgenrnh
+    type: VARCHAR
+    years: 2021-2024
+  PCGENRAN:
+    name: pcgenran
+    type: VARCHAR
+    years: 2021-2024
+  PCGENR2M:
+    name: pcgenr2m
+    type: VARCHAR
+    years: 2021-2024
+  PCGENRUN:
+    name: pcgenrun
+    type: VARCHAR
+    years: 2021-2024
+  PCGENRNR:
+    name: pcgenrnr
+    type: VARCHAR
+    years: 2021-2024
+  PCGENRW:
+    name: pcgenrw
+    type: VARCHAR
+    years: 2021-2024
+  DVEF01:
+    name: dvef01
+    type: VARCHAR
+    years: 2021-2024
+  DVEF02:
+    name: dvef02
+    type: VARCHAR
+    years: 2021-2024
+  DVEF03:
+    name: dvef03
+    type: VARCHAR
+    years: 2021-2024
+  DVEF05:
+    name: dvef05
+    type: VARCHAR
+    years: 2021-2024
+  DVEF06:
+    name: dvef06
+    type: VARCHAR
+    years: 2021-2024
+  DVEF07:
+    name: dvef07
+    type: VARCHAR
+    years: 2021-2024
+  DVEF09:
+    name: dvef09
+    type: VARCHAR
+    years: 2021-2024
+  DVEF10:
+    name: dvef10
+    type: VARCHAR
+    years: 2021-2024
+  DVEF11:
+    name: dvef11
+    type: VARCHAR
+    years: 2021-2024
+  DVEF13:
+    name: dvef13
+    type: VARCHAR
+    years: 2021-2024
+  DVEF14:
+    name: dvef14
+    type: VARCHAR
+    years: 2021-2024
+  DVEF15:
+    name: dvef15
+    type: VARCHAR
+    years: 2021-2024
+  DVEF16:
+    name: dvef16
+    type: VARCHAR
+    years: 2021-2024
+  RMINSTTN:
+    name: rminsttn
+    type: VARCHAR
+    years: 2021-2024
+  RMOUSTTN:
+    name: rmousttn
+    type: VARCHAR
+    years: 2021-2024
+  RMFRGNCN:
+    name: rmfrgncn
+    type: VARCHAR
+    years: 2021-2024
+  RMUNKNWN:
+    name: rmunknwn
+    type: VARCHAR
+    years: 2021-2024
+  RMINSTTP:
+    name: rminsttp
+    type: VARCHAR
+    years: 2021-2024
+  RMOUSTTP:
+    name: rmousttp
+    type: VARCHAR
+    years: 2021-2024
+  RMFRGNCP:
+    name: rmfrgncp
+    type: VARCHAR
+    years: 2021-2024
+  RMUNKNWP:
+    name: rmunknwp
+    type: VARCHAR
+    years: 2021-2024
+  PCTDEEXC:
+    name: pctdeexc
+    type: BIGINT
+    years: 2021-2024
+  PCTDESOM:
+    name: pctdesom
+    type: BIGINT
+    years: 2021-2024
+  PCTDENON:
+    name: pctdenon
+    type: BIGINT
+    years: 2021-2024
+  PCUDEEXC:
+    name: pcudeexc
+    type: VARCHAR
+    years: 2021-2024
+  PCUDESOM:
+    name: pcudesom
+    type: VARCHAR
+    years: 2021-2024
+  PCUDENON:
+    name: pcudenon
+    type: VARCHAR
+    years: 2021-2024
+  PCGDEEXC:
+    name: pcgdeexc
+    type: VARCHAR
+    years: 2021-2024
+  PCGDESOM:
+    name: pcgdesom
+    type: VARCHAR
+    years: 2021-2024
+  PCGDENON:
+    name: pcgdenon
+    type: VARCHAR
+    years: 2021-2024
+  PGRCOHRT:
+    name: pgrcohrt
+    type: VARCHAR
+    years: 2021-2022
+  RET_PCF:
+    name: ret_pcf
+    type: VARCHAR
+    years: 2021-2022
+  RET_PCP:
+    name: ret_pcp
+    type: VARCHAR
+    years: 2021-2022
+  STUFACR:
+    name: stufacr
+    type: VARCHAR
+    years: 2021-2022

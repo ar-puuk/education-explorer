@@ -1,0 +1,627 @@
+source: ipeds
+family: gr
+key:
+- unitid
+- grtype
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2024
+  GRTYPE:
+    name: grtype
+    type: BIGINT
+    years: 2000-2024
+  CHRTSTAT:
+    name: chrtstat
+    type: BIGINT
+    years: 2000-2024
+  SECTION:
+    name: section
+    type: BIGINT
+    years: 2000-2024
+  COHORT:
+    name: cohort
+    type: BIGINT
+    years: 2000-2024
+  LINE:
+    name: line
+    type: VARCHAR
+    years: 2000-2009,2011-2024
+  XGRRAC01:
+    name: xgrrac01
+    type: VARCHAR
+    years: 2000-2007
+  GRRACE01:
+    name: grrace01
+    type: BIGINT
+    years: 2000-2007
+  XGRRAC02:
+    name: xgrrac02
+    type: VARCHAR
+    years: 2000-2007
+  GRRACE02:
+    name: grrace02
+    type: BIGINT
+    years: 2000-2007
+  XGRRAC03:
+    name: xgrrac03
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE03:
+    name: grrace03
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC04:
+    name: xgrrac04
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE04:
+    name: grrace04
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC05:
+    name: xgrrac05
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE05:
+    name: grrace05
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC06:
+    name: xgrrac06
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE06:
+    name: grrace06
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC07:
+    name: xgrrac07
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE07:
+    name: grrace07
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC08:
+    name: xgrrac08
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE08:
+    name: grrace08
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC09:
+    name: xgrrac09
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE09:
+    name: grrace09
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC10:
+    name: xgrrac10
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE10:
+    name: grrace10
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC11:
+    name: xgrrac11
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE11:
+    name: grrace11
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC12:
+    name: xgrrac12
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE12:
+    name: grrace12
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC13:
+    name: xgrrac13
+    type: VARCHAR
+    years: 2000-2007
+  GRRACE13:
+    name: grrace13
+    type: BIGINT
+    years: 2000-2007
+  XGRRAC14:
+    name: xgrrac14
+    type: VARCHAR
+    years: 2000-2007
+  GRRACE14:
+    name: grrace14
+    type: BIGINT
+    years: 2000-2007
+  XGRRAC15:
+    name: xgrrac15
+    type: VARCHAR
+    years: 2000-2007
+  GRRACE15:
+    name: grrace15
+    type: BIGINT
+    years: 2000-2007
+  XGRRAC16:
+    name: xgrrac16
+    type: VARCHAR
+    years: 2000-2007
+  GRRACE16:
+    name: grrace16
+    type: BIGINT
+    years: 2000-2007
+  XGRRAC17:
+    name: xgrrac17
+    type: VARCHAR
+    years: 2000-2007
+  GRRACE17:
+    name: grrace17
+    type: BIGINT
+    years: 2000-2007
+  XGRRAC18:
+    name: xgrrac18
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE18:
+    name: grrace18
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC19:
+    name: xgrrac19
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE19:
+    name: grrace19
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC20:
+    name: xgrrac20
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE20:
+    name: grrace20
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC21:
+    name: xgrrac21
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE21:
+    name: grrace21
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC22:
+    name: xgrrac22
+    type: VARCHAR
+    years: 2000-2010
+  GRRACE22:
+    name: grrace22
+    type: BIGINT
+    years: 2000-2010
+  XGRRAC23:
+    name: xgrrac23
+    type: VARCHAR
+    years: 2000-2007
+  GRRACE23:
+    name: grrace23
+    type: BIGINT
+    years: 2000-2007
+  XGRRAC24:
+    name: xgrrac24
+    type: VARCHAR
+    years: 2000-2007
+  GRRACE24:
+    name: grrace24
+    type: BIGINT
+    years: 2000-2007
+  XGRTOTLT:
+    name: grtotlt_flag
+    type: VARCHAR
+    flag_for: grtotlt
+    years: 2008-2024
+  GRTOTLT:
+    name: grtotlt
+    type: BIGINT
+    years: 2008-2024
+  XGRTOTLM:
+    name: grtotlm_flag
+    type: VARCHAR
+    flag_for: grtotlm
+    years: 2008-2024
+  GRTOTLM:
+    name: grtotlm
+    type: BIGINT
+    years: 2008-2024
+  XGRTOTLW:
+    name: grtotlw_flag
+    type: VARCHAR
+    flag_for: grtotlw
+    years: 2008-2024
+  GRTOTLW:
+    name: grtotlw
+    type: BIGINT
+    years: 2008-2024
+  XDVGRAIT:
+    name: dvgrait_flag
+    type: VARCHAR
+    flag_for: dvgrait
+    years: 2008-2010
+  DVGRAIT:
+    name: dvgrait
+    type: BIGINT
+    years: 2008-2010
+  XDVGRAIM:
+    name: dvgraim_flag
+    type: VARCHAR
+    flag_for: dvgraim
+    years: 2008-2010
+  DVGRAIM:
+    name: dvgraim
+    type: BIGINT
+    years: 2008-2010
+  XDVGRAIW:
+    name: dvgraiw_flag
+    type: VARCHAR
+    flag_for: dvgraiw
+    years: 2008-2010
+  DVGRAIW:
+    name: dvgraiw
+    type: BIGINT
+    years: 2008-2010
+  XDVGRAPT:
+    name: dvgrapt_flag
+    type: VARCHAR
+    flag_for: dvgrapt
+    years: 2008-2010
+  DVGRAPT:
+    name: dvgrapt
+    type: BIGINT
+    years: 2008-2010
+  XDVGRAPM:
+    name: dvgrapm_flag
+    type: VARCHAR
+    flag_for: dvgrapm
+    years: 2008-2010
+  DVGRAPM:
+    name: dvgrapm
+    type: BIGINT
+    years: 2008-2010
+  XDVGRAPW:
+    name: dvgrapw_flag
+    type: VARCHAR
+    flag_for: dvgrapw
+    years: 2008-2010
+  DVGRAPW:
+    name: dvgrapw
+    type: BIGINT
+    years: 2008-2010
+  XDVGRBKT:
+    name: dvgrbkt_flag
+    type: VARCHAR
+    flag_for: dvgrbkt
+    years: 2008-2010
+  DVGRBKT:
+    name: dvgrbkt
+    type: BIGINT
+    years: 2008-2010
+  XDVGRBKM:
+    name: dvgrbkm_flag
+    type: VARCHAR
+    flag_for: dvgrbkm
+    years: 2008-2010
+  DVGRBKM:
+    name: dvgrbkm
+    type: BIGINT
+    years: 2008-2010
+  XDVGRBKW:
+    name: dvgrbkw_flag
+    type: VARCHAR
+    flag_for: dvgrbkw
+    years: 2008-2010
+  DVGRBKW:
+    name: dvgrbkw
+    type: BIGINT
+    years: 2008-2010
+  XDVGRHST:
+    name: dvgrhst_flag
+    type: VARCHAR
+    flag_for: dvgrhst
+    years: 2008-2010
+  DVGRHST:
+    name: dvgrhst
+    type: BIGINT
+    years: 2008-2010
+  XDVGRHSM:
+    name: dvgrhsm_flag
+    type: VARCHAR
+    flag_for: dvgrhsm
+    years: 2008-2010
+  DVGRHSM:
+    name: dvgrhsm
+    type: BIGINT
+    years: 2008-2010
+  XDVGRHSW:
+    name: dvgrhsw_flag
+    type: VARCHAR
+    flag_for: dvgrhsw
+    years: 2008-2010
+  DVGRHSW:
+    name: dvgrhsw
+    type: BIGINT
+    years: 2008-2010
+  XDVGRWHT:
+    name: dvgrwht_flag
+    type: VARCHAR
+    flag_for: dvgrwht
+    years: 2008-2010
+  DVGRWHT:
+    name: dvgrwht
+    type: BIGINT
+    years: 2008-2010
+  XDVGRWHM:
+    name: dvgrwhm_flag
+    type: VARCHAR
+    flag_for: dvgrwhm
+    years: 2008-2010
+  DVGRWHM:
+    name: dvgrwhm
+    type: BIGINT
+    years: 2008-2010
+  XDVGRWHW:
+    name: dvgrwhw_flag
+    type: VARCHAR
+    flag_for: dvgrwhw
+    years: 2008-2010
+  DVGRWHW:
+    name: dvgrwhw
+    type: VARCHAR
+    years: 2008-2010
+  XGRAIANT:
+    name: graiant_flag
+    type: VARCHAR
+    flag_for: graiant
+    years: 2008-2024
+  GRAIANT:
+    name: graiant
+    type: BIGINT
+    years: 2008-2024
+  XGRAIANM:
+    name: graianm_flag
+    type: VARCHAR
+    flag_for: graianm
+    years: 2008-2024
+  GRAIANM:
+    name: graianm
+    type: BIGINT
+    years: 2008-2024
+  XGRAIANW:
+    name: graianw_flag
+    type: VARCHAR
+    flag_for: graianw
+    years: 2008-2024
+  GRAIANW:
+    name: graianw
+    type: BIGINT
+    years: 2008-2024
+  XGRASIAT:
+    name: grasiat_flag
+    type: VARCHAR
+    flag_for: grasiat
+    years: 2008-2024
+  GRASIAT:
+    name: grasiat
+    type: BIGINT
+    years: 2008-2024
+  XGRASIAM:
+    name: grasiam_flag
+    type: VARCHAR
+    flag_for: grasiam
+    years: 2008-2024
+  GRASIAM:
+    name: grasiam
+    type: BIGINT
+    years: 2008-2024
+  XGRASIAW:
+    name: grasiaw_flag
+    type: VARCHAR
+    flag_for: grasiaw
+    years: 2008-2024
+  GRASIAW:
+    name: grasiaw
+    type: BIGINT
+    years: 2008-2024
+  XGRBKAAT:
+    name: grbkaat_flag
+    type: VARCHAR
+    flag_for: grbkaat
+    years: 2008-2024
+  GRBKAAT:
+    name: grbkaat
+    type: BIGINT
+    years: 2008-2024
+  XGRBKAAM:
+    name: grbkaam_flag
+    type: VARCHAR
+    flag_for: grbkaam
+    years: 2008-2024
+  GRBKAAM:
+    name: grbkaam
+    type: BIGINT
+    years: 2008-2024
+  XGRBKAAW:
+    name: grbkaaw_flag
+    type: VARCHAR
+    flag_for: grbkaaw
+    years: 2008-2024
+  GRBKAAW:
+    name: grbkaaw
+    type: BIGINT
+    years: 2008-2024
+  XGRHISPT:
+    name: grhispt_flag
+    type: VARCHAR
+    flag_for: grhispt
+    years: 2008-2024
+  GRHISPT:
+    name: grhispt
+    type: BIGINT
+    years: 2008-2024
+  XGRHISPM:
+    name: grhispm_flag
+    type: VARCHAR
+    flag_for: grhispm
+    years: 2008-2024
+  GRHISPM:
+    name: grhispm
+    type: BIGINT
+    years: 2008-2024
+  XGRHISPW:
+    name: grhispw_flag
+    type: VARCHAR
+    flag_for: grhispw
+    years: 2008-2024
+  GRHISPW:
+    name: grhispw
+    type: BIGINT
+    years: 2008-2024
+  XGRNHPIT:
+    name: grnhpit_flag
+    type: VARCHAR
+    flag_for: grnhpit
+    years: 2008-2024
+  GRNHPIT:
+    name: grnhpit
+    type: BIGINT
+    years: 2008-2024
+  XGRNHPIM:
+    name: grnhpim_flag
+    type: VARCHAR
+    flag_for: grnhpim
+    years: 2008-2024
+  GRNHPIM:
+    name: grnhpim
+    type: BIGINT
+    years: 2008-2024
+  XGRNHPIW:
+    name: grnhpiw_flag
+    type: VARCHAR
+    flag_for: grnhpiw
+    years: 2008-2024
+  GRNHPIW:
+    name: grnhpiw
+    type: BIGINT
+    years: 2008-2024
+  XGRWHITT:
+    name: grwhitt_flag
+    type: VARCHAR
+    flag_for: grwhitt
+    years: 2008-2024
+  GRWHITT:
+    name: grwhitt
+    type: BIGINT
+    years: 2008-2024
+  XGRWHITM:
+    name: grwhitm_flag
+    type: VARCHAR
+    flag_for: grwhitm
+    years: 2008-2024
+  GRWHITM:
+    name: grwhitm
+    type: BIGINT
+    years: 2008-2024
+  XGRWHITW:
+    name: grwhitw_flag
+    type: VARCHAR
+    flag_for: grwhitw
+    years: 2008-2024
+  GRWHITW:
+    name: grwhitw
+    type: BIGINT
+    years: 2008-2024
+  XGR2MORT:
+    name: gr2mort_flag
+    type: VARCHAR
+    flag_for: gr2mort
+    years: 2008-2024
+  GR2MORT:
+    name: gr2mort
+    type: BIGINT
+    years: 2008-2024
+  XGR2MORM:
+    name: gr2morm_flag
+    type: VARCHAR
+    flag_for: gr2morm
+    years: 2008-2024
+  GR2MORM:
+    name: gr2morm
+    type: BIGINT
+    years: 2008-2024
+  XGR2MORW:
+    name: gr2morw_flag
+    type: VARCHAR
+    flag_for: gr2morw
+    years: 2008-2024
+  GR2MORW:
+    name: gr2morw
+    type: BIGINT
+    years: 2008-2024
+  XGRUNKNT:
+    name: grunknt_flag
+    type: VARCHAR
+    flag_for: grunknt
+    years: 2008-2024
+  GRUNKNT:
+    name: grunknt
+    type: BIGINT
+    years: 2008-2024
+  XGRUNKNM:
+    name: grunknm_flag
+    type: VARCHAR
+    flag_for: grunknm
+    years: 2008-2024
+  GRUNKNM:
+    name: grunknm
+    type: BIGINT
+    years: 2008-2024
+  XGRUNKNW:
+    name: grunknw_flag
+    type: VARCHAR
+    flag_for: grunknw
+    years: 2008-2024
+  GRUNKNW:
+    name: grunknw
+    type: BIGINT
+    years: 2008-2024
+  XGRNRALT:
+    name: grnralt_flag
+    type: VARCHAR
+    flag_for: grnralt
+    years: 2008-2024
+  GRNRALT:
+    name: grnralt
+    type: BIGINT
+    years: 2008-2024
+  XGRNRALM:
+    name: grnralm_flag
+    type: VARCHAR
+    flag_for: grnralm
+    years: 2008-2024
+  GRNRALM:
+    name: grnralm
+    type: BIGINT
+    years: 2008-2024
+  XGRNRALW:
+    name: grnralw_flag
+    type: VARCHAR
+    flag_for: grnralw
+    years: 2008-2024
+  GRNRALW:
+    name: grnralw
+    type: BIGINT
+    years: 2008-2024

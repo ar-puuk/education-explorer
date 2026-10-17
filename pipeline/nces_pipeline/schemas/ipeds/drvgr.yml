@@ -1,0 +1,177 @@
+source: ipeds
+family: drvgr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2024
+  GRRTTOT:
+    name: grrttot
+    type: BIGINT
+    years: 2021-2024
+  GRRTM:
+    name: grrtm
+    type: VARCHAR
+    years: 2021-2024
+  GRRTW:
+    name: grrtw
+    type: VARCHAR
+    years: 2021-2024
+  GRRTAN:
+    name: grrtan
+    type: VARCHAR
+    years: 2021-2024
+  GRRTAP:
+    name: grrtap
+    type: VARCHAR
+    years: 2021-2024
+  GRRTAS:
+    name: grrtas
+    type: VARCHAR
+    years: 2021-2024
+  GRRTNH:
+    name: grrtnh
+    type: VARCHAR
+    years: 2021-2024
+  GRRTBK:
+    name: grrtbk
+    type: VARCHAR
+    years: 2021-2024
+  GRRTHS:
+    name: grrths
+    type: VARCHAR
+    years: 2021-2024
+  GRRTWH:
+    name: grrtwh
+    type: VARCHAR
+    years: 2021-2024
+  GRRT2M:
+    name: grrt2m
+    type: VARCHAR
+    years: 2021-2024
+  GRRTUN:
+    name: grrtun
+    type: VARCHAR
+    years: 2021-2024
+  GRRTNR:
+    name: grrtnr
+    type: VARCHAR
+    years: 2021-2024
+  TRRTTOT:
+    name: trrttot
+    type: VARCHAR
+    years: 2021-2024
+  GBA4RTT:
+    name: gba4rtt
+    type: VARCHAR
+    years: 2021-2024
+  GBA5RTT:
+    name: gba5rtt
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTT:
+    name: gba6rtt
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTM:
+    name: gba6rtm
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTW:
+    name: gba6rtw
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTAN:
+    name: gba6rtan
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTAP:
+    name: gba6rtap
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTAS:
+    name: gba6rtas
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTNH:
+    name: gba6rtnh
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTBK:
+    name: gba6rtbk
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTHS:
+    name: gba6rths
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTWH:
+    name: gba6rtwh
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RT2M:
+    name: gba6rt2m
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTUN:
+    name: gba6rtun
+    type: VARCHAR
+    years: 2021-2024
+  GBA6RTNR:
+    name: gba6rtnr
+    type: VARCHAR
+    years: 2021-2024
+  GBATRRT:
+    name: gbatrrt
+    type: VARCHAR
+    years: 2021-2024
+  PGGRRTT:
+    name: pggrrtt
+    type: VARCHAR
+    years: 2021-2024
+  PGBA6RT:
+    name: pgba6rt
+    type: VARCHAR
+    years: 2021-2024
+  SSGRRTT:
+    name: ssgrrtt
+    type: VARCHAR
+    years: 2021-2024
+  SSBA6RT:
+    name: ssba6rt
+    type: VARCHAR
+    years: 2021-2024
+  NRGRRTT:
+    name: nrgrrtt
+    type: VARCHAR
+    years: 2021-2024
+  NRBA6RT:
+    name: nrba6rt
+    type: VARCHAR
+    years: 2021-2024
+  BAGR100:
+    name: bagr100
+    type: VARCHAR
+    years: 2021-2022
+  BAGR150:
+    name: bagr150
+    type: VARCHAR
+    years: 2021-2022
+  BAGR200:
+    name: bagr200
+    type: VARCHAR
+    years: 2021-2022
+  L4GR100:
+    name: l4gr100
+    type: VARCHAR
+    years: 2021-2022
+  L4GR150:
+    name: l4gr150
+    type: VARCHAR
+    years: 2021-2022
+  L4GR200:
+    name: l4gr200
+    type: VARCHAR
+    years: 2021-2022

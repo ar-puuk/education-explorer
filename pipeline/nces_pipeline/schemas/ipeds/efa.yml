@@ -1,0 +1,676 @@
+source: ipeds
+family: efa
+key:
+- unitid
+- efalevel
+- line
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2024
+  LINE:
+    name: line
+    type: BIGINT
+    years: 2000-2024
+  SECTION:
+    name: section
+    type: BIGINT
+    years: 2000-2024
+  LSTUDY:
+    name: lstudy
+    type: BIGINT
+    years: 2000-2024
+  XEFRAC01:
+    name: xefrac01
+    type: VARCHAR
+    years: 2000-2007
+  EFRACE01:
+    name: efrace01
+    type: BIGINT
+    years: 2000-2007
+  XEFRAC02:
+    name: xefrac02
+    type: VARCHAR
+    years: 2000-2007
+  EFRACE02:
+    name: efrace02
+    type: BIGINT
+    years: 2000-2007
+  XEFRAC03:
+    name: xefrac03
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE03:
+    name: efrace03
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC04:
+    name: xefrac04
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE04:
+    name: efrace04
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC05:
+    name: xefrac05
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE05:
+    name: efrace05
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC06:
+    name: xefrac06
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE06:
+    name: efrace06
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC07:
+    name: xefrac07
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE07:
+    name: efrace07
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC08:
+    name: xefrac08
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE08:
+    name: efrace08
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC09:
+    name: xefrac09
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE09:
+    name: efrace09
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC10:
+    name: xefrac10
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE10:
+    name: efrace10
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC11:
+    name: xefrac11
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE11:
+    name: efrace11
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC12:
+    name: xefrac12
+    type: VARCHAR
+    years: 2000-2009
+  EFRACE12:
+    name: efrace12
+    type: BIGINT
+    years: 2000-2009
+  XEFRAC13:
+    name: xefrac13
+    type: VARCHAR
+    years: 2000-2007
+  EFRACE13:
+    name: efrace13
+    type: BIGINT
+    years: 2000-2007
+  XEFRAC14:
+    name: xefrac14
+    type: VARCHAR
+    years: 2000-2007
+  EFRACE14:
+    name: efrace14
+    type: BIGINT
+    years: 2000-2007
+  XEFRAC15:
+    name: xefrac15
+    type: VARCHAR
+    years: 2000-2007
+  EFRACE15:
+    name: efrace15
+    type: BIGINT
+    years: 2000-2007
+  XEFRAC16:
+    name: xefrac16
+    type: VARCHAR
+    years: 2000-2007
+  EFRACE16:
+    name: efrace16
+    type: BIGINT
+    years: 2000-2007
+  EFALEVEL:
+    name: efalevel
+    type: BIGINT
+    years: 2002-2024
+  XEFRAC17:
+    name: xefrac17
+    type: VARCHAR
+    years: 2002-2007
+  EFRACE17:
+    name: efrace17
+    type: BIGINT
+    years: 2002-2007
+  XEFRAC18:
+    name: xefrac18
+    type: VARCHAR
+    years: 2002-2009
+  EFRACE18:
+    name: efrace18
+    type: BIGINT
+    years: 2002-2009
+  XEFRAC19:
+    name: xefrac19
+    type: VARCHAR
+    years: 2002-2009
+  EFRACE19:
+    name: efrace19
+    type: BIGINT
+    years: 2002-2009
+  XEFRAC20:
+    name: xefrac20
+    type: VARCHAR
+    years: 2002-2009
+  EFRACE20:
+    name: efrace20
+    type: BIGINT
+    years: 2002-2009
+  XEFRAC21:
+    name: xefrac21
+    type: VARCHAR
+    years: 2002-2009
+  EFRACE21:
+    name: efrace21
+    type: BIGINT
+    years: 2002-2009
+  XEFRAC22:
+    name: xefrac22
+    type: VARCHAR
+    years: 2002-2009
+  EFRACE22:
+    name: efrace22
+    type: BIGINT
+    years: 2002-2009
+  XEFRAC23:
+    name: xefrac23
+    type: VARCHAR
+    years: 2002-2007
+  EFRACE23:
+    name: efrace23
+    type: BIGINT
+    years: 2002-2007
+  XEFRAC24:
+    name: xefrac24
+    type: VARCHAR
+    years: 2002-2007
+  EFRACE24:
+    name: efrace24
+    type: BIGINT
+    years: 2002-2007
+  XEFTOTLT:
+    name: eftotlt_flag
+    type: VARCHAR
+    flag_for: eftotlt
+    years: 2008-2024
+  EFTOTLT:
+    name: eftotlt
+    type: BIGINT
+    years: 2008-2024
+  XEFTOTLM:
+    name: eftotlm_flag
+    type: VARCHAR
+    flag_for: eftotlm
+    years: 2008-2024
+  EFTOTLM:
+    name: eftotlm
+    type: BIGINT
+    years: 2008-2024
+  XEFTOTLW:
+    name: eftotlw_flag
+    type: VARCHAR
+    flag_for: eftotlw
+    years: 2008-2024
+  EFTOTLW:
+    name: eftotlw
+    type: BIGINT
+    years: 2008-2024
+  XDVEFAIT:
+    name: dvefait_flag
+    type: VARCHAR
+    flag_for: dvefait
+    years: 2008-2009
+  DVEFAIT:
+    name: dvefait
+    type: BIGINT
+    years: 2008-2009
+  XDVEFAIM:
+    name: dvefaim_flag
+    type: VARCHAR
+    flag_for: dvefaim
+    years: 2008-2009
+  DVEFAIM:
+    name: dvefaim
+    type: BIGINT
+    years: 2008-2009
+  XDVEFAIW:
+    name: dvefaiw_flag
+    type: VARCHAR
+    flag_for: dvefaiw
+    years: 2008-2009
+  DVEFAIW:
+    name: dvefaiw
+    type: BIGINT
+    years: 2008-2009
+  XDVEFAPT:
+    name: dvefapt_flag
+    type: VARCHAR
+    flag_for: dvefapt
+    years: 2008-2009
+  DVEFAPT:
+    name: dvefapt
+    type: BIGINT
+    years: 2008-2009
+  XDVEFAPM:
+    name: dvefapm_flag
+    type: VARCHAR
+    flag_for: dvefapm
+    years: 2008-2009
+  DVEFAPM:
+    name: dvefapm
+    type: BIGINT
+    years: 2008-2009
+  XDVEFAPW:
+    name: dvefapw_flag
+    type: VARCHAR
+    flag_for: dvefapw
+    years: 2008-2009
+  DVEFAPW:
+    name: dvefapw
+    type: BIGINT
+    years: 2008-2009
+  XDVEFBKT:
+    name: dvefbkt_flag
+    type: VARCHAR
+    flag_for: dvefbkt
+    years: 2008-2009
+  DVEFBKT:
+    name: dvefbkt
+    type: BIGINT
+    years: 2008-2009
+  XDVEFBKM:
+    name: dvefbkm_flag
+    type: VARCHAR
+    flag_for: dvefbkm
+    years: 2008-2009
+  DVEFBKM:
+    name: dvefbkm
+    type: BIGINT
+    years: 2008-2009
+  XDVEFBKW:
+    name: dvefbkw_flag
+    type: VARCHAR
+    flag_for: dvefbkw
+    years: 2008-2009
+  DVEFBKW:
+    name: dvefbkw
+    type: BIGINT
+    years: 2008-2009
+  XDVEFHST:
+    name: dvefhst_flag
+    type: VARCHAR
+    flag_for: dvefhst
+    years: 2008-2009
+  DVEFHST:
+    name: dvefhst
+    type: BIGINT
+    years: 2008-2009
+  XDVEFHSM:
+    name: dvefhsm_flag
+    type: VARCHAR
+    flag_for: dvefhsm
+    years: 2008-2009
+  DVEFHSM:
+    name: dvefhsm
+    type: BIGINT
+    years: 2008-2009
+  XDVEFHSW:
+    name: dvefhsw_flag
+    type: VARCHAR
+    flag_for: dvefhsw
+    years: 2008-2009
+  DVEFHSW:
+    name: dvefhsw
+    type: BIGINT
+    years: 2008-2009
+  XDVEFWHT:
+    name: dvefwht_flag
+    type: VARCHAR
+    flag_for: dvefwht
+    years: 2008-2009
+  DVEFWHT:
+    name: dvefwht
+    type: BIGINT
+    years: 2008-2009
+  XDVEFWHM:
+    name: dvefwhm_flag
+    type: VARCHAR
+    flag_for: dvefwhm
+    years: 2008-2009
+  DVEFWHM:
+    name: dvefwhm
+    type: BIGINT
+    years: 2008-2009
+  XDVEFWHW:
+    name: dvefwhw_flag
+    type: VARCHAR
+    flag_for: dvefwhw
+    years: 2008-2009
+  DVEFWHW:
+    name: dvefwhw
+    type: BIGINT
+    years: 2008-2009
+  XEFAIANT:
+    name: efaiant_flag
+    type: VARCHAR
+    flag_for: efaiant
+    years: 2008-2024
+  EFAIANT:
+    name: efaiant
+    type: BIGINT
+    years: 2008-2024
+  XEFAIANM:
+    name: efaianm_flag
+    type: VARCHAR
+    flag_for: efaianm
+    years: 2008-2024
+  EFAIANM:
+    name: efaianm
+    type: BIGINT
+    years: 2008-2024
+  XEFAIANW:
+    name: efaianw_flag
+    type: VARCHAR
+    flag_for: efaianw
+    years: 2008-2024
+  EFAIANW:
+    name: efaianw
+    type: BIGINT
+    years: 2008-2024
+  XEFASIAT:
+    name: efasiat_flag
+    type: VARCHAR
+    flag_for: efasiat
+    years: 2008-2024
+  EFASIAT:
+    name: efasiat
+    type: BIGINT
+    years: 2008-2024
+  XEFASIAM:
+    name: efasiam_flag
+    type: VARCHAR
+    flag_for: efasiam
+    years: 2008-2024
+  EFASIAM:
+    name: efasiam
+    type: BIGINT
+    years: 2008-2024
+  XEFASIAW:
+    name: efasiaw_flag
+    type: VARCHAR
+    flag_for: efasiaw
+    years: 2008-2024
+  EFASIAW:
+    name: efasiaw
+    type: BIGINT
+    years: 2008-2024
+  XEFBKAAT:
+    name: efbkaat_flag
+    type: VARCHAR
+    flag_for: efbkaat
+    years: 2008-2024
+  EFBKAAT:
+    name: efbkaat
+    type: BIGINT
+    years: 2008-2024
+  XEFBKAAM:
+    name: efbkaam_flag
+    type: VARCHAR
+    flag_for: efbkaam
+    years: 2008-2024
+  EFBKAAM:
+    name: efbkaam
+    type: BIGINT
+    years: 2008-2024
+  XEFBKAAW:
+    name: efbkaaw_flag
+    type: VARCHAR
+    flag_for: efbkaaw
+    years: 2008-2024
+  EFBKAAW:
+    name: efbkaaw
+    type: BIGINT
+    years: 2008-2024
+  XEFHISPT:
+    name: efhispt_flag
+    type: VARCHAR
+    flag_for: efhispt
+    years: 2008-2024
+  EFHISPT:
+    name: efhispt
+    type: BIGINT
+    years: 2008-2024
+  XEFHISPM:
+    name: efhispm_flag
+    type: VARCHAR
+    flag_for: efhispm
+    years: 2008-2024
+  EFHISPM:
+    name: efhispm
+    type: BIGINT
+    years: 2008-2024
+  XEFHISPW:
+    name: efhispw_flag
+    type: VARCHAR
+    flag_for: efhispw
+    years: 2008-2024
+  EFHISPW:
+    name: efhispw
+    type: BIGINT
+    years: 2008-2024
+  XEFNHPIT:
+    name: efnhpit_flag
+    type: VARCHAR
+    flag_for: efnhpit
+    years: 2008-2024
+  EFNHPIT:
+    name: efnhpit
+    type: BIGINT
+    years: 2008-2024
+  XEFNHPIM:
+    name: efnhpim_flag
+    type: VARCHAR
+    flag_for: efnhpim
+    years: 2008-2024
+  EFNHPIM:
+    name: efnhpim
+    type: BIGINT
+    years: 2008-2024
+  XEFNHPIW:
+    name: efnhpiw_flag
+    type: VARCHAR
+    flag_for: efnhpiw
+    years: 2008-2024
+  EFNHPIW:
+    name: efnhpiw
+    type: BIGINT
+    years: 2008-2024
+  XEFWHITT:
+    name: efwhitt_flag
+    type: VARCHAR
+    flag_for: efwhitt
+    years: 2008-2024
+  EFWHITT:
+    name: efwhitt
+    type: BIGINT
+    years: 2008-2024
+  XEFWHITM:
+    name: efwhitm_flag
+    type: VARCHAR
+    flag_for: efwhitm
+    years: 2008-2024
+  EFWHITM:
+    name: efwhitm
+    type: BIGINT
+    years: 2008-2024
+  XEFWHITW:
+    name: efwhitw_flag
+    type: VARCHAR
+    flag_for: efwhitw
+    years: 2008-2024
+  EFWHITW:
+    name: efwhitw
+    type: BIGINT
+    years: 2008-2024
+  XEF2MORT:
+    name: ef2mort_flag
+    type: VARCHAR
+    flag_for: ef2mort
+    years: 2008-2024
+  EF2MORT:
+    name: ef2mort
+    type: BIGINT
+    years: 2008-2024
+  XEF2MORM:
+    name: ef2morm_flag
+    type: VARCHAR
+    flag_for: ef2morm
+    years: 2008-2024
+  EF2MORM:
+    name: ef2morm
+    type: BIGINT
+    years: 2008-2024
+  XEF2MORW:
+    name: ef2morw_flag
+    type: VARCHAR
+    flag_for: ef2morw
+    years: 2008-2024
+  EF2MORW:
+    name: ef2morw
+    type: BIGINT
+    years: 2008-2024
+  XEFUNKNT:
+    name: efunknt_flag
+    type: VARCHAR
+    flag_for: efunknt
+    years: 2008-2024
+  EFUNKNT:
+    name: efunknt
+    type: BIGINT
+    years: 2008-2024
+  XEFUNKNM:
+    name: efunknm_flag
+    type: VARCHAR
+    flag_for: efunknm
+    years: 2008-2024
+  EFUNKNM:
+    name: efunknm
+    type: BIGINT
+    years: 2008-2024
+  XEFUNKNW:
+    name: efunknw_flag
+    type: VARCHAR
+    flag_for: efunknw
+    years: 2008-2024
+  EFUNKNW:
+    name: efunknw
+    type: BIGINT
+    years: 2008-2024
+  XEFNRALT:
+    name: efnralt_flag
+    type: VARCHAR
+    flag_for: efnralt
+    years: 2008-2024
+  EFNRALT:
+    name: efnralt
+    type: BIGINT
+    years: 2008-2024
+  XEFNRALM:
+    name: efnralm_flag
+    type: VARCHAR
+    flag_for: efnralm
+    years: 2008-2024
+  EFNRALM:
+    name: efnralm
+    type: BIGINT
+    years: 2008-2024
+  XEFNRALW:
+    name: efnralw_flag
+    type: VARCHAR
+    flag_for: efnralw
+    years: 2008-2024
+  EFNRALW:
+    name: efnralw
+    type: BIGINT
+    years: 2008-2024
+  XEFGNDRU:
+    name: xefgndru
+    type: VARCHAR
+    years: '2022'
+  EFGNDRUN:
+    name: efgndrun
+    type: BIGINT
+    years: 2022-2024
+  XEFGNDRA:
+    name: xefgndra
+    type: VARCHAR
+    years: '2022'
+  EFGNDRAN:
+    name: efgndran
+    type: BIGINT
+    years: 2022-2024
+  XEFGNDRU_1:
+    name: xefgndru_1
+    type: VARCHAR
+    years: '2022'
+  EFGNDRUA:
+    name: efgndrua
+    type: BIGINT
+    years: 2022-2024
+  XEFGNDRK:
+    name: xefgndrk
+    type: VARCHAR
+    years: '2022'
+  EFGNDRKN:
+    name: efgndrkn
+    type: BIGINT
+    years: 2022-2024
+  XEFGNDRUN:
+    name: efgndrun_flag
+    type: VARCHAR
+    flag_for: efgndrun
+    years: 2023-2024
+  XEFGNDRAN:
+    name: efgndran_flag
+    type: VARCHAR
+    flag_for: efgndran
+    years: 2023-2024
+  XEFGNDRUA:
+    name: efgndrua_flag
+    type: VARCHAR
+    flag_for: efgndrua
+    years: 2023-2024
+  XEFGNDRKN:
+    name: efgndrkn_flag
+    type: VARCHAR
+    flag_for: efgndrkn
+    years: 2023-2024

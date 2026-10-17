@@ -1,0 +1,85 @@
+source: ipeds
+family: drval
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2024
+  LPBOOKSP:
+    name: lpbooksp
+    type: BIGINT
+    years: 2021-2024
+  LPMEDIAP:
+    name: lpmediap
+    type: BIGINT
+    years: 2021-2024
+  LPSERIAP:
+    name: lpseriap
+    type: BIGINT
+    years: 2021-2024
+  LEBOOKSP:
+    name: lebooksp
+    type: BIGINT
+    years: 2021-2024
+  LEDATABP:
+    name: ledatabp
+    type: BIGINT
+    years: 2021-2024
+  LEMEDIAP:
+    name: lemediap
+    type: BIGINT
+    years: 2021-2024
+  LESERIAP:
+    name: leseriap
+    type: BIGINT
+    years: 2021-2024
+  LSALWAGP:
+    name: lsalwagp
+    type: VARCHAR
+    years: 2021-2024
+  LFRNGBNP:
+    name: lfrngbnp
+    type: VARCHAR
+    years: 2021-2024
+  LEXMSBBP:
+    name: lexmsbbp
+    type: VARCHAR
+    years: 2021-2024
+  LEXMSCSP:
+    name: lexmscsp
+    type: VARCHAR
+    years: 2021-2024
+  LEXMSOTP:
+    name: lexmsotp
+    type: VARCHAR
+    years: 2021-2024
+  LEXOMTLP:
+    name: lexomtlp
+    type: VARCHAR
+    years: 2021-2024
+  LEXPTOTF:
+    name: lexptotf
+    type: VARCHAR
+    years: 2021-2024
+  LTOTLFTE:
+    name: ltotlfte
+    type: VARCHAR
+    years: 2021-2024
+  LLIBRFTE:
+    name: llibrfte
+    type: VARCHAR
+    years: 2021-2024
+  LPROFFTE:
+    name: lproffte
+    type: VARCHAR
+    years: 2021-2024
+  LPAIDFTE:
+    name: lpaidfte
+    type: VARCHAR
+    years: 2021-2024
+  LSTUDFTE:
+    name: lstudfte
+    type: VARCHAR
+    years: 2021-2024

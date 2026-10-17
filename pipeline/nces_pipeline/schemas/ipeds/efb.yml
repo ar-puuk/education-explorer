@@ -1,0 +1,109 @@
+source: ipeds
+family: efb
+key:
+- unitid
+- line
+- lstudy
+- efbage
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2024
+  LINE:
+    name: line
+    type: BIGINT
+    years: 2000-2024
+  SECTION:
+    name: section
+    type: BIGINT
+    years: '2000'
+  XEFAGE01:
+    name: efage01_flag
+    type: VARCHAR
+    flag_for: efage01
+    years: 2000-2024
+  EFAGE01:
+    name: efage01
+    type: BIGINT
+    years: 2000-2024
+  XEFAGE02:
+    name: efage02_flag
+    type: VARCHAR
+    flag_for: efage02
+    years: 2000-2024
+  EFAGE02:
+    name: efage02
+    type: BIGINT
+    years: 2000-2024
+  LSTUDY:
+    name: lstudy
+    type: BIGINT
+    years: 2001-2024
+  EFBAGE:
+    name: efbage
+    type: BIGINT
+    years: 2002-2024
+  XEFAGE03:
+    name: efage03_flag
+    type: VARCHAR
+    flag_for: efage03
+    years: 2002-2024
+  EFAGE03:
+    name: efage03
+    type: BIGINT
+    years: 2002-2024
+  XEFAGE04:
+    name: efage04_flag
+    type: VARCHAR
+    flag_for: efage04
+    years: 2002-2024
+  EFAGE04:
+    name: efage04
+    type: BIGINT
+    years: 2002-2024
+  XEFAGE05:
+    name: efage05_flag
+    type: VARCHAR
+    flag_for: efage05
+    years: 2002-2024
+  EFAGE05:
+    name: efage05
+    type: BIGINT
+    years: 2002-2024
+  XEFAGE06:
+    name: efage06_flag
+    type: VARCHAR
+    flag_for: efage06
+    years: 2002-2024
+  EFAGE06:
+    name: efage06
+    type: BIGINT
+    years: 2002-2024
+  XEFAGE07:
+    name: efage07_flag
+    type: VARCHAR
+    flag_for: efage07
+    years: 2002-2024
+  EFAGE07:
+    name: efage07
+    type: BIGINT
+    years: 2002-2024
+  XEFAGE08:
+    name: efage08_flag
+    type: VARCHAR
+    flag_for: efage08
+    years: 2002-2024
+  EFAGE08:
+    name: efage08
+    type: BIGINT
+    years: 2002-2024
+  XEFAGE09:
+    name: efage09_flag
+    type: VARCHAR
+    flag_for: efage09
+    years: 2002-2024
+  EFAGE09:
+    name: efage09
+    type: BIGINT
+    years: 2002-2024

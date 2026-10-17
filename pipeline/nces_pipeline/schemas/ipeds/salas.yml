@@ -1,0 +1,45 @@
+source: ipeds
+family: salas
+key:
+- unitid
+- empcount
+- arank
+- contract
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2001'
+  CONTRACT:
+    name: contract
+    type: BIGINT
+    years: '2001'
+  ARANK:
+    name: arank
+    type: BIGINT
+    years: '2001'
+  XEMPCOUN:
+    name: xempcoun
+    type: VARCHAR
+    years: '2001'
+  EMPCOUNT:
+    name: empcount
+    type: BIGINT
+    years: '2001'
+  XOUTLAYS:
+    name: outlays_flag
+    type: VARCHAR
+    flag_for: outlays
+    years: '2001'
+  OUTLAYS:
+    name: outlays
+    type: BIGINT
+    years: '2001'
+  XSAVERAG:
+    name: xsaverag
+    type: VARCHAR
+    years: '2001'
+  SAVERAGE:
+    name: saverage
+    type: BIGINT
+    years: '2001'

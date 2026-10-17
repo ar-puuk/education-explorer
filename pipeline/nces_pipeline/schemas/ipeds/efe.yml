@@ -1,0 +1,34 @@
+source: ipeds
+family: efe
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2001'
+  XGRCOHRT:
+    name: grcohrt_flag
+    type: VARCHAR
+    flag_for: grcohrt
+    years: '2001'
+  GRCOHRT:
+    name: grcohrt
+    type: BIGINT
+    years: '2001'
+  XUGENTER:
+    name: xugenter
+    type: VARCHAR
+    years: '2001'
+  UGENTERN:
+    name: ugentern
+    type: BIGINT
+    years: '2001'
+  XPGRCOHR:
+    name: xpgrcohr
+    type: VARCHAR
+    years: '2001'
+  PGRCOHRT:
+    name: pgrcohrt
+    type: BIGINT
+    years: '2001'

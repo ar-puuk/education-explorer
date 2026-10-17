@@ -1,0 +1,150 @@
+source: ipeds
+family: efd1
+key:
+- unitid
+- lstudy
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2001'
+  LSTUDY:
+    name: lstudy
+    type: BIGINT
+    years: '2001'
+  XFYRAC01:
+    name: xfyrac01
+    type: VARCHAR
+    years: '2001'
+  FYRACE01:
+    name: fyrace01
+    type: BIGINT
+    years: '2001'
+  XFYRAC02:
+    name: xfyrac02
+    type: VARCHAR
+    years: '2001'
+  FYRACE02:
+    name: fyrace02
+    type: BIGINT
+    years: '2001'
+  XFYRAC03:
+    name: xfyrac03
+    type: VARCHAR
+    years: '2001'
+  FYRACE03:
+    name: fyrace03
+    type: BIGINT
+    years: '2001'
+  XFYRAC04:
+    name: xfyrac04
+    type: VARCHAR
+    years: '2001'
+  FYRACE04:
+    name: fyrace04
+    type: BIGINT
+    years: '2001'
+  XFYRAC05:
+    name: xfyrac05
+    type: VARCHAR
+    years: '2001'
+  FYRACE05:
+    name: fyrace05
+    type: BIGINT
+    years: '2001'
+  XFYRAC06:
+    name: xfyrac06
+    type: VARCHAR
+    years: '2001'
+  FYRACE06:
+    name: fyrace06
+    type: BIGINT
+    years: '2001'
+  XFYRAC07:
+    name: xfyrac07
+    type: VARCHAR
+    years: '2001'
+  FYRACE07:
+    name: fyrace07
+    type: BIGINT
+    years: '2001'
+  XFYRAC08:
+    name: xfyrac08
+    type: VARCHAR
+    years: '2001'
+  FYRACE08:
+    name: fyrace08
+    type: BIGINT
+    years: '2001'
+  XFYRAC09:
+    name: xfyrac09
+    type: VARCHAR
+    years: '2001'
+  FYRACE09:
+    name: fyrace09
+    type: BIGINT
+    years: '2001'
+  XFYRAC10:
+    name: xfyrac10
+    type: VARCHAR
+    years: '2001'
+  FYRACE10:
+    name: fyrace10
+    type: BIGINT
+    years: '2001'
+  XFYRAC11:
+    name: xfyrac11
+    type: VARCHAR
+    years: '2001'
+  FYRACE11:
+    name: fyrace11
+    type: BIGINT
+    years: '2001'
+  XFYRAC12:
+    name: xfyrac12
+    type: VARCHAR
+    years: '2001'
+  FYRACE12:
+    name: fyrace12
+    type: BIGINT
+    years: '2001'
+  XFYRAC13:
+    name: xfyrac13
+    type: VARCHAR
+    years: '2001'
+  FYRACE13:
+    name: fyrace13
+    type: BIGINT
+    years: '2001'
+  XFYRAC14:
+    name: xfyrac14
+    type: VARCHAR
+    years: '2001'
+  FYRACE14:
+    name: fyrace14
+    type: BIGINT
+    years: '2001'
+  XFYRAC15:
+    name: xfyrac15
+    type: VARCHAR
+    years: '2001'
+  FYRACE15:
+    name: fyrace15
+    type: BIGINT
+    years: '2001'
+  XFYRAC16:
+    name: xfyrac16
+    type: VARCHAR
+    years: '2001'
+  FYRACE16:
+    name: fyrace16
+    type: BIGINT
+    years: '2001'
+  XFYRAC17:
+    name: xfyrac17
+    type: VARCHAR
+    years: '2001'
+  FYRACE17:
+    name: fyrace17
+    type: BIGINT
+    years: '2001'

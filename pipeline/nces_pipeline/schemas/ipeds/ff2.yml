@@ -1,0 +1,2146 @@
+source: ipeds
+family: ff2
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2024
+  XF2A01:
+    name: f2a01_flag
+    type: VARCHAR
+    flag_for: f2a01
+    years: 2000-2024
+  F2A01:
+    name: f2a01
+    type: BIGINT
+    years: 2000-2024
+  XF2A02:
+    name: f2a02_flag
+    type: VARCHAR
+    flag_for: f2a02
+    years: 2000-2024
+  F2A02:
+    name: f2a02
+    type: BIGINT
+    years: 2000-2024
+  XF2A03:
+    name: f2a03_flag
+    type: VARCHAR
+    flag_for: f2a03
+    years: 2000-2024
+  F2A03:
+    name: f2a03
+    type: BIGINT
+    years: 2000-2024
+  XF2A04:
+    name: f2a04_flag
+    type: VARCHAR
+    flag_for: f2a04
+    years: 2000-2024
+  F2A04:
+    name: f2a04
+    type: BIGINT
+    years: 2000-2024
+  XF2A05:
+    name: f2a05_flag
+    type: VARCHAR
+    flag_for: f2a05
+    years: 2000-2024
+  F2A05:
+    name: f2a05
+    type: BIGINT
+    years: 2000-2024
+  XF2A06:
+    name: f2a06_flag
+    type: VARCHAR
+    flag_for: f2a06
+    years: 2000-2024
+  F2A06:
+    name: f2a06
+    type: BIGINT
+    years: 2000-2024
+  XF2A11:
+    name: f2a11_flag
+    type: VARCHAR
+    flag_for: f2a11
+    years: 2000-2024
+  F2A11:
+    name: f2a11
+    type: BIGINT
+    years: 2000-2024
+  XF2A12:
+    name: f2a12_flag
+    type: VARCHAR
+    flag_for: f2a12
+    years: 2000-2024
+  F2A12:
+    name: f2a12
+    type: BIGINT
+    years: 2000-2024
+  XF2A13:
+    name: f2a13_flag
+    type: VARCHAR
+    flag_for: f2a13
+    years: 2000-2024
+  F2A13:
+    name: f2a13
+    type: BIGINT
+    years: 2000-2024
+  XF2A14:
+    name: f2a14_flag
+    type: VARCHAR
+    flag_for: f2a14
+    years: 2000-2009
+  F2A14:
+    name: f2a14
+    type: BIGINT
+    years: 2000-2009
+  XF2B01:
+    name: f2b01_flag
+    type: VARCHAR
+    flag_for: f2b01
+    years: 2000-2024
+  F2B01:
+    name: f2b01
+    type: BIGINT
+    years: 2000-2024
+  XF2B02:
+    name: f2b02_flag
+    type: VARCHAR
+    flag_for: f2b02
+    years: 2000-2024
+  F2B02:
+    name: f2b02
+    type: BIGINT
+    years: 2000-2024
+  XF2B03:
+    name: f2b03_flag
+    type: VARCHAR
+    flag_for: f2b03
+    years: 2000-2024
+  F2B03:
+    name: f2b03
+    type: BIGINT
+    years: 2000-2024
+  XF2B04:
+    name: f2b04_flag
+    type: VARCHAR
+    flag_for: f2b04
+    years: 2000-2024
+  F2B04:
+    name: f2b04
+    type: BIGINT
+    years: 2000-2024
+  XF2B05:
+    name: f2b05_flag
+    type: VARCHAR
+    flag_for: f2b05
+    years: 2000-2024
+  F2B05:
+    name: f2b05
+    type: BIGINT
+    years: 2000-2024
+  XF2B06:
+    name: f2b06_flag
+    type: VARCHAR
+    flag_for: f2b06
+    years: 2000-2024
+  F2B06:
+    name: f2b06
+    type: BIGINT
+    years: 2000-2024
+  XF2B07:
+    name: f2b07_flag
+    type: VARCHAR
+    flag_for: f2b07
+    years: 2000-2024
+  F2B07:
+    name: f2b07
+    type: BIGINT
+    years: 2000-2024
+  XF2C01:
+    name: f2c01_flag
+    type: VARCHAR
+    flag_for: f2c01
+    years: 2000-2024
+  F2C01:
+    name: f2c01
+    type: BIGINT
+    years: 2000-2024
+  XF2C02:
+    name: f2c02_flag
+    type: VARCHAR
+    flag_for: f2c02
+    years: 2000-2024
+  F2C02:
+    name: f2c02
+    type: BIGINT
+    years: 2000-2024
+  XF2C03:
+    name: f2c03_flag
+    type: VARCHAR
+    flag_for: f2c03
+    years: 2000-2024
+  F2C03:
+    name: f2c03
+    type: BIGINT
+    years: 2000-2024
+  XF2C04:
+    name: f2c04_flag
+    type: VARCHAR
+    flag_for: f2c04
+    years: 2000-2024
+  F2C04:
+    name: f2c04
+    type: BIGINT
+    years: 2000-2024
+  XF2C05:
+    name: f2c05_flag
+    type: VARCHAR
+    flag_for: f2c05
+    years: 2000-2024
+  F2C05:
+    name: f2c05
+    type: BIGINT
+    years: 2000-2024
+  XF2C06:
+    name: f2c06_flag
+    type: VARCHAR
+    flag_for: f2c06
+    years: 2000-2024
+  F2C06:
+    name: f2c06
+    type: BIGINT
+    years: 2000-2024
+  XF2C07:
+    name: f2c07_flag
+    type: VARCHAR
+    flag_for: f2c07
+    years: 2000-2024
+  F2C07:
+    name: f2c07
+    type: BIGINT
+    years: 2000-2024
+  XF2C08:
+    name: f2c08_flag
+    type: VARCHAR
+    flag_for: f2c08
+    years: 2000-2024
+  F2C08:
+    name: f2c08
+    type: BIGINT
+    years: 2000-2024
+  XF2C09:
+    name: f2c09_flag
+    type: VARCHAR
+    flag_for: f2c09
+    years: 2000-2024
+  F2C09:
+    name: f2c09
+    type: BIGINT
+    years: 2000-2024
+  XF2D01:
+    name: f2d01_flag
+    type: VARCHAR
+    flag_for: f2d01
+    years: 2000-2024
+  F2D01:
+    name: f2d01
+    type: BIGINT
+    years: 2000-2024
+  XF2D02:
+    name: f2d02_flag
+    type: VARCHAR
+    flag_for: f2d02
+    years: 2000-2024
+  F2D02:
+    name: f2d02
+    type: BIGINT
+    years: 2000-2024
+  XF2D03:
+    name: f2d03_flag
+    type: VARCHAR
+    flag_for: f2d03
+    years: 2000-2024
+  F2D03:
+    name: f2d03
+    type: BIGINT
+    years: 2000-2024
+  XF2D04:
+    name: f2d04_flag
+    type: VARCHAR
+    flag_for: f2d04
+    years: 2000-2024
+  F2D04:
+    name: f2d04
+    type: BIGINT
+    years: 2000-2024
+  XF2D05:
+    name: f2d05_flag
+    type: VARCHAR
+    flag_for: f2d05
+    years: 2000-2024
+  F2D05:
+    name: f2d05
+    type: BIGINT
+    years: 2000-2024
+  XF2D06:
+    name: f2d06_flag
+    type: VARCHAR
+    flag_for: f2d06
+    years: 2000-2024
+  F2D06:
+    name: f2d06
+    type: BIGINT
+    years: 2000-2024
+  XF2D07:
+    name: f2d07_flag
+    type: VARCHAR
+    flag_for: f2d07
+    years: 2000-2024
+  F2D07:
+    name: f2d07
+    type: BIGINT
+    years: 2000-2024
+  XF2D08:
+    name: f2d08_flag
+    type: VARCHAR
+    flag_for: f2d08
+    years: 2000-2024
+  F2D08:
+    name: f2d08
+    type: BIGINT
+    years: 2000-2024
+  XF2D09:
+    name: f2d09_flag
+    type: VARCHAR
+    flag_for: f2d09
+    years: 2000-2024
+  F2D09:
+    name: f2d09
+    type: BIGINT
+    years: 2000-2024
+  XF2D10:
+    name: f2d10_flag
+    type: VARCHAR
+    flag_for: f2d10
+    years: 2000-2024
+  F2D10:
+    name: f2d10
+    type: BIGINT
+    years: 2000-2024
+  XF2D11:
+    name: f2d11_flag
+    type: VARCHAR
+    flag_for: f2d11
+    years: 2000-2024
+  F2D11:
+    name: f2d11
+    type: BIGINT
+    years: 2000-2024
+  XF2D12:
+    name: f2d12_flag
+    type: VARCHAR
+    flag_for: f2d12
+    years: 2000-2024
+  F2D12:
+    name: f2d12
+    type: BIGINT
+    years: 2000-2024
+  XF2D13:
+    name: f2d13_flag
+    type: VARCHAR
+    flag_for: f2d13
+    years: 2000-2024
+  F2D13:
+    name: f2d13
+    type: BIGINT
+    years: 2000-2024
+  XF2D14:
+    name: f2d14_flag
+    type: VARCHAR
+    flag_for: f2d14
+    years: 2000-2024
+  F2D14:
+    name: f2d14
+    type: BIGINT
+    years: 2000-2024
+  XF2D15:
+    name: f2d15_flag
+    type: VARCHAR
+    flag_for: f2d15
+    years: 2000-2024
+  F2D15:
+    name: f2d15
+    type: BIGINT
+    years: 2000-2024
+  XF2D16:
+    name: f2d16_flag
+    type: VARCHAR
+    flag_for: f2d16
+    years: 2000-2024
+  F2D16:
+    name: f2d16
+    type: BIGINT
+    years: 2000-2024
+  XF2E011:
+    name: f2e011_flag
+    type: VARCHAR
+    flag_for: f2e011
+    years: 2000-2024
+  F2E011:
+    name: f2e011
+    type: BIGINT
+    years: 2000-2024
+  XF2E012:
+    name: f2e012_flag
+    type: VARCHAR
+    flag_for: f2e012
+    years: 2000-2024
+  F2E012:
+    name: f2e012
+    type: BIGINT
+    years: 2000-2024
+  XF2E021:
+    name: f2e021_flag
+    type: VARCHAR
+    flag_for: f2e021
+    years: 2000-2024
+  F2E021:
+    name: f2e021
+    type: BIGINT
+    years: 2000-2024
+  XF2E022:
+    name: f2e022_flag
+    type: VARCHAR
+    flag_for: f2e022
+    years: 2000-2024
+  F2E022:
+    name: f2e022
+    type: BIGINT
+    years: 2000-2024
+  XF2E031:
+    name: f2e031_flag
+    type: VARCHAR
+    flag_for: f2e031
+    years: 2000-2024
+  F2E031:
+    name: f2e031
+    type: BIGINT
+    years: 2000-2024
+  XF2E032:
+    name: f2e032_flag
+    type: VARCHAR
+    flag_for: f2e032
+    years: 2000-2024
+  F2E032:
+    name: f2e032
+    type: BIGINT
+    years: 2000-2024
+  XF2E041:
+    name: f2e041_flag
+    type: VARCHAR
+    flag_for: f2e041
+    years: 2000-2024
+  F2E041:
+    name: f2e041
+    type: BIGINT
+    years: 2000-2024
+  XF2E042:
+    name: f2e042_flag
+    type: VARCHAR
+    flag_for: f2e042
+    years: 2000-2024
+  F2E042:
+    name: f2e042
+    type: BIGINT
+    years: 2000-2024
+  XF2E051:
+    name: f2e051_flag
+    type: VARCHAR
+    flag_for: f2e051
+    years: 2000-2024
+  F2E051:
+    name: f2e051
+    type: BIGINT
+    years: 2000-2024
+  XF2E052:
+    name: f2e052_flag
+    type: VARCHAR
+    flag_for: f2e052
+    years: 2000-2024
+  F2E052:
+    name: f2e052
+    type: BIGINT
+    years: 2000-2024
+  XF2E061:
+    name: f2e061_flag
+    type: VARCHAR
+    flag_for: f2e061
+    years: 2000-2024
+  F2E061:
+    name: f2e061
+    type: BIGINT
+    years: 2000-2024
+  XF2E062:
+    name: f2e062_flag
+    type: VARCHAR
+    flag_for: f2e062
+    years: 2000-2024
+  F2E062:
+    name: f2e062
+    type: BIGINT
+    years: 2000-2024
+  XF2E071:
+    name: f2e071_flag
+    type: VARCHAR
+    flag_for: f2e071
+    years: 2000-2024
+  F2E071:
+    name: f2e071
+    type: BIGINT
+    years: 2000-2024
+  XF2E072:
+    name: f2e072_flag
+    type: VARCHAR
+    flag_for: f2e072
+    years: 2000-2024
+  F2E072:
+    name: f2e072
+    type: BIGINT
+    years: 2000-2024
+  XF2E081:
+    name: f2e081_flag
+    type: VARCHAR
+    flag_for: f2e081
+    years: 2000-2024
+  F2E081:
+    name: f2e081
+    type: BIGINT
+    years: 2000-2024
+  XF2E082:
+    name: f2e082_flag
+    type: VARCHAR
+    flag_for: f2e082
+    years: 2000-2009
+  F2E082:
+    name: f2e082
+    type: BIGINT
+    years: 2000-2009
+  XF2E091:
+    name: f2e091_flag
+    type: VARCHAR
+    flag_for: f2e091
+    years: 2000-2024
+  F2E091:
+    name: f2e091
+    type: BIGINT
+    years: 2000-2024
+  XF2E092:
+    name: f2e092_flag
+    type: VARCHAR
+    flag_for: f2e092
+    years: 2000-2024
+  F2E092:
+    name: f2e092
+    type: BIGINT
+    years: 2000-2024
+  XF2E101:
+    name: f2e101_flag
+    type: VARCHAR
+    flag_for: f2e101
+    years: 2000-2024
+  F2E101:
+    name: f2e101
+    type: BIGINT
+    years: 2000-2024
+  XF2E102:
+    name: f2e102_flag
+    type: VARCHAR
+    flag_for: f2e102
+    years: 2000-2024
+  F2E102:
+    name: f2e102
+    type: BIGINT
+    years: 2000-2024
+  XF2E111:
+    name: f2e111_flag
+    type: VARCHAR
+    flag_for: f2e111
+    years: 2000-2015
+  F2E111:
+    name: f2e111
+    type: BIGINT
+    years: 2000-2015
+  XF2E112:
+    name: f2e112_flag
+    type: VARCHAR
+    flag_for: f2e112
+    years: 2000-2015
+  F2E112:
+    name: f2e112
+    type: BIGINT
+    years: 2000-2015
+  XF2E121:
+    name: f2e121_flag
+    type: VARCHAR
+    flag_for: f2e121
+    years: 2000-2024
+  F2E121:
+    name: f2e121
+    type: BIGINT
+    years: 2000-2024
+  XF2E122:
+    name: f2e122_flag
+    type: VARCHAR
+    flag_for: f2e122
+    years: 2000-2024
+  F2E122:
+    name: f2e122
+    type: BIGINT
+    years: 2000-2024
+  XF2E141:
+    name: f2e141_flag
+    type: VARCHAR
+    flag_for: f2e141
+    years: 2000-2001
+  F2E141:
+    name: f2e141
+    type: BIGINT
+    years: 2000-2001
+  XF2E151:
+    name: f2e151_flag
+    type: VARCHAR
+    flag_for: f2e151
+    years: 2000-2001
+  F2E151:
+    name: f2e151
+    type: BIGINT
+    years: 2000-2001
+  XF2E161:
+    name: f2e161_flag
+    type: VARCHAR
+    flag_for: f2e161
+    years: 2000-2001
+  F2E161:
+    name: f2e161
+    type: BIGINT
+    years: 2000-2001
+  XF2E171:
+    name: f2e171_flag
+    type: VARCHAR
+    flag_for: f2e171
+    years: 2000-2001
+  F2E171:
+    name: f2e171
+    type: BIGINT
+    years: 2000-2001
+  XF2E013:
+    name: f2e013_flag
+    type: VARCHAR
+    flag_for: f2e013
+    years: 2002-2015
+  F2E013:
+    name: f2e013
+    type: BIGINT
+    years: 2002-2015
+  XF2E014:
+    name: f2e014_flag
+    type: VARCHAR
+    flag_for: f2e014
+    years: 2002-2015
+  F2E014:
+    name: f2e014
+    type: BIGINT
+    years: 2002-2015
+  XF2E015:
+    name: f2e015_flag
+    type: VARCHAR
+    flag_for: f2e015
+    years: 2002-2015
+  F2E015:
+    name: f2e015
+    type: BIGINT
+    years: 2002-2015
+  XF2E016:
+    name: f2e016_flag
+    type: VARCHAR
+    flag_for: f2e016
+    years: 2002-2015
+  F2E016:
+    name: f2e016
+    type: BIGINT
+    years: 2002-2015
+  XF2E017:
+    name: f2e017_flag
+    type: VARCHAR
+    flag_for: f2e017
+    years: 2002-2015
+  F2E017:
+    name: f2e017
+    type: BIGINT
+    years: 2002-2015
+  XF2E023:
+    name: f2e023_flag
+    type: VARCHAR
+    flag_for: f2e023
+    years: 2002-2015
+  F2E023:
+    name: f2e023
+    type: BIGINT
+    years: 2002-2015
+  XF2E024:
+    name: f2e024_flag
+    type: VARCHAR
+    flag_for: f2e024
+    years: 2002-2015
+  F2E024:
+    name: f2e024
+    type: BIGINT
+    years: 2002-2015
+  XF2E025:
+    name: f2e025_flag
+    type: VARCHAR
+    flag_for: f2e025
+    years: 2002-2015
+  F2E025:
+    name: f2e025
+    type: BIGINT
+    years: 2002-2015
+  XF2E026:
+    name: f2e026_flag
+    type: VARCHAR
+    flag_for: f2e026
+    years: 2002-2015
+  F2E026:
+    name: f2e026
+    type: BIGINT
+    years: 2002-2015
+  XF2E027:
+    name: f2e027_flag
+    type: VARCHAR
+    flag_for: f2e027
+    years: 2002-2015
+  F2E027:
+    name: f2e027
+    type: BIGINT
+    years: 2002-2015
+  XF2E033:
+    name: f2e033_flag
+    type: VARCHAR
+    flag_for: f2e033
+    years: 2002-2015
+  F2E033:
+    name: f2e033
+    type: BIGINT
+    years: 2002-2015
+  XF2E034:
+    name: f2e034_flag
+    type: VARCHAR
+    flag_for: f2e034
+    years: 2002-2015
+  F2E034:
+    name: f2e034
+    type: BIGINT
+    years: 2002-2015
+  XF2E035:
+    name: f2e035_flag
+    type: VARCHAR
+    flag_for: f2e035
+    years: 2002-2015
+  F2E035:
+    name: f2e035
+    type: BIGINT
+    years: 2002-2015
+  XF2E036:
+    name: f2e036_flag
+    type: VARCHAR
+    flag_for: f2e036
+    years: 2002-2015
+  F2E036:
+    name: f2e036
+    type: BIGINT
+    years: 2002-2015
+  XF2E037:
+    name: f2e037_flag
+    type: VARCHAR
+    flag_for: f2e037
+    years: 2002-2015
+  F2E037:
+    name: f2e037
+    type: BIGINT
+    years: 2002-2015
+  XF2E043:
+    name: f2e043_flag
+    type: VARCHAR
+    flag_for: f2e043
+    years: 2002-2015
+  F2E043:
+    name: f2e043
+    type: BIGINT
+    years: 2002-2015
+  XF2E044:
+    name: f2e044_flag
+    type: VARCHAR
+    flag_for: f2e044
+    years: 2002-2015
+  F2E044:
+    name: f2e044
+    type: BIGINT
+    years: 2002-2015
+  XF2E045:
+    name: f2e045_flag
+    type: VARCHAR
+    flag_for: f2e045
+    years: 2002-2015
+  F2E045:
+    name: f2e045
+    type: BIGINT
+    years: 2002-2015
+  XF2E046:
+    name: f2e046_flag
+    type: VARCHAR
+    flag_for: f2e046
+    years: 2002-2015
+  F2E046:
+    name: f2e046
+    type: BIGINT
+    years: 2002-2015
+  XF2E047:
+    name: f2e047_flag
+    type: VARCHAR
+    flag_for: f2e047
+    years: 2002-2015
+  F2E047:
+    name: f2e047
+    type: BIGINT
+    years: 2002-2015
+  XF2E053:
+    name: f2e053_flag
+    type: VARCHAR
+    flag_for: f2e053
+    years: 2002-2015
+  F2E053:
+    name: f2e053
+    type: BIGINT
+    years: 2002-2015
+  XF2E054:
+    name: f2e054_flag
+    type: VARCHAR
+    flag_for: f2e054
+    years: 2002-2015
+  F2E054:
+    name: f2e054
+    type: BIGINT
+    years: 2002-2015
+  XF2E055:
+    name: f2e055_flag
+    type: VARCHAR
+    flag_for: f2e055
+    years: 2002-2015
+  F2E055:
+    name: f2e055
+    type: BIGINT
+    years: 2002-2015
+  XF2E056:
+    name: f2e056_flag
+    type: VARCHAR
+    flag_for: f2e056
+    years: 2002-2015
+  F2E056:
+    name: f2e056
+    type: BIGINT
+    years: 2002-2015
+  XF2E057:
+    name: f2e057_flag
+    type: VARCHAR
+    flag_for: f2e057
+    years: 2002-2015
+  F2E057:
+    name: f2e057
+    type: BIGINT
+    years: 2002-2015
+  XF2E063:
+    name: f2e063_flag
+    type: VARCHAR
+    flag_for: f2e063
+    years: 2002-2015
+  F2E063:
+    name: f2e063
+    type: BIGINT
+    years: 2002-2015
+  XF2E064:
+    name: f2e064_flag
+    type: VARCHAR
+    flag_for: f2e064
+    years: 2002-2015
+  F2E064:
+    name: f2e064
+    type: BIGINT
+    years: 2002-2015
+  XF2E065:
+    name: f2e065_flag
+    type: VARCHAR
+    flag_for: f2e065
+    years: 2002-2015
+  F2E065:
+    name: f2e065
+    type: BIGINT
+    years: 2002-2015
+  XF2E066:
+    name: f2e066_flag
+    type: VARCHAR
+    flag_for: f2e066
+    years: 2002-2015
+  F2E066:
+    name: f2e066
+    type: BIGINT
+    years: 2002-2015
+  XF2E067:
+    name: f2e067_flag
+    type: VARCHAR
+    flag_for: f2e067
+    years: 2002-2015
+  F2E067:
+    name: f2e067
+    type: BIGINT
+    years: 2002-2015
+  XF2E073:
+    name: f2e073_flag
+    type: VARCHAR
+    flag_for: f2e073
+    years: 2002-2015
+  F2E073:
+    name: f2e073
+    type: BIGINT
+    years: 2002-2015
+  XF2E074:
+    name: f2e074_flag
+    type: VARCHAR
+    flag_for: f2e074
+    years: 2002-2015
+  F2E074:
+    name: f2e074
+    type: BIGINT
+    years: 2002-2015
+  XF2E075:
+    name: f2e075_flag
+    type: VARCHAR
+    flag_for: f2e075
+    years: 2002-2015
+  F2E075:
+    name: f2e075
+    type: BIGINT
+    years: 2002-2015
+  XF2E076:
+    name: f2e076_flag
+    type: VARCHAR
+    flag_for: f2e076
+    years: 2002-2015
+  F2E076:
+    name: f2e076
+    type: BIGINT
+    years: 2002-2015
+  XF2E077:
+    name: f2e077_flag
+    type: VARCHAR
+    flag_for: f2e077
+    years: 2002-2015
+  F2E077:
+    name: f2e077
+    type: BIGINT
+    years: 2002-2015
+  XF2E083:
+    name: f2e083_flag
+    type: VARCHAR
+    flag_for: f2e083
+    years: 2002-2009
+  F2E083:
+    name: f2e083
+    type: BIGINT
+    years: 2002-2009
+  XF2E084:
+    name: f2e084_flag
+    type: VARCHAR
+    flag_for: f2e084
+    years: 2002-2009
+  F2E084:
+    name: f2e084
+    type: BIGINT
+    years: 2002-2009
+  XF2E085:
+    name: f2e085_flag
+    type: VARCHAR
+    flag_for: f2e085
+    years: 2002-2009
+  F2E085:
+    name: f2e085
+    type: BIGINT
+    years: 2002-2009
+  XF2E086:
+    name: f2e086_flag
+    type: VARCHAR
+    flag_for: f2e086
+    years: 2002-2009
+  F2E086:
+    name: f2e086
+    type: BIGINT
+    years: 2002-2009
+  XF2E087:
+    name: f2e087_flag
+    type: VARCHAR
+    flag_for: f2e087
+    years: 2002-2015
+  F2E087:
+    name: f2e087
+    type: BIGINT
+    years: 2002-2015
+  XF2E093:
+    name: f2e093_flag
+    type: VARCHAR
+    flag_for: f2e093
+    years: 2002-2015
+  F2E093:
+    name: f2e093
+    type: BIGINT
+    years: 2002-2015
+  XF2E094:
+    name: f2e094_flag
+    type: VARCHAR
+    flag_for: f2e094
+    years: 2002-2015
+  F2E094:
+    name: f2e094
+    type: BIGINT
+    years: 2002-2015
+  XF2E095:
+    name: f2e095_flag
+    type: VARCHAR
+    flag_for: f2e095
+    years: 2002-2015
+  F2E095:
+    name: f2e095
+    type: BIGINT
+    years: 2002-2015
+  XF2E096:
+    name: f2e096_flag
+    type: VARCHAR
+    flag_for: f2e096
+    years: 2002-2015
+  F2E096:
+    name: f2e096
+    type: BIGINT
+    years: 2002-2015
+  XF2E097:
+    name: f2e097_flag
+    type: VARCHAR
+    flag_for: f2e097
+    years: 2002-2015
+  F2E097:
+    name: f2e097
+    type: BIGINT
+    years: 2002-2015
+  XF2E103:
+    name: f2e103_flag
+    type: VARCHAR
+    flag_for: f2e103
+    years: 2002-2015
+  F2E103:
+    name: f2e103
+    type: BIGINT
+    years: 2002-2015
+  XF2E104:
+    name: f2e104_flag
+    type: VARCHAR
+    flag_for: f2e104
+    years: 2002-2015
+  F2E104:
+    name: f2e104
+    type: BIGINT
+    years: 2002-2015
+  XF2E105:
+    name: f2e105_flag
+    type: VARCHAR
+    flag_for: f2e105
+    years: 2002-2015
+  F2E105:
+    name: f2e105
+    type: BIGINT
+    years: 2002-2015
+  XF2E106:
+    name: f2e106_flag
+    type: VARCHAR
+    flag_for: f2e106
+    years: 2002-2015
+  F2E106:
+    name: f2e106
+    type: BIGINT
+    years: 2002-2015
+  XF2E107:
+    name: f2e107_flag
+    type: VARCHAR
+    flag_for: f2e107
+    years: 2002-2015
+  F2E107:
+    name: f2e107
+    type: BIGINT
+    years: 2002-2015
+  XF2E113:
+    name: f2e113_flag
+    type: VARCHAR
+    flag_for: f2e113
+    years: 2002-2015
+  F2E113:
+    name: f2e113
+    type: BIGINT
+    years: 2002-2015
+  XF2E114:
+    name: f2e114_flag
+    type: VARCHAR
+    flag_for: f2e114
+    years: 2002-2015
+  F2E114:
+    name: f2e114
+    type: BIGINT
+    years: 2002-2015
+  XF2E115:
+    name: f2e115_flag
+    type: VARCHAR
+    flag_for: f2e115
+    years: 2002-2015
+  F2E115:
+    name: f2e115
+    type: BIGINT
+    years: 2002-2015
+  XF2E116:
+    name: f2e116_flag
+    type: VARCHAR
+    flag_for: f2e116
+    years: 2002-2015
+  F2E116:
+    name: f2e116
+    type: BIGINT
+    years: 2002-2015
+  XF2E117:
+    name: f2e117_flag
+    type: VARCHAR
+    flag_for: f2e117
+    years: 2002-2015
+  F2E117:
+    name: f2e117
+    type: BIGINT
+    years: 2002-2015
+  XF2E123:
+    name: f2e123_flag
+    type: VARCHAR
+    flag_for: f2e123
+    years: 2002-2015
+  F2E123:
+    name: f2e123
+    type: BIGINT
+    years: 2002-2015
+  XF2E124:
+    name: f2e124_flag
+    type: VARCHAR
+    flag_for: f2e124
+    years: 2002-2015
+  F2E124:
+    name: f2e124
+    type: BIGINT
+    years: 2002-2015
+  XF2E125:
+    name: f2e125_flag
+    type: VARCHAR
+    flag_for: f2e125
+    years: 2002-2015
+  F2E125:
+    name: f2e125
+    type: BIGINT
+    years: 2002-2015
+  XF2E126:
+    name: f2e126_flag
+    type: VARCHAR
+    flag_for: f2e126
+    years: 2002-2015
+  F2E126:
+    name: f2e126
+    type: BIGINT
+    years: 2002-2015
+  XF2E127:
+    name: f2e127_flag
+    type: VARCHAR
+    flag_for: f2e127
+    years: 2002-2015
+  F2E127:
+    name: f2e127
+    type: BIGINT
+    years: 2002-2015
+  XF2E131:
+    name: f2e131_flag
+    type: VARCHAR
+    flag_for: f2e131
+    years: 2002-2024
+  F2E131:
+    name: f2e131
+    type: BIGINT
+    years: 2002-2024
+  XF2E132:
+    name: f2e132_flag
+    type: VARCHAR
+    flag_for: f2e132
+    years: 2002-2024
+  F2E132:
+    name: f2e132
+    type: BIGINT
+    years: 2002-2024
+  XF2E133:
+    name: f2e133_flag
+    type: VARCHAR
+    flag_for: f2e133
+    years: 2002-2024
+  F2E133:
+    name: f2e133
+    type: BIGINT
+    years: 2002-2024
+  XF2E134:
+    name: f2e134_flag
+    type: VARCHAR
+    flag_for: f2e134
+    years: 2002-2024
+  F2E134:
+    name: f2e134
+    type: BIGINT
+    years: 2002-2024
+  XF2E135:
+    name: f2e135_flag
+    type: VARCHAR
+    flag_for: f2e135
+    years: 2002-2024
+  F2E135:
+    name: f2e135
+    type: BIGINT
+    years: 2002-2024
+  XF2E136:
+    name: f2e136_flag
+    type: VARCHAR
+    flag_for: f2e136
+    years: 2002-2024
+  F2E136:
+    name: f2e136
+    type: BIGINT
+    years: 2002-2024
+  XF2E137:
+    name: f2e137_flag
+    type: VARCHAR
+    flag_for: f2e137
+    years: 2002-2024
+  F2E137:
+    name: f2e137
+    type: BIGINT
+    years: 2002-2024
+  XF2H01:
+    name: f2h01_flag
+    type: VARCHAR
+    flag_for: f2h01
+    years: 2003-2024
+  F2H01:
+    name: f2h01
+    type: BIGINT
+    years: 2003-2024
+  XF2H02:
+    name: f2h02_flag
+    type: VARCHAR
+    flag_for: f2h02
+    years: 2003-2024
+  F2H02:
+    name: f2h02
+    type: VARCHAR
+    years: 2003-2024
+  F2FHA:
+    name: f2fha
+    type: BIGINT
+    years: 2003-2024
+  XF2A05A:
+    name: f2a05a_flag
+    type: VARCHAR
+    flag_for: f2a05a
+    years: 2004-2024
+  F2A05A:
+    name: f2a05a
+    type: BIGINT
+    years: 2004-2024
+  XF2A03A:
+    name: f2a03a_flag
+    type: VARCHAR
+    flag_for: f2a03a
+    years: 2008-2024
+  F2A03A:
+    name: f2a03a
+    type: BIGINT
+    years: 2008-2024
+  XF2A05B:
+    name: f2a05b_flag
+    type: VARCHAR
+    flag_for: f2a05b
+    years: 2008-2024
+  F2A05B:
+    name: f2a05b
+    type: BIGINT
+    years: 2008-2024
+  XF2A15:
+    name: f2a15_flag
+    type: VARCHAR
+    flag_for: f2a15
+    years: 2008-2024
+  F2A15:
+    name: f2a15
+    type: BIGINT
+    years: 2008-2024
+  XF2A16:
+    name: f2a16_flag
+    type: VARCHAR
+    flag_for: f2a16
+    years: 2008-2024
+  F2A16:
+    name: f2a16
+    type: BIGINT
+    years: 2008-2024
+  XF2A17:
+    name: f2a17_flag
+    type: VARCHAR
+    flag_for: f2a17
+    years: 2008-2024
+  F2A17:
+    name: f2a17
+    type: BIGINT
+    years: 2008-2024
+  XF2A18:
+    name: f2a18_flag
+    type: VARCHAR
+    flag_for: f2a18
+    years: 2008-2024
+  F2A18:
+    name: f2a18
+    type: BIGINT
+    years: 2008-2024
+  XF2A19:
+    name: f2a19_flag
+    type: VARCHAR
+    flag_for: f2a19
+    years: 2008-2024
+  F2A19:
+    name: f2a19
+    type: BIGINT
+    years: 2008-2024
+  XF2A20:
+    name: f2a20_flag
+    type: VARCHAR
+    flag_for: f2a20
+    years: 2008-2024
+  F2A20:
+    name: f2a20
+    type: BIGINT
+    years: 2008-2024
+  XF2D012:
+    name: f2d012_flag
+    type: VARCHAR
+    flag_for: f2d012
+    years: 2008-2024
+  F2D012:
+    name: f2d012
+    type: BIGINT
+    years: 2008-2024
+  XF2D013:
+    name: f2d013_flag
+    type: VARCHAR
+    flag_for: f2d013
+    years: 2008-2024
+  F2D013:
+    name: f2d013
+    type: BIGINT
+    years: 2008-2024
+  XF2D014:
+    name: f2d014_flag
+    type: VARCHAR
+    flag_for: f2d014
+    years: 2008-2024
+  F2D014:
+    name: f2d014
+    type: BIGINT
+    years: 2008-2024
+  XF2D022:
+    name: f2d022_flag
+    type: VARCHAR
+    flag_for: f2d022
+    years: 2008-2024
+  F2D022:
+    name: f2d022
+    type: BIGINT
+    years: 2008-2024
+  XF2D023:
+    name: f2d023_flag
+    type: VARCHAR
+    flag_for: f2d023
+    years: 2008-2024
+  F2D023:
+    name: f2d023
+    type: BIGINT
+    years: 2008-2024
+  XF2D024:
+    name: f2d024_flag
+    type: VARCHAR
+    flag_for: f2d024
+    years: 2008-2024
+  F2D024:
+    name: f2d024
+    type: BIGINT
+    years: 2008-2024
+  XF2D032:
+    name: f2d032_flag
+    type: VARCHAR
+    flag_for: f2d032
+    years: 2008-2024
+  F2D032:
+    name: f2d032
+    type: BIGINT
+    years: 2008-2024
+  XF2D033:
+    name: f2d033_flag
+    type: VARCHAR
+    flag_for: f2d033
+    years: 2008-2024
+  F2D033:
+    name: f2d033
+    type: BIGINT
+    years: 2008-2024
+  XF2D034:
+    name: f2d034_flag
+    type: VARCHAR
+    flag_for: f2d034
+    years: 2008-2024
+  F2D034:
+    name: f2d034
+    type: BIGINT
+    years: 2008-2024
+  XF2D042:
+    name: f2d042_flag
+    type: VARCHAR
+    flag_for: f2d042
+    years: 2008-2024
+  F2D042:
+    name: f2d042
+    type: BIGINT
+    years: 2008-2024
+  XF2D043:
+    name: f2d043_flag
+    type: VARCHAR
+    flag_for: f2d043
+    years: 2008-2024
+  F2D043:
+    name: f2d043
+    type: BIGINT
+    years: 2008-2024
+  XF2D044:
+    name: f2d044_flag
+    type: VARCHAR
+    flag_for: f2d044
+    years: 2008-2024
+  F2D044:
+    name: f2d044
+    type: BIGINT
+    years: 2008-2024
+  XF2D052:
+    name: f2d052_flag
+    type: VARCHAR
+    flag_for: f2d052
+    years: 2008-2024
+  F2D052:
+    name: f2d052
+    type: BIGINT
+    years: 2008-2024
+  XF2D053:
+    name: f2d053_flag
+    type: VARCHAR
+    flag_for: f2d053
+    years: 2008-2024
+  F2D053:
+    name: f2d053
+    type: BIGINT
+    years: 2008-2024
+  XF2D054:
+    name: f2d054_flag
+    type: VARCHAR
+    flag_for: f2d054
+    years: 2008-2024
+  F2D054:
+    name: f2d054
+    type: BIGINT
+    years: 2008-2024
+  XF2D062:
+    name: f2d062_flag
+    type: VARCHAR
+    flag_for: f2d062
+    years: 2008-2024
+  F2D062:
+    name: f2d062
+    type: BIGINT
+    years: 2008-2024
+  XF2D063:
+    name: f2d063_flag
+    type: VARCHAR
+    flag_for: f2d063
+    years: 2008-2024
+  F2D063:
+    name: f2d063
+    type: BIGINT
+    years: 2008-2024
+  XF2D064:
+    name: f2d064_flag
+    type: VARCHAR
+    flag_for: f2d064
+    years: 2008-2024
+  F2D064:
+    name: f2d064
+    type: BIGINT
+    years: 2008-2024
+  XF2D072:
+    name: f2d072_flag
+    type: VARCHAR
+    flag_for: f2d072
+    years: 2008-2024
+  F2D072:
+    name: f2d072
+    type: BIGINT
+    years: 2008-2024
+  XF2D073:
+    name: f2d073_flag
+    type: VARCHAR
+    flag_for: f2d073
+    years: 2008-2024
+  F2D073:
+    name: f2d073
+    type: BIGINT
+    years: 2008-2024
+  XF2D074:
+    name: f2d074_flag
+    type: VARCHAR
+    flag_for: f2d074
+    years: 2008-2024
+  F2D074:
+    name: f2d074
+    type: BIGINT
+    years: 2008-2024
+  XF2D082:
+    name: f2d082_flag
+    type: VARCHAR
+    flag_for: f2d082
+    years: 2008-2024
+  F2D082:
+    name: f2d082
+    type: BIGINT
+    years: 2008-2024
+  XF2D083:
+    name: f2d083_flag
+    type: VARCHAR
+    flag_for: f2d083
+    years: 2008-2024
+  F2D083:
+    name: f2d083
+    type: BIGINT
+    years: 2008-2024
+  XF2D084:
+    name: f2d084_flag
+    type: VARCHAR
+    flag_for: f2d084
+    years: 2008-2024
+  F2D084:
+    name: f2d084
+    type: BIGINT
+    years: 2008-2024
+  XF2D08A:
+    name: f2d08a_flag
+    type: VARCHAR
+    flag_for: f2d08a
+    years: 2008-2024
+  F2D08A:
+    name: f2d08a
+    type: BIGINT
+    years: 2008-2024
+  XF2D082A:
+    name: f2d082a_flag
+    type: VARCHAR
+    flag_for: f2d082a
+    years: 2008-2024
+  F2D082A:
+    name: f2d082a
+    type: BIGINT
+    years: 2008-2024
+  XF2D083A:
+    name: f2d083a_flag
+    type: VARCHAR
+    flag_for: f2d083a
+    years: 2008-2024
+  F2D083A:
+    name: f2d083a
+    type: BIGINT
+    years: 2008-2024
+  XF2D084A:
+    name: f2d084a_flag
+    type: VARCHAR
+    flag_for: f2d084a
+    years: 2008-2024
+  F2D084A:
+    name: f2d084a
+    type: BIGINT
+    years: 2008-2024
+  XF2D08B:
+    name: f2d08b_flag
+    type: VARCHAR
+    flag_for: f2d08b
+    years: 2008-2024
+  F2D08B:
+    name: f2d08b
+    type: BIGINT
+    years: 2008-2024
+  XF2D082B:
+    name: f2d082b_flag
+    type: VARCHAR
+    flag_for: f2d082b
+    years: 2008-2024
+  F2D082B:
+    name: f2d082b
+    type: BIGINT
+    years: 2008-2024
+  XF2D083B:
+    name: f2d083b_flag
+    type: VARCHAR
+    flag_for: f2d083b
+    years: 2008-2024
+  F2D083B:
+    name: f2d083b
+    type: BIGINT
+    years: 2008-2024
+  XF2D084B:
+    name: f2d084b_flag
+    type: VARCHAR
+    flag_for: f2d084b
+    years: 2008-2024
+  F2D084B:
+    name: f2d084b
+    type: BIGINT
+    years: 2008-2024
+  XF2D092:
+    name: f2d092_flag
+    type: VARCHAR
+    flag_for: f2d092
+    years: 2008-2024
+  F2D092:
+    name: f2d092
+    type: BIGINT
+    years: 2008-2024
+  XF2D093:
+    name: f2d093_flag
+    type: VARCHAR
+    flag_for: f2d093
+    years: 2008-2024
+  F2D093:
+    name: f2d093
+    type: BIGINT
+    years: 2008-2024
+  XF2D094:
+    name: f2d094_flag
+    type: VARCHAR
+    flag_for: f2d094
+    years: 2008-2024
+  F2D094:
+    name: f2d094
+    type: BIGINT
+    years: 2008-2024
+  XF2D102:
+    name: f2d102_flag
+    type: VARCHAR
+    flag_for: f2d102
+    years: 2008-2024
+  F2D102:
+    name: f2d102
+    type: BIGINT
+    years: 2008-2024
+  XF2D103:
+    name: f2d103_flag
+    type: VARCHAR
+    flag_for: f2d103
+    years: 2008-2024
+  F2D103:
+    name: f2d103
+    type: BIGINT
+    years: 2008-2024
+  XF2D104:
+    name: f2d104_flag
+    type: VARCHAR
+    flag_for: f2d104
+    years: 2008-2024
+  F2D104:
+    name: f2d104
+    type: BIGINT
+    years: 2008-2024
+  XF2D112:
+    name: f2d112_flag
+    type: VARCHAR
+    flag_for: f2d112
+    years: 2008-2024
+  F2D112:
+    name: f2d112
+    type: BIGINT
+    years: 2008-2024
+  XF2D122:
+    name: f2d122_flag
+    type: VARCHAR
+    flag_for: f2d122
+    years: 2008-2024
+  F2D122:
+    name: f2d122
+    type: BIGINT
+    years: 2008-2024
+  XF2D132:
+    name: f2d132_flag
+    type: VARCHAR
+    flag_for: f2d132
+    years: 2008-2024
+  F2D132:
+    name: f2d132
+    type: BIGINT
+    years: 2008-2024
+  XF2D142:
+    name: f2d142_flag
+    type: VARCHAR
+    flag_for: f2d142
+    years: 2008-2024
+  F2D142:
+    name: f2d142
+    type: BIGINT
+    years: 2008-2024
+  XF2D143:
+    name: f2d143_flag
+    type: VARCHAR
+    flag_for: f2d143
+    years: 2008-2024
+  F2D143:
+    name: f2d143
+    type: BIGINT
+    years: 2008-2024
+  XF2D144:
+    name: f2d144_flag
+    type: VARCHAR
+    flag_for: f2d144
+    years: 2008-2024
+  F2D144:
+    name: f2d144
+    type: BIGINT
+    years: 2008-2024
+  XF2D152:
+    name: f2d152_flag
+    type: VARCHAR
+    flag_for: f2d152
+    years: 2008-2024
+  F2D152:
+    name: f2d152
+    type: BIGINT
+    years: 2008-2024
+  XF2D153:
+    name: f2d153_flag
+    type: VARCHAR
+    flag_for: f2d153
+    years: 2008-2024
+  F2D153:
+    name: f2d153
+    type: BIGINT
+    years: 2008-2024
+  XF2D154:
+    name: f2d154_flag
+    type: VARCHAR
+    flag_for: f2d154
+    years: 2008-2024
+  F2D154:
+    name: f2d154
+    type: BIGINT
+    years: 2008-2024
+  XF2D162:
+    name: f2d162_flag
+    type: VARCHAR
+    flag_for: f2d162
+    years: 2008-2024
+  F2D162:
+    name: f2d162
+    type: BIGINT
+    years: 2008-2024
+  XF2D163:
+    name: f2d163_flag
+    type: VARCHAR
+    flag_for: f2d163
+    years: 2008-2024
+  F2D163:
+    name: f2d163
+    type: BIGINT
+    years: 2008-2024
+  XF2D164:
+    name: f2d164_flag
+    type: VARCHAR
+    flag_for: f2d164
+    years: 2008-2024
+  F2D164:
+    name: f2d164
+    type: BIGINT
+    years: 2008-2024
+  XF2D172:
+    name: f2d172_flag
+    type: VARCHAR
+    flag_for: f2d172
+    years: 2008-2024
+  F2D172:
+    name: f2d172
+    type: BIGINT
+    years: 2008-2024
+  XF2D173:
+    name: f2d173_flag
+    type: VARCHAR
+    flag_for: f2d173
+    years: 2008-2024
+  F2D173:
+    name: f2d173
+    type: BIGINT
+    years: 2008-2024
+  XF2D182:
+    name: f2d182_flag
+    type: VARCHAR
+    flag_for: f2d182
+    years: 2008-2024
+  F2D182:
+    name: f2d182
+    type: BIGINT
+    years: 2008-2024
+  XF2D183:
+    name: f2d183_flag
+    type: VARCHAR
+    flag_for: f2d183
+    years: 2008-2024
+  F2D183:
+    name: f2d183
+    type: BIGINT
+    years: 2008-2024
+  XF2D184:
+    name: f2d184_flag
+    type: VARCHAR
+    flag_for: f2d184
+    years: 2008-2024
+  F2D184:
+    name: f2d184
+    type: BIGINT
+    years: 2008-2024
+  XF2D174:
+    name: f2d174_flag
+    type: VARCHAR
+    flag_for: f2d174
+    years: 2009-2024
+  F2D174:
+    name: f2d174
+    type: BIGINT
+    years: 2009-2024
+  XF2D18:
+    name: f2d18_flag
+    type: VARCHAR
+    flag_for: f2d18
+    years: 2009-2024
+  F2D18:
+    name: f2d18
+    type: BIGINT
+    years: 2009-2024
+  XF2D17:
+    name: f2d17_flag
+    type: VARCHAR
+    flag_for: f2d17
+    years: 2012-2024
+  F2D17:
+    name: f2d17
+    type: BIGINT
+    years: 2012-2024
+  XF2C10:
+    name: f2c10_flag
+    type: VARCHAR
+    flag_for: f2c10
+    years: 2016-2024
+  F2C10:
+    name: f2c10
+    type: BIGINT
+    years: 2016-2024
+  XF2C12:
+    name: f2c12_flag
+    type: VARCHAR
+    flag_for: f2c12
+    years: 2020-2024
+  F2C12:
+    name: f2c12
+    type: BIGINT
+    years: 2020-2024
+  XF2C121:
+    name: f2c121_flag
+    type: VARCHAR
+    flag_for: f2c121
+    years: 2020-2024
+  F2C121:
+    name: f2c121
+    type: BIGINT
+    years: 2020-2024
+  XF2C122:
+    name: f2c122_flag
+    type: VARCHAR
+    flag_for: f2c122
+    years: 2020-2024
+  F2C122:
+    name: f2c122
+    type: BIGINT
+    years: 2020-2024
+  XF2C13:
+    name: f2c13_flag
+    type: VARCHAR
+    flag_for: f2c13
+    years: 2020-2024
+  F2C13:
+    name: f2c13
+    type: BIGINT
+    years: 2020-2024
+  XF2C131:
+    name: f2c131_flag
+    type: VARCHAR
+    flag_for: f2c131
+    years: 2020-2024
+  F2C131:
+    name: f2c131
+    type: BIGINT
+    years: 2020-2024
+  XF2C132:
+    name: f2c132_flag
+    type: VARCHAR
+    flag_for: f2c132
+    years: 2020-2024
+  F2C132:
+    name: f2c132
+    type: BIGINT
+    years: 2020-2024
+  XF2C14:
+    name: f2c14_flag
+    type: VARCHAR
+    flag_for: f2c14
+    years: 2020-2024
+  F2C14:
+    name: f2c14
+    type: BIGINT
+    years: 2020-2024
+  XF2C141:
+    name: f2c141_flag
+    type: VARCHAR
+    flag_for: f2c141
+    years: 2020-2024
+  F2C141:
+    name: f2c141
+    type: BIGINT
+    years: 2020-2024
+  XF2C142:
+    name: f2c142_flag
+    type: VARCHAR
+    flag_for: f2c142
+    years: 2020-2024
+  F2C142:
+    name: f2c142
+    type: BIGINT
+    years: 2020-2024
+  XF2C15:
+    name: f2c15_flag
+    type: VARCHAR
+    flag_for: f2c15
+    years: 2020-2024
+  F2C15:
+    name: f2c15
+    type: BIGINT
+    years: 2020-2024
+  XF2C151:
+    name: f2c151_flag
+    type: VARCHAR
+    flag_for: f2c151
+    years: 2020-2024
+  F2C151:
+    name: f2c151
+    type: BIGINT
+    years: 2020-2024
+  XF2C152:
+    name: f2c152_flag
+    type: VARCHAR
+    flag_for: f2c152
+    years: 2020-2024
+  F2C152:
+    name: f2c152
+    type: BIGINT
+    years: 2020-2024
+  XF2C16:
+    name: f2c16_flag
+    type: VARCHAR
+    flag_for: f2c16
+    years: 2020-2024
+  F2C16:
+    name: f2c16
+    type: BIGINT
+    years: 2020-2024
+  XF2C161:
+    name: f2c161_flag
+    type: VARCHAR
+    flag_for: f2c161
+    years: 2020-2024
+  F2C161:
+    name: f2c161
+    type: BIGINT
+    years: 2020-2024
+  XF2C162:
+    name: f2c162_flag
+    type: VARCHAR
+    flag_for: f2c162
+    years: 2020-2024
+  F2C162:
+    name: f2c162
+    type: BIGINT
+    years: 2020-2024
+  XF2C17:
+    name: f2c17_flag
+    type: VARCHAR
+    flag_for: f2c17
+    years: 2020-2024
+  F2C17:
+    name: f2c17
+    type: BIGINT
+    years: 2020-2024
+  XF2C171:
+    name: f2c171_flag
+    type: VARCHAR
+    flag_for: f2c171
+    years: 2020-2024
+  F2C171:
+    name: f2c171
+    type: BIGINT
+    years: 2020-2024
+  XF2C172:
+    name: f2c172_flag
+    type: VARCHAR
+    flag_for: f2c172
+    years: 2020-2024
+  F2C172:
+    name: f2c172
+    type: BIGINT
+    years: 2020-2024
+  XF2H03:
+    name: f2h03_flag
+    type: VARCHAR
+    flag_for: f2h03
+    years: 2020-2024
+  F2H03:
+    name: f2h03
+    type: BIGINT
+    years: 2020-2024
+  XF2H03A:
+    name: f2h03a_flag
+    type: VARCHAR
+    flag_for: f2h03a
+    years: 2020-2024
+  F2H03A:
+    name: f2h03a
+    type: BIGINT
+    years: 2020-2024
+  XF2H03B:
+    name: f2h03b_flag
+    type: VARCHAR
+    flag_for: f2h03b
+    years: 2020-2024
+  F2H03B:
+    name: f2h03b
+    type: BIGINT
+    years: 2020-2024
+  XF2H03C:
+    name: f2h03c_flag
+    type: VARCHAR
+    flag_for: f2h03c
+    years: 2020-2024
+  F2H03C:
+    name: f2h03c
+    type: BIGINT
+    years: 2020-2024
+  XF2H03D:
+    name: f2h03d_flag
+    type: VARCHAR
+    flag_for: f2h03d
+    years: 2020-2024
+  F2H03D:
+    name: f2h03d
+    type: BIGINT
+    years: 2020-2024
+  XF2I01:
+    name: f2i01_flag
+    type: VARCHAR
+    flag_for: f2i01
+    years: 2020-2024
+  F2I01:
+    name: f2i01
+    type: BIGINT
+    years: 2020-2024
+  XF2I02:
+    name: f2i02_flag
+    type: VARCHAR
+    flag_for: f2i02
+    years: 2020-2024
+  F2I02:
+    name: f2i02
+    type: BIGINT
+    years: 2020-2024
+  XF2I03:
+    name: f2i03_flag
+    type: VARCHAR
+    flag_for: f2i03
+    years: 2020-2024
+  F2I03:
+    name: f2i03
+    type: BIGINT
+    years: 2020-2024
+  XF2I04:
+    name: f2i04_flag
+    type: VARCHAR
+    flag_for: f2i04
+    years: 2020-2024
+  F2I04:
+    name: f2i04
+    type: BIGINT
+    years: 2020-2024
+  XF2I05:
+    name: f2i05_flag
+    type: VARCHAR
+    flag_for: f2i05
+    years: 2020-2024
+  F2I05:
+    name: f2i05
+    type: BIGINT
+    years: 2020-2024
+  XF2I06:
+    name: f2i06_flag
+    type: VARCHAR
+    flag_for: f2i06
+    years: 2020-2024
+  F2I06:
+    name: f2i06
+    type: BIGINT
+    years: 2020-2024
+  XF2I07:
+    name: f2i07_flag
+    type: VARCHAR
+    flag_for: f2i07
+    years: 2020-2024
+  F2I07:
+    name: f2i07
+    type: BIGINT
+    years: 2020-2024

@@ -1,0 +1,13 @@
+source: ipeds
+family: icactot
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2000'
+  ACCODE:
+    name: accode
+    type: VARCHAR
+    years: '2000'

@@ -11,7 +11,7 @@ from pathlib import Path
 import duckdb
 
 from .config import DATA_RAW, State
-from .rawio import header_of, read_sql
+from .rawio import header_of, read_sql, run_copy
 
 # Raw column that carries the state, tried in order. The value is compared as text.
 STATE_COLUMNS = [("FIPST", "fips"), ("FIPS", "fips"), ("STATE_FIPS", "fips"), ("STABR", "abbrev"),
@@ -45,12 +45,11 @@ def stage(raw: Path, state: State, override: tuple[str, str] | None = None) -> P
     for old in dest.parent.glob(f"{raw.stem}.*.parquet"):
         old.unlink()
     con = duckdb.connect()
-    src = read_sql(raw)
     cols = header_of(raw)
     where = state_filter(cols, state, override)
     tmp = dest.with_suffix(".tmp")
     t = str(tmp).replace("\\", "/")
-    con.execute(f"COPY (SELECT * FROM {src} WHERE {where}) TO '{t}' (FORMAT PARQUET, COMPRESSION ZSTD)")
+    run_copy(con, lambda par: f"COPY (SELECT * FROM {read_sql(raw, parallel=par)} WHERE {where}) TO '{t}' (FORMAT PARQUET, COMPRESSION ZSTD)")
     tmp.replace(dest)
     return dest
 

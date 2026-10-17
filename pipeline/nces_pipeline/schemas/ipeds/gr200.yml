@@ -1,0 +1,241 @@
+source: ipeds
+family: gr200
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2008-2024
+  XBAREVCT:
+    name: barevct_flag
+    type: VARCHAR
+    flag_for: barevct
+    years: 2008-2024
+  BAREVCT:
+    name: barevct
+    type: BIGINT
+    years: 2008-2024
+  XBAEXCLU:
+    name: baexclu_flag
+    type: VARCHAR
+    flag_for: baexclu
+    years: 2008-2024
+  BAEXCLU:
+    name: baexclu
+    type: BIGINT
+    years: 2008-2024
+  XBAAC150:
+    name: baac150_flag
+    type: VARCHAR
+    flag_for: baac150
+    years: 2008-2024
+  BAAC150:
+    name: baac150
+    type: BIGINT
+    years: 2008-2024
+  XBANC100:
+    name: banc100_flag
+    type: VARCHAR
+    flag_for: banc100
+    years: 2008-2024
+  BANC100:
+    name: banc100
+    type: BIGINT
+    years: 2008-2024
+  XBAGR100:
+    name: bagr100_flag
+    type: VARCHAR
+    flag_for: bagr100
+    years: 2008-2024
+  BAGR100:
+    name: bagr100
+    type: BIGINT
+    years: 2008-2024
+  XBANC150:
+    name: banc150_flag
+    type: VARCHAR
+    flag_for: banc150
+    years: 2008-2024
+  BANC150:
+    name: banc150
+    type: BIGINT
+    years: 2008-2024
+  XBAGR150:
+    name: bagr150_flag
+    type: VARCHAR
+    flag_for: bagr150
+    years: 2008-2024
+  BAGR150:
+    name: bagr150
+    type: BIGINT
+    years: 2008-2024
+  XBAAEXCL:
+    name: baaexcl_flag
+    type: VARCHAR
+    flag_for: baaexcl
+    years: 2008-2024
+  BAAEXCL:
+    name: baaexcl
+    type: BIGINT
+    years: 2008-2024
+  XBAAC200:
+    name: baac200_flag
+    type: VARCHAR
+    flag_for: baac200
+    years: 2008-2024
+  BAAC200:
+    name: baac200
+    type: BIGINT
+    years: 2008-2024
+  XBANC20A:
+    name: xbanc20a
+    type: VARCHAR
+    years: 2008-2024
+  BANC200A:
+    name: banc200a
+    type: BIGINT
+    years: 2008-2024
+  XBANC200:
+    name: banc200_flag
+    type: VARCHAR
+    flag_for: banc200
+    years: 2008-2024
+  BANC200:
+    name: banc200
+    type: BIGINT
+    years: 2008-2024
+  XBAGR200:
+    name: bagr200_flag
+    type: VARCHAR
+    flag_for: bagr200
+    years: 2008-2024
+  BAGR200:
+    name: bagr200
+    type: BIGINT
+    years: 2008-2024
+  XL4REVCT:
+    name: l4revct_flag
+    type: VARCHAR
+    flag_for: l4revct
+    years: 2008-2024
+  L4REVCT:
+    name: l4revct
+    type: BIGINT
+    years: 2008-2024
+  XL4EXCLU:
+    name: l4exclu_flag
+    type: VARCHAR
+    flag_for: l4exclu
+    years: 2008-2024
+  L4EXCLU:
+    name: l4exclu
+    type: BIGINT
+    years: 2008-2024
+  XL4AC150:
+    name: l4ac150_flag
+    type: VARCHAR
+    flag_for: l4ac150
+    years: 2008-2024
+  L4AC150:
+    name: l4ac150
+    type: BIGINT
+    years: 2008-2024
+  XL4NC100:
+    name: l4nc100_flag
+    type: VARCHAR
+    flag_for: l4nc100
+    years: 2008-2024
+  L4NC100:
+    name: l4nc100
+    type: BIGINT
+    years: 2008-2024
+  XL4GR100:
+    name: l4gr100_flag
+    type: VARCHAR
+    flag_for: l4gr100
+    years: 2008-2024
+  L4GR100:
+    name: l4gr100
+    type: BIGINT
+    years: 2008-2024
+  XL4NC150:
+    name: l4nc150_flag
+    type: VARCHAR
+    flag_for: l4nc150
+    years: 2008-2024
+  L4NC150:
+    name: l4nc150
+    type: BIGINT
+    years: 2008-2024
+  XL4GR150:
+    name: l4gr150_flag
+    type: VARCHAR
+    flag_for: l4gr150
+    years: 2008-2024
+  L4GR150:
+    name: l4gr150
+    type: BIGINT
+    years: 2008-2024
+  XL4AEXCL:
+    name: l4aexcl_flag
+    type: VARCHAR
+    flag_for: l4aexcl
+    years: 2008-2024
+  L4AEXCL:
+    name: l4aexcl
+    type: BIGINT
+    years: 2008-2024
+  XL4AC200:
+    name: l4ac200_flag
+    type: VARCHAR
+    flag_for: l4ac200
+    years: 2008-2024
+  L4AC200:
+    name: l4ac200
+    type: BIGINT
+    years: 2008-2024
+  XL4NC20A:
+    name: xl4nc20a
+    type: VARCHAR
+    years: 2008-2024
+  L4NC200A:
+    name: l4nc200a
+    type: BIGINT
+    years: 2008-2024
+  XL4NC200:
+    name: l4nc200_flag
+    type: VARCHAR
+    flag_for: l4nc200
+    years: 2008-2024
+  L4NC200:
+    name: l4nc200
+    type: BIGINT
+    years: 2008-2024
+  XL4GR200:
+    name: l4gr200_flag
+    type: VARCHAR
+    flag_for: l4gr200
+    years: 2008-2024
+  L4GR200:
+    name: l4gr200
+    type: VARCHAR
+    years: 2008-2024
+  XBASTEND:
+    name: bastend_flag
+    type: VARCHAR
+    flag_for: bastend
+    years: 2011-2024
+  BASTEND:
+    name: bastend
+    type: BIGINT
+    years: 2011-2024
+  XL4STEND:
+    name: l4stend_flag
+    type: VARCHAR
+    flag_for: l4stend
+    years: 2011-2024
+  L4STEND:
+    name: l4stend
+    type: BIGINT
+    years: 2011-2024

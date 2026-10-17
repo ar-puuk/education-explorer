@@ -1,0 +1,1803 @@
+source: ipeds
+family: cost1
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2024'
+  ROOM:
+    name: room
+    type: BIGINT
+    years: '2024'
+  XROOMCAP:
+    name: roomcap_flag
+    type: VARCHAR
+    flag_for: roomcap
+    years: '2024'
+  ROOMCAP:
+    name: roomcap
+    type: BIGINT
+    years: '2024'
+  ALLONCAM:
+    name: alloncam
+    type: BIGINT
+    years: '2024'
+  TUITVARY:
+    name: tuitvary
+    type: BIGINT
+    years: '2024'
+  BOARD:
+    name: board
+    type: BIGINT
+    years: '2024'
+  XMEALSWK:
+    name: mealswk_flag
+    type: VARCHAR
+    flag_for: mealswk
+    years: '2024'
+  MEALSWK:
+    name: mealswk
+    type: BIGINT
+    years: '2024'
+  XAPPFEEU:
+    name: xappfeeu
+    type: VARCHAR
+    years: '2024'
+  APPLFEEU:
+    name: applfeeu
+    type: BIGINT
+    years: '2024'
+  APPFEEUW:
+    name: appfeeuw
+    type: BIGINT
+    years: '2024'
+  XAPPFEEG:
+    name: xappfeeg
+    type: VARCHAR
+    years: '2024'
+  APPLFEEG:
+    name: applfeeg
+    type: BIGINT
+    years: '2024'
+  APPFEEGW:
+    name: appfeegw
+    type: BIGINT
+    years: '2024'
+  XAPPFEED:
+    name: xappfeed
+    type: VARCHAR
+    years: '2024'
+  APPLFEED:
+    name: applfeed
+    type: BIGINT
+    years: '2024'
+  APPFEEDW:
+    name: appfeedw
+    type: BIGINT
+    years: '2024'
+  PRMPGM:
+    name: prmpgm
+    type: BIGINT
+    years: '2024'
+  TUITPL:
+    name: tuitpl
+    type: BIGINT
+    years: '2024'
+  TUITPL1:
+    name: tuitpl1
+    type: BIGINT
+    years: '2024'
+  TUITPL2:
+    name: tuitpl2
+    type: BIGINT
+    years: '2024'
+  TUITPL3:
+    name: tuitpl3
+    type: BIGINT
+    years: '2024'
+  TUITPL4:
+    name: tuitpl4
+    type: BIGINT
+    years: '2024'
+  FAFSAQ1:
+    name: fafsaq1
+    type: BIGINT
+    years: '2024'
+  FAFSAQ2:
+    name: fafsaq2
+    type: BIGINT
+    years: '2024'
+  FAFQ2URL:
+    name: fafq2url
+    type: VARCHAR
+    years: '2024'
+  PRGMOFR:
+    name: prgmofr
+    type: BIGINT
+    years: '2024'
+  XROOMAMT:
+    name: roomamt_flag
+    type: VARCHAR
+    flag_for: roomamt
+    years: '2024'
+  ROOMAMT:
+    name: roomamt
+    type: BIGINT
+    years: '2024'
+  XBORDAMT:
+    name: xbordamt
+    type: VARCHAR
+    years: '2024'
+  BOARDAMT:
+    name: boardamt
+    type: BIGINT
+    years: '2024'
+  XRMBDAMT:
+    name: xrmbdamt
+    type: VARCHAR
+    years: '2024'
+  RMBRDAMT:
+    name: rmbrdamt
+    type: BIGINT
+    years: '2024'
+  XTUIT1:
+    name: xtuit1
+    type: VARCHAR
+    years: '2024'
+  TUITION1:
+    name: tuition1
+    type: BIGINT
+    years: '2024'
+  XFEE1:
+    name: fee1_flag
+    type: VARCHAR
+    flag_for: fee1
+    years: '2024'
+  FEE1:
+    name: fee1
+    type: BIGINT
+    years: '2024'
+  XHRCHG1:
+    name: hrchg1_flag
+    type: VARCHAR
+    flag_for: hrchg1
+    years: '2024'
+  HRCHG1:
+    name: hrchg1
+    type: BIGINT
+    years: '2024'
+  XHRCHF1:
+    name: hrchf1_flag
+    type: VARCHAR
+    flag_for: hrchf1
+    years: '2024'
+  HRCHF1:
+    name: hrchf1
+    type: BIGINT
+    years: '2024'
+  XTUIT2:
+    name: xtuit2
+    type: VARCHAR
+    years: '2024'
+  TUITION2:
+    name: tuition2
+    type: BIGINT
+    years: '2024'
+  XFEE2:
+    name: fee2_flag
+    type: VARCHAR
+    flag_for: fee2
+    years: '2024'
+  FEE2:
+    name: fee2
+    type: BIGINT
+    years: '2024'
+  XHRCHG2:
+    name: hrchg2_flag
+    type: VARCHAR
+    flag_for: hrchg2
+    years: '2024'
+  HRCHG2:
+    name: hrchg2
+    type: BIGINT
+    years: '2024'
+  XHRCHF2:
+    name: hrchf2_flag
+    type: VARCHAR
+    flag_for: hrchf2
+    years: '2024'
+  HRCHF2:
+    name: hrchf2
+    type: BIGINT
+    years: '2024'
+  XTUIT3:
+    name: xtuit3
+    type: VARCHAR
+    years: '2024'
+  TUITION3:
+    name: tuition3
+    type: BIGINT
+    years: '2024'
+  XFEE3:
+    name: fee3_flag
+    type: VARCHAR
+    flag_for: fee3
+    years: '2024'
+  FEE3:
+    name: fee3
+    type: BIGINT
+    years: '2024'
+  XHRCHG3:
+    name: hrchg3_flag
+    type: VARCHAR
+    flag_for: hrchg3
+    years: '2024'
+  HRCHG3:
+    name: hrchg3
+    type: BIGINT
+    years: '2024'
+  XHRCHF3:
+    name: hrchf3_flag
+    type: VARCHAR
+    flag_for: hrchf3
+    years: '2024'
+  HRCHF3:
+    name: hrchf3
+    type: BIGINT
+    years: '2024'
+  XTUIT5:
+    name: xtuit5
+    type: VARCHAR
+    years: '2024'
+  TUITION5:
+    name: tuition5
+    type: BIGINT
+    years: '2024'
+  XFEE5:
+    name: fee5_flag
+    type: VARCHAR
+    flag_for: fee5
+    years: '2024'
+  FEE5:
+    name: fee5
+    type: BIGINT
+    years: '2024'
+  XHRCHG5:
+    name: hrchg5_flag
+    type: VARCHAR
+    flag_for: hrchg5
+    years: '2024'
+  HRCHG5:
+    name: hrchg5
+    type: BIGINT
+    years: '2024'
+  XHRCHF5:
+    name: hrchf5_flag
+    type: VARCHAR
+    flag_for: hrchf5
+    years: '2024'
+  HRCHF5:
+    name: hrchf5
+    type: BIGINT
+    years: '2024'
+  XTUIT6:
+    name: xtuit6
+    type: VARCHAR
+    years: '2024'
+  TUITION6:
+    name: tuition6
+    type: BIGINT
+    years: '2024'
+  XFEE6:
+    name: fee6_flag
+    type: VARCHAR
+    flag_for: fee6
+    years: '2024'
+  FEE6:
+    name: fee6
+    type: BIGINT
+    years: '2024'
+  XHRCHG6:
+    name: hrchg6_flag
+    type: VARCHAR
+    flag_for: hrchg6
+    years: '2024'
+  HRCHG6:
+    name: hrchg6
+    type: BIGINT
+    years: '2024'
+  XHRCHF6:
+    name: hrchf6_flag
+    type: VARCHAR
+    flag_for: hrchf6
+    years: '2024'
+  HRCHF6:
+    name: hrchf6
+    type: BIGINT
+    years: '2024'
+  XTUIT7:
+    name: xtuit7
+    type: VARCHAR
+    years: '2024'
+  TUITION7:
+    name: tuition7
+    type: BIGINT
+    years: '2024'
+  XFEE7:
+    name: fee7_flag
+    type: VARCHAR
+    flag_for: fee7
+    years: '2024'
+  FEE7:
+    name: fee7
+    type: BIGINT
+    years: '2024'
+  XHRCHG7:
+    name: hrchg7_flag
+    type: VARCHAR
+    flag_for: hrchg7
+    years: '2024'
+  HRCHG7:
+    name: hrchg7
+    type: BIGINT
+    years: '2024'
+  XHRCHF7:
+    name: hrchf7_flag
+    type: VARCHAR
+    flag_for: hrchf7
+    years: '2024'
+  HRCHF7:
+    name: hrchf7
+    type: BIGINT
+    years: '2024'
+  XISPRO1:
+    name: xispro1
+    type: VARCHAR
+    years: '2024'
+  ISPROF1:
+    name: isprof1
+    type: BIGINT
+    years: '2024'
+  XISPFE1:
+    name: xispfe1
+    type: VARCHAR
+    years: '2024'
+  ISPFEE1:
+    name: ispfee1
+    type: BIGINT
+    years: '2024'
+  XOSPRO1:
+    name: xospro1
+    type: VARCHAR
+    years: '2024'
+  OSPROF1:
+    name: osprof1
+    type: BIGINT
+    years: '2024'
+  XOSPFE1:
+    name: xospfe1
+    type: VARCHAR
+    years: '2024'
+  OSPFEE1:
+    name: ospfee1
+    type: BIGINT
+    years: '2024'
+  XISPRO2:
+    name: xispro2
+    type: VARCHAR
+    years: '2024'
+  ISPROF2:
+    name: isprof2
+    type: BIGINT
+    years: '2024'
+  XISPFE2:
+    name: xispfe2
+    type: VARCHAR
+    years: '2024'
+  ISPFEE2:
+    name: ispfee2
+    type: BIGINT
+    years: '2024'
+  XOSPRO2:
+    name: xospro2
+    type: VARCHAR
+    years: '2024'
+  OSPROF2:
+    name: osprof2
+    type: BIGINT
+    years: '2024'
+  XOSPFE2:
+    name: xospfe2
+    type: VARCHAR
+    years: '2024'
+  OSPFEE2:
+    name: ospfee2
+    type: BIGINT
+    years: '2024'
+  XISPRO3:
+    name: xispro3
+    type: VARCHAR
+    years: '2024'
+  ISPROF3:
+    name: isprof3
+    type: BIGINT
+    years: '2024'
+  XISPFE3:
+    name: xispfe3
+    type: VARCHAR
+    years: '2024'
+  ISPFEE3:
+    name: ispfee3
+    type: BIGINT
+    years: '2024'
+  XOSPRO3:
+    name: xospro3
+    type: VARCHAR
+    years: '2024'
+  OSPROF3:
+    name: osprof3
+    type: BIGINT
+    years: '2024'
+  XOSPFE3:
+    name: xospfe3
+    type: VARCHAR
+    years: '2024'
+  OSPFEE3:
+    name: ospfee3
+    type: BIGINT
+    years: '2024'
+  XISPRO4:
+    name: xispro4
+    type: VARCHAR
+    years: '2024'
+  ISPROF4:
+    name: isprof4
+    type: BIGINT
+    years: '2024'
+  XISPFE4:
+    name: xispfe4
+    type: VARCHAR
+    years: '2024'
+  ISPFEE4:
+    name: ispfee4
+    type: BIGINT
+    years: '2024'
+  XOSPRO4:
+    name: xospro4
+    type: VARCHAR
+    years: '2024'
+  OSPROF4:
+    name: osprof4
+    type: BIGINT
+    years: '2024'
+  XOSPFE4:
+    name: xospfe4
+    type: VARCHAR
+    years: '2024'
+  OSPFEE4:
+    name: ospfee4
+    type: BIGINT
+    years: '2024'
+  XISPRO5:
+    name: xispro5
+    type: VARCHAR
+    years: '2024'
+  ISPROF5:
+    name: isprof5
+    type: BIGINT
+    years: '2024'
+  XISPFE5:
+    name: xispfe5
+    type: VARCHAR
+    years: '2024'
+  ISPFEE5:
+    name: ispfee5
+    type: BIGINT
+    years: '2024'
+  XOSPRO5:
+    name: xospro5
+    type: VARCHAR
+    years: '2024'
+  OSPROF5:
+    name: osprof5
+    type: BIGINT
+    years: '2024'
+  XOSPFE5:
+    name: xospfe5
+    type: VARCHAR
+    years: '2024'
+  OSPFEE5:
+    name: ospfee5
+    type: BIGINT
+    years: '2024'
+  XISPRO6:
+    name: xispro6
+    type: VARCHAR
+    years: '2024'
+  ISPROF6:
+    name: isprof6
+    type: BIGINT
+    years: '2024'
+  XISPFE6:
+    name: xispfe6
+    type: VARCHAR
+    years: '2024'
+  ISPFEE6:
+    name: ispfee6
+    type: BIGINT
+    years: '2024'
+  XOSPRO6:
+    name: xospro6
+    type: VARCHAR
+    years: '2024'
+  OSPROF6:
+    name: osprof6
+    type: BIGINT
+    years: '2024'
+  XOSPFE6:
+    name: xospfe6
+    type: VARCHAR
+    years: '2024'
+  OSPFEE6:
+    name: ospfee6
+    type: BIGINT
+    years: '2024'
+  XISPRO7:
+    name: xispro7
+    type: VARCHAR
+    years: '2024'
+  ISPROF7:
+    name: isprof7
+    type: BIGINT
+    years: '2024'
+  XISPFE7:
+    name: xispfe7
+    type: VARCHAR
+    years: '2024'
+  ISPFEE7:
+    name: ispfee7
+    type: BIGINT
+    years: '2024'
+  XOSPRO7:
+    name: xospro7
+    type: VARCHAR
+    years: '2024'
+  OSPROF7:
+    name: osprof7
+    type: BIGINT
+    years: '2024'
+  XOSPFE7:
+    name: xospfe7
+    type: VARCHAR
+    years: '2024'
+  OSPFEE7:
+    name: ospfee7
+    type: BIGINT
+    years: '2024'
+  XISPRO8:
+    name: xispro8
+    type: VARCHAR
+    years: '2024'
+  ISPROF8:
+    name: isprof8
+    type: BIGINT
+    years: '2024'
+  XISPFE8:
+    name: xispfe8
+    type: VARCHAR
+    years: '2024'
+  ISPFEE8:
+    name: ispfee8
+    type: BIGINT
+    years: '2024'
+  XOSPRO8:
+    name: xospro8
+    type: VARCHAR
+    years: '2024'
+  OSPROF8:
+    name: osprof8
+    type: BIGINT
+    years: '2024'
+  XOSPFE8:
+    name: xospfe8
+    type: VARCHAR
+    years: '2024'
+  OSPFEE8:
+    name: ospfee8
+    type: BIGINT
+    years: '2024'
+  XISPRO9:
+    name: xispro9
+    type: VARCHAR
+    years: '2024'
+  ISPROF9:
+    name: isprof9
+    type: BIGINT
+    years: '2024'
+  XISPFE9:
+    name: xispfe9
+    type: VARCHAR
+    years: '2024'
+  ISPFEE9:
+    name: ispfee9
+    type: BIGINT
+    years: '2024'
+  XOSPRO9:
+    name: xospro9
+    type: VARCHAR
+    years: '2024'
+  OSPROF9:
+    name: osprof9
+    type: BIGINT
+    years: '2024'
+  XOSPFE9:
+    name: xospfe9
+    type: VARCHAR
+    years: '2024'
+  OSPFEE9:
+    name: ospfee9
+    type: BIGINT
+    years: '2024'
+  XCHG1AT0:
+    name: chg1at0_flag
+    type: VARCHAR
+    flag_for: chg1at0
+    years: '2024'
+  CHG1AT0:
+    name: chg1at0
+    type: BIGINT
+    years: '2024'
+  XCHG1AF0:
+    name: chg1af0_flag
+    type: VARCHAR
+    flag_for: chg1af0
+    years: '2024'
+  CHG1AF0:
+    name: chg1af0
+    type: BIGINT
+    years: '2024'
+  XCHG1AY0:
+    name: chg1ay0_flag
+    type: VARCHAR
+    flag_for: chg1ay0
+    years: '2024'
+  CHG1AY0:
+    name: chg1ay0
+    type: BIGINT
+    years: '2024'
+  XCHG1AT1:
+    name: chg1at1_flag
+    type: VARCHAR
+    flag_for: chg1at1
+    years: '2024'
+  CHG1AT1:
+    name: chg1at1
+    type: BIGINT
+    years: '2024'
+  XCHG1AF1:
+    name: chg1af1_flag
+    type: VARCHAR
+    flag_for: chg1af1
+    years: '2024'
+  CHG1AF1:
+    name: chg1af1
+    type: BIGINT
+    years: '2024'
+  XCHG1AY1:
+    name: chg1ay1_flag
+    type: VARCHAR
+    flag_for: chg1ay1
+    years: '2024'
+  CHG1AY1:
+    name: chg1ay1
+    type: BIGINT
+    years: '2024'
+  XCHG1AT2:
+    name: chg1at2_flag
+    type: VARCHAR
+    flag_for: chg1at2
+    years: '2024'
+  CHG1AT2:
+    name: chg1at2
+    type: BIGINT
+    years: '2024'
+  XCHG1AF2:
+    name: chg1af2_flag
+    type: VARCHAR
+    flag_for: chg1af2
+    years: '2024'
+  CHG1AF2:
+    name: chg1af2
+    type: BIGINT
+    years: '2024'
+  XCHG1AY2:
+    name: chg1ay2_flag
+    type: VARCHAR
+    flag_for: chg1ay2
+    years: '2024'
+  CHG1AY2:
+    name: chg1ay2
+    type: BIGINT
+    years: '2024'
+  XCHG1AT3:
+    name: chg1at3_flag
+    type: VARCHAR
+    flag_for: chg1at3
+    years: '2024'
+  CHG1AT3:
+    name: chg1at3
+    type: BIGINT
+    years: '2024'
+  XCHG1AF3:
+    name: chg1af3_flag
+    type: VARCHAR
+    flag_for: chg1af3
+    years: '2024'
+  CHG1AF3:
+    name: chg1af3
+    type: BIGINT
+    years: '2024'
+  XCHG1AY3:
+    name: chg1ay3_flag
+    type: VARCHAR
+    flag_for: chg1ay3
+    years: '2024'
+  CHG1AY3:
+    name: chg1ay3
+    type: BIGINT
+    years: '2024'
+  CHG1TGTD:
+    name: chg1tgtd
+    type: BIGINT
+    years: '2024'
+  CHG1FGTD:
+    name: chg1fgtd
+    type: BIGINT
+    years: '2024'
+  XCHG2AT0:
+    name: chg2at0_flag
+    type: VARCHAR
+    flag_for: chg2at0
+    years: '2024'
+  CHG2AT0:
+    name: chg2at0
+    type: BIGINT
+    years: '2024'
+  XCHG2AF0:
+    name: chg2af0_flag
+    type: VARCHAR
+    flag_for: chg2af0
+    years: '2024'
+  CHG2AF0:
+    name: chg2af0
+    type: BIGINT
+    years: '2024'
+  XCHG2AY0:
+    name: chg2ay0_flag
+    type: VARCHAR
+    flag_for: chg2ay0
+    years: '2024'
+  CHG2AY0:
+    name: chg2ay0
+    type: BIGINT
+    years: '2024'
+  XCHG2AT1:
+    name: chg2at1_flag
+    type: VARCHAR
+    flag_for: chg2at1
+    years: '2024'
+  CHG2AT1:
+    name: chg2at1
+    type: BIGINT
+    years: '2024'
+  XCHG2AF1:
+    name: chg2af1_flag
+    type: VARCHAR
+    flag_for: chg2af1
+    years: '2024'
+  CHG2AF1:
+    name: chg2af1
+    type: BIGINT
+    years: '2024'
+  XCHG2AY1:
+    name: chg2ay1_flag
+    type: VARCHAR
+    flag_for: chg2ay1
+    years: '2024'
+  CHG2AY1:
+    name: chg2ay1
+    type: BIGINT
+    years: '2024'
+  XCHG2AT2:
+    name: chg2at2_flag
+    type: VARCHAR
+    flag_for: chg2at2
+    years: '2024'
+  CHG2AT2:
+    name: chg2at2
+    type: BIGINT
+    years: '2024'
+  XCHG2AF2:
+    name: chg2af2_flag
+    type: VARCHAR
+    flag_for: chg2af2
+    years: '2024'
+  CHG2AF2:
+    name: chg2af2
+    type: BIGINT
+    years: '2024'
+  XCHG2AY2:
+    name: chg2ay2_flag
+    type: VARCHAR
+    flag_for: chg2ay2
+    years: '2024'
+  CHG2AY2:
+    name: chg2ay2
+    type: BIGINT
+    years: '2024'
+  XCHG2AT3:
+    name: chg2at3_flag
+    type: VARCHAR
+    flag_for: chg2at3
+    years: '2024'
+  CHG2AT3:
+    name: chg2at3
+    type: BIGINT
+    years: '2024'
+  XCHG2AF3:
+    name: chg2af3_flag
+    type: VARCHAR
+    flag_for: chg2af3
+    years: '2024'
+  CHG2AF3:
+    name: chg2af3
+    type: BIGINT
+    years: '2024'
+  XCHG2AY3:
+    name: chg2ay3_flag
+    type: VARCHAR
+    flag_for: chg2ay3
+    years: '2024'
+  CHG2AY3:
+    name: chg2ay3
+    type: BIGINT
+    years: '2024'
+  CHG2TGTD:
+    name: chg2tgtd
+    type: BIGINT
+    years: '2024'
+  CHG2FGTD:
+    name: chg2fgtd
+    type: BIGINT
+    years: '2024'
+  XCHG3AT0:
+    name: chg3at0_flag
+    type: VARCHAR
+    flag_for: chg3at0
+    years: '2024'
+  CHG3AT0:
+    name: chg3at0
+    type: BIGINT
+    years: '2024'
+  XCHG3AF0:
+    name: chg3af0_flag
+    type: VARCHAR
+    flag_for: chg3af0
+    years: '2024'
+  CHG3AF0:
+    name: chg3af0
+    type: BIGINT
+    years: '2024'
+  XCHG3AY0:
+    name: chg3ay0_flag
+    type: VARCHAR
+    flag_for: chg3ay0
+    years: '2024'
+  CHG3AY0:
+    name: chg3ay0
+    type: BIGINT
+    years: '2024'
+  XCHG3AT1:
+    name: chg3at1_flag
+    type: VARCHAR
+    flag_for: chg3at1
+    years: '2024'
+  CHG3AT1:
+    name: chg3at1
+    type: BIGINT
+    years: '2024'
+  XCHG3AF1:
+    name: chg3af1_flag
+    type: VARCHAR
+    flag_for: chg3af1
+    years: '2024'
+  CHG3AF1:
+    name: chg3af1
+    type: BIGINT
+    years: '2024'
+  XCHG3AY1:
+    name: chg3ay1_flag
+    type: VARCHAR
+    flag_for: chg3ay1
+    years: '2024'
+  CHG3AY1:
+    name: chg3ay1
+    type: BIGINT
+    years: '2024'
+  XCHG3AT2:
+    name: chg3at2_flag
+    type: VARCHAR
+    flag_for: chg3at2
+    years: '2024'
+  CHG3AT2:
+    name: chg3at2
+    type: BIGINT
+    years: '2024'
+  XCHG3AF2:
+    name: chg3af2_flag
+    type: VARCHAR
+    flag_for: chg3af2
+    years: '2024'
+  CHG3AF2:
+    name: chg3af2
+    type: BIGINT
+    years: '2024'
+  XCHG3AY2:
+    name: chg3ay2_flag
+    type: VARCHAR
+    flag_for: chg3ay2
+    years: '2024'
+  CHG3AY2:
+    name: chg3ay2
+    type: BIGINT
+    years: '2024'
+  XCHG3AT3:
+    name: chg3at3_flag
+    type: VARCHAR
+    flag_for: chg3at3
+    years: '2024'
+  CHG3AT3:
+    name: chg3at3
+    type: BIGINT
+    years: '2024'
+  XCHG3AF3:
+    name: chg3af3_flag
+    type: VARCHAR
+    flag_for: chg3af3
+    years: '2024'
+  CHG3AF3:
+    name: chg3af3
+    type: BIGINT
+    years: '2024'
+  XCHG3AY3:
+    name: chg3ay3_flag
+    type: VARCHAR
+    flag_for: chg3ay3
+    years: '2024'
+  CHG3AY3:
+    name: chg3ay3
+    type: BIGINT
+    years: '2024'
+  CHG3TGTD:
+    name: chg3tgtd
+    type: BIGINT
+    years: '2024'
+  CHG3FGTD:
+    name: chg3fgtd
+    type: BIGINT
+    years: '2024'
+  XCHG4AY0:
+    name: chg4ay0_flag
+    type: VARCHAR
+    flag_for: chg4ay0
+    years: '2024'
+  CHG4AY0:
+    name: chg4ay0
+    type: BIGINT
+    years: '2024'
+  XCHG4AY1:
+    name: chg4ay1_flag
+    type: VARCHAR
+    flag_for: chg4ay1
+    years: '2024'
+  CHG4AY1:
+    name: chg4ay1
+    type: BIGINT
+    years: '2024'
+  XCHG4AY2:
+    name: chg4ay2_flag
+    type: VARCHAR
+    flag_for: chg4ay2
+    years: '2024'
+  CHG4AY2:
+    name: chg4ay2
+    type: BIGINT
+    years: '2024'
+  XCHG4AY3:
+    name: chg4ay3_flag
+    type: VARCHAR
+    flag_for: chg4ay3
+    years: '2024'
+  CHG4AY3:
+    name: chg4ay3
+    type: BIGINT
+    years: '2024'
+  XCHG5AY0:
+    name: chg5ay0_flag
+    type: VARCHAR
+    flag_for: chg5ay0
+    years: '2024'
+  CHG5AY0:
+    name: chg5ay0
+    type: BIGINT
+    years: '2024'
+  XCHG5AY1:
+    name: chg5ay1_flag
+    type: VARCHAR
+    flag_for: chg5ay1
+    years: '2024'
+  CHG5AY1:
+    name: chg5ay1
+    type: BIGINT
+    years: '2024'
+  XCHG5AY2:
+    name: chg5ay2_flag
+    type: VARCHAR
+    flag_for: chg5ay2
+    years: '2024'
+  CHG5AY2:
+    name: chg5ay2
+    type: BIGINT
+    years: '2024'
+  XCHG5AY3:
+    name: chg5ay3_flag
+    type: VARCHAR
+    flag_for: chg5ay3
+    years: '2024'
+  CHG5AY3:
+    name: chg5ay3
+    type: BIGINT
+    years: '2024'
+  XCHG6AY0:
+    name: chg6ay0_flag
+    type: VARCHAR
+    flag_for: chg6ay0
+    years: '2024'
+  CHG6AY0:
+    name: chg6ay0
+    type: BIGINT
+    years: '2024'
+  XCHG6AY1:
+    name: chg6ay1_flag
+    type: VARCHAR
+    flag_for: chg6ay1
+    years: '2024'
+  CHG6AY1:
+    name: chg6ay1
+    type: BIGINT
+    years: '2024'
+  XCHG6AY2:
+    name: chg6ay2_flag
+    type: VARCHAR
+    flag_for: chg6ay2
+    years: '2024'
+  CHG6AY2:
+    name: chg6ay2
+    type: BIGINT
+    years: '2024'
+  XCHG6AY3:
+    name: chg6ay3_flag
+    type: VARCHAR
+    flag_for: chg6ay3
+    years: '2024'
+  CHG6AY3:
+    name: chg6ay3
+    type: BIGINT
+    years: '2024'
+  XCHG7AY0:
+    name: chg7ay0_flag
+    type: VARCHAR
+    flag_for: chg7ay0
+    years: '2024'
+  CHG7AY0:
+    name: chg7ay0
+    type: BIGINT
+    years: '2024'
+  XCHG7AY1:
+    name: chg7ay1_flag
+    type: VARCHAR
+    flag_for: chg7ay1
+    years: '2024'
+  CHG7AY1:
+    name: chg7ay1
+    type: BIGINT
+    years: '2024'
+  XCHG7AY2:
+    name: chg7ay2_flag
+    type: VARCHAR
+    flag_for: chg7ay2
+    years: '2024'
+  CHG7AY2:
+    name: chg7ay2
+    type: BIGINT
+    years: '2024'
+  XCHG7AY3:
+    name: chg7ay3_flag
+    type: VARCHAR
+    flag_for: chg7ay3
+    years: '2024'
+  CHG7AY3:
+    name: chg7ay3
+    type: BIGINT
+    years: '2024'
+  XCHG8AY0:
+    name: chg8ay0_flag
+    type: VARCHAR
+    flag_for: chg8ay0
+    years: '2024'
+  CHG8AY0:
+    name: chg8ay0
+    type: BIGINT
+    years: '2024'
+  XCHG8AY1:
+    name: chg8ay1_flag
+    type: VARCHAR
+    flag_for: chg8ay1
+    years: '2024'
+  CHG8AY1:
+    name: chg8ay1
+    type: BIGINT
+    years: '2024'
+  XCHG8AY2:
+    name: chg8ay2_flag
+    type: VARCHAR
+    flag_for: chg8ay2
+    years: '2024'
+  CHG8AY2:
+    name: chg8ay2
+    type: BIGINT
+    years: '2024'
+  XCHG8AY3:
+    name: chg8ay3_flag
+    type: VARCHAR
+    flag_for: chg8ay3
+    years: '2024'
+  CHG8AY3:
+    name: chg8ay3
+    type: BIGINT
+    years: '2024'
+  XCHG10AY0:
+    name: chg10ay0_flag
+    type: VARCHAR
+    flag_for: chg10ay0
+    years: '2024'
+  CHG10AY0:
+    name: chg10ay0
+    type: BIGINT
+    years: '2024'
+  XCHG10AY1:
+    name: chg10ay1_flag
+    type: VARCHAR
+    flag_for: chg10ay1
+    years: '2024'
+  CHG10AY1:
+    name: chg10ay1
+    type: BIGINT
+    years: '2024'
+  XCHG10AY2:
+    name: chg10ay2_flag
+    type: VARCHAR
+    flag_for: chg10ay2
+    years: '2024'
+  CHG10AY2:
+    name: chg10ay2
+    type: BIGINT
+    years: '2024'
+  XCHG10AY3:
+    name: chg10ay3_flag
+    type: VARCHAR
+    flag_for: chg10ay3
+    years: '2024'
+  CHG10AY3:
+    name: chg10ay3
+    type: BIGINT
+    years: '2024'
+  XCHG9AY0:
+    name: chg9ay0_flag
+    type: VARCHAR
+    flag_for: chg9ay0
+    years: '2024'
+  CHG9AY0:
+    name: chg9ay0
+    type: BIGINT
+    years: '2024'
+  XCHG9AY1:
+    name: chg9ay1_flag
+    type: VARCHAR
+    flag_for: chg9ay1
+    years: '2024'
+  CHG9AY1:
+    name: chg9ay1
+    type: BIGINT
+    years: '2024'
+  XCHG9AY2:
+    name: chg9ay2_flag
+    type: VARCHAR
+    flag_for: chg9ay2
+    years: '2024'
+  CHG9AY2:
+    name: chg9ay2
+    type: BIGINT
+    years: '2024'
+  XCHG9AY3:
+    name: chg9ay3_flag
+    type: VARCHAR
+    flag_for: chg9ay3
+    years: '2024'
+  CHG9AY3:
+    name: chg9ay3
+    type: BIGINT
+    years: '2024'
+  CIPCODE1:
+    name: cipcode1
+    type: VARCHAR
+    years: '2024'
+  XCIPTUI1:
+    name: xciptui1
+    type: VARCHAR
+    years: '2024'
+  CIPTUIT1:
+    name: ciptuit1
+    type: BIGINT
+    years: '2024'
+  XCIPSUP1:
+    name: xcipsup1
+    type: VARCHAR
+    years: '2024'
+  CIPSUPP1:
+    name: cipsupp1
+    type: BIGINT
+    years: '2024'
+  XCIPLGT1:
+    name: xciplgt1
+    type: VARCHAR
+    years: '2024'
+  CIPLGTH1:
+    name: ciplgth1
+    type: BIGINT
+    years: '2024'
+  PRGMSR1:
+    name: prgmsr1
+    type: BIGINT
+    years: '2024'
+  XMTHCMP1:
+    name: mthcmp1_flag
+    type: VARCHAR
+    flag_for: mthcmp1
+    years: '2024'
+  MTHCMP1:
+    name: mthcmp1
+    type: BIGINT
+    years: '2024'
+  XWKCMP1:
+    name: wkcmp1_flag
+    type: VARCHAR
+    flag_for: wkcmp1
+    years: '2024'
+  WKCMP1:
+    name: wkcmp1
+    type: BIGINT
+    years: '2024'
+  XLNAYHR1:
+    name: lnayhr1_flag
+    type: VARCHAR
+    flag_for: lnayhr1
+    years: '2024'
+  LNAYHR1:
+    name: lnayhr1
+    type: BIGINT
+    years: '2024'
+  XLNAYWK1:
+    name: lnaywk1_flag
+    type: VARCHAR
+    flag_for: lnaywk1
+    years: '2024'
+  LNAYWK1:
+    name: lnaywk1
+    type: BIGINT
+    years: '2024'
+  XCHG1PY0:
+    name: chg1py0_flag
+    type: VARCHAR
+    flag_for: chg1py0
+    years: '2024'
+  CHG1PY0:
+    name: chg1py0
+    type: BIGINT
+    years: '2024'
+  XCHG1PY1:
+    name: chg1py1_flag
+    type: VARCHAR
+    flag_for: chg1py1
+    years: '2024'
+  CHG1PY1:
+    name: chg1py1
+    type: BIGINT
+    years: '2024'
+  XCHG1PY2:
+    name: chg1py2_flag
+    type: VARCHAR
+    flag_for: chg1py2
+    years: '2024'
+  CHG1PY2:
+    name: chg1py2
+    type: BIGINT
+    years: '2024'
+  XCHG1PY3:
+    name: chg1py3_flag
+    type: VARCHAR
+    flag_for: chg1py3
+    years: '2024'
+  CHG1PY3:
+    name: chg1py3
+    type: BIGINT
+    years: '2024'
+  XCHG4PY0:
+    name: chg4py0_flag
+    type: VARCHAR
+    flag_for: chg4py0
+    years: '2024'
+  CHG4PY0:
+    name: chg4py0
+    type: BIGINT
+    years: '2024'
+  XCHG4PY1:
+    name: chg4py1_flag
+    type: VARCHAR
+    flag_for: chg4py1
+    years: '2024'
+  CHG4PY1:
+    name: chg4py1
+    type: BIGINT
+    years: '2024'
+  XCHG4PY2:
+    name: chg4py2_flag
+    type: VARCHAR
+    flag_for: chg4py2
+    years: '2024'
+  CHG4PY2:
+    name: chg4py2
+    type: BIGINT
+    years: '2024'
+  XCHG4PY3:
+    name: chg4py3_flag
+    type: VARCHAR
+    flag_for: chg4py3
+    years: '2024'
+  CHG4PY3:
+    name: chg4py3
+    type: BIGINT
+    years: '2024'
+  XCHG5PY0:
+    name: chg5py0_flag
+    type: VARCHAR
+    flag_for: chg5py0
+    years: '2024'
+  CHG5PY0:
+    name: chg5py0
+    type: BIGINT
+    years: '2024'
+  XCHG5PY1:
+    name: chg5py1_flag
+    type: VARCHAR
+    flag_for: chg5py1
+    years: '2024'
+  CHG5PY1:
+    name: chg5py1
+    type: BIGINT
+    years: '2024'
+  XCHG5PY2:
+    name: chg5py2_flag
+    type: VARCHAR
+    flag_for: chg5py2
+    years: '2024'
+  CHG5PY2:
+    name: chg5py2
+    type: BIGINT
+    years: '2024'
+  XCHG5PY3:
+    name: chg5py3_flag
+    type: VARCHAR
+    flag_for: chg5py3
+    years: '2024'
+  CHG5PY3:
+    name: chg5py3
+    type: BIGINT
+    years: '2024'
+  XCHG6PY0:
+    name: chg6py0_flag
+    type: VARCHAR
+    flag_for: chg6py0
+    years: '2024'
+  CHG6PY0:
+    name: chg6py0
+    type: BIGINT
+    years: '2024'
+  XCHG6PY1:
+    name: chg6py1_flag
+    type: VARCHAR
+    flag_for: chg6py1
+    years: '2024'
+  CHG6PY1:
+    name: chg6py1
+    type: BIGINT
+    years: '2024'
+  XCHG6PY2:
+    name: chg6py2_flag
+    type: VARCHAR
+    flag_for: chg6py2
+    years: '2024'
+  CHG6PY2:
+    name: chg6py2
+    type: BIGINT
+    years: '2024'
+  XCHG6PY3:
+    name: chg6py3_flag
+    type: VARCHAR
+    flag_for: chg6py3
+    years: '2024'
+  CHG6PY3:
+    name: chg6py3
+    type: BIGINT
+    years: '2024'
+  XCHG7PY0:
+    name: chg7py0_flag
+    type: VARCHAR
+    flag_for: chg7py0
+    years: '2024'
+  CHG7PY0:
+    name: chg7py0
+    type: BIGINT
+    years: '2024'
+  XCHG7PY1:
+    name: chg7py1_flag
+    type: VARCHAR
+    flag_for: chg7py1
+    years: '2024'
+  CHG7PY1:
+    name: chg7py1
+    type: BIGINT
+    years: '2024'
+  XCHG7PY2:
+    name: chg7py2_flag
+    type: VARCHAR
+    flag_for: chg7py2
+    years: '2024'
+  CHG7PY2:
+    name: chg7py2
+    type: BIGINT
+    years: '2024'
+  XCHG7PY3:
+    name: chg7py3_flag
+    type: VARCHAR
+    flag_for: chg7py3
+    years: '2024'
+  CHG7PY3:
+    name: chg7py3
+    type: BIGINT
+    years: '2024'
+  XCHG8PY0:
+    name: chg8py0_flag
+    type: VARCHAR
+    flag_for: chg8py0
+    years: '2024'
+  CHG8PY0:
+    name: chg8py0
+    type: BIGINT
+    years: '2024'
+  XCHG8PY1:
+    name: chg8py1_flag
+    type: VARCHAR
+    flag_for: chg8py1
+    years: '2024'
+  CHG8PY1:
+    name: chg8py1
+    type: BIGINT
+    years: '2024'
+  XCHG8PY2:
+    name: chg8py2_flag
+    type: VARCHAR
+    flag_for: chg8py2
+    years: '2024'
+  CHG8PY2:
+    name: chg8py2
+    type: BIGINT
+    years: '2024'
+  XCHG8PY3:
+    name: chg8py3_flag
+    type: VARCHAR
+    flag_for: chg8py3
+    years: '2024'
+  CHG8PY3:
+    name: chg8py3
+    type: BIGINT
+    years: '2024'
+  XCHG10PY0:
+    name: chg10py0_flag
+    type: VARCHAR
+    flag_for: chg10py0
+    years: '2024'
+  CHG10PY0:
+    name: chg10py0
+    type: BIGINT
+    years: '2024'
+  XCHG10PY1:
+    name: chg10py1_flag
+    type: VARCHAR
+    flag_for: chg10py1
+    years: '2024'
+  CHG10PY1:
+    name: chg10py1
+    type: BIGINT
+    years: '2024'
+  XCHG10PY2:
+    name: chg10py2_flag
+    type: VARCHAR
+    flag_for: chg10py2
+    years: '2024'
+  CHG10PY2:
+    name: chg10py2
+    type: BIGINT
+    years: '2024'
+  XCHG10PY3:
+    name: chg10py3_flag
+    type: VARCHAR
+    flag_for: chg10py3
+    years: '2024'
+  CHG10PY3:
+    name: chg10py3
+    type: BIGINT
+    years: '2024'
+  XCHG9PY0:
+    name: chg9py0_flag
+    type: VARCHAR
+    flag_for: chg9py0
+    years: '2024'
+  CHG9PY0:
+    name: chg9py0
+    type: BIGINT
+    years: '2024'
+  XCHG9PY1:
+    name: chg9py1_flag
+    type: VARCHAR
+    flag_for: chg9py1
+    years: '2024'
+  CHG9PY1:
+    name: chg9py1
+    type: BIGINT
+    years: '2024'
+  XCHG9PY2:
+    name: chg9py2_flag
+    type: VARCHAR
+    flag_for: chg9py2
+    years: '2024'
+  CHG9PY2:
+    name: chg9py2
+    type: BIGINT
+    years: '2024'
+  XCHG9PY3:
+    name: chg9py3_flag
+    type: VARCHAR
+    flag_for: chg9py3
+    years: '2024'
+  CHG9PY3:
+    name: chg9py3
+    type: BIGINT
+    years: '2024'
+  CIPCODE2:
+    name: cipcode2
+    type: VARCHAR
+    years: '2024'
+  XCIPTUI2:
+    name: xciptui2
+    type: VARCHAR
+    years: '2024'
+  CIPTUIT2:
+    name: ciptuit2
+    type: BIGINT
+    years: '2024'
+  XCIPSUP2:
+    name: xcipsup2
+    type: VARCHAR
+    years: '2024'
+  CIPSUPP2:
+    name: cipsupp2
+    type: BIGINT
+    years: '2024'
+  XCIPLGT2:
+    name: xciplgt2
+    type: VARCHAR
+    years: '2024'
+  CIPLGTH2:
+    name: ciplgth2
+    type: BIGINT
+    years: '2024'
+  PRGMSR2:
+    name: prgmsr2
+    type: BIGINT
+    years: '2024'
+  XMTHCMP2:
+    name: mthcmp2_flag
+    type: VARCHAR
+    flag_for: mthcmp2
+    years: '2024'
+  MTHCMP2:
+    name: mthcmp2
+    type: BIGINT
+    years: '2024'
+  CIPCODE3:
+    name: cipcode3
+    type: VARCHAR
+    years: '2024'
+  XCIPTUI3:
+    name: xciptui3
+    type: VARCHAR
+    years: '2024'
+  CIPTUIT3:
+    name: ciptuit3
+    type: BIGINT
+    years: '2024'
+  XCIPSUP3:
+    name: xcipsup3
+    type: VARCHAR
+    years: '2024'
+  CIPSUPP3:
+    name: cipsupp3
+    type: BIGINT
+    years: '2024'
+  XCIPLGT3:
+    name: xciplgt3
+    type: VARCHAR
+    years: '2024'
+  CIPLGTH3:
+    name: ciplgth3
+    type: BIGINT
+    years: '2024'
+  PRGMSR3:
+    name: prgmsr3
+    type: BIGINT
+    years: '2024'
+  XMTHCMP3:
+    name: mthcmp3_flag
+    type: VARCHAR
+    flag_for: mthcmp3
+    years: '2024'
+  MTHCMP3:
+    name: mthcmp3
+    type: BIGINT
+    years: '2024'
+  CIPCODE4:
+    name: cipcode4
+    type: VARCHAR
+    years: '2024'
+  XCIPTUI4:
+    name: xciptui4
+    type: VARCHAR
+    years: '2024'
+  CIPTUIT4:
+    name: ciptuit4
+    type: BIGINT
+    years: '2024'
+  XCIPSUP4:
+    name: xcipsup4
+    type: VARCHAR
+    years: '2024'
+  CIPSUPP4:
+    name: cipsupp4
+    type: BIGINT
+    years: '2024'
+  XCIPLGT4:
+    name: xciplgt4
+    type: VARCHAR
+    years: '2024'
+  CIPLGTH4:
+    name: ciplgth4
+    type: BIGINT
+    years: '2024'
+  PRGMSR4:
+    name: prgmsr4
+    type: BIGINT
+    years: '2024'
+  XMTHCMP4:
+    name: mthcmp4_flag
+    type: VARCHAR
+    flag_for: mthcmp4
+    years: '2024'
+  MTHCMP4:
+    name: mthcmp4
+    type: BIGINT
+    years: '2024'
+  CIPCODE5:
+    name: cipcode5
+    type: VARCHAR
+    years: '2024'
+  XCIPTUI5:
+    name: xciptui5
+    type: VARCHAR
+    years: '2024'
+  CIPTUIT5:
+    name: ciptuit5
+    type: BIGINT
+    years: '2024'
+  XCIPSUP5:
+    name: xcipsup5
+    type: VARCHAR
+    years: '2024'
+  CIPSUPP5:
+    name: cipsupp5
+    type: BIGINT
+    years: '2024'
+  XCIPLGT5:
+    name: xciplgt5
+    type: VARCHAR
+    years: '2024'
+  CIPLGTH5:
+    name: ciplgth5
+    type: BIGINT
+    years: '2024'
+  PRGMSR5:
+    name: prgmsr5
+    type: BIGINT
+    years: '2024'
+  XMTHCMP5:
+    name: mthcmp5_flag
+    type: VARCHAR
+    flag_for: mthcmp5
+    years: '2024'
+  MTHCMP5:
+    name: mthcmp5
+    type: BIGINT
+    years: '2024'
+  CIPCODE6:
+    name: cipcode6
+    type: VARCHAR
+    years: '2024'
+  XCIPTUI6:
+    name: xciptui6
+    type: VARCHAR
+    years: '2024'
+  CIPTUIT6:
+    name: ciptuit6
+    type: BIGINT
+    years: '2024'
+  XCIPSUP6:
+    name: xcipsup6
+    type: VARCHAR
+    years: '2024'
+  CIPSUPP6:
+    name: cipsupp6
+    type: BIGINT
+    years: '2024'
+  XCIPLGT6:
+    name: xciplgt6
+    type: VARCHAR
+    years: '2024'
+  CIPLGTH6:
+    name: ciplgth6
+    type: BIGINT
+    years: '2024'
+  PRGMSR6:
+    name: prgmsr6
+    type: BIGINT
+    years: '2024'
+  XMTHCMP6:
+    name: mthcmp6_flag
+    type: VARCHAR
+    flag_for: mthcmp6
+    years: '2024'
+  MTHCMP6:
+    name: mthcmp6
+    type: BIGINT
+    years: '2024'

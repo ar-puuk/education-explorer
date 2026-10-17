@@ -1,0 +1,485 @@
+source: ipeds
+family: drvf
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2024
+  F1CORREV:
+    name: f1correv
+    type: VARCHAR
+    years: 2021-2024
+  F1TUFEPC:
+    name: f1tufepc
+    type: VARCHAR
+    years: 2021-2024
+  F1STAPPC:
+    name: f1stappc
+    type: VARCHAR
+    years: 2021-2024
+  F1LCAPPC:
+    name: f1lcappc
+    type: VARCHAR
+    years: 2021-2024
+  F1GVGCPC:
+    name: f1gvgcpc
+    type: VARCHAR
+    years: 2021-2024
+  F1PGGCPC:
+    name: f1pggcpc
+    type: VARCHAR
+    years: 2021-2024
+  F1INVRPC:
+    name: f1invrpc
+    type: VARCHAR
+    years: 2021-2024
+  F1OTRVPC:
+    name: f1otrvpc
+    type: VARCHAR
+    years: 2021-2024
+  F1TUFEFT:
+    name: f1tufeft
+    type: VARCHAR
+    years: 2021-2024
+  F1STAPFT:
+    name: f1stapft
+    type: VARCHAR
+    years: 2021-2024
+  F1LCAPFT:
+    name: f1lcapft
+    type: VARCHAR
+    years: 2021-2024
+  F1GVGCFT:
+    name: f1gvgcft
+    type: VARCHAR
+    years: 2021-2024
+  F1PGGCFT:
+    name: f1pggcft
+    type: VARCHAR
+    years: 2021-2024
+  F1INVRFT:
+    name: f1invrft
+    type: VARCHAR
+    years: 2021-2024
+  F1OTRVFT:
+    name: f1otrvft
+    type: VARCHAR
+    years: 2021-2024
+  F1COREXP:
+    name: f1corexp
+    type: VARCHAR
+    years: 2021-2024
+  F1INSTFT:
+    name: f1instft
+    type: VARCHAR
+    years: 2021-2024
+  F1RSRCFT:
+    name: f1rsrcft
+    type: VARCHAR
+    years: 2021-2024
+  F1PBSVFT:
+    name: f1pbsvft
+    type: VARCHAR
+    years: 2021-2024
+  F1ACSPFT:
+    name: f1acspft
+    type: VARCHAR
+    years: 2021-2024
+  F1STSVFT:
+    name: f1stsvft
+    type: VARCHAR
+    years: 2021-2024
+  F1INSUFT:
+    name: f1insuft
+    type: VARCHAR
+    years: 2021-2024
+  F1OTEXFT:
+    name: f1otexft
+    type: VARCHAR
+    years: 2021-2024
+  F1INSTPC:
+    name: f1instpc
+    type: VARCHAR
+    years: 2021-2024
+  F1RSRCPC:
+    name: f1rsrcpc
+    type: VARCHAR
+    years: 2021-2024
+  F1PBSVPC:
+    name: f1pbsvpc
+    type: VARCHAR
+    years: 2021-2024
+  F1ACSPPC:
+    name: f1acsppc
+    type: VARCHAR
+    years: 2021-2024
+  F1STSVPC:
+    name: f1stsvpc
+    type: VARCHAR
+    years: 2021-2024
+  F1INSUPC:
+    name: f1insupc
+    type: VARCHAR
+    years: 2021-2024
+  F1OTEXPC:
+    name: f1otexpc
+    type: VARCHAR
+    years: 2021-2024
+  F1SWINSP:
+    name: f1swinsp
+    type: VARCHAR
+    years: 2021-2024
+  F1SWRSRP:
+    name: f1swrsrp
+    type: VARCHAR
+    years: 2021-2024
+  F1SWPBSP:
+    name: f1swpbsp
+    type: VARCHAR
+    years: 2021-2024
+  F1SWACSP:
+    name: f1swacsp
+    type: VARCHAR
+    years: 2021-2024
+  F1SWSTSP:
+    name: f1swstsp
+    type: VARCHAR
+    years: 2021-2024
+  F1SWISPP:
+    name: f1swispp
+    type: VARCHAR
+    years: 2021-2024
+  F1SWOTEP:
+    name: f1swotep
+    type: VARCHAR
+    years: 2021-2024
+  F1SWCREP:
+    name: f1swcrep
+    type: VARCHAR
+    years: 2021-2024
+  F1ENDMFT:
+    name: f1endmft
+    type: VARCHAR
+    years: 2021-2024
+  F1SAFBPC:
+    name: f1safbpc
+    type: VARCHAR
+    years: 2021-2024
+  F1SALRPC:
+    name: f1salrpc
+    type: VARCHAR
+    years: 2021-2024
+  F1EQUITR:
+    name: f1equitr
+    type: VARCHAR
+    years: 2021-2024
+  F2CORREV:
+    name: f2correv
+    type: VARCHAR
+    years: 2021-2024
+  F2TUFEPC:
+    name: f2tufepc
+    type: VARCHAR
+    years: 2021-2024
+  F2GVGCPC:
+    name: f2gvgcpc
+    type: VARCHAR
+    years: 2021-2024
+  F2PGGCPC:
+    name: f2pggcpc
+    type: VARCHAR
+    years: 2021-2024
+  F2INVRPC:
+    name: f2invrpc
+    type: VARCHAR
+    years: 2021-2024
+  F2OTRVPC:
+    name: f2otrvpc
+    type: VARCHAR
+    years: 2021-2024
+  F2TUFEFT:
+    name: f2tufeft
+    type: VARCHAR
+    years: 2021-2024
+  F2GVGCFT:
+    name: f2gvgcft
+    type: VARCHAR
+    years: 2021-2024
+  F2PGGCFT:
+    name: f2pggcft
+    type: VARCHAR
+    years: 2021-2024
+  F2INVRFT:
+    name: f2invrft
+    type: VARCHAR
+    years: 2021-2024
+  F2OTRVFT:
+    name: f2otrvft
+    type: VARCHAR
+    years: 2021-2024
+  F2COREXP:
+    name: f2corexp
+    type: VARCHAR
+    years: 2021-2024
+  F2INSTFT:
+    name: f2instft
+    type: VARCHAR
+    years: 2021-2024
+  F2RSRCFT:
+    name: f2rsrcft
+    type: VARCHAR
+    years: 2021-2024
+  F2PBSVFT:
+    name: f2pbsvft
+    type: VARCHAR
+    years: 2021-2024
+  F2ACSPFT:
+    name: f2acspft
+    type: VARCHAR
+    years: 2021-2024
+  F2STSVFT:
+    name: f2stsvft
+    type: VARCHAR
+    years: 2021-2024
+  F2INSUFT:
+    name: f2insuft
+    type: VARCHAR
+    years: 2021-2024
+  F2OTEXFT:
+    name: f2otexft
+    type: VARCHAR
+    years: 2021-2024
+  F2INSTPC:
+    name: f2instpc
+    type: VARCHAR
+    years: 2021-2024
+  F2RSRCPC:
+    name: f2rsrcpc
+    type: VARCHAR
+    years: 2021-2024
+  F2PBSVPC:
+    name: f2pbsvpc
+    type: VARCHAR
+    years: 2021-2024
+  F2ACSPPC:
+    name: f2acsppc
+    type: VARCHAR
+    years: 2021-2024
+  F2STSVPC:
+    name: f2stsvpc
+    type: VARCHAR
+    years: 2021-2024
+  F2INSUPC:
+    name: f2insupc
+    type: VARCHAR
+    years: 2021-2024
+  F2OTEXPC:
+    name: f2otexpc
+    type: VARCHAR
+    years: 2021-2024
+  F2SWINSP:
+    name: f2swinsp
+    type: VARCHAR
+    years: 2021-2024
+  F2SWRSRP:
+    name: f2swrsrp
+    type: VARCHAR
+    years: 2021-2024
+  F2SWPBSP:
+    name: f2swpbsp
+    type: VARCHAR
+    years: 2021-2024
+  F2SWACSP:
+    name: f2swacsp
+    type: VARCHAR
+    years: 2021-2024
+  F2SWSTSP:
+    name: f2swstsp
+    type: VARCHAR
+    years: 2021-2024
+  F2SWISPP:
+    name: f2swispp
+    type: VARCHAR
+    years: 2021-2024
+  F2SWOTEP:
+    name: f2swotep
+    type: VARCHAR
+    years: 2021-2024
+  F2SWCREP:
+    name: f2swcrep
+    type: VARCHAR
+    years: 2021-2024
+  F2ENDMFT:
+    name: f2endmft
+    type: VARCHAR
+    years: 2021-2024
+  F2SAFBPC:
+    name: f2safbpc
+    type: VARCHAR
+    years: 2021-2024
+  F2SALRPC:
+    name: f2salrpc
+    type: VARCHAR
+    years: 2021-2024
+  F2EQUITR:
+    name: f2equitr
+    type: VARCHAR
+    years: 2021-2024
+  F3CORREV:
+    name: f3correv
+    type: VARCHAR
+    years: 2021-2024
+  F3TUFEPC:
+    name: f3tufepc
+    type: VARCHAR
+    years: 2021-2024
+  F3GVGCPC:
+    name: f3gvgcpc
+    type: VARCHAR
+    years: 2021-2024
+  F3PGGCPC:
+    name: f3pggcpc
+    type: VARCHAR
+    years: 2021-2024
+  F3INVRPC:
+    name: f3invrpc
+    type: VARCHAR
+    years: 2021-2024
+  F3SSEAPC:
+    name: f3sseapc
+    type: VARCHAR
+    years: 2021-2024
+  F3OTRVPC:
+    name: f3otrvpc
+    type: VARCHAR
+    years: 2021-2024
+  F3TUFEFT:
+    name: f3tufeft
+    type: VARCHAR
+    years: 2021-2024
+  F3GVGCFT:
+    name: f3gvgcft
+    type: VARCHAR
+    years: 2021-2024
+  F3PGGCFT:
+    name: f3pggcft
+    type: VARCHAR
+    years: 2021-2024
+  F3INVRFT:
+    name: f3invrft
+    type: VARCHAR
+    years: 2021-2024
+  F3SSEAFT:
+    name: f3sseaft
+    type: VARCHAR
+    years: 2021-2024
+  F3OTRVFT:
+    name: f3otrvft
+    type: VARCHAR
+    years: 2021-2024
+  F3COREXP:
+    name: f3corexp
+    type: VARCHAR
+    years: 2021-2024
+  F3INSTFT:
+    name: f3instft
+    type: VARCHAR
+    years: 2021-2024
+  F3RSRCFT:
+    name: f3rsrcft
+    type: VARCHAR
+    years: 2021-2024
+  F3PBSVFT:
+    name: f3pbsvft
+    type: VARCHAR
+    years: 2021-2024
+  F3ACSPFT:
+    name: f3acspft
+    type: VARCHAR
+    years: 2021-2024
+  F3STSVFT:
+    name: f3stsvft
+    type: VARCHAR
+    years: 2021-2024
+  F3INSUFT:
+    name: f3insuft
+    type: VARCHAR
+    years: 2021-2024
+  F3OTEXFT:
+    name: f3otexft
+    type: VARCHAR
+    years: 2021-2024
+  F3INSTPC:
+    name: f3instpc
+    type: VARCHAR
+    years: 2021-2024
+  F3RSRCPC:
+    name: f3rsrcpc
+    type: VARCHAR
+    years: 2021-2024
+  F3PBSVPC:
+    name: f3pbsvpc
+    type: VARCHAR
+    years: 2021-2024
+  F3ACSPPC:
+    name: f3acsppc
+    type: VARCHAR
+    years: 2021-2024
+  F3STSVPC:
+    name: f3stsvpc
+    type: VARCHAR
+    years: 2021-2024
+  F3INSUPC:
+    name: f3insupc
+    type: VARCHAR
+    years: 2021-2024
+  F3OTEXPC:
+    name: f3otexpc
+    type: VARCHAR
+    years: 2021-2024
+  F3SWINSP:
+    name: f3swinsp
+    type: VARCHAR
+    years: 2021-2024
+  F3SWRSRP:
+    name: f3swrsrp
+    type: VARCHAR
+    years: 2021-2024
+  F3SWPBSP:
+    name: f3swpbsp
+    type: VARCHAR
+    years: 2021-2024
+  F3SWACSP:
+    name: f3swacsp
+    type: VARCHAR
+    years: 2021-2024
+  F3SWSTSP:
+    name: f3swstsp
+    type: VARCHAR
+    years: 2021-2024
+  F3SWISPP:
+    name: f3swispp
+    type: VARCHAR
+    years: 2021-2024
+  F3SWOTEP:
+    name: f3swotep
+    type: VARCHAR
+    years: 2021-2024
+  F3SWCREP:
+    name: f3swcrep
+    type: VARCHAR
+    years: 2021-2024
+  F3SAFBPC:
+    name: f3safbpc
+    type: VARCHAR
+    years: 2021-2024
+  F3SALRPC:
+    name: f3salrpc
+    type: VARCHAR
+    years: 2021-2024
+  F3EQUITR:
+    name: f3equitr
+    type: VARCHAR
+    years: 2021-2024

@@ -1,0 +1,85 @@
+source: ipeds
+family: efia
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2002-2025
+  XCDACTUA:
+    name: cdactua_flag
+    type: VARCHAR
+    flag_for: cdactua
+    years: 2002-2025
+  CDACTUA:
+    name: cdactua
+    type: BIGINT
+    years: 2002-2025
+  XCNACTUA:
+    name: cnactua_flag
+    type: VARCHAR
+    flag_for: cnactua
+    years: 2002-2025
+  CNACTUA:
+    name: cnactua
+    type: BIGINT
+    years: 2002-2025
+  XCDACTGA:
+    name: cdactga_flag
+    type: VARCHAR
+    flag_for: cdactga
+    years: 2002-2025
+  CDACTGA:
+    name: cdactga
+    type: BIGINT
+    years: 2002-2025
+  XEFTEUG:
+    name: efteug_flag
+    type: VARCHAR
+    flag_for: efteug
+    years: 2004-2025
+  EFTEUG:
+    name: efteug
+    type: BIGINT
+    years: 2004-2025
+  XEFTEGD:
+    name: eftegd_flag
+    type: VARCHAR
+    flag_for: eftegd
+    years: 2004-2025
+  EFTEGD:
+    name: eftegd
+    type: BIGINT
+    years: 2004-2025
+  XFTEUG:
+    name: fteug_flag
+    type: VARCHAR
+    flag_for: fteug
+    years: 2004-2025
+  FTEUG:
+    name: fteug
+    type: BIGINT
+    years: 2004-2025
+  XFTEGD:
+    name: ftegd_flag
+    type: VARCHAR
+    flag_for: ftegd
+    years: 2004-2025
+  FTEGD:
+    name: ftegd
+    type: BIGINT
+    years: 2004-2025
+  ACTTYPE:
+    name: acttype
+    type: BIGINT
+    years: 2004-2025
+  XFTEDPP:
+    name: ftedpp_flag
+    type: VARCHAR
+    flag_for: ftedpp
+    years: 2012-2025
+  FTEDPP:
+    name: ftedpp
+    type: BIGINT
+    years: 2012-2025

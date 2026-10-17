@@ -1,0 +1,1041 @@
+source: ipeds
+family: hd
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2025
+  INSTNM:
+    name: instnm
+    type: VARCHAR
+    years: 2000-2025
+  ADDR:
+    name: addr
+    type: VARCHAR
+    years: 2000-2025
+  CITY:
+    name: city
+    type: VARCHAR
+    years: 2000-2025
+  STABBR:
+    name: stabbr
+    type: VARCHAR
+    years: 2000-2025
+  ZIP:
+    name: zip
+    type: VARCHAR
+    years: 2000-2025
+  FIPS:
+    name: fips
+    type: BIGINT
+    years: 2000-2025
+  OBEREG:
+    name: obereg
+    type: BIGINT
+    years: 2000-2025
+  CHFNM:
+    name: chfnm
+    type: VARCHAR
+    years: 2000-2025
+  CHFTITLE:
+    name: chftitle
+    type: VARCHAR
+    years: 2000-2025
+  GENTELE:
+    name: gentele
+    type: VARCHAR
+    years: 2000-2025
+  FINTELE:
+    name: fintele
+    type: BIGINT
+    years: 2000-2006
+  ADMTELE:
+    name: admtele
+    type: BIGINT
+    years: 2000-2006
+  EIN:
+    name: ein
+    type: VARCHAR
+    years: 2000-2025
+  DUNS:
+    name: duns
+    type: VARCHAR
+    years: 2000-2006,2016-2021
+  OPEID:
+    name: opeid
+    type: VARCHAR
+    years: 2000-2025
+  OPEFLAG:
+    name: opeflag
+    type: BIGINT
+    years: 2000-2025
+  WEBADDR:
+    name: webaddr
+    type: VARCHAR
+    years: 2000-2025
+  SECTOR:
+    name: sector
+    type: BIGINT
+    years: 2000-2025
+  ICLEVEL:
+    name: iclevel
+    type: BIGINT
+    years: 2000-2025
+  CONTROL:
+    name: control
+    type: BIGINT
+    years: 2000-2025
+  AFFIL:
+    name: affil
+    type: BIGINT
+    years: 2000-2002
+  HLOFFER:
+    name: hloffer
+    type: BIGINT
+    years: 2000-2025
+  UGOFFER:
+    name: ugoffer
+    type: BIGINT
+    years: 2000-2025
+  GROFFER:
+    name: groffer
+    type: BIGINT
+    years: 2000-2025
+  FPOFFER:
+    name: fpoffer
+    type: BIGINT
+    years: 2000-2008
+  HDEGOFFR:
+    name: hdegoffr
+    type: BIGINT
+    years: 2000-2008
+  DEGGRANT:
+    name: deggrant
+    type: BIGINT
+    years: 2000-2025
+  PCTMIN1:
+    name: pctmin1
+    type: BIGINT
+    years: 2000-2002
+  PCTMIN2:
+    name: pctmin2
+    type: BIGINT
+    years: 2000-2002
+  PCTMIN3:
+    name: pctmin3
+    type: BIGINT
+    years: 2000-2002
+  PCTMIN4:
+    name: pctmin4
+    type: BIGINT
+    years: 2000-2002
+  HBCU:
+    name: hbcu
+    type: BIGINT
+    years: 2000-2025
+  HOSPITAL:
+    name: hospital
+    type: BIGINT
+    years: 2000-2025
+  MEDICAL:
+    name: medical
+    type: BIGINT
+    years: 2000-2025
+  TRIBAL:
+    name: tribal
+    type: BIGINT
+    years: 2000-2025
+  CARNEGIE:
+    name: carnegie
+    type: BIGINT
+    years: 2000-2023
+  LOCALE:
+    name: locale
+    type: BIGINT
+    years: 2000-2025
+  OPENPUBL:
+    name: openpubl
+    type: BIGINT
+    years: 2000-2025
+  ACT:
+    name: act
+    type: VARCHAR
+    years: 2000-2025
+  NEWID:
+    name: newid
+    type: BIGINT
+    years: 2000-2025
+  DEATHYR:
+    name: deathyr
+    type: BIGINT
+    years: 2000-2025
+  CLOSEDAT:
+    name: closedat
+    type: VARCHAR
+    years: 2000-2025
+  CYACTIVE:
+    name: cyactive
+    type: BIGINT
+    years: 2000-2025
+  STAT_FA:
+    name: stat_fa
+    type: BIGINT
+    years: 2000-2003
+  PSEFLAG:
+    name: pseflag
+    type: BIGINT
+    years: 2000-2025
+  PSET4FLG:
+    name: pset4flg
+    type: BIGINT
+    years: 2000-2025
+  LOCK_FA:
+    name: lock_fa
+    type: BIGINT
+    years: 2000-2001
+  DATE_FA:
+    name: date_fa
+    type: BIGINT
+    years: '2000'
+  STAT_IC:
+    name: stat_ic
+    type: BIGINT
+    years: 2000-2003
+  STAT_C:
+    name: stat_c
+    type: BIGINT
+    years: 2000-2003
+  PRCH_C:
+    name: prch_c
+    type: BIGINT
+    years: 2000-2003
+  IDX_C:
+    name: idx_c
+    type: BIGINT
+    years: 2000-2003
+  IMP_C:
+    name: imp_c
+    type: BIGINT
+    years: 2000-2003
+  LOCK_SP:
+    name: lock_sp
+    type: BIGINT
+    years: '2000'
+  STAT_SP:
+    name: stat_sp
+    type: BIGINT
+    years: 2000-2003
+  STAT_EF:
+    name: stat_ef
+    type: BIGINT
+    years: 2000-2003
+  PRCH_EF:
+    name: prch_ef
+    type: BIGINT
+    years: 2000-2003
+  IDX_EF:
+    name: idx_ef
+    type: BIGINT
+    years: 2000-2003
+  IMP_EF:
+    name: imp_ef
+    type: BIGINT
+    years: 2000-2003
+  PTA99_EF:
+    name: pta99_ef
+    type: BIGINT
+    years: 2000-2003
+  PTACIPEF:
+    name: ptacipef
+    type: BIGINT
+    years: 2000,2002
+  PTB_EF:
+    name: ptb_ef
+    type: BIGINT
+    years: 2000-2003
+  PTC_EF:
+    name: ptc_ef
+    type: BIGINT
+    years: 2000-2003
+  PTD_EF:
+    name: ptd_ef
+    type: BIGINT
+    years: 2000,2002-2003
+  FORM_F:
+    name: form_f
+    type: BIGINT
+    years: 2000-2003
+  STAT_F:
+    name: stat_f
+    type: BIGINT
+    years: 2000-2003
+  PRCH_F:
+    name: prch_f
+    type: BIGINT
+    years: 2000-2003
+  IDX_F:
+    name: idx_f
+    type: BIGINT
+    years: 2000-2003
+  IMP_F:
+    name: imp_f
+    type: BIGINT
+    years: 2000-2003
+  FYBEG:
+    name: fybeg
+    type: VARCHAR
+    years: 2000-2003
+  FYEND:
+    name: fyend
+    type: VARCHAR
+    years: 2000-2003
+  GPFS:
+    name: gpfs
+    type: BIGINT
+    years: 2000-2003
+  F1GASBCR:
+    name: f1gasbcr
+    type: BIGINT
+    years: 2000-2003
+  F1GASBAL:
+    name: f1gasbal
+    type: BIGINT
+    years: 2000-2003
+  STAT_SFA:
+    name: stat_sfa
+    type: BIGINT
+    years: 2000-2003
+  PRCH_SFA:
+    name: prch_sfa
+    type: BIGINT
+    years: 2000-2003
+  IDX_SFA:
+    name: idx_sfa
+    type: BIGINT
+    years: 2000-2003
+  STAT_GR:
+    name: stat_gr
+    type: BIGINT
+    years: 2000-2003
+  PRCH_GR:
+    name: prch_gr
+    type: BIGINT
+    years: 2000-2003
+  IDX_GR:
+    name: idx_gr
+    type: BIGINT
+    years: 2000-2003
+  COHRTSTU:
+    name: cohrtstu
+    type: BIGINT
+    years: 2000-2003
+  COHRTYR1:
+    name: cohrtyr1
+    type: BIGINT
+    years: 2000-2001
+  PYAID:
+    name: pyaid
+    type: BIGINT
+    years: 2000-2003
+  COHRTAID:
+    name: cohrtaid
+    type: BIGINT
+    years: 2000-2003
+  SPORT1:
+    name: sport1
+    type: BIGINT
+    years: 2000-2003
+  SPORT2:
+    name: sport2
+    type: BIGINT
+    years: 2000-2003
+  SPORT3:
+    name: sport3
+    type: BIGINT
+    years: 2000-2003
+  SPORT4:
+    name: sport4
+    type: BIGINT
+    years: 2000-2003
+  SPORT5:
+    name: sport5
+    type: BIGINT
+    years: 2000-2003
+  TRANSVER:
+    name: transver
+    type: BIGINT
+    years: 2000-2002
+  LONGPGM:
+    name: longpgm
+    type: BIGINT
+    years: 2000-2003
+  COHRTMT:
+    name: cohrtmt
+    type: BIGINT
+    years: 2000-2003
+  CINDON:
+    name: cindon
+    type: BIGINT
+    years: 2000-2002
+  CINSON:
+    name: cinson
+    type: BIGINT
+    years: 2000-2002
+  COTSON:
+    name: cotson
+    type: BIGINT
+    years: 2000-2002
+  CINDOFF:
+    name: cindoff
+    type: BIGINT
+    years: 2000-2002
+  CINSOFF:
+    name: cinsoff
+    type: BIGINT
+    years: 2000-2002
+  COTSOFF:
+    name: cotsoff
+    type: BIGINT
+    years: 2000-2002
+  CINDFAM:
+    name: cindfam
+    type: BIGINT
+    years: 2000-2002
+  CINSFAM:
+    name: cinsfam
+    type: BIGINT
+    years: 2000-2002
+  COTSFAM:
+    name: cotsfam
+    type: BIGINT
+    years: 2000-2002
+  FTE:
+    name: fte
+    type: BIGINT
+    years: 2000-2003
+  OCRHSI:
+    name: ocrhsi
+    type: BIGINT
+    years: 2000-2003
+  OCRMSI:
+    name: ocrmsi
+    type: BIGINT
+    years: 2000-2003
+  DMAJOR:
+    name: dmajor
+    type: BIGINT
+    years: '2001'
+  STAT_WI:
+    name: stat_wi
+    type: BIGINT
+    years: 2001-2003
+  STAT_SA:
+    name: stat_sa
+    type: BIGINT
+    years: 2001-2003
+  PRCH_SA:
+    name: prch_sa
+    type: BIGINT
+    years: 2001-2003
+  IDX_SA:
+    name: idx_sa
+    type: BIGINT
+    years: 2001-2003
+  IMP_SA:
+    name: imp_sa
+    type: BIGINT
+    years: 2001-2003
+  STAT_S:
+    name: stat_s
+    type: BIGINT
+    years: 2001-2003
+  PRCH_S:
+    name: prch_s
+    type: BIGINT
+    years: 2001-2003
+  IDX_S:
+    name: idx_s
+    type: BIGINT
+    years: 2001-2003
+  IMP_S:
+    name: imp_s
+    type: BIGINT
+    years: 2001-2003
+  STAT_EAP:
+    name: stat_eap
+    type: BIGINT
+    years: 2001-2003
+  PRCH_EAP:
+    name: prch_eap
+    type: BIGINT
+    years: 2001-2003
+  IDX_EAP:
+    name: idx_eap
+    type: BIGINT
+    years: 2001-2003
+  IMP_EAP:
+    name: imp_eap
+    type: BIGINT
+    years: 2001-2003
+  LOCK_SA:
+    name: lock_sa
+    type: BIGINT
+    years: 2001-2003
+  LOCK_S:
+    name: lock_s
+    type: BIGINT
+    years: 2001-2003
+  LOCK_EAP:
+    name: lock_eap
+    type: BIGINT
+    years: 2001-2003
+  FTEMP15:
+    name: ftemp15
+    type: BIGINT
+    years: 2001-2003
+  SA_EXCL:
+    name: sa_excl
+    type: BIGINT
+    years: 2001-2003
+  LOCK_EF:
+    name: lock_ef
+    type: BIGINT
+    years: 2001-2003
+  PTE_EF:
+    name: pte_ef
+    type: BIGINT
+    years: '2001'
+  PTDIAEF:
+    name: ptdiaef
+    type: BIGINT
+    years: '2001'
+  PTDFYEF:
+    name: ptdfyef
+    type: BIGINT
+    years: '2001'
+  FYRPYEAR:
+    name: fyrpyear
+    type: BIGINT
+    years: 2001-2003
+  FYFLAG:
+    name: fyflag
+    type: BIGINT
+    years: '2001'
+  LOCK_F:
+    name: lock_f
+    type: BIGINT
+    years: 2001-2003
+  LOCK_SFA:
+    name: lock_sfa
+    type: BIGINT
+    years: 2001-2003
+  IMP_SFA:
+    name: imp_sfa
+    type: BIGINT
+    years: 2001-2003
+  LOCK_GR:
+    name: lock_gr
+    type: BIGINT
+    years: 2001-2003
+  POSTSEC:
+    name: postsec
+    type: BIGINT
+    years: 2002-2025
+  LOCK_IC:
+    name: lock_ic
+    type: BIGINT
+    years: 2002-2003
+  LOCK_C:
+    name: lock_c
+    type: BIGINT
+    years: 2002-2003
+  TPR:
+    name: tpr
+    type: BIGINT
+    years: 2002-2003
+  HPR:
+    name: hpr
+    type: BIGINT
+    years: 2002-2003
+  PTEEFFY:
+    name: pteeffy
+    type: BIGINT
+    years: 2002-2003
+  PTEEFIA:
+    name: pteefia
+    type: BIGINT
+    years: 2002-2003
+  IMP_GR:
+    name: imp_gr
+    type: BIGINT
+    years: 2002-2003
+  CUFASB:
+    name: cufasb
+    type: BIGINT
+    years: '2003'
+  CUGASB:
+    name: cugasb
+    type: BIGINT
+    years: '2003'
+  F1SYSTYP:
+    name: f1systyp
+    type: BIGINT
+    years: 2003,2010-2025
+  F1SYSNAM:
+    name: f1sysnam
+    type: VARCHAR
+    years: 2003,2010-2025
+  TWOYRCAT:
+    name: twoyrcat
+    type: BIGINT
+    years: '2003'
+  REV_C:
+    name: rev_c
+    type: BIGINT
+    years: '2003'
+  REV_EF:
+    name: rev_ef
+    type: BIGINT
+    years: '2003'
+  REV_SA:
+    name: rev_sa
+    type: BIGINT
+    years: '2003'
+  REV_S:
+    name: rev_s
+    type: BIGINT
+    years: '2003'
+  REV_EAP:
+    name: rev_eap
+    type: BIGINT
+    years: '2003'
+  R_FORM_F:
+    name: r_form_f
+    type: BIGINT
+    years: '2003'
+  REV_F:
+    name: rev_f
+    type: BIGINT
+    years: '2003'
+  REV_SFA:
+    name: rev_sfa
+    type: BIGINT
+    years: '2003'
+  REV_GR:
+    name: rev_gr
+    type: BIGINT
+    years: '2003'
+  RPTMTH:
+    name: rptmth
+    type: BIGINT
+    years: 2004-2025
+  INSTCAT:
+    name: instcat
+    type: BIGINT
+    years: 2004-2025
+  TENURSYS:
+    name: tenursys
+    type: BIGINT
+    years: 2004-2011
+  IALIAS:
+    name: ialias
+    type: VARCHAR
+    years: 2005-2025
+  CCBASIC:
+    name: ccbasic
+    type: BIGINT
+    years: 2005-2023
+  CCIPUG:
+    name: ccipug
+    type: BIGINT
+    years: 2005-2014
+  CCIPGRAD:
+    name: ccipgrad
+    type: BIGINT
+    years: 2005-2014
+  CCUGPROF:
+    name: ccugprof
+    type: BIGINT
+    years: 2005-2014
+  CCENRPRF:
+    name: ccenrprf
+    type: BIGINT
+    years: 2005-2014
+  CCSIZSET:
+    name: ccsizset
+    type: BIGINT
+    years: 2005-2014
+  LANDGRNT:
+    name: landgrnt
+    type: BIGINT
+    years: 2005-2025
+  INSTSIZE:
+    name: instsize
+    type: BIGINT
+    years: 2005-2025
+  DFRCGID:
+    name: dfrcgid
+    type: BIGINT
+    years: 2006-2010,2013-2024
+  ADMINURL:
+    name: adminurl
+    type: VARCHAR
+    years: 2007-2025
+  FAIDURL:
+    name: faidurl
+    type: VARCHAR
+    years: 2007-2025
+  APPLURL:
+    name: applurl
+    type: VARCHAR
+    years: 2007-2025
+  CBSA:
+    name: cbsa
+    type: BIGINT
+    years: 2007-2025
+  CBSATYPE:
+    name: cbsatype
+    type: BIGINT
+    years: 2007-2025
+  CSA:
+    name: csa
+    type: BIGINT
+    years: 2007-2025
+  NECTA:
+    name: necta
+    type: BIGINT
+    years: 2007-2021
+  HDEGOFR1:
+    name: hdegofr1
+    type: BIGINT
+    years: 2009-2025
+  LONGITUD:
+    name: longitud
+    type: DOUBLE
+    years: 2009-2025
+  LATITUDE:
+    name: latitude
+    type: DOUBLE
+    years: 2009-2025
+  COUNTYCD:
+    name: countycd
+    type: BIGINT
+    years: 2009-2025
+  COUNTYNM:
+    name: countynm
+    type: VARCHAR
+    years: 2009-2025
+  CNGDSTCD:
+    name: cngdstcd
+    type: BIGINT
+    years: 2009-2025
+  COLUMN063:
+    name: column063
+    type: BIGINT
+    years: '2009'
+  COLUMN064:
+    name: column064
+    type: BIGINT
+    years: '2009'
+  COLUMN065:
+    name: column065
+    type: BIGINT
+    years: '2009'
+  COLUMN066:
+    name: column066
+    type: BIGINT
+    years: 2009-2010
+  COLUMN067:
+    name: column067
+    type: BIGINT
+    years: 2009-2010
+  COLUMN068:
+    name: column068
+    type: BIGINT
+    years: 2009-2010
+  COLUMN069:
+    name: column069
+    type: BIGINT
+    years: 2009-2010
+  COLUMN070:
+    name: column070
+    type: BIGINT
+    years: 2009-2010
+  COLUMN071:
+    name: column071
+    type: BIGINT
+    years: 2009-2010
+  COLUMN072:
+    name: column072
+    type: BIGINT
+    years: 2009-2010
+  COLUMN073:
+    name: column073
+    type: BIGINT
+    years: 2009-2010
+  COLUMN074:
+    name: column074
+    type: BIGINT
+    years: 2009-2010
+  COLUMN075:
+    name: column075
+    type: BIGINT
+    years: 2009-2010
+  COLUMN076:
+    name: column076
+    type: BIGINT
+    years: 2009-2010
+  COLUMN077:
+    name: column077
+    type: BIGINT
+    years: 2009-2010
+  COLUMN078:
+    name: column078
+    type: BIGINT
+    years: 2009-2010
+  COLUMN079:
+    name: column079
+    type: BIGINT
+    years: 2009-2010
+  COLUMN080:
+    name: column080
+    type: BIGINT
+    years: 2009-2010
+  COLUMN081:
+    name: column081
+    type: BIGINT
+    years: 2009-2010
+  COLUMN082:
+    name: column082
+    type: BIGINT
+    years: 2009-2010
+  COLUMN083:
+    name: column083
+    type: BIGINT
+    years: 2009-2010
+  COLUMN084:
+    name: column084
+    type: BIGINT
+    years: 2009-2010
+  COLUMN085:
+    name: column085
+    type: BIGINT
+    years: 2009-2010
+  COLUMN086:
+    name: column086
+    type: BIGINT
+    years: 2009-2010
+  COLUMN087:
+    name: column087
+    type: BIGINT
+    years: 2009-2010
+  COLUMN088:
+    name: column088
+    type: BIGINT
+    years: 2009-2010
+  COLUMN089:
+    name: column089
+    type: BIGINT
+    years: 2009-2010
+  COLUMN090:
+    name: column090
+    type: BIGINT
+    years: 2009-2010
+  COLUMN091:
+    name: column091
+    type: BIGINT
+    years: 2009-2010
+  COLUMN092:
+    name: column092
+    type: BIGINT
+    years: 2009-2010
+  COLUMN093:
+    name: column093
+    type: BIGINT
+    years: 2009-2010
+  COLUMN094:
+    name: column094
+    type: BIGINT
+    years: 2009-2010
+  COLUMN095:
+    name: column095
+    type: BIGINT
+    years: 2009-2010
+  COLUMN096:
+    name: column096
+    type: BIGINT
+    years: 2009-2010
+  COLUMN097:
+    name: column097
+    type: BIGINT
+    years: 2009-2010
+  COLUMN098:
+    name: column098
+    type: BIGINT
+    years: 2009-2010
+  COLUMN099:
+    name: column099
+    type: BIGINT
+    years: 2009-2010
+  COLUMN100:
+    name: column100
+    type: BIGINT
+    years: 2009-2010
+  COLUMN101:
+    name: column101
+    type: BIGINT
+    years: 2009-2010
+  COLUMN102:
+    name: column102
+    type: BIGINT
+    years: 2009-2010
+  FAXTELE:
+    name: faxtele
+    type: BIGINT
+    years: 2010-2013
+  COLUMN103:
+    name: column103
+    type: BIGINT
+    years: '2010'
+  COLUMN104:
+    name: column104
+    type: BIGINT
+    years: '2010'
+  COLUMN105:
+    name: column105
+    type: BIGINT
+    years: '2010'
+  NPRICURL:
+    name: npricurl
+    type: VARCHAR
+    years: 2011-2025
+  F1SYSCOD:
+    name: f1syscod
+    type: VARCHAR
+    years: 2013-2025
+  DFRCUSCG:
+    name: dfrcuscg
+    type: BIGINT
+    years: 2013-2024
+  VETURL:
+    name: veturl
+    type: VARCHAR
+    years: 2014-2025
+  ATHURL:
+    name: athurl
+    type: VARCHAR
+    years: 2014-2025
+  C15BASIC:
+    name: c15basic
+    type: BIGINT
+    years: 2015-2023
+  C15IPUG:
+    name: c15ipug
+    type: BIGINT
+    years: 2015-2017
+  C15IPGRD:
+    name: c15ipgrd
+    type: BIGINT
+    years: 2015-2017
+  C15UGPRF:
+    name: c15ugprf
+    type: BIGINT
+    years: 2015-2017
+  C15ENPRF:
+    name: c15enprf
+    type: BIGINT
+    years: 2015-2017
+  C15SZSET:
+    name: c15szset
+    type: BIGINT
+    years: 2015-2017
+  DISAURL:
+    name: disaurl
+    type: VARCHAR
+    years: 2016-2025
+  C18BASIC:
+    name: c18basic
+    type: BIGINT
+    years: 2018-2023
+  C18IPUG:
+    name: c18ipug
+    type: BIGINT
+    years: 2018-2020
+  C18IPGRD:
+    name: c18ipgrd
+    type: BIGINT
+    years: 2018-2020
+  C18UGPRF:
+    name: c18ugprf
+    type: BIGINT
+    years: 2018-2020
+  C18ENPRF:
+    name: c18enprf
+    type: BIGINT
+    years: 2018-2020
+  C18SZSET:
+    name: c18szset
+    type: BIGINT
+    years: 2018-2020
+  C21BASIC:
+    name: c21basic
+    type: BIGINT
+    years: 2021-2025
+  C21IPUG:
+    name: c21ipug
+    type: BIGINT
+    years: 2021-2023
+  C21IPGRD:
+    name: c21ipgrd
+    type: BIGINT
+    years: 2021-2023
+  C21UGPRF:
+    name: c21ugprf
+    type: BIGINT
+    years: 2021-2023
+  C21ENPRF:
+    name: c21enprf
+    type: BIGINT
+    years: 2021-2023
+  C21SZSET:
+    name: c21szset
+    type: BIGINT
+    years: 2021-2023
+  UEIS:
+    name: ueis
+    type: VARCHAR
+    years: 2022-2025
+  C00CARNEGIE:
+    name: c00carnegie
+    type: BIGINT
+    years: 2024-2025
+  CARNEGIEIC:
+    name: carnegieic
+    type: BIGINT
+    years: 2024-2025
+  CARNEGIESAEC:
+    name: carnegiesaec
+    type: BIGINT
+    years: 2024-2025
+  CARNEGIERSCH:
+    name: carnegiersch
+    type: BIGINT
+    years: 2024-2025
+  CARNEGIESIZE:
+    name: carnegiesize
+    type: BIGINT
+    years: 2024-2025
+  CARNEGIEALF:
+    name: carnegiealf
+    type: BIGINT
+    years: 2024-2025
+  CARNEGIEAPM:
+    name: carnegieapm
+    type: BIGINT
+    years: 2024-2025
+  CARNEGIEGPM:
+    name: carnegiegpm
+    type: BIGINT
+    years: 2024-2025

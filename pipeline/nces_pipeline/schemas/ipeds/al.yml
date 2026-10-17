@@ -1,0 +1,313 @@
+source: ipeds
+family: al
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2014-2024
+  LCOLELYN:
+    name: lcolelyn
+    type: BIGINT
+    years: 2014-2024
+  XLPBOOKS:
+    name: lpbooks_flag
+    type: VARCHAR
+    flag_for: lpbooks
+    years: 2014-2024
+  LPBOOKS:
+    name: lpbooks
+    type: BIGINT
+    years: 2014-2024
+  XLEBOOKS:
+    name: lebooks_flag
+    type: VARCHAR
+    flag_for: lebooks
+    years: 2014-2024
+  LEBOOKS:
+    name: lebooks
+    type: BIGINT
+    years: 2014-2024
+  XLEDATAB:
+    name: ledatab_flag
+    type: VARCHAR
+    flag_for: ledatab
+    years: 2014-2024
+  LEDATAB:
+    name: ledatab
+    type: BIGINT
+    years: 2014-2024
+  XLPMEDIA:
+    name: lpmedia_flag
+    type: VARCHAR
+    flag_for: lpmedia
+    years: 2014-2024
+  LPMEDIA:
+    name: lpmedia
+    type: BIGINT
+    years: 2014-2024
+  XLEMEDIA:
+    name: lemedia_flag
+    type: VARCHAR
+    flag_for: lemedia
+    years: 2014-2024
+  LEMEDIA:
+    name: lemedia
+    type: BIGINT
+    years: 2014-2024
+  XLPCOLLC:
+    name: xlpcollc
+    type: VARCHAR
+    years: 2014-2024
+  LPCLLCT:
+    name: lpcllct
+    type: BIGINT
+    years: 2014-2024
+  XLECOLLC:
+    name: xlecollc
+    type: VARCHAR
+    years: 2014-2024
+  LECLLCT:
+    name: lecllct
+    type: BIGINT
+    years: 2014-2024
+  XLPCRCLT:
+    name: lpcrclt_flag
+    type: VARCHAR
+    flag_for: lpcrclt
+    years: 2014-2024
+  LPCRCLT:
+    name: lpcrclt
+    type: BIGINT
+    years: 2014-2024
+  XLECRCLT:
+    name: lecrclt_flag
+    type: VARCHAR
+    flag_for: lecrclt
+    years: 2014-2024
+  LECRCLT:
+    name: lecrclt
+    type: BIGINT
+    years: 2014-2024
+  XLBRANCH:
+    name: lbranch_flag
+    type: VARCHAR
+    flag_for: lbranch
+    years: 2014-2024
+  LBRANCH:
+    name: lbranch
+    type: BIGINT
+    years: 2014-2024
+  XSALWAG:
+    name: xsalwag
+    type: VARCHAR
+    years: 2014-2024
+  LSALWAG:
+    name: lsalwag
+    type: BIGINT
+    years: 2014-2024
+  LFRNGBYN:
+    name: lfrngbyn
+    type: BIGINT
+    years: 2014-2024
+  XLFRNGBN:
+    name: lfrngbn_flag
+    type: VARCHAR
+    flag_for: lfrngbn
+    years: 2014-2024
+  LFRNGBN:
+    name: lfrngbn
+    type: BIGINT
+    years: 2014-2024
+  XLEXMSBB:
+    name: lexmsbb_flag
+    type: VARCHAR
+    flag_for: lexmsbb
+    years: 2014-2024
+  LEXMSBB:
+    name: lexmsbb
+    type: BIGINT
+    years: 2014-2024
+  XLEXMSCS:
+    name: lexmscs_flag
+    type: VARCHAR
+    flag_for: lexmscs
+    years: 2014-2024
+  LEXMSCS:
+    name: lexmscs
+    type: BIGINT
+    years: 2014-2024
+  XLEXMSOT:
+    name: lexmsot_flag
+    type: VARCHAR
+    flag_for: lexmsot
+    years: 2014-2024
+  LEXMSOT:
+    name: lexmsot
+    type: BIGINT
+    years: 2014-2024
+  XLEXMSTL:
+    name: lexmstl_flag
+    type: VARCHAR
+    flag_for: lexmstl
+    years: 2014-2024
+  LEXMSTL:
+    name: lexmstl
+    type: BIGINT
+    years: 2014-2024
+  XLEXOMPS:
+    name: lexomps_flag
+    type: VARCHAR
+    flag_for: lexomps
+    years: 2014-2024
+  LEXOMPS:
+    name: lexomps
+    type: BIGINT
+    years: 2014-2024
+  XLEXOMOT:
+    name: lexomot_flag
+    type: VARCHAR
+    flag_for: lexomot
+    years: 2014-2024
+  LEXOMOT:
+    name: lexomot
+    type: BIGINT
+    years: 2014-2024
+  XLEXOMTL:
+    name: lexomtl_flag
+    type: VARCHAR
+    flag_for: lexomtl
+    years: 2014-2024
+  LEXOMTL:
+    name: lexomtl
+    type: BIGINT
+    years: 2014-2024
+  XLEXPTOT:
+    name: lexptot_flag
+    type: VARCHAR
+    flag_for: lexptot
+    years: 2014-2024
+  LEXPTOT:
+    name: lexptot
+    type: BIGINT
+    years: 2014-2024
+  LSWMSOM:
+    name: lswmsom
+    type: VARCHAR
+    years: 2014-2024
+  XLILLDPR:
+    name: lilldpr_flag
+    type: VARCHAR
+    flag_for: lilldpr
+    years: 2014-2024
+  LILLDPR:
+    name: lilldpr
+    type: VARCHAR
+    years: 2014-2024
+  XLILLDRC:
+    name: lilldrc_flag
+    type: VARCHAR
+    flag_for: lilldrc
+    years: 2014-2024
+  LILLDRC:
+    name: lilldrc
+    type: VARCHAR
+    years: 2014-2024
+  LSUPPVRS:
+    name: lsuppvrs
+    type: BIGINT
+    years: 2014-2015
+  XLTCLLCT:
+    name: ltcllct_flag
+    type: VARCHAR
+    flag_for: ltcllct
+    years: 2015-2024
+  LTCLLCT:
+    name: ltcllct
+    type: BIGINT
+    years: 2015-2024
+  XLTCRCLT:
+    name: ltcrclt_flag
+    type: VARCHAR
+    flag_for: ltcrclt
+    years: 2015-2024
+  LTCRCLT:
+    name: ltcrclt
+    type: BIGINT
+    years: 2015-2024
+  XLPSERIA:
+    name: lpseria_flag
+    type: VARCHAR
+    flag_for: lpseria
+    years: 2016-2024
+  LPSERIA:
+    name: lpseria
+    type: BIGINT
+    years: 2016-2024
+  XLESERIA:
+    name: leseria_flag
+    type: VARCHAR
+    flag_for: leseria
+    years: 2016-2024
+  LESERIA:
+    name: leseria
+    type: BIGINT
+    years: 2016-2024
+  LILLDYN:
+    name: lilldyn
+    type: BIGINT
+    years: 2016-2024
+  LEXP100K:
+    name: lexp100k
+    type: BIGINT
+    years: 2019-2024
+  LILSYN:
+    name: lilsyn
+    type: BIGINT
+    years: 2020-2024
+  XLSTOTAL:
+    name: lstotal_flag
+    type: VARCHAR
+    flag_for: lstotal
+    years: 2020-2024
+  LSTOTAL:
+    name: lstotal
+    type: DOUBLE
+    years: 2020-2024
+  XLSLIBRN:
+    name: lslibrn_flag
+    type: VARCHAR
+    flag_for: lslibrn
+    years: 2020-2024
+  LSLIBRN:
+    name: lslibrn
+    type: DOUBLE
+    years: 2020-2024
+  XLSOPROF:
+    name: lsoprof_flag
+    type: VARCHAR
+    flag_for: lsoprof
+    years: 2020-2024
+  LSOPROF:
+    name: lsoprof
+    type: DOUBLE
+    years: 2020-2024
+  XLSOPAID:
+    name: lsopaid_flag
+    type: VARCHAR
+    flag_for: lsopaid
+    years: 2020-2024
+  LSOPAID:
+    name: lsopaid
+    type: DOUBLE
+    years: 2020-2024
+  XLSSTAST:
+    name: lsstast_flag
+    type: VARCHAR
+    flag_for: lsstast
+    years: 2020-2024
+  LSSTAST:
+    name: lsstast
+    type: DOUBLE
+    years: 2020-2024

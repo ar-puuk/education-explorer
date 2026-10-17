@@ -127,7 +127,7 @@ columns:
     type: VARCHAR
   EFFECTIVE_DATE:
     name: effective_date
-    type: DATE
+    type: VARCHAR
   CHARTER_TEXT:
     name: charter
     type: VARCHAR

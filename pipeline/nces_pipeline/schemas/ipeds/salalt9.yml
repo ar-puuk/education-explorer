@@ -1,0 +1,41 @@
+source: ipeds
+family: salalt9
+key:
+- unitid
+- arank
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2005-2011
+  ARANK:
+    name: arank
+    type: BIGINT
+    years: 2005-2011
+  XEMPCNTM:
+    name: empcntm_flag
+    type: VARCHAR
+    flag_for: empcntm
+    years: 2005-2011
+  EMPCNTM:
+    name: empcntm
+    type: BIGINT
+    years: 2005-2011
+  XEMPCNTW:
+    name: empcntw_flag
+    type: VARCHAR
+    flag_for: empcntw
+    years: 2005-2011
+  EMPCNTW:
+    name: empcntw
+    type: BIGINT
+    years: 2005-2011
+  XEMPCNTT:
+    name: empcntt_flag
+    type: VARCHAR
+    flag_for: empcntt
+    years: 2005-2011
+  EMPCNTT:
+    name: empcntt
+    type: BIGINT
+    years: 2005-2011

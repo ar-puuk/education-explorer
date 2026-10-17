@@ -1,0 +1,144 @@
+source: ipeds
+family: efest
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2007-2009
+  XFTUG:
+    name: ftug_flag
+    type: VARCHAR
+    flag_for: ftug
+    years: 2007-2009
+  FTUG:
+    name: ftug
+    type: BIGINT
+    years: 2007-2009
+  XPTUG:
+    name: ptug_flag
+    type: VARCHAR
+    flag_for: ptug
+    years: 2007-2009
+  PTUG:
+    name: ptug
+    type: BIGINT
+    years: 2007-2009
+  XTOTUG:
+    name: totug_flag
+    type: VARCHAR
+    flag_for: totug
+    years: 2007-2009
+  TOTUG:
+    name: totug
+    type: BIGINT
+    years: 2007-2009
+  XFTFTUG:
+    name: ftftug_flag
+    type: VARCHAR
+    flag_for: ftftug
+    years: 2007-2009
+  FTFTUG:
+    name: ftftug
+    type: BIGINT
+    years: 2007-2009
+  XPTFTUG:
+    name: ptftug_flag
+    type: VARCHAR
+    flag_for: ptftug
+    years: 2007-2009
+  PTFTUG:
+    name: ptftug
+    type: BIGINT
+    years: 2007-2009
+  XTOTFTUG:
+    name: totftug_flag
+    type: VARCHAR
+    flag_for: totftug
+    years: 2007-2009
+  TOTFTUG:
+    name: totftug
+    type: BIGINT
+    years: 2007-2009
+  XFTGRAD:
+    name: ftgrad_flag
+    type: VARCHAR
+    flag_for: ftgrad
+    years: 2007-2009
+  FTGRAD:
+    name: ftgrad
+    type: BIGINT
+    years: 2007-2009
+  XPTGRAD:
+    name: ptgrad_flag
+    type: VARCHAR
+    flag_for: ptgrad
+    years: 2007-2009
+  PTGRAD:
+    name: ptgrad
+    type: BIGINT
+    years: 2007-2009
+  XTOTGRAD:
+    name: totgrad_flag
+    type: VARCHAR
+    flag_for: totgrad
+    years: 2007-2009
+  TOTGRAD:
+    name: totgrad
+    type: BIGINT
+    years: 2007-2009
+  XFTFP:
+    name: ftfp_flag
+    type: VARCHAR
+    flag_for: ftfp
+    years: 2007-2008
+  FTFP:
+    name: ftfp
+    type: BIGINT
+    years: 2007-2008
+  XPTFP:
+    name: ptfp_flag
+    type: VARCHAR
+    flag_for: ptfp
+    years: 2007-2008
+  PTFP:
+    name: ptfp
+    type: BIGINT
+    years: 2007-2008
+  XTOTFP:
+    name: totfp_flag
+    type: VARCHAR
+    flag_for: totfp
+    years: 2007-2008
+  TOTFP:
+    name: totfp
+    type: BIGINT
+    years: 2007-2008
+  XFTTOTAL:
+    name: fttotal_flag
+    type: VARCHAR
+    flag_for: fttotal
+    years: 2007-2009
+  FTTOTAL:
+    name: fttotal
+    type: BIGINT
+    years: 2007-2009
+  XPTTOTAL:
+    name: pttotal_flag
+    type: VARCHAR
+    flag_for: pttotal
+    years: 2007-2009
+  PTTOTAL:
+    name: pttotal
+    type: BIGINT
+    years: 2007-2009
+  XTOTENRL:
+    name: totenrl_flag
+    type: VARCHAR
+    flag_for: totenrl
+    years: 2007-2009
+  TOTENRL:
+    name: totenrl
+    type: BIGINT
+    years: 2007-2009

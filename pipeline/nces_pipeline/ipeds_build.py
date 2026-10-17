@@ -11,7 +11,7 @@ import yaml
 from .config import DATA_RAW, DOCS_DATA, SCHEMAS, State
 from .ipeds_files import IpedsFile, data_csv, data_version, dict_xlsx, select
 from .parquet import write_parquet
-from .rawio import header_of, read_sql
+from .rawio import header_of, read_sql, run_copy
 from .schema import SchemaDrift
 
 MAPS = SCHEMAS / "ipeds"
@@ -99,10 +99,9 @@ def stage(f: IpedsFile, state: State, ids: set[str]) -> Path | None:
     con.execute("CREATE TEMP TABLE ids(id VARCHAR)")
     con.executemany("INSERT INTO ids VALUES (?)", [(i,) for i in sorted(ids)])
     tmp = dest.with_suffix(".tmp")
-    con.execute(
-        f"COPY (SELECT * FROM {read_sql(csv)} WHERE lpad(trim({q(cols['UNITID'])}), 6, '0') IN (SELECT id FROM ids)) "
-        f"TO '{tmp.as_posix()}' (FORMAT PARQUET, COMPRESSION ZSTD)"
-    )
+    run_copy(con, lambda par: (
+        f"COPY (SELECT * FROM {read_sql(csv, parallel=par)} WHERE lpad(trim({q(cols['UNITID'])}), 6, '0') IN (SELECT id FROM ids)) "
+        f"TO '{tmp.as_posix()}' (FORMAT PARQUET, COMPRESSION ZSTD)"))
     tmp.replace(dest)
     stamp.write_text(sig)
     return dest
@@ -156,13 +155,9 @@ def _dict_types(files: list[IpedsFile]) -> dict[str, str]:
         x = dict_xlsx(f)
         if not x:
             continue
-        try:
-            rows = con.execute(
-                f"SELECT * FROM read_xlsx('{x.as_posix()}', sheet='Varlist', all_varchar=true)"
-            ).fetchall()
-        except duckdb.Error:
-            continue
-        for r in rows:
+        from .dictionary import _sheet_rows
+
+        for r in _sheet_rows(con, x, "Varlist"):
             if r[1] and r[1].upper() not in out:
                 out[r[1].upper()] = (r[2] or "").upper()
     return out
@@ -192,7 +187,8 @@ def bootstrap_family(family: str, state: State, files: list[IpedsFile], ids: set
         aggs = []
         for raw in raw_hdr:
             v = f"NULLIF(TRIM({q(raw)}), '')"
-            aggs += [f"count(*) FILTER (WHERE {v} IS NOT NULL AND TRY_CAST({v} AS BIGINT) IS NULL)",
+            # note: TRY_CAST('40.76' AS BIGINT) rounds to 41, so integers are detected with a regex
+            aggs += [f"count(*) FILTER (WHERE {v} IS NOT NULL AND NOT regexp_matches({v}, '^[+-]?[0-9]+$'))",
                      f"count(*) FILTER (WHERE {v} IS NOT NULL AND TRY_CAST({v} AS DOUBLE) IS NULL)"]
         stats = con.execute(f"SELECT {', '.join(aggs)} FROM read_parquet('{sp.as_posix()}')").fetchone()
         for i, c in enumerate(hdr):
@@ -225,29 +221,43 @@ def bootstrap_family(family: str, state: State, files: list[IpedsFile], ids: set
 
 
 def _find_key(con, staged: list[Path], cols: dict[str, dict]) -> list[str]:
-    """UNITID plus the first few low-cardinality columns (in file order) that make rows unique."""
+    """UNITID plus the fewest dimension columns that make rows unique within each year file.
+
+    Greedy: repeatedly add the low-cardinality, non-flag column that removes the most duplicate groups
+    (ties go to the column that comes first in the file)."""
     paths = ", ".join(f"'{p.as_posix()}'" for p in staged)
-    base = f"read_parquet([{paths}], union_by_name=true)"
+    base = f"read_parquet([{paths}], union_by_name=true, filename=true)"
     names = {raw: spec["name"] for raw, spec in cols.items()}
     key = ["UNITID"]
 
-    def dups(k):
-        kk = ", ".join(q(c) for c in k)
-        return con.execute(f"SELECT count(*) FROM (SELECT 1 FROM {base} GROUP BY {kk} HAVING count(*) > 1)").fetchone()[0]
+    def dups(k: list[str]) -> int:
+        kk = ", ".join(q(c) for c in [*k, "filename"])  # unique within each year file
+        # excess rows (rows minus distinct keys): shrinks monotonically as the key is refined
+        return con.execute(f"SELECT coalesce(sum(c - 1), 0) FROM (SELECT count(*) c FROM {base} GROUP BY {kk})").fetchone()[0]
 
-    if not dups(key):
+    cur = dups(key)
+    if not cur:
         return ["unitid"]
+    cands = []
     for raw, spec in cols.items():
         if raw == "UNITID" or spec.get("flag_for"):
             continue
         nd = con.execute(f"SELECT count(DISTINCT {q(raw)}) FROM {base}").fetchone()[0]
-        if nd and nd <= 400:
-            key.append(raw)
-            if not dups(key):
-                return [names[k] for k in key]
-            if len(key) >= 6:
-                break
-    return [names[k] for k in key]  # best effort; validation reports remaining duplicates
+        if 1 < nd <= 1500:
+            cands.append(raw)
+    while cur and len(key) < 7:
+        best, best_n = None, cur
+        for raw in cands:
+            if raw in key:
+                continue
+            n = dups([*key, raw])
+            if n < best_n:
+                best, best_n = raw, n
+        if best is None:
+            break
+        key.append(best)
+        cur = best_n
+    return [names[k] for k in key]  # validation reports anything still duplicated
 
 
 # ---------------------------------------------------------------- build
@@ -259,6 +269,24 @@ def col_sql(raw: str, spec: dict) -> str:
     if t == "VARCHAR":
         return s
     return f"TRY_CAST({s} AS {t})"
+
+
+def _check_casts(con, sp: Path, d: dict, rawname: dict, f: IpedsFile) -> None:
+    """Fail loudly if a typed column would silently lose values (e.g. text in a numeric column)."""
+    checks, names = [], []
+    for raw, spec in d["columns"].items():
+        if spec.get("ignore") or spec["type"] == "VARCHAR" or raw not in rawname or f.year not in years_from_str(spec["years"]):
+            continue
+        v = f"NULLIF(TRIM({q(rawname[raw])}), '')"
+        checks.append(f"count(*) FILTER (WHERE {v} IS NOT NULL AND TRY_CAST({v} AS {spec['type']}) IS NULL)")
+        names.append(raw)
+    if not checks:
+        return
+    row = con.execute(f"SELECT {', '.join(checks)} FROM read_parquet('{sp.as_posix()}')").fetchone()
+    bad = [f"{n} ({c} values)" for n, c in zip(names, row) if c]
+    if bad:
+        raise SchemaDrift(f"TYPE DRIFT in ipeds/{f.family}/{f.year}: values cannot be cast to the mapped type: {', '.join(bad[:8])}. "
+                          f"Widen the column type in {map_file(f.family)}.")
 
 
 def build_ipeds(state: State, years: list[int] | None = None, families: list[str] | None = None) -> list[dict]:
@@ -290,6 +318,7 @@ def build_ipeds(state: State, years: list[int] | None = None, families: list[str
                 parts.append(f"CAST(NULL AS {spec['type']}) AS {q(spec['name'])}")
         parts.append(f"'{data_version(f)}' AS data_version")
         parts.append(f"'{data_csv(f).name}' AS source_file")
+        _check_casts(con, sp, d, rawname, f)
         sql = f"SELECT {', '.join(parts)} FROM read_parquet('{sp.as_posix()}')"
         order = [c for c in d["key"]] or ["unitid"]
         n = write_parquet(con, sql, DOCS_DATA / "ipeds" / f.family / f"{f.year}.parquet", order)

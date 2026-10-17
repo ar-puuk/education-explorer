@@ -1,0 +1,249 @@
+source: ipeds
+family: effyhs
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2023-2025
+  XEYTOTLT:
+    name: xeytotlt
+    type: VARCHAR
+    years: 2023-2025
+  EFYTOTLT:
+    name: efytotlt
+    type: BIGINT
+    years: 2023-2025
+  XEYTOTLM:
+    name: xeytotlm
+    type: VARCHAR
+    years: 2023-2025
+  EFYTOTLM:
+    name: efytotlm
+    type: BIGINT
+    years: 2023-2025
+  XEYTOTLW:
+    name: xeytotlw
+    type: VARCHAR
+    years: 2023-2025
+  EFYTOTLW:
+    name: efytotlw
+    type: BIGINT
+    years: 2023-2025
+  XEFYAIAT:
+    name: xefyaiat
+    type: VARCHAR
+    years: 2023-2025
+  EFYAIANT:
+    name: efyaiant
+    type: BIGINT
+    years: 2023-2025
+  XEFYAIAM:
+    name: xefyaiam
+    type: VARCHAR
+    years: 2023-2025
+  EFYAIANM:
+    name: efyaianm
+    type: BIGINT
+    years: 2023-2025
+  XEFYAIAW:
+    name: xefyaiaw
+    type: VARCHAR
+    years: 2023-2025
+  EFYAIANW:
+    name: efyaianw
+    type: BIGINT
+    years: 2023-2025
+  XEFYASIT:
+    name: xefyasit
+    type: VARCHAR
+    years: 2023-2025
+  EFYASIAT:
+    name: efyasiat
+    type: BIGINT
+    years: 2023-2025
+  XEFYASIM:
+    name: xefyasim
+    type: VARCHAR
+    years: 2023-2025
+  EFYASIAM:
+    name: efyasiam
+    type: BIGINT
+    years: 2023-2025
+  XEFYASIW:
+    name: xefyasiw
+    type: VARCHAR
+    years: 2023-2025
+  EFYASIAW:
+    name: efyasiaw
+    type: BIGINT
+    years: 2023-2025
+  XEFYBKAT:
+    name: xefybkat
+    type: VARCHAR
+    years: 2023-2025
+  EFYBKAAT:
+    name: efybkaat
+    type: BIGINT
+    years: 2023-2025
+  XEFYBKAM:
+    name: xefybkam
+    type: VARCHAR
+    years: 2023-2025
+  EFYBKAAM:
+    name: efybkaam
+    type: BIGINT
+    years: 2023-2025
+  XEFYBKAW:
+    name: xefybkaw
+    type: VARCHAR
+    years: 2023-2025
+  EFYBKAAW:
+    name: efybkaaw
+    type: BIGINT
+    years: 2023-2025
+  XEFYHIST:
+    name: xefyhist
+    type: VARCHAR
+    years: 2023-2025
+  EFYHISPT:
+    name: efyhispt
+    type: BIGINT
+    years: 2023-2025
+  XEFYHISM:
+    name: xefyhism
+    type: VARCHAR
+    years: 2023-2025
+  EFYHISPM:
+    name: efyhispm
+    type: BIGINT
+    years: 2023-2025
+  XEFYHISW:
+    name: xefyhisw
+    type: VARCHAR
+    years: 2023-2025
+  EFYHISPW:
+    name: efyhispw
+    type: BIGINT
+    years: 2023-2025
+  XEFYNHPT:
+    name: xefynhpt
+    type: VARCHAR
+    years: 2023-2025
+  EFYNHPIT:
+    name: efynhpit
+    type: BIGINT
+    years: 2023-2025
+  XEFYNHPM:
+    name: xefynhpm
+    type: VARCHAR
+    years: 2023-2025
+  EFYNHPIM:
+    name: efynhpim
+    type: BIGINT
+    years: 2023-2025
+  XEFYNHPW:
+    name: xefynhpw
+    type: VARCHAR
+    years: 2023-2025
+  EFYNHPIW:
+    name: efynhpiw
+    type: BIGINT
+    years: 2023-2025
+  XEFYWHIT:
+    name: xefywhit
+    type: VARCHAR
+    years: 2023-2025
+  EFYWHITT:
+    name: efywhitt
+    type: BIGINT
+    years: 2023-2025
+  XEFYWHIM:
+    name: xefywhim
+    type: VARCHAR
+    years: 2023-2025
+  EFYWHITM:
+    name: efywhitm
+    type: BIGINT
+    years: 2023-2025
+  XEFYWHIW:
+    name: xefywhiw
+    type: VARCHAR
+    years: 2023-2025
+  EFYWHITW:
+    name: efywhitw
+    type: BIGINT
+    years: 2023-2025
+  XEFY2MOT:
+    name: xefy2mot
+    type: VARCHAR
+    years: 2023-2025
+  EFY2MORT:
+    name: efy2mort
+    type: BIGINT
+    years: 2023-2025
+  XEFY2MOM:
+    name: xefy2mom
+    type: VARCHAR
+    years: 2023-2025
+  EFY2MORM:
+    name: efy2morm
+    type: BIGINT
+    years: 2023-2025
+  XEFY2MOW:
+    name: xefy2mow
+    type: VARCHAR
+    years: 2023-2025
+  EFY2MORW:
+    name: efy2morw
+    type: BIGINT
+    years: 2023-2025
+  XEYUNKNT:
+    name: xeyunknt
+    type: VARCHAR
+    years: 2023-2025
+  EFYUNKNT:
+    name: efyunknt
+    type: BIGINT
+    years: 2023-2025
+  XEYUNKNM:
+    name: xeyunknm
+    type: VARCHAR
+    years: 2023-2025
+  EFYUNKNM:
+    name: efyunknm
+    type: BIGINT
+    years: 2023-2025
+  XEYUNKNW:
+    name: xeyunknw
+    type: VARCHAR
+    years: 2023-2025
+  EFYUNKNW:
+    name: efyunknw
+    type: BIGINT
+    years: 2023-2025
+  XEYNRALT:
+    name: xeynralt
+    type: VARCHAR
+    years: 2023-2025
+  EFYNRALT:
+    name: efynralt
+    type: BIGINT
+    years: 2023-2025
+  XEYNRALM:
+    name: xeynralm
+    type: VARCHAR
+    years: 2023-2025
+  EFYNRALM:
+    name: efynralm
+    type: BIGINT
+    years: 2023-2025
+  XEYNRALW:
+    name: xeynralw
+    type: VARCHAR
+    years: 2023-2025
+  EFYNRALW:
+    name: efynralw
+    type: BIGINT
+    years: 2023-2025

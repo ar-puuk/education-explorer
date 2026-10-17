@@ -36,13 +36,13 @@ def _clean(x: str) -> str:
 
 def parse_rows(html: str, year: int) -> list[dict]:
     rows = []
-    for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", html, flags=re.S):
-        links = re.findall(r'href="([^"]*\.zip)"', tr, flags=re.I)
+    for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", html, flags=re.DOTALL):
+        links = re.findall(r'href="([^"]*\.zip)"', tr, flags=re.IGNORECASE)
         if not links:
             continue
-        cells = [_clean(x) for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, flags=re.S)]
+        cells = [_clean(x) for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, flags=re.DOTALL)]
         data = next((l for l in links if re.search(r"/[A-Za-z0-9_]+\.zip$", l)
-                     and not re.search(r"_(Data_Stata|sps|sas|stata|Dict)\.zip$", l, re.I)), None)
+                     and not re.search(r"_(Data_Stata|sps|sas|stata|Dict)\.zip$", l, re.IGNORECASE)), None)
         dic = next((l for l in links if l.lower().endswith("_dict.zip")), None)
         if not data:
             continue

@@ -1,0 +1,1037 @@
+source: ipeds
+family: ic
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2025
+  PEO1ISTR:
+    name: peo1istr
+    type: BIGINT
+    years: 2000-2025
+  PEO2ISTR:
+    name: peo2istr
+    type: BIGINT
+    years: 2000-2025
+  PEO3ISTR:
+    name: peo3istr
+    type: BIGINT
+    years: 2000-2025
+  PEO4ISTR:
+    name: peo4istr
+    type: BIGINT
+    years: 2000-2025
+  PEO5ISTR:
+    name: peo5istr
+    type: BIGINT
+    years: 2000-2025
+  PEO6ISTR:
+    name: peo6istr
+    type: BIGINT
+    years: 2000-2025
+  CNTLAFFI:
+    name: cntlaffi
+    type: BIGINT
+    years: 2000-2025
+  PUBPRIME:
+    name: pubprime
+    type: BIGINT
+    years: 2000-2025
+  PUBSECON:
+    name: pubsecon
+    type: BIGINT
+    years: 2000-2025
+  RELAFFIL:
+    name: relaffil
+    type: BIGINT
+    years: 2000-2025
+  LEVEL1:
+    name: level1
+    type: BIGINT
+    years: 2000-2025
+  LEVEL2:
+    name: level2
+    type: BIGINT
+    years: 2000-2025
+  LEVEL3:
+    name: level3
+    type: BIGINT
+    years: 2000-2025
+  LEVEL4:
+    name: level4
+    type: BIGINT
+    years: 2000-2025
+  LEVEL5:
+    name: level5
+    type: BIGINT
+    years: 2000-2025
+  LEVEL6:
+    name: level6
+    type: BIGINT
+    years: 2000-2025
+  LEVEL7:
+    name: level7
+    type: BIGINT
+    years: 2000-2025
+  LEVEL8:
+    name: level8
+    type: BIGINT
+    years: 2000-2025
+  LEVEL9:
+    name: level9
+    type: BIGINT
+    years: 2000-2008
+  LEVEL10:
+    name: level10
+    type: BIGINT
+    years: 2000-2008
+  LEVEL11:
+    name: level11
+    type: BIGINT
+    years: 2000-2008
+  LEVEL12:
+    name: level12
+    type: BIGINT
+    years: 2000-2025
+  FOPNA:
+    name: fopna
+    type: BIGINT
+    years: 2000-2003
+  FOPNA1:
+    name: fopna1
+    type: BIGINT
+    years: 2000-2003
+  FOPNA2:
+    name: fopna2
+    type: BIGINT
+    years: 2000-2003
+  ACCRD1:
+    name: accrd1
+    type: BIGINT
+    years: 2000-2004
+  ACCRD2:
+    name: accrd2
+    type: BIGINT
+    years: 2000-2004
+  REGACCRD:
+    name: regaccrd
+    type: BIGINT
+    years: 2000-2004
+  ACCRD3:
+    name: accrd3
+    type: BIGINT
+    years: 2000-2004
+  ACCRD4:
+    name: accrd4
+    type: BIGINT
+    years: 2000-2004
+  SACCR:
+    name: saccr
+    type: BIGINT
+    years: 2000-2004
+  OPENADMP:
+    name: openadmp
+    type: BIGINT
+    years: 2000-2025
+  ADMCON1:
+    name: admcon1
+    type: BIGINT
+    years: 2000-2013
+  ADMCON2:
+    name: admcon2
+    type: BIGINT
+    years: 2000-2013
+  ADMCON3:
+    name: admcon3
+    type: BIGINT
+    years: 2000-2013
+  ADMCON4:
+    name: admcon4
+    type: BIGINT
+    years: 2000-2013
+  ADMCON5:
+    name: admcon5
+    type: BIGINT
+    years: 2000-2013
+  ADMCON6:
+    name: admcon6
+    type: BIGINT
+    years: 2000-2013
+  ADMCON7:
+    name: admcon7
+    type: BIGINT
+    years: 2000-2013
+  ADMCON8:
+    name: admcon8
+    type: BIGINT
+    years: 2000-2013
+  YRSCOLL:
+    name: yrscoll
+    type: BIGINT
+    years: 2000-2025
+  STUSRV1:
+    name: stusrv1
+    type: BIGINT
+    years: 2000-2021
+  STUSRV2:
+    name: stusrv2
+    type: BIGINT
+    years: 2000-2025
+  STUSRV3:
+    name: stusrv3
+    type: BIGINT
+    years: 2000-2025
+  STUSRV4:
+    name: stusrv4
+    type: BIGINT
+    years: 2000-2025
+  STUSRV8:
+    name: stusrv8
+    type: BIGINT
+    years: 2000-2025
+  STUSRV9:
+    name: stusrv9
+    type: BIGINT
+    years: 2000-2025
+  LIBFAC:
+    name: libfac
+    type: BIGINT
+    years: 2000-2015
+  ROTC:
+    name: rotc
+    type: BIGINT
+    years: '2000'
+  ROTC1:
+    name: rotc1
+    type: BIGINT
+    years: '2000'
+  ROTC2:
+    name: rotc2
+    type: BIGINT
+    years: '2000'
+  ROTC3:
+    name: rotc3
+    type: BIGINT
+    years: '2000'
+  ATHASSOC:
+    name: athassoc
+    type: BIGINT
+    years: 2000-2025
+  ASSOC1:
+    name: assoc1
+    type: BIGINT
+    years: 2000-2025
+  ASSOC2:
+    name: assoc2
+    type: BIGINT
+    years: 2000-2025
+  ASSOC3:
+    name: assoc3
+    type: BIGINT
+    years: 2000-2025
+  ASSOC4:
+    name: assoc4
+    type: BIGINT
+    years: 2000-2025
+  ASSOC5:
+    name: assoc5
+    type: BIGINT
+    years: 2000-2025
+  ASSOC6:
+    name: assoc6
+    type: BIGINT
+    years: 2000-2025
+  SPORT1:
+    name: sport1
+    type: BIGINT
+    years: 2000-2025
+  CONFNO1:
+    name: confno1
+    type: BIGINT
+    years: 2000-2025
+  SPORT2:
+    name: sport2
+    type: BIGINT
+    years: 2000-2025
+  CONFNO2:
+    name: confno2
+    type: BIGINT
+    years: 2000-2025
+  SPORT3:
+    name: sport3
+    type: BIGINT
+    years: 2000-2025
+  CONFNO3:
+    name: confno3
+    type: BIGINT
+    years: 2000-2025
+  SPORT4:
+    name: sport4
+    type: BIGINT
+    years: 2000-2025
+  CONFNO4:
+    name: confno4
+    type: BIGINT
+    years: 2000-2025
+  INSTTOYR:
+    name: insttoyr
+    type: BIGINT
+    years: 2000-2004
+  PCTPOST:
+    name: pctpost
+    type: BIGINT
+    years: 2000-2009
+  CALSYS:
+    name: calsys
+    type: BIGINT
+    years: 2000-2025
+  APFEE:
+    name: apfee
+    type: BIGINT
+    years: 2000-2006
+  XAPPFEEU:
+    name: xappfeeu
+    type: VARCHAR
+    years: 2000-2023
+  APPLFEEU:
+    name: applfeeu
+    type: VARCHAR
+    years: 2000-2023
+  XAPPFEEG:
+    name: xappfeeg
+    type: VARCHAR
+    years: 2000-2023
+  APPLFEEG:
+    name: applfeeg
+    type: VARCHAR
+    years: 2000-2023
+  XAPPFEEP:
+    name: xappfeep
+    type: VARCHAR
+    years: 2000-2008
+  APPLFEEP:
+    name: applfeep
+    type: VARCHAR
+    years: 2000-2008
+  FTSTU:
+    name: ftstu
+    type: BIGINT
+    years: 2000-2002
+  FT_UG:
+    name: ft_ug
+    type: BIGINT
+    years: 2000-2025
+  FT_FTUG:
+    name: ft_ftug
+    type: BIGINT
+    years: 2000-2025
+  FT_GD:
+    name: ft_gd
+    type: BIGINT
+    years: 2000-2011
+  FT_FP:
+    name: ft_fp
+    type: BIGINT
+    years: 2000-2008
+  TUITVARY:
+    name: tuitvary
+    type: BIGINT
+    years: 2000-2023
+  ROOM:
+    name: room
+    type: BIGINT
+    years: 2000-2023
+  XROOMCAP:
+    name: roomcap_flag
+    type: VARCHAR
+    flag_for: roomcap
+    years: 2000-2023
+  ROOMCAP:
+    name: roomcap
+    type: VARCHAR
+    years: 2000-2023
+  BOARD:
+    name: board
+    type: BIGINT
+    years: 2000-2023
+  XMEALSWK:
+    name: mealswk_flag
+    type: VARCHAR
+    flag_for: mealswk
+    years: 2000-2023
+  MEALSWK:
+    name: mealswk
+    type: VARCHAR
+    years: 2000-2023
+  XROOMAMT:
+    name: roomamt_flag
+    type: VARCHAR
+    flag_for: roomamt
+    years: 2000-2023
+  ROOMAMT:
+    name: roomamt
+    type: VARCHAR
+    years: 2000-2023
+  XBORDAMT:
+    name: xbordamt
+    type: VARCHAR
+    years: 2000-2023
+  BOARDAMT:
+    name: boardamt
+    type: VARCHAR
+    years: 2000-2023
+  XRMBDAMT:
+    name: xrmbdamt
+    type: VARCHAR
+    years: 2000-2023
+  RMBRDAMT:
+    name: rmbrdamt
+    type: VARCHAR
+    years: 2000-2023
+  APPDATE:
+    name: appdate
+    type: BIGINT
+    years: 2001-2013
+  XAPPLCNM:
+    name: applcnm_flag
+    type: VARCHAR
+    flag_for: applcnm
+    years: 2001-2013
+  APPLCNM:
+    name: applcnm
+    type: VARCHAR
+    years: 2001-2013
+  XAPPLCNW:
+    name: applcnw_flag
+    type: VARCHAR
+    flag_for: applcnw
+    years: 2001-2013
+  APPLCNW:
+    name: applcnw
+    type: VARCHAR
+    years: 2001-2013
+  XADMSSNM:
+    name: admssnm_flag
+    type: VARCHAR
+    flag_for: admssnm
+    years: 2001-2013
+  ADMSSNM:
+    name: admssnm
+    type: VARCHAR
+    years: 2001-2013
+  XADMSSNW:
+    name: admssnw_flag
+    type: VARCHAR
+    flag_for: admssnw
+    years: 2001-2013
+  ADMSSNW:
+    name: admssnw
+    type: VARCHAR
+    years: 2001-2013
+  XENRLFTM:
+    name: enrlftm_flag
+    type: VARCHAR
+    flag_for: enrlftm
+    years: 2001-2013
+  ENRLFTM:
+    name: enrlftm
+    type: VARCHAR
+    years: 2001-2013
+  XENRLFTW:
+    name: enrlftw_flag
+    type: VARCHAR
+    flag_for: enrlftw
+    years: 2001-2013
+  ENRLFTW:
+    name: enrlftw
+    type: VARCHAR
+    years: 2001-2013
+  XENRLPTM:
+    name: enrlptm_flag
+    type: VARCHAR
+    flag_for: enrlptm
+    years: 2001-2013
+  ENRLPTM:
+    name: enrlptm
+    type: VARCHAR
+    years: 2001-2013
+  XENRLPTW:
+    name: enrlptw_flag
+    type: VARCHAR
+    flag_for: enrlptw
+    years: 2001-2013
+  ENRLPTW:
+    name: enrlptw
+    type: VARCHAR
+    years: 2001-2013
+  SATACTDT:
+    name: satactdt
+    type: BIGINT
+    years: 2001-2013
+  XSATNUM:
+    name: satnum_flag
+    type: VARCHAR
+    flag_for: satnum
+    years: 2001-2013
+  SATNUM:
+    name: satnum
+    type: VARCHAR
+    years: 2001-2013
+  XSATPCT:
+    name: satpct_flag
+    type: VARCHAR
+    flag_for: satpct
+    years: 2001-2013
+  SATPCT:
+    name: satpct
+    type: VARCHAR
+    years: 2001-2013
+  XACTNUM:
+    name: actnum_flag
+    type: VARCHAR
+    flag_for: actnum
+    years: 2001-2013
+  ACTNUM:
+    name: actnum
+    type: VARCHAR
+    years: 2001-2013
+  XACTPCT:
+    name: actpct_flag
+    type: VARCHAR
+    flag_for: actpct
+    years: 2001-2013
+  ACTPCT:
+    name: actpct
+    type: VARCHAR
+    years: 2001-2013
+  XSATVR25:
+    name: satvr25_flag
+    type: VARCHAR
+    flag_for: satvr25
+    years: 2001-2013
+  SATVR25:
+    name: satvr25
+    type: VARCHAR
+    years: 2001-2013
+  XSATVR75:
+    name: satvr75_flag
+    type: VARCHAR
+    flag_for: satvr75
+    years: 2001-2013
+  SATVR75:
+    name: satvr75
+    type: VARCHAR
+    years: 2001-2013
+  XSATMT25:
+    name: satmt25_flag
+    type: VARCHAR
+    flag_for: satmt25
+    years: 2001-2013
+  SATMT25:
+    name: satmt25
+    type: VARCHAR
+    years: 2001-2013
+  XSATMT75:
+    name: satmt75_flag
+    type: VARCHAR
+    flag_for: satmt75
+    years: 2001-2013
+  SATMT75:
+    name: satmt75
+    type: VARCHAR
+    years: 2001-2013
+  XACTCM25:
+    name: actcm25_flag
+    type: VARCHAR
+    flag_for: actcm25
+    years: 2001-2013
+  ACTCM25:
+    name: actcm25
+    type: VARCHAR
+    years: 2001-2013
+  XACTCM75:
+    name: actcm75_flag
+    type: VARCHAR
+    flag_for: actcm75
+    years: 2001-2013
+  ACTCM75:
+    name: actcm75
+    type: VARCHAR
+    years: 2001-2013
+  XACTEN25:
+    name: acten25_flag
+    type: VARCHAR
+    flag_for: acten25
+    years: 2001-2013
+  ACTEN25:
+    name: acten25
+    type: VARCHAR
+    years: 2001-2013
+  XACTEN75:
+    name: acten75_flag
+    type: VARCHAR
+    flag_for: acten75
+    years: 2001-2013
+  ACTEN75:
+    name: acten75
+    type: VARCHAR
+    years: 2001-2013
+  XACTMT25:
+    name: actmt25_flag
+    type: VARCHAR
+    flag_for: actmt25
+    years: 2001-2013
+  ACTMT25:
+    name: actmt25
+    type: VARCHAR
+    years: 2001-2013
+  XACTMT75:
+    name: actmt75_flag
+    type: VARCHAR
+    flag_for: actmt75
+    years: 2001-2013
+  ACTMT75:
+    name: actmt75
+    type: VARCHAR
+    years: 2001-2013
+  CREDITS1:
+    name: credits1
+    type: BIGINT
+    years: 2001-2022
+  CREDITS2:
+    name: credits2
+    type: BIGINT
+    years: 2001-2025
+  CREDITS3:
+    name: credits3
+    type: BIGINT
+    years: 2001-2025
+  CREDITS4:
+    name: credits4
+    type: BIGINT
+    years: 2001-2025
+  SLO1:
+    name: slo1
+    type: BIGINT
+    years: 2001-2004
+  SLO2:
+    name: slo2
+    type: BIGINT
+    years: 2001-2004
+  SLO3:
+    name: slo3
+    type: BIGINT
+    years: 2001-2011
+  SLO4:
+    name: slo4
+    type: BIGINT
+    years: 2001-2004
+  SLO5:
+    name: slo5
+    type: BIGINT
+    years: 2001-2025
+  SLO51:
+    name: slo51
+    type: BIGINT
+    years: 2001-2025
+  SLO52:
+    name: slo52
+    type: BIGINT
+    years: 2001-2025
+  SLO53:
+    name: slo53
+    type: BIGINT
+    years: 2001-2025
+  SLO6:
+    name: slo6
+    type: BIGINT
+    years: 2001-2025
+  SLO7:
+    name: slo7
+    type: BIGINT
+    years: 2001-2025
+  SLO8:
+    name: slo8
+    type: BIGINT
+    years: 2001-2025
+  SLO81:
+    name: slo81
+    type: BIGINT
+    years: 2001-2025
+  SLO82:
+    name: slo82
+    type: BIGINT
+    years: 2001-2025
+  SLO83:
+    name: slo83
+    type: BIGINT
+    years: 2001-2025
+  SLO9:
+    name: slo9
+    type: BIGINT
+    years: 2001-2025
+  PTSTU:
+    name: ptstu
+    type: BIGINT
+    years: '2002'
+  PT_UG:
+    name: pt_ug
+    type: BIGINT
+    years: 2002-2025
+  PT_FTUG:
+    name: pt_ftug
+    type: BIGINT
+    years: 2002-2025
+  PT_GD:
+    name: pt_gd
+    type: BIGINT
+    years: 2002-2011
+  XENRLM:
+    name: enrlm_flag
+    type: VARCHAR
+    flag_for: enrlm
+    years: 2002-2013
+  ENRLM:
+    name: enrlm
+    type: VARCHAR
+    years: 2002-2013
+  XENRLW:
+    name: enrlw_flag
+    type: VARCHAR
+    flag_for: enrlw
+    years: 2002-2013
+  ENRLW:
+    name: enrlw
+    type: VARCHAR
+    years: 2002-2013
+  XENRLT:
+    name: enrlt_flag
+    type: VARCHAR
+    flag_for: enrlt
+    years: 2002-2013
+  ENRLT:
+    name: enrlt
+    type: VARCHAR
+    years: 2002-2013
+  XAPPLCN:
+    name: applcn_flag
+    type: VARCHAR
+    flag_for: applcn
+    years: 2002-2013
+  APPLCN:
+    name: applcn
+    type: VARCHAR
+    years: 2002-2013
+  XADMSSN:
+    name: admssn_flag
+    type: VARCHAR
+    flag_for: admssn
+    years: 2002-2013
+  ADMSSN:
+    name: admssn
+    type: VARCHAR
+    years: 2002-2013
+  XENRLFT:
+    name: enrlft_flag
+    type: VARCHAR
+    flag_for: enrlft
+    years: 2002-2013
+  ENRLFT:
+    name: enrlft
+    type: VARCHAR
+    years: 2002-2013
+  XENRLPT:
+    name: enrlpt_flag
+    type: VARCHAR
+    flag_for: enrlpt
+    years: 2002-2013
+  ENRLPT:
+    name: enrlpt
+    type: VARCHAR
+    years: 2002-2013
+  PT_FP:
+    name: pt_fp
+    type: BIGINT
+    years: 2004-2008
+  ALLONCAM:
+    name: alloncam
+    type: BIGINT
+    years: 2004-2023
+  ADMCON9:
+    name: admcon9
+    type: BIGINT
+    years: 2005-2013
+  XSATWR25:
+    name: satwr25_flag
+    type: VARCHAR
+    flag_for: satwr25
+    years: 2006-2013
+  SATWR25:
+    name: satwr25
+    type: VARCHAR
+    years: 2006-2013
+  XSATWR75:
+    name: satwr75_flag
+    type: VARCHAR
+    flag_for: satwr75
+    years: 2006-2013
+  SATWR75:
+    name: satwr75
+    type: VARCHAR
+    years: 2006-2013
+  LEVEL17:
+    name: level17
+    type: BIGINT
+    years: 2008-2025
+  LEVEL18:
+    name: level18
+    type: BIGINT
+    years: 2008-2025
+  LEVEL19:
+    name: level19
+    type: BIGINT
+    years: 2008-2025
+  XACTWR25:
+    name: actwr25_flag
+    type: VARCHAR
+    flag_for: actwr25
+    years: 2008-2013
+  ACTWR25:
+    name: actwr25
+    type: VARCHAR
+    years: 2008-2013
+  XACTWR75:
+    name: actwr75_flag
+    type: VARCHAR
+    flag_for: actwr75
+    years: 2008-2013
+  ACTWR75:
+    name: actwr75
+    type: VARCHAR
+    years: 2008-2013
+  TUITPL:
+    name: tuitpl
+    type: BIGINT
+    years: 2008-2023
+  TUITPL1:
+    name: tuitpl1
+    type: BIGINT
+    years: 2008-2023
+  TUITPL2:
+    name: tuitpl2
+    type: BIGINT
+    years: 2008-2023
+  TUITPL3:
+    name: tuitpl3
+    type: BIGINT
+    years: 2008-2023
+  TUITPL4:
+    name: tuitpl4
+    type: BIGINT
+    years: 2008-2023
+  DISAB:
+    name: disab
+    type: BIGINT
+    years: 2009-2025
+  XDISABPC:
+    name: xdisabpc
+    type: VARCHAR
+    years: 2009-2025
+  DISABPCT:
+    name: disabpct
+    type: VARCHAR
+    years: 2009-2025
+  DISTNCED:
+    name: distnced
+    type: BIGINT
+    years: 2011-2025
+  FTGDNIDP:
+    name: ftgdnidp
+    type: BIGINT
+    years: 2012-2025
+  PTGDNIDP:
+    name: ptgdnidp
+    type: BIGINT
+    years: 2012-2025
+  DOCPP:
+    name: docpp
+    type: BIGINT
+    years: 2012-2025
+  DOCPPSP:
+    name: docppsp
+    type: BIGINT
+    years: 2012-2025
+  DSTNCED1:
+    name: dstnced1
+    type: BIGINT
+    years: 2012-2025
+  DSTNCED2:
+    name: dstnced2
+    type: BIGINT
+    years: 2012-2025
+  DSTNCED3:
+    name: dstnced3
+    type: BIGINT
+    years: 2012-2025
+  VET1:
+    name: vet1
+    type: BIGINT
+    years: 2014-2025
+  VET2:
+    name: vet2
+    type: BIGINT
+    years: 2014-2025
+  VET3:
+    name: vet3
+    type: BIGINT
+    years: 2014-2025
+  VET4:
+    name: vet4
+    type: BIGINT
+    years: 2014-2025
+  VET5:
+    name: vet5
+    type: BIGINT
+    years: 2014-2025
+  VET9:
+    name: vet9
+    type: BIGINT
+    years: 2014-2025
+  LIBRES1:
+    name: libres1
+    type: BIGINT
+    years: 2016-2025
+  LIBRES2:
+    name: libres2
+    type: BIGINT
+    years: 2016-2025
+  LIBRES3:
+    name: libres3
+    type: BIGINT
+    years: 2016-2025
+  LIBRES4:
+    name: libres4
+    type: BIGINT
+    years: 2016-2025
+  LIBRES5:
+    name: libres5
+    type: BIGINT
+    years: 2016-2025
+  LIBRES6:
+    name: libres6
+    type: BIGINT
+    years: 2016-2025
+  LIBRES9:
+    name: libres9
+    type: BIGINT
+    years: 2016-2025
+  DISTCRS:
+    name: distcrs
+    type: BIGINT
+    years: 2016-2025
+  DSTNUGC:
+    name: dstnugc
+    type: BIGINT
+    years: 2017-2025
+  DSTNUGP:
+    name: dstnugp
+    type: BIGINT
+    years: 2017-2025
+  DSTNUGN:
+    name: dstnugn
+    type: BIGINT
+    years: 2017-2025
+  DSTNGC:
+    name: dstngc
+    type: BIGINT
+    years: 2017-2025
+  DSTNGP:
+    name: dstngp
+    type: BIGINT
+    years: 2017-2025
+  DSTNGN:
+    name: dstngn
+    type: BIGINT
+    years: 2017-2025
+  DISTPGS:
+    name: distpgs
+    type: BIGINT
+    years: 2017-2025
+  LEVEL1A:
+    name: level1a
+    type: BIGINT
+    years: 2020-2025
+  LEVEL1B:
+    name: level1b
+    type: BIGINT
+    years: 2020-2025
+  PEO7ISTR:
+    name: peo7istr
+    type: BIGINT
+    years: 2022-2025
+  NONCRDT1:
+    name: noncrdt1
+    type: BIGINT
+    years: 2022-2025
+  NONCRDT2:
+    name: noncrdt2
+    type: BIGINT
+    years: 2022-2025
+  NONCRDT3:
+    name: noncrdt3
+    type: BIGINT
+    years: 2022-2025
+  NONCRDT4:
+    name: noncrdt4
+    type: BIGINT
+    years: 2022-2025
+  NONCRDT5:
+    name: noncrdt5
+    type: BIGINT
+    years: 2022-2025
+  NONCRDT6:
+    name: noncrdt6
+    type: BIGINT
+    years: 2022-2025
+  NONCRDT7:
+    name: noncrdt7
+    type: BIGINT
+    years: 2022-2025
+  NONCRDT8:
+    name: noncrdt8
+    type: BIGINT
+    years: 2022-2025
+  NONCRDT9:
+    name: noncrdt9
+    type: BIGINT
+    years: 2022-2025
+  SLO521:
+    name: slo521
+    type: BIGINT
+    years: 2022-2025
+  SLOA:
+    name: sloa
+    type: BIGINT
+    years: 2022-2025
+  SLOB:
+    name: slob
+    type: BIGINT
+    years: 2022-2025
+  PRMPGM:
+    name: prmpgm
+    type: BIGINT
+    years: 2022-2023
+  ENRHSST:
+    name: enrhsst
+    type: BIGINT
+    years: '2023'
+  ENRHSST1:
+    name: enrhsst1
+    type: BIGINT
+    years: '2023'
+  ENRHSST2:
+    name: enrhsst2
+    type: BIGINT
+    years: '2023'

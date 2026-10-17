@@ -1,0 +1,177 @@
+source: ipeds
+family: eap
+key:
+- unitid
+- eaprectp
+- eapcat
+- fstat5
+- functcd
+- typecd
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2001-2024
+  TYPECD:
+    name: typecd
+    type: BIGINT
+    years: '2001'
+  FUNCTCD:
+    name: functcd
+    type: BIGINT
+    years: 2001-2011
+  XFSTAT1:
+    name: fstat1_flag
+    type: VARCHAR
+    flag_for: fstat1
+    years: '2001'
+  FSTAT1:
+    name: fstat1
+    type: BIGINT
+    years: '2001'
+  XFSTAT2:
+    name: fstat2_flag
+    type: VARCHAR
+    flag_for: fstat2
+    years: '2001'
+  FSTAT2:
+    name: fstat2
+    type: BIGINT
+    years: '2001'
+  XFSTAT3:
+    name: fstat3_flag
+    type: VARCHAR
+    flag_for: fstat3
+    years: '2001'
+  FSTAT3:
+    name: fstat3
+    type: BIGINT
+    years: '2001'
+  XFSTAT4:
+    name: fstat4_flag
+    type: VARCHAR
+    flag_for: fstat4
+    years: '2001'
+  FSTAT4:
+    name: fstat4
+    type: BIGINT
+    years: '2001'
+  XFSTAT5:
+    name: fstat5_flag
+    type: VARCHAR
+    flag_for: fstat5
+    years: '2001'
+  FSTAT5:
+    name: fstat5
+    type: BIGINT
+    years: '2001'
+  XFSTAT6:
+    name: fstat6_flag
+    type: VARCHAR
+    flag_for: fstat6
+    years: '2001'
+  FSTAT6:
+    name: fstat6
+    type: BIGINT
+    years: '2001'
+  EAPRECTP:
+    name: eaprectp
+    type: BIGINT
+    years: 2002-2011
+  FTPT:
+    name: ftpt
+    type: BIGINT
+    years: 2002-2011
+  FSTAT:
+    name: fstat
+    type: BIGINT
+    years: 2002-2011
+  XEAPTYP:
+    name: eaptyp_flag
+    type: VARCHAR
+    flag_for: eaptyp
+    years: 2002-2024
+  EAPTYP:
+    name: eaptyp
+    type: BIGINT
+    years: 2002-2024
+  XEAPMED:
+    name: eapmed_flag
+    type: VARCHAR
+    flag_for: eapmed
+    years: 2002-2024
+  EAPMED:
+    name: eapmed
+    type: BIGINT
+    years: 2002-2024
+  XEAPTOT:
+    name: eaptot_flag
+    type: VARCHAR
+    flag_for: eaptot
+    years: 2002-2024
+  EAPTOT:
+    name: eaptot
+    type: BIGINT
+    years: 2002-2024
+  EAPCAT:
+    name: eapcat
+    type: BIGINT
+    years: 2012-2024
+  OCCUPCAT:
+    name: occupcat
+    type: BIGINT
+    years: 2012-2024
+  FACSTAT:
+    name: facstat
+    type: BIGINT
+    years: 2012-2024
+  XEAPFT:
+    name: eapft_flag
+    type: VARCHAR
+    flag_for: eapft
+    years: 2012-2024
+  EAPFT:
+    name: eapft
+    type: BIGINT
+    years: 2012-2024
+  XEAPFTTY:
+    name: xeapftty
+    type: VARCHAR
+    years: 2012-2024
+  EAPFTTYP:
+    name: eapfttyp
+    type: BIGINT
+    years: 2012-2024
+  XEAPFTMD:
+    name: xeapftmd
+    type: VARCHAR
+    years: 2012-2024
+  EAPFTMED:
+    name: eapftmed
+    type: BIGINT
+    years: 2012-2024
+  XEAPPT:
+    name: eappt_flag
+    type: VARCHAR
+    flag_for: eappt
+    years: 2012-2024
+  EAPPT:
+    name: eappt
+    type: BIGINT
+    years: 2012-2024
+  XEAPPTTY:
+    name: xeapptty
+    type: VARCHAR
+    years: 2012-2024
+  EAPPTTYP:
+    name: eappttyp
+    type: BIGINT
+    years: 2012-2024
+  XEAPPTMD:
+    name: xeapptmd
+    type: VARCHAR
+    years: 2012-2024
+  EAPPTMED:
+    name: eapptmed
+    type: BIGINT
+    years: 2012-2024

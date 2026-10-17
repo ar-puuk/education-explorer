@@ -1,0 +1,57 @@
+source: ipeds
+family: drvadm
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2024
+  DVADM01:
+    name: dvadm01
+    type: BIGINT
+    years: 2021-2024
+  DVADM02:
+    name: dvadm02
+    type: VARCHAR
+    years: 2021-2024
+  DVADM03:
+    name: dvadm03
+    type: BIGINT
+    years: 2021-2024
+  DVADM04:
+    name: dvadm04
+    type: BIGINT
+    years: 2021-2024
+  DVADM05:
+    name: dvadm05
+    type: VARCHAR
+    years: 2021-2024
+  DVADM06:
+    name: dvadm06
+    type: BIGINT
+    years: 2021-2024
+  DVADM07:
+    name: dvadm07
+    type: BIGINT
+    years: 2021-2024
+  DVADM08:
+    name: dvadm08
+    type: VARCHAR
+    years: 2021-2024
+  DVADM09:
+    name: dvadm09
+    type: BIGINT
+    years: 2021-2024
+  DVADM10:
+    name: dvadm10
+    type: BIGINT
+    years: 2021-2024
+  DVADM11:
+    name: dvadm11
+    type: VARCHAR
+    years: 2021-2024
+  DVADM12:
+    name: dvadm12
+    type: BIGINT
+    years: 2021-2024

@@ -83,13 +83,13 @@ def data_csv(f: IpedsFile) -> Path:
     csvs = [p for p in folder.rglob("*.csv") if ".utf8" not in p.name]
     if not csvs:
         raise SystemExit(f"{f.name}: no csv in zip")
-    rv = [p for p in csvs if re.search(r"_rv\.csv$", p.name, re.I)]
+    rv = [p for p in csvs if re.search(r"_rv\.csv$", p.name, re.IGNORECASE)]
     return (rv or csvs)[0]
 
 
 def data_version(f: IpedsFile) -> str:
     folder = unzip(DATA_RAW / f.rel)
-    return "revised" if any(re.search(r"_rv\.csv$", p.name, re.I) for p in folder.rglob("*.csv")) else "provisional"
+    return "revised" if any(re.search(r"_rv\.csv$", p.name, re.IGNORECASE) for p in folder.rglob("*.csv")) else "provisional"
 
 
 def dict_xlsx(f: IpedsFile) -> Path | None:

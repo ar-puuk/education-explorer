@@ -1,0 +1,554 @@
+source: ipeds
+family: salis
+key:
+- unitid
+- arank
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2012-2024
+  ARANK:
+    name: arank
+    type: BIGINT
+    years: 2012-2024
+  XSATOTLT:
+    name: satotlt_flag
+    type: VARCHAR
+    flag_for: satotlt
+    years: 2012-2024
+  SATOTLT:
+    name: satotlt
+    type: BIGINT
+    years: 2012-2024
+  XSATOTLM:
+    name: satotlm_flag
+    type: VARCHAR
+    flag_for: satotlm
+    years: 2012-2024
+  SATOTLM:
+    name: satotlm
+    type: BIGINT
+    years: 2012-2024
+  XSATOTLW:
+    name: satotlw_flag
+    type: VARCHAR
+    flag_for: satotlw
+    years: 2012-2024
+  SATOTLW:
+    name: satotlw
+    type: BIGINT
+    years: 2012-2024
+  XSA09MCT:
+    name: sa09mct_flag
+    type: VARCHAR
+    flag_for: sa09mct
+    years: 2012-2024
+  SA09MCT:
+    name: sa09mct
+    type: BIGINT
+    years: 2012-2024
+  XSA09MCM:
+    name: sa09mcm_flag
+    type: VARCHAR
+    flag_for: sa09mcm
+    years: 2012-2024
+  SA09MCM:
+    name: sa09mcm
+    type: BIGINT
+    years: 2012-2024
+  XSA09MCW:
+    name: sa09mcw_flag
+    type: VARCHAR
+    flag_for: sa09mcw
+    years: 2012-2024
+  SA09MCW:
+    name: sa09mcw
+    type: BIGINT
+    years: 2012-2024
+  XSA10MCT:
+    name: sa10mct_flag
+    type: VARCHAR
+    flag_for: sa10mct
+    years: 2012-2024
+  SA10MCT:
+    name: sa10mct
+    type: BIGINT
+    years: 2012-2024
+  XSA10MCM:
+    name: sa10mcm_flag
+    type: VARCHAR
+    flag_for: sa10mcm
+    years: 2012-2024
+  SA10MCM:
+    name: sa10mcm
+    type: BIGINT
+    years: 2012-2024
+  XSA10MCW:
+    name: sa10mcw_flag
+    type: VARCHAR
+    flag_for: sa10mcw
+    years: 2012-2024
+  SA10MCW:
+    name: sa10mcw
+    type: BIGINT
+    years: 2012-2024
+  XSA11MCT:
+    name: sa11mct_flag
+    type: VARCHAR
+    flag_for: sa11mct
+    years: 2012-2024
+  SA11MCT:
+    name: sa11mct
+    type: BIGINT
+    years: 2012-2024
+  XSA11MCM:
+    name: sa11mcm_flag
+    type: VARCHAR
+    flag_for: sa11mcm
+    years: 2012-2024
+  SA11MCM:
+    name: sa11mcm
+    type: BIGINT
+    years: 2012-2024
+  XSA11MCW:
+    name: sa11mcw_flag
+    type: VARCHAR
+    flag_for: sa11mcw
+    years: 2012-2024
+  SA11MCW:
+    name: sa11mcw
+    type: BIGINT
+    years: 2012-2024
+  XSA12MCT:
+    name: sa12mct_flag
+    type: VARCHAR
+    flag_for: sa12mct
+    years: 2012-2024
+  SA12MCT:
+    name: sa12mct
+    type: BIGINT
+    years: 2012-2024
+  XSA12MCM:
+    name: sa12mcm_flag
+    type: VARCHAR
+    flag_for: sa12mcm
+    years: 2012-2024
+  SA12MCM:
+    name: sa12mcm
+    type: BIGINT
+    years: 2012-2024
+  XSA12MCW:
+    name: sa12mcw_flag
+    type: VARCHAR
+    flag_for: sa12mcw
+    years: 2012-2024
+  SA12MCW:
+    name: sa12mcw
+    type: BIGINT
+    years: 2012-2024
+  XSAMNTHT:
+    name: samntht_flag
+    type: VARCHAR
+    flag_for: samntht
+    years: 2012-2016
+  SAMNTHT:
+    name: samntht
+    type: BIGINT
+    years: 2012-2016
+  XSAMNTHM:
+    name: samnthm_flag
+    type: VARCHAR
+    flag_for: samnthm
+    years: 2012-2016
+  SAMNTHM:
+    name: samnthm
+    type: BIGINT
+    years: 2012-2016
+  XSAMNTHW:
+    name: samnthw_flag
+    type: VARCHAR
+    flag_for: samnthw
+    years: 2012-2016
+  SAMNTHW:
+    name: samnthw
+    type: BIGINT
+    years: 2012-2016
+  XSAOUTLT:
+    name: saoutlt_flag
+    type: VARCHAR
+    flag_for: saoutlt
+    years: 2012-2024
+  SAOUTLT:
+    name: saoutlt
+    type: BIGINT
+    years: 2012-2024
+  XSAOUTLM:
+    name: saoutlm_flag
+    type: VARCHAR
+    flag_for: saoutlm
+    years: 2012-2024
+  SAOUTLM:
+    name: saoutlm
+    type: BIGINT
+    years: 2012-2024
+  XSAOUTLW:
+    name: saoutlw_flag
+    type: VARCHAR
+    flag_for: saoutlw
+    years: 2012-2024
+  SAOUTLW:
+    name: saoutlw
+    type: BIGINT
+    years: 2012-2024
+  XSAAVMNT:
+    name: saavmnt_flag
+    type: VARCHAR
+    flag_for: saavmnt
+    years: 2012-2016
+  SAAVMNT:
+    name: saavmnt
+    type: BIGINT
+    years: 2012-2016
+  XSAAVMNM:
+    name: saavmnm_flag
+    type: VARCHAR
+    flag_for: saavmnm
+    years: 2012-2016
+  SAAVMNM:
+    name: saavmnm
+    type: BIGINT
+    years: 2012-2016
+  XSAAVMNW:
+    name: saavmnw_flag
+    type: VARCHAR
+    flag_for: saavmnw
+    years: 2012-2016
+  SAAVMNW:
+    name: saavmnw
+    type: BIGINT
+    years: 2012-2016
+  XSAINSTT:
+    name: sainstt_flag
+    type: VARCHAR
+    flag_for: sainstt
+    years: 2016-2024
+  SAINSTT:
+    name: sainstt
+    type: BIGINT
+    years: 2016-2024
+  XSAINSTM:
+    name: sainstm_flag
+    type: VARCHAR
+    flag_for: sainstm
+    years: 2016-2024
+  SAINSTM:
+    name: sainstm
+    type: BIGINT
+    years: 2016-2024
+  XSAINSTW:
+    name: sainstw_flag
+    type: VARCHAR
+    flag_for: sainstw
+    years: 2016-2024
+  SAINSTW:
+    name: sainstw
+    type: BIGINT
+    years: 2016-2024
+  XSA_9MCT:
+    name: sa_9mct_flag
+    type: VARCHAR
+    flag_for: sa_9mct
+    years: 2016-2024
+  SA_9MCT:
+    name: sa_9mct
+    type: BIGINT
+    years: 2016-2024
+  XSA_9MCM:
+    name: sa_9mcm_flag
+    type: VARCHAR
+    flag_for: sa_9mcm
+    years: 2016-2024
+  SA_9MCM:
+    name: sa_9mcm
+    type: BIGINT
+    years: 2016-2024
+  XSA_9MCW:
+    name: sa_9mcw_flag
+    type: VARCHAR
+    flag_for: sa_9mcw
+    years: 2016-2024
+  SA_9MCW:
+    name: sa_9mcw
+    type: BIGINT
+    years: 2016-2024
+  XSA09MOT:
+    name: sa09mot_flag
+    type: VARCHAR
+    flag_for: sa09mot
+    years: 2016-2024
+  SA09MOT:
+    name: sa09mot
+    type: BIGINT
+    years: 2016-2024
+  XSA09MOM:
+    name: sa09mom_flag
+    type: VARCHAR
+    flag_for: sa09mom
+    years: 2016-2024
+  SA09MOM:
+    name: sa09mom
+    type: BIGINT
+    years: 2016-2024
+  XSA09MOW:
+    name: sa09mow_flag
+    type: VARCHAR
+    flag_for: sa09mow
+    years: 2016-2024
+  SA09MOW:
+    name: sa09mow
+    type: BIGINT
+    years: 2016-2024
+  XSA10MOT:
+    name: sa10mot_flag
+    type: VARCHAR
+    flag_for: sa10mot
+    years: 2016-2024
+  SA10MOT:
+    name: sa10mot
+    type: BIGINT
+    years: 2016-2024
+  XSA10MOM:
+    name: sa10mom_flag
+    type: VARCHAR
+    flag_for: sa10mom
+    years: 2016-2024
+  SA10MOM:
+    name: sa10mom
+    type: BIGINT
+    years: 2016-2024
+  XSA10MOW:
+    name: sa10mow_flag
+    type: VARCHAR
+    flag_for: sa10mow
+    years: 2016-2024
+  SA10MOW:
+    name: sa10mow
+    type: BIGINT
+    years: 2016-2024
+  XSA11MOT:
+    name: sa11mot_flag
+    type: VARCHAR
+    flag_for: sa11mot
+    years: 2016-2024
+  SA11MOT:
+    name: sa11mot
+    type: BIGINT
+    years: 2016-2024
+  XSA11MOM:
+    name: sa11mom_flag
+    type: VARCHAR
+    flag_for: sa11mom
+    years: 2016-2024
+  SA11MOM:
+    name: sa11mom
+    type: BIGINT
+    years: 2016-2024
+  XSA11MOW:
+    name: sa11mow_flag
+    type: VARCHAR
+    flag_for: sa11mow
+    years: 2016-2024
+  SA11MOW:
+    name: sa11mow
+    type: BIGINT
+    years: 2016-2024
+  XSA12MOT:
+    name: sa12mot_flag
+    type: VARCHAR
+    flag_for: sa12mot
+    years: 2016-2024
+  SA12MOT:
+    name: sa12mot
+    type: BIGINT
+    years: 2016-2024
+  XSA12MOM:
+    name: sa12mom_flag
+    type: VARCHAR
+    flag_for: sa12mom
+    years: 2016-2024
+  SA12MOM:
+    name: sa12mom
+    type: BIGINT
+    years: 2016-2024
+  XSA12MOW:
+    name: sa12mow_flag
+    type: VARCHAR
+    flag_for: sa12mow
+    years: 2016-2024
+  SA12MOW:
+    name: sa12mow
+    type: BIGINT
+    years: 2016-2024
+  XSAEQ9OT:
+    name: saeq9ot_flag
+    type: VARCHAR
+    flag_for: saeq9ot
+    years: 2016-2024
+  SAEQ9OT:
+    name: saeq9ot
+    type: BIGINT
+    years: 2016-2024
+  XSAEQ9OM:
+    name: saeq9om_flag
+    type: VARCHAR
+    flag_for: saeq9om
+    years: 2016-2024
+  SAEQ9OM:
+    name: saeq9om
+    type: BIGINT
+    years: 2016-2024
+  XSAEQ9OW:
+    name: saeq9ow_flag
+    type: VARCHAR
+    flag_for: saeq9ow
+    years: 2016-2024
+  SAEQ9OW:
+    name: saeq9ow
+    type: BIGINT
+    years: 2016-2024
+  XSAEQ9AT:
+    name: saeq9at_flag
+    type: VARCHAR
+    flag_for: saeq9at
+    years: 2016-2024
+  SAEQ9AT:
+    name: saeq9at
+    type: BIGINT
+    years: 2016-2024
+  XSAEQ9AM:
+    name: saeq9am_flag
+    type: VARCHAR
+    flag_for: saeq9am
+    years: 2016-2024
+  SAEQ9AM:
+    name: saeq9am
+    type: BIGINT
+    years: 2016-2024
+  XSAEQ9AW:
+    name: saeq9aw_flag
+    type: VARCHAR
+    flag_for: saeq9aw
+    years: 2016-2024
+  SAEQ9AW:
+    name: saeq9aw
+    type: BIGINT
+    years: 2016-2024
+  XSA09MAT:
+    name: sa09mat_flag
+    type: VARCHAR
+    flag_for: sa09mat
+    years: 2016-2024
+  SA09MAT:
+    name: sa09mat
+    type: BIGINT
+    years: 2016-2024
+  XSA09MAM:
+    name: sa09mam_flag
+    type: VARCHAR
+    flag_for: sa09mam
+    years: 2016-2024
+  SA09MAM:
+    name: sa09mam
+    type: BIGINT
+    years: 2016-2024
+  XSA09MAW:
+    name: sa09maw_flag
+    type: VARCHAR
+    flag_for: sa09maw
+    years: 2016-2024
+  SA09MAW:
+    name: sa09maw
+    type: BIGINT
+    years: 2016-2024
+  XSA10MAT:
+    name: sa10mat_flag
+    type: VARCHAR
+    flag_for: sa10mat
+    years: 2016-2024
+  SA10MAT:
+    name: sa10mat
+    type: BIGINT
+    years: 2016-2024
+  XSA10MAM:
+    name: sa10mam_flag
+    type: VARCHAR
+    flag_for: sa10mam
+    years: 2016-2024
+  SA10MAM:
+    name: sa10mam
+    type: BIGINT
+    years: 2016-2024
+  XSA10MAW:
+    name: sa10maw_flag
+    type: VARCHAR
+    flag_for: sa10maw
+    years: 2016-2024
+  SA10MAW:
+    name: sa10maw
+    type: BIGINT
+    years: 2016-2024
+  XSA11MAT:
+    name: sa11mat_flag
+    type: VARCHAR
+    flag_for: sa11mat
+    years: 2016-2024
+  SA11MAT:
+    name: sa11mat
+    type: BIGINT
+    years: 2016-2024
+  XSA11MAM:
+    name: sa11mam_flag
+    type: VARCHAR
+    flag_for: sa11mam
+    years: 2016-2024
+  SA11MAM:
+    name: sa11mam
+    type: BIGINT
+    years: 2016-2024
+  XSA11MAW:
+    name: sa11maw_flag
+    type: VARCHAR
+    flag_for: sa11maw
+    years: 2016-2024
+  SA11MAW:
+    name: sa11maw
+    type: BIGINT
+    years: 2016-2024
+  XSA12MAT:
+    name: sa12mat_flag
+    type: VARCHAR
+    flag_for: sa12mat
+    years: 2016-2024
+  SA12MAT:
+    name: sa12mat
+    type: BIGINT
+    years: 2016-2024
+  XSA12MAM:
+    name: sa12mam_flag
+    type: VARCHAR
+    flag_for: sa12mam
+    years: 2016-2024
+  SA12MAM:
+    name: sa12mam
+    type: BIGINT
+    years: 2016-2024
+  XSA12MAW:
+    name: sa12maw_flag
+    type: VARCHAR
+    flag_for: sa12maw
+    years: 2016-2024
+  SA12MAW:
+    name: sa12maw
+    type: BIGINT
+    years: 2016-2024

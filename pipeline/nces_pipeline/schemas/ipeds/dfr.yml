@@ -1,0 +1,712 @@
+source: ipeds
+family: dfr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: '2005'
+  XENRFT:
+    name: enrft_flag
+    type: VARCHAR
+    flag_for: enrft
+    years: '2005'
+  ENRFT:
+    name: enrft
+    type: BIGINT
+    years: '2005'
+  XENRPT:
+    name: enrpt_flag
+    type: VARCHAR
+    flag_for: enrpt
+    years: '2005'
+  ENRPT:
+    name: enrpt
+    type: BIGINT
+    years: '2005'
+  XPFT1ST:
+    name: xpft1st
+    type: VARCHAR
+    years: '2005'
+  PCTFT1ST:
+    name: pctft1st
+    type: BIGINT
+    years: '2005'
+  XUNDUP:
+    name: undup_flag
+    type: VARCHAR
+    flag_for: undup
+    years: '2005'
+  UNDUP:
+    name: undup
+    type: BIGINT
+    years: '2005'
+  XUNDUPUG:
+    name: undupug_flag
+    type: VARCHAR
+    flag_for: undupug
+    years: '2005'
+  UNDUPUG:
+    name: undupug
+    type: BIGINT
+    years: '2005'
+  XFTE12MN:
+    name: fte12mn_flag
+    type: VARCHAR
+    flag_for: fte12mn
+    years: '2005'
+  FTE12MN:
+    name: fte12mn
+    type: BIGINT
+    years: '2005'
+  XPENRWH:
+    name: xpenrwh
+    type: VARCHAR
+    years: '2005'
+  PCTENRWH:
+    name: pctenrwh
+    type: BIGINT
+    years: '2005'
+  XPENRBK:
+    name: xpenrbk
+    type: VARCHAR
+    years: '2005'
+  PCTENRBK:
+    name: pctenrbk
+    type: BIGINT
+    years: '2005'
+  XPENRHS:
+    name: xpenrhs
+    type: VARCHAR
+    years: '2005'
+  PCTENRHS:
+    name: pctenrhs
+    type: BIGINT
+    years: '2005'
+  XPENRAP:
+    name: xpenrap
+    type: VARCHAR
+    years: '2005'
+  PCTENRAP:
+    name: pctenrap
+    type: BIGINT
+    years: '2005'
+  XPENRAN:
+    name: xpenran
+    type: VARCHAR
+    years: '2005'
+  PCTENRAN:
+    name: pctenran
+    type: BIGINT
+    years: '2005'
+  XPENRUN:
+    name: xpenrun
+    type: VARCHAR
+    years: '2005'
+  PCTENRUN:
+    name: pctenrun
+    type: BIGINT
+    years: '2005'
+  XPENRNR:
+    name: xpenrnr
+    type: VARCHAR
+    years: '2005'
+  PCTENRNR:
+    name: pctenrnr
+    type: BIGINT
+    years: '2005'
+  XPCTENRW:
+    name: pctenrw_flag
+    type: VARCHAR
+    flag_for: pctenrw
+    years: '2005'
+  PCTENRW:
+    name: pctenrw
+    type: BIGINT
+    years: '2005'
+  XTUFEYR1:
+    name: tufeyr1_flag
+    type: VARCHAR
+    flag_for: tufeyr1
+    years: '2005'
+  TUFEYR1:
+    name: tufeyr1
+    type: BIGINT
+    years: '2005'
+  XTUFEYR2:
+    name: tufeyr2_flag
+    type: VARCHAR
+    flag_for: tufeyr2
+    years: '2005'
+  TUFEYR2:
+    name: tufeyr2
+    type: BIGINT
+    years: '2005'
+  XTUFEYR3:
+    name: tufeyr3_flag
+    type: VARCHAR
+    flag_for: tufeyr3
+    years: '2005'
+  TUFEYR3:
+    name: tufeyr3
+    type: BIGINT
+    years: '2005'
+  XGRRTTOT:
+    name: grrttot_flag
+    type: VARCHAR
+    flag_for: grrttot
+    years: '2005'
+  GRRTTOT:
+    name: grrttot
+    type: BIGINT
+    years: '2005'
+  XGRRTM:
+    name: grrtm_flag
+    type: VARCHAR
+    flag_for: grrtm
+    years: '2005'
+  GRRTM:
+    name: grrtm
+    type: BIGINT
+    years: '2005'
+  XGRRTW:
+    name: grrtw_flag
+    type: VARCHAR
+    flag_for: grrtw
+    years: '2005'
+  GRRTW:
+    name: grrtw
+    type: BIGINT
+    years: '2005'
+  XGRRTWH:
+    name: grrtwh_flag
+    type: VARCHAR
+    flag_for: grrtwh
+    years: '2005'
+  GRRTWH:
+    name: grrtwh
+    type: BIGINT
+    years: '2005'
+  XGRRTBK:
+    name: grrtbk_flag
+    type: VARCHAR
+    flag_for: grrtbk
+    years: '2005'
+  GRRTBK:
+    name: grrtbk
+    type: BIGINT
+    years: '2005'
+  XGRRTHS:
+    name: grrths_flag
+    type: VARCHAR
+    flag_for: grrths
+    years: '2005'
+  GRRTHS:
+    name: grrths
+    type: BIGINT
+    years: '2005'
+  XGRRTAP:
+    name: grrtap_flag
+    type: VARCHAR
+    flag_for: grrtap
+    years: '2005'
+  GRRTAP:
+    name: grrtap
+    type: BIGINT
+    years: '2005'
+  XGRRTAN:
+    name: grrtan_flag
+    type: VARCHAR
+    flag_for: grrtan
+    years: '2005'
+  GRRTAN:
+    name: grrtan
+    type: BIGINT
+    years: '2005'
+  XGRRTUN:
+    name: grrtun_flag
+    type: VARCHAR
+    flag_for: grrtun
+    years: '2005'
+  GRRTUN:
+    name: grrtun
+    type: BIGINT
+    years: '2005'
+  XGRRTNR:
+    name: grrtnr_flag
+    type: VARCHAR
+    flag_for: grrtnr
+    years: '2005'
+  GRRTNR:
+    name: grrtnr
+    type: BIGINT
+    years: '2005'
+  XTRRTTOT:
+    name: trrttot_flag
+    type: VARCHAR
+    flag_for: trrttot
+    years: '2005'
+  TRRTTOT:
+    name: trrttot
+    type: BIGINT
+    years: '2005'
+  XGBA4RTT:
+    name: gba4rtt_flag
+    type: VARCHAR
+    flag_for: gba4rtt
+    years: '2005'
+  GBA4RTT:
+    name: gba4rtt
+    type: BIGINT
+    years: '2005'
+  XGBA5RTT:
+    name: gba5rtt_flag
+    type: VARCHAR
+    flag_for: gba5rtt
+    years: '2005'
+  GBA5RTT:
+    name: gba5rtt
+    type: BIGINT
+    years: '2005'
+  XGBA6RTT:
+    name: gba6rtt_flag
+    type: VARCHAR
+    flag_for: gba6rtt
+    years: '2005'
+  GBA6RTT:
+    name: gba6rtt
+    type: BIGINT
+    years: '2005'
+  XGBA6RTM:
+    name: gba6rtm_flag
+    type: VARCHAR
+    flag_for: gba6rtm
+    years: '2005'
+  GBA6RTM:
+    name: gba6rtm
+    type: BIGINT
+    years: '2005'
+  XGBA6RTW:
+    name: gba6rtw_flag
+    type: VARCHAR
+    flag_for: gba6rtw
+    years: '2005'
+  GBA6RTW:
+    name: gba6rtw
+    type: BIGINT
+    years: '2005'
+  XGBA6RWH:
+    name: xgba6rwh
+    type: VARCHAR
+    years: '2005'
+  GBA6RTWH:
+    name: gba6rtwh
+    type: BIGINT
+    years: '2005'
+  XGBA6RBK:
+    name: xgba6rbk
+    type: VARCHAR
+    years: '2005'
+  GBA6RTBK:
+    name: gba6rtbk
+    type: BIGINT
+    years: '2005'
+  XGBA6RHS:
+    name: xgba6rhs
+    type: VARCHAR
+    years: '2005'
+  GBA6RTHS:
+    name: gba6rths
+    type: BIGINT
+    years: '2005'
+  XGBA6RAP:
+    name: xgba6rap
+    type: VARCHAR
+    years: '2005'
+  GBA6RTAP:
+    name: gba6rtap
+    type: BIGINT
+    years: '2005'
+  XGBA6RAN:
+    name: xgba6ran
+    type: VARCHAR
+    years: '2005'
+  GBA6RTAN:
+    name: gba6rtan
+    type: BIGINT
+    years: '2005'
+  XGBA6RUN:
+    name: xgba6run
+    type: VARCHAR
+    years: '2005'
+  GBA6RTUN:
+    name: gba6rtun
+    type: BIGINT
+    years: '2005'
+  XGBA6RNR:
+    name: xgba6rnr
+    type: VARCHAR
+    years: '2005'
+  GBA6RTNR:
+    name: gba6rtnr
+    type: BIGINT
+    years: '2005'
+  XGBATRRT:
+    name: gbatrrt_flag
+    type: VARCHAR
+    flag_for: gbatrrt
+    years: '2005'
+  GBATRRT:
+    name: gbatrrt
+    type: BIGINT
+    years: '2005'
+  XFPSDEG:
+    name: fpsdeg_flag
+    type: VARCHAR
+    flag_for: fpsdeg
+    years: '2005'
+  FPSDEG:
+    name: fpsdeg
+    type: BIGINT
+    years: '2005'
+  XDOCDEG:
+    name: docdeg_flag
+    type: VARCHAR
+    flag_for: docdeg
+    years: '2005'
+  DOCDEG:
+    name: docdeg
+    type: BIGINT
+    years: '2005'
+  XMASDEG:
+    name: masdeg_flag
+    type: VARCHAR
+    flag_for: masdeg
+    years: '2005'
+  MASDEG:
+    name: masdeg
+    type: BIGINT
+    years: '2005'
+  XBASDEG:
+    name: basdeg_flag
+    type: VARCHAR
+    flag_for: basdeg
+    years: '2005'
+  BASDEG:
+    name: basdeg
+    type: BIGINT
+    years: '2005'
+  XASCDEG:
+    name: ascdeg_flag
+    type: VARCHAR
+    flag_for: ascdeg
+    years: '2005'
+  ASCDEG:
+    name: ascdeg
+    type: BIGINT
+    years: '2005'
+  XCERT4:
+    name: cert4_flag
+    type: VARCHAR
+    flag_for: cert4
+    years: '2005'
+  CERT4:
+    name: cert4
+    type: BIGINT
+    years: '2005'
+  XCERT2:
+    name: cert2_flag
+    type: VARCHAR
+    flag_for: cert2
+    years: '2005'
+  CERT2:
+    name: cert2
+    type: BIGINT
+    years: '2005'
+  XCERT1:
+    name: cert1_flag
+    type: VARCHAR
+    flag_for: cert1
+    years: '2005'
+  CERT1:
+    name: cert1
+    type: BIGINT
+    years: '2005'
+  XPBACERT:
+    name: pbacert_flag
+    type: VARCHAR
+    flag_for: pbacert
+    years: '2005'
+  PBACERT:
+    name: pbacert
+    type: BIGINT
+    years: '2005'
+  XPMACERT:
+    name: pmacert_flag
+    type: VARCHAR
+    flag_for: pmacert
+    years: '2005'
+  PMACERT:
+    name: pmacert
+    type: BIGINT
+    years: '2005'
+  XFPCERT:
+    name: fpcert_flag
+    type: VARCHAR
+    flag_for: fpcert
+    years: '2005'
+  FPCERT:
+    name: fpcert
+    type: BIGINT
+    years: '2005'
+  XCOREREV:
+    name: corerev_flag
+    type: VARCHAR
+    flag_for: corerev
+    years: '2005'
+  COREREV:
+    name: corerev
+    type: BIGINT
+    years: '2005'
+  XCOREEXP:
+    name: coreexp_flag
+    type: VARCHAR
+    flag_for: coreexp
+    years: '2005'
+  COREEXP:
+    name: coreexp
+    type: BIGINT
+    years: '2005'
+  XTUFEEP:
+    name: xtufeep
+    type: VARCHAR
+    years: '2005'
+  TUFEEPCT:
+    name: tufeepct
+    type: BIGINT
+    years: '2005'
+  XSTATEP:
+    name: xstatep
+    type: VARCHAR
+    years: '2005'
+  STATEPCT:
+    name: statepct
+    type: BIGINT
+    years: '2005'
+  XLOCALP:
+    name: xlocalp
+    type: VARCHAR
+    years: '2005'
+  LOCALPCT:
+    name: localpct
+    type: BIGINT
+    years: '2005'
+  XGOVGCP:
+    name: xgovgcp
+    type: VARCHAR
+    years: '2005'
+  GOVGCPCT:
+    name: govgcpct
+    type: BIGINT
+    years: '2005'
+  XPRGGCP:
+    name: xprggcp
+    type: VARCHAR
+    years: '2005'
+  PRGGCPCT:
+    name: prggcpct
+    type: BIGINT
+    years: '2005'
+  XINRETP:
+    name: xinretp
+    type: VARCHAR
+    years: '2005'
+  INRETPCT:
+    name: inretpct
+    type: BIGINT
+    years: '2005'
+  XOTREVP:
+    name: xotrevp
+    type: VARCHAR
+    years: '2005'
+  OTREVPCT:
+    name: otrevpct
+    type: BIGINT
+    years: '2005'
+  XINSTRF:
+    name: xinstrf
+    type: VARCHAR
+    years: '2005'
+  INSTRFTE:
+    name: instrfte
+    type: BIGINT
+    years: '2005'
+  XRSRCHF:
+    name: xrsrchf
+    type: VARCHAR
+    years: '2005'
+  RSRCHFTE:
+    name: rsrchfte
+    type: BIGINT
+    years: '2005'
+  XPBSRVF:
+    name: xpbsrvf
+    type: VARCHAR
+    years: '2005'
+  PBSRVFTE:
+    name: pbsrvfte
+    type: BIGINT
+    years: '2005'
+  XSUPPRF:
+    name: xsupprf
+    type: VARCHAR
+    years: '2005'
+  SUPPRFTE:
+    name: supprfte
+    type: BIGINT
+    years: '2005'
+  XSRVCSF:
+    name: xsrvcsf
+    type: VARCHAR
+    years: '2005'
+  SRVCSFTE:
+    name: srvcsfte
+    type: BIGINT
+    years: '2005'
+  XINSTUF:
+    name: xinstuf
+    type: VARCHAR
+    years: '2005'
+  INSTUFTE:
+    name: instufte
+    type: BIGINT
+    years: '2005'
+  XACISST:
+    name: xacisst
+    type: VARCHAR
+    years: '2005'
+  ACISSTUD:
+    name: acisstud
+    type: BIGINT
+    years: '2005'
+  XOTHREX:
+    name: xothrex
+    type: VARCHAR
+    years: '2005'
+  OTHREXPD:
+    name: othrexpd
+    type: BIGINT
+    years: '2005'
+  XSALPROF:
+    name: salprof_flag
+    type: VARCHAR
+    flag_for: salprof
+    years: '2005'
+  SALPROF:
+    name: salprof
+    type: BIGINT
+    years: '2005'
+  XSALASSC:
+    name: salassc_flag
+    type: VARCHAR
+    flag_for: salassc
+    years: '2005'
+  SALASSC:
+    name: salassc
+    type: BIGINT
+    years: '2005'
+  XSALASST:
+    name: salasst_flag
+    type: VARCHAR
+    flag_for: salasst
+    years: '2005'
+  SALASST:
+    name: salasst
+    type: BIGINT
+    years: '2005'
+  XSALINST:
+    name: salinst_flag
+    type: VARCHAR
+    flag_for: salinst
+    years: '2005'
+  SALINST:
+    name: salinst
+    type: BIGINT
+    years: '2005'
+  XSALLECT:
+    name: sallect_flag
+    type: VARCHAR
+    flag_for: sallect
+    years: '2005'
+  SALLECT:
+    name: sallect
+    type: BIGINT
+    years: '2005'
+  XSALNRNK:
+    name: salnrnk_flag
+    type: VARCHAR
+    flag_for: salnrnk
+    years: '2005'
+  SALNRNK:
+    name: salnrnk
+    type: BIGINT
+    years: '2005'
+  XSALTOTL:
+    name: saltotl_flag
+    type: VARCHAR
+    flag_for: saltotl
+    years: '2005'
+  SALTOTL:
+    name: saltotl
+    type: BIGINT
+    years: '2005'
+  XTFTESTF:
+    name: tftestf_flag
+    type: VARCHAR
+    flag_for: tftestf
+    years: '2005'
+  TFTESTF:
+    name: tftestf
+    type: BIGINT
+    years: '2005'
+  XIRPSSTF:
+    name: irpsstf_flag
+    type: VARCHAR
+    flag_for: irpsstf
+    years: '2005'
+  IRPSSTF:
+    name: irpsstf
+    type: BIGINT
+    years: '2005'
+  XADMNSTF:
+    name: admnstf_flag
+    type: VARCHAR
+    flag_for: admnstf
+    years: '2005'
+  ADMNSTF:
+    name: admnstf
+    type: BIGINT
+    years: '2005'
+  XOPRFSTF:
+    name: oprfstf_flag
+    type: VARCHAR
+    flag_for: oprfstf
+    years: '2005'
+  OPRFSTF:
+    name: oprfstf
+    type: BIGINT
+    years: '2005'
+  XNONPSTF:
+    name: nonpstf_flag
+    type: VARCHAR
+    flag_for: nonpstf
+    years: '2005'
+  NONPSTF:
+    name: nonpstf
+    type: BIGINT
+    years: '2005'
+  DFRCGID:
+    name: dfrcgid
+    type: BIGINT
+    years: '2005'

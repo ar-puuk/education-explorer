@@ -1,0 +1,594 @@
+source: ipeds
+family: icpy
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2023
+  PRGMOFR:
+    name: prgmofr
+    type: BIGINT
+    years: 2000-2023
+  PG300:
+    name: pg300
+    type: BIGINT
+    years: 2000-2003
+  CIPCODE1:
+    name: cipcode1
+    type: VARCHAR
+    years: 2000-2023
+  XCIPLGT1:
+    name: xciplgt1
+    type: VARCHAR
+    years: 2000-2023
+  CIPLGTH1:
+    name: ciplgth1
+    type: BIGINT
+    years: 2000-2023
+  XCHG1PY1:
+    name: chg1py1_flag
+    type: VARCHAR
+    flag_for: chg1py1
+    years: 2000-2023
+  CHG1PY1:
+    name: chg1py1
+    type: VARCHAR
+    years: 2000-2023
+  XCHG1PY2:
+    name: chg1py2_flag
+    type: VARCHAR
+    flag_for: chg1py2
+    years: 2000-2023
+  CHG1PY2:
+    name: chg1py2
+    type: VARCHAR
+    years: 2000-2023
+  XCHG1PY3:
+    name: chg1py3_flag
+    type: VARCHAR
+    flag_for: chg1py3
+    years: 2000-2023
+  CHG1PY3:
+    name: chg1py3
+    type: VARCHAR
+    years: 2000-2023
+  XCHG4PY1:
+    name: chg4py1_flag
+    type: VARCHAR
+    flag_for: chg4py1
+    years: 2000-2023
+  CHG4PY1:
+    name: chg4py1
+    type: VARCHAR
+    years: 2000-2023
+  XCHG4PY2:
+    name: chg4py2_flag
+    type: VARCHAR
+    flag_for: chg4py2
+    years: 2000-2023
+  CHG4PY2:
+    name: chg4py2
+    type: VARCHAR
+    years: 2000-2023
+  XCHG4PY3:
+    name: chg4py3_flag
+    type: VARCHAR
+    flag_for: chg4py3
+    years: 2000-2023
+  CHG4PY3:
+    name: chg4py3
+    type: VARCHAR
+    years: 2000-2023
+  XCHG5PY1:
+    name: chg5py1_flag
+    type: VARCHAR
+    flag_for: chg5py1
+    years: 2000-2023
+  CHG5PY1:
+    name: chg5py1
+    type: VARCHAR
+    years: 2000-2023
+  XCHG5PY2:
+    name: chg5py2_flag
+    type: VARCHAR
+    flag_for: chg5py2
+    years: 2000-2023
+  CHG5PY2:
+    name: chg5py2
+    type: VARCHAR
+    years: 2000-2023
+  XCHG5PY3:
+    name: chg5py3_flag
+    type: VARCHAR
+    flag_for: chg5py3
+    years: 2000-2023
+  CHG5PY3:
+    name: chg5py3
+    type: VARCHAR
+    years: 2000-2023
+  XCHG6PY1:
+    name: chg6py1_flag
+    type: VARCHAR
+    flag_for: chg6py1
+    years: 2000-2023
+  CHG6PY1:
+    name: chg6py1
+    type: VARCHAR
+    years: 2000-2023
+  XCHG6PY2:
+    name: chg6py2_flag
+    type: VARCHAR
+    flag_for: chg6py2
+    years: 2000-2023
+  CHG6PY2:
+    name: chg6py2
+    type: VARCHAR
+    years: 2000-2023
+  XCHG6PY3:
+    name: chg6py3_flag
+    type: VARCHAR
+    flag_for: chg6py3
+    years: 2000-2023
+  CHG6PY3:
+    name: chg6py3
+    type: VARCHAR
+    years: 2000-2023
+  XCHG7PY1:
+    name: chg7py1_flag
+    type: VARCHAR
+    flag_for: chg7py1
+    years: 2000-2023
+  CHG7PY1:
+    name: chg7py1
+    type: VARCHAR
+    years: 2000-2023
+  XCHG7PY2:
+    name: chg7py2_flag
+    type: VARCHAR
+    flag_for: chg7py2
+    years: 2000-2023
+  CHG7PY2:
+    name: chg7py2
+    type: VARCHAR
+    years: 2000-2023
+  XCHG7PY3:
+    name: chg7py3_flag
+    type: VARCHAR
+    flag_for: chg7py3
+    years: 2000-2023
+  CHG7PY3:
+    name: chg7py3
+    type: VARCHAR
+    years: 2000-2023
+  XCHG8PY1:
+    name: chg8py1_flag
+    type: VARCHAR
+    flag_for: chg8py1
+    years: 2000-2023
+  CHG8PY1:
+    name: chg8py1
+    type: VARCHAR
+    years: 2000-2023
+  XCHG8PY2:
+    name: chg8py2_flag
+    type: VARCHAR
+    flag_for: chg8py2
+    years: 2000-2023
+  CHG8PY2:
+    name: chg8py2
+    type: VARCHAR
+    years: 2000-2023
+  XCHG8PY3:
+    name: chg8py3_flag
+    type: VARCHAR
+    flag_for: chg8py3
+    years: 2000-2023
+  CHG8PY3:
+    name: chg8py3
+    type: VARCHAR
+    years: 2000-2023
+  XCHG9PY1:
+    name: chg9py1_flag
+    type: VARCHAR
+    flag_for: chg9py1
+    years: 2000-2023
+  CHG9PY1:
+    name: chg9py1
+    type: VARCHAR
+    years: 2000-2023
+  XCHG9PY2:
+    name: chg9py2_flag
+    type: VARCHAR
+    flag_for: chg9py2
+    years: 2000-2023
+  CHG9PY2:
+    name: chg9py2
+    type: VARCHAR
+    years: 2000-2023
+  XCHG9PY3:
+    name: chg9py3_flag
+    type: VARCHAR
+    flag_for: chg9py3
+    years: 2000-2023
+  CHG9PY3:
+    name: chg9py3
+    type: VARCHAR
+    years: 2000-2023
+  CIPCODE2:
+    name: cipcode2
+    type: VARCHAR
+    years: 2000-2023
+  XCIPTUI2:
+    name: xciptui2
+    type: VARCHAR
+    years: 2000-2023
+  CIPTUIT2:
+    name: ciptuit2
+    type: VARCHAR
+    years: 2000-2023
+  XCIPSUP2:
+    name: xcipsup2
+    type: VARCHAR
+    years: 2000-2023
+  CIPSUPP2:
+    name: cipsupp2
+    type: VARCHAR
+    years: 2000-2023
+  XCIPLGT2:
+    name: xciplgt2
+    type: VARCHAR
+    years: 2000-2023
+  CIPLGTH2:
+    name: ciplgth2
+    type: VARCHAR
+    years: 2000-2023
+  CIPCODE3:
+    name: cipcode3
+    type: VARCHAR
+    years: 2000-2023
+  XCIPTUI3:
+    name: xciptui3
+    type: VARCHAR
+    years: 2000-2023
+  CIPTUIT3:
+    name: ciptuit3
+    type: VARCHAR
+    years: 2000-2023
+  XCIPSUP3:
+    name: xcipsup3
+    type: VARCHAR
+    years: 2000-2023
+  CIPSUPP3:
+    name: cipsupp3
+    type: VARCHAR
+    years: 2000-2023
+  XCIPLGT3:
+    name: xciplgt3
+    type: VARCHAR
+    years: 2000-2023
+  CIPLGTH3:
+    name: ciplgth3
+    type: VARCHAR
+    years: 2000-2023
+  CIPCODE4:
+    name: cipcode4
+    type: VARCHAR
+    years: 2000-2023
+  XCIPTUI4:
+    name: xciptui4
+    type: VARCHAR
+    years: 2000-2023
+  CIPTUIT4:
+    name: ciptuit4
+    type: VARCHAR
+    years: 2000-2023
+  XCIPSUP4:
+    name: xcipsup4
+    type: VARCHAR
+    years: 2000-2023
+  CIPSUPP4:
+    name: cipsupp4
+    type: VARCHAR
+    years: 2000-2023
+  XCIPLGT4:
+    name: xciplgt4
+    type: VARCHAR
+    years: 2000-2023
+  CIPLGTH4:
+    name: ciplgth4
+    type: VARCHAR
+    years: 2000-2023
+  CIPCODE5:
+    name: cipcode5
+    type: VARCHAR
+    years: 2000-2023
+  XCIPTUI5:
+    name: xciptui5
+    type: VARCHAR
+    years: 2000-2023
+  CIPTUIT5:
+    name: ciptuit5
+    type: VARCHAR
+    years: 2000-2023
+  XCIPSUP5:
+    name: xcipsup5
+    type: VARCHAR
+    years: 2000-2023
+  CIPSUPP5:
+    name: cipsupp5
+    type: VARCHAR
+    years: 2000-2023
+  XCIPLGT5:
+    name: xciplgt5
+    type: VARCHAR
+    years: 2000-2023
+  CIPLGTH5:
+    name: ciplgth5
+    type: VARCHAR
+    years: 2000-2023
+  CIPCODE6:
+    name: cipcode6
+    type: VARCHAR
+    years: 2000-2023
+  XCIPTUI6:
+    name: xciptui6
+    type: VARCHAR
+    years: 2000-2023
+  CIPTUIT6:
+    name: ciptuit6
+    type: VARCHAR
+    years: 2000-2023
+  XCIPSUP6:
+    name: xcipsup6
+    type: VARCHAR
+    years: 2000-2023
+  CIPSUPP6:
+    name: cipsupp6
+    type: VARCHAR
+    years: 2000-2023
+  XCIPLGT6:
+    name: xciplgt6
+    type: VARCHAR
+    years: 2000-2023
+  CIPLGTH6:
+    name: ciplgth6
+    type: VARCHAR
+    years: 2000-2023
+  XCMP1PY1:
+    name: cmp1py1_flag
+    type: VARCHAR
+    flag_for: cmp1py1
+    years: 2004,2006-2012
+  CMP1PY1:
+    name: cmp1py1
+    type: VARCHAR
+    years: 2004,2006-2012
+  XCMP1PY2:
+    name: cmp1py2_flag
+    type: VARCHAR
+    flag_for: cmp1py2
+    years: 2004,2006-2012
+  CMP1PY2:
+    name: cmp1py2
+    type: VARCHAR
+    years: 2004,2006-2012
+  XCMP1PY3:
+    name: cmp1py3_flag
+    type: VARCHAR
+    flag_for: cmp1py3
+    years: 2004,2006-2012
+  CMP1PY3:
+    name: cmp1py3
+    type: VARCHAR
+    years: 2004,2006-2012
+  XCIPTUI1:
+    name: xciptui1
+    type: VARCHAR
+    years: 2006-2023
+  CIPTUIT1:
+    name: ciptuit1
+    type: VARCHAR
+    years: 2006-2023
+  XCIPSUP1:
+    name: xcipsup1
+    type: VARCHAR
+    years: 2006-2023
+  CIPSUPP1:
+    name: cipsupp1
+    type: VARCHAR
+    years: 2006-2023
+  PRGMSR1:
+    name: prgmsr1
+    type: BIGINT
+    years: 2006-2023
+  XMTHCMP1:
+    name: mthcmp1_flag
+    type: VARCHAR
+    flag_for: mthcmp1
+    years: 2006-2023
+  MTHCMP1:
+    name: mthcmp1
+    type: VARCHAR
+    years: 2006-2023
+  PRGMSR2:
+    name: prgmsr2
+    type: VARCHAR
+    years: 2006-2023
+  XMTHCMP2:
+    name: mthcmp2_flag
+    type: VARCHAR
+    flag_for: mthcmp2
+    years: 2006-2023
+  MTHCMP2:
+    name: mthcmp2
+    type: VARCHAR
+    years: 2006-2023
+  PRGMSR3:
+    name: prgmsr3
+    type: VARCHAR
+    years: 2006-2023
+  XMTHCMP3:
+    name: mthcmp3_flag
+    type: VARCHAR
+    flag_for: mthcmp3
+    years: 2006-2023
+  MTHCMP3:
+    name: mthcmp3
+    type: VARCHAR
+    years: 2006-2023
+  PRGMSR4:
+    name: prgmsr4
+    type: VARCHAR
+    years: 2006-2023
+  XMTHCMP4:
+    name: mthcmp4_flag
+    type: VARCHAR
+    flag_for: mthcmp4
+    years: 2006-2023
+  MTHCMP4:
+    name: mthcmp4
+    type: VARCHAR
+    years: 2006-2023
+  PRGMSR5:
+    name: prgmsr5
+    type: VARCHAR
+    years: 2006-2023
+  XMTHCMP5:
+    name: mthcmp5_flag
+    type: VARCHAR
+    flag_for: mthcmp5
+    years: 2006-2023
+  MTHCMP5:
+    name: mthcmp5
+    type: VARCHAR
+    years: 2006-2023
+  PRGMSR6:
+    name: prgmsr6
+    type: VARCHAR
+    years: 2006-2023
+  XMTHCMP6:
+    name: mthcmp6_flag
+    type: VARCHAR
+    flag_for: mthcmp6
+    years: 2006-2023
+  MTHCMP6:
+    name: mthcmp6
+    type: VARCHAR
+    years: 2006-2023
+  XCHG1PY0:
+    name: chg1py0_flag
+    type: VARCHAR
+    flag_for: chg1py0
+    years: 2009-2023
+  CHG1PY0:
+    name: chg1py0
+    type: VARCHAR
+    years: 2009-2023
+  XCHG4PY0:
+    name: chg4py0_flag
+    type: VARCHAR
+    flag_for: chg4py0
+    years: 2009-2023
+  CHG4PY0:
+    name: chg4py0
+    type: VARCHAR
+    years: 2009-2023
+  XCHG5PY0:
+    name: chg5py0_flag
+    type: VARCHAR
+    flag_for: chg5py0
+    years: 2009-2023
+  CHG5PY0:
+    name: chg5py0
+    type: VARCHAR
+    years: 2009-2023
+  XCHG6PY0:
+    name: chg6py0_flag
+    type: VARCHAR
+    flag_for: chg6py0
+    years: 2009-2023
+  CHG6PY0:
+    name: chg6py0
+    type: VARCHAR
+    years: 2009-2023
+  XCHG7PY0:
+    name: chg7py0_flag
+    type: VARCHAR
+    flag_for: chg7py0
+    years: 2009-2023
+  CHG7PY0:
+    name: chg7py0
+    type: VARCHAR
+    years: 2009-2023
+  XCHG8PY0:
+    name: chg8py0_flag
+    type: VARCHAR
+    flag_for: chg8py0
+    years: 2009-2023
+  CHG8PY0:
+    name: chg8py0
+    type: VARCHAR
+    years: 2009-2023
+  XCHG9PY0:
+    name: chg9py0_flag
+    type: VARCHAR
+    flag_for: chg9py0
+    years: 2009-2023
+  CHG9PY0:
+    name: chg9py0
+    type: VARCHAR
+    years: 2009-2023
+  XCMP1PY0:
+    name: cmp1py0_flag
+    type: VARCHAR
+    flag_for: cmp1py0
+    years: 2009-2012
+  CMP1PY0:
+    name: cmp1py0
+    type: VARCHAR
+    years: 2009-2012
+  XWKCMP1:
+    name: wkcmp1_flag
+    type: VARCHAR
+    flag_for: wkcmp1
+    years: 2011-2023
+  WKCMP1:
+    name: wkcmp1
+    type: VARCHAR
+    years: 2011-2023
+  XLNAYHR1:
+    name: lnayhr1_flag
+    type: VARCHAR
+    flag_for: lnayhr1
+    years: 2011-2023
+  LNAYHR1:
+    name: lnayhr1
+    type: VARCHAR
+    years: 2011-2023
+  XLNAYWK1:
+    name: lnaywk1_flag
+    type: VARCHAR
+    flag_for: lnaywk1
+    years: 2011-2023
+  LNAYWK1:
+    name: lnaywk1
+    type: VARCHAR
+    years: 2011-2023
+  PY3:
+    name: py3
+    type: BIGINT
+    years: '2011'
+  PY2:
+    name: py2
+    type: BIGINT
+    years: '2011'
+  PY1:
+    name: py1
+    type: BIGINT
+    years: '2011'
+  PY0:
+    name: py0
+    type: BIGINT
+    years: '2011'

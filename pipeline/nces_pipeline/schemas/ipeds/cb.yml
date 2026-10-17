@@ -1,0 +1,363 @@
+source: ipeds
+family: cb
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2012-2025
+  XCSTOTLT:
+    name: cstotlt_flag
+    type: VARCHAR
+    flag_for: cstotlt
+    years: 2012-2025
+  CSTOTLT:
+    name: cstotlt
+    type: BIGINT
+    years: 2012-2025
+  XCSTOTLM:
+    name: cstotlm_flag
+    type: VARCHAR
+    flag_for: cstotlm
+    years: 2012-2025
+  CSTOTLM:
+    name: cstotlm
+    type: BIGINT
+    years: 2012-2025
+  XCSTOTLW:
+    name: cstotlw_flag
+    type: VARCHAR
+    flag_for: cstotlw
+    years: 2012-2025
+  CSTOTLW:
+    name: cstotlw
+    type: BIGINT
+    years: 2012-2025
+  XCSAIANT:
+    name: csaiant_flag
+    type: VARCHAR
+    flag_for: csaiant
+    years: 2012-2025
+  CSAIANT:
+    name: csaiant
+    type: BIGINT
+    years: 2012-2025
+  XCSAIANM:
+    name: csaianm_flag
+    type: VARCHAR
+    flag_for: csaianm
+    years: 2012-2025
+  CSAIANM:
+    name: csaianm
+    type: BIGINT
+    years: 2012-2025
+  XCSAIANW:
+    name: csaianw_flag
+    type: VARCHAR
+    flag_for: csaianw
+    years: 2012-2025
+  CSAIANW:
+    name: csaianw
+    type: BIGINT
+    years: 2012-2025
+  XCSASIAT:
+    name: csasiat_flag
+    type: VARCHAR
+    flag_for: csasiat
+    years: 2012-2025
+  CSASIAT:
+    name: csasiat
+    type: BIGINT
+    years: 2012-2025
+  XCSASIAM:
+    name: csasiam_flag
+    type: VARCHAR
+    flag_for: csasiam
+    years: 2012-2025
+  CSASIAM:
+    name: csasiam
+    type: BIGINT
+    years: 2012-2025
+  XCSASIAW:
+    name: csasiaw_flag
+    type: VARCHAR
+    flag_for: csasiaw
+    years: 2012-2025
+  CSASIAW:
+    name: csasiaw
+    type: BIGINT
+    years: 2012-2025
+  XCSBKAAT:
+    name: csbkaat_flag
+    type: VARCHAR
+    flag_for: csbkaat
+    years: 2012-2025
+  CSBKAAT:
+    name: csbkaat
+    type: BIGINT
+    years: 2012-2025
+  XCSBKAAM:
+    name: csbkaam_flag
+    type: VARCHAR
+    flag_for: csbkaam
+    years: 2012-2025
+  CSBKAAM:
+    name: csbkaam
+    type: BIGINT
+    years: 2012-2025
+  XCSBKAAW:
+    name: csbkaaw_flag
+    type: VARCHAR
+    flag_for: csbkaaw
+    years: 2012-2025
+  CSBKAAW:
+    name: csbkaaw
+    type: BIGINT
+    years: 2012-2025
+  XCSHISPT:
+    name: cshispt_flag
+    type: VARCHAR
+    flag_for: cshispt
+    years: 2012-2025
+  CSHISPT:
+    name: cshispt
+    type: BIGINT
+    years: 2012-2025
+  XCSHISPM:
+    name: cshispm_flag
+    type: VARCHAR
+    flag_for: cshispm
+    years: 2012-2025
+  CSHISPM:
+    name: cshispm
+    type: BIGINT
+    years: 2012-2025
+  XCSHISPW:
+    name: cshispw_flag
+    type: VARCHAR
+    flag_for: cshispw
+    years: 2012-2025
+  CSHISPW:
+    name: cshispw
+    type: BIGINT
+    years: 2012-2025
+  XCSNHPIT:
+    name: csnhpit_flag
+    type: VARCHAR
+    flag_for: csnhpit
+    years: 2012-2025
+  CSNHPIT:
+    name: csnhpit
+    type: BIGINT
+    years: 2012-2025
+  XCSNHPIM:
+    name: csnhpim_flag
+    type: VARCHAR
+    flag_for: csnhpim
+    years: 2012-2025
+  CSNHPIM:
+    name: csnhpim
+    type: BIGINT
+    years: 2012-2025
+  XCSNHPIW:
+    name: csnhpiw_flag
+    type: VARCHAR
+    flag_for: csnhpiw
+    years: 2012-2025
+  CSNHPIW:
+    name: csnhpiw
+    type: BIGINT
+    years: 2012-2025
+  XCSWHITT:
+    name: cswhitt_flag
+    type: VARCHAR
+    flag_for: cswhitt
+    years: 2012-2025
+  CSWHITT:
+    name: cswhitt
+    type: BIGINT
+    years: 2012-2025
+  XCSWHITM:
+    name: cswhitm_flag
+    type: VARCHAR
+    flag_for: cswhitm
+    years: 2012-2025
+  CSWHITM:
+    name: cswhitm
+    type: BIGINT
+    years: 2012-2025
+  XCSWHITW:
+    name: cswhitw_flag
+    type: VARCHAR
+    flag_for: cswhitw
+    years: 2012-2025
+  CSWHITW:
+    name: cswhitw
+    type: BIGINT
+    years: 2012-2025
+  XCS2MORT:
+    name: cs2mort_flag
+    type: VARCHAR
+    flag_for: cs2mort
+    years: 2012-2025
+  CS2MORT:
+    name: cs2mort
+    type: BIGINT
+    years: 2012-2025
+  XCS2MORM:
+    name: cs2morm_flag
+    type: VARCHAR
+    flag_for: cs2morm
+    years: 2012-2025
+  CS2MORM:
+    name: cs2morm
+    type: BIGINT
+    years: 2012-2025
+  XCS2MORW:
+    name: cs2morw_flag
+    type: VARCHAR
+    flag_for: cs2morw
+    years: 2012-2025
+  CS2MORW:
+    name: cs2morw
+    type: BIGINT
+    years: 2012-2025
+  XCSUNKNT:
+    name: csunknt_flag
+    type: VARCHAR
+    flag_for: csunknt
+    years: 2012-2025
+  CSUNKNT:
+    name: csunknt
+    type: BIGINT
+    years: 2012-2025
+  XCSUNKNM:
+    name: csunknm_flag
+    type: VARCHAR
+    flag_for: csunknm
+    years: 2012-2025
+  CSUNKNM:
+    name: csunknm
+    type: BIGINT
+    years: 2012-2025
+  XCSUNKNW:
+    name: csunknw_flag
+    type: VARCHAR
+    flag_for: csunknw
+    years: 2012-2025
+  CSUNKNW:
+    name: csunknw
+    type: BIGINT
+    years: 2012-2025
+  XCSNRALT:
+    name: csnralt_flag
+    type: VARCHAR
+    flag_for: csnralt
+    years: 2012-2025
+  CSNRALT:
+    name: csnralt
+    type: BIGINT
+    years: 2012-2025
+  XCSNRALM:
+    name: csnralm_flag
+    type: VARCHAR
+    flag_for: csnralm
+    years: 2012-2025
+  CSNRALM:
+    name: csnralm
+    type: BIGINT
+    years: 2012-2025
+  XCSNRALW:
+    name: csnralw_flag
+    type: VARCHAR
+    flag_for: csnralw
+    years: 2012-2025
+  CSNRALW:
+    name: csnralw
+    type: BIGINT
+    years: 2012-2025
+  XCSGUUGU:
+    name: xcsguugu
+    type: VARCHAR
+    years: 2022-2025
+  CSGUUGUN:
+    name: csguugun
+    type: BIGINT
+    years: 2022-2025
+  XCSGUUGA:
+    name: xcsguuga
+    type: VARCHAR
+    years: 2022-2024
+  CSGUUGAG:
+    name: csguugag
+    type: BIGINT
+    years: 2022-2024
+  XCSGUUGT:
+    name: xcsguugt
+    type: VARCHAR
+    years: 2022-2024
+  CSGUUGTT:
+    name: csguugtt
+    type: BIGINT
+    years: 2022-2024
+  XCSGUGUN:
+    name: csgugun_flag
+    type: VARCHAR
+    flag_for: csgugun
+    years: 2022-2025
+  CSGUGUN:
+    name: csgugun
+    type: BIGINT
+    years: 2022-2025
+  XCSGUGAG:
+    name: csgugag_flag
+    type: VARCHAR
+    flag_for: csgugag
+    years: 2022-2024
+  CSGUGAG:
+    name: csgugag
+    type: BIGINT
+    years: 2022-2024
+  XCSGUGTT:
+    name: xcsgugtt
+    type: VARCHAR
+    years: 2022-2024
+  CSGUGTOT:
+    name: csgugtot
+    type: BIGINT
+    years: 2022-2024
+  XCSGUTTUN:
+    name: xcsguttun
+    type: VARCHAR
+    years: 2022-2025
+  CSGUTOTUN:
+    name: csgutotun
+    type: BIGINT
+    years: 2022-2025
+  XCSGUTTAG:
+    name: xcsguttag
+    type: VARCHAR
+    years: 2022-2024
+  CSGUTOTAG:
+    name: csgutotag
+    type: BIGINT
+    years: 2022-2024
+  XCSGUTOT:
+    name: csgutot_flag
+    type: VARCHAR
+    flag_for: csgutot
+    years: 2022-2024
+  CSGUTOT:
+    name: csgutot
+    type: BIGINT
+    years: 2022-2024
+  XCSGUKN:
+    name: csgukn_flag
+    type: VARCHAR
+    flag_for: csgukn
+    years: 2022-2025
+  CSGUKN:
+    name: csgukn
+    type: BIGINT
+    years: 2022-2025

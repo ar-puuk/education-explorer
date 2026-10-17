@@ -1,0 +1,228 @@
+source: ipeds
+family: ff1ag
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2002-2007
+  FORMID:
+    name: formid
+    type: BIGINT
+    years: 2002-2007
+  ENTITIES:
+    name: entities
+    type: VARCHAR
+    years: 2002-2007
+  PNATURE:
+    name: pnature
+    type: VARCHAR
+    years: 2002-2007
+  XF1AG01:
+    name: f1ag01_flag
+    type: VARCHAR
+    flag_for: f1ag01
+    years: 2002-2007
+  F1AG01:
+    name: f1ag01
+    type: BIGINT
+    years: 2002-2007
+  XF1AG02:
+    name: f1ag02_flag
+    type: VARCHAR
+    flag_for: f1ag02
+    years: 2002-2007
+  F1AG02:
+    name: f1ag02
+    type: BIGINT
+    years: 2002-2007
+  XF1AG03:
+    name: f1ag03_flag
+    type: VARCHAR
+    flag_for: f1ag03
+    years: 2002-2007
+  F1AG03:
+    name: f1ag03
+    type: BIGINT
+    years: 2002-2007
+  XF1AG04:
+    name: f1ag04_flag
+    type: VARCHAR
+    flag_for: f1ag04
+    years: 2002-2007
+  F1AG04:
+    name: f1ag04
+    type: BIGINT
+    years: 2002-2007
+  XF1AG05:
+    name: f1ag05_flag
+    type: VARCHAR
+    flag_for: f1ag05
+    years: 2002-2007
+  F1AG05:
+    name: f1ag05
+    type: BIGINT
+    years: 2002-2007
+  XF1AG06:
+    name: f1ag06_flag
+    type: VARCHAR
+    flag_for: f1ag06
+    years: 2002-2007
+  F1AG06:
+    name: f1ag06
+    type: BIGINT
+    years: 2002-2007
+  XF1AG07:
+    name: f1ag07_flag
+    type: VARCHAR
+    flag_for: f1ag07
+    years: 2002-2007
+  F1AG07:
+    name: f1ag07
+    type: BIGINT
+    years: 2002-2007
+  XF1AG08:
+    name: f1ag08_flag
+    type: VARCHAR
+    flag_for: f1ag08
+    years: 2002-2007
+  F1AG08:
+    name: f1ag08
+    type: BIGINT
+    years: 2002-2007
+  XF1AG09:
+    name: f1ag09_flag
+    type: VARCHAR
+    flag_for: f1ag09
+    years: 2002-2007
+  F1AG09:
+    name: f1ag09
+    type: BIGINT
+    years: 2002-2007
+  XF1AG10:
+    name: f1ag10_flag
+    type: VARCHAR
+    flag_for: f1ag10
+    years: 2002-2007
+  F1AG10:
+    name: f1ag10
+    type: BIGINT
+    years: 2002-2007
+  XF1AG11:
+    name: f1ag11_flag
+    type: VARCHAR
+    flag_for: f1ag11
+    years: 2002-2007
+  F1AG11:
+    name: f1ag11
+    type: BIGINT
+    years: 2002-2007
+  XF1AG12:
+    name: f1ag12_flag
+    type: VARCHAR
+    flag_for: f1ag12
+    years: 2002-2007
+  F1AG12:
+    name: f1ag12
+    type: BIGINT
+    years: 2002-2007
+  XF1AG13:
+    name: f1ag13_flag
+    type: VARCHAR
+    flag_for: f1ag13
+    years: 2002-2007
+  F1AG13:
+    name: f1ag13
+    type: BIGINT
+    years: 2002-2007
+  XF1AG13A:
+    name: f1ag13a_flag
+    type: VARCHAR
+    flag_for: f1ag13a
+    years: 2002-2007
+  F1AG13A:
+    name: f1ag13a
+    type: BIGINT
+    years: 2002-2007
+  XF1AG14:
+    name: f1ag14_flag
+    type: VARCHAR
+    flag_for: f1ag14
+    years: 2002-2007
+  F1AG14:
+    name: f1ag14
+    type: BIGINT
+    years: 2002-2007
+  XF1AG15:
+    name: f1ag15_flag
+    type: VARCHAR
+    flag_for: f1ag15
+    years: 2002-2007
+  F1AG15:
+    name: f1ag15
+    type: BIGINT
+    years: 2002-2007
+  XF1AG16:
+    name: f1ag16_flag
+    type: VARCHAR
+    flag_for: f1ag16
+    years: 2002-2007
+  F1AG16:
+    name: f1ag16
+    type: BIGINT
+    years: 2002-2007
+  XF1AG17:
+    name: f1ag17_flag
+    type: VARCHAR
+    flag_for: f1ag17
+    years: 2002-2007
+  F1AG17:
+    name: f1ag17
+    type: BIGINT
+    years: 2002-2007
+  XF1AG18:
+    name: f1ag18_flag
+    type: VARCHAR
+    flag_for: f1ag18
+    years: 2002-2007
+  F1AG18:
+    name: f1ag18
+    type: BIGINT
+    years: 2002-2007
+  XF1AG19:
+    name: f1ag19_flag
+    type: VARCHAR
+    flag_for: f1ag19
+    years: 2002-2007
+  F1AG19:
+    name: f1ag19
+    type: BIGINT
+    years: 2002-2007
+  XF1AG20:
+    name: f1ag20_flag
+    type: VARCHAR
+    flag_for: f1ag20
+    years: 2002-2007
+  F1AG20:
+    name: f1ag20
+    type: BIGINT
+    years: 2002-2007
+  XF1AG21:
+    name: f1ag21_flag
+    type: VARCHAR
+    flag_for: f1ag21
+    years: 2002-2007
+  F1AG21:
+    name: f1ag21
+    type: BIGINT
+    years: 2002-2007
+  XF1AG22:
+    name: f1ag22_flag
+    type: VARCHAR
+    flag_for: f1ag22
+    years: 2002-2007
+  F1AG22:
+    name: f1ag22
+    type: BIGINT
+    years: 2002-2007

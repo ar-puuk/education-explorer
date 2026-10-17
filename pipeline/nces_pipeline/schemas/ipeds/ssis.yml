@@ -1,0 +1,77 @@
+source: ipeds
+family: ssis
+key:
+- unitid
+- facstat
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2012-2024
+  FACSTAT:
+    name: facstat
+    type: BIGINT
+    years: 2012-2024
+  XSISTOTL:
+    name: sistotl_flag
+    type: VARCHAR
+    flag_for: sistotl
+    years: 2012-2024
+  SISTOTL:
+    name: sistotl
+    type: BIGINT
+    years: 2012-2024
+  XSISPROF:
+    name: sisprof_flag
+    type: VARCHAR
+    flag_for: sisprof
+    years: 2012-2024
+  SISPROF:
+    name: sisprof
+    type: BIGINT
+    years: 2012-2024
+  XSISASCP:
+    name: sisascp_flag
+    type: VARCHAR
+    flag_for: sisascp
+    years: 2012-2024
+  SISASCP:
+    name: sisascp
+    type: BIGINT
+    years: 2012-2024
+  XSISASTP:
+    name: sisastp_flag
+    type: VARCHAR
+    flag_for: sisastp
+    years: 2012-2024
+  SISASTP:
+    name: sisastp
+    type: BIGINT
+    years: 2012-2024
+  XSISINST:
+    name: sisinst_flag
+    type: VARCHAR
+    flag_for: sisinst
+    years: 2012-2024
+  SISINST:
+    name: sisinst
+    type: BIGINT
+    years: 2012-2024
+  XSISLECT:
+    name: sislect_flag
+    type: VARCHAR
+    flag_for: sislect
+    years: 2012-2024
+  SISLECT:
+    name: sislect
+    type: BIGINT
+    years: 2012-2024
+  XSISNORK:
+    name: sisnork_flag
+    type: VARCHAR
+    flag_for: sisnork
+    years: 2012-2024
+  SISNORK:
+    name: sisnork
+    type: BIGINT
+    years: 2012-2024

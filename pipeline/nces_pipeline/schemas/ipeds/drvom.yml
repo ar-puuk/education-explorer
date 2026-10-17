@@ -1,0 +1,441 @@
+source: ipeds
+family: drvom
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2024
+  OM1TOTLAWDP4:
+    name: om1totlawdp4
+    type: VARCHAR
+    years: 2021-2024
+  OM1TOTLAWDP6:
+    name: om1totlawdp6
+    type: VARCHAR
+    years: 2021-2024
+  OM1TOTLAWDP8:
+    name: om1totlawdp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1TOTLENYP8:
+    name: om1totlenyp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1TOTLENAP8:
+    name: om1totlenap8
+    type: VARCHAR
+    years: 2021-2024
+  OM1TOTLENUP8:
+    name: om1totlenup8
+    type: VARCHAR
+    years: 2021-2024
+  OM1TOTLCRTP8:
+    name: om1totlcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1TOTLASCP8:
+    name: om1totlascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1TOTLBACP8:
+    name: om1totlbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1PELLAWDP4:
+    name: om1pellawdp4
+    type: VARCHAR
+    years: 2021-2024
+  OM1PELLAWDP6:
+    name: om1pellawdp6
+    type: VARCHAR
+    years: 2021-2024
+  OM1PELLAWDP8:
+    name: om1pellawdp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1PELLENYP8:
+    name: om1pellenyp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1PELLENAP8:
+    name: om1pellenap8
+    type: VARCHAR
+    years: 2021-2024
+  OM1PELLENUP8:
+    name: om1pellenup8
+    type: VARCHAR
+    years: 2021-2024
+  OM1PELLCRTP8:
+    name: om1pellcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1PELLASCP8:
+    name: om1pellascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1PELLBACP8:
+    name: om1pellbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1NPELAWDP4:
+    name: om1npelawdp4
+    type: VARCHAR
+    years: 2021-2024
+  OM1NPELAWDP6:
+    name: om1npelawdp6
+    type: VARCHAR
+    years: 2021-2024
+  OM1NPELAWDP8:
+    name: om1npelawdp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1NPELENYP8:
+    name: om1npelenyp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1NPELENAP8:
+    name: om1npelenap8
+    type: VARCHAR
+    years: 2021-2024
+  OM1NPELENUP8:
+    name: om1npelenup8
+    type: VARCHAR
+    years: 2021-2024
+  OM1NPELCRTP8:
+    name: om1npelcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1NPELASCP8:
+    name: om1npelascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM1NPELBACP8:
+    name: om1npelbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2TOTLAWDP4:
+    name: om2totlawdp4
+    type: VARCHAR
+    years: 2021-2024
+  OM2TOTLAWDP6:
+    name: om2totlawdp6
+    type: VARCHAR
+    years: 2021-2024
+  OM2TOTLAWDP8:
+    name: om2totlawdp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2TOTLENYP8:
+    name: om2totlenyp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2TOTLENAP8:
+    name: om2totlenap8
+    type: VARCHAR
+    years: 2021-2024
+  OM2TOTLENUP8:
+    name: om2totlenup8
+    type: VARCHAR
+    years: 2021-2024
+  OM2TOTLCRTP8:
+    name: om2totlcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2TOTLASCP8:
+    name: om2totlascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2TOTLBACP8:
+    name: om2totlbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2PELLAWDP4:
+    name: om2pellawdp4
+    type: VARCHAR
+    years: 2021-2024
+  OM2PELLAWDP6:
+    name: om2pellawdp6
+    type: VARCHAR
+    years: 2021-2024
+  OM2PELLAWDP8:
+    name: om2pellawdp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2PELLENYP8:
+    name: om2pellenyp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2PELLENAP8:
+    name: om2pellenap8
+    type: VARCHAR
+    years: 2021-2024
+  OM2PELLENUP8:
+    name: om2pellenup8
+    type: VARCHAR
+    years: 2021-2024
+  OM2PELLCRTP8:
+    name: om2pellcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2PELLASCP8:
+    name: om2pellascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2PELLBACP8:
+    name: om2pellbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2NPELAWDP4:
+    name: om2npelawdp4
+    type: VARCHAR
+    years: 2021-2024
+  OM2NPELAWDP6:
+    name: om2npelawdp6
+    type: VARCHAR
+    years: 2021-2024
+  OM2NPELAWDP8:
+    name: om2npelawdp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2NPELENYP8:
+    name: om2npelenyp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2NPELENAP8:
+    name: om2npelenap8
+    type: VARCHAR
+    years: 2021-2024
+  OM2NPELENUP8:
+    name: om2npelenup8
+    type: VARCHAR
+    years: 2021-2024
+  OM2NPELCRTP8:
+    name: om2npelcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2NPELASCP8:
+    name: om2npelascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM2NPELBACP8:
+    name: om2npelbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM3TOTLAWDP4:
+    name: om3totlawdp4
+    type: BIGINT
+    years: 2021-2024
+  OM3TOTLAWDP6:
+    name: om3totlawdp6
+    type: BIGINT
+    years: 2021-2024
+  OM3TOTLAWDP8:
+    name: om3totlawdp8
+    type: BIGINT
+    years: 2021-2024
+  OM3TOTLENYP8:
+    name: om3totlenyp8
+    type: BIGINT
+    years: 2021-2024
+  OM3TOTLENAP8:
+    name: om3totlenap8
+    type: BIGINT
+    years: 2021-2024
+  OM3TOTLENUP8:
+    name: om3totlenup8
+    type: BIGINT
+    years: 2021-2024
+  OM3TOTLCRTP8:
+    name: om3totlcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM3TOTLASCP8:
+    name: om3totlascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM3TOTLBACP8:
+    name: om3totlbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM3PELLAWDP4:
+    name: om3pellawdp4
+    type: BIGINT
+    years: 2021-2024
+  OM3PELLAWDP6:
+    name: om3pellawdp6
+    type: BIGINT
+    years: 2021-2024
+  OM3PELLAWDP8:
+    name: om3pellawdp8
+    type: BIGINT
+    years: 2021-2024
+  OM3PELLENYP8:
+    name: om3pellenyp8
+    type: BIGINT
+    years: 2021-2024
+  OM3PELLENAP8:
+    name: om3pellenap8
+    type: BIGINT
+    years: 2021-2024
+  OM3PELLENUP8:
+    name: om3pellenup8
+    type: BIGINT
+    years: 2021-2024
+  OM3PELLCRTP8:
+    name: om3pellcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM3PELLASCP8:
+    name: om3pellascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM3PELLBACP8:
+    name: om3pellbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM3NPELAWDP4:
+    name: om3npelawdp4
+    type: BIGINT
+    years: 2021-2024
+  OM3NPELAWDP6:
+    name: om3npelawdp6
+    type: BIGINT
+    years: 2021-2024
+  OM3NPELAWDP8:
+    name: om3npelawdp8
+    type: BIGINT
+    years: 2021-2024
+  OM3NPELENYP8:
+    name: om3npelenyp8
+    type: BIGINT
+    years: 2021-2024
+  OM3NPELENAP8:
+    name: om3npelenap8
+    type: BIGINT
+    years: 2021-2024
+  OM3NPELENUP8:
+    name: om3npelenup8
+    type: BIGINT
+    years: 2021-2024
+  OM3NPELCRTP8:
+    name: om3npelcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM3NPELASCP8:
+    name: om3npelascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM3NPELBACP8:
+    name: om3npelbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4TOTLAWDP4:
+    name: om4totlawdp4
+    type: VARCHAR
+    years: 2021-2024
+  OM4TOTLAWDP6:
+    name: om4totlawdp6
+    type: VARCHAR
+    years: 2021-2024
+  OM4TOTLAWDP8:
+    name: om4totlawdp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4TOTLENYP8:
+    name: om4totlenyp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4TOTLENAP8:
+    name: om4totlenap8
+    type: VARCHAR
+    years: 2021-2024
+  OM4TOTLENUP8:
+    name: om4totlenup8
+    type: VARCHAR
+    years: 2021-2024
+  OM4TOTLCRTP8:
+    name: om4totlcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4TOTLASCP8:
+    name: om4totlascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4TOTLBACP8:
+    name: om4totlbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4PELLAWDP4:
+    name: om4pellawdp4
+    type: VARCHAR
+    years: 2021-2024
+  OM4PELLAWDP6:
+    name: om4pellawdp6
+    type: VARCHAR
+    years: 2021-2024
+  OM4PELLAWDP8:
+    name: om4pellawdp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4PELLENYP8:
+    name: om4pellenyp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4PELLENAP8:
+    name: om4pellenap8
+    type: VARCHAR
+    years: 2021-2024
+  OM4PELLENUP8:
+    name: om4pellenup8
+    type: VARCHAR
+    years: 2021-2024
+  OM4PELLCRTP8:
+    name: om4pellcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4PELLASCP8:
+    name: om4pellascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4PELLBACP8:
+    name: om4pellbacp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4NPELAWDP4:
+    name: om4npelawdp4
+    type: VARCHAR
+    years: 2021-2024
+  OM4NPELAWDP6:
+    name: om4npelawdp6
+    type: VARCHAR
+    years: 2021-2024
+  OM4NPELAWDP8:
+    name: om4npelawdp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4NPELENYP8:
+    name: om4npelenyp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4NPELENAP8:
+    name: om4npelenap8
+    type: VARCHAR
+    years: 2021-2024
+  OM4NPELENUP8:
+    name: om4npelenup8
+    type: VARCHAR
+    years: 2021-2024
+  OM4NPELCRTP8:
+    name: om4npelcrtp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4NPELASCP8:
+    name: om4npelascp8
+    type: VARCHAR
+    years: 2021-2024
+  OM4NPELBACP8:
+    name: om4npelbacp8
+    type: VARCHAR
+    years: 2021-2024

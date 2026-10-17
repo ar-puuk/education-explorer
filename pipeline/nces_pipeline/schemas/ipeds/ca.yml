@@ -1,0 +1,649 @@
+source: ipeds
+family: ca
+key:
+- unitid
+- cipcode
+- awlevel
+- majornum
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2025
+  CIPCODE:
+    name: cipcode
+    type: VARCHAR
+    years: 2000-2025
+  AWLEVEL:
+    name: awlevel
+    type: BIGINT
+    years: 2000-2025
+  XCRACE01:
+    name: crace01_flag
+    type: VARCHAR
+    flag_for: crace01
+    years: 2000-2007
+  CRACE01:
+    name: crace01
+    type: BIGINT
+    years: 2000-2007
+  XCRACE02:
+    name: crace02_flag
+    type: VARCHAR
+    flag_for: crace02
+    years: 2000-2007
+  CRACE02:
+    name: crace02
+    type: BIGINT
+    years: 2000-2007
+  XCRACE03:
+    name: crace03_flag
+    type: VARCHAR
+    flag_for: crace03
+    years: 2000-2010
+  CRACE03:
+    name: crace03
+    type: BIGINT
+    years: 2000-2010
+  XCRACE04:
+    name: crace04_flag
+    type: VARCHAR
+    flag_for: crace04
+    years: 2000-2010
+  CRACE04:
+    name: crace04
+    type: BIGINT
+    years: 2000-2010
+  XCRACE05:
+    name: crace05_flag
+    type: VARCHAR
+    flag_for: crace05
+    years: 2000-2010
+  CRACE05:
+    name: crace05
+    type: BIGINT
+    years: 2000-2010
+  XCRACE06:
+    name: crace06_flag
+    type: VARCHAR
+    flag_for: crace06
+    years: 2000-2010
+  CRACE06:
+    name: crace06
+    type: BIGINT
+    years: 2000-2010
+  XCRACE07:
+    name: crace07_flag
+    type: VARCHAR
+    flag_for: crace07
+    years: 2000-2010
+  CRACE07:
+    name: crace07
+    type: BIGINT
+    years: 2000-2010
+  XCRACE08:
+    name: crace08_flag
+    type: VARCHAR
+    flag_for: crace08
+    years: 2000-2010
+  CRACE08:
+    name: crace08
+    type: BIGINT
+    years: 2000-2010
+  XCRACE09:
+    name: crace09_flag
+    type: VARCHAR
+    flag_for: crace09
+    years: 2000-2010
+  CRACE09:
+    name: crace09
+    type: BIGINT
+    years: 2000-2010
+  XCRACE10:
+    name: crace10_flag
+    type: VARCHAR
+    flag_for: crace10
+    years: 2000-2010
+  CRACE10:
+    name: crace10
+    type: BIGINT
+    years: 2000-2010
+  XCRACE11:
+    name: crace11_flag
+    type: VARCHAR
+    flag_for: crace11
+    years: 2000-2010
+  CRACE11:
+    name: crace11
+    type: BIGINT
+    years: 2000-2010
+  XCRACE12:
+    name: crace12_flag
+    type: VARCHAR
+    flag_for: crace12
+    years: 2000-2010
+  CRACE12:
+    name: crace12
+    type: BIGINT
+    years: 2000-2010
+  XCRACE13:
+    name: crace13_flag
+    type: VARCHAR
+    flag_for: crace13
+    years: 2000-2007
+  CRACE13:
+    name: crace13
+    type: BIGINT
+    years: 2000-2007
+  XCRACE14:
+    name: crace14_flag
+    type: VARCHAR
+    flag_for: crace14
+    years: 2000-2007
+  CRACE14:
+    name: crace14
+    type: BIGINT
+    years: 2000-2007
+  XCRACE15:
+    name: crace15_flag
+    type: VARCHAR
+    flag_for: crace15
+    years: 2000-2007
+  CRACE15:
+    name: crace15
+    type: BIGINT
+    years: 2000-2007
+  XCRACE16:
+    name: crace16_flag
+    type: VARCHAR
+    flag_for: crace16
+    years: 2000-2007
+  CRACE16:
+    name: crace16
+    type: BIGINT
+    years: 2000-2007
+  MAJORNUM:
+    name: majornum
+    type: BIGINT
+    years: 2001-2025
+  XCRACE17:
+    name: crace17_flag
+    type: VARCHAR
+    flag_for: crace17
+    years: 2002-2007
+  CRACE17:
+    name: crace17
+    type: BIGINT
+    years: 2002-2007
+  XCRACE18:
+    name: crace18_flag
+    type: VARCHAR
+    flag_for: crace18
+    years: 2002-2010
+  CRACE18:
+    name: crace18
+    type: BIGINT
+    years: 2002-2010
+  XCRACE19:
+    name: crace19_flag
+    type: VARCHAR
+    flag_for: crace19
+    years: 2002-2010
+  CRACE19:
+    name: crace19
+    type: BIGINT
+    years: 2002-2010
+  XCRACE20:
+    name: crace20_flag
+    type: VARCHAR
+    flag_for: crace20
+    years: 2002-2010
+  CRACE20:
+    name: crace20
+    type: BIGINT
+    years: 2002-2010
+  XCRACE21:
+    name: crace21_flag
+    type: VARCHAR
+    flag_for: crace21
+    years: 2002-2010
+  CRACE21:
+    name: crace21
+    type: BIGINT
+    years: 2002-2010
+  XCRACE22:
+    name: crace22_flag
+    type: VARCHAR
+    flag_for: crace22
+    years: 2002-2010
+  CRACE22:
+    name: crace22
+    type: BIGINT
+    years: 2002-2010
+  XCRACE23:
+    name: crace23_flag
+    type: VARCHAR
+    flag_for: crace23
+    years: 2002-2007
+  CRACE23:
+    name: crace23
+    type: BIGINT
+    years: 2002-2007
+  XCRACE24:
+    name: crace24_flag
+    type: VARCHAR
+    flag_for: crace24
+    years: 2002-2007
+  CRACE24:
+    name: crace24
+    type: BIGINT
+    years: 2002-2007
+  XCNRALM:
+    name: cnralm_flag
+    type: VARCHAR
+    flag_for: cnralm
+    years: 2008-2025
+  CNRALM:
+    name: cnralm
+    type: BIGINT
+    years: 2008-2025
+  XCNRALW:
+    name: cnralw_flag
+    type: VARCHAR
+    flag_for: cnralw
+    years: 2008-2025
+  CNRALW:
+    name: cnralw
+    type: BIGINT
+    years: 2008-2025
+  XCUNKNM:
+    name: cunknm_flag
+    type: VARCHAR
+    flag_for: cunknm
+    years: 2008-2025
+  CUNKNM:
+    name: cunknm
+    type: BIGINT
+    years: 2008-2025
+  XCUNKNW:
+    name: cunknw_flag
+    type: VARCHAR
+    flag_for: cunknw
+    years: 2008-2025
+  CUNKNW:
+    name: cunknw
+    type: BIGINT
+    years: 2008-2025
+  XCTOTALM:
+    name: ctotalm_flag
+    type: VARCHAR
+    flag_for: ctotalm
+    years: 2008-2025
+  CTOTALM:
+    name: ctotalm
+    type: BIGINT
+    years: 2008-2025
+  XCTOTALW:
+    name: ctotalw_flag
+    type: VARCHAR
+    flag_for: ctotalw
+    years: 2008-2025
+  CTOTALW:
+    name: ctotalw
+    type: BIGINT
+    years: 2008-2025
+  XCNRALT:
+    name: cnralt_flag
+    type: VARCHAR
+    flag_for: cnralt
+    years: 2008-2025
+  CNRALT:
+    name: cnralt
+    type: BIGINT
+    years: 2008-2025
+  XCUNKNT:
+    name: cunknt_flag
+    type: VARCHAR
+    flag_for: cunknt
+    years: 2008-2025
+  CUNKNT:
+    name: cunknt
+    type: BIGINT
+    years: 2008-2025
+  XCTOTALT:
+    name: ctotalt_flag
+    type: VARCHAR
+    flag_for: ctotalt
+    years: 2008-2025
+  CTOTALT:
+    name: ctotalt
+    type: BIGINT
+    years: 2008-2025
+  XCHISPM:
+    name: chispm_flag
+    type: VARCHAR
+    flag_for: chispm
+    years: 2008-2025
+  CHISPM:
+    name: chispm
+    type: BIGINT
+    years: 2008-2025
+  XCHISPW:
+    name: chispw_flag
+    type: VARCHAR
+    flag_for: chispw
+    years: 2008-2025
+  CHISPW:
+    name: chispw
+    type: BIGINT
+    years: 2008-2025
+  XCAIANM:
+    name: caianm_flag
+    type: VARCHAR
+    flag_for: caianm
+    years: 2008-2025
+  CAIANM:
+    name: caianm
+    type: BIGINT
+    years: 2008-2025
+  XCAIANW:
+    name: caianw_flag
+    type: VARCHAR
+    flag_for: caianw
+    years: 2008-2025
+  CAIANW:
+    name: caianw
+    type: BIGINT
+    years: 2008-2025
+  XCASIAM:
+    name: casiam_flag
+    type: VARCHAR
+    flag_for: casiam
+    years: 2008-2025
+  CASIAM:
+    name: casiam
+    type: BIGINT
+    years: 2008-2025
+  XCASIAW:
+    name: casiaw_flag
+    type: VARCHAR
+    flag_for: casiaw
+    years: 2008-2025
+  CASIAW:
+    name: casiaw
+    type: BIGINT
+    years: 2008-2025
+  XCBKAAM:
+    name: cbkaam_flag
+    type: VARCHAR
+    flag_for: cbkaam
+    years: 2008-2025
+  CBKAAM:
+    name: cbkaam
+    type: BIGINT
+    years: 2008-2025
+  XCBKAAW:
+    name: cbkaaw_flag
+    type: VARCHAR
+    flag_for: cbkaaw
+    years: 2008-2025
+  CBKAAW:
+    name: cbkaaw
+    type: BIGINT
+    years: 2008-2025
+  XCNHPIM:
+    name: cnhpim_flag
+    type: VARCHAR
+    flag_for: cnhpim
+    years: 2008-2025
+  CNHPIM:
+    name: cnhpim
+    type: BIGINT
+    years: 2008-2025
+  XCNHPIW:
+    name: cnhpiw_flag
+    type: VARCHAR
+    flag_for: cnhpiw
+    years: 2008-2025
+  CNHPIW:
+    name: cnhpiw
+    type: BIGINT
+    years: 2008-2025
+  XCWHITM:
+    name: cwhitm_flag
+    type: VARCHAR
+    flag_for: cwhitm
+    years: 2008-2025
+  CWHITM:
+    name: cwhitm
+    type: BIGINT
+    years: 2008-2025
+  XCWHITW:
+    name: cwhitw_flag
+    type: VARCHAR
+    flag_for: cwhitw
+    years: 2008-2025
+  CWHITW:
+    name: cwhitw
+    type: BIGINT
+    years: 2008-2025
+  XC2MORM:
+    name: c2morm_flag
+    type: VARCHAR
+    flag_for: c2morm
+    years: 2008-2025
+  C2MORM:
+    name: c2morm
+    type: BIGINT
+    years: 2008-2025
+  XC2MORW:
+    name: c2morw_flag
+    type: VARCHAR
+    flag_for: c2morw
+    years: 2008-2025
+  C2MORW:
+    name: c2morw
+    type: BIGINT
+    years: 2008-2025
+  XCHISPT:
+    name: chispt_flag
+    type: VARCHAR
+    flag_for: chispt
+    years: 2008-2025
+  CHISPT:
+    name: chispt
+    type: BIGINT
+    years: 2008-2025
+  XCAIANT:
+    name: caiant_flag
+    type: VARCHAR
+    flag_for: caiant
+    years: 2008-2025
+  CAIANT:
+    name: caiant
+    type: BIGINT
+    years: 2008-2025
+  XCASIAT:
+    name: casiat_flag
+    type: VARCHAR
+    flag_for: casiat
+    years: 2008-2025
+  CASIAT:
+    name: casiat
+    type: BIGINT
+    years: 2008-2025
+  XCBKAAT:
+    name: cbkaat_flag
+    type: VARCHAR
+    flag_for: cbkaat
+    years: 2008-2025
+  CBKAAT:
+    name: cbkaat
+    type: BIGINT
+    years: 2008-2025
+  XCNHPIT:
+    name: cnhpit_flag
+    type: VARCHAR
+    flag_for: cnhpit
+    years: 2008-2025
+  CNHPIT:
+    name: cnhpit
+    type: BIGINT
+    years: 2008-2025
+  XCWHITT:
+    name: cwhitt_flag
+    type: VARCHAR
+    flag_for: cwhitt
+    years: 2008-2025
+  CWHITT:
+    name: cwhitt
+    type: BIGINT
+    years: 2008-2025
+  XC2MORT:
+    name: c2mort_flag
+    type: VARCHAR
+    flag_for: c2mort
+    years: 2008-2025
+  C2MORT:
+    name: c2mort
+    type: BIGINT
+    years: 2008-2025
+  XDVCAIT:
+    name: dvcait_flag
+    type: VARCHAR
+    flag_for: dvcait
+    years: 2008-2010
+  DVCAIT:
+    name: dvcait
+    type: BIGINT
+    years: 2008-2010
+  XDVCAIM:
+    name: dvcaim_flag
+    type: VARCHAR
+    flag_for: dvcaim
+    years: 2008-2010
+  DVCAIM:
+    name: dvcaim
+    type: BIGINT
+    years: 2008-2010
+  XDVCAIW:
+    name: dvcaiw_flag
+    type: VARCHAR
+    flag_for: dvcaiw
+    years: 2008-2010
+  DVCAIW:
+    name: dvcaiw
+    type: BIGINT
+    years: 2008-2010
+  XDVCAPT:
+    name: dvcapt_flag
+    type: VARCHAR
+    flag_for: dvcapt
+    years: 2008-2010
+  DVCAPT:
+    name: dvcapt
+    type: BIGINT
+    years: 2008-2010
+  XDVCAPM:
+    name: dvcapm_flag
+    type: VARCHAR
+    flag_for: dvcapm
+    years: 2008-2010
+  DVCAPM:
+    name: dvcapm
+    type: BIGINT
+    years: 2008-2010
+  XDVCAPW:
+    name: dvcapw_flag
+    type: VARCHAR
+    flag_for: dvcapw
+    years: 2008-2010
+  DVCAPW:
+    name: dvcapw
+    type: BIGINT
+    years: 2008-2010
+  XDVCBKT:
+    name: dvcbkt_flag
+    type: VARCHAR
+    flag_for: dvcbkt
+    years: 2008-2010
+  DVCBKT:
+    name: dvcbkt
+    type: BIGINT
+    years: 2008-2010
+  XDVCBKM:
+    name: dvcbkm_flag
+    type: VARCHAR
+    flag_for: dvcbkm
+    years: 2008-2010
+  DVCBKM:
+    name: dvcbkm
+    type: BIGINT
+    years: 2008-2010
+  XDVCBKW:
+    name: dvcbkw_flag
+    type: VARCHAR
+    flag_for: dvcbkw
+    years: 2008-2010
+  DVCBKW:
+    name: dvcbkw
+    type: BIGINT
+    years: 2008-2010
+  XDVCHST:
+    name: dvchst_flag
+    type: VARCHAR
+    flag_for: dvchst
+    years: 2008-2010
+  DVCHST:
+    name: dvchst
+    type: BIGINT
+    years: 2008-2010
+  XDVCHSM:
+    name: dvchsm_flag
+    type: VARCHAR
+    flag_for: dvchsm
+    years: 2008-2010
+  DVCHSM:
+    name: dvchsm
+    type: BIGINT
+    years: 2008-2010
+  XDVCHSW:
+    name: dvchsw_flag
+    type: VARCHAR
+    flag_for: dvchsw
+    years: 2008-2010
+  DVCHSW:
+    name: dvchsw
+    type: BIGINT
+    years: 2008-2010
+  XDVCWHT:
+    name: dvcwht_flag
+    type: VARCHAR
+    flag_for: dvcwht
+    years: 2008-2010
+  DVCWHT:
+    name: dvcwht
+    type: BIGINT
+    years: 2008-2010
+  XDVCWHM:
+    name: dvcwhm_flag
+    type: VARCHAR
+    flag_for: dvcwhm
+    years: 2008-2010
+  DVCWHM:
+    name: dvcwhm
+    type: BIGINT
+    years: 2008-2010
+  XDVCWHW:
+    name: dvcwhw_flag
+    type: VARCHAR
+    flag_for: dvcwhw
+    years: 2008-2010
+  DVCWHW:
+    name: dvcwhw
+    type: BIGINT
+    years: 2008-2010
+  CDISTEDP:
+    name: cdistedp
+    type: BIGINT
+    years: '2012'

@@ -1,0 +1,230 @@
+source: ipeds
+family: grpellssl
+key:
+- unitid
+- psgrtype
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2016-2024
+  PSGRTYPE:
+    name: psgrtype
+    type: BIGINT
+    years: 2016-2024
+  XPGREVCT:
+    name: pgrevct_flag
+    type: VARCHAR
+    flag_for: pgrevct
+    years: 2016-2024
+  PGREVCT:
+    name: pgrevct
+    type: BIGINT
+    years: 2016-2024
+  XPGEXCLU:
+    name: pgexclu_flag
+    type: VARCHAR
+    flag_for: pgexclu
+    years: 2016-2024
+  PGEXCLU:
+    name: pgexclu
+    type: BIGINT
+    years: 2016-2024
+  XPGADJCT:
+    name: pgadjct_flag
+    type: VARCHAR
+    flag_for: pgadjct
+    years: 2016-2024
+  PGADJCT:
+    name: pgadjct
+    type: BIGINT
+    years: 2016-2024
+  XPGCMBAC:
+    name: pgcmbac_flag
+    type: VARCHAR
+    flag_for: pgcmbac
+    years: 2016-2024
+  PGCMBAC:
+    name: pgcmbac
+    type: BIGINT
+    years: 2016-2024
+  XPGCMOBA:
+    name: pgcmoba_flag
+    type: VARCHAR
+    flag_for: pgcmoba
+    years: 2016-2024
+  PGCMOBA:
+    name: pgcmoba
+    type: BIGINT
+    years: 2016-2024
+  XPGCMTOT:
+    name: pgcmtot_flag
+    type: VARCHAR
+    flag_for: pgcmtot
+    years: 2016-2024
+  PGCMTOT:
+    name: pgcmtot
+    type: BIGINT
+    years: 2016-2024
+  XSSREVCT:
+    name: ssrevct_flag
+    type: VARCHAR
+    flag_for: ssrevct
+    years: 2016-2024
+  SSREVCT:
+    name: ssrevct
+    type: BIGINT
+    years: 2016-2024
+  XSSEXCLU:
+    name: ssexclu_flag
+    type: VARCHAR
+    flag_for: ssexclu
+    years: 2016-2024
+  SSEXCLU:
+    name: ssexclu
+    type: BIGINT
+    years: 2016-2024
+  XSSADJCT:
+    name: ssadjct_flag
+    type: VARCHAR
+    flag_for: ssadjct
+    years: 2016-2024
+  SSADJCT:
+    name: ssadjct
+    type: BIGINT
+    years: 2016-2024
+  XSSCMBAC:
+    name: sscmbac_flag
+    type: VARCHAR
+    flag_for: sscmbac
+    years: 2016-2024
+  SSCMBAC:
+    name: sscmbac
+    type: BIGINT
+    years: 2016-2024
+  XSSCMOBA:
+    name: sscmoba_flag
+    type: VARCHAR
+    flag_for: sscmoba
+    years: 2016-2024
+  SSCMOBA:
+    name: sscmoba
+    type: BIGINT
+    years: 2016-2024
+  XSSCMTOT:
+    name: sscmtot_flag
+    type: VARCHAR
+    flag_for: sscmtot
+    years: 2016-2024
+  SSCMTOT:
+    name: sscmtot
+    type: BIGINT
+    years: 2016-2024
+  XNRREVCT:
+    name: nrrevct_flag
+    type: VARCHAR
+    flag_for: nrrevct
+    years: 2016-2024
+  NRREVCT:
+    name: nrrevct
+    type: BIGINT
+    years: 2016-2024
+  XNREXCLU:
+    name: nrexclu_flag
+    type: VARCHAR
+    flag_for: nrexclu
+    years: 2016-2024
+  NREXCLU:
+    name: nrexclu
+    type: BIGINT
+    years: 2016-2024
+  XNRADJCT:
+    name: nradjct_flag
+    type: VARCHAR
+    flag_for: nradjct
+    years: 2016-2024
+  NRADJCT:
+    name: nradjct
+    type: BIGINT
+    years: 2016-2024
+  XNRCMBAC:
+    name: nrcmbac_flag
+    type: VARCHAR
+    flag_for: nrcmbac
+    years: 2016-2024
+  NRCMBAC:
+    name: nrcmbac
+    type: BIGINT
+    years: 2016-2024
+  XNRCMOBA:
+    name: nrcmoba_flag
+    type: VARCHAR
+    flag_for: nrcmoba
+    years: 2016-2024
+  NRCMOBA:
+    name: nrcmoba
+    type: BIGINT
+    years: 2016-2024
+  XNRCMTOT:
+    name: nrcmtot_flag
+    type: VARCHAR
+    flag_for: nrcmtot
+    years: 2016-2024
+  NRCMTOT:
+    name: nrcmtot
+    type: BIGINT
+    years: 2016-2024
+  XTTREVCT:
+    name: ttrevct_flag
+    type: VARCHAR
+    flag_for: ttrevct
+    years: 2016-2024
+  TTREVCT:
+    name: ttrevct
+    type: BIGINT
+    years: 2016-2024
+  XTTEXCLU:
+    name: ttexclu_flag
+    type: VARCHAR
+    flag_for: ttexclu
+    years: 2016-2024
+  TTEXCLU:
+    name: ttexclu
+    type: BIGINT
+    years: 2016-2024
+  XTTADJCT:
+    name: ttadjct_flag
+    type: VARCHAR
+    flag_for: ttadjct
+    years: 2016-2024
+  TTADJCT:
+    name: ttadjct
+    type: BIGINT
+    years: 2016-2024
+  XTTCMBAC:
+    name: ttcmbac_flag
+    type: VARCHAR
+    flag_for: ttcmbac
+    years: 2016-2024
+  TTCMBAC:
+    name: ttcmbac
+    type: BIGINT
+    years: 2016-2024
+  XTTCMOBA:
+    name: ttcmoba_flag
+    type: VARCHAR
+    flag_for: ttcmoba
+    years: 2016-2024
+  TTCMOBA:
+    name: ttcmoba
+    type: BIGINT
+    years: 2016-2024
+  XTTCMTOT:
+    name: ttcmtot_flag
+    type: VARCHAR
+    flag_for: ttcmtot
+    years: 2016-2024
+  TTCMTOT:
+    name: ttcmtot
+    type: BIGINT
+    years: 2016-2024

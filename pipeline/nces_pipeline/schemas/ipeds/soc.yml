@@ -1,0 +1,296 @@
+source: ipeds
+family: soc
+key:
+- unitid
+- staffcat
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2012-2024
+  STAFFCAT:
+    name: staffcat
+    type: BIGINT
+    years: 2012-2024
+  FTPT:
+    name: ftpt
+    type: BIGINT
+    years: 2012-2024
+  OCCUPCAT:
+    name: occupcat
+    type: BIGINT
+    years: 2012-2024
+  SABDTYPE:
+    name: sabdtype
+    type: BIGINT
+    years: 2012-2024
+  XHRTOTLT:
+    name: hrtotlt_flag
+    type: VARCHAR
+    flag_for: hrtotlt
+    years: 2012-2024
+  HRTOTLT:
+    name: hrtotlt
+    type: BIGINT
+    years: 2012-2024
+  XHRTOTLM:
+    name: hrtotlm_flag
+    type: VARCHAR
+    flag_for: hrtotlm
+    years: 2012-2024
+  HRTOTLM:
+    name: hrtotlm
+    type: BIGINT
+    years: 2012-2024
+  XHRTOTLW:
+    name: hrtotlw_flag
+    type: VARCHAR
+    flag_for: hrtotlw
+    years: 2012-2024
+  HRTOTLW:
+    name: hrtotlw
+    type: BIGINT
+    years: 2012-2024
+  XHRAIANT:
+    name: hraiant_flag
+    type: VARCHAR
+    flag_for: hraiant
+    years: 2012-2024
+  HRAIANT:
+    name: hraiant
+    type: BIGINT
+    years: 2012-2024
+  XHRAIANM:
+    name: hraianm_flag
+    type: VARCHAR
+    flag_for: hraianm
+    years: 2012-2024
+  HRAIANM:
+    name: hraianm
+    type: BIGINT
+    years: 2012-2024
+  XHRAIANW:
+    name: hraianw_flag
+    type: VARCHAR
+    flag_for: hraianw
+    years: 2012-2024
+  HRAIANW:
+    name: hraianw
+    type: BIGINT
+    years: 2012-2024
+  XHRASIAT:
+    name: hrasiat_flag
+    type: VARCHAR
+    flag_for: hrasiat
+    years: 2012-2024
+  HRASIAT:
+    name: hrasiat
+    type: BIGINT
+    years: 2012-2024
+  XHRASIAM:
+    name: hrasiam_flag
+    type: VARCHAR
+    flag_for: hrasiam
+    years: 2012-2024
+  HRASIAM:
+    name: hrasiam
+    type: BIGINT
+    years: 2012-2024
+  XHRASIAW:
+    name: hrasiaw_flag
+    type: VARCHAR
+    flag_for: hrasiaw
+    years: 2012-2024
+  HRASIAW:
+    name: hrasiaw
+    type: BIGINT
+    years: 2012-2024
+  XHRBKAAT:
+    name: hrbkaat_flag
+    type: VARCHAR
+    flag_for: hrbkaat
+    years: 2012-2024
+  HRBKAAT:
+    name: hrbkaat
+    type: BIGINT
+    years: 2012-2024
+  XHRBKAAM:
+    name: hrbkaam_flag
+    type: VARCHAR
+    flag_for: hrbkaam
+    years: 2012-2024
+  HRBKAAM:
+    name: hrbkaam
+    type: BIGINT
+    years: 2012-2024
+  XHRBKAAW:
+    name: hrbkaaw_flag
+    type: VARCHAR
+    flag_for: hrbkaaw
+    years: 2012-2024
+  HRBKAAW:
+    name: hrbkaaw
+    type: BIGINT
+    years: 2012-2024
+  XHRHISPT:
+    name: hrhispt_flag
+    type: VARCHAR
+    flag_for: hrhispt
+    years: 2012-2024
+  HRHISPT:
+    name: hrhispt
+    type: BIGINT
+    years: 2012-2024
+  XHRHISPM:
+    name: hrhispm_flag
+    type: VARCHAR
+    flag_for: hrhispm
+    years: 2012-2024
+  HRHISPM:
+    name: hrhispm
+    type: BIGINT
+    years: 2012-2024
+  XHRHISPW:
+    name: hrhispw_flag
+    type: VARCHAR
+    flag_for: hrhispw
+    years: 2012-2024
+  HRHISPW:
+    name: hrhispw
+    type: BIGINT
+    years: 2012-2024
+  XHRNHPIT:
+    name: hrnhpit_flag
+    type: VARCHAR
+    flag_for: hrnhpit
+    years: 2012-2024
+  HRNHPIT:
+    name: hrnhpit
+    type: BIGINT
+    years: 2012-2024
+  XHRNHPIM:
+    name: hrnhpim_flag
+    type: VARCHAR
+    flag_for: hrnhpim
+    years: 2012-2024
+  HRNHPIM:
+    name: hrnhpim
+    type: BIGINT
+    years: 2012-2024
+  XHRNHPIW:
+    name: hrnhpiw_flag
+    type: VARCHAR
+    flag_for: hrnhpiw
+    years: 2012-2024
+  HRNHPIW:
+    name: hrnhpiw
+    type: BIGINT
+    years: 2012-2024
+  XHRWHITT:
+    name: hrwhitt_flag
+    type: VARCHAR
+    flag_for: hrwhitt
+    years: 2012-2024
+  HRWHITT:
+    name: hrwhitt
+    type: BIGINT
+    years: 2012-2024
+  XHRWHITM:
+    name: hrwhitm_flag
+    type: VARCHAR
+    flag_for: hrwhitm
+    years: 2012-2024
+  HRWHITM:
+    name: hrwhitm
+    type: BIGINT
+    years: 2012-2024
+  XHRWHITW:
+    name: hrwhitw_flag
+    type: VARCHAR
+    flag_for: hrwhitw
+    years: 2012-2024
+  HRWHITW:
+    name: hrwhitw
+    type: BIGINT
+    years: 2012-2024
+  XHR2MORT:
+    name: hr2mort_flag
+    type: VARCHAR
+    flag_for: hr2mort
+    years: 2012-2024
+  HR2MORT:
+    name: hr2mort
+    type: BIGINT
+    years: 2012-2024
+  XHR2MORM:
+    name: hr2morm_flag
+    type: VARCHAR
+    flag_for: hr2morm
+    years: 2012-2024
+  HR2MORM:
+    name: hr2morm
+    type: BIGINT
+    years: 2012-2024
+  XHR2MORW:
+    name: hr2morw_flag
+    type: VARCHAR
+    flag_for: hr2morw
+    years: 2012-2024
+  HR2MORW:
+    name: hr2morw
+    type: BIGINT
+    years: 2012-2024
+  XHRUNKNT:
+    name: hrunknt_flag
+    type: VARCHAR
+    flag_for: hrunknt
+    years: 2012-2024
+  HRUNKNT:
+    name: hrunknt
+    type: BIGINT
+    years: 2012-2024
+  XHRUNKNM:
+    name: hrunknm_flag
+    type: VARCHAR
+    flag_for: hrunknm
+    years: 2012-2024
+  HRUNKNM:
+    name: hrunknm
+    type: BIGINT
+    years: 2012-2024
+  XHRUNKNW:
+    name: hrunknw_flag
+    type: VARCHAR
+    flag_for: hrunknw
+    years: 2012-2024
+  HRUNKNW:
+    name: hrunknw
+    type: BIGINT
+    years: 2012-2024
+  XHRNRALT:
+    name: hrnralt_flag
+    type: VARCHAR
+    flag_for: hrnralt
+    years: 2012-2024
+  HRNRALT:
+    name: hrnralt
+    type: BIGINT
+    years: 2012-2024
+  XHRNRALM:
+    name: hrnralm_flag
+    type: VARCHAR
+    flag_for: hrnralm
+    years: 2012-2024
+  HRNRALM:
+    name: hrnralm
+    type: BIGINT
+    years: 2012-2024
+  XHRNRALW:
+    name: hrnralw_flag
+    type: VARCHAR
+    flag_for: hrnralw
+    years: 2012-2024
+  HRNRALW:
+    name: hrnralw
+    type: BIGINT
+    years: 2012-2024

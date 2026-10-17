@@ -1,0 +1,192 @@
+source: ipeds
+family: ff1af
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2002-2007
+  FORMID:
+    name: formid
+    type: BIGINT
+    years: 2002-2007
+  ENTITIES:
+    name: entities
+    type: VARCHAR
+    years: 2002-2007
+  PNATURE:
+    name: pnature
+    type: VARCHAR
+    years: 2002-2007
+  XF1AF01:
+    name: f1af01_flag
+    type: VARCHAR
+    flag_for: f1af01
+    years: 2002-2007
+  F1AF01:
+    name: f1af01
+    type: BIGINT
+    years: 2002-2007
+  XF1AF02:
+    name: f1af02_flag
+    type: VARCHAR
+    flag_for: f1af02
+    years: 2002-2007
+  F1AF02:
+    name: f1af02
+    type: BIGINT
+    years: 2002-2007
+  XF1AF03:
+    name: f1af03_flag
+    type: VARCHAR
+    flag_for: f1af03
+    years: 2002-2007
+  F1AF03:
+    name: f1af03
+    type: BIGINT
+    years: 2002-2007
+  XF1AF04:
+    name: f1af04_flag
+    type: VARCHAR
+    flag_for: f1af04
+    years: 2002-2007
+  F1AF04:
+    name: f1af04
+    type: BIGINT
+    years: 2002-2007
+  XF1AF05:
+    name: f1af05_flag
+    type: VARCHAR
+    flag_for: f1af05
+    years: 2002-2007
+  F1AF05:
+    name: f1af05
+    type: BIGINT
+    years: 2002-2007
+  XF1AF06:
+    name: f1af06_flag
+    type: VARCHAR
+    flag_for: f1af06
+    years: 2002-2007
+  F1AF06:
+    name: f1af06
+    type: BIGINT
+    years: 2002-2007
+  XF1AF07:
+    name: f1af07_flag
+    type: VARCHAR
+    flag_for: f1af07
+    years: 2002-2007
+  F1AF07:
+    name: f1af07
+    type: BIGINT
+    years: 2002-2007
+  XF1AF08:
+    name: f1af08_flag
+    type: VARCHAR
+    flag_for: f1af08
+    years: 2002-2007
+  F1AF08:
+    name: f1af08
+    type: BIGINT
+    years: 2002-2007
+  XF1AF09:
+    name: f1af09_flag
+    type: VARCHAR
+    flag_for: f1af09
+    years: 2002-2007
+  F1AF09:
+    name: f1af09
+    type: BIGINT
+    years: 2002-2007
+  XF1AF10:
+    name: f1af10_flag
+    type: VARCHAR
+    flag_for: f1af10
+    years: 2002-2007
+  F1AF10:
+    name: f1af10
+    type: BIGINT
+    years: 2002-2007
+  XF1AF11:
+    name: f1af11_flag
+    type: VARCHAR
+    flag_for: f1af11
+    years: 2002-2007
+  F1AF11:
+    name: f1af11
+    type: BIGINT
+    years: 2002-2007
+  XF1AF12:
+    name: f1af12_flag
+    type: VARCHAR
+    flag_for: f1af12
+    years: 2002-2007
+  F1AF12:
+    name: f1af12
+    type: BIGINT
+    years: 2002-2007
+  XF1AF12A:
+    name: f1af12a_flag
+    type: VARCHAR
+    flag_for: f1af12a
+    years: 2002-2007
+  F1AF12A:
+    name: f1af12a
+    type: BIGINT
+    years: 2002-2007
+  XF1AF13:
+    name: f1af13_flag
+    type: VARCHAR
+    flag_for: f1af13
+    years: 2002-2007
+  F1AF13:
+    name: f1af13
+    type: BIGINT
+    years: 2002-2007
+  XF1AF14:
+    name: f1af14_flag
+    type: VARCHAR
+    flag_for: f1af14
+    years: 2002-2007
+  F1AF14:
+    name: f1af14
+    type: BIGINT
+    years: 2002-2007
+  XF1AF15:
+    name: f1af15_flag
+    type: VARCHAR
+    flag_for: f1af15
+    years: 2002-2007
+  F1AF15:
+    name: f1af15
+    type: BIGINT
+    years: 2002-2007
+  XF1AF16:
+    name: f1af16_flag
+    type: VARCHAR
+    flag_for: f1af16
+    years: 2002-2007
+  F1AF16:
+    name: f1af16
+    type: BIGINT
+    years: 2002-2007
+  XF1AF17:
+    name: f1af17_flag
+    type: VARCHAR
+    flag_for: f1af17
+    years: 2002-2007
+  F1AF17:
+    name: f1af17
+    type: BIGINT
+    years: 2002-2007
+  XF1AF18:
+    name: f1af18_flag
+    type: VARCHAR
+    flag_for: f1af18
+    years: 2002-2007
+  F1AF18:
+    name: f1af18
+    type: BIGINT
+    years: 2002-2007

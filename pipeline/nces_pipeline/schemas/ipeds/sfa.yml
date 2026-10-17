@@ -1,0 +1,3204 @@
+source: ipeds
+family: sfa
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000-2024
+  XSCFA1N:
+    name: scfa1n_flag
+    type: VARCHAR
+    flag_for: scfa1n
+    years: 2000-2024
+  SCFA1N:
+    name: scfa1n
+    type: BIGINT
+    years: 2000-2024
+  XSCFA1P:
+    name: scfa1p_flag
+    type: VARCHAR
+    flag_for: scfa1p
+    years: 2000-2024
+  SCFA1P:
+    name: scfa1p
+    type: BIGINT
+    years: 2000-2024
+  XSCFA11N:
+    name: scfa11n_flag
+    type: VARCHAR
+    flag_for: scfa11n
+    years: 2000-2023
+  SCFA11N:
+    name: scfa11n
+    type: BIGINT
+    years: 2000-2023
+  XSCFA11P:
+    name: scfa11p_flag
+    type: VARCHAR
+    flag_for: scfa11p
+    years: 2000-2023
+  SCFA11P:
+    name: scfa11p
+    type: BIGINT
+    years: 2000-2023
+  XSCFA12N:
+    name: scfa12n_flag
+    type: VARCHAR
+    flag_for: scfa12n
+    years: 2000-2023
+  SCFA12N:
+    name: scfa12n
+    type: BIGINT
+    years: 2000-2023
+  XSCFA12P:
+    name: scfa12p_flag
+    type: VARCHAR
+    flag_for: scfa12p
+    years: 2000-2023
+  SCFA12P:
+    name: scfa12p
+    type: BIGINT
+    years: 2000-2023
+  XSCFA13N:
+    name: scfa13n_flag
+    type: VARCHAR
+    flag_for: scfa13n
+    years: 2000-2023
+  SCFA13N:
+    name: scfa13n
+    type: BIGINT
+    years: 2000-2023
+  XSCFA13P:
+    name: scfa13p_flag
+    type: VARCHAR
+    flag_for: scfa13p
+    years: 2000-2023
+  SCFA13P:
+    name: scfa13p
+    type: BIGINT
+    years: 2000-2023
+  XSCFA14N:
+    name: scfa14n_flag
+    type: VARCHAR
+    flag_for: scfa14n
+    years: 2000-2023
+  SCFA14N:
+    name: scfa14n
+    type: BIGINT
+    years: 2000-2023
+  XSCFA14P:
+    name: scfa14p_flag
+    type: VARCHAR
+    flag_for: scfa14p
+    years: 2000-2023
+  SCFA14P:
+    name: scfa14p
+    type: BIGINT
+    years: 2000-2023
+  XSCFA2:
+    name: scfa2_flag
+    type: VARCHAR
+    flag_for: scfa2
+    years: 2000-2024
+  SCFA2:
+    name: scfa2
+    type: BIGINT
+    years: 2000-2024
+  XSCFY1N:
+    name: scfy1n_flag
+    type: VARCHAR
+    flag_for: scfy1n
+    years: 2000-2024
+  SCFY1N:
+    name: scfy1n
+    type: BIGINT
+    years: 2000-2024
+  XSCFY1P:
+    name: scfy1p_flag
+    type: VARCHAR
+    flag_for: scfy1p
+    years: 2000-2024
+  SCFY1P:
+    name: scfy1p
+    type: BIGINT
+    years: 2000-2024
+  XSCFY2:
+    name: scfy2_flag
+    type: VARCHAR
+    flag_for: scfy2
+    years: 2000-2024
+  SCFY2:
+    name: scfy2
+    type: BIGINT
+    years: 2000-2024
+  XANYAIDN:
+    name: anyaidn_flag
+    type: VARCHAR
+    flag_for: anyaidn
+    years: 2000-2024
+  ANYAIDN:
+    name: anyaidn
+    type: BIGINT
+    years: 2000-2024
+  XANYAIDP:
+    name: anyaidp_flag
+    type: VARCHAR
+    flag_for: anyaidp
+    years: 2000-2024
+  ANYAIDP:
+    name: anyaidp
+    type: BIGINT
+    years: 2000-2024
+  XFGRNT_N:
+    name: fgrnt_n_flag
+    type: VARCHAR
+    flag_for: fgrnt_n
+    years: 2000-2024
+  FGRNT_N:
+    name: fgrnt_n
+    type: BIGINT
+    years: 2000-2024
+  XFGRNT_P:
+    name: fgrnt_p_flag
+    type: VARCHAR
+    flag_for: fgrnt_p
+    years: 2000-2024
+  FGRNT_P:
+    name: fgrnt_p
+    type: BIGINT
+    years: 2000-2024
+  XFGRNT_A:
+    name: fgrnt_a_flag
+    type: VARCHAR
+    flag_for: fgrnt_a
+    years: 2000-2024
+  FGRNT_A:
+    name: fgrnt_a
+    type: BIGINT
+    years: 2000-2024
+  XSGRNT_N:
+    name: sgrnt_n_flag
+    type: VARCHAR
+    flag_for: sgrnt_n
+    years: 2000-2024
+  SGRNT_N:
+    name: sgrnt_n
+    type: BIGINT
+    years: 2000-2024
+  XSGRNT_P:
+    name: sgrnt_p_flag
+    type: VARCHAR
+    flag_for: sgrnt_p
+    years: 2000-2024
+  SGRNT_P:
+    name: sgrnt_p
+    type: BIGINT
+    years: 2000-2024
+  XSGRNT_A:
+    name: sgrnt_a_flag
+    type: VARCHAR
+    flag_for: sgrnt_a
+    years: 2000-2024
+  SGRNT_A:
+    name: sgrnt_a
+    type: BIGINT
+    years: 2000-2024
+  XIGRNT_N:
+    name: igrnt_n_flag
+    type: VARCHAR
+    flag_for: igrnt_n
+    years: 2000-2024
+  IGRNT_N:
+    name: igrnt_n
+    type: BIGINT
+    years: 2000-2024
+  XIGRNT_P:
+    name: igrnt_p_flag
+    type: VARCHAR
+    flag_for: igrnt_p
+    years: 2000-2024
+  IGRNT_P:
+    name: igrnt_p
+    type: BIGINT
+    years: 2000-2024
+  XIGRNT_A:
+    name: igrnt_a_flag
+    type: VARCHAR
+    flag_for: igrnt_a
+    years: 2000-2024
+  IGRNT_A:
+    name: igrnt_a
+    type: BIGINT
+    years: 2000-2024
+  XLOAN_N:
+    name: loan_n_flag
+    type: VARCHAR
+    flag_for: loan_n
+    years: 2000-2024
+  LOAN_N:
+    name: loan_n
+    type: BIGINT
+    years: 2000-2024
+  XLOAN_P:
+    name: loan_p_flag
+    type: VARCHAR
+    flag_for: loan_p
+    years: 2000-2024
+  LOAN_P:
+    name: loan_p
+    type: BIGINT
+    years: 2000-2024
+  XLOAN_A:
+    name: loan_a_flag
+    type: VARCHAR
+    flag_for: loan_a
+    years: 2000-2024
+  LOAN_A:
+    name: loan_a
+    type: BIGINT
+    years: 2000-2024
+  XTOTGRNT:
+    name: totgrnt_flag
+    type: VARCHAR
+    flag_for: totgrnt
+    years: '2008'
+  TOTGRNT:
+    name: totgrnt
+    type: BIGINT
+    years: '2008'
+  XTSTDPEL:
+    name: tstdpel_flag
+    type: VARCHAR
+    flag_for: tstdpel
+    years: '2008'
+  TSTDPEL:
+    name: tstdpel
+    type: BIGINT
+    years: '2008'
+  XAGRNT_N:
+    name: agrnt_n_flag
+    type: VARCHAR
+    flag_for: agrnt_n
+    years: 2008-2024
+  AGRNT_N:
+    name: agrnt_n
+    type: BIGINT
+    years: 2008-2024
+  XAGRNT_P:
+    name: agrnt_p_flag
+    type: VARCHAR
+    flag_for: agrnt_p
+    years: 2008-2024
+  AGRNT_P:
+    name: agrnt_p
+    type: BIGINT
+    years: 2008-2024
+  XAGRNT_A:
+    name: agrnt_a_flag
+    type: VARCHAR
+    flag_for: agrnt_a
+    years: 2008-2024
+  AGRNT_A:
+    name: agrnt_a
+    type: BIGINT
+    years: 2008-2024
+  XPGRNT_N:
+    name: pgrnt_n_flag
+    type: VARCHAR
+    flag_for: pgrnt_n
+    years: 2008-2024
+  PGRNT_N:
+    name: pgrnt_n
+    type: BIGINT
+    years: 2008-2024
+  XPGRNT_P:
+    name: pgrnt_p_flag
+    type: VARCHAR
+    flag_for: pgrnt_p
+    years: 2008-2024
+  PGRNT_P:
+    name: pgrnt_p
+    type: BIGINT
+    years: 2008-2024
+  XPGRNT_A:
+    name: pgrnt_a_flag
+    type: VARCHAR
+    flag_for: pgrnt_a
+    years: 2008-2024
+  PGRNT_A:
+    name: pgrnt_a
+    type: BIGINT
+    years: 2008-2024
+  XOFGRT_N:
+    name: ofgrt_n_flag
+    type: VARCHAR
+    flag_for: ofgrt_n
+    years: 2008-2024
+  OFGRT_N:
+    name: ofgrt_n
+    type: BIGINT
+    years: 2008-2024
+  XOFGRT_P:
+    name: ofgrt_p_flag
+    type: VARCHAR
+    flag_for: ofgrt_p
+    years: 2008-2024
+  OFGRT_P:
+    name: ofgrt_p
+    type: BIGINT
+    years: 2008-2024
+  XOFGRT_A:
+    name: ofgrt_a_flag
+    type: VARCHAR
+    flag_for: ofgrt_a
+    years: 2008-2024
+  OFGRT_A:
+    name: ofgrt_a
+    type: BIGINT
+    years: 2008-2024
+  XFLOAN_N:
+    name: floan_n_flag
+    type: VARCHAR
+    flag_for: floan_n
+    years: 2008-2024
+  FLOAN_N:
+    name: floan_n
+    type: BIGINT
+    years: 2008-2024
+  XFLOAN_P:
+    name: floan_p_flag
+    type: VARCHAR
+    flag_for: floan_p
+    years: 2008-2024
+  FLOAN_P:
+    name: floan_p
+    type: BIGINT
+    years: 2008-2024
+  XFLOAN_A:
+    name: floan_a_flag
+    type: VARCHAR
+    flag_for: floan_a
+    years: 2008-2024
+  FLOAN_A:
+    name: floan_a
+    type: BIGINT
+    years: 2008-2024
+  XOLOAN_N:
+    name: oloan_n_flag
+    type: VARCHAR
+    flag_for: oloan_n
+    years: 2008-2024
+  OLOAN_N:
+    name: oloan_n
+    type: BIGINT
+    years: 2008-2024
+  XOLOAN_P:
+    name: oloan_p_flag
+    type: VARCHAR
+    flag_for: oloan_p
+    years: 2008-2024
+  OLOAN_P:
+    name: oloan_p
+    type: BIGINT
+    years: 2008-2024
+  XOLOAN_A:
+    name: oloan_a_flag
+    type: VARCHAR
+    flag_for: oloan_a
+    years: 2008-2024
+  OLOAN_A:
+    name: oloan_a
+    type: BIGINT
+    years: 2008-2024
+  XSCUGFFN:
+    name: scugffn_flag
+    type: VARCHAR
+    flag_for: scugffn
+    years: 2008-2024
+  SCUGFFN:
+    name: scugffn
+    type: BIGINT
+    years: 2008-2024
+  XSCUGRAD:
+    name: scugrad_flag
+    type: VARCHAR
+    flag_for: scugrad
+    years: 2008-2024
+  SCUGRAD:
+    name: scugrad
+    type: BIGINT
+    years: 2008-2024
+  XSCUGFFP:
+    name: scugffp_flag
+    type: VARCHAR
+    flag_for: scugffp
+    years: 2008-2024
+  SCUGFFP:
+    name: scugffp
+    type: BIGINT
+    years: 2008-2024
+  XUAGRNTN:
+    name: uagrntn_flag
+    type: VARCHAR
+    flag_for: uagrntn
+    years: 2009-2024
+  UAGRNTN:
+    name: uagrntn
+    type: BIGINT
+    years: 2009-2024
+  XUAGRNTP:
+    name: uagrntp_flag
+    type: VARCHAR
+    flag_for: uagrntp
+    years: 2009-2024
+  UAGRNTP:
+    name: uagrntp
+    type: BIGINT
+    years: 2009-2024
+  XUAGRNTT:
+    name: uagrntt_flag
+    type: VARCHAR
+    flag_for: uagrntt
+    years: 2009-2024
+  UAGRNTT:
+    name: uagrntt
+    type: BIGINT
+    years: 2009-2024
+  XUAGRNTA:
+    name: uagrnta_flag
+    type: VARCHAR
+    flag_for: uagrnta
+    years: 2009-2024
+  UAGRNTA:
+    name: uagrnta
+    type: BIGINT
+    years: 2009-2024
+  XUPGRNTN:
+    name: upgrntn_flag
+    type: VARCHAR
+    flag_for: upgrntn
+    years: 2009-2024
+  UPGRNTN:
+    name: upgrntn
+    type: BIGINT
+    years: 2009-2024
+  XUPGRNTP:
+    name: upgrntp_flag
+    type: VARCHAR
+    flag_for: upgrntp
+    years: 2009-2024
+  UPGRNTP:
+    name: upgrntp
+    type: BIGINT
+    years: 2009-2024
+  XUPGRNTT:
+    name: upgrntt_flag
+    type: VARCHAR
+    flag_for: upgrntt
+    years: 2009-2024
+  UPGRNTT:
+    name: upgrntt
+    type: BIGINT
+    years: 2009-2024
+  XUPGRNTA:
+    name: upgrnta_flag
+    type: VARCHAR
+    flag_for: upgrnta
+    years: 2009-2024
+  UPGRNTA:
+    name: upgrnta
+    type: BIGINT
+    years: 2009-2024
+  XUFLOANN:
+    name: ufloann_flag
+    type: VARCHAR
+    flag_for: ufloann
+    years: 2009-2024
+  UFLOANN:
+    name: ufloann
+    type: BIGINT
+    years: 2009-2024
+  XUFLOANP:
+    name: ufloanp_flag
+    type: VARCHAR
+    flag_for: ufloanp
+    years: 2009-2024
+  UFLOANP:
+    name: ufloanp
+    type: BIGINT
+    years: 2009-2024
+  XUFLOANT:
+    name: ufloant_flag
+    type: VARCHAR
+    flag_for: ufloant
+    years: 2009-2024
+  UFLOANT:
+    name: ufloant
+    type: BIGINT
+    years: 2009-2024
+  XUFLOANA:
+    name: ufloana_flag
+    type: VARCHAR
+    flag_for: ufloana
+    years: 2009-2024
+  UFLOANA:
+    name: ufloana
+    type: BIGINT
+    years: 2009-2024
+  XAGRNT_T:
+    name: agrnt_t_flag
+    type: VARCHAR
+    flag_for: agrnt_t
+    years: 2009-2024
+  AGRNT_T:
+    name: agrnt_t
+    type: BIGINT
+    years: 2009-2024
+  XFGRNT_T:
+    name: fgrnt_t_flag
+    type: VARCHAR
+    flag_for: fgrnt_t
+    years: 2009-2024
+  FGRNT_T:
+    name: fgrnt_t
+    type: BIGINT
+    years: 2009-2024
+  XPGRNT_T:
+    name: pgrnt_t_flag
+    type: VARCHAR
+    flag_for: pgrnt_t
+    years: 2009-2024
+  PGRNT_T:
+    name: pgrnt_t
+    type: BIGINT
+    years: 2009-2024
+  XOFGRT_T:
+    name: ofgrt_t_flag
+    type: VARCHAR
+    flag_for: ofgrt_t
+    years: 2009-2024
+  OFGRT_T:
+    name: ofgrt_t
+    type: BIGINT
+    years: 2009-2024
+  XSGRNT_T:
+    name: sgrnt_t_flag
+    type: VARCHAR
+    flag_for: sgrnt_t
+    years: 2009-2024
+  SGRNT_T:
+    name: sgrnt_t
+    type: BIGINT
+    years: 2009-2024
+  XIGRNT_T:
+    name: igrnt_t_flag
+    type: VARCHAR
+    flag_for: igrnt_t
+    years: 2009-2024
+  IGRNT_T:
+    name: igrnt_t
+    type: BIGINT
+    years: 2009-2024
+  XLOAN_T:
+    name: loan_t_flag
+    type: VARCHAR
+    flag_for: loan_t
+    years: 2009-2024
+  LOAN_T:
+    name: loan_t
+    type: BIGINT
+    years: 2009-2024
+  XFLOAN_T:
+    name: floan_t_flag
+    type: VARCHAR
+    flag_for: floan_t
+    years: 2009-2024
+  FLOAN_T:
+    name: floan_t
+    type: BIGINT
+    years: 2009-2024
+  XOLOAN_T:
+    name: oloan_t_flag
+    type: VARCHAR
+    flag_for: oloan_t
+    years: 2009-2024
+  OLOAN_T:
+    name: oloan_t
+    type: BIGINT
+    years: 2009-2024
+  XGISTN2:
+    name: gistn2_flag
+    type: VARCHAR
+    flag_for: gistn2
+    years: 2009-2023
+  GISTN2:
+    name: gistn2
+    type: BIGINT
+    years: 2009-2023
+  XGISTON2:
+    name: giston2_flag
+    type: VARCHAR
+    flag_for: giston2
+    years: 2009-2023
+  GISTON2:
+    name: giston2
+    type: BIGINT
+    years: 2009-2023
+  XGISTWF2:
+    name: gistwf2_flag
+    type: VARCHAR
+    flag_for: gistwf2
+    years: 2009-2023
+  GISTWF2:
+    name: gistwf2
+    type: BIGINT
+    years: 2009-2023
+  XGISTOF2:
+    name: gistof2_flag
+    type: VARCHAR
+    flag_for: gistof2
+    years: 2009-2023
+  GISTOF2:
+    name: gistof2
+    type: BIGINT
+    years: 2009-2023
+  XGISTUN2:
+    name: gistun2_flag
+    type: VARCHAR
+    flag_for: gistun2
+    years: 2009-2023
+  GISTUN2:
+    name: gistun2
+    type: BIGINT
+    years: 2009-2023
+  XGISTT2:
+    name: gistt2_flag
+    type: VARCHAR
+    flag_for: gistt2
+    years: 2009-2023
+  GISTT2:
+    name: gistt2
+    type: BIGINT
+    years: 2009-2023
+  XGISTA2:
+    name: gista2_flag
+    type: VARCHAR
+    flag_for: gista2
+    years: 2009-2023
+  GISTA2:
+    name: gista2
+    type: BIGINT
+    years: 2009-2023
+  XGISTN1:
+    name: gistn1_flag
+    type: VARCHAR
+    flag_for: gistn1
+    years: 2009-2023
+  GISTN1:
+    name: gistn1
+    type: BIGINT
+    years: 2009-2023
+  XGISTON1:
+    name: giston1_flag
+    type: VARCHAR
+    flag_for: giston1
+    years: 2009-2023
+  GISTON1:
+    name: giston1
+    type: BIGINT
+    years: 2009-2023
+  XGISTWF1:
+    name: gistwf1_flag
+    type: VARCHAR
+    flag_for: gistwf1
+    years: 2009-2023
+  GISTWF1:
+    name: gistwf1
+    type: BIGINT
+    years: 2009-2023
+  XGISTOF1:
+    name: gistof1_flag
+    type: VARCHAR
+    flag_for: gistof1
+    years: 2009-2023
+  GISTOF1:
+    name: gistof1
+    type: BIGINT
+    years: 2009-2023
+  XGISTUN1:
+    name: gistun1_flag
+    type: VARCHAR
+    flag_for: gistun1
+    years: 2009-2023
+  GISTUN1:
+    name: gistun1
+    type: BIGINT
+    years: 2009-2023
+  XGISTT1:
+    name: gistt1_flag
+    type: VARCHAR
+    flag_for: gistt1
+    years: 2009-2023
+  GISTT1:
+    name: gistt1
+    type: BIGINT
+    years: 2009-2023
+  XGISTA1:
+    name: gista1_flag
+    type: VARCHAR
+    flag_for: gista1
+    years: 2009-2023
+  GISTA1:
+    name: gista1
+    type: BIGINT
+    years: 2009-2023
+  XGISTN0:
+    name: gistn0_flag
+    type: VARCHAR
+    flag_for: gistn0
+    years: 2009-2023
+  GISTN0:
+    name: gistn0
+    type: BIGINT
+    years: 2009-2023
+  XGISTON0:
+    name: giston0_flag
+    type: VARCHAR
+    flag_for: giston0
+    years: 2009-2023
+  GISTON0:
+    name: giston0
+    type: BIGINT
+    years: 2009-2023
+  XGISTWF0:
+    name: gistwf0_flag
+    type: VARCHAR
+    flag_for: gistwf0
+    years: 2009-2023
+  GISTWF0:
+    name: gistwf0
+    type: BIGINT
+    years: 2009-2023
+  XGISTOF0:
+    name: gistof0_flag
+    type: VARCHAR
+    flag_for: gistof0
+    years: 2009-2023
+  GISTOF0:
+    name: gistof0
+    type: BIGINT
+    years: 2009-2023
+  XGISTUN0:
+    name: gistun0_flag
+    type: VARCHAR
+    flag_for: gistun0
+    years: 2009-2023
+  GISTUN0:
+    name: gistun0
+    type: BIGINT
+    years: 2009-2023
+  XGISTT0:
+    name: gistt0_flag
+    type: VARCHAR
+    flag_for: gistt0
+    years: 2009-2023
+  GISTT0:
+    name: gistt0
+    type: BIGINT
+    years: 2009-2023
+  XGISTA0:
+    name: gista0_flag
+    type: VARCHAR
+    flag_for: gista0
+    years: 2009-2023
+  GISTA0:
+    name: gista0
+    type: BIGINT
+    years: 2009-2023
+  XGIS4N2:
+    name: gis4n2_flag
+    type: VARCHAR
+    flag_for: gis4n2
+    years: 2009-2023
+  GIS4N2:
+    name: gis4n2
+    type: BIGINT
+    years: 2009-2023
+  XGIS4ON2:
+    name: gis4on2_flag
+    type: VARCHAR
+    flag_for: gis4on2
+    years: 2009-2023
+  GIS4ON2:
+    name: gis4on2
+    type: BIGINT
+    years: 2009-2023
+  XGIS4WF2:
+    name: gis4wf2_flag
+    type: VARCHAR
+    flag_for: gis4wf2
+    years: 2009-2023
+  GIS4WF2:
+    name: gis4wf2
+    type: BIGINT
+    years: 2009-2023
+  XGIS4OF2:
+    name: gis4of2_flag
+    type: VARCHAR
+    flag_for: gis4of2
+    years: 2009-2023
+  GIS4OF2:
+    name: gis4of2
+    type: BIGINT
+    years: 2009-2023
+  XGIS4UN2:
+    name: gis4un2_flag
+    type: VARCHAR
+    flag_for: gis4un2
+    years: 2009-2023
+  GIS4UN2:
+    name: gis4un2
+    type: BIGINT
+    years: 2009-2023
+  XGIS4T2:
+    name: gis4t2_flag
+    type: VARCHAR
+    flag_for: gis4t2
+    years: 2009-2023
+  GIS4T2:
+    name: gis4t2
+    type: BIGINT
+    years: 2009-2023
+  XGIS4A2:
+    name: gis4a2_flag
+    type: VARCHAR
+    flag_for: gis4a2
+    years: 2009-2023
+  GIS4A2:
+    name: gis4a2
+    type: BIGINT
+    years: 2009-2023
+  XGIS4N12:
+    name: gis4n12_flag
+    type: VARCHAR
+    flag_for: gis4n12
+    years: 2009-2023
+  GIS4N12:
+    name: gis4n12
+    type: BIGINT
+    years: 2009-2023
+  XGIS4T12:
+    name: gis4t12_flag
+    type: VARCHAR
+    flag_for: gis4t12
+    years: 2009-2023
+  GIS4T12:
+    name: gis4t12
+    type: BIGINT
+    years: 2009-2023
+  XGIS4A12:
+    name: gis4a12_flag
+    type: VARCHAR
+    flag_for: gis4a12
+    years: 2009-2023
+  GIS4A12:
+    name: gis4a12
+    type: BIGINT
+    years: 2009-2023
+  XGIS4N22:
+    name: gis4n22_flag
+    type: VARCHAR
+    flag_for: gis4n22
+    years: 2009-2023
+  GIS4N22:
+    name: gis4n22
+    type: BIGINT
+    years: 2009-2023
+  XGIS4T22:
+    name: gis4t22_flag
+    type: VARCHAR
+    flag_for: gis4t22
+    years: 2009-2023
+  GIS4T22:
+    name: gis4t22
+    type: BIGINT
+    years: 2009-2023
+  XGIS4A22:
+    name: gis4a22_flag
+    type: VARCHAR
+    flag_for: gis4a22
+    years: 2009-2023
+  GIS4A22:
+    name: gis4a22
+    type: BIGINT
+    years: 2009-2023
+  XGIS4N32:
+    name: gis4n32_flag
+    type: VARCHAR
+    flag_for: gis4n32
+    years: 2009-2023
+  GIS4N32:
+    name: gis4n32
+    type: BIGINT
+    years: 2009-2023
+  XGIS4T32:
+    name: gis4t32_flag
+    type: VARCHAR
+    flag_for: gis4t32
+    years: 2009-2023
+  GIS4T32:
+    name: gis4t32
+    type: BIGINT
+    years: 2009-2023
+  XGIS4A32:
+    name: gis4a32_flag
+    type: VARCHAR
+    flag_for: gis4a32
+    years: 2009-2023
+  GIS4A32:
+    name: gis4a32
+    type: BIGINT
+    years: 2009-2023
+  XGIS4N42:
+    name: gis4n42_flag
+    type: VARCHAR
+    flag_for: gis4n42
+    years: 2009-2023
+  GIS4N42:
+    name: gis4n42
+    type: BIGINT
+    years: 2009-2023
+  XGIS4T42:
+    name: gis4t42_flag
+    type: VARCHAR
+    flag_for: gis4t42
+    years: 2009-2023
+  GIS4T42:
+    name: gis4t42
+    type: BIGINT
+    years: 2009-2023
+  XGIS4A42:
+    name: gis4a42_flag
+    type: VARCHAR
+    flag_for: gis4a42
+    years: 2009-2023
+  GIS4A42:
+    name: gis4a42
+    type: BIGINT
+    years: 2009-2023
+  XGIS4N52:
+    name: gis4n52_flag
+    type: VARCHAR
+    flag_for: gis4n52
+    years: 2009-2023
+  GIS4N52:
+    name: gis4n52
+    type: BIGINT
+    years: 2009-2023
+  XGIS4T52:
+    name: gis4t52_flag
+    type: VARCHAR
+    flag_for: gis4t52
+    years: 2009-2023
+  GIS4T52:
+    name: gis4t52
+    type: BIGINT
+    years: 2009-2023
+  XGIS4A52:
+    name: gis4a52_flag
+    type: VARCHAR
+    flag_for: gis4a52
+    years: 2009-2023
+  GIS4A52:
+    name: gis4a52
+    type: BIGINT
+    years: 2009-2023
+  XNPIST2:
+    name: npist2_flag
+    type: VARCHAR
+    flag_for: npist2
+    years: 2009-2023
+  NPIST2:
+    name: npist2
+    type: BIGINT
+    years: 2009-2023
+  XNPIST1:
+    name: npist1_flag
+    type: VARCHAR
+    flag_for: npist1
+    years: 2009-2023
+  NPIST1:
+    name: npist1
+    type: BIGINT
+    years: 2009-2023
+  XNPIST0:
+    name: npist0_flag
+    type: VARCHAR
+    flag_for: npist0
+    years: 2009-2023
+  NPIST0:
+    name: npist0
+    type: BIGINT
+    years: 2009-2023
+  XNPIS412:
+    name: npis412_flag
+    type: VARCHAR
+    flag_for: npis412
+    years: 2009-2023
+  NPIS412:
+    name: npis412
+    type: BIGINT
+    years: 2009-2023
+  XNPIS422:
+    name: npis422_flag
+    type: VARCHAR
+    flag_for: npis422
+    years: 2009-2023
+  NPIS422:
+    name: npis422
+    type: BIGINT
+    years: 2009-2023
+  XNPIS432:
+    name: npis432_flag
+    type: VARCHAR
+    flag_for: npis432
+    years: 2009-2023
+  NPIS432:
+    name: npis432
+    type: BIGINT
+    years: 2009-2023
+  XNPIS442:
+    name: npis442_flag
+    type: VARCHAR
+    flag_for: npis442
+    years: 2009-2023
+  NPIS442:
+    name: npis442
+    type: BIGINT
+    years: 2009-2023
+  XNPIS452:
+    name: npis452_flag
+    type: VARCHAR
+    flag_for: npis452
+    years: 2009-2023
+  NPIS452:
+    name: npis452
+    type: BIGINT
+    years: 2009-2023
+  XGRNTN2:
+    name: grntn2_flag
+    type: VARCHAR
+    flag_for: grntn2
+    years: 2009-2023
+  GRNTN2:
+    name: grntn2
+    type: BIGINT
+    years: 2009-2023
+  XGRNTON2:
+    name: grnton2_flag
+    type: VARCHAR
+    flag_for: grnton2
+    years: 2009-2023
+  GRNTON2:
+    name: grnton2
+    type: BIGINT
+    years: 2009-2023
+  XGRNTWF2:
+    name: grntwf2_flag
+    type: VARCHAR
+    flag_for: grntwf2
+    years: 2009-2023
+  GRNTWF2:
+    name: grntwf2
+    type: BIGINT
+    years: 2009-2023
+  XGRNTOF2:
+    name: grntof2_flag
+    type: VARCHAR
+    flag_for: grntof2
+    years: 2009-2023
+  GRNTOF2:
+    name: grntof2
+    type: BIGINT
+    years: 2009-2023
+  XGRNTUN2:
+    name: grntun2_flag
+    type: VARCHAR
+    flag_for: grntun2
+    years: 2009-2023
+  GRNTUN2:
+    name: grntun2
+    type: BIGINT
+    years: 2009-2023
+  XGRNTT2:
+    name: grntt2_flag
+    type: VARCHAR
+    flag_for: grntt2
+    years: 2009-2023
+  GRNTT2:
+    name: grntt2
+    type: BIGINT
+    years: 2009-2023
+  XGRNTA2:
+    name: grnta2_flag
+    type: VARCHAR
+    flag_for: grnta2
+    years: 2009-2023
+  GRNTA2:
+    name: grnta2
+    type: BIGINT
+    years: 2009-2023
+  XGRNTN1:
+    name: grntn1_flag
+    type: VARCHAR
+    flag_for: grntn1
+    years: 2009-2023
+  GRNTN1:
+    name: grntn1
+    type: BIGINT
+    years: 2009-2023
+  XGRNTON1:
+    name: grnton1_flag
+    type: VARCHAR
+    flag_for: grnton1
+    years: 2009-2023
+  GRNTON1:
+    name: grnton1
+    type: BIGINT
+    years: 2009-2023
+  XGRNTWF1:
+    name: grntwf1_flag
+    type: VARCHAR
+    flag_for: grntwf1
+    years: 2009-2023
+  GRNTWF1:
+    name: grntwf1
+    type: BIGINT
+    years: 2009-2023
+  XGRNTOF1:
+    name: grntof1_flag
+    type: VARCHAR
+    flag_for: grntof1
+    years: 2009-2023
+  GRNTOF1:
+    name: grntof1
+    type: BIGINT
+    years: 2009-2023
+  XGRNTUN1:
+    name: grntun1_flag
+    type: VARCHAR
+    flag_for: grntun1
+    years: 2009-2023
+  GRNTUN1:
+    name: grntun1
+    type: BIGINT
+    years: 2009-2023
+  XGRNTT1:
+    name: grntt1_flag
+    type: VARCHAR
+    flag_for: grntt1
+    years: 2009-2023
+  GRNTT1:
+    name: grntt1
+    type: BIGINT
+    years: 2009-2023
+  XGRNTA1:
+    name: grnta1_flag
+    type: VARCHAR
+    flag_for: grnta1
+    years: 2009-2023
+  GRNTA1:
+    name: grnta1
+    type: BIGINT
+    years: 2009-2023
+  XGRNTN0:
+    name: grntn0_flag
+    type: VARCHAR
+    flag_for: grntn0
+    years: 2009-2023
+  GRNTN0:
+    name: grntn0
+    type: BIGINT
+    years: 2009-2023
+  XGRNTON0:
+    name: grnton0_flag
+    type: VARCHAR
+    flag_for: grnton0
+    years: 2009-2023
+  GRNTON0:
+    name: grnton0
+    type: BIGINT
+    years: 2009-2023
+  XGRNTWF0:
+    name: grntwf0_flag
+    type: VARCHAR
+    flag_for: grntwf0
+    years: 2009-2023
+  GRNTWF0:
+    name: grntwf0
+    type: BIGINT
+    years: 2009-2023
+  XGRNTOF0:
+    name: grntof0_flag
+    type: VARCHAR
+    flag_for: grntof0
+    years: 2009-2023
+  GRNTOF0:
+    name: grntof0
+    type: BIGINT
+    years: 2009-2023
+  XGRNTUN0:
+    name: grntun0_flag
+    type: VARCHAR
+    flag_for: grntun0
+    years: 2009-2023
+  GRNTUN0:
+    name: grntun0
+    type: BIGINT
+    years: 2009-2023
+  XGRNTT0:
+    name: grntt0_flag
+    type: VARCHAR
+    flag_for: grntt0
+    years: 2009-2023
+  GRNTT0:
+    name: grntt0
+    type: BIGINT
+    years: 2009-2023
+  XGRNTA0:
+    name: grnta0_flag
+    type: VARCHAR
+    flag_for: grnta0
+    years: 2009-2023
+  GRNTA0:
+    name: grnta0
+    type: BIGINT
+    years: 2009-2023
+  XGRN4N2:
+    name: grn4n2_flag
+    type: VARCHAR
+    flag_for: grn4n2
+    years: 2009-2023
+  GRN4N2:
+    name: grn4n2
+    type: BIGINT
+    years: 2009-2023
+  XGRN4ON2:
+    name: grn4on2_flag
+    type: VARCHAR
+    flag_for: grn4on2
+    years: 2009-2023
+  GRN4ON2:
+    name: grn4on2
+    type: BIGINT
+    years: 2009-2023
+  XGRN4WF2:
+    name: grn4wf2_flag
+    type: VARCHAR
+    flag_for: grn4wf2
+    years: 2009-2023
+  GRN4WF2:
+    name: grn4wf2
+    type: BIGINT
+    years: 2009-2023
+  XGRN4OF2:
+    name: grn4of2_flag
+    type: VARCHAR
+    flag_for: grn4of2
+    years: 2009-2023
+  GRN4OF2:
+    name: grn4of2
+    type: BIGINT
+    years: 2009-2023
+  XGRN4UN2:
+    name: grn4un2_flag
+    type: VARCHAR
+    flag_for: grn4un2
+    years: 2009-2023
+  GRN4UN2:
+    name: grn4un2
+    type: BIGINT
+    years: 2009-2023
+  XGRN4T2:
+    name: grn4t2_flag
+    type: VARCHAR
+    flag_for: grn4t2
+    years: 2009-2023
+  GRN4T2:
+    name: grn4t2
+    type: BIGINT
+    years: 2009-2023
+  XGRN4A2:
+    name: grn4a2_flag
+    type: VARCHAR
+    flag_for: grn4a2
+    years: 2009-2023
+  GRN4A2:
+    name: grn4a2
+    type: BIGINT
+    years: 2009-2023
+  XGRN4N12:
+    name: grn4n12_flag
+    type: VARCHAR
+    flag_for: grn4n12
+    years: 2009-2023
+  GRN4N12:
+    name: grn4n12
+    type: BIGINT
+    years: 2009-2023
+  XGRN4T12:
+    name: grn4t12_flag
+    type: VARCHAR
+    flag_for: grn4t12
+    years: 2009-2023
+  GRN4T12:
+    name: grn4t12
+    type: BIGINT
+    years: 2009-2023
+  XGRN4A12:
+    name: grn4a12_flag
+    type: VARCHAR
+    flag_for: grn4a12
+    years: 2009-2023
+  GRN4A12:
+    name: grn4a12
+    type: BIGINT
+    years: 2009-2023
+  XGRN4N22:
+    name: grn4n22_flag
+    type: VARCHAR
+    flag_for: grn4n22
+    years: 2009-2023
+  GRN4N22:
+    name: grn4n22
+    type: BIGINT
+    years: 2009-2023
+  XGRN4T22:
+    name: grn4t22_flag
+    type: VARCHAR
+    flag_for: grn4t22
+    years: 2009-2023
+  GRN4T22:
+    name: grn4t22
+    type: BIGINT
+    years: 2009-2023
+  XGRN4A22:
+    name: grn4a22_flag
+    type: VARCHAR
+    flag_for: grn4a22
+    years: 2009-2023
+  GRN4A22:
+    name: grn4a22
+    type: BIGINT
+    years: 2009-2023
+  XGRN4N32:
+    name: grn4n32_flag
+    type: VARCHAR
+    flag_for: grn4n32
+    years: 2009-2023
+  GRN4N32:
+    name: grn4n32
+    type: BIGINT
+    years: 2009-2023
+  XGRN4T32:
+    name: grn4t32_flag
+    type: VARCHAR
+    flag_for: grn4t32
+    years: 2009-2023
+  GRN4T32:
+    name: grn4t32
+    type: BIGINT
+    years: 2009-2023
+  XGRN4A32:
+    name: grn4a32_flag
+    type: VARCHAR
+    flag_for: grn4a32
+    years: 2009-2023
+  GRN4A32:
+    name: grn4a32
+    type: BIGINT
+    years: 2009-2023
+  XGRN4N42:
+    name: grn4n42_flag
+    type: VARCHAR
+    flag_for: grn4n42
+    years: 2009-2023
+  GRN4N42:
+    name: grn4n42
+    type: BIGINT
+    years: 2009-2023
+  XGRN4T42:
+    name: grn4t42_flag
+    type: VARCHAR
+    flag_for: grn4t42
+    years: 2009-2023
+  GRN4T42:
+    name: grn4t42
+    type: BIGINT
+    years: 2009-2023
+  XGRN4A42:
+    name: grn4a42_flag
+    type: VARCHAR
+    flag_for: grn4a42
+    years: 2009-2023
+  GRN4A42:
+    name: grn4a42
+    type: BIGINT
+    years: 2009-2023
+  XGRN4N52:
+    name: grn4n52_flag
+    type: VARCHAR
+    flag_for: grn4n52
+    years: 2009-2023
+  GRN4N52:
+    name: grn4n52
+    type: BIGINT
+    years: 2009-2023
+  XGRN4T52:
+    name: grn4t52_flag
+    type: VARCHAR
+    flag_for: grn4t52
+    years: 2009-2023
+  GRN4T52:
+    name: grn4t52
+    type: BIGINT
+    years: 2009-2023
+  XGRN4A52:
+    name: grn4a52_flag
+    type: VARCHAR
+    flag_for: grn4a52
+    years: 2009-2023
+  GRN4A52:
+    name: grn4a52
+    type: BIGINT
+    years: 2009-2023
+  XNPGRN2:
+    name: npgrn2_flag
+    type: VARCHAR
+    flag_for: npgrn2
+    years: 2009-2023
+  NPGRN2:
+    name: npgrn2
+    type: BIGINT
+    years: 2009-2023
+  XNPGRN1:
+    name: npgrn1_flag
+    type: VARCHAR
+    flag_for: npgrn1
+    years: 2009-2023
+  NPGRN1:
+    name: npgrn1
+    type: BIGINT
+    years: 2009-2023
+  XNPGRN0:
+    name: npgrn0_flag
+    type: VARCHAR
+    flag_for: npgrn0
+    years: 2009-2023
+  NPGRN0:
+    name: npgrn0
+    type: BIGINT
+    years: 2009-2023
+  XNPT412:
+    name: npt412_flag
+    type: VARCHAR
+    flag_for: npt412
+    years: 2009-2023
+  NPT412:
+    name: npt412
+    type: BIGINT
+    years: 2009-2023
+  XNPT422:
+    name: npt422_flag
+    type: VARCHAR
+    flag_for: npt422
+    years: 2009-2023
+  NPT422:
+    name: npt422
+    type: BIGINT
+    years: 2009-2023
+  XNPT432:
+    name: npt432_flag
+    type: VARCHAR
+    flag_for: npt432
+    years: 2009-2023
+  NPT432:
+    name: npt432
+    type: BIGINT
+    years: 2009-2023
+  XNPT442:
+    name: npt442_flag
+    type: VARCHAR
+    flag_for: npt442
+    years: 2009-2023
+  NPT442:
+    name: npt442
+    type: BIGINT
+    years: 2009-2023
+  XNPT452:
+    name: npt452_flag
+    type: VARCHAR
+    flag_for: npt452
+    years: 2009-2023
+  NPT452:
+    name: npt452
+    type: BIGINT
+    years: 2009-2023
+  XAIDFSIN:
+    name: aidfsin_flag
+    type: VARCHAR
+    flag_for: aidfsin
+    years: 2010-2024
+  AIDFSIN:
+    name: aidfsin
+    type: BIGINT
+    years: 2010-2024
+  XAIDFSIP:
+    name: aidfsip_flag
+    type: VARCHAR
+    flag_for: aidfsip
+    years: 2010-2024
+  AIDFSIP:
+    name: aidfsip
+    type: BIGINT
+    years: 2010-2024
+  XGIS4N1:
+    name: gis4n1_flag
+    type: VARCHAR
+    flag_for: gis4n1
+    years: 2010-2023
+  GIS4N1:
+    name: gis4n1
+    type: BIGINT
+    years: 2010-2023
+  XGIS4ON1:
+    name: gis4on1_flag
+    type: VARCHAR
+    flag_for: gis4on1
+    years: 2010-2023
+  GIS4ON1:
+    name: gis4on1
+    type: BIGINT
+    years: 2010-2023
+  XGIS4WF1:
+    name: gis4wf1_flag
+    type: VARCHAR
+    flag_for: gis4wf1
+    years: 2010-2023
+  GIS4WF1:
+    name: gis4wf1
+    type: BIGINT
+    years: 2010-2023
+  XGIS4OF1:
+    name: gis4of1_flag
+    type: VARCHAR
+    flag_for: gis4of1
+    years: 2010-2023
+  GIS4OF1:
+    name: gis4of1
+    type: BIGINT
+    years: 2010-2023
+  XGIS4UN1:
+    name: gis4un1_flag
+    type: VARCHAR
+    flag_for: gis4un1
+    years: 2010-2023
+  GIS4UN1:
+    name: gis4un1
+    type: BIGINT
+    years: 2010-2023
+  XGIS4T1:
+    name: gis4t1_flag
+    type: VARCHAR
+    flag_for: gis4t1
+    years: 2010-2023
+  GIS4T1:
+    name: gis4t1
+    type: BIGINT
+    years: 2010-2023
+  XGIS4A1:
+    name: gis4a1_flag
+    type: VARCHAR
+    flag_for: gis4a1
+    years: 2010-2023
+  GIS4A1:
+    name: gis4a1
+    type: BIGINT
+    years: 2010-2023
+  XGIS4N11:
+    name: gis4n11_flag
+    type: VARCHAR
+    flag_for: gis4n11
+    years: 2010-2023
+  GIS4N11:
+    name: gis4n11
+    type: BIGINT
+    years: 2010-2023
+  XGIS4T11:
+    name: gis4t11_flag
+    type: VARCHAR
+    flag_for: gis4t11
+    years: 2010-2023
+  GIS4T11:
+    name: gis4t11
+    type: BIGINT
+    years: 2010-2023
+  XGIS4A11:
+    name: gis4a11_flag
+    type: VARCHAR
+    flag_for: gis4a11
+    years: 2010-2023
+  GIS4A11:
+    name: gis4a11
+    type: BIGINT
+    years: 2010-2023
+  XGIS4N21:
+    name: gis4n21_flag
+    type: VARCHAR
+    flag_for: gis4n21
+    years: 2010-2023
+  GIS4N21:
+    name: gis4n21
+    type: BIGINT
+    years: 2010-2023
+  XGIS4T21:
+    name: gis4t21_flag
+    type: VARCHAR
+    flag_for: gis4t21
+    years: 2010-2023
+  GIS4T21:
+    name: gis4t21
+    type: BIGINT
+    years: 2010-2023
+  XGIS4A21:
+    name: gis4a21_flag
+    type: VARCHAR
+    flag_for: gis4a21
+    years: 2010-2023
+  GIS4A21:
+    name: gis4a21
+    type: BIGINT
+    years: 2010-2023
+  XGIS4N31:
+    name: gis4n31_flag
+    type: VARCHAR
+    flag_for: gis4n31
+    years: 2010-2023
+  GIS4N31:
+    name: gis4n31
+    type: BIGINT
+    years: 2010-2023
+  XGIS4T31:
+    name: gis4t31_flag
+    type: VARCHAR
+    flag_for: gis4t31
+    years: 2010-2023
+  GIS4T31:
+    name: gis4t31
+    type: BIGINT
+    years: 2010-2023
+  XGIS4A31:
+    name: gis4a31_flag
+    type: VARCHAR
+    flag_for: gis4a31
+    years: 2010-2023
+  GIS4A31:
+    name: gis4a31
+    type: BIGINT
+    years: 2010-2023
+  XGIS4N41:
+    name: gis4n41_flag
+    type: VARCHAR
+    flag_for: gis4n41
+    years: 2010-2023
+  GIS4N41:
+    name: gis4n41
+    type: BIGINT
+    years: 2010-2023
+  XGIS4T41:
+    name: gis4t41_flag
+    type: VARCHAR
+    flag_for: gis4t41
+    years: 2010-2023
+  GIS4T41:
+    name: gis4t41
+    type: BIGINT
+    years: 2010-2023
+  XGIS4A41:
+    name: gis4a41_flag
+    type: VARCHAR
+    flag_for: gis4a41
+    years: 2010-2023
+  GIS4A41:
+    name: gis4a41
+    type: BIGINT
+    years: 2010-2023
+  XGIS4N51:
+    name: gis4n51_flag
+    type: VARCHAR
+    flag_for: gis4n51
+    years: 2010-2023
+  GIS4N51:
+    name: gis4n51
+    type: BIGINT
+    years: 2010-2023
+  XGIS4T51:
+    name: gis4t51_flag
+    type: VARCHAR
+    flag_for: gis4t51
+    years: 2010-2023
+  GIS4T51:
+    name: gis4t51
+    type: BIGINT
+    years: 2010-2023
+  XGIS4A51:
+    name: gis4a51_flag
+    type: VARCHAR
+    flag_for: gis4a51
+    years: 2010-2023
+  GIS4A51:
+    name: gis4a51
+    type: BIGINT
+    years: 2010-2023
+  XNPIS411:
+    name: npis411_flag
+    type: VARCHAR
+    flag_for: npis411
+    years: 2010-2023
+  NPIS411:
+    name: npis411
+    type: BIGINT
+    years: 2010-2023
+  XNPIS421:
+    name: npis421_flag
+    type: VARCHAR
+    flag_for: npis421
+    years: 2010-2023
+  NPIS421:
+    name: npis421
+    type: BIGINT
+    years: 2010-2023
+  XNPIS431:
+    name: npis431_flag
+    type: VARCHAR
+    flag_for: npis431
+    years: 2010-2023
+  NPIS431:
+    name: npis431
+    type: BIGINT
+    years: 2010-2023
+  XNPIS441:
+    name: npis441_flag
+    type: VARCHAR
+    flag_for: npis441
+    years: 2010-2023
+  NPIS441:
+    name: npis441
+    type: BIGINT
+    years: 2010-2023
+  XNPIS451:
+    name: npis451_flag
+    type: VARCHAR
+    flag_for: npis451
+    years: 2010-2023
+  NPIS451:
+    name: npis451
+    type: BIGINT
+    years: 2010-2023
+  XGRN4N1:
+    name: grn4n1_flag
+    type: VARCHAR
+    flag_for: grn4n1
+    years: 2010-2023
+  GRN4N1:
+    name: grn4n1
+    type: BIGINT
+    years: 2010-2023
+  XGRN4ON1:
+    name: grn4on1_flag
+    type: VARCHAR
+    flag_for: grn4on1
+    years: 2010-2023
+  GRN4ON1:
+    name: grn4on1
+    type: BIGINT
+    years: 2010-2023
+  XGRN4WF1:
+    name: grn4wf1_flag
+    type: VARCHAR
+    flag_for: grn4wf1
+    years: 2010-2023
+  GRN4WF1:
+    name: grn4wf1
+    type: BIGINT
+    years: 2010-2023
+  XGRN4OF1:
+    name: grn4of1_flag
+    type: VARCHAR
+    flag_for: grn4of1
+    years: 2010-2023
+  GRN4OF1:
+    name: grn4of1
+    type: BIGINT
+    years: 2010-2023
+  XGRN4UN1:
+    name: grn4un1_flag
+    type: VARCHAR
+    flag_for: grn4un1
+    years: 2010-2023
+  GRN4UN1:
+    name: grn4un1
+    type: BIGINT
+    years: 2010-2023
+  XGRN4T1:
+    name: grn4t1_flag
+    type: VARCHAR
+    flag_for: grn4t1
+    years: 2010-2023
+  GRN4T1:
+    name: grn4t1
+    type: BIGINT
+    years: 2010-2023
+  XGRN4A1:
+    name: grn4a1_flag
+    type: VARCHAR
+    flag_for: grn4a1
+    years: 2010-2023
+  GRN4A1:
+    name: grn4a1
+    type: BIGINT
+    years: 2010-2023
+  XGRN4N11:
+    name: grn4n11_flag
+    type: VARCHAR
+    flag_for: grn4n11
+    years: 2010-2023
+  GRN4N11:
+    name: grn4n11
+    type: BIGINT
+    years: 2010-2023
+  XGRN4T11:
+    name: grn4t11_flag
+    type: VARCHAR
+    flag_for: grn4t11
+    years: 2010-2023
+  GRN4T11:
+    name: grn4t11
+    type: BIGINT
+    years: 2010-2023
+  XGRN4A11:
+    name: grn4a11_flag
+    type: VARCHAR
+    flag_for: grn4a11
+    years: 2010-2023
+  GRN4A11:
+    name: grn4a11
+    type: BIGINT
+    years: 2010-2023
+  XGRN4N21:
+    name: grn4n21_flag
+    type: VARCHAR
+    flag_for: grn4n21
+    years: 2010-2023
+  GRN4N21:
+    name: grn4n21
+    type: BIGINT
+    years: 2010-2023
+  XGRN4T21:
+    name: grn4t21_flag
+    type: VARCHAR
+    flag_for: grn4t21
+    years: 2010-2023
+  GRN4T21:
+    name: grn4t21
+    type: BIGINT
+    years: 2010-2023
+  XGRN4A21:
+    name: grn4a21_flag
+    type: VARCHAR
+    flag_for: grn4a21
+    years: 2010-2023
+  GRN4A21:
+    name: grn4a21
+    type: BIGINT
+    years: 2010-2023
+  XGRN4N31:
+    name: grn4n31_flag
+    type: VARCHAR
+    flag_for: grn4n31
+    years: 2010-2023
+  GRN4N31:
+    name: grn4n31
+    type: BIGINT
+    years: 2010-2023
+  XGRN4T31:
+    name: grn4t31_flag
+    type: VARCHAR
+    flag_for: grn4t31
+    years: 2010-2023
+  GRN4T31:
+    name: grn4t31
+    type: BIGINT
+    years: 2010-2023
+  XGRN4A31:
+    name: grn4a31_flag
+    type: VARCHAR
+    flag_for: grn4a31
+    years: 2010-2023
+  GRN4A31:
+    name: grn4a31
+    type: BIGINT
+    years: 2010-2023
+  XGRN4N41:
+    name: grn4n41_flag
+    type: VARCHAR
+    flag_for: grn4n41
+    years: 2010-2023
+  GRN4N41:
+    name: grn4n41
+    type: BIGINT
+    years: 2010-2023
+  XGRN4T41:
+    name: grn4t41_flag
+    type: VARCHAR
+    flag_for: grn4t41
+    years: 2010-2023
+  GRN4T41:
+    name: grn4t41
+    type: BIGINT
+    years: 2010-2023
+  XGRN4A41:
+    name: grn4a41_flag
+    type: VARCHAR
+    flag_for: grn4a41
+    years: 2010-2023
+  GRN4A41:
+    name: grn4a41
+    type: BIGINT
+    years: 2010-2023
+  XGRN4N51:
+    name: grn4n51_flag
+    type: VARCHAR
+    flag_for: grn4n51
+    years: 2010-2023
+  GRN4N51:
+    name: grn4n51
+    type: BIGINT
+    years: 2010-2023
+  XGRN4T51:
+    name: grn4t51_flag
+    type: VARCHAR
+    flag_for: grn4t51
+    years: 2010-2023
+  GRN4T51:
+    name: grn4t51
+    type: BIGINT
+    years: 2010-2023
+  XGRN4A51:
+    name: grn4a51_flag
+    type: VARCHAR
+    flag_for: grn4a51
+    years: 2010-2023
+  GRN4A51:
+    name: grn4a51
+    type: BIGINT
+    years: 2010-2023
+  XNPT411:
+    name: npt411_flag
+    type: VARCHAR
+    flag_for: npt411
+    years: 2010-2023
+  NPT411:
+    name: npt411
+    type: BIGINT
+    years: 2010-2023
+  XNPT421:
+    name: npt421_flag
+    type: VARCHAR
+    flag_for: npt421
+    years: 2010-2023
+  NPT421:
+    name: npt421
+    type: BIGINT
+    years: 2010-2023
+  XNPT431:
+    name: npt431_flag
+    type: VARCHAR
+    flag_for: npt431
+    years: 2010-2023
+  NPT431:
+    name: npt431
+    type: BIGINT
+    years: 2010-2023
+  XNPT441:
+    name: npt441_flag
+    type: VARCHAR
+    flag_for: npt441
+    years: 2010-2023
+  NPT441:
+    name: npt441
+    type: BIGINT
+    years: 2010-2023
+  XNPT451:
+    name: npt451_flag
+    type: VARCHAR
+    flag_for: npt451
+    years: 2010-2023
+  NPT451:
+    name: npt451
+    type: BIGINT
+    years: 2010-2023
+  XSCFY11N:
+    name: scfy11n_flag
+    type: VARCHAR
+    flag_for: scfy11n
+    years: 2011-2018
+  SCFY11N:
+    name: scfy11n
+    type: BIGINT
+    years: 2011-2018
+  XSCFY11P:
+    name: scfy11p_flag
+    type: VARCHAR
+    flag_for: scfy11p
+    years: 2011-2018
+  SCFY11P:
+    name: scfy11p
+    type: BIGINT
+    years: 2011-2018
+  XSCFY12N:
+    name: scfy12n_flag
+    type: VARCHAR
+    flag_for: scfy12n
+    years: 2011-2018
+  SCFY12N:
+    name: scfy12n
+    type: BIGINT
+    years: 2011-2018
+  XSCFY12P:
+    name: scfy12p_flag
+    type: VARCHAR
+    flag_for: scfy12p
+    years: 2011-2018
+  SCFY12P:
+    name: scfy12p
+    type: BIGINT
+    years: 2011-2018
+  XSCFY13N:
+    name: scfy13n_flag
+    type: VARCHAR
+    flag_for: scfy13n
+    years: 2011-2018
+  SCFY13N:
+    name: scfy13n
+    type: BIGINT
+    years: 2011-2018
+  XSCFY13P:
+    name: scfy13p_flag
+    type: VARCHAR
+    flag_for: scfy13p
+    years: 2011-2018
+  SCFY13P:
+    name: scfy13p
+    type: BIGINT
+    years: 2011-2018
+  XSCFY14N:
+    name: scfy14n_flag
+    type: VARCHAR
+    flag_for: scfy14n
+    years: 2011-2018
+  SCFY14N:
+    name: scfy14n
+    type: BIGINT
+    years: 2011-2018
+  XSCFY14P:
+    name: scfy14p_flag
+    type: VARCHAR
+    flag_for: scfy14p
+    years: 2011-2018
+  SCFY14P:
+    name: scfy14p
+    type: BIGINT
+    years: 2011-2018
+  XGIS4N0:
+    name: gis4n0_flag
+    type: VARCHAR
+    flag_for: gis4n0
+    years: 2011-2023
+  GIS4N0:
+    name: gis4n0
+    type: BIGINT
+    years: 2011-2023
+  XGIS4ON0:
+    name: gis4on0_flag
+    type: VARCHAR
+    flag_for: gis4on0
+    years: 2011-2023
+  GIS4ON0:
+    name: gis4on0
+    type: BIGINT
+    years: 2011-2023
+  XGIS4WF0:
+    name: gis4wf0_flag
+    type: VARCHAR
+    flag_for: gis4wf0
+    years: 2011-2023
+  GIS4WF0:
+    name: gis4wf0
+    type: BIGINT
+    years: 2011-2023
+  XGIS4OF0:
+    name: gis4of0_flag
+    type: VARCHAR
+    flag_for: gis4of0
+    years: 2011-2023
+  GIS4OF0:
+    name: gis4of0
+    type: BIGINT
+    years: 2011-2023
+  XGIS4UN0:
+    name: gis4un0_flag
+    type: VARCHAR
+    flag_for: gis4un0
+    years: 2011-2023
+  GIS4UN0:
+    name: gis4un0
+    type: BIGINT
+    years: 2011-2023
+  XGIS4T0:
+    name: gis4t0_flag
+    type: VARCHAR
+    flag_for: gis4t0
+    years: 2011-2023
+  GIS4T0:
+    name: gis4t0
+    type: BIGINT
+    years: 2011-2023
+  XGIS4A0:
+    name: gis4a0_flag
+    type: VARCHAR
+    flag_for: gis4a0
+    years: 2011-2023
+  GIS4A0:
+    name: gis4a0
+    type: BIGINT
+    years: 2011-2023
+  XGIS4N10:
+    name: gis4n10_flag
+    type: VARCHAR
+    flag_for: gis4n10
+    years: 2011-2023
+  GIS4N10:
+    name: gis4n10
+    type: BIGINT
+    years: 2011-2023
+  XGIS4T10:
+    name: gis4t10_flag
+    type: VARCHAR
+    flag_for: gis4t10
+    years: 2011-2023
+  GIS4T10:
+    name: gis4t10
+    type: BIGINT
+    years: 2011-2023
+  XGIS4A10:
+    name: gis4a10_flag
+    type: VARCHAR
+    flag_for: gis4a10
+    years: 2011-2023
+  GIS4A10:
+    name: gis4a10
+    type: BIGINT
+    years: 2011-2023
+  XGIS4N20:
+    name: gis4n20_flag
+    type: VARCHAR
+    flag_for: gis4n20
+    years: 2011-2023
+  GIS4N20:
+    name: gis4n20
+    type: BIGINT
+    years: 2011-2023
+  XGIS4T20:
+    name: gis4t20_flag
+    type: VARCHAR
+    flag_for: gis4t20
+    years: 2011-2023
+  GIS4T20:
+    name: gis4t20
+    type: BIGINT
+    years: 2011-2023
+  XGIS4A20:
+    name: gis4a20_flag
+    type: VARCHAR
+    flag_for: gis4a20
+    years: 2011-2023
+  GIS4A20:
+    name: gis4a20
+    type: BIGINT
+    years: 2011-2023
+  XGIS4N30:
+    name: gis4n30_flag
+    type: VARCHAR
+    flag_for: gis4n30
+    years: 2011-2023
+  GIS4N30:
+    name: gis4n30
+    type: BIGINT
+    years: 2011-2023
+  XGIS4T30:
+    name: gis4t30_flag
+    type: VARCHAR
+    flag_for: gis4t30
+    years: 2011-2023
+  GIS4T30:
+    name: gis4t30
+    type: BIGINT
+    years: 2011-2023
+  XGIS4A30:
+    name: gis4a30_flag
+    type: VARCHAR
+    flag_for: gis4a30
+    years: 2011-2023
+  GIS4A30:
+    name: gis4a30
+    type: BIGINT
+    years: 2011-2023
+  XGIS4N40:
+    name: gis4n40_flag
+    type: VARCHAR
+    flag_for: gis4n40
+    years: 2011-2023
+  GIS4N40:
+    name: gis4n40
+    type: BIGINT
+    years: 2011-2023
+  XGIS4T40:
+    name: gis4t40_flag
+    type: VARCHAR
+    flag_for: gis4t40
+    years: 2011-2023
+  GIS4T40:
+    name: gis4t40
+    type: BIGINT
+    years: 2011-2023
+  XGIS4A40:
+    name: gis4a40_flag
+    type: VARCHAR
+    flag_for: gis4a40
+    years: 2011-2023
+  GIS4A40:
+    name: gis4a40
+    type: BIGINT
+    years: 2011-2023
+  XGIS4N50:
+    name: gis4n50_flag
+    type: VARCHAR
+    flag_for: gis4n50
+    years: 2011-2023
+  GIS4N50:
+    name: gis4n50
+    type: BIGINT
+    years: 2011-2023
+  XGIS4T50:
+    name: gis4t50_flag
+    type: VARCHAR
+    flag_for: gis4t50
+    years: 2011-2023
+  GIS4T50:
+    name: gis4t50
+    type: BIGINT
+    years: 2011-2023
+  XGIS4A50:
+    name: gis4a50_flag
+    type: VARCHAR
+    flag_for: gis4a50
+    years: 2011-2023
+  GIS4A50:
+    name: gis4a50
+    type: BIGINT
+    years: 2011-2023
+  XNPIS410:
+    name: npis410_flag
+    type: VARCHAR
+    flag_for: npis410
+    years: 2011-2023
+  NPIS410:
+    name: npis410
+    type: BIGINT
+    years: 2011-2023
+  XNPIS420:
+    name: npis420_flag
+    type: VARCHAR
+    flag_for: npis420
+    years: 2011-2023
+  NPIS420:
+    name: npis420
+    type: BIGINT
+    years: 2011-2023
+  XNPIS430:
+    name: npis430_flag
+    type: VARCHAR
+    flag_for: npis430
+    years: 2011-2023
+  NPIS430:
+    name: npis430
+    type: BIGINT
+    years: 2011-2023
+  XNPIS440:
+    name: npis440_flag
+    type: VARCHAR
+    flag_for: npis440
+    years: 2011-2023
+  NPIS440:
+    name: npis440
+    type: BIGINT
+    years: 2011-2023
+  XNPIS450:
+    name: npis450_flag
+    type: VARCHAR
+    flag_for: npis450
+    years: 2011-2023
+  NPIS450:
+    name: npis450
+    type: BIGINT
+    years: 2011-2023
+  XGRN4N0:
+    name: grn4n0_flag
+    type: VARCHAR
+    flag_for: grn4n0
+    years: 2011-2023
+  GRN4N0:
+    name: grn4n0
+    type: BIGINT
+    years: 2011-2023
+  XGRN4ON0:
+    name: grn4on0_flag
+    type: VARCHAR
+    flag_for: grn4on0
+    years: 2011-2023
+  GRN4ON0:
+    name: grn4on0
+    type: BIGINT
+    years: 2011-2023
+  XGRN4WF0:
+    name: grn4wf0_flag
+    type: VARCHAR
+    flag_for: grn4wf0
+    years: 2011-2023
+  GRN4WF0:
+    name: grn4wf0
+    type: BIGINT
+    years: 2011-2023
+  XGRN4OF0:
+    name: grn4of0_flag
+    type: VARCHAR
+    flag_for: grn4of0
+    years: 2011-2023
+  GRN4OF0:
+    name: grn4of0
+    type: BIGINT
+    years: 2011-2023
+  XGRN4UN0:
+    name: grn4un0_flag
+    type: VARCHAR
+    flag_for: grn4un0
+    years: 2011-2023
+  GRN4UN0:
+    name: grn4un0
+    type: BIGINT
+    years: 2011-2023
+  XGRN4T0:
+    name: grn4t0_flag
+    type: VARCHAR
+    flag_for: grn4t0
+    years: 2011-2023
+  GRN4T0:
+    name: grn4t0
+    type: BIGINT
+    years: 2011-2023
+  XGRN4A0:
+    name: grn4a0_flag
+    type: VARCHAR
+    flag_for: grn4a0
+    years: 2011-2023
+  GRN4A0:
+    name: grn4a0
+    type: BIGINT
+    years: 2011-2023
+  XGRN4N10:
+    name: grn4n10_flag
+    type: VARCHAR
+    flag_for: grn4n10
+    years: 2011-2023
+  GRN4N10:
+    name: grn4n10
+    type: BIGINT
+    years: 2011-2023
+  XGRN4T10:
+    name: grn4t10_flag
+    type: VARCHAR
+    flag_for: grn4t10
+    years: 2011-2023
+  GRN4T10:
+    name: grn4t10
+    type: BIGINT
+    years: 2011-2023
+  XGRN4A10:
+    name: grn4a10_flag
+    type: VARCHAR
+    flag_for: grn4a10
+    years: 2011-2023
+  GRN4A10:
+    name: grn4a10
+    type: BIGINT
+    years: 2011-2023
+  XGRN4N20:
+    name: grn4n20_flag
+    type: VARCHAR
+    flag_for: grn4n20
+    years: 2011-2023
+  GRN4N20:
+    name: grn4n20
+    type: BIGINT
+    years: 2011-2023
+  XGRN4T20:
+    name: grn4t20_flag
+    type: VARCHAR
+    flag_for: grn4t20
+    years: 2011-2023
+  GRN4T20:
+    name: grn4t20
+    type: BIGINT
+    years: 2011-2023
+  XGRN4A20:
+    name: grn4a20_flag
+    type: VARCHAR
+    flag_for: grn4a20
+    years: 2011-2023
+  GRN4A20:
+    name: grn4a20
+    type: BIGINT
+    years: 2011-2023
+  XGRN4N30:
+    name: grn4n30_flag
+    type: VARCHAR
+    flag_for: grn4n30
+    years: 2011-2023
+  GRN4N30:
+    name: grn4n30
+    type: BIGINT
+    years: 2011-2023
+  XGRN4T30:
+    name: grn4t30_flag
+    type: VARCHAR
+    flag_for: grn4t30
+    years: 2011-2023
+  GRN4T30:
+    name: grn4t30
+    type: BIGINT
+    years: 2011-2023
+  XGRN4A30:
+    name: grn4a30_flag
+    type: VARCHAR
+    flag_for: grn4a30
+    years: 2011-2023
+  GRN4A30:
+    name: grn4a30
+    type: BIGINT
+    years: 2011-2023
+  XGRN4N40:
+    name: grn4n40_flag
+    type: VARCHAR
+    flag_for: grn4n40
+    years: 2011-2023
+  GRN4N40:
+    name: grn4n40
+    type: BIGINT
+    years: 2011-2023
+  XGRN4T40:
+    name: grn4t40_flag
+    type: VARCHAR
+    flag_for: grn4t40
+    years: 2011-2023
+  GRN4T40:
+    name: grn4t40
+    type: BIGINT
+    years: 2011-2023
+  XGRN4A40:
+    name: grn4a40_flag
+    type: VARCHAR
+    flag_for: grn4a40
+    years: 2011-2023
+  GRN4A40:
+    name: grn4a40
+    type: BIGINT
+    years: 2011-2023
+  XGRN4N50:
+    name: grn4n50_flag
+    type: VARCHAR
+    flag_for: grn4n50
+    years: 2011-2023
+  GRN4N50:
+    name: grn4n50
+    type: BIGINT
+    years: 2011-2023
+  XGRN4T50:
+    name: grn4t50_flag
+    type: VARCHAR
+    flag_for: grn4t50
+    years: 2011-2023
+  GRN4T50:
+    name: grn4t50
+    type: BIGINT
+    years: 2011-2023
+  XGRN4A50:
+    name: grn4a50_flag
+    type: VARCHAR
+    flag_for: grn4a50
+    years: 2011-2023
+  GRN4A50:
+    name: grn4a50
+    type: BIGINT
+    years: 2011-2023
+  XNPT410:
+    name: npt410_flag
+    type: VARCHAR
+    flag_for: npt410
+    years: 2011-2023
+  NPT410:
+    name: npt410
+    type: BIGINT
+    years: 2011-2023
+  XNPT420:
+    name: npt420_flag
+    type: VARCHAR
+    flag_for: npt420
+    years: 2011-2023
+  NPT420:
+    name: npt420
+    type: BIGINT
+    years: 2011-2023
+  XNPT430:
+    name: npt430_flag
+    type: VARCHAR
+    flag_for: npt430
+    years: 2011-2023
+  NPT430:
+    name: npt430
+    type: BIGINT
+    years: 2011-2023
+  XNPT440:
+    name: npt440_flag
+    type: VARCHAR
+    flag_for: npt440
+    years: 2011-2023
+  NPT440:
+    name: npt440
+    type: BIGINT
+    years: 2011-2023
+  XNPT450:
+    name: npt450_flag
+    type: VARCHAR
+    flag_for: npt450
+    years: 2011-2023
+  NPT450:
+    name: npt450
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G2:
+    name: gis4g2_flag
+    type: VARCHAR
+    flag_for: gis4g2
+    years: 2011-2023
+  GIS4G2:
+    name: gis4g2
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G12:
+    name: gis4g12_flag
+    type: VARCHAR
+    flag_for: gis4g12
+    years: 2011-2023
+  GIS4G12:
+    name: gis4g12
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G22:
+    name: gis4g22_flag
+    type: VARCHAR
+    flag_for: gis4g22
+    years: 2011-2023
+  GIS4G22:
+    name: gis4g22
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G32:
+    name: gis4g32_flag
+    type: VARCHAR
+    flag_for: gis4g32
+    years: 2011-2023
+  GIS4G32:
+    name: gis4g32
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G42:
+    name: gis4g42_flag
+    type: VARCHAR
+    flag_for: gis4g42
+    years: 2011-2023
+  GIS4G42:
+    name: gis4g42
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G52:
+    name: gis4g52_flag
+    type: VARCHAR
+    flag_for: gis4g52
+    years: 2011-2023
+  GIS4G52:
+    name: gis4g52
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G1:
+    name: gis4g1_flag
+    type: VARCHAR
+    flag_for: gis4g1
+    years: 2011-2023
+  GIS4G1:
+    name: gis4g1
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G11:
+    name: gis4g11_flag
+    type: VARCHAR
+    flag_for: gis4g11
+    years: 2011-2023
+  GIS4G11:
+    name: gis4g11
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G21:
+    name: gis4g21_flag
+    type: VARCHAR
+    flag_for: gis4g21
+    years: 2011-2023
+  GIS4G21:
+    name: gis4g21
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G31:
+    name: gis4g31_flag
+    type: VARCHAR
+    flag_for: gis4g31
+    years: 2011-2023
+  GIS4G31:
+    name: gis4g31
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G41:
+    name: gis4g41_flag
+    type: VARCHAR
+    flag_for: gis4g41
+    years: 2011-2023
+  GIS4G41:
+    name: gis4g41
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G51:
+    name: gis4g51_flag
+    type: VARCHAR
+    flag_for: gis4g51
+    years: 2011-2023
+  GIS4G51:
+    name: gis4g51
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G0:
+    name: gis4g0_flag
+    type: VARCHAR
+    flag_for: gis4g0
+    years: 2011-2023
+  GIS4G0:
+    name: gis4g0
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G10:
+    name: gis4g10_flag
+    type: VARCHAR
+    flag_for: gis4g10
+    years: 2011-2023
+  GIS4G10:
+    name: gis4g10
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G20:
+    name: gis4g20_flag
+    type: VARCHAR
+    flag_for: gis4g20
+    years: 2011-2023
+  GIS4G20:
+    name: gis4g20
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G30:
+    name: gis4g30_flag
+    type: VARCHAR
+    flag_for: gis4g30
+    years: 2011-2023
+  GIS4G30:
+    name: gis4g30
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G40:
+    name: gis4g40_flag
+    type: VARCHAR
+    flag_for: gis4g40
+    years: 2011-2023
+  GIS4G40:
+    name: gis4g40
+    type: BIGINT
+    years: 2011-2023
+  XGIS4G50:
+    name: gis4g50_flag
+    type: VARCHAR
+    flag_for: gis4g50
+    years: 2011-2023
+  GIS4G50:
+    name: gis4g50
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G2:
+    name: grn4g2_flag
+    type: VARCHAR
+    flag_for: grn4g2
+    years: 2011-2023
+  GRN4G2:
+    name: grn4g2
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G12:
+    name: grn4g12_flag
+    type: VARCHAR
+    flag_for: grn4g12
+    years: 2011-2023
+  GRN4G12:
+    name: grn4g12
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G22:
+    name: grn4g22_flag
+    type: VARCHAR
+    flag_for: grn4g22
+    years: 2011-2023
+  GRN4G22:
+    name: grn4g22
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G32:
+    name: grn4g32_flag
+    type: VARCHAR
+    flag_for: grn4g32
+    years: 2011-2023
+  GRN4G32:
+    name: grn4g32
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G42:
+    name: grn4g42_flag
+    type: VARCHAR
+    flag_for: grn4g42
+    years: 2011-2023
+  GRN4G42:
+    name: grn4g42
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G52:
+    name: grn4g52_flag
+    type: VARCHAR
+    flag_for: grn4g52
+    years: 2011-2023
+  GRN4G52:
+    name: grn4g52
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G1:
+    name: grn4g1_flag
+    type: VARCHAR
+    flag_for: grn4g1
+    years: 2011-2023
+  GRN4G1:
+    name: grn4g1
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G11:
+    name: grn4g11_flag
+    type: VARCHAR
+    flag_for: grn4g11
+    years: 2011-2023
+  GRN4G11:
+    name: grn4g11
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G21:
+    name: grn4g21_flag
+    type: VARCHAR
+    flag_for: grn4g21
+    years: 2011-2023
+  GRN4G21:
+    name: grn4g21
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G31:
+    name: grn4g31_flag
+    type: VARCHAR
+    flag_for: grn4g31
+    years: 2011-2023
+  GRN4G31:
+    name: grn4g31
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G41:
+    name: grn4g41_flag
+    type: VARCHAR
+    flag_for: grn4g41
+    years: 2011-2023
+  GRN4G41:
+    name: grn4g41
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G51:
+    name: grn4g51_flag
+    type: VARCHAR
+    flag_for: grn4g51
+    years: 2011-2023
+  GRN4G51:
+    name: grn4g51
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G0:
+    name: grn4g0_flag
+    type: VARCHAR
+    flag_for: grn4g0
+    years: 2011-2023
+  GRN4G0:
+    name: grn4g0
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G10:
+    name: grn4g10_flag
+    type: VARCHAR
+    flag_for: grn4g10
+    years: 2011-2023
+  GRN4G10:
+    name: grn4g10
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G20:
+    name: grn4g20_flag
+    type: VARCHAR
+    flag_for: grn4g20
+    years: 2011-2023
+  GRN4G20:
+    name: grn4g20
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G30:
+    name: grn4g30_flag
+    type: VARCHAR
+    flag_for: grn4g30
+    years: 2011-2023
+  GRN4G30:
+    name: grn4g30
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G40:
+    name: grn4g40_flag
+    type: VARCHAR
+    flag_for: grn4g40
+    years: 2011-2023
+  GRN4G40:
+    name: grn4g40
+    type: BIGINT
+    years: 2011-2023
+  XGRN4G50:
+    name: grn4g50_flag
+    type: VARCHAR
+    flag_for: grn4g50
+    years: 2011-2023
+  GRN4G50:
+    name: grn4g50
+    type: BIGINT
+    years: 2011-2023
+  XSCUGDGSK:
+    name: scugdgsk_flag
+    type: VARCHAR
+    flag_for: scugdgsk
+    years: 2022-2024
+  SCUGDGSK:
+    name: scugdgsk
+    type: BIGINT
+    years: 2022-2024
+  XSCUGNDGS:
+    name: scugndgs_flag
+    type: VARCHAR
+    flag_for: scugndgs
+    years: 2022-2024
+  SCUGNDGS:
+    name: scugndgs
+    type: BIGINT
+    years: 2022-2024
+  XSCFA2DG:
+    name: scfa2dg_flag
+    type: VARCHAR
+    flag_for: scfa2dg
+    years: 2022-2024
+  SCFA2DG:
+    name: scfa2dg
+    type: BIGINT
+    years: 2022-2024
+  XSCFA2ND:
+    name: scfa2nd_flag
+    type: VARCHAR
+    flag_for: scfa2nd
+    years: 2022-2024
+  SCFA2ND:
+    name: scfa2nd
+    type: BIGINT
+    years: 2022-2024
+  XSCFY2DG:
+    name: scfy2dg_flag
+    type: VARCHAR
+    flag_for: scfy2dg
+    years: 2022-2024
+  SCFY2DG:
+    name: scfy2dg
+    type: BIGINT
+    years: 2022-2024
+  XSCFY2ND:
+    name: scfy2nd_flag
+    type: VARCHAR
+    flag_for: scfy2nd
+    years: 2022-2024
+  SCFY2ND:
+    name: scfy2nd
+    type: BIGINT
+    years: 2022-2024
+  XUDGAGRNTN:
+    name: udgagrntn_flag
+    type: VARCHAR
+    flag_for: udgagrntn
+    years: 2022-2024
+  UDGAGRNTN:
+    name: udgagrntn
+    type: BIGINT
+    years: 2022-2024
+  XUDGAGRNTP:
+    name: udgagrntp_flag
+    type: VARCHAR
+    flag_for: udgagrntp
+    years: 2022-2024
+  UDGAGRNTP:
+    name: udgagrntp
+    type: BIGINT
+    years: 2022-2024
+  XUDGAGRNTT:
+    name: udgagrntt_flag
+    type: VARCHAR
+    flag_for: udgagrntt
+    years: 2022-2024
+  UDGAGRNTT:
+    name: udgagrntt
+    type: BIGINT
+    years: 2022-2024
+  XUDGAGRNTA:
+    name: udgagrnta_flag
+    type: VARCHAR
+    flag_for: udgagrnta
+    years: 2022-2024
+  UDGAGRNTA:
+    name: udgagrnta
+    type: BIGINT
+    years: 2022-2024
+  XUNDAGRNTN:
+    name: undagrntn_flag
+    type: VARCHAR
+    flag_for: undagrntn
+    years: 2022-2024
+  UNDAGRNTN:
+    name: undagrntn
+    type: BIGINT
+    years: 2022-2024
+  XUNDAGRNTP:
+    name: undagrntp_flag
+    type: VARCHAR
+    flag_for: undagrntp
+    years: 2022-2024
+  UNDAGRNTP:
+    name: undagrntp
+    type: BIGINT
+    years: 2022-2024
+  XUNDAGRNTT:
+    name: undagrntt_flag
+    type: VARCHAR
+    flag_for: undagrntt
+    years: 2022-2024
+  UNDAGRNTT:
+    name: undagrntt
+    type: BIGINT
+    years: 2022-2024
+  XUNDAGRNTA:
+    name: undagrnta_flag
+    type: VARCHAR
+    flag_for: undagrnta
+    years: 2022-2024
+  UNDAGRNTA:
+    name: undagrnta
+    type: BIGINT
+    years: 2022-2024
+  XUDGPGRNTP:
+    name: udgpgrntp_flag
+    type: VARCHAR
+    flag_for: udgpgrntp
+    years: 2022-2024
+  UDGPGRNTP:
+    name: udgpgrntp
+    type: BIGINT
+    years: 2022-2024
+  XUDGFLOANP:
+    name: udgfloanp_flag
+    type: VARCHAR
+    flag_for: udgfloanp
+    years: 2022-2024
+  UDGFLOANP:
+    name: udgfloanp
+    type: BIGINT
+    years: 2022-2024
+  XUDGPGRNTN:
+    name: udgpgrntn_flag
+    type: VARCHAR
+    flag_for: udgpgrntn
+    years: 2023-2024
+  UDGPGRNTN:
+    name: udgpgrntn
+    type: BIGINT
+    years: 2023-2024
+  XUDGPGRNTT:
+    name: udgpgrntt_flag
+    type: VARCHAR
+    flag_for: udgpgrntt
+    years: 2023-2024
+  UDGPGRNTT:
+    name: udgpgrntt
+    type: BIGINT
+    years: 2023-2024
+  XUDGPGRNTA:
+    name: udgpgrnta_flag
+    type: VARCHAR
+    flag_for: udgpgrnta
+    years: 2023-2024
+  UDGPGRNTA:
+    name: udgpgrnta
+    type: BIGINT
+    years: 2023-2024
+  XUNDPGRNTN:
+    name: undpgrntn_flag
+    type: VARCHAR
+    flag_for: undpgrntn
+    years: 2023-2024
+  UNDPGRNTN:
+    name: undpgrntn
+    type: BIGINT
+    years: 2023-2024
+  XUNDPGRNTP:
+    name: undpgrntp_flag
+    type: VARCHAR
+    flag_for: undpgrntp
+    years: 2023-2024
+  UNDPGRNTP:
+    name: undpgrntp
+    type: BIGINT
+    years: 2023-2024
+  XUNDPGRNTT:
+    name: undpgrntt_flag
+    type: VARCHAR
+    flag_for: undpgrntt
+    years: 2023-2024
+  UNDPGRNTT:
+    name: undpgrntt
+    type: BIGINT
+    years: 2023-2024
+  XUNDPGRNTA:
+    name: undpgrnta_flag
+    type: VARCHAR
+    flag_for: undpgrnta
+    years: 2023-2024
+  UNDPGRNTA:
+    name: undpgrnta
+    type: BIGINT
+    years: 2023-2024
+  XUDGFLOANN:
+    name: udgfloann_flag
+    type: VARCHAR
+    flag_for: udgfloann
+    years: 2023-2024
+  UDGFLOANN:
+    name: udgfloann
+    type: BIGINT
+    years: 2023-2024
+  XUDGFLOANT:
+    name: udgfloant_flag
+    type: VARCHAR
+    flag_for: udgfloant
+    years: 2023-2024
+  UDGFLOANT:
+    name: udgfloant
+    type: BIGINT
+    years: 2023-2024
+  XUDGFLOANA:
+    name: udgfloana_flag
+    type: VARCHAR
+    flag_for: udgfloana
+    years: 2023-2024
+  UDGFLOANA:
+    name: udgfloana
+    type: BIGINT
+    years: 2023-2024
+  XUNDFLOANN:
+    name: undfloann_flag
+    type: VARCHAR
+    flag_for: undfloann
+    years: 2023-2024
+  UNDFLOANN:
+    name: undfloann
+    type: BIGINT
+    years: 2023-2024
+  XUNDFLOANP:
+    name: undfloanp_flag
+    type: VARCHAR
+    flag_for: undfloanp
+    years: 2023-2024
+  UNDFLOANP:
+    name: undfloanp
+    type: BIGINT
+    years: 2023-2024
+  XUNDFLOANT:
+    name: undfloant_flag
+    type: VARCHAR
+    flag_for: undfloant
+    years: 2023-2024
+  UNDFLOANT:
+    name: undfloant
+    type: BIGINT
+    years: 2023-2024
+  XUNDFLOANA:
+    name: undfloana_flag
+    type: VARCHAR
+    flag_for: undfloana
+    years: 2023-2024
+  UNDFLOANA:
+    name: undfloana
+    type: BIGINT
+    years: 2023-2024

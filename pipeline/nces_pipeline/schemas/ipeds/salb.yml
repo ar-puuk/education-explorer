@@ -1,0 +1,41 @@
+source: ipeds
+family: salb
+key:
+- unitid
+- bentype
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2002-2010
+  BENTYPE:
+    name: bentype
+    type: BIGINT
+    years: 2002-2010
+  XSAB09:
+    name: sab09_flag
+    type: VARCHAR
+    flag_for: sab09
+    years: 2002-2010
+  SAB09:
+    name: sab09
+    type: BIGINT
+    years: 2002-2010
+  XSAB11:
+    name: sab11_flag
+    type: VARCHAR
+    flag_for: sab11
+    years: 2002-2010
+  SAB11:
+    name: sab11
+    type: BIGINT
+    years: 2002-2010
+  XSABEQ9:
+    name: sabeq9_flag
+    type: VARCHAR
+    flag_for: sabeq9
+    years: 2002-2010
+  SABEQ9:
+    name: sabeq9
+    type: BIGINT
+    years: 2002-2010

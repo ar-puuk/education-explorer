@@ -1,6 +1,7 @@
 {
  "ccd": {
   "district_directory": {
+   "title": "District directory",
    "versions": {
     "2014": "provisional",
     "2015": "provisional",
@@ -31,6 +32,7 @@
    ]
   },
   "district_el": {
+   "title": "English learners, by district",
    "versions": {
     "2014": "provisional",
     "2015": "provisional",
@@ -47,6 +49,7 @@
    ]
   },
   "district_idea": {
+   "title": "Students with disabilities (IDEA), by district",
    "versions": {
     "2014": "provisional",
     "2015": "provisional",
@@ -65,6 +68,7 @@
    ]
   },
   "district_membership": {
+   "title": "District membership (enrollment)",
    "versions": {
     "2014": "provisional",
     "2015": "provisional",
@@ -93,6 +97,7 @@
    ]
   },
   "district_staff": {
+   "title": "District staff (FTE)",
    "versions": {
     "2014": "provisional",
     "2015": "provisional",
@@ -121,6 +126,7 @@
    ]
   },
   "lunch": {
+   "title": "Free/reduced-price lunch eligibility",
    "versions": {
     "2014": "provisional",
     "2015": "final",
@@ -149,6 +155,7 @@
    ]
   },
   "membership": {
+   "title": "School membership (enrollment)",
    "versions": {
     "2014": "provisional",
     "2015": "final",
@@ -177,6 +184,7 @@
    ]
   },
   "school_characteristics": {
+   "title": "School characteristics",
    "versions": {
     "2014": "provisional",
     "2015": "final",
@@ -205,6 +213,7 @@
    ]
   },
   "school_directory": {
+   "title": "School directory",
    "versions": {
     "2014": "provisional",
     "2015": "final",
@@ -235,6 +244,7 @@
    ]
   },
   "school_location": {
+   "title": "School locations (EDGE)",
    "versions": {
     "2014": null,
     "2015": null,
@@ -265,6 +275,7 @@
    ]
   },
   "staff": {
+   "title": "School staff (FTE)",
    "versions": {
     "2014": "provisional",
     "2015": "final",
@@ -293,6 +304,2329 @@
    ]
   }
  },
- "ipeds": {},
+ "ipeds": {
+  "adm": {
+   "survey": "Admissions and Test Scores",
+   "title": "Admission considerations, applications, admissions, enrollees and test scores, fall 2024",
+   "versions": {
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "al": {
+   "survey": "Academic Libraries",
+   "title": "Academic Libraries: Fiscal year 2024",
+   "versions": {
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "ca": {
+   "survey": "Completions",
+   "title": "Awards/degrees conferred by program (6-digit CIP code), award level, race/ethnicity, and sex: July 1, 2024 to June 30, 2025",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "ca2dig": {
+   "survey": "Completions",
+   "title": "Awards/degrees conferred by major discipline (2-digit CIP code), award level, race/ethnicity, and gender: 2000-01",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional"
+   },
+   "years": [
+    2000,
+    2001
+   ]
+  },
+  "cb": {
+   "survey": "Completions",
+   "title": "Number of students receiving awards/degrees, by race/ethnicity and sex: July 1, 2024 to June 30, 2025",
+   "versions": {
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "cc": {
+   "survey": "Completions",
+   "title": "Number of students receiving awards/degrees, by award level and by sex, race/ethnicity and age categories: July 1, 2024 to June 30, 2025",
+   "versions": {
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "cdep": {
+   "survey": "Completions",
+   "title": "Number of programs offered and number of programs offered via distance education, by award level: July 1, 2024 to June 30, 2025",
+   "versions": {
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "cost1": {
+   "survey": "Cost",
+   "title": "Application fees, tuition and required fees, food and housing for undergraduate and graduate students",
+   "versions": {
+    "2024": "provisional"
+   },
+   "years": [
+    2024
+   ]
+  },
+  "cost2": {
+   "survey": "Cost",
+   "title": "Full-time, first-time degree/certificate-seeking undergraduate students paying the in-state or in-district tuition rate by living arrangement in public institutions, 2021-22 to 2023-24",
+   "versions": {
+    "2024": "provisional"
+   },
+   "years": [
+    2024
+   ]
+  },
+  "dfr": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Variables from the 2005 data collection presented in the 2006 IPEDS Data Feedback Report",
+   "versions": {
+    "2005": "provisional"
+   },
+   "years": [
+    2005
+   ]
+  },
+  "drvadm": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Selectivity and admissions yield: Fall 2024",
+   "versions": {
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "drval": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Academic library indicators: Fiscal year 2024",
+   "versions": {
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "drvc": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Degrees/awards: July 1, 2024 to June 30, 2025",
+   "versions": {
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "drvcost": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Total cost of attendance: Academic year 2024-25",
+   "versions": {
+    "2024": "provisional"
+   },
+   "years": [
+    2024
+   ]
+  },
+  "drvef": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Enrollments, retention rates and other selected enrollment indicators: Fall 2024",
+   "versions": {
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "drvef12": {
+   "survey": "Frequently used/Derived variables",
+   "title": "12-month unduplicated and full-time equivalent enrollment, and other selected 12-month enrollment indicators: July 1, 2024 to June 30, 2025",
+   "versions": {
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "drvf": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Revenues and expenditures: Fiscal year 2024",
+   "versions": {
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "drvgr": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Graduation rates of full-time, first-time degree/certifcate-seeking undergraduate students: cohort years 2016 and 2018 (4-year institutions) cohort years 2020 and 2021 (less-than-4-year institutions",
+   "versions": {
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "drvhr": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Average salaries and full-time equivalent staff: Fall 2024",
+   "versions": {
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "drvic": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Total cost of attendance: Academic year 2023-24 (revised September 2025)",
+   "versions": {
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023
+   ]
+  },
+  "drvom": {
+   "survey": "Frequently used/Derived variables",
+   "title": "Award and enrollment (Outcome Measures) rates of degree/certifcate-seeking undergraduate entering students: Cohort year 2016-17",
+   "versions": {
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "eap": {
+   "survey": "Employees by Assigned Position",
+   "title": "Number of staff by occupational category, faculty and tenure status: Fall 2024",
+   "versions": {
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "efa": {
+   "survey": "Fall Enrollment",
+   "title": "Race/ethnicity, gender, attendance status, and level of student: Fall 2024",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "efadist": {
+   "survey": "Fall Enrollment",
+   "title": "Distance education status and level of student: Fall 2024",
+   "versions": {
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "efb": {
+   "survey": "Fall Enrollment",
+   "title": "Age category, gender, attendance status, and level of student: Fall 2024",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "efc": {
+   "survey": "Fall Enrollment",
+   "title": "Residence and migration of first-time freshman: Fall 2024",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "efcp": {
+   "survey": "Fall Enrollment",
+   "title": "Major field of study, race/ethnicity, gender, attendance status, and level of student: Fall 2024",
+   "versions": {
+    "2000": "provisional",
+    "2002": "provisional",
+    "2004": "revised",
+    "2006": "revised",
+    "2008": "revised",
+    "2010": "revised",
+    "2012": "revised",
+    "2014": "revised",
+    "2016": "revised",
+    "2018": "revised",
+    "2020": "revised",
+    "2022": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2002,
+    2004,
+    2006,
+    2008,
+    2010,
+    2012,
+    2014,
+    2016,
+    2018,
+    2020,
+    2022,
+    2024
+   ]
+  },
+  "efd": {
+   "survey": "Fall Enrollment",
+   "title": "Total entering class, retention rates, and student-to-faculty ratio: Fall 2024",
+   "versions": {
+    "2000": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "efd1": {
+   "survey": "12-Month Enrollment",
+   "title": "12-month unduplicated enrollment: 2000-01",
+   "versions": {
+    "2001": "provisional"
+   },
+   "years": [
+    2001
+   ]
+  },
+  "efd2": {
+   "survey": "12-Month Enrollment",
+   "title": "12-month instructional activity: 2000-01",
+   "versions": {
+    "2001": "provisional"
+   },
+   "years": [
+    2001
+   ]
+  },
+  "efe": {
+   "survey": "Fall Enrollment",
+   "title": "Total entering class: Fall 2001",
+   "versions": {
+    "2001": "provisional"
+   },
+   "years": [
+    2001
+   ]
+  },
+  "efest": {
+   "survey": "Fall Enrollment",
+   "title": "Estimated enrollment: Fall 2009",
+   "versions": {
+    "2007": "provisional",
+    "2008": "provisional",
+    "2009": "provisional"
+   },
+   "years": [
+    2007,
+    2008,
+    2009
+   ]
+  },
+  "effy": {
+   "survey": "12-Month Enrollment",
+   "title": "12-month unduplicated headcount by race/ethnicity, sex and level of student: 2024-25",
+   "versions": {
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "effydist": {
+   "survey": "12-Month Enrollment",
+   "title": "12-month unduplicated headcount by distance education status and student level: 2024-25",
+   "versions": {
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "effyhs": {
+   "survey": "12-Month Enrollment",
+   "title": "12-month unduplicated headcount of dual enrolled students by race/ethnicity and sex: 2024-25",
+   "versions": {
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "efia": {
+   "survey": "12-Month Enrollment",
+   "title": "12-month instructional activity: 2024-25",
+   "versions": {
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "ff1": {
+   "survey": "Finance",
+   "title": "Public institutions - GASB Reporting Standards before (GASB 34/35): Fiscal year 2003",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": null
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  "ff1a": {
+   "survey": "Finance",
+   "title": "Public institutions - GASB 34/35: Fiscal year 2024",
+   "versions": {
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "ff1af": {
+   "survey": "Finance",
+   "title": "Public institutions - GASB 34/35 (Component units using FASB): Fiscal year 2007 (revised May 2017)",
+   "versions": {
+    "2002": null,
+    "2003": null,
+    "2004": "revised",
+    "2005": "revised",
+    "2006": null,
+    "2007": null
+   },
+   "years": [
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007
+   ]
+  },
+  "ff1ag": {
+   "survey": "Finance",
+   "title": "Public institutions - GASB 34/35 (Component units using GASB): Fiscal year 2007 (revised May 2017)",
+   "versions": {
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised"
+   },
+   "years": [
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007
+   ]
+  },
+  "ff2": {
+   "survey": "Finance",
+   "title": "Private not-for-profit institutions or Public institutions using FASB: Fiscal year 2024",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "ff3": {
+   "survey": "Finance",
+   "title": "Private for-profit institutions: Fiscal year 2024",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "flags": {
+   "survey": "Institutional Characteristics",
+   "title": "Response status for all survey components",
+   "versions": {
+    "2004": "provisional",
+    "2005": "provisional",
+    "2006": "provisional",
+    "2007": "provisional",
+    "2008": "provisional",
+    "2009": "provisional",
+    "2010": "provisional",
+    "2011": "provisional",
+    "2012": "provisional",
+    "2013": "provisional",
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "provisional",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "provisional",
+    "2025": "provisional"
+   },
+   "years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "gr": {
+   "survey": "Graduation Rates",
+   "title": "Graduation rate data, 150% of normal time to complete - cohort year 2018 (4-year) and cohort year 2021 (2-year) institutions",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "gr200": {
+   "survey": "Graduation Rates",
+   "title": "Graduation rate data, 200% of normal time to complete - cohort year 2016 (4-year) and cohort year 2020 (less-than-4-year) institutions",
+   "versions": {
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "grath": {
+   "survey": "Graduation Rates",
+   "title": "Graduation rate data by sport for full-time, first-time degree/certificate-seeking students receiving athletically-related student aid for cohort year 2000 (4-year) and cohort year 2003 (2-year) institutions (revised May 2018)",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006
+   ]
+  },
+  "grathaid": {
+   "survey": "Graduation Rates",
+   "title": "Number of full-time undergraduate degree/certificate-seeking students receiving athletically-related student aid in 2005-06 (4-year and 2-year institutions) (revised May 2018)",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006
+   ]
+  },
+  "grl2": {
+   "survey": "Graduation Rates",
+   "title": "Graduation rate data, 150% of normal time to complete - cohort year 2021",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "grpellssl": {
+   "survey": "Graduation Rates",
+   "title": "Graduation rate data for Pell Grant and Direct Subsidized Loan recipients, 150% of normal time to complete - cohort year 2018 (4-year) and cohort year 2021 (less-than-4-year) institutions",
+   "versions": {
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "hd": {
+   "survey": "Institutional Characteristics",
+   "title": "Directory information",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "provisional",
+    "2005": "provisional",
+    "2006": "provisional",
+    "2007": "provisional",
+    "2008": "provisional",
+    "2009": "provisional",
+    "2010": "provisional",
+    "2011": "provisional",
+    "2012": "provisional",
+    "2013": "provisional",
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "provisional",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional",
+    "2024": "provisional",
+    "2025": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "ic": {
+   "survey": "Institutional Characteristics",
+   "title": "Educational offerings, organization, services and athletic associations",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "provisional",
+    "2005": "provisional",
+    "2006": "provisional",
+    "2007": "provisional",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "revised",
+    "2025": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "icactot": {
+   "survey": "Institutional Characteristics",
+   "title": "Accrediting agencies recognized by the Secretary, U.S. Department of Education",
+   "versions": {
+    "2000": "provisional"
+   },
+   "years": [
+    2000
+   ]
+  },
+  "icay": {
+   "survey": "Institutional Characteristics",
+   "title": "Student charges for academic year programs",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "provisional",
+    "2005": "provisional",
+    "2006": "provisional",
+    "2007": "provisional",
+    "2008": "provisional",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "provisional",
+    "2013": "provisional",
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "provisional",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ]
+  },
+  "iccampuses": {
+   "survey": "Institutional Characteristics",
+   "title": "Branch campus locations listed on College Navigator",
+   "versions": {
+    "2021": "provisional",
+    "2022": "provisional"
+   },
+   "years": [
+    2021,
+    2022
+   ]
+  },
+  "icmission": {
+   "survey": "Institutional Characteristics",
+   "title": "Institutions's mission statement",
+   "versions": {
+    "2004": "provisional",
+    "2005": "provisional",
+    "2006": "provisional",
+    "2007": "provisional"
+   },
+   "years": [
+    2004,
+    2005,
+    2006,
+    2007
+   ]
+  },
+  "icpccampuses": {
+   "survey": "Institutional Characteristics",
+   "title": "Branch campus locations listed on College Navigator",
+   "versions": {
+    "2023": "provisional"
+   },
+   "years": [
+    2023
+   ]
+  },
+  "icpy": {
+   "survey": "Institutional Characteristics",
+   "title": "Student charges by program (vocational programs)",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "provisional",
+    "2005": "provisional",
+    "2006": "provisional",
+    "2007": "provisional",
+    "2008": "provisional",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "provisional",
+    "2013": "provisional",
+    "2014": "provisional",
+    "2015": "provisional",
+    "2016": "provisional",
+    "2017": "provisional",
+    "2018": "provisional",
+    "2019": "provisional",
+    "2020": "provisional",
+    "2021": "provisional",
+    "2022": "provisional",
+    "2023": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ]
+  },
+  "om": {
+   "survey": "Outcome Measures",
+   "title": "Award and enrollment data at four, six and eight years of entering degree/certificate-seeking undergraduate cohorts from 2016-17 at degree-granting institutions, by Pell status",
+   "versions": {
+    "2015": "provisional",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "sabd": {
+   "survey": "Fall Staff",
+   "title": "Employees by primary occupation, salary categories, race/ethnicity, and gender (Degree-granting institutions with 15 or more full-time employees): Fall 2011 (revised December 2013)",
+   "versions": {
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised"
+   },
+   "years": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011
+   ]
+  },
+  "sala": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Salaries of full-time instructional staff, by contract length, gender, and academic rank: Academic year 2011-12 (revised December 2013)",
+   "versions": {
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised"
+   },
+   "years": [
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011
+   ]
+  },
+  "salalt9": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Number of full-time instructional faculty with less than 9-month contracts, by gender and academic rank: Academic year 2011-12 (revised December 2013)",
+   "versions": {
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised"
+   },
+   "years": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011
+   ]
+  },
+  "salas": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Salaries of full-time instructional faculty, by contract length, gender, and academic rank - academic year 2001-02",
+   "versions": {
+    "2001": "provisional"
+   },
+   "years": [
+    2001
+   ]
+  },
+  "salb": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Fringe benefits of full-time instructional staff, by contract length: Academic year 2010-11 (revised January 2013)",
+   "versions": {
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised"
+   },
+   "years": [
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010
+   ]
+  },
+  "salbs": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Fringe benefits of full-time instructional faculty, by contract length - academic year 2001-02",
+   "versions": {
+    "2001": "provisional"
+   },
+   "years": [
+    2001
+   ]
+  },
+  "salfaculty": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Faculty status of full-time instructional staff in 4-year institutions, by contract length, gender, and academic rank: Academic year 2011-12 (revised December 2013)",
+   "versions": {
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised"
+   },
+   "years": [
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011
+   ]
+  },
+  "salis": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Number and salary outlays for full-time nonmedical instructional staff, by gender, and academic rank: Academic year 2024-25",
+   "versions": {
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "salnis": {
+   "survey": "Instructional Staff/Salaries",
+   "title": "Number and salary outlays for full-time nonmedical noninstructional staff, by gender, and academic rank: Academic year 2024-25",
+   "versions": {
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "scn": {
+   "survey": "Fall Staff",
+   "title": "Employees by primary occupation, race/ethnicity, and gender (Degree-granting institutions with less than 15 full-time employees and all nondegree-granting institutions): Fall 2011",
+   "versions": {
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "provisional",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised"
+   },
+   "years": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011
+   ]
+  },
+  "sf": {
+   "survey": "Fall Staff",
+   "title": "Full-time instruction/research/public service staff, by faculty status, academic rank, race/ethnicity, and gender (Degree-granting institutions with 15 or more full-time employees): Fall 2011 (revised December 2013)",
+   "versions": {
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised"
+   },
+   "years": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011
+   ]
+  },
+  "sfa": {
+   "survey": "Student Financial Aid and Net Price",
+   "title": "Student financial aid and net price: 2023-24",
+   "versions": {
+    "2000": "provisional",
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised",
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "sfav": {
+   "survey": "Student Financial Aid and Net Price",
+   "title": "Military Servicemembers and Veteran's Benefits: 2023-24",
+   "versions": {
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "sg": {
+   "survey": "Fall Staff",
+   "title": "New hires by primary occupation, race/ethnicity, and gender (Degree-granting institutions with 15 or more full-time employees): Fall 2011 (revised December 2013)",
+   "versions": {
+    "2001": "provisional",
+    "2002": "provisional",
+    "2003": "provisional",
+    "2004": "revised",
+    "2005": "revised",
+    "2006": "revised",
+    "2007": "revised",
+    "2008": "revised",
+    "2009": "revised",
+    "2010": "revised",
+    "2011": "revised"
+   },
+   "years": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011
+   ]
+  },
+  "sis": {
+   "survey": "Fall Staff",
+   "title": "Full-time instructional staff, by faculty and tenure status, academic rank, race/ethnicity, and gender (Degree-granting institutions): Fall 2024",
+   "versions": {
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "snh": {
+   "survey": "Fall Staff",
+   "title": "New hires by occupational category, race/ethnicity, and gender (Degree-granting institutions): Fall 2024",
+   "versions": {
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "soc": {
+   "survey": "Fall Staff",
+   "title": "Full- and part-time staff by occupational category, race/ethnicity, and gender: Fall 2024",
+   "versions": {
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  },
+  "ssis": {
+   "survey": "Fall Staff",
+   "title": "Full-time instructional staff, by faculty and tenure status, and academic rank (Degree-granting institutions): Fall 2024",
+   "versions": {
+    "2012": "revised",
+    "2013": "revised",
+    "2014": "revised",
+    "2015": "revised",
+    "2016": "revised",
+    "2017": "revised",
+    "2018": "revised",
+    "2019": "revised",
+    "2020": "revised",
+    "2021": "revised",
+    "2022": "revised",
+    "2023": "revised",
+    "2024": "provisional"
+   },
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ]
+  }
+ },
  "pss": {}
 }

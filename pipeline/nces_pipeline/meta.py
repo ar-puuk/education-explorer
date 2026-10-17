@@ -7,6 +7,27 @@ import duckdb
 
 from .config import DOCS_DATA, State
 
+CCD_TITLES = {
+    "school_directory": "School directory", "district_directory": "District directory",
+    "school_characteristics": "School characteristics", "school_location": "School locations (EDGE)",
+    "membership": "School membership (enrollment)", "district_membership": "District membership (enrollment)",
+    "lunch": "Free/reduced-price lunch eligibility", "staff": "School staff (FTE)", "district_staff": "District staff (FTE)",
+    "district_idea": "Students with disabilities (IDEA), by district", "district_el": "English learners, by district",
+}
+
+
+def _table_info(ds: str, table: str) -> dict:
+    if ds == "ccd":
+        return {"title": CCD_TITLES.get(table, table)}
+    if ds == "ipeds":
+        from .ipeds_files import select
+
+        fs = [f for f in select() if f.family == table]
+        if fs:
+            f = max(fs, key=lambda x: x.year)
+            return {"title": f.title, "survey": f.survey}
+    return {}
+
 
 def write_meta(state: State) -> None:
     meta = DOCS_DATA / "meta"
@@ -30,5 +51,5 @@ def write_meta(state: State) -> None:
                 if "data_version" in cols:
                     ver = [r[0] for r in con.execute(f"SELECT DISTINCT data_version FROM read_parquet('{f.as_posix()}') ORDER BY 1").fetchall()]
                 entry[f.stem] = ver[0] if ver and len(ver) == 1 else (ver or None)
-            out[ds][d.name] = {"years": [int(y) for y in entry], "versions": entry}
+            out[ds][d.name] = {"years": [int(y) for y in entry], "versions": entry, **_table_info(ds, d.name)}
     (meta / "years.json").write_text(json.dumps(out, indent=1, sort_keys=True) + "\n", encoding="utf-8", newline="\n")

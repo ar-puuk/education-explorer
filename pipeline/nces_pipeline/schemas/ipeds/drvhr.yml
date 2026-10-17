@@ -1,0 +1,113 @@
+source: ipeds
+family: drvhr
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2021-2024
+  SALTOTL:
+    name: saltotl
+    type: VARCHAR
+    years: 2021-2024
+  SALPROF:
+    name: salprof
+    type: VARCHAR
+    years: 2021-2024
+  SALASSC:
+    name: salassc
+    type: VARCHAR
+    years: 2021-2024
+  SALASST:
+    name: salasst
+    type: VARCHAR
+    years: 2021-2024
+  SALINST:
+    name: salinst
+    type: VARCHAR
+    years: 2021-2024
+  SALLECT:
+    name: sallect
+    type: VARCHAR
+    years: 2021-2024
+  SALNRNK:
+    name: salnrnk
+    type: VARCHAR
+    years: 2021-2024
+  SFTETOTL:
+    name: sftetotl
+    type: DOUBLE
+    years: 2021-2024
+  SFTEPSTC:
+    name: sftepstc
+    type: DOUBLE
+    years: 2021-2024
+  SFTEINST:
+    name: sfteinst
+    type: DOUBLE
+    years: 2021-2024
+  SFTERSRC:
+    name: sftersrc
+    type: VARCHAR
+    years: 2021-2024
+  SFTEPBSV:
+    name: sftepbsv
+    type: VARCHAR
+    years: 2021-2024
+  SFTELCAI:
+    name: sftelcai
+    type: DOUBLE
+    years: 2021-2024
+  SFTELCA:
+    name: sftelca
+    type: DOUBLE
+    years: 2021-2024
+  SFTEOTIS:
+    name: sfteotis
+    type: DOUBLE
+    years: 2021-2024
+  SFTEMNGM:
+    name: sftemngm
+    type: DOUBLE
+    years: 2021-2024
+  SFTEBFO:
+    name: sftebfo
+    type: DOUBLE
+    years: 2021-2024
+  SFTECES:
+    name: sfteces
+    type: DOUBLE
+    years: 2021-2024
+  SFTECLAM:
+    name: sfteclam
+    type: DOUBLE
+    years: 2021-2024
+  SFTEHLTH:
+    name: sftehlth
+    type: DOUBLE
+    years: 2021-2024
+  SFTEOTHR:
+    name: sfteothr
+    type: DOUBLE
+    years: 2021-2024
+  SFTESRVC:
+    name: sftesrvc
+    type: DOUBLE
+    years: 2021-2024
+  SFTESALE:
+    name: sftesale
+    type: DOUBLE
+    years: 2021-2024
+  SFTEOFAS:
+    name: sfteofas
+    type: DOUBLE
+    years: 2021-2024
+  SFTENRCM:
+    name: sftenrcm
+    type: DOUBLE
+    years: 2021-2024
+  SFTEPTMM:
+    name: sfteptmm
+    type: DOUBLE
+    years: 2021-2024

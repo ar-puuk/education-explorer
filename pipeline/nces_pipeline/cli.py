@@ -36,6 +36,22 @@ def cmd_fetch(a, state) -> int:
         from .edge import fetch_edge
 
         fetch_edge(check_only=a.check_only)
+    if a.source in (None, "ipeds"):
+        from .config import DATA_RAW
+        from .ipeds_catalog import build_catalog as ipeds_catalog
+        from .ipeds_files import fetch_all as ipeds_fetch
+        from .ipeds_files import select as ipeds_select
+
+        ipeds_catalog(refresh=a.check_only or a.refresh_catalog)
+        files = ipeds_select(min_year=a.year or 0, max_year=a.year or 9999)
+        if a.check_only:
+            new = [f for f in files if not (DATA_RAW / f.rel).exists()]
+            print(f"IPEDS: {len(files)} files in scope, {len(new)} not downloaded yet")
+            for f in new:
+                print(f"  NEW {f.year} {f.name}: {f.title[:90]}")
+        else:
+            got = ipeds_fetch(files)
+            print(f"IPEDS: {len(got)} of {len(files)} files present")
     return 0
 
 
@@ -58,6 +74,9 @@ def cmd_bootstrap(a, state) -> int:
     for y in range(FIRST, LAST + 1):
         if edge_table_source(y) and (not a.year or a.year == y):
             write_edge_map(y, force=a.force)
+    from .ipeds_build import bootstrap_all
+
+    bootstrap_all(state, force=a.force)
     return 0
 
 
@@ -85,6 +104,10 @@ def cmd_build(a, state) -> int:
         from .edge import build_carry_forward
 
         build_carry_forward(state)
+    if a.source in (None, "ipeds"):
+        from .ipeds_build import build_ipeds
+
+        build_ipeds(state, years=yrs)
     return 0
 
 
@@ -94,6 +117,14 @@ def cmd_validate(a, state) -> int:
     rep = validate(state, update_baseline=a.update_baseline)
     rep.print()
     return 1 if rep.errors else 0
+
+
+def cmd_points(a, state) -> int:
+    from .geo import build_points_college, build_points_public
+
+    print("public points:", build_points_public())
+    print("college points:", build_points_college())
+    return 0
 
 
 def cmd_update(a, state) -> int:
@@ -107,9 +138,10 @@ def cmd_update(a, state) -> int:
     cmd_fetch(ns, state)
     cmd_build(ns, state)
     build_dictionary()
-    from .geo import build_points_public
+    from .geo import build_points_college, build_points_public
 
     build_points_public()
+    build_points_college()
     write_meta(state)
     after = current_rowcounts()
     print("changelog:")
@@ -158,7 +190,7 @@ def main(argv: list[str] | None = None) -> int:
     u.set_defaults(fn=cmd_update)
 
     pt = sub.add_parser("points", help="build first-paint points files in docs/data/geo")
-    pt.set_defaults(fn=lambda a, st: print("public points:", __import__("nces_pipeline.geo", fromlist=["x"]).build_points_public()) or 0)
+    pt.set_defaults(fn=cmd_points)
 
     dc = sub.add_parser("dictionary")
     dc.set_defaults(fn=lambda a, st: print("dictionary rows:", __import__("nces_pipeline.dictionary", fromlist=["x"]).build_dictionary()) or 0)

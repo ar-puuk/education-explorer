@@ -1,0 +1,101 @@
+source: ipeds
+family: sala
+key:
+- unitid
+- empcntt
+- contract
+- arank
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2002-2011
+  CONTRACT:
+    name: contract
+    type: BIGINT
+    years: 2002-2011
+  ARANK:
+    name: arank
+    type: BIGINT
+    years: 2002-2011
+  XEMPCNTM:
+    name: empcntm_flag
+    type: VARCHAR
+    flag_for: empcntm
+    years: 2002-2011
+  EMPCNTM:
+    name: empcntm
+    type: BIGINT
+    years: 2002-2011
+  XOUTLAYM:
+    name: outlaym_flag
+    type: VARCHAR
+    flag_for: outlaym
+    years: 2002-2011
+  OUTLAYM:
+    name: outlaym
+    type: BIGINT
+    years: 2002-2011
+  XAVESALM:
+    name: avesalm_flag
+    type: VARCHAR
+    flag_for: avesalm
+    years: 2002-2011
+  AVESALM:
+    name: avesalm
+    type: BIGINT
+    years: 2002-2011
+  XEMPCNTW:
+    name: empcntw_flag
+    type: VARCHAR
+    flag_for: empcntw
+    years: 2002-2011
+  EMPCNTW:
+    name: empcntw
+    type: BIGINT
+    years: 2002-2011
+  XOUTLAYW:
+    name: outlayw_flag
+    type: VARCHAR
+    flag_for: outlayw
+    years: 2002-2011
+  OUTLAYW:
+    name: outlayw
+    type: BIGINT
+    years: 2002-2011
+  XAVESALW:
+    name: avesalw_flag
+    type: VARCHAR
+    flag_for: avesalw
+    years: 2002-2011
+  AVESALW:
+    name: avesalw
+    type: BIGINT
+    years: 2002-2011
+  XEMPCNTT:
+    name: empcntt_flag
+    type: VARCHAR
+    flag_for: empcntt
+    years: 2002-2011
+  EMPCNTT:
+    name: empcntt
+    type: BIGINT
+    years: 2002-2011
+  XOUTLAYT:
+    name: outlayt_flag
+    type: VARCHAR
+    flag_for: outlayt
+    years: 2002-2011
+  OUTLAYT:
+    name: outlayt
+    type: BIGINT
+    years: 2002-2011
+  XAVESALT:
+    name: avesalt_flag
+    type: VARCHAR
+    flag_for: avesalt
+    years: 2002-2011
+  AVESALT:
+    name: avesalt
+    type: BIGINT
+    years: 2002-2011

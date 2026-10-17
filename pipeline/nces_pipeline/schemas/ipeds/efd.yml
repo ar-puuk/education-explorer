@@ -1,0 +1,209 @@
+source: ipeds
+family: efd
+key:
+- unitid
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2000,2002-2024
+  FYRPYEAR:
+    name: fyrpyear
+    type: BIGINT
+    years: '2000'
+  XTOSTUCU:
+    name: tostucu_flag
+    type: VARCHAR
+    flag_for: tostucu
+    years: '2000'
+  TOSTUCU:
+    name: tostucu
+    type: BIGINT
+    years: '2000'
+  XTOSTUCG:
+    name: tostucg_flag
+    type: VARCHAR
+    flag_for: tostucg
+    years: '2000'
+  TOSTUCG:
+    name: tostucg
+    type: BIGINT
+    years: '2000'
+  XTOSTUCP:
+    name: tostucp_flag
+    type: VARCHAR
+    flag_for: tostucp
+    years: '2000'
+  TOSTUCP:
+    name: tostucp
+    type: BIGINT
+    years: '2000'
+  XCDACTUA:
+    name: cdactua_flag
+    type: VARCHAR
+    flag_for: cdactua
+    years: '2000'
+  CDACTUA:
+    name: cdactua
+    type: BIGINT
+    years: '2000'
+  XCNACTUA:
+    name: cnactua_flag
+    type: VARCHAR
+    flag_for: cnactua
+    years: '2000'
+  CNACTUA:
+    name: cnactua
+    type: BIGINT
+    years: '2000'
+  XCDACTGA:
+    name: cdactga_flag
+    type: VARCHAR
+    flag_for: cdactga
+    years: '2000'
+  CDACTGA:
+    name: cdactga
+    type: BIGINT
+    years: '2000'
+  XGRCOHRT:
+    name: grcohrt_flag
+    type: VARCHAR
+    flag_for: grcohrt
+    years: 2002-2024
+  GRCOHRT:
+    name: grcohrt
+    type: BIGINT
+    years: 2002-2024
+  XUGENTER:
+    name: xugenter
+    type: VARCHAR
+    years: 2002-2024
+  UGENTERN:
+    name: ugentern
+    type: BIGINT
+    years: 2002-2024
+  XPGRCOHR:
+    name: xpgrcohr
+    type: VARCHAR
+    years: 2002-2024
+  PGRCOHRT:
+    name: pgrcohrt
+    type: BIGINT
+    years: 2002-2024
+  XRET_PCF:
+    name: ret_pcf_flag
+    type: VARCHAR
+    flag_for: ret_pcf
+    years: 2003-2024
+  RET_PCF:
+    name: ret_pcf
+    type: BIGINT
+    years: 2003-2024
+  XRET_PCP:
+    name: ret_pcp_flag
+    type: VARCHAR
+    flag_for: ret_pcp
+    years: 2003-2024
+  RET_PCP:
+    name: ret_pcp
+    type: BIGINT
+    years: 2003-2024
+  XRRFTCT:
+    name: rrftct_flag
+    type: VARCHAR
+    flag_for: rrftct
+    years: 2007-2024
+  RRFTCT:
+    name: rrftct
+    type: BIGINT
+    years: 2007-2024
+  XRRFTEX:
+    name: rrftex_flag
+    type: VARCHAR
+    flag_for: rrftex
+    years: 2007-2024
+  RRFTEX:
+    name: rrftex
+    type: BIGINT
+    years: 2007-2024
+  XRRFTCTA:
+    name: rrftcta_flag
+    type: VARCHAR
+    flag_for: rrftcta
+    years: 2007-2024
+  RRFTCTA:
+    name: rrftcta
+    type: BIGINT
+    years: 2007-2024
+  XRET_NMF:
+    name: ret_nmf_flag
+    type: VARCHAR
+    flag_for: ret_nmf
+    years: 2007-2024
+  RET_NMF:
+    name: ret_nmf
+    type: BIGINT
+    years: 2007-2024
+  XRRPTCT:
+    name: rrptct_flag
+    type: VARCHAR
+    flag_for: rrptct
+    years: 2007-2024
+  RRPTCT:
+    name: rrptct
+    type: BIGINT
+    years: 2007-2024
+  XRRPTEX:
+    name: rrptex_flag
+    type: VARCHAR
+    flag_for: rrptex
+    years: 2007-2024
+  RRPTEX:
+    name: rrptex
+    type: BIGINT
+    years: 2007-2024
+  XRRPTCTA:
+    name: rrptcta_flag
+    type: VARCHAR
+    flag_for: rrptcta
+    years: 2007-2024
+  RRPTCTA:
+    name: rrptcta
+    type: BIGINT
+    years: 2007-2024
+  XRET_NMP:
+    name: ret_nmp_flag
+    type: VARCHAR
+    flag_for: ret_nmp
+    years: 2007-2024
+  RET_NMP:
+    name: ret_nmp
+    type: BIGINT
+    years: 2007-2024
+  XSTUFACR:
+    name: stufacr_flag
+    type: VARCHAR
+    flag_for: stufacr
+    years: 2009-2024
+  STUFACR:
+    name: stufacr
+    type: BIGINT
+    years: 2009-2024
+  XRRFTIN:
+    name: rrftin_flag
+    type: VARCHAR
+    flag_for: rrftin
+    years: 2016-2024
+  RRFTIN:
+    name: rrftin
+    type: BIGINT
+    years: 2016-2024
+  XRRPTIN:
+    name: rrptin_flag
+    type: VARCHAR
+    flag_for: rrptin
+    years: 2016-2024
+  RRPTIN:
+    name: rrptin
+    type: BIGINT
+    years: 2016-2024

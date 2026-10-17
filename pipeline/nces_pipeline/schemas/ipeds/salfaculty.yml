@@ -1,0 +1,109 @@
+source: ipeds
+family: salfaculty
+key:
+- unitid
+- empcntt
+- arank
+- contract
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2006-2011
+  CONTRACT:
+    name: contract
+    type: BIGINT
+    years: 2006-2011
+  ARANK:
+    name: arank
+    type: BIGINT
+    years: 2006-2011
+  XTENUREM:
+    name: tenurem_flag
+    type: VARCHAR
+    flag_for: tenurem
+    years: 2006-2011
+  TENUREM:
+    name: tenurem
+    type: BIGINT
+    years: 2006-2011
+  XONTRCKM:
+    name: ontrckm_flag
+    type: VARCHAR
+    flag_for: ontrckm
+    years: 2006-2011
+  ONTRCKM:
+    name: ontrckm
+    type: BIGINT
+    years: 2006-2011
+  XNOTRCKM:
+    name: notrckm_flag
+    type: VARCHAR
+    flag_for: notrckm
+    years: 2006-2011
+  NOTRCKM:
+    name: notrckm
+    type: BIGINT
+    years: 2006-2011
+  XNOFACTM:
+    name: nofactm_flag
+    type: VARCHAR
+    flag_for: nofactm
+    years: 2006-2011
+  NOFACTM:
+    name: nofactm
+    type: BIGINT
+    years: 2006-2011
+  XTENUREW:
+    name: tenurew_flag
+    type: VARCHAR
+    flag_for: tenurew
+    years: 2006-2011
+  TENUREW:
+    name: tenurew
+    type: BIGINT
+    years: 2006-2011
+  XONTRCKW:
+    name: ontrckw_flag
+    type: VARCHAR
+    flag_for: ontrckw
+    years: 2006-2011
+  ONTRCKW:
+    name: ontrckw
+    type: BIGINT
+    years: 2006-2011
+  XNOTRCKW:
+    name: notrckw_flag
+    type: VARCHAR
+    flag_for: notrckw
+    years: 2006-2011
+  NOTRCKW:
+    name: notrckw
+    type: BIGINT
+    years: 2006-2011
+  XNOFACTW:
+    name: nofactw_flag
+    type: VARCHAR
+    flag_for: nofactw
+    years: 2006-2011
+  NOFACTW:
+    name: nofactw
+    type: BIGINT
+    years: 2006-2011
+  XEMPCNTT:
+    name: empcntt_flag
+    type: VARCHAR
+    flag_for: empcntt
+    years: 2006-2011
+  EMPCNTT:
+    name: empcntt
+    type: BIGINT
+    years: 2006-2011
+  I:
+    name: i
+    type: BIGINT
+    years: '2010'
+  DROP:
+    name: drop
+    type: BIGINT
+    years: '2010'

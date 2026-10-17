@@ -1,0 +1,625 @@
+source: ipeds
+family: effy
+key:
+- unitid
+- effyalev
+- effylev
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2002-2025
+  EFFYLEV:
+    name: effylev
+    type: BIGINT
+    years: 2002-2025
+  LSTUDY:
+    name: lstudy
+    type: BIGINT
+    years: 2002-2025
+  XFYRAC01:
+    name: xfyrac01
+    type: VARCHAR
+    years: 2002-2007
+  FYRACE01:
+    name: fyrace01
+    type: BIGINT
+    years: 2002-2007
+  XFYRAC02:
+    name: xfyrac02
+    type: VARCHAR
+    years: 2002-2007
+  FYRACE02:
+    name: fyrace02
+    type: BIGINT
+    years: 2002-2007
+  XFYRAC03:
+    name: xfyrac03
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE03:
+    name: fyrace03
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC04:
+    name: xfyrac04
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE04:
+    name: fyrace04
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC05:
+    name: xfyrac05
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE05:
+    name: fyrace05
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC06:
+    name: xfyrac06
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE06:
+    name: fyrace06
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC07:
+    name: xfyrac07
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE07:
+    name: fyrace07
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC08:
+    name: xfyrac08
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE08:
+    name: fyrace08
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC09:
+    name: xfyrac09
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE09:
+    name: fyrace09
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC10:
+    name: xfyrac10
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE10:
+    name: fyrace10
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC11:
+    name: xfyrac11
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE11:
+    name: fyrace11
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC12:
+    name: xfyrac12
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE12:
+    name: fyrace12
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC13:
+    name: xfyrac13
+    type: VARCHAR
+    years: 2002-2007
+  FYRACE13:
+    name: fyrace13
+    type: BIGINT
+    years: 2002-2007
+  XFYRAC14:
+    name: xfyrac14
+    type: VARCHAR
+    years: 2002-2007
+  FYRACE14:
+    name: fyrace14
+    type: BIGINT
+    years: 2002-2007
+  XFYRAC15:
+    name: xfyrac15
+    type: VARCHAR
+    years: 2002-2007
+  FYRACE15:
+    name: fyrace15
+    type: BIGINT
+    years: 2002-2007
+  XFYRAC16:
+    name: xfyrac16
+    type: VARCHAR
+    years: 2002-2007
+  FYRACE16:
+    name: fyrace16
+    type: BIGINT
+    years: 2002-2007
+  XFYRAC17:
+    name: xfyrac17
+    type: VARCHAR
+    years: 2002-2007
+  FYRACE17:
+    name: fyrace17
+    type: BIGINT
+    years: 2002-2007
+  XFYRAC18:
+    name: xfyrac18
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE18:
+    name: fyrace18
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC19:
+    name: xfyrac19
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE19:
+    name: fyrace19
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC20:
+    name: xfyrac20
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE20:
+    name: fyrace20
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC21:
+    name: xfyrac21
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE21:
+    name: fyrace21
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC22:
+    name: xfyrac22
+    type: VARCHAR
+    years: 2002-2010
+  FYRACE22:
+    name: fyrace22
+    type: BIGINT
+    years: 2002-2010
+  XFYRAC23:
+    name: xfyrac23
+    type: VARCHAR
+    years: 2002-2007
+  FYRACE23:
+    name: fyrace23
+    type: BIGINT
+    years: 2002-2007
+  XFYRAC24:
+    name: xfyrac24
+    type: VARCHAR
+    years: 2002-2007
+  FYRACE24:
+    name: fyrace24
+    type: BIGINT
+    years: 2002-2007
+  XEYNRALM:
+    name: xeynralm
+    type: VARCHAR
+    years: 2008-2025
+  EFYNRALM:
+    name: efynralm
+    type: BIGINT
+    years: 2008-2025
+  XEYNRALW:
+    name: xeynralw
+    type: VARCHAR
+    years: 2008-2025
+  EFYNRALW:
+    name: efynralw
+    type: BIGINT
+    years: 2008-2025
+  XEYUNKNM:
+    name: xeyunknm
+    type: VARCHAR
+    years: 2008-2025
+  EFYUNKNM:
+    name: efyunknm
+    type: BIGINT
+    years: 2008-2025
+  XEYUNKNW:
+    name: xeyunknw
+    type: VARCHAR
+    years: 2008-2025
+  EFYUNKNW:
+    name: efyunknw
+    type: BIGINT
+    years: 2008-2025
+  XEYTOTLM:
+    name: xeytotlm
+    type: VARCHAR
+    years: 2008-2025
+  EFYTOTLM:
+    name: efytotlm
+    type: BIGINT
+    years: 2008-2025
+  XEYTOTLW:
+    name: xeytotlw
+    type: VARCHAR
+    years: 2008-2025
+  EFYTOTLW:
+    name: efytotlw
+    type: BIGINT
+    years: 2008-2025
+  XEYNRALT:
+    name: xeynralt
+    type: VARCHAR
+    years: 2008-2025
+  EFYNRALT:
+    name: efynralt
+    type: BIGINT
+    years: 2008-2025
+  XEYUNKNT:
+    name: xeyunknt
+    type: VARCHAR
+    years: 2008-2025
+  EFYUNKNT:
+    name: efyunknt
+    type: BIGINT
+    years: 2008-2025
+  XEYTOTLT:
+    name: xeytotlt
+    type: VARCHAR
+    years: 2008-2025
+  EFYTOTLT:
+    name: efytotlt
+    type: BIGINT
+    years: 2008-2025
+  XEFYHISM:
+    name: xefyhism
+    type: VARCHAR
+    years: 2008-2025
+  EFYHISPM:
+    name: efyhispm
+    type: BIGINT
+    years: 2008-2025
+  XEFYHISW:
+    name: xefyhisw
+    type: VARCHAR
+    years: 2008-2025
+  EFYHISPW:
+    name: efyhispw
+    type: BIGINT
+    years: 2008-2025
+  XEFYAIAM:
+    name: xefyaiam
+    type: VARCHAR
+    years: 2008-2025
+  EFYAIANM:
+    name: efyaianm
+    type: BIGINT
+    years: 2008-2025
+  XEFYAIAW:
+    name: xefyaiaw
+    type: VARCHAR
+    years: 2008-2025
+  EFYAIANW:
+    name: efyaianw
+    type: BIGINT
+    years: 2008-2025
+  XEFYASIM:
+    name: xefyasim
+    type: VARCHAR
+    years: 2008-2025
+  EFYASIAM:
+    name: efyasiam
+    type: BIGINT
+    years: 2008-2025
+  XEFYASIW:
+    name: xefyasiw
+    type: VARCHAR
+    years: 2008-2025
+  EFYASIAW:
+    name: efyasiaw
+    type: BIGINT
+    years: 2008-2025
+  XEFYBKAM:
+    name: xefybkam
+    type: VARCHAR
+    years: 2008-2025
+  EFYBKAAM:
+    name: efybkaam
+    type: BIGINT
+    years: 2008-2025
+  XEFYBKAW:
+    name: xefybkaw
+    type: VARCHAR
+    years: 2008-2025
+  EFYBKAAW:
+    name: efybkaaw
+    type: BIGINT
+    years: 2008-2025
+  XEFYNHPM:
+    name: xefynhpm
+    type: VARCHAR
+    years: 2008-2025
+  EFYNHPIM:
+    name: efynhpim
+    type: BIGINT
+    years: 2008-2025
+  XEFYNHPW:
+    name: xefynhpw
+    type: VARCHAR
+    years: 2008-2025
+  EFYNHPIW:
+    name: efynhpiw
+    type: BIGINT
+    years: 2008-2025
+  XEFYWHIM:
+    name: xefywhim
+    type: VARCHAR
+    years: 2008-2025
+  EFYWHITM:
+    name: efywhitm
+    type: BIGINT
+    years: 2008-2025
+  XEFYWHIW:
+    name: xefywhiw
+    type: VARCHAR
+    years: 2008-2025
+  EFYWHITW:
+    name: efywhitw
+    type: BIGINT
+    years: 2008-2025
+  XEFY2MOM:
+    name: xefy2mom
+    type: VARCHAR
+    years: 2008-2025
+  EFY2MORM:
+    name: efy2morm
+    type: BIGINT
+    years: 2008-2025
+  XEFY2MOW:
+    name: xefy2mow
+    type: VARCHAR
+    years: 2008-2025
+  EFY2MORW:
+    name: efy2morw
+    type: BIGINT
+    years: 2008-2025
+  XEFYHIST:
+    name: xefyhist
+    type: VARCHAR
+    years: 2008-2025
+  EFYHISPT:
+    name: efyhispt
+    type: BIGINT
+    years: 2008-2025
+  XEFYAIAT:
+    name: xefyaiat
+    type: VARCHAR
+    years: 2008-2025
+  EFYAIANT:
+    name: efyaiant
+    type: BIGINT
+    years: 2008-2025
+  XEFYASIT:
+    name: xefyasit
+    type: VARCHAR
+    years: 2008-2025
+  EFYASIAT:
+    name: efyasiat
+    type: BIGINT
+    years: 2008-2025
+  XEFYBKAT:
+    name: xefybkat
+    type: VARCHAR
+    years: 2008-2025
+  EFYBKAAT:
+    name: efybkaat
+    type: BIGINT
+    years: 2008-2025
+  XEFYNHPT:
+    name: xefynhpt
+    type: VARCHAR
+    years: 2008-2025
+  EFYNHPIT:
+    name: efynhpit
+    type: BIGINT
+    years: 2008-2025
+  XEFYWHIT:
+    name: xefywhit
+    type: VARCHAR
+    years: 2008-2025
+  EFYWHITT:
+    name: efywhitt
+    type: BIGINT
+    years: 2008-2025
+  XEFY2MOT:
+    name: xefy2mot
+    type: VARCHAR
+    years: 2008-2025
+  EFY2MORT:
+    name: efy2mort
+    type: BIGINT
+    years: 2008-2025
+  XDVEYAIT:
+    name: dveyait_flag
+    type: VARCHAR
+    flag_for: dveyait
+    years: 2008-2010
+  DVEYAIT:
+    name: dveyait
+    type: BIGINT
+    years: 2008-2010
+  XDVEYAIM:
+    name: dveyaim_flag
+    type: VARCHAR
+    flag_for: dveyaim
+    years: 2008-2010
+  DVEYAIM:
+    name: dveyaim
+    type: BIGINT
+    years: 2008-2010
+  XDVEYAIW:
+    name: dveyaiw_flag
+    type: VARCHAR
+    flag_for: dveyaiw
+    years: 2008-2010
+  DVEYAIW:
+    name: dveyaiw
+    type: BIGINT
+    years: 2008-2010
+  XDVEYAPT:
+    name: dveyapt_flag
+    type: VARCHAR
+    flag_for: dveyapt
+    years: 2008-2010
+  DVEYAPT:
+    name: dveyapt
+    type: BIGINT
+    years: 2008-2010
+  XDVEYAPM:
+    name: dveyapm_flag
+    type: VARCHAR
+    flag_for: dveyapm
+    years: 2008-2010
+  DVEYAPM:
+    name: dveyapm
+    type: BIGINT
+    years: 2008-2010
+  XDVEYAPW:
+    name: dveyapw_flag
+    type: VARCHAR
+    flag_for: dveyapw
+    years: 2008-2010
+  DVEYAPW:
+    name: dveyapw
+    type: BIGINT
+    years: 2008-2010
+  XDVEYBKT:
+    name: dveybkt_flag
+    type: VARCHAR
+    flag_for: dveybkt
+    years: 2008-2010
+  DVEYBKT:
+    name: dveybkt
+    type: BIGINT
+    years: 2008-2010
+  XDVEYBKM:
+    name: dveybkm_flag
+    type: VARCHAR
+    flag_for: dveybkm
+    years: 2008-2010
+  DVEYBKM:
+    name: dveybkm
+    type: BIGINT
+    years: 2008-2010
+  XDVEYBKW:
+    name: dveybkw_flag
+    type: VARCHAR
+    flag_for: dveybkw
+    years: 2008-2010
+  DVEYBKW:
+    name: dveybkw
+    type: BIGINT
+    years: 2008-2010
+  XDVEYHST:
+    name: dveyhst_flag
+    type: VARCHAR
+    flag_for: dveyhst
+    years: 2008-2010
+  DVEYHST:
+    name: dveyhst
+    type: BIGINT
+    years: 2008-2010
+  XDVEYHSM:
+    name: dveyhsm_flag
+    type: VARCHAR
+    flag_for: dveyhsm
+    years: 2008-2010
+  DVEYHSM:
+    name: dveyhsm
+    type: BIGINT
+    years: 2008-2010
+  XDVEYHSW:
+    name: dveyhsw_flag
+    type: VARCHAR
+    flag_for: dveyhsw
+    years: 2008-2010
+  DVEYHSW:
+    name: dveyhsw
+    type: BIGINT
+    years: 2008-2010
+  XDVEYWHT:
+    name: dveywht_flag
+    type: VARCHAR
+    flag_for: dveywht
+    years: 2008-2010
+  DVEYWHT:
+    name: dveywht
+    type: BIGINT
+    years: 2008-2010
+  XDVEYWHM:
+    name: dveywhm_flag
+    type: VARCHAR
+    flag_for: dveywhm
+    years: 2008-2010
+  DVEYWHM:
+    name: dveywhm
+    type: BIGINT
+    years: 2008-2010
+  XDVEYWHW:
+    name: dveywhw_flag
+    type: VARCHAR
+    flag_for: dveywhw
+    years: 2008-2010
+  DVEYWHW:
+    name: dveywhw
+    type: BIGINT
+    years: 2008-2010
+  EFFYALEV:
+    name: effyalev
+    type: BIGINT
+    years: 2020-2025
+  XEFYGUUN:
+    name: efyguun_flag
+    type: VARCHAR
+    flag_for: efyguun
+    years: 2022-2025
+  EFYGUUN:
+    name: efyguun
+    type: BIGINT
+    years: 2022-2025
+  XEFYGUAN:
+    name: efyguan_flag
+    type: VARCHAR
+    flag_for: efyguan
+    years: 2022-2024
+  EFYGUAN:
+    name: efyguan
+    type: BIGINT
+    years: 2022-2024
+  XEFYGUTO:
+    name: xefyguto
+    type: VARCHAR
+    years: 2022-2024
+  EFYGUTOT:
+    name: efygutot
+    type: BIGINT
+    years: 2022-2024
+  XEFYGUKN:
+    name: efygukn_flag
+    type: VARCHAR
+    flag_for: efygukn
+    years: 2022-2025
+  EFYGUKN:
+    name: efygukn
+    type: BIGINT
+    years: 2022-2025

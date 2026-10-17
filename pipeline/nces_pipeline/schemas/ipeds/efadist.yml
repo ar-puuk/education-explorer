@@ -1,0 +1,95 @@
+source: ipeds
+family: efadist
+key:
+- unitid
+- efdelev
+columns:
+  UNITID:
+    name: unitid
+    type: VARCHAR
+    years: 2012-2024
+  EFDELEV:
+    name: efdelev
+    type: BIGINT
+    years: 2012-2024
+  XEFDETOT:
+    name: efdetot_flag
+    type: VARCHAR
+    flag_for: efdetot
+    years: 2012-2024
+  EFDETOT:
+    name: efdetot
+    type: BIGINT
+    years: 2012-2024
+  XEFDEEXC:
+    name: efdeexc_flag
+    type: VARCHAR
+    flag_for: efdeexc
+    years: 2012-2024
+  EFDEEXC:
+    name: efdeexc
+    type: BIGINT
+    years: 2012-2024
+  XEFDESOM:
+    name: efdesom_flag
+    type: VARCHAR
+    flag_for: efdesom
+    years: 2012-2024
+  EFDESOM:
+    name: efdesom
+    type: BIGINT
+    years: 2012-2024
+  XEFDENON:
+    name: efdenon_flag
+    type: VARCHAR
+    flag_for: efdenon
+    years: 2012-2024
+  EFDENON:
+    name: efdenon
+    type: BIGINT
+    years: 2012-2024
+  XEFDEEX1:
+    name: efdeex1_flag
+    type: VARCHAR
+    flag_for: efdeex1
+    years: 2012-2024
+  EFDEEX1:
+    name: efdeex1
+    type: BIGINT
+    years: 2012-2024
+  XEFDEEX2:
+    name: efdeex2_flag
+    type: VARCHAR
+    flag_for: efdeex2
+    years: 2012-2024
+  EFDEEX2:
+    name: efdeex2
+    type: BIGINT
+    years: 2012-2024
+  XEFDEEX3:
+    name: efdeex3_flag
+    type: VARCHAR
+    flag_for: efdeex3
+    years: 2012-2024
+  EFDEEX3:
+    name: efdeex3
+    type: BIGINT
+    years: 2012-2024
+  XEFDEEX4:
+    name: efdeex4_flag
+    type: VARCHAR
+    flag_for: efdeex4
+    years: 2012-2024
+  EFDEEX4:
+    name: efdeex4
+    type: BIGINT
+    years: 2012-2024
+  XEFDEEX5:
+    name: efdeex5_flag
+    type: VARCHAR
+    flag_for: efdeex5
+    years: 2012-2024
+  EFDEEX5:
+    name: efdeex5
+    type: BIGINT
+    years: 2012-2024
