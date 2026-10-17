@@ -1,0 +1,22 @@
+name: Data problem
+description: A value, label, caveat or year looks wrong or missing
+labels: ["data"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where did you see it?
+      description: Dataset, table or panel, school year, and the NCES ID (school, district, unit ID or PIN). A shared URL from the app helps.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What looks wrong, and what did you expect?
+      description: Link the NCES source page or file if you have one.
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else

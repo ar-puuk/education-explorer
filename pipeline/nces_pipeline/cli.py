@@ -40,11 +40,11 @@ def cmd_fetch(a, state) -> int:
     if a.source in (None, "boundaries"):
         from .boundaries import fetch_boundaries
 
-        print(f"TIGER school district files present: {fetch_boundaries(state)}")
+        print(f"TIGER school district files present: {fetch_boundaries(state, check_only=a.check_only)}")
     if a.source in (None, "pss"):
         from .pss import fetch_pss
 
-        print(f"PSS: {fetch_pss()} surveys present")
+        print(f"PSS: {fetch_pss(check_only=a.check_only)} surveys present")
     if a.source in (None, "ipeds"):
         from .config import DATA_RAW
         from .ipeds_catalog import build_catalog as ipeds_catalog
@@ -222,7 +222,7 @@ def main(argv: list[str] | None = None) -> int:
     v.add_argument("--update-baseline", action="store_true", help="record row counts as the new baseline when valid")
     v.set_defaults(fn=cmd_validate)
 
-    u = sub.add_parser("update", help="fetch -> build -> dictionary -> meta -> validate, with a changelog")
+    u = sub.add_parser("update", help="fetch -> build -> geocode -> boundaries -> dictionary -> points -> meta -> validate, with a changelog")
     u.add_argument("--year", type=int)
     u.set_defaults(fn=cmd_update)
 

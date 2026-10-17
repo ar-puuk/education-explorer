@@ -1,0 +1,16 @@
+name: New NCES release or schema change
+description: A new CCD, PSS or IPEDS release is out, or the build stops with a schema-drift message
+labels: ["pipeline"]
+body:
+  - type: input
+    id: release
+    attributes:
+      label: Release
+      description: For example "CCD 2025-26 membership" or "IPEDS 2025 HD".
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output of `fetch --check-only` or the drift message
+      render: text

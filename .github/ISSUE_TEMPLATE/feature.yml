@@ -1,0 +1,15 @@
+name: Feature or accessibility request
+description: A proposal for the app or pipeline (no rankings or quality scores, no paid services, no backend)
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to be able to do?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Device, browser, theme (light/dark) and assistive technology if this is about accessibility.

@@ -60,8 +60,15 @@ def surveys() -> list[Survey]:
     return [Survey(y, n) for y, n in sorted(SURVEYS.items())]
 
 
-def fetch_pss() -> int:
+def fetch_pss(check_only: bool = False) -> int:
     n = 0
+    if check_only:
+        for s in surveys():
+            have = (DATA_RAW / s.rel).exists()
+            n += have
+            if not have:
+                print(f"  NEW PSS {s.label}: {s.url}")
+        return n
     with client() as c:
         for s in surveys():
             p = download(s.url, s.rel, source="pss", release=s.label, c=c, skip_missing=True)

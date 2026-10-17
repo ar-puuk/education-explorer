@@ -22,8 +22,15 @@ def tiger_url(year: int, kind: str, fips: str) -> str:
     return f"https://www2.census.gov/geo/tiger/TIGER{year}/{kind}/tl_{year}_{fips}_{kind.lower()}.zip"
 
 
-def fetch_boundaries(state: State) -> int:
+def fetch_boundaries(state: State, check_only: bool = False) -> int:
     n = 0
+    if check_only:
+        for y in range(FIRST_TIGER, LAST_TIGER + 1):
+            for kind in TYPES:
+                if (DATA_RAW / "tiger" / str(y) / f"{kind.lower()}_{state.fips}.zip").exists():
+                    n += 1
+        print(f"  TIGER: {n} files present (new vintages appear as a new year; raise LAST_TIGER in boundaries.py)")
+        return n
     with client() as c:
         for y in range(FIRST_TIGER, LAST_TIGER + 1):
             for kind in TYPES:
