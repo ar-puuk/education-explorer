@@ -366,6 +366,17 @@ details.cav p {
 .maplibregl-ctrl-attrib a {
   color: var(--text) !important;
 }
+/* only the glyph colour of the (i) button changes in dark themes; the icon itself is MapLibre's */
+:root[data-theme='dark'] .maplibregl-ctrl-attrib-button {
+  filter: invert(1);
+  outline-color: #633d00; /* inverted by the filter into the light focus colour */
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .maplibregl-ctrl-attrib-button {
+    filter: invert(1);
+    outline-color: #633d00;
+  }
+}
 .maplibregl-ctrl-top-right,
 .maplibregl-ctrl-bottom-right {
   right: var(--insp-w, 0px);
