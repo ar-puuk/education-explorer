@@ -21,11 +21,11 @@ columns:
     years: 1991,1997
   H_SAMP:
     name: h_samp
-    type: BIGINT
+    type: VARCHAR
     years: '1991'
   SMPLWT:
     name: smplwt
-    type: BIGINT
+    type: DOUBLE
     years: '1991'
   VARSTRAT:
     name: varstrat

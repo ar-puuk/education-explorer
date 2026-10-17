@@ -131,7 +131,7 @@
         {/each}
       </div>
     </details>
-    <div class="scroll">
+    <div class="scroll" tabindex="0" role="region" aria-label="Table rows">
       <table>
         <thead>
           <tr>

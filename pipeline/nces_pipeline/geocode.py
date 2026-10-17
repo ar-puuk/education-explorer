@@ -87,7 +87,7 @@ def pending_addresses(state: State) -> dict[str, list[str]]:
     if hd.exists():
         add(con.execute(f"""
           SELECT addr, city, stabbr, zip FROM read_parquet('{hd.as_posix()}/*.parquet', union_by_name=true)
-          WHERE latitude IS NULL OR longitud IS NULL OR latitude = 0""").fetchall(), "ipeds")
+          WHERE TRY_CAST(latitude AS DOUBLE) IS NULL OR TRY_CAST(longitud AS DOUBLE) IS NULL OR TRY_CAST(latitude AS DOUBLE) = 0""").fetchall(), "ipeds")
     return out
 
 

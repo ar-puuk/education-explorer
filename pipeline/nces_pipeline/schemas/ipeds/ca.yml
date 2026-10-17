@@ -793,5 +793,5 @@ columns:
     years: 2008-2010
   CDISTEDP:
     name: cdistedp
-    type: BIGINT
+    type: VARCHAR
     years: '2012'

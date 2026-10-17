@@ -177,6 +177,13 @@ await mp.waitForSelector('#versions table', { timeout: 20000 })
 ok('methodology page loads coverage table')
 await mp.close()
 
+// colour by attribute keeps markers on the map and changes the icon set
+await page.locator('aside[aria-label="Layers and filters"] select').first().selectOption('charter')
+await page.waitForTimeout(600)
+const catIcon = await page.evaluate(() => window.__ee.controller.map.hasImage('public-cat1'))
+catIcon ? ok('colour-by icons registered') : fail('no category icons')
+await page.locator('aside[aria-label="Layers and filters"] select').first().selectOption('dataset')
+
 // legacy years (pre-2014) work: map markers and a school panel with its history
 await page.locator('#school-search').fill(SCHOOL)
 await page.locator('#search-results li button', { hasText: 'Public school' }).first().click()

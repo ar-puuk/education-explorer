@@ -7,6 +7,7 @@ import { cssVar, makeIcon, type Dataset, type Selectable } from './icons'
 
 const DATASETS: Dataset[] = ['public', 'private', 'college']
 const VARIANTS = ['open', 'closed', 'approx'] as const
+const CATEGORY_ICONS = 8
 
 export type PointFeature = GeoJSON.Feature<GeoJSON.Point, Record<string, unknown>>
 
@@ -79,8 +80,18 @@ export class MapController {
       }
       this.addDataset(ds)
     }
+    this.addCategoryIcons()
     this.addSelection()
     this.setBasemapExtras()
+  }
+
+  /** Public school icons in the categorical chart colours (for "colour by"). */
+  private addCategoryIcons() {
+    for (let i = 0; i < CATEGORY_ICONS; i++) {
+      const name = `public-cat${i}`
+      if (this.map.hasImage(name)) this.map.removeImage(name)
+      this.map.addImage(name, makeIcon('public', { fill: cssVar(`--chart-${i + 1}`), ring: cssVar('--ring') }, 2), { pixelRatio: 2 })
+    }
   }
 
   /** School district polygons sit under the point layers. */
@@ -388,6 +399,7 @@ export class MapController {
     for (const d of DATASETS) {
       if (this.map.getLayer(`${d}-selected`)) this.map.setPaintProperty(`${d}-selected`, 'circle-stroke-color', cssVar('--accent'))
     }
+    this.addCategoryIcons()
   }
 
   flyTo(lon: number, lat: number, zoom = 14) {

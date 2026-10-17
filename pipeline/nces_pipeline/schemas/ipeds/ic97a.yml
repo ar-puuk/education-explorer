@@ -169,11 +169,11 @@ columns:
     years: '1996'
   FINTELE:
     name: fintele
-    type: BIGINT
+    type: VARCHAR
     years: '1996'
   ADMTELE:
     name: admtele
-    type: BIGINT
+    type: VARCHAR
     years: '1996'
   PEO1ISTR:
     name: peo1istr

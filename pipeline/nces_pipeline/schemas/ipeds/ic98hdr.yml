@@ -117,7 +117,7 @@ columns:
     years: '1997'
   OPEID:
     name: opeid
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   OPEIND:
     name: opeind

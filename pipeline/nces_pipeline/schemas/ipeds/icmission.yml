@@ -109,81 +109,81 @@ columns:
     years: '2007'
   COLUMN24:
     name: column24
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN25:
     name: column25
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN26:
     name: column26
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN27:
     name: column27
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN28:
     name: column28
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN29:
     name: column29
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN30:
     name: column30
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN31:
     name: column31
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN32:
     name: column32
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN33:
     name: column33
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN34:
     name: column34
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN35:
     name: column35
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN36:
     name: column36
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN37:
     name: column37
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN38:
     name: column38
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN39:
     name: column39
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN40:
     name: column40
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN41:
     name: column41
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN42:
     name: column42
-    type: BIGINT
+    type: VARCHAR
     years: '2007'
   COLUMN43:
     name: column43
-    type: BIGINT
+    type: VARCHAR
     years: '2007'

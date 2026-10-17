@@ -17,11 +17,11 @@ columns:
     years: 2021-2024
   DVADM03:
     name: dvadm03
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   DVADM04:
     name: dvadm04
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   DVADM05:
     name: dvadm05
@@ -29,11 +29,11 @@ columns:
     years: 2021-2024
   DVADM06:
     name: dvadm06
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   DVADM07:
     name: dvadm07
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   DVADM08:
     name: dvadm08
@@ -41,11 +41,11 @@ columns:
     years: 2021-2024
   DVADM09:
     name: dvadm09
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   DVADM10:
     name: dvadm10
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   DVADM11:
     name: dvadm11
@@ -53,5 +53,5 @@ columns:
     years: 2021-2024
   DVADM12:
     name: dvadm12
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024

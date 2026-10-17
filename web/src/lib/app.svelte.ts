@@ -23,6 +23,8 @@ export const app = $state({
   basemapChoice: null as BasemapId | null,
   layers: { public: true, private: true, college: true } as Record<Dataset, boolean>,
   sizeByEnroll: true,
+  /** colour public school markers by an attribute (the shape stays the same) */
+  colorBy: 'dataset' as 'dataset' | 'charter' | 'locale' | 'level',
   includeClosed: false,
   charter: 'all' as 'all' | 'yes' | 'no',
   levels: [] as string[],
@@ -77,6 +79,7 @@ export function applyUrl(u: UrlState) {
   if (u.layers) app.layers = { ...app.layers, ...u.layers }
   if (u.theme) theme.pref = u.theme
   if (u.sizeByEnroll === false) app.sizeByEnroll = false
+  if (u.colorBy) app.colorBy = u.colorBy
   if (u.includeClosed) app.includeClosed = true
   if (u.charter) app.charter = u.charter
   if (u.levels) app.levels = u.levels
@@ -95,6 +98,7 @@ export function currentUrlState(): UrlState {
     layers: app.layers,
     theme: theme.pref,
     sizeByEnroll: app.sizeByEnroll,
+    colorBy: app.colorBy,
     includeClosed: app.includeClosed,
     charter: app.charter,
     levels: app.levels,

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { app } from '../lib/app.svelte'
   import { DATASET_LABEL, legendSvg, type Dataset } from '../lib/icons'
+  import { CATEGORIES } from '../lib/colorby'
   import { levelLabel } from '../lib/labels'
 
   const datasets: { id: Dataset; ready: boolean }[] = [
@@ -83,6 +84,22 @@
         <input type="checkbox" bind:checked={app.sizeByEnroll} />
         <span>Marker size by enrollment</span>
       </label>
+      <label class="field">
+        <span>Colour by</span>
+        <select bind:value={app.colorBy}>
+          <option value="dataset">Dataset colour</option>
+          <option value="charter">Charter status</option>
+          <option value="locale">Locale</option>
+          <option value="level">School level</option>
+        </select>
+      </label>
+      {#if app.colorBy !== 'dataset'}
+        <ul class="legend" aria-label="Marker colours for public schools">
+          {#each CATEGORIES[app.colorBy] as c, i}
+            <li><span class="sw" style={`background: var(--chart-${i + 1})`}></span>{c.label}</li>
+          {/each}
+        </ul>
+      {/if}
       <label class="field">
         <span>Charter</span>
         <select bind:value={app.charter}>
@@ -198,6 +215,24 @@
   legend {
     padding: 0;
     margin-bottom: 2px;
+  }
+  .legend {
+    list-style: none;
+    margin: 2px 0 6px;
+    padding: 0;
+    font-size: 12.5px;
+  }
+  .legend li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .sw {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid var(--ring);
+    flex: none;
   }
   .collapse,
   .link {

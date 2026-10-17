@@ -177,7 +177,7 @@ columns:
     years: '1987'
   H_SAMP:
     name: h_samp
-    type: BIGINT
+    type: VARCHAR
     years: '1987'
   SMPLWT:
     name: smplwt

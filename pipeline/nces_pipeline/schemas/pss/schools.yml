@@ -615,12 +615,12 @@ columns:
     label: School Orientation
   NR_STDS:
     name: nr_stds
-    type: BIGINT
+    type: DOUBLE
     years: '1989'
     label: Total No. of Stdts (K-12, Ug) Not Report
   NUMSTUDS:
     name: enrollment_total
-    type: BIGINT
+    type: DOUBLE
     years: 1989,1991,1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
     label: Total Number of Students (K-12, UG)
   NUMTEACH:
@@ -3832,12 +3832,12 @@ columns:
     label: 6F American Indian/Alaska Native Students
   P315:
     name: p315
-    type: BIGINT
+    type: DOUBLE
     years: 1993,1995,1997,1999,2001,2003,2005,2007
     label: 7D Asian Or Pacific Islander Students
   P320:
     name: p320
-    type: BIGINT
+    type: DOUBLE
     years: 1993,1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
     label: 6A Hispanic or Latino Students
   P325:
@@ -5189,7 +5189,7 @@ columns:
     label: 15 Other School Associations
   P645:
     name: p645
-    type: BIGINT
+    type: DOUBLE
     years: 1995,1997,1999,2001,2003,2005,2007,2009,2011,2013,2015,2017,2019,2021,2023
     label: 16 Days in School Year
   P650:
@@ -5657,7 +5657,7 @@ columns:
     label: 9D Percent To 2 Year College
   P362:
     name: p362
-    type: BIGINT
+    type: DOUBLE
     years: 1999,2001
     label: 9D Percent To Technical School
   P467:

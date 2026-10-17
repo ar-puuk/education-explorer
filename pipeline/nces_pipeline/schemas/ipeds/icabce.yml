@@ -157,7 +157,7 @@ columns:
     years: '1990'
   LEVELOTH:
     name: leveloth
-    type: BIGINT
+    type: VARCHAR
     years: '1990'
   FOPNA:
     name: fopna

@@ -149,7 +149,7 @@ columns:
     years: 1990-1991
   PROFOTH:
     name: profoth
-    type: BIGINT
+    type: VARCHAR
     years: '1990'
   PROFNA:
     name: profna

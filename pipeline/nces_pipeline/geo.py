@@ -80,7 +80,7 @@ def build_points_college() -> int:
              CASE WHEN h.latitude BETWEEN -90 AND 90 AND h.longitud BETWEEN -180 AND 180
                        AND h.latitude <> 0 AND h.longitud <> 0 THEN h.longitud END AS lon,
              enr.total
-      FROM {hd} h LEFT JOIN enr ON enr.unitid = h.unitid AND enr.year = h.year""")
+      FROM (SELECT * REPLACE (TRY_CAST(latitude AS DOUBLE) AS latitude, TRY_CAST(longitud AS DOUBLE) AS longitud) FROM {hd}) h LEFT JOIN enr ON enr.unitid = h.unitid AND enr.year = h.year""")
     years = [r[0] for r in con.execute("SELECT DISTINCT year FROM per_year ORDER BY 1").fetchall()]
     rows = con.execute("""
       SELECT unitid, list(year ORDER BY year), list(cyactive ORDER BY year), list(total ORDER BY year),

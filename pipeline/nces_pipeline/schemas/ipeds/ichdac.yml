@@ -85,7 +85,7 @@ columns:
     years: '1998'
   GENTELE:
     name: gentele
-    type: BIGINT
+    type: VARCHAR
     years: '1998'
   FINTELE:
     name: fintele
@@ -105,7 +105,7 @@ columns:
     years: '1998'
   OPEID:
     name: opeid
-    type: BIGINT
+    type: VARCHAR
     years: '1998'
   OPEFLAG:
     name: opeflag
@@ -209,7 +209,7 @@ columns:
     years: '1998'
   NEWID:
     name: newid
-    type: BIGINT
+    type: VARCHAR
     years: '1998'
   DEATHYR:
     name: deathyr

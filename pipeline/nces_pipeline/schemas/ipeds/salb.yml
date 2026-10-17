@@ -300,11 +300,11 @@ columns:
     years: 1987,1989-1997
   HPR:
     name: hpr
-    type: BIGINT
+    type: VARCHAR
     years: 1987,1989-1998
   TPR:
     name: tpr
-    type: BIGINT
+    type: VARCHAR
     years: 1987,1989-1998
   SURVEY:
     name: survey

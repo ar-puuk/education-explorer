@@ -149,7 +149,7 @@ columns:
     years: 2000-2025
   CARNEGIE:
     name: carnegie
-    type: BIGINT
+    type: VARCHAR
     years: 2000-2023
   LOCALE:
     name: locale
@@ -581,7 +581,7 @@ columns:
     years: '2003'
   F1SYSTYP:
     name: f1systyp
-    type: BIGINT
+    type: VARCHAR
     years: 2003,2010-2025
   F1SYSNAM:
     name: f1sysnam
@@ -633,7 +633,7 @@ columns:
     years: 2004-2025
   INSTCAT:
     name: instcat
-    type: BIGINT
+    type: VARCHAR
     years: 2004-2025
   TENURSYS:
     name: tenursys
@@ -645,15 +645,15 @@ columns:
     years: 2005-2025
   CCBASIC:
     name: ccbasic
-    type: BIGINT
+    type: VARCHAR
     years: 2005-2023
   CCIPUG:
     name: ccipug
-    type: BIGINT
+    type: VARCHAR
     years: 2005-2014
   CCIPGRAD:
     name: ccipgrad
-    type: BIGINT
+    type: VARCHAR
     years: 2005-2014
   CCUGPROF:
     name: ccugprof
@@ -665,7 +665,7 @@ columns:
     years: 2005-2014
   CCSIZSET:
     name: ccsizset
-    type: BIGINT
+    type: VARCHAR
     years: 2005-2014
   LANDGRNT:
     name: landgrnt
@@ -697,15 +697,15 @@ columns:
     years: 2007-2025
   CBSATYPE:
     name: cbsatype
-    type: BIGINT
+    type: VARCHAR
     years: 2007-2025
   CSA:
     name: csa
-    type: BIGINT
+    type: VARCHAR
     years: 2007-2025
   NECTA:
     name: necta
-    type: BIGINT
+    type: VARCHAR
     years: 2007-2021
   HDEGOFR1:
     name: hdegofr1
@@ -713,11 +713,11 @@ columns:
     years: 2009-2025
   LONGITUD:
     name: longitud
-    type: DOUBLE
+    type: VARCHAR
     years: 2009-2025
   LATITUDE:
     name: latitude
-    type: DOUBLE
+    type: VARCHAR
     years: 2009-2025
   COUNTYCD:
     name: countycd
@@ -769,7 +769,7 @@ columns:
     years: 2009-2010
   COLUMN072:
     name: column072
-    type: BIGINT
+    type: VARCHAR
     years: 2009-2010
   COLUMN073:
     name: column073
@@ -805,7 +805,7 @@ columns:
     years: 2009-2010
   COLUMN081:
     name: column081
-    type: BIGINT
+    type: VARCHAR
     years: 2009-2010
   COLUMN082:
     name: column082
@@ -869,11 +869,11 @@ columns:
     years: 2009-2010
   COLUMN097:
     name: column097
-    type: BIGINT
+    type: DOUBLE
     years: 2009-2010
   COLUMN098:
     name: column098
-    type: BIGINT
+    type: DOUBLE
     years: 2009-2010
   COLUMN099:
     name: column099
@@ -881,11 +881,11 @@ columns:
     years: 2009-2010
   COLUMN100:
     name: column100
-    type: BIGINT
+    type: VARCHAR
     years: 2009-2010
   COLUMN101:
     name: column101
-    type: BIGINT
+    type: VARCHAR
     years: 2009-2010
   COLUMN102:
     name: column102
@@ -897,11 +897,11 @@ columns:
     years: 2010-2013
   COLUMN103:
     name: column103
-    type: BIGINT
+    type: DOUBLE
     years: '2010'
   COLUMN104:
     name: column104
-    type: BIGINT
+    type: DOUBLE
     years: '2010'
   COLUMN105:
     name: column105

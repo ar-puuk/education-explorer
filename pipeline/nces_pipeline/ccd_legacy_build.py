@@ -20,6 +20,7 @@ from .config import DOCS_DATA, SCHEMAS, State
 from .ipeds_build import RANK, years_from_str, years_to_str
 from .parquet import write_parquet
 from .schema import SchemaDrift
+from .typecheck import check_casts
 
 NOCAT = "No Category Codes"
 STATUS = {"1": "Open", "2": "Closed", "3": "New", "4": "Added", "5": "Changed Boundary/Agency", "6": "Inactive",
@@ -137,6 +138,7 @@ def build_legacy(state: State) -> list[dict]:
                 continue
             probe = "SCHNAM" if level == "school" else "NAME"
             names = normalize(con, staged, year, probe)
+            _STAGED[(year, level)] = staged
             check_legacy_map(level, year, names)
             con.execute("DROP VIEW IF EXISTS w")
             con.execute(f"CREATE VIEW w AS SELECT * FROM read_parquet('{staged.as_posix()}')")
@@ -314,14 +316,10 @@ def bootstrap_legacy_maps(state: State, force: bool = False) -> list[Path]:
                 cols_years[base].append(year)
                 if lab.get(raw.upper()):
                     labels[base] = lab[raw.upper()]
-            aggs = []
-            for raw in names.values():
-                v = f"NULLIF(TRIM({q(raw)}), '')"
-                aggs += [f"count(*) FILTER (WHERE {v} IS NOT NULL AND NOT regexp_matches({v}, '^[+-]?[0-9]+$'))",
-                         f"count(*) FILTER (WHERE {v} IS NOT NULL AND TRY_CAST({v} AS DOUBLE) IS NULL)"]
-            st = con.execute(f"SELECT {', '.join(aggs)} FROM read_parquet('{staged.as_posix()}')").fetchone()
-            for i, base in enumerate(names):
-                ty = "VARCHAR" if st[2 * i + 1] else ("DOUBLE" if st[2 * i] else "BIGINT")
+            nat = json.loads(staged.with_suffix(".types.json").read_text(encoding="utf-8"))  # national counts
+            for base, raw in names.items():
+                nonint, nonnum = nat.get(raw.upper(), [0, 0])
+                ty = "VARCHAR" if nonnum else ("DOUBLE" if nonint else "BIGINT")
                 if base not in types or RANK[ty] > RANK[types[base]]:
                     types[base] = ty
         cols = {}
@@ -341,8 +339,18 @@ def bootstrap_legacy_maps(state: State, force: bool = False) -> list[Path]:
     return out
 
 
+_STAGED: dict[tuple[int, str], Path] = {}
+
+
+def _staged_of(year: int, level: str) -> Path:
+    return _STAGED[(year, level)]
+
+
 def _wide(con, names: dict[str, str], year: int, level: str, src: str) -> dict:
     d = yaml.safe_load(_map_file(level).read_text(encoding="utf-8"))
+    check_casts(con, _staged_of(year, level), [(names[b], sp["type"]) for b, sp in d["columns"].items()
+                                                 if b in names and year in years_from_str(sp["years"])],
+                f"ccd_legacy/{level}/{year}", "Re-run bootstrap-maps --force (types are sniffed from the national files).")
     sel = [f"{year}::INTEGER AS year"]
     for base, spec in d["columns"].items():
         if year not in years_from_str(spec["years"]) or base not in names:

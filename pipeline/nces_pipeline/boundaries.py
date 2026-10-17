@@ -46,6 +46,20 @@ def _round(coords):
     return [_round(c) for c in coords]
 
 
+def _read_districts(con, shp, name_col: str, lo: str | None, hi: str | None) -> list[tuple]:
+    """Read one TIGER shapefile; some states' .dbf files are not valid UTF-8 (accented names), so retry as Latin-1."""
+    for opts in ("", ", open_options=['ENCODING=LATIN1']"):
+        try:
+            return con.execute(f"""
+              SELECT GEOID, {name_col}, {lo or 'NULL'}, {hi or 'NULL'},
+                     ST_AsGeoJSON(ST_SimplifyPreserveTopology(geom, {SIMPLIFY_DEG}))
+              FROM ST_Read('{shp.as_posix()}'{opts}) ORDER BY GEOID""").fetchall()
+        except duckdb.Error:
+            if opts:
+                raise
+    return []
+
+
 def build_boundaries(state: State) -> list[dict]:
     con = duckdb.connect()
     con.execute("INSTALL spatial; LOAD spatial;")
@@ -66,10 +80,7 @@ def build_boundaries(state: State) -> list[dict]:
             name_col = "NAME" if "NAME" in cols else "NAMELSAD"
             lo = "LOGRADE" if "LOGRADE" in cols else None
             hi = "HIGRADE" if "HIGRADE" in cols else None
-            rows = con.execute(f"""
-              SELECT GEOID, {name_col}, {lo or 'NULL'}, {hi or 'NULL'},
-                     ST_AsGeoJSON(ST_SimplifyPreserveTopology(geom, {SIMPLIFY_DEG}))
-              FROM ST_Read('{shp.as_posix()}') ORDER BY GEOID""").fetchall()
+            rows = _read_districts(con, shp, name_col, lo, hi)
             for geoid, name, glo, ghi, gj in rows:
                 g = json.loads(gj)
                 g["coordinates"] = _round(g["coordinates"])

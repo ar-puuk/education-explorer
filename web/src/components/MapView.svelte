@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
   import { MapController, type PointFeature } from '../lib/map'
   import { app, basemap } from '../lib/app.svelte'
+  import { categoryIndex } from '../lib/colorby'
   import { visibleColleges, visiblePrivate, visiblePublic } from '../lib/filters'
   import { loadDistricts } from '../lib/data'
   import { theme } from '../lib/theme.svelte'
@@ -13,7 +14,10 @@
     visiblePublic().map(({ s, i, status, operating }) => ({
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [s.lon, s.lat] },
-      properties: { id: s.id, name: s.name, enroll: s.enroll[i], status, icon: operating ? 'public' : 'public-closed' },
+      properties: {
+        id: s.id, name: s.name, enroll: s.enroll[i], status,
+        icon: !operating ? 'public-closed' : app.colorBy === 'dataset' ? 'public' : `public-cat${categoryIndex(app.colorBy, s)}`,
+      },
     })),
   )
 

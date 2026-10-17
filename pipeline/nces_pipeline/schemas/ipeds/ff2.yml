@@ -14,7 +14,7 @@ columns:
     years: '1997'
   FA01_1:
     name: fa01_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA02_1:
     name: fa02_1_flag
@@ -23,7 +23,7 @@ columns:
     years: '1997'
   FA02_1:
     name: fa02_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA04_1:
     name: fa04_1_flag
@@ -32,7 +32,7 @@ columns:
     years: '1997'
   FA04_1:
     name: fa04_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA05_1:
     name: fa05_1_flag
@@ -41,7 +41,7 @@ columns:
     years: '1997'
   FA05_1:
     name: fa05_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA06_1:
     name: fa06_1_flag
@@ -50,7 +50,7 @@ columns:
     years: '1997'
   FA06_1:
     name: fa06_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA07_1:
     name: fa07_1_flag
@@ -59,7 +59,7 @@ columns:
     years: '1997'
   FA07_1:
     name: fa07_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA08_1:
     name: fa08_1_flag
@@ -68,7 +68,7 @@ columns:
     years: '1997'
   FA08_1:
     name: fa08_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA910_1:
     name: fa910_1_flag
@@ -77,7 +77,7 @@ columns:
     years: '1997'
   FA910_1:
     name: fa910_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA11_1:
     name: fa11_1_flag
@@ -86,7 +86,7 @@ columns:
     years: '1997'
   FA11_1:
     name: fa11_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA12_1:
     name: fa12_1_flag
@@ -95,7 +95,7 @@ columns:
     years: '1997'
   FA12_1:
     name: fa12_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA13_1:
     name: fa13_1_flag
@@ -104,7 +104,7 @@ columns:
     years: '1997'
   FA13_1:
     name: fa13_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA14_16:
     name: fa14_16_flag
@@ -113,7 +113,7 @@ columns:
     years: '1997'
   FA14_16:
     name: fa14_16
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFA17_1:
     name: fa17_1_flag
@@ -122,7 +122,7 @@ columns:
     years: '1997'
   FA17_1:
     name: fa17_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFAA01:
     name: faa01_flag
@@ -212,7 +212,7 @@ columns:
     years: '1997'
   FB01_1:
     name: fb01_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB02_1:
     name: fb02_1_flag
@@ -221,7 +221,7 @@ columns:
     years: '1997'
   FB02_1:
     name: fb02_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB03_1:
     name: fb03_1_flag
@@ -230,7 +230,7 @@ columns:
     years: '1997'
   FB03_1:
     name: fb03_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB04_1:
     name: fb04_1_flag
@@ -239,7 +239,7 @@ columns:
     years: '1997'
   FB04_1:
     name: fb04_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB05_1:
     name: fb05_1_flag
@@ -248,7 +248,7 @@ columns:
     years: '1997'
   FB05_1:
     name: fb05_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB06_1:
     name: fb06_1_flag
@@ -257,7 +257,7 @@ columns:
     years: '1997'
   FB06_1:
     name: fb06_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB07_1:
     name: fb07_1_flag
@@ -266,7 +266,7 @@ columns:
     years: '1997'
   FB07_1:
     name: fb07_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB08_1:
     name: fb08_1_flag
@@ -275,7 +275,7 @@ columns:
     years: '1997'
   FB08_1:
     name: fb08_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB910_1:
     name: fb910_1_flag
@@ -284,7 +284,7 @@ columns:
     years: '1997'
   FB910_1:
     name: fb910_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB11_1:
     name: fb11_1_flag
@@ -293,7 +293,7 @@ columns:
     years: '1997'
   FB11_1:
     name: fb11_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFB12_1:
     name: fb12_1_flag
@@ -302,7 +302,7 @@ columns:
     years: '1997'
   FB12_1:
     name: fb12_1
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFC01:
     name: fc01_flag
@@ -320,7 +320,7 @@ columns:
     years: '1997'
   FC02:
     name: fc02
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFC03_08:
     name: fc03_08_flag
@@ -329,7 +329,7 @@ columns:
     years: '1997'
   FC03_08:
     name: fc03_08
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFC09:
     name: fc09_flag
@@ -338,7 +338,7 @@ columns:
     years: '1997'
   FC09:
     name: fc09
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFC10:
     name: fc10_flag
@@ -347,7 +347,7 @@ columns:
     years: '1997'
   FC10:
     name: fc10
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFC11:
     name: fc11_flag
@@ -356,7 +356,7 @@ columns:
     years: '1997'
   FC11:
     name: fc11
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFC12:
     name: fc12_flag
@@ -374,7 +374,7 @@ columns:
     years: '1997'
   FD05:
     name: fd05
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFD08:
     name: fd08_flag
@@ -383,7 +383,7 @@ columns:
     years: '1997'
   FD08:
     name: fd08
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFD17:
     name: fd17_flag
@@ -392,7 +392,7 @@ columns:
     years: '1997'
   FD17:
     name: fd17
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFD20:
     name: fd20_flag
@@ -401,7 +401,7 @@ columns:
     years: '1997'
   FD20:
     name: fd20
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFD23:
     name: fd23_flag
@@ -410,7 +410,7 @@ columns:
     years: '1997'
   FD23:
     name: fd23
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFD24:
     name: fd24_flag
@@ -419,7 +419,7 @@ columns:
     years: '1997'
   FD24:
     name: fd24
-    type: BIGINT
+    type: VARCHAR
     years: '1997'
   XFDC01_1:
     name: fdc01_1_flag

@@ -9,31 +9,31 @@ columns:
     years: '1999'
   YEARIND:
     name: yearind
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   FEDGRNTP:
     name: fedgrntp
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   FEDGRNTA:
     name: fedgrnta
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   STGRNTP:
     name: stgrntp
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   STGRNTA:
     name: stgrnta
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   INGRNTP:
     name: ingrntp
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   INGRNTA:
     name: ingrnta
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   LOANPCT:
     name: loanpct
@@ -61,29 +61,29 @@ columns:
     years: '1999'
   COLUMN14:
     name: column14
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   COLUMN15:
     name: column15
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   COLUMN16:
     name: column16
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   COLUMN17:
     name: column17
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   COLUMN18:
     name: column18
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   COLUMN19:
     name: column19
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   COLUMN20:
     name: column20
-    type: BIGINT
+    type: VARCHAR
     years: '1999'

@@ -9,7 +9,7 @@ columns:
     years: '1991'
   LEVELOTH:
     name: leveloth
-    type: BIGINT
+    type: VARCHAR
     years: '1991'
   UWWOU:
     name: uwwou
@@ -17,7 +17,7 @@ columns:
     years: '1991'
   PROFOTH:
     name: profoth
-    type: BIGINT
+    type: VARCHAR
     years: '1991'
   SUMSES:
     name: sumses

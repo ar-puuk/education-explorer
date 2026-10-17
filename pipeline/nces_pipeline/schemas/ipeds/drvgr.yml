@@ -9,7 +9,7 @@ columns:
     years: 2021-2024
   GRRTTOT:
     name: grrttot
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   GRRTM:
     name: grrtm

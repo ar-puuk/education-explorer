@@ -87,7 +87,7 @@ def cmd_bootstrap(a, state) -> int:
             if comp != topic.component or (a.year and y != a.year):
                 continue
             staged = stage(raw_path_for(cf), state)
-            p = write_bootstrap_map(topic, y, _ccd_cols(staged), force=a.force, staged=staged)
+            p = write_bootstrap_map(topic, y, _ccd_cols(staged), force=a.force, raw=raw_path_for(cf))
             print("map:", p.name, topic.name)
     from .edge import FIRST, LAST, edge_table_source, write_edge_map
 
@@ -100,6 +100,9 @@ def cmd_bootstrap(a, state) -> int:
     from .pss import bootstrap as pss_bootstrap
 
     print("map:", pss_bootstrap(state, force=a.force).name)
+    from .ccd_legacy_build import bootstrap_legacy_maps
+
+    print("maps:", [p.name for p in bootstrap_legacy_maps(state, force=a.force)])
     return 0
 
 

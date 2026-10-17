@@ -740,7 +740,7 @@ columns:
     label: Core Based Statistical Area
   METMIC:
     name: metmic
-    type: BIGINT
+    type: VARCHAR
     years: 2002-2013
     label: Metropolitan or Micropolitan Area
   AGCHRT:
@@ -782,7 +782,7 @@ columns:
     label: Longitude
   OTHGUI:
     name: othgui
-    type: BIGINT
+    type: DOUBLE
     years: 2008-2013
     label: Guidance  Counselors - Other
   BIEA:

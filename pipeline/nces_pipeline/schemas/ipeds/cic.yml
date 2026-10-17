@@ -73,7 +73,7 @@ columns:
     years: '1985'
   RSTATUS:
     name: rstatus
-    type: BIGINT
+    type: VARCHAR
     years: 1987-1989,1992-1996
   UNITIDX:
     name: unitidx
@@ -85,7 +85,7 @@ columns:
     years: 1987-1989,1992-1996
   SOURCE:
     name: source
-    type: BIGINT
+    type: VARCHAR
     years: 1993-1996
   FORMRT:
     name: formrt
@@ -113,5 +113,5 @@ columns:
     years: 1995-1996
   COLUMN11:
     name: column11
-    type: BIGINT
+    type: VARCHAR
     years: '1995'

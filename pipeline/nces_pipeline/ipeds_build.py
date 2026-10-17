@@ -190,7 +190,9 @@ def bootstrap_family(family: str, state: State, files: list[IpedsFile], ids: set
             # note: TRY_CAST('40.76' AS BIGINT) rounds to 41, so integers are detected with a regex
             aggs += [f"count(*) FILTER (WHERE {v} IS NOT NULL AND NOT regexp_matches({v}, '^[+-]?[0-9]+$'))",
                      f"count(*) FILTER (WHERE {v} IS NOT NULL AND TRY_CAST({v} AS DOUBLE) IS NULL)"]
-        stats = con.execute(f"SELECT {', '.join(aggs)} FROM read_parquet('{sp.as_posix()}')").fetchone()
+        # types come from the NATIONAL file, not just this state's rows, so the map is valid for every state
+        csv = data_csv(f)
+        stats = run_query(con, lambda par, csv=csv, aggs=aggs: f"SELECT {', '.join(aggs)} FROM {read_sql(csv, parallel=par)}")[0]
         for i, c in enumerate(hdr):
             nonint, nonnum = stats[2 * i], stats[2 * i + 1]
             t = "VARCHAR" if nonnum else ("DOUBLE" if nonint else "BIGINT")

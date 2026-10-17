@@ -17,11 +17,11 @@ columns:
     years: 2021-2023
   TUFEYR2:
     name: tufeyr2
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2023
   TUFEYR3:
     name: tufeyr3
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2023
   CINDON:
     name: cindon
@@ -37,25 +37,25 @@ columns:
     years: 2021-2023
   CINDOFF:
     name: cindoff
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2023
   CINSOFF:
     name: cinsoff
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2023
   COTSOFF:
     name: cotsoff
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2023
   CINDFAM:
     name: cindfam
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2023
   CINSFAM:
     name: cinsfam
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2023
   COTSFAM:
     name: cotsfam
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2023

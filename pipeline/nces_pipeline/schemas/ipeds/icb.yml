@@ -398,11 +398,11 @@ columns:
     years: 1987,1989,1992-1994
   FFMIN:
     name: ffmin
-    type: BIGINT
+    type: VARCHAR
     years: 1987-1989,1992-1994
   FFMAX:
     name: ffmax
-    type: BIGINT
+    type: VARCHAR
     years: 1987-1989,1992-1994
   PHIND:
     name: phind
@@ -498,7 +498,7 @@ columns:
     years: 1987-1989,1992
   PROFOTH:
     name: profoth
-    type: BIGINT
+    type: VARCHAR
     years: 1987-1989,1992-1994
   PROFNA:
     name: profna
@@ -1090,19 +1090,19 @@ columns:
     years: '1994'
   AGENNAME:
     name: agenname
-    type: BIGINT
+    type: VARCHAR
     years: '1994'
   AGENSTRT:
     name: agenstrt
-    type: BIGINT
+    type: VARCHAR
     years: '1994'
   AGENPLCE:
     name: agenplce
-    type: BIGINT
+    type: VARCHAR
     years: '1994'
   AGENST:
     name: agenst
-    type: BIGINT
+    type: VARCHAR
     years: '1994'
   AGENZIP:
     name: agenzip

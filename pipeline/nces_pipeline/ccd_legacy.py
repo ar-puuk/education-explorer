@@ -26,6 +26,7 @@ _NOT_DATA = re.compile(r"(_dat|_txt|^SAS_|^SPSS_|^Read|sascode|spsscode|xls|_sps
 _SCHOOL = re.compile(r"^(psu|sc\d)", re.IGNORECASE)
 _DISTRICT = re.compile(r"^(pau|ag\d)", re.IGNORECASE)
 CHUNK = 20000
+_INT = re.compile(r"[+-]?[0-9]+")
 
 STATE_COLS = ["FIPST", "STATE", "FIPS", "STABR", "LSTATE", "MSTATE"]
 
@@ -116,13 +117,14 @@ def stage_legacy(year: int, level: str, state: State) -> Path | None:
     dest = DATA_RAW / "_stage" / state.abbrev.lower() / f"ccdlegacy_{level}_{year}.parquet"
     sig = "|".join(f"{s.name}:{s.stat().st_size}" for _, s in srcs)
     stamp = dest.with_suffix(".stamp")
-    if dest.exists() and stamp.exists() and stamp.read_text() == sig:
+    if dest.exists() and stamp.exists() and stamp.read_text() == sig and dest.with_suffix(".types.json").exists():
         return dest
     dest.parent.mkdir(parents=True, exist_ok=True)
     con = duckdb.connect()
     created = False
     labels: dict[str, str] = {}
     cols: list[str] = []
+    nat: dict[str, list[int]] = {}  # national per-column counts of non-integer / non-numeric values
     for _, src in srcs:
         _, meta = pyreadstat.read_sas7bdat(str(src), metadataonly=True, output_format="dict")
         cols_f = [c.upper() for c in meta.column_names]
@@ -148,6 +150,21 @@ def stage_legacy(year: int, level: str, state: State) -> Path | None:
             n = len(data[names[0]])
             if n == 0:
                 break
+            for k in names:
+                st = nat.setdefault(k.upper(), [0, 0])
+                if st[1]:
+                    continue  # already known to be text
+                for v in data[k]:
+                    t = _fmt(v)
+                    if t is None:
+                        continue
+                    if not _INT.fullmatch(t):
+                        st[0] += 1
+                        try:
+                            float(t)
+                        except ValueError:
+                            st[1] += 1
+                            break
             sc_name = next(k for k in names if k.upper() == scol)
             keep = [i for i in range(n) if _is_state(data[sc_name][i], state)]
             if keep:
@@ -161,5 +178,6 @@ def stage_legacy(year: int, level: str, state: State) -> Path | None:
     con.execute(f"COPY (SELECT * FROM t) TO '{tmp.as_posix()}' (FORMAT PARQUET, COMPRESSION ZSTD)")
     tmp.replace(dest)
     dest.with_suffix(".labels.json").write_text(json.dumps(labels), encoding="utf-8", newline="\n")
+    dest.with_suffix(".types.json").write_text(json.dumps(nat), encoding="utf-8", newline="\n")
     stamp.write_text(sig)
     return dest

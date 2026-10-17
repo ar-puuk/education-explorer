@@ -25,7 +25,7 @@ columns:
     years: 2000-2023
   CIPLGTH1:
     name: ciplgth1
-    type: BIGINT
+    type: VARCHAR
     years: 2000-2023
   XCHG1PY1:
     name: chg1py1_flag

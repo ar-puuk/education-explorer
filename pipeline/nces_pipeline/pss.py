@@ -21,6 +21,7 @@ from .fetch import client, download, unzip
 from .ipeds_build import RANK, q, years_from_str, years_to_str
 from .parquet import write_parquet
 from .schema import SchemaDrift
+from .typecheck import check_casts
 
 BASE = "https://nces.ed.gov/surveys/pss/zip"
 MAP = SCHEMAS / "pss" / "schools.yml"
@@ -127,11 +128,27 @@ def stage_pss(s: Survey, state: State) -> Path:
     src = sas_file(s)
     stamp = dest.with_suffix(".stamp")
     sig = f"{src.stat().st_size}:{src.stat().st_mtime_ns}"
-    if dest.exists() and stamp.exists() and stamp.read_text() == sig:
+    if dest.exists() and stamp.exists() and stamp.read_text() == sig and dest.with_suffix(".types.json").exists():
         return dest
     data, meta = pyreadstat.read_sas7bdat(str(src), output_format="dict")
     cols = list(meta.column_names)
-    keep = _state_rows(cols, data, state)
+    # national column types (so the map is valid for every state): counts of non-integer / non-numeric values
+    stats = {}
+    for c in cols:
+        nonint = nonnum = 0
+        for v in data[c]:
+            t = _fmt(v)
+            if t is None:
+                continue
+            if not re.fullmatch(r"[+-]?[0-9]+", t):
+                nonint += 1
+                try:
+                    float(t)
+                except ValueError:
+                    nonnum += 1
+        stats[c.upper()] = [nonint, nonnum]
+    dest.with_suffix(".types.json").write_text(json.dumps(stats), encoding="utf-8", newline="\n")
+    keep =_state_rows(cols, data, state)
     dest.parent.mkdir(parents=True, exist_ok=True)
     con = duckdb.connect()
     con.execute("CREATE TABLE t(row_id BIGINT, " + ", ".join(f"{q(c.upper())} VARCHAR" for c in cols) + ")")
@@ -199,14 +216,10 @@ def bootstrap(state: State, force: bool = False) -> Path:
                 cols_years[c] = []
                 order.append(c)
             cols_years[c].append(s.year)
-        aggs = []
+        nat = json.loads(sp.with_suffix(".types.json").read_text(encoding="utf-8"))
         for c in hdr:
-            v = f"NULLIF(TRIM({q(c)}), '')"
-            aggs += [f"count(*) FILTER (WHERE {v} IS NOT NULL AND NOT regexp_matches({v}, '^[+-]?[0-9]+$'))",
-                     f"count(*) FILTER (WHERE {v} IS NOT NULL AND TRY_CAST({v} AS DOUBLE) IS NULL)"]
-        stats = con.execute(f"SELECT {', '.join(aggs)} FROM read_parquet('{sp.as_posix()}')").fetchone()
-        for i, c in enumerate(hdr):
-            t = "VARCHAR" if stats[2 * i + 1] else ("DOUBLE" if stats[2 * i] else "BIGINT")
+            nonint, nonnum = nat.get(c, [0, 0])
+            t = "VARCHAR" if nonnum else ("DOUBLE" if nonint else "BIGINT")
             if c not in types or RANK[t] > RANK[types[c]]:
                 types[c] = t
     present = set(cols_years)
@@ -317,6 +330,8 @@ def build_pss(state: State) -> list[dict]:
                 if spec["name"] in chosen:
                     raise SchemaDrift(f"pss/{s.year}: columns {chosen[spec['name']][0]} and {raw} both map to {spec['name']}")
                 chosen[spec["name"]] = (raw, spec)
+        check_casts(con, sp, [(raw, spec['type']) for raw, spec in chosen.values()], f'pss/{s.year}',
+                    'Re-run bootstrap-maps --force (types are sniffed from the national files) or widen the column in schemas/pss/schools.yml.')
         for name, t in out_types.items():
             if name in chosen:
                 raw, spec = chosen[name]

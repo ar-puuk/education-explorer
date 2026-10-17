@@ -113,7 +113,7 @@
       {/if}
       <button onclick={exportCsv}>Download CSV</button>
     </div>
-    <div class="scroll">
+    <div class="scroll" tabindex="0" role="region" aria-label="Table rows">
       {#if piv}
         <table>
           <thead>

@@ -15,7 +15,7 @@ columns:
     years: 1986-1989,1992-1994
   SECTOR:
     name: sector
-    type: BIGINT
+    type: VARCHAR
     years: 1986-1989,1992-1994
   ADDR:
     name: addr
@@ -863,7 +863,7 @@ columns:
     years: '1986'
   RACE:
     name: race
-    type: BIGINT
+    type: VARCHAR
     years: '1986'
   SEX:
     name: sex
@@ -1427,19 +1427,19 @@ columns:
     years: 1992-1993
   AGENNAME:
     name: agenname
-    type: BIGINT
+    type: VARCHAR
     years: 1992-1993
   AGENSTRT:
     name: agenstrt
-    type: BIGINT
+    type: VARCHAR
     years: 1992-1993
   AGENPLCE:
     name: agenplce
-    type: BIGINT
+    type: VARCHAR
     years: 1992-1993
   AGENST:
     name: agenst
-    type: BIGINT
+    type: VARCHAR
     years: 1992-1993
   AGENZIP:
     name: agenzip

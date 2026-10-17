@@ -41,7 +41,7 @@ columns:
     years: 1980,1984-1985
   ZIP:
     name: zip
-    type: BIGINT
+    type: VARCHAR
     years: 1980,1984-1985
   GENTELE:
     name: gentele
@@ -109,7 +109,7 @@ columns:
     years: 1980,1984-1985
   RACE:
     name: race
-    type: BIGINT
+    type: VARCHAR
     years: 1980,1984-1985
   CONTROL:
     name: control
@@ -193,7 +193,7 @@ columns:
     years: 1980,1984-1985
   FDGRMOYR:
     name: fdgrmoyr
-    type: BIGINT
+    type: VARCHAR
     years: 1980,1984-1985
   PRTFU:
     name: prtfu
@@ -605,7 +605,7 @@ columns:
     years: 1980,1984-1985,2000-2004
   SEQUEN:
     name: sequen
-    type: BIGINT
+    type: VARCHAR
     years: 1984-1985
   PROCC:
     name: procc
@@ -1381,7 +1381,7 @@ columns:
     years: 2004-2008
   ALLONCAM:
     name: alloncam
-    type: BIGINT
+    type: VARCHAR
     years: 2004-2023
   ADMCON9:
     name: admcon9

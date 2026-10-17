@@ -9,7 +9,7 @@ columns:
     years: 1995-1996,1998-1999
   PART:
     name: part
-    type: BIGINT
+    type: VARCHAR
     years: '1995'
   SUBENTCD:
     name: subentcd
@@ -17,7 +17,7 @@ columns:
     years: '1995'
   SUBENTNM:
     name: subentnm
-    type: BIGINT
+    type: VARCHAR
     years: 1995-1996,1998-1999
   SUBENTRV:
     name: subentrv

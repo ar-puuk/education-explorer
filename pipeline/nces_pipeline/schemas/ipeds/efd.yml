@@ -474,7 +474,7 @@ columns:
     years: 2009-2024
   STUFACR:
     name: stufacr
-    type: BIGINT
+    type: VARCHAR
     years: 2009-2024
   XRRFTIN:
     name: rrftin_flag

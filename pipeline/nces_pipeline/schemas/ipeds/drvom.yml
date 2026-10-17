@@ -225,27 +225,27 @@ columns:
     years: 2021-2024
   OM3TOTLAWDP4:
     name: om3totlawdp4
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3TOTLAWDP6:
     name: om3totlawdp6
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3TOTLAWDP8:
     name: om3totlawdp8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3TOTLENYP8:
     name: om3totlenyp8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3TOTLENAP8:
     name: om3totlenap8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3TOTLENUP8:
     name: om3totlenup8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3TOTLCRTP8:
     name: om3totlcrtp8
@@ -261,27 +261,27 @@ columns:
     years: 2021-2024
   OM3PELLAWDP4:
     name: om3pellawdp4
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3PELLAWDP6:
     name: om3pellawdp6
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3PELLAWDP8:
     name: om3pellawdp8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3PELLENYP8:
     name: om3pellenyp8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3PELLENAP8:
     name: om3pellenap8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3PELLENUP8:
     name: om3pellenup8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3PELLCRTP8:
     name: om3pellcrtp8
@@ -297,27 +297,27 @@ columns:
     years: 2021-2024
   OM3NPELAWDP4:
     name: om3npelawdp4
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3NPELAWDP6:
     name: om3npelawdp6
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3NPELAWDP8:
     name: om3npelawdp8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3NPELENYP8:
     name: om3npelenyp8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3NPELENAP8:
     name: om3npelenap8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3NPELENUP8:
     name: om3npelenup8
-    type: BIGINT
+    type: VARCHAR
     years: 2021-2024
   OM3NPELCRTP8:
     name: om3npelcrtp8

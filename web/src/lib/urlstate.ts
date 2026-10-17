@@ -8,6 +8,7 @@ export interface UrlState {
   layers?: Partial<Record<Dataset, boolean>>
   theme?: 'system' | 'light' | 'dark'
   sizeByEnroll?: boolean
+  colorBy?: 'dataset' | 'charter' | 'locale' | 'level'
   includeClosed?: boolean
   charter?: 'all' | 'yes' | 'no'
   levels?: string[]
@@ -40,6 +41,8 @@ export function parseUrl(search: string): UrlState {
   const t = q.get('theme')
   if (t === 'system' || t === 'light' || t === 'dark') out.theme = t
   if (q.get('size') === '0') out.sizeByEnroll = false
+  const cb = q.get('color')
+  if (cb === 'charter' || cb === 'locale' || cb === 'level') out.colorBy = cb
   if (q.get('closed') === '1') out.includeClosed = true
   const c = q.get('charter')
   if (c === 'yes' || c === 'no') out.charter = c
@@ -76,6 +79,7 @@ export function serializeUrl(s: UrlState, defaults: { year: number }): string {
   }
   if (s.theme && s.theme !== 'system') q.set('theme', s.theme)
   if (s.sizeByEnroll === false) q.set('size', '0')
+  if (s.colorBy && s.colorBy !== ('dataset' as string)) q.set('color', s.colorBy)
   if (s.includeClosed) q.set('closed', '1')
   if (s.charter && s.charter !== 'all') q.set('charter', s.charter)
   if (s.levels?.length) q.set('level', s.levels.join('|'))

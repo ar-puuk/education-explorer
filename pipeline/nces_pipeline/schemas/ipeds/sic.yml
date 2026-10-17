@@ -9,7 +9,7 @@ columns:
     years: 1987,1989,1993,1995,1997
   RSTATUS:
     name: rstatus
-    type: BIGINT
+    type: VARCHAR
     years: 1987,1989,1993,1995,1997
   UNITIDX:
     name: unitidx
@@ -25,7 +25,7 @@ columns:
     years: 1987,1989,1993,1995,1997
   H_SAMP:
     name: h_samp
-    type: BIGINT
+    type: VARCHAR
     years: '1989'
   VARSTRAT:
     name: varstrat
@@ -61,7 +61,7 @@ columns:
     years: '1993'
   NONEWHIR:
     name: nonewhir
-    type: BIGINT
+    type: VARCHAR
     years: 1993,1995,1997
   FILLER1:
     name: filler1

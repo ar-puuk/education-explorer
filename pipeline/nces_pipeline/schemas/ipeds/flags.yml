@@ -177,7 +177,7 @@ columns:
     years: 2004-2024
   IDX_F:
     name: idx_f
-    type: BIGINT
+    type: VARCHAR
     years: 2004-2024
   IMP_F:
     name: imp_f
@@ -533,7 +533,7 @@ columns:
     years: 2009-2024
   IDX_GR2:
     name: idx_gr2
-    type: BIGINT
+    type: VARCHAR
     years: 2009-2024
   IMP_GR2:
     name: imp_gr2

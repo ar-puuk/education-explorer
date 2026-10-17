@@ -118,12 +118,13 @@ def validate(state: State, update_baseline: bool = False) -> Report:
 
     # 3. coordinates inside (expanded) state bbox
     w, s, e, n = state.bbox
+    exc = ", ".join(repr(x) for x in (state.overrides.get("bbox_exceptions") or [])) or "''"
     for dsname in ("ccd",):
         loc = DOCS_DATA / dsname / "school_location"
         for f in sorted(loc.glob("*.parquet")) if loc.exists() else []:
             bad = con.execute(
                 f"SELECT count(*) FROM read_parquet('{f.as_posix()}') WHERE lat IS NOT NULL AND "
-                f"(lat < {s - EXPAND_DEG} OR lat > {n + EXPAND_DEG} OR lon < {w - EXPAND_DEG} OR lon > {e + EXPAND_DEG})"
+                f"ncessch NOT IN ({exc}) AND (lat < {s - EXPAND_DEG} OR lat > {n + EXPAND_DEG} OR lon < {w - EXPAND_DEG} OR lon > {e + EXPAND_DEG})"
             ).fetchone()[0]
             if bad:
                 r.err(f"ccd.school_location/{f.stem}: {bad} coordinate(s) outside the expanded state bbox")

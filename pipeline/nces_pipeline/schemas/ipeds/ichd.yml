@@ -93,7 +93,7 @@ columns:
     years: 1990,1999
   CHFTITL:
     name: chftitl
-    type: BIGINT
+    type: VARCHAR
     years: '1990'
   FORM_IC:
     name: form_ic
@@ -125,7 +125,7 @@ columns:
     years: '1999'
   CLOSEDAT:
     name: closedat
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   CNTYGEO:
     name: cntygeo
@@ -153,7 +153,7 @@ columns:
     years: '1999'
   OPEID:
     name: opeid
-    type: BIGINT
+    type: VARCHAR
     years: '1999'
   OPEFLAG:
     name: opeflag

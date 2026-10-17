@@ -13,6 +13,7 @@ from .config import DOCS_DATA, SCHEMAS, State
 from .parquet import write_parquet
 from .schema import ColumnMap, SchemaDrift, check_header, load_map, map_path
 from .stage import stage
+from .typecheck import check_casts
 
 PAD = {"ncessch": 12, "leaid": 7, "schid": 7, "fipst": 2}
 
@@ -199,6 +200,9 @@ def build_ccd(state: State, years: list[int] | None = None, topics: list[str] | 
             cm = load_map("ccd", topic.name, y)
             check_header(cm, cols)
             d = yaml.safe_load(cm.path.read_text(encoding="utf-8"))
+            if topic.generic:
+                check_casts(con, staged, [(raw, sp.get("type", "VARCHAR")) for raw, sp in cm.kept.items()], f"ccd/{topic.name}/{y}",
+                            "Re-run bootstrap-maps --force (types are sniffed from the national files).")
             sql = select_sql(cm, topic, staged, cf, canon, d.get("unpivot") or [])
             n = write_parquet(con, sql, output_path(topic, y), list(topic.sort) + ["year"])
             report.append({"table": topic.name, "year": y, "rows": n, "source": cf.filename})
@@ -206,24 +210,27 @@ def build_ccd(state: State, years: list[int] | None = None, topics: list[str] | 
     return report
 
 
-def sniff_types(staged: Path) -> dict[str, str]:
-    """BIGINT/DOUBLE/VARCHAR per column of a staged VARCHAR Parquet (integers detected by regex)."""
+def sniff_types(raw: Path) -> dict[str, str]:
+    """BIGINT/DOUBLE/VARCHAR per column of the NATIONAL raw file (so a map is valid for every state);
+    integers are detected by regex because DuckDB's TRY_CAST('40.76' AS BIGINT) rounds."""
+    from .rawio import header_of, read_sql, run_query
+
     con = duckdb.connect()
-    cols = [r[0] for r in con.execute(f"DESCRIBE SELECT * FROM read_parquet('{staged.as_posix()}')").fetchall()]
+    cols = header_of(raw)
     aggs = []
     for c in cols:
         v = f"NULLIF(TRIM({q(c)}), '')"
         aggs += [f"count(*) FILTER (WHERE {v} IS NOT NULL AND NOT regexp_matches({v}, '^[+-]?[0-9]+$'))",
                  f"count(*) FILTER (WHERE {v} IS NOT NULL AND TRY_CAST({v} AS DOUBLE) IS NULL)"]
-    st = con.execute(f"SELECT {', '.join(aggs)} FROM read_parquet('{staged.as_posix()}')").fetchone()
+    st = run_query(con, lambda par: f"SELECT {', '.join(aggs)} FROM {read_sql(raw, parallel=par)}")[0]
     return {c: ("VARCHAR" if st[2 * i + 1] else ("DOUBLE" if st[2 * i] else "BIGINT")) for i, c in enumerate(cols)}
 
 
-def write_bootstrap_map(topic: Topic, year: int, raw_cols: list[str], force: bool = False, staged: Path | None = None) -> Path:
+def write_bootstrap_map(topic: Topic, year: int, raw_cols: list[str], force: bool = False, raw: Path | None = None) -> Path:
     p = map_path("ccd", topic.name, year)
     if p.exists() and not force:
         return p
-    cols, unpivot = bootstrap(topic, year, raw_cols, sniff_types(staged) if (topic.generic and staged) else None)
+    cols, unpivot = bootstrap(topic, year, raw_cols, sniff_types(raw) if (topic.generic and raw) else None)
     p.parent.mkdir(parents=True, exist_ok=True)
     doc = {"source": "ccd", "topic": topic.name, "year": year, "columns": cols}
     if unpivot:

@@ -81,7 +81,7 @@ columns:
     years: '1991'
   ZIP:
     name: zip
-    type: BIGINT
+    type: VARCHAR
     years: '1991'
   COUNTYNM:
     name: countynm

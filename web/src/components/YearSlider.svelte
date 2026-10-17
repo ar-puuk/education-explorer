@@ -62,8 +62,11 @@
       aria-valuetext={schoolYearLabel(app.year)}
     />
     <div class="ticks" aria-hidden="true">
-      {#each years as y}<span class:on={y === app.year}>{String(y).slice(2)}</span>{/each}
+      {#each years as y}<span class:on={y === app.year} class:survey={app.layers.private && app.private?.years.includes(y)}>{String(y).slice(2)}</span>{/each}
     </div>
+    {#if app.layers.private && app.private}
+      <p class="key"><span class="pip"></span> private school survey year (biennial)</p>
+    {/if}
   </div>
 </div>
 
@@ -132,6 +135,23 @@
       bottom: 34px;
       padding: 6px 10px;
     }
+  }
+  .ticks .survey {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--c-private);
+  }
+  .key {
+    margin: 2px 0 0;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .pip {
+    display: inline-block;
+    width: 8px;
+    border-bottom: 2px dotted var(--c-private);
+    vertical-align: middle;
   }
   .ticks .on {
     color: var(--text);
