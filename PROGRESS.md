@@ -29,9 +29,10 @@ Legend: [x] done, [~] in progress, [ ] todo
 - [x] Deployed from main:/docs at https://ar-puuk.github.io/education-explorer/ ; browser smoke test (web/e2e/smoke.mjs) passes against dev, built preview and the live Pages site
 - [ ] Known: methodology page is a placeholder until Phase 5; mobile layout only lightly checked
 
-## Phase 3: IPEDS (in progress)
-- [x] IPEDS catalog scraped from the Data Center page (1,213 files, 1980-2025); family naming; downloader
-- [ ] stage/maps/build/dictionary/validation, college layer + detail panel (2000-2025; 1980-1999 deferred to 3b)
+## Phase 3: IPEDS
+- [x] Catalog (1,213 files 1980-2025), 857 files for 2000-2025 downloaded, 75 table families built for Utah (~30 MB Parquet), maps with drift + type guards, dictionary (9k rows) + value labels, validation incl. keys
+- [x] College layer (diamond/cap markers), filters by control, search, detail panel with fall enrollment (total/level/attendance/gender/race), 12-month headcount, awards, admissions, institution facts, and a table explorer for every IPEDS table (labels, flags, CSV export)
+- [ ] Phase 3b (deferred): IPEDS 1980-1999 files; E.g. curated finance/net-price/graduation charts (available in the explorer)
 
 ## Phase 4 .. 6
 - [ ] not started

@@ -1,19 +1,27 @@
 <script lang="ts">
   import { app } from '../lib/app.svelte'
 
-  let { onPick }: { onPick: (id: string, lon: number, lat: number) => void } = $props()
+  let { onPick }: { onPick: (dataset: 'public' | 'college', id: string, lon: number, lat: number) => void } = $props()
   let q = $state('')
   let open = $state(false)
   let active = $state(0)
 
-  const results = $derived.by(() => {
+  type Hit = { dataset: 'public' | 'college'; id: string; name: string; sub: string; lon: number; lat: number }
+  const results = $derived.by((): Hit[] => {
     const term = q.trim().toLowerCase()
-    if (term.length < 2 || !app.points) return []
-    const out = []
-    for (const s of app.points.schools) {
+    if (term.length < 2) return []
+    const out: Hit[] = []
+    for (const s of app.points?.schools ?? []) {
       if (s.name.toLowerCase().includes(term) || s.id.startsWith(term) || s.lea.toLowerCase().includes(term)) {
-        out.push(s)
-        if (out.length >= 12) break
+        out.push({ dataset: 'public', id: s.id, name: s.name, sub: `Public school · ${s.lea} · ${s.id}`, lon: s.lon, lat: s.lat })
+        if (out.length >= 8) break
+      }
+    }
+    let n = 0
+    for (const c of app.college?.institutions ?? []) {
+      if (c.name.toLowerCase().includes(term) || c.id.startsWith(term)) {
+        out.push({ dataset: 'college', id: c.id, name: c.name, sub: `College · ${c.city ?? ''} · ${c.id}`, lon: c.lon, lat: c.lat })
+        if (++n >= 6) break
       }
     }
     return out
@@ -22,7 +30,7 @@
   function choose(i: number) {
     const s = results[i]
     if (!s) return
-    onPick(s.id, s.lon, s.lat)
+    onPick(s.dataset, s.id, s.lon, s.lat)
     q = ''
     open = false
   }
@@ -61,7 +69,7 @@
         <li role="option" aria-selected={i === active} class:active={i === active}>
           <button type="button" onmousedown={(e) => (e.preventDefault(), choose(i))}>
             <strong>{s.name}</strong>
-            <span>{s.lea} &middot; {s.id}</span>
+            <span>{s.sub}</span>
           </button>
         </li>
       {/each}

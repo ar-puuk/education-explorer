@@ -6,7 +6,7 @@
   const datasets: { id: Dataset; ready: boolean }[] = [
     { id: 'public', ready: true },
     { id: 'private', ready: false },
-    { id: 'college', ready: false },
+    { id: 'college', ready: true },
   ]
 
   const levels = $derived.by(() => {
@@ -14,6 +14,15 @@
     for (const s of app.points?.schools ?? []) set.add(levelLabel(s.level))
     return [...set].sort()
   })
+
+  const controls = $derived.by(() => {
+    const labels = app.college?.labels.control ?? {}
+    return [1, 2, 3].map((c) => ({ code: c, label: labels[String(c)] ?? String(c) }))
+  })
+
+  function toggleControl(c: number) {
+    app.collegeControls = app.collegeControls.includes(c) ? app.collegeControls.filter((x) => x !== c) : [...app.collegeControls, c]
+  }
 
   function toggleLevel(l: string) {
     app.levels = app.levels.includes(l) ? app.levels.filter((x) => x !== l) : [...app.levels, l]
@@ -47,10 +56,10 @@
     </section>
 
     <section>
-      <h2>Public schools</h2>
+      <h2>Public schools &amp; shared options</h2>
       <label class="row">
         <input type="checkbox" bind:checked={app.includeClosed} />
-        <span>Include closed / not yet open</span>
+        <span>Include closed / inactive / not yet open</span>
       </label>
       <label class="row">
         <input type="checkbox" bind:checked={app.sizeByEnroll} />
@@ -76,6 +85,23 @@
           <button class="link" onclick={() => (app.levels = [])}>Clear levels</button>
         {/if}
       </fieldset>
+    </section>
+
+    <section>
+      <h2>Colleges</h2>
+      <fieldset>
+        <legend>Control</legend>
+        {#each controls as c}
+          <label class="row">
+            <input type="checkbox" checked={app.collegeControls.includes(c.code)} onchange={() => toggleControl(c.code)} />
+            <span>{c.label}</span>
+          </label>
+        {/each}
+        {#if app.collegeControls.length}
+          <button class="link" onclick={() => (app.collegeControls = [])}>Show all</button>
+        {/if}
+      </fieldset>
+      <p class="hint">Colleges before 2008 have no map location in the NCES data unless they were still open later.</p>
     </section>
   {/if}
 </aside>

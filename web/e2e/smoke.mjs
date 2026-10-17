@@ -86,14 +86,36 @@ for (const t of ['Race/ethnicity', 'Sex', 'Grade']) {
 }
 await page.screenshot({ path: `${out}/04-detail-grade.png` })
 
+// college: search, panel, charts, table explorer
+await page.locator('#school-search').fill('University of Utah')
+await page.locator('#search-results li button', { hasText: 'College' }).first().click()
+await page.waitForSelector('aside[aria-label="College details"] h2', { timeout: 20000 })
+await page.waitForSelector('aside[aria-label="College details"] svg', { timeout: 60000 })
+ok('college panel with chart rendered')
+for (const t of ['Level', 'Full/part-time', 'Gender', 'Race/ethnicity']) {
+  await page.getByRole('tab', { name: t }).click()
+  await page.waitForTimeout(300)
+}
+await page.waitForTimeout(500)
+await page.screenshot({ path: `${out}/05-college.png` })
+await page.locator('aside[aria-label="College details"] .explorer select').first().selectOption('efa')
+await page.waitForSelector('aside[aria-label="College details"] .explorer table', { timeout: 30000 })
+ok('table explorer shows a table')
+await page.locator('aside[aria-label="College details"] .explorer').scrollIntoViewIfNeeded()
+await page.screenshot({ path: `${out}/06-explorer.png` })
+const dls = page.waitForEvent('download')
+await page.getByRole('button', { name: 'Download CSV' }).click()
+const dl = await dls
+ok('CSV download: ' + dl.suggestedFilename())
+
 // URL state round trip
 const url = page.url()
-url.includes('sel=public%3A') || url.includes('sel=public:') ? ok('URL carries selection: ' + url.slice(-70)) : fail('URL missing selection: ' + url)
+url.includes('sel=college%3A') || url.includes('sel=college:') ? ok('URL carries selection: ' + url.slice(-70)) : fail('URL missing selection: ' + url)
 const p2 = await ctx.newPage()
 p2.on('pageerror', (e) => errors.push('pageerror2: ' + e.message))
 await p2.goto(url, { waitUntil: 'domcontentloaded' })
-await p2.waitForSelector('aside[aria-label="School details"] h2', { timeout: 30000 })
-ok('URL restores the selected school')
+await p2.waitForSelector('aside[aria-label="College details"] h2', { timeout: 30000 })
+ok('URL restores the selected college')
 
 // year slider
 await page.locator('input[type=range]').fill('2018')

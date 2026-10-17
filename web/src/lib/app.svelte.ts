@@ -2,7 +2,7 @@ import { defaultBasemap, type BasemapId } from './basemaps'
 import type { Dataset } from './icons'
 import { theme } from './theme.svelte'
 import { parseUrl, serializeUrl, type UrlState } from './urlstate'
-import type { PointsFile, PublicSchool, StateMeta, YearsMeta } from './types'
+import type { CollegePointsFile, PointsFile, PublicSchool, StateMeta, YearsMeta } from './types'
 
 export const app = $state({
   ready: false,
@@ -10,6 +10,7 @@ export const app = $state({
   state: null as StateMeta | null,
   years: null as YearsMeta | null,
   points: null as PointsFile | null,
+  college: null as CollegePointsFile | null,
   year: 0,
   selected: null as { dataset: Dataset; id: string } | null,
   /** explicit user choice; null = follow the theme default */
@@ -19,9 +20,11 @@ export const app = $state({
   includeClosed: false,
   charter: 'all' as 'all' | 'yes' | 'no',
   levels: [] as string[],
+  /** college control codes to show (1 public, 2 private not-for-profit, 3 for-profit); empty = all */
+  collegeControls: [] as number[],
   view: null as { center: [number, number]; zoom: number } | null,
   playing: false,
-  panelOpen: true,
+  panelOpen: typeof matchMedia === 'function' ? !matchMedia('(max-width: 720px)').matches : true,
 })
 
 export const basemap = {
@@ -47,6 +50,12 @@ export function publicYears(): number[] {
   return app.points?.years ?? []
 }
 
+/** Slider range: every year any dataset has. */
+export function allYears(): number[] {
+  const set = new Set<number>([...(app.points?.years ?? []), ...(app.college?.years ?? [])])
+  return [...set].sort((a, b) => a - b)
+}
+
 export function applyUrl(u: UrlState) {
   if (u.year) app.year = u.year
   if (u.selected) app.selected = u.selected
@@ -57,6 +66,7 @@ export function applyUrl(u: UrlState) {
   if (u.includeClosed) app.includeClosed = true
   if (u.charter) app.charter = u.charter
   if (u.levels) app.levels = u.levels
+  if (u.collegeControls) app.collegeControls = u.collegeControls
   if (u.view) app.view = u.view
 }
 
@@ -71,6 +81,7 @@ export function currentUrlState(): UrlState {
     includeClosed: app.includeClosed,
     charter: app.charter,
     levels: app.levels,
+    collegeControls: app.collegeControls,
     view: app.view ?? undefined,
   }
 }

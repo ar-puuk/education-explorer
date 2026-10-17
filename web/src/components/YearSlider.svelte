@@ -1,14 +1,16 @@
 <script lang="ts">
   import { onDestroy } from 'svelte'
-  import { app, publicYears } from '../lib/app.svelte'
+  import { allYears, app } from '../lib/app.svelte'
   import { schoolYearLabel } from '../lib/labels'
 
-  const years = $derived(publicYears())
+  const years = $derived(allYears())
   const idx = $derived(years.indexOf(app.year))
   const version = $derived.by(() => {
     const v = app.years?.ccd?.school_directory?.versions?.[String(app.year)]
     return Array.isArray(v) ? v.join('/') : (v ?? '')
   })
+  const publicFrom = $derived(app.points?.years[0] ?? 0)
+  const publicNote = $derived(app.layers.public && app.year < publicFrom ? `Public school data start in ${schoolYearLabel(publicFrom)}.` : '')
 
   let timer: ReturnType<typeof setInterval> | undefined
   function stop() {
@@ -35,7 +37,8 @@
   <div class="mid">
     <div class="label">
       <strong>{schoolYearLabel(app.year)}</strong>
-      {#if version}<span class="badge {version}">{version}</span>{/if}
+      {#if version && app.year >= publicFrom}<span class="badge {version}" title="Release status of the public school files for this year">{version}</span>{/if}
+      {#if publicNote}<span class="note">{publicNote}</span>{/if}
     </div>
     <input
       type="range"
@@ -103,11 +106,24 @@
     background: var(--warn-bg);
     color: var(--warn-text);
   }
+  .note {
+    font-size: 11.5px;
+    color: var(--muted);
+  }
   .ticks {
     display: flex;
     justify-content: space-between;
     font-size: 10px;
     color: var(--muted);
+  }
+  @media (max-width: 720px) {
+    .ticks span:not(.on):not(:nth-child(5n + 1)) {
+      visibility: hidden;
+    }
+    .slider {
+      bottom: 34px;
+      padding: 6px 10px;
+    }
   }
   .ticks .on {
     color: var(--text);

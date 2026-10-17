@@ -58,3 +58,36 @@ export interface TrendPoint {
   key: string
   value: number | null
 }
+
+export interface CollegeInstitution {
+  id: string
+  name: string
+  city: string | null
+  lat: number
+  lon: number
+  years: number[]
+  /** 1 when the institution was active that year, aligned with years */
+  active: number[]
+  /** fall enrollment, all students, aligned with years */
+  enroll: (number | null)[]
+  sector: number | null
+  control: number | null
+  level: number | null
+  locale: number | null
+  hbcu: number | null
+  web: string | null
+}
+
+export interface CollegePointsFile {
+  dataset: 'college'
+  years: number[]
+  labels: { [field: string]: { [code: string]: string } }
+  institutions: CollegeInstitution[]
+}
+
+export interface ValueLabel {
+  table: string
+  column: string
+  code: string
+  label: string
+}

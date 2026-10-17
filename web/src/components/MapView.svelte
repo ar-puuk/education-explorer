@@ -30,6 +30,25 @@
     return out
   })
 
+  const collegeFeatures = $derived.by((): PointFeature[] => {
+    const c = app.college
+    if (!c || !app.year) return []
+    const out: PointFeature[] = []
+    for (const s of c.institutions) {
+      const i = s.years.indexOf(app.year)
+      if (i < 0) continue
+      const operating = s.active[i] === 1
+      if (!operating && !app.includeClosed) continue
+      if (app.collegeControls.length && !app.collegeControls.includes(s.control ?? -9)) continue
+      out.push({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [s.lon, s.lat] },
+        properties: { id: s.id, name: s.name, enroll: s.enroll[i], icon: operating ? 'college' : 'college-closed' },
+      })
+    }
+    return out
+  })
+
   onMount(() => {
     const st = app.state!
     const c = new MapController({
@@ -56,6 +75,7 @@
   })
 
   $effect(() => ctl?.setData('public', features))
+  $effect(() => ctl?.setData('college', collegeFeatures))
   $effect(() => ctl?.setBasemap(basemap.id))
   $effect(() => {
     theme.effective

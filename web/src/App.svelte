@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { app, applyUrl, currentUrlState, readUrl, urlFor } from './lib/app.svelte'
-  import { loadPublicPoints, loadState, loadYears, setAvailable } from './lib/data'
+  import { allYears, app, applyUrl, readUrl, urlFor } from './lib/app.svelte'
+  import { loadCollegePoints, loadPublicPoints, loadState, loadYears, setAvailable } from './lib/data'
   import { warmUp } from './lib/db'
   import DetailPanel from './components/DetailPanel.svelte'
   import MapView from './components/MapView.svelte'
@@ -14,18 +14,19 @@
 
   onMount(async () => {
     try {
-      const [state, years, points] = await Promise.all([loadState(), loadYears(), loadPublicPoints()])
+      const [state, years, points, college] = await Promise.all([loadState(), loadYears(), loadPublicPoints(), loadCollegePoints()])
       app.state = state
       app.years = years
       setAvailable(years)
       app.points = points
+      app.college = college
       defaultYear = points.years[points.years.length - 1]
       // Default to the latest year that is not just a preliminary directory (membership exists).
       const withMembership = years.ccd?.membership?.years ?? points.years
       defaultYear = withMembership[withMembership.length - 1] ?? defaultYear
       app.year = defaultYear
       applyUrl(readUrl())
-      if (!points.years.includes(app.year)) app.year = defaultYear
+      if (!allYears().includes(app.year)) app.year = defaultYear
       document.title = state.site_title
       app.ready = true
       // Load the query engine after first paint.
@@ -43,12 +44,15 @@
     if (url !== location.pathname + location.search + location.hash) history.replaceState(null, '', url)
   })
 
-  function pick(id: string, lon: number, lat: number) {
-    app.selected = { dataset: 'public', id }
+  function pick(dataset: 'public' | 'college', id: string, lon: number, lat: number) {
+    app.selected = { dataset, id }
     map?.flyTo(lon, lat)
-    // make sure the school is visible in the current year
-    const s = app.points?.schools.find((x) => x.id === id)
-    if (s && !s.years.includes(app.year)) app.year = s.years[s.years.length - 1]
+    // make sure the place is visible in the current year
+    const years = dataset === 'public'
+      ? app.points?.schools.find((x) => x.id === id)?.years
+      : app.college?.institutions.find((x) => x.id === id)?.years
+    if (years && !years.includes(app.year)) app.year = years[years.length - 1]
+    app.layers[dataset] = true
   }
 </script>
 

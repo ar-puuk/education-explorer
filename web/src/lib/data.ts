@@ -1,5 +1,5 @@
 import { dataUrl, queryParquet, type Row } from './db'
-import type { DictEntry, PointsFile, StateMeta, YearsMeta } from './types'
+import type { CollegePointsFile, DictEntry, PointsFile, StateMeta, ValueLabel, YearsMeta } from './types'
 
 async function getJson<T>(rel: string): Promise<T> {
   const r = await fetch(dataUrl(rel))
@@ -10,18 +10,29 @@ async function getJson<T>(rel: string): Promise<T> {
 export const loadState = () => getJson<StateMeta>('meta/state.json')
 export const loadYears = () => getJson<YearsMeta>('meta/years.json')
 export const loadPublicPoints = () => getJson<PointsFile>('geo/points_public.json')
+export const loadCollegePoints = () => getJson<CollegePointsFile>('geo/points_college.json')
 
 let dictCache: Map<string, DictEntry> | null = null
 
-/** Dictionary keyed by "table.column" (public CCD tables). */
+/** Dictionary keyed by "dataset.table.column". */
 export async function loadDictionary(): Promise<Map<string, DictEntry>> {
   if (dictCache) return dictCache
   const rows = await queryParquet(
     ['meta/dictionary.parquet'],
     'SELECT dataset, "table", "column", label, description, unit, first_year, last_year, caveat FROM {files}',
   )
-  dictCache = new Map(rows.map((r) => [`${r.table}.${r.column}`, r as unknown as DictEntry]))
+  dictCache = new Map(rows.map((r) => [`${r.dataset}.${r.table}.${r.column}`, r as unknown as DictEntry]))
   return dictCache
+}
+
+let labelCache: Map<string, string> | null = null
+
+/** Code labels keyed by "dataset.table.column|code" (IPEDS code columns). */
+export async function loadValueLabels(): Promise<Map<string, string>> {
+  if (labelCache) return labelCache
+  const rows = (await queryParquet(['meta/value_labels.parquet'], 'SELECT dataset, "table", "column", code, label FROM {files}')) as unknown as (ValueLabel & { dataset: string })[]
+  labelCache = new Map(rows.map((r) => [`${r.dataset}.${r.table}.${r.column}|${r.code}`, r.label]))
+  return labelCache
 }
 
 let available: YearsMeta | null = null
@@ -68,4 +79,18 @@ export async function membershipHistory(years: number[], ncessch: string): Promi
     [ncessch],
   )
   return rows as unknown as MembershipRow[]
+}
+
+
+// ---------------------------------------------------------------------- IPEDS
+const ipedsFiles = (table: string, years?: number[]) => {
+  const have = available?.ipeds?.[table]?.years ?? []
+  return (years ? have.filter((y) => years.includes(y)) : have).map((y) => `ipeds/${table}/${y}.parquet`)
+}
+
+export const ipedsTables = () => available?.ipeds ?? {}
+
+/** All rows of an IPEDS table for one institution (every year the table has), newest last. */
+export async function ipedsRows(table: string, unitid: string, years?: number[]): Promise<Row[]> {
+  return queryParquet(ipedsFiles(table, years), 'SELECT * FROM {files} WHERE unitid = ? ORDER BY year', [unitid])
 }

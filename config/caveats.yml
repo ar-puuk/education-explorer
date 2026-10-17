@@ -32,3 +32,42 @@ ccd.school_location:
     Schools may have moved; some schools have no coordinates.
 ccd.school_characteristics:
   caveat: Title I, magnet, virtual and shared-time statuses are reported by states and their definitions evolved over time.
+ipeds.hd:
+  caveat: >-
+    Directory information is as reported for each collection year. Coordinates exist only from about 2008, so
+    institutions that closed earlier have no map location. Negative codes (for example -2, -3) mean not applicable or
+    not available; see the value labels.
+ipeds.efa:
+  caveat: >-
+    Fall enrollment by level, attendance and race/ethnicity (efalevel selects the row). Race/ethnicity categories were
+    revised in 2010 (adding "Two or more races" and a new Hispanic reporting rule), so race detail before 2010 uses
+    different columns and is not directly comparable. Totals are comparable across years.
+ipeds.effy:
+  caveat: 12-month unduplicated headcount for the academic year ending in the file year. It is not the same as fall enrollment.
+ipeds.ca:
+  caveat: >-
+    Completions are awards conferred (not students) during the academic year ending in the file year, by program (CIP)
+    and award level. First and second majors are separate rows (majornum).
+ipeds.sfa:
+  caveat: >-
+    Columns that end in a digit (for example npist0, npist1, npist2) are positional: each file reports the three most
+    recent award years, so the same column name refers to different years in different files. The years in a label
+    apply to the newest file only. Net price figures describe students receiving aid and are not a quote for any student.
+ipeds.ff1a:
+  caveat: >-
+    Finance forms differ by institutional type: F1A (public, GASB), F2 (private not-for-profit or public using FASB) and
+    F3 (private for-profit). Items and definitions are not directly comparable across forms. Values are in dollars and
+    can legitimately be negative.
+ipeds.ff2:
+  caveat: Finance form F2 (private not-for-profit, or public using FASB). Not directly comparable with F1A or F3. Values can be negative.
+ipeds.ff3:
+  caveat: Finance form F3 (private for-profit). Not directly comparable with F1A or F2. Values can be negative.
+ipeds.gr:
+  caveat: >-
+    Graduation rates track a cohort of first-time, full-time degree/certificate-seeking students for 150 percent of
+    normal program time. The rows (grtype, chrtstat) are cohort counts, exclusions and completions; compute rates only
+    from rows that share a cohort. Part-time, transfer-in and returning students are not included.
+ipeds.adm:
+  caveat: Admissions data apply to institutions with selective admissions for first-time undergraduates; open-admission institutions may not report.
+ipeds.flags:
+  caveat: Response status codes for each survey component; useful for understanding why a component is missing for an institution-year.
