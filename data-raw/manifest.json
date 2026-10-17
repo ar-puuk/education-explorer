@@ -1646,6 +1646,600 @@
    "sha256": "9dc51ecd5cdf6e38bdb679f7ac95e2bf73ee3fb48718b8612cf830800cffb288",
    "source": "edge",
    "url": "https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_PUBLICSCH_2425.zip"
+  },
+  {
+   "bytes": 2026917,
+   "path": "ipeds/2000/c2000_a.zip",
+   "release": "2000",
+   "retrieved": "2026-10-16",
+   "sha256": "4c5c8482d5d0c168967a31fc9025c5b7d6d22bae0ac67e5f60ff2a987f724e0a",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2000_A.zip"
+  },
+  {
+   "bytes": 20303,
+   "path": "ipeds/2000/c2000_a_dict.zip",
+   "release": "2000",
+   "retrieved": "2026-10-16",
+   "sha256": "8bf4a1d253b4997a1b2beb6e349b0d837ed43b7054e3d31f1424719e6bc416e9",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2000_A_Dict.zip"
+  },
+  {
+   "bytes": 2237064,
+   "path": "ipeds/2001/c2001_a.zip",
+   "release": "2001",
+   "retrieved": "2026-10-16",
+   "sha256": "d9cb8d21bf333a924c677d65844ee553669fc830a011d0c71b18c5323d1ef9af",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2001_A.zip"
+  },
+  {
+   "bytes": 20970,
+   "path": "ipeds/2001/c2001_a_dict.zip",
+   "release": "2001",
+   "retrieved": "2026-10-16",
+   "sha256": "942dbb6e7344227f65db88a18308006490b667766b699bdbc680fd1681b473f5",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2001_A_Dict.zip"
+  },
+  {
+   "bytes": 2864600,
+   "path": "ipeds/2002/c2002_a.zip",
+   "release": "2002",
+   "retrieved": "2026-10-16",
+   "sha256": "f59b448e3f3762c67275d0179de5dd9c3e67e0670cbc22333fe2671507e09f46",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2002_A.zip"
+  },
+  {
+   "bytes": 53947,
+   "path": "ipeds/2002/c2002_a_dict.zip",
+   "release": "2002",
+   "retrieved": "2026-10-16",
+   "sha256": "92d8c2b7bd817d557ca007a23d81bdbd7f9bd5b29e76dbdf8d68fc3a9ae1c71c",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2002_A_Dict.zip"
+  },
+  {
+   "bytes": 3362064,
+   "path": "ipeds/2003/c2003_a.zip",
+   "release": "2003",
+   "retrieved": "2026-10-16",
+   "sha256": "d88420dd95c9707bb1a0a69636865f3fec784d1f72f9096fb96d632d9014897b",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2003_A.zip"
+  },
+  {
+   "bytes": 28202,
+   "path": "ipeds/2003/c2003_a_dict.zip",
+   "release": "2003",
+   "retrieved": "2026-10-16",
+   "sha256": "7f58b6f182e9e7f10b2f35b44112fe02a2cd1bdba1736db6987a42d931982ff3",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2003_A_Dict.zip"
+  },
+  {
+   "bytes": 6445176,
+   "path": "ipeds/2004/c2004_a.zip",
+   "release": "2004",
+   "retrieved": "2026-10-16",
+   "sha256": "d943ec22ba3159a7406a69b6d45f52ede6e038a875a6f66f408e31532d1acdd8",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2004_A.zip"
+  },
+  {
+   "bytes": 152467,
+   "path": "ipeds/2004/c2004_a_dict.zip",
+   "release": "2004",
+   "retrieved": "2026-10-16",
+   "sha256": "c59d8b33dfb0b65a182a511b3ad0dc935ddf6430d0da2275ce43b46a5a00df9f",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2004_A_Dict.zip"
+  },
+  {
+   "bytes": 6704278,
+   "path": "ipeds/2005/c2005_a.zip",
+   "release": "2005",
+   "retrieved": "2026-10-16",
+   "sha256": "6c4b05a1b690df5ddd82999a6182af545048b090e39e72f34ebcf106d5a455da",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2005_A.zip"
+  },
+  {
+   "bytes": 150752,
+   "path": "ipeds/2005/c2005_a_dict.zip",
+   "release": "2005",
+   "retrieved": "2026-10-16",
+   "sha256": "f5a6c62b468fd65e3f04f17ab0823c55a4511c639ed32162119244c9e588d80e",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2005_A_Dict.zip"
+  },
+  {
+   "bytes": 7108354,
+   "path": "ipeds/2006/c2006_a.zip",
+   "release": "2006",
+   "retrieved": "2026-10-16",
+   "sha256": "a1a22744392d71fa0da18d4105bc09ad6e8ec9870cedafeac6b3b49a2bc16296",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2006_A.zip"
+  },
+  {
+   "bytes": 151510,
+   "path": "ipeds/2006/c2006_a_dict.zip",
+   "release": "2006",
+   "retrieved": "2026-10-16",
+   "sha256": "b03bee8998afc71ca3ba0c38eda612040b2d0e2df35cfc018468ece952601469",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2006_A_Dict.zip"
+  },
+  {
+   "bytes": 7236497,
+   "path": "ipeds/2007/c2007_a.zip",
+   "release": "2007",
+   "retrieved": "2026-10-16",
+   "sha256": "b55b652bf1d2596098975f24f4263ff9b27c31697e4cbff2081d6f28748b7add",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2007_A.zip"
+  },
+  {
+   "bytes": 153531,
+   "path": "ipeds/2007/c2007_a_dict.zip",
+   "release": "2007",
+   "retrieved": "2026-10-16",
+   "sha256": "5e168c938c964d571297c4c2cf86b3243f9dd7bae16dd9cc161c9499d82addbd",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2007_A_Dict.zip"
+  },
+  {
+   "bytes": 11117833,
+   "path": "ipeds/2008/c2008_a.zip",
+   "release": "2008",
+   "retrieved": "2026-10-16",
+   "sha256": "89e07fc27d085b31788d8cab56efbff9d00e28b92cea4d6327b7cb28f7f1149a",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2008_A.zip"
+  },
+  {
+   "bytes": 143351,
+   "path": "ipeds/2008/c2008_a_dict.zip",
+   "release": "2008",
+   "retrieved": "2026-10-16",
+   "sha256": "8ac586d84ce6ac5a22c5bbfa08f29796e3580f4b9ee4db89e966e7423c285848",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2008_A_Dict.zip"
+  },
+  {
+   "bytes": 12949908,
+   "path": "ipeds/2009/c2009_a.zip",
+   "release": "2009",
+   "retrieved": "2026-10-16",
+   "sha256": "e7e101dc3e55fafce4a749cdc300b4aaa7cbee290c2615824d4e57c777345466",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2009_A.zip"
+  },
+  {
+   "bytes": 109693,
+   "path": "ipeds/2009/c2009_a_dict.zip",
+   "release": "2009",
+   "retrieved": "2026-10-16",
+   "sha256": "13d4efc7e48c5385b47939d4d61e908cd2436bcfe00fb9304687be808858de97",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2009_A_Dict.zip"
+  },
+  {
+   "bytes": 11466595,
+   "path": "ipeds/2010/c2010_a.zip",
+   "release": "2010",
+   "retrieved": "2026-10-16",
+   "sha256": "7e03b5d00481b1c6e5566ad8df4f4221349b83fca8a868939657616f21a6b9fd",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2010_A.zip"
+  },
+  {
+   "bytes": 123039,
+   "path": "ipeds/2010/c2010_a_dict.zip",
+   "release": "2010",
+   "retrieved": "2026-10-16",
+   "sha256": "09ad4d950bc0f64a569d68ee32415257b9134cd51b4cb471840f014af0060513",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/C2010_A_Dict.zip"
+  },
+  {
+   "bytes": 212492,
+   "path": "ipeds/2014/adm2014.zip",
+   "release": "2014",
+   "retrieved": "2026-10-16",
+   "sha256": "357eb2ad58f03b1085dbfc2a2a8f8ae00785dd3d8b5a40f612f66ced883256dc",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2014.zip"
+  },
+  {
+   "bytes": 40120,
+   "path": "ipeds/2014/adm2014_dict.zip",
+   "release": "2014",
+   "retrieved": "2026-10-16",
+   "sha256": "2578fcd49b0dab1801a95009eb104e30681c245302be20f0179a1e030de77d66",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2014_Dict.zip"
+  },
+  {
+   "bytes": 479555,
+   "path": "ipeds/2014/al2014.zip",
+   "release": "2014",
+   "retrieved": "2026-10-16",
+   "sha256": "0e080b5ea8e34902c21aeacd4bfb93c279af5530df6a594baa9b42d75b5334cd",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2014.zip"
+  },
+  {
+   "bytes": 41680,
+   "path": "ipeds/2014/al2014_dict.zip",
+   "release": "2014",
+   "retrieved": "2026-10-16",
+   "sha256": "81cb220805299f46a3639d5d835c22f67ed5d64387b8806ddd4acb6dc3455ed8",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2014_Dict.zip"
+  },
+  {
+   "bytes": 211410,
+   "path": "ipeds/2015/adm2015.zip",
+   "release": "2015",
+   "retrieved": "2026-10-16",
+   "sha256": "3d1a9f2c71d9cf4cffa3f00e0c9170daf7a7dc5691523e082a055c02ae34c8de",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2015.zip"
+  },
+  {
+   "bytes": 40972,
+   "path": "ipeds/2015/adm2015_dict.zip",
+   "release": "2015",
+   "retrieved": "2026-10-16",
+   "sha256": "6e0ea0ada8582d2e685588ee0bd164052cef9a560c2a9797441bba0021da70c4",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2015_Dict.zip"
+  },
+  {
+   "bytes": 550756,
+   "path": "ipeds/2015/al2015.zip",
+   "release": "2015",
+   "retrieved": "2026-10-16",
+   "sha256": "a9ab340351b330c1a6e095f43eb5ac4997f2a18fe6d8af606bff7dec45f17d88",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2015.zip"
+  },
+  {
+   "bytes": 43838,
+   "path": "ipeds/2015/al2015_dict.zip",
+   "release": "2015",
+   "retrieved": "2026-10-16",
+   "sha256": "61a35c0e545a8b9b5675c95a33fe83852e75ff7d06c9b220bff0498907935de4",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2015_Dict.zip"
+  },
+  {
+   "bytes": 196060,
+   "path": "ipeds/2016/adm2016.zip",
+   "release": "2016",
+   "retrieved": "2026-10-16",
+   "sha256": "e76aade20b306b7462bce392d4bed11ef2210c05174a6ef9bd40e6be555b7345",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2016.zip"
+  },
+  {
+   "bytes": 51219,
+   "path": "ipeds/2016/adm2016_dict.zip",
+   "release": "2016",
+   "retrieved": "2026-10-16",
+   "sha256": "21daf5f8c80a6e5a3fe1aaf2598c85fb0b9402ee18232ad203ec4d05695e4605",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2016_Dict.zip"
+  },
+  {
+   "bytes": 576340,
+   "path": "ipeds/2016/al2016.zip",
+   "release": "2016",
+   "retrieved": "2026-10-16",
+   "sha256": "782b1b281645d47fd46a7164977d1cfab90fa8aec27cb89f1fe414ff218e63c0",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2016.zip"
+  },
+  {
+   "bytes": 52609,
+   "path": "ipeds/2016/al2016_dict.zip",
+   "release": "2016",
+   "retrieved": "2026-10-16",
+   "sha256": "69ad09e5157d0d7aaebb4e4be8b60b0dd7eba24aa974682bcbe8333b2868d866",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2016_Dict.zip"
+  },
+  {
+   "bytes": 185982,
+   "path": "ipeds/2017/adm2017.zip",
+   "release": "2017",
+   "retrieved": "2026-10-16",
+   "sha256": "3e92d1853aca4363ce89abeba8b0ef0237a6bc7b4a07b436d5ae5f38b61ac649",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2017.zip"
+  },
+  {
+   "bytes": 60627,
+   "path": "ipeds/2017/adm2017_dict.zip",
+   "release": "2017",
+   "retrieved": "2026-10-16",
+   "sha256": "f050c7df9a189ac4983384dec5f98af7796a70b97ec3f2bd3e1f16afbbd07fb1",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2017_Dict.zip"
+  },
+  {
+   "bytes": 543100,
+   "path": "ipeds/2017/al2017.zip",
+   "release": "2017",
+   "retrieved": "2026-10-16",
+   "sha256": "c53cec147769d616f10f219954ebe8ac2b1666baf4ef2fdecb909de538cf25b3",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2017.zip"
+  },
+  {
+   "bytes": 48245,
+   "path": "ipeds/2017/al2017_dict.zip",
+   "release": "2017",
+   "retrieved": "2026-10-16",
+   "sha256": "a6cd500d7e471d32181c4ae3a0f04e4e17ad9c3a9fa5e2a229978b0771f0ff7b",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2017_Dict.zip"
+  },
+  {
+   "bytes": 173693,
+   "path": "ipeds/2018/adm2018.zip",
+   "release": "2018",
+   "retrieved": "2026-10-16",
+   "sha256": "0dffbbc32e2d15dd533ad704482af383be2ee3d4c1de038bc55aecedc2639359",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2018.zip"
+  },
+  {
+   "bytes": 42799,
+   "path": "ipeds/2018/adm2018_dict.zip",
+   "release": "2018",
+   "retrieved": "2026-10-16",
+   "sha256": "2dc95044943e52ded5173e0fb9a08db6dc309be59f0de67f39cf5b79c050b604",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2018_Dict.zip"
+  },
+  {
+   "bytes": 497523,
+   "path": "ipeds/2018/al2018.zip",
+   "release": "2018",
+   "retrieved": "2026-10-16",
+   "sha256": "3e7020be9da86e3082fdd0b202fb7eaebe8e04096aacdecb715e4848a7963c83",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2018.zip"
+  },
+  {
+   "bytes": 48259,
+   "path": "ipeds/2018/al2018_dict.zip",
+   "release": "2018",
+   "retrieved": "2026-10-16",
+   "sha256": "0b40a9b2faae1142cabc5c4ec7bd3a3fbb39ddb79b38e0681e668d3b9959e97f",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2018_Dict.zip"
+  },
+  {
+   "bytes": 172014,
+   "path": "ipeds/2019/adm2019.zip",
+   "release": "2019",
+   "retrieved": "2026-10-16",
+   "sha256": "908034d862377d3214f1e0395cdb34dd041049682c553d1fb391f9eda8196aa5",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2019.zip"
+  },
+  {
+   "bytes": 43318,
+   "path": "ipeds/2019/adm2019_dict.zip",
+   "release": "2019",
+   "retrieved": "2026-10-16",
+   "sha256": "c21b76d466305e7fb4fe82fd3403cd247c607a3558de3ef7fc66d457a396137c",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2019_Dict.zip"
+  },
+  {
+   "bytes": 499956,
+   "path": "ipeds/2019/al2019.zip",
+   "release": "2019",
+   "retrieved": "2026-10-16",
+   "sha256": "126268fb222449c497f82da1749075dcb1d3bc6e0c428fc5fb451f999cef3b1f",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2019.zip"
+  },
+  {
+   "bytes": 57211,
+   "path": "ipeds/2019/al2019_dict.zip",
+   "release": "2019",
+   "retrieved": "2026-10-16",
+   "sha256": "281839780f78c1ce9a3a153f373a76051a9c3a570160f1a23783e5b21e9b0d06",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2019_Dict.zip"
+  },
+  {
+   "bytes": 167475,
+   "path": "ipeds/2020/adm2020.zip",
+   "release": "2020",
+   "retrieved": "2026-10-16",
+   "sha256": "0cae5b25c7b973d4ad428a5442888a80968b2980201220cdcb1e9dab1162f696",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2020.zip"
+  },
+  {
+   "bytes": 43511,
+   "path": "ipeds/2020/adm2020_dict.zip",
+   "release": "2020",
+   "retrieved": "2026-10-16",
+   "sha256": "9461d63558c577c15f8bc1b8d91c44b2dfaed60bdff5cfa3d3e24c024808b867",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2020_Dict.zip"
+  },
+  {
+   "bytes": 550037,
+   "path": "ipeds/2020/al2020.zip",
+   "release": "2020",
+   "retrieved": "2026-10-16",
+   "sha256": "90a3a4d43f47b700cef3357c373dc3e120f4f1bc0a252e95a9eac2b67c3d97d0",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2020.zip"
+  },
+  {
+   "bytes": 59722,
+   "path": "ipeds/2020/al2020_dict.zip",
+   "release": "2020",
+   "retrieved": "2026-10-16",
+   "sha256": "eecd57fcfc1898d1df27016c4998a39d1c1fae34b06c06ab86f73c4f847157db",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2020_Dict.zip"
+  },
+  {
+   "bytes": 163516,
+   "path": "ipeds/2021/adm2021.zip",
+   "release": "2021",
+   "retrieved": "2026-10-16",
+   "sha256": "786b1343a2e407fc102cfbda11f1517456917bac221b1dca9232b60ee453db7e",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2021.zip"
+  },
+  {
+   "bytes": 43842,
+   "path": "ipeds/2021/adm2021_dict.zip",
+   "release": "2021",
+   "retrieved": "2026-10-16",
+   "sha256": "7799aa61c86ce1b97d80644548a79066f690913819e9a5e807396b7139e91bb7",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2021_Dict.zip"
+  },
+  {
+   "bytes": 541472,
+   "path": "ipeds/2021/al2021.zip",
+   "release": "2021",
+   "retrieved": "2026-10-16",
+   "sha256": "ffcaaa2c128738fe3c542eafb6eeea3249055f99223399c118215ff5eb04401c",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2021.zip"
+  },
+  {
+   "bytes": 54426,
+   "path": "ipeds/2021/al2021_dict.zip",
+   "release": "2021",
+   "retrieved": "2026-10-16",
+   "sha256": "d6698475e86b5be33e2e123cb1bb082222a25039744aa5aa82c3151fe6f9054b",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2021_Dict.zip"
+  },
+  {
+   "bytes": 194294,
+   "path": "ipeds/2022/adm2022.zip",
+   "release": "2022",
+   "retrieved": "2026-10-16",
+   "sha256": "31cbfa5e68289525bff60e65b1094c610473ecc02d601461ae3875f854e2fde7",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2022.zip"
+  },
+  {
+   "bytes": 42419,
+   "path": "ipeds/2022/adm2022_dict.zip",
+   "release": "2022",
+   "retrieved": "2026-10-16",
+   "sha256": "7537854e6171df633697b5ada6c41953b3bcc6597bf223fd7a5d9a9be012263c",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/ADM2022_Dict.zip"
+  },
+  {
+   "bytes": 539888,
+   "path": "ipeds/2022/al2022.zip",
+   "release": "2022",
+   "retrieved": "2026-10-16",
+   "sha256": "9c9156fab2c4d803e3143fbc3d95ef51e2f489d4f1b30172424296c602cb702d",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2022.zip"
+  },
+  {
+   "bytes": 38212,
+   "path": "ipeds/2022/al2022_dict.zip",
+   "release": "2022",
+   "retrieved": "2026-10-16",
+   "sha256": "e638f72a3c35acc6574521c03067330df66251980b9721158d6c228e779d18d3",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/AL2022_Dict.zip"
+  },
+  {
+   "bytes": 215702,
+   "path": "ipeds/2023/adm2023.zip",
+   "release": "2023",
+   "retrieved": "2026-10-16",
+   "sha256": "d5f24f9b269a38c8bcab49e108637a47622b4e641fb9c9b9b1445fa2428f41c5",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/ADM2023.zip"
+  },
+  {
+   "bytes": 23360,
+   "path": "ipeds/2023/adm2023_dict.zip",
+   "release": "2023",
+   "retrieved": "2026-10-16",
+   "sha256": "6579c6ec30a3fa9ef2ab2c62797021c986c8af5260a8827ae319669857688f82",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/ADM2023_Dict.zip"
+  },
+  {
+   "bytes": 599457,
+   "path": "ipeds/2023/al2023.zip",
+   "release": "2023",
+   "retrieved": "2026-10-16",
+   "sha256": "db160c79b15851c4a8d9cdf68c69be821242fc040e5bb29a6394c83278517a17",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/AL2023.zip"
+  },
+  {
+   "bytes": 19861,
+   "path": "ipeds/2023/al2023_dict.zip",
+   "release": "2023",
+   "retrieved": "2026-10-16",
+   "sha256": "856fe06d2ccd3f8f9b0409c2962e9a376237aa76ebb70f3361dd00f54de4376c",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/AL2023_Dict.zip"
+  },
+  {
+   "bytes": 106721,
+   "path": "ipeds/2024/adm2024.zip",
+   "release": "2024",
+   "retrieved": "2026-10-16",
+   "sha256": "26ac2aa1fd44a84985bf1f6b6bfb074553a2f45ae1305b35d7904a0bd8a8c4a8",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/ADM2024.zip"
+  },
+  {
+   "bytes": 18444,
+   "path": "ipeds/2024/adm2024_dict.zip",
+   "release": "2024",
+   "retrieved": "2026-10-16",
+   "sha256": "3fceb66b57d77280c0eaef8cff42a5fd9fc2f519ff8744d4ad93cb0937305958",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/ADM2024_Dict.zip"
+  },
+  {
+   "bytes": 301793,
+   "path": "ipeds/2024/al2024.zip",
+   "release": "2024",
+   "retrieved": "2026-10-16",
+   "sha256": "ee949e9ffa7fdee07f51532e1bf501a74b57d8c8eae5fc98f8b3130725387a32",
+   "source": "ipeds",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/AL2024.zip"
+  },
+  {
+   "bytes": 16189,
+   "path": "ipeds/2024/al2024_dict.zip",
+   "release": "2024",
+   "retrieved": "2026-10-16",
+   "sha256": "a21b626eed612b29daae1c49994fa9b7baeb0a7d99431a62aab4e0f2252d6a78",
+   "source": "ipeds-dict",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/AL2024_Dict.zip"
   }
  ]
 }
