@@ -107,6 +107,9 @@ def cmd_update(a, state) -> int:
     cmd_fetch(ns, state)
     cmd_build(ns, state)
     build_dictionary()
+    from .geo import build_points_public
+
+    build_points_public()
     write_meta(state)
     after = current_rowcounts()
     print("changelog:")
@@ -153,6 +156,9 @@ def main(argv: list[str] | None = None) -> int:
     u = sub.add_parser("update", help="fetch -> build -> dictionary -> meta -> validate, with a changelog")
     u.add_argument("--year", type=int)
     u.set_defaults(fn=cmd_update)
+
+    pt = sub.add_parser("points", help="build first-paint points files in docs/data/geo")
+    pt.set_defaults(fn=lambda a, st: print("public points:", __import__("nces_pipeline.geo", fromlist=["x"]).build_points_public()) or 0)
 
     dc = sub.add_parser("dictionary")
     dc.set_defaults(fn=lambda a, st: print("dictionary rows:", __import__("nces_pipeline.dictionary", fromlist=["x"]).build_dictionary()) or 0)

@@ -65,8 +65,14 @@ EDGE_DESC = {
 }
 
 
+ACRONYMS = {"nslp", "lea", "id", "ig", "bies", "cbsa", "csa", "necta", "cd", "sldl", "sldu", "zip", "fips", "idea", "el", "pk", "kg", "ug", "ae"}
+
+
 def humanize(name: str) -> str:
-    return re.sub(r"\s+", " ", name.replace("_", " ")).strip().capitalize()
+    words = re.sub(r"\s+", " ", name.replace("_", " ")).strip().split(" ")
+    words = [w.upper() if w in ACRONYMS else w for w in words]
+    s = " ".join(words)
+    return s[0].upper() + s[1:] if s else s
 
 
 def _layout_descriptions(xlsx: Path) -> dict[str, tuple[str, str]]:

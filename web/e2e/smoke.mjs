@@ -1,0 +1,109 @@
+// Browser smoke test: node e2e/smoke.mjs <baseUrl> [outDir]
+// Checks: first paint with markers, light/dark, basemap switching keeps overlays, detail panel + charts.
+import { chromium } from 'playwright'
+import { mkdirSync } from 'node:fs'
+
+const base = process.argv[2] ?? 'http://localhost:5173/'
+const out = process.argv[3] ?? 'e2e/shots'
+mkdirSync(out, { recursive: true })
+
+const errors = []
+const browser = await chromium.launch({ args: ['--use-gl=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] })
+const ctx = await browser.newContext({ viewport: { width: 1360, height: 820 }, colorScheme: 'light' })
+const page = await ctx.newPage()
+page.on('pageerror', (e) => errors.push('pageerror: ' + e.message))
+page.on('console', (m) => {
+  if (m.type() === 'error' && !/favicon|Failed to load resource.*(tiles|fonts|sprites)/i.test(m.text())) errors.push('console: ' + m.text().slice(0, 200))
+})
+
+const fail = (msg) => {
+  console.error('FAIL:', msg)
+  process.exitCode = 1
+}
+const ok = (msg) => console.log('ok:', msg)
+
+const rendered = () =>
+  page.evaluate(() => {
+    const m = window.__ee.controller.map
+    const layers = ['public-points', 'public-clusters'].filter((l) => m.getLayer(l))
+    return { layers: layers.length, n: layers.length ? m.queryRenderedFeatures({ layers }).length : -1, style: m.isStyleLoaded() }
+  })
+const idle = () => page.evaluate(() => new Promise((res) => { const m = window.__ee.controller.map; if (m.loaded() && !m.isMoving()) res(true); else m.once('idle', () => res(true)) }))
+
+await page.goto(base, { waitUntil: 'domcontentloaded' })
+await page.waitForFunction(() => window.__ee?.controller?.map, null, { timeout: 30000 })
+await idle()
+await page.waitForFunction(() => {
+  const m = window.__ee.controller.map
+  return m.getLayer('public-points') && m.queryRenderedFeatures({ layers: ['public-points', 'public-clusters'] }).length > 0
+}, null, { timeout: 30000 })
+let r = await rendered()
+r.n > 0 ? ok(`first paint: ${r.n} rendered features`) : fail('no rendered features at first paint')
+await page.screenshot({ path: `${out}/01-light.png` })
+
+// dark theme via the control
+await page.getByRole('button', { name: 'Dark', exact: true }).click()
+await idle()
+const dark = await page.evaluate(() => [getComputedStyle(document.body).backgroundColor, window.__ee.controller.basemap])
+dark[1] === 'dark' ? ok('dark theme switches default basemap to Dark') : fail('basemap after dark: ' + dark[1])
+await page.waitForTimeout(1500)
+await idle()
+r = await rendered()
+r.n > 0 ? ok(`dark: ${r.n} rendered features`) : fail('no features in dark mode')
+await page.screenshot({ path: `${out}/02-dark.png` })
+
+// every basemap keeps overlays
+for (const id of ['liberty', 'liberty3d', 'bright', 'fiord', 'positron', 'dark']) {
+  await page.locator('header select').selectOption(id)
+  await page.waitForTimeout(800)
+  await idle()
+  await page.waitForFunction(() => window.__ee.controller.map.getLayer('public-points'), null, { timeout: 15000 }).catch(() => {})
+  await page.waitForTimeout(600)
+  r = await rendered()
+  const b = await page.evaluate(() => window.__ee.controller.basemap)
+  b === id && r.n > 0 ? ok(`basemap ${id}: overlays intact (${r.n})`) : fail(`basemap ${id}: basemap=${b}, features=${r.n}`)
+  await page.screenshot({ path: `${out}/basemap-${id}.png` })
+}
+
+// auto basemap follows theme when the user has not chosen; here the user chose, so it must not change
+await page.getByRole('button', { name: 'Light', exact: true }).click()
+await page.waitForTimeout(500)
+const kept = await page.evaluate(() => window.__ee.controller.basemap)
+kept === 'dark' ? ok('explicit basemap choice survives theme change') : fail('explicit choice overridden: ' + kept)
+
+// select a school via search; panel + chart
+await page.getByRole('button', { name: 'System', exact: true }).click()
+await page.locator('#school-search').fill('Provo High')
+await page.locator('#search-results li button').first().click()
+await page.waitForSelector('aside[aria-label="School details"] h2', { timeout: 20000 })
+await page.waitForSelector('aside[aria-label="School details"] svg', { timeout: 60000 })
+ok('detail panel with chart rendered')
+await page.waitForTimeout(800)
+await page.screenshot({ path: `${out}/03-detail.png` })
+for (const t of ['Race/ethnicity', 'Sex', 'Grade']) {
+  await page.getByRole('tab', { name: t }).click()
+  await page.waitForTimeout(400)
+}
+await page.screenshot({ path: `${out}/04-detail-grade.png` })
+
+// URL state round trip
+const url = page.url()
+url.includes('sel=public%3A') || url.includes('sel=public:') ? ok('URL carries selection: ' + url.slice(-70)) : fail('URL missing selection: ' + url)
+const p2 = await ctx.newPage()
+p2.on('pageerror', (e) => errors.push('pageerror2: ' + e.message))
+await p2.goto(url, { waitUntil: 'domcontentloaded' })
+await p2.waitForSelector('aside[aria-label="School details"] h2', { timeout: 30000 })
+ok('URL restores the selected school')
+
+// year slider
+await page.locator('input[type=range]').fill('2018')
+await page.waitForTimeout(800)
+const label = await page.locator('.slider strong').innerText()
+label === '2018-19' ? ok('year slider -> 2018-19') : fail('slider label ' + label)
+
+await browser.close()
+if (errors.length) {
+  console.error('ERRORS:\n' + errors.join('\n'))
+  process.exitCode = 1
+}
+console.log(process.exitCode ? 'SMOKE FAILED' : 'SMOKE PASSED')
