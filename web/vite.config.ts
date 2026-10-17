@@ -3,7 +3,7 @@ import { defineConfig, type Plugin } from 'vite'
 import fs from 'node:fs'
 import path from 'node:path'
 
-const DATA_DIR = path.resolve(__dirname, '../docs/data')
+const DATA_DIR = path.resolve(import.meta.dirname, '../docs/data')
 
 /** Dev only: serve ../docs/data at /data/ with HTTP range support (as GitHub Pages does). */
 function serveData(): Plugin {

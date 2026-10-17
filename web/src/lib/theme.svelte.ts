@@ -11,7 +11,8 @@ function load(): ThemePref {
 }
 
 const mq = typeof matchMedia === 'function' ? matchMedia('(prefers-color-scheme: dark)') : null
-let pref = $state<ThemePref>(load())
+const initial = load()
+let pref = $state<ThemePref>(initial)
 let systemDark = $state(mq?.matches ?? false)
 mq?.addEventListener('change', (e) => (systemDark = e.matches))
 
@@ -19,7 +20,7 @@ function apply(p: ThemePref) {
   if (p === 'system') delete document.documentElement.dataset.theme
   else document.documentElement.dataset.theme = p
 }
-apply(pref)
+apply(initial)
 
 export const theme = {
   get pref() {
