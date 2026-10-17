@@ -10,7 +10,7 @@
       U.S. Census Bureau.
     </p>
     <p class="strong">This site does not rank or evaluate schools. Figures are for statistical use only.</p>
-    <p><a href="./methodology.html">Sources, versions and caveats</a></p>
+    <p><a href="./methodology.html">Data and methodology: sources, how to read the numbers, coverage</a></p>
     <h3>Keyboard</h3>
     <dl>
       <dt><kbd>Ctrl</kbd> <kbd>K</kbd></dt><dd>Search</dd>

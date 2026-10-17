@@ -3,115 +3,846 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Data and methods</title>
+<title>About the data</title>
+<meta name="description" content="Where the numbers come from, what each chart shows, how to read them, and how to reuse them.">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <script>
   try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t } catch (e) {}
 </script>
 <style>
-  :root { --bg:#f4f6f8; --surface:#fff; --text:#1a1f26; --muted:#55606d; --border:#d3d9e0; --accent:#1b5cb8; --warn-bg:#fff4d6; --warn-text:#5c4300; color-scheme: light; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme='light']) { --bg:#0e1217; --surface:#171c23; --text:#e8ecf1; --muted:#a0abb8; --border:#2d3641; --accent:#7db0ff; --warn-bg:#3a2f10; --warn-text:#f3dba0; color-scheme: dark; } }
-  :root[data-theme='dark'] { --bg:#0e1217; --surface:#171c23; --text:#e8ecf1; --muted:#a0abb8; --border:#2d3641; --accent:#7db0ff; --warn-bg:#3a2f10; --warn-text:#f3dba0; color-scheme: dark; }
-  body { background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; margin: 0; }
-  main { max-width: 56rem; margin: 0 auto; padding: 1.2rem 1rem 3rem; }
-  a { color: var(--accent); }
-  h1 { font-size: 1.7rem; margin: .6rem 0; }
-  h2 { font-size: 1.25rem; margin: 2rem 0 .4rem; border-bottom: 1px solid var(--border); padding-bottom: .2rem; }
-  h3 { font-size: 1rem; margin: 1.2rem 0 .2rem; }
-  table { border-collapse: collapse; width: 100%; font-size: .9rem; background: var(--surface); }
-  th, td { border: 1px solid var(--border); padding: .3rem .5rem; text-align: left; vertical-align: top; }
-  th { background: color-mix(in srgb, var(--surface) 85%, var(--border)); }
-  .note { background: var(--warn-bg); color: var(--warn-text); padding: .5rem .8rem; border-radius: 8px; }
+  @font-face { font-family: 'Bricolage Grotesque Variable'; font-style: normal; font-display: swap; font-weight: 200 800; src: url('./fonts/bricolage-grotesque-latin-wght-normal.woff2') format('woff2-variations'); }
+  @font-face { font-family: 'Instrument Sans Variable'; font-style: normal; font-display: swap; font-weight: 400 700; src: url('./fonts/instrument-sans-latin-wght-normal.woff2') format('woff2-variations'); }
+  @font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-display: swap; font-weight: 400; src: url('./fonts/ibm-plex-mono-latin-400-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-display: swap; font-weight: 500; src: url('./fonts/ibm-plex-mono-latin-500-normal.woff2') format('woff2'); }
+
+  :root {
+    --bg: #f3f4f7; --surface: #ffffff; --surface-2: #eef1f7; --text: #131a27; --muted: #566074; --border: #dde1e9;
+    --accent: #1b2a47; --accent-text: #ffffff; --link: #1b5cb8; --focus: #1b5cb8;
+    --c-public: #0072b2; --c-private: #bd4b00; --c-college: #00735a;
+    --v-final: #00735a; --v-provisional: #3a8fc7; --v-preliminary: #a86f00; --v-revised: #7a4fb0; --v-legacy: #8a94a1;
+    --warn-bg: #fff4d6; --warn-text: #5c4300; --good-bg: #e3f4ec; --good-text: #0b4f39; --bad-bg: #fbe8e6; --bad-text: #7a1f18;
+    --shadow: 0 1px 2px rgb(20 28 45 / 8%), 0 8px 28px rgb(20 28 45 / 8%);
+    --hero-a: #e8eefb; --hero-b: #f3f4f7;
+    --f-display: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, sans-serif;
+    --f-body: 'Instrument Sans Variable', 'Segoe UI', system-ui, sans-serif;
+    --f-data: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) {
+      --bg: #0e131c; --surface: #161d29; --surface-2: #1d2634; --text: #e8ecf3; --muted: #9aa4b8; --border: #2a3447;
+      --accent: #c9d6f2; --accent-text: #0e131c; --link: #8fb8ff; --focus: #9cc2ff;
+      --c-public: #3fa0dc; --c-private: #e8793a; --c-college: #2fb48f;
+      --v-final: #2fb48f; --v-provisional: #5fb0e6; --v-preliminary: #e6b53a; --v-revised: #b394e0; --v-legacy: #7c8797;
+      --warn-bg: #3a2f10; --warn-text: #f3dba0; --good-bg: #123a2c; --good-text: #bfeedd; --bad-bg: #40201c; --bad-text: #f6c9c3;
+      --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 28px rgb(0 0 0 / 35%);
+      --hero-a: #16233d; --hero-b: #0e131c;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme='dark'] {
+    --bg: #0e131c; --surface: #161d29; --surface-2: #1d2634; --text: #e8ecf3; --muted: #9aa4b8; --border: #2a3447;
+    --accent: #c9d6f2; --accent-text: #0e131c; --link: #8fb8ff; --focus: #9cc2ff;
+    --c-public: #3fa0dc; --c-private: #e8793a; --c-college: #2fb48f;
+    --v-final: #2fb48f; --v-provisional: #5fb0e6; --v-preliminary: #e6b53a; --v-revised: #b394e0; --v-legacy: #7c8797;
+    --warn-bg: #3a2f10; --warn-text: #f3dba0; --good-bg: #123a2c; --good-text: #bfeedd; --bad-bg: #40201c; --bad-text: #f6c9c3;
+    --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 28px rgb(0 0 0 / 35%);
+    --hero-a: #16233d; --hero-b: #0e131c;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 var(--f-body); -webkit-text-size-adjust: 100%; }
+  a { color: var(--link); text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+  code, kbd { font: 0.86em var(--f-data); background: var(--surface-2); border: 1px solid var(--border); border-radius: 5px; padding: 0.05em 0.35em; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .muted { color: var(--muted); }
-  code { background: color-mix(in srgb, var(--surface) 80%, var(--border)); padding: 0 .25em; border-radius: 4px; }
-  .scroll { overflow-x: auto; }
-  nav a { margin-right: 1rem; }
+  .mono { font-family: var(--f-data); }
+
+  /* ------------------------------------------------------------ top bar */
+  .bar { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 0.75rem; padding: 0.55rem max(1rem, env(safe-area-inset-right)) 0.55rem max(1rem, env(safe-area-inset-left)); background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+  .bar .back { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; text-decoration: none; color: var(--text); padding: 0.35rem 0.6rem; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); }
+  .bar .back:hover { border-color: var(--accent); }
+  .bar .title { font: 600 0.95rem var(--f-display); margin-right: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar button.theme { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; padding: 0.35rem 0.65rem; font: 500 0.85rem var(--f-body); cursor: pointer; min-height: 2.1rem; }
+  .bar button.theme:hover { border-color: var(--accent); }
+
+  /* ------------------------------------------------------------ layout */
+  .wrap { max-width: 76rem; margin: 0 auto; padding: 0 max(1rem, env(safe-area-inset-right)) 4rem max(1rem, env(safe-area-inset-left)); }
+  .cols { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  @media (min-width: 62rem) { .cols { grid-template-columns: 15rem minmax(0, 1fr); gap: 3rem; } }
+  main { min-width: 0; }
+  .toc { display: none; }
+  @media (min-width: 62rem) {
+    .toc { display: block; position: sticky; top: 4.6rem; align-self: start; max-height: calc(100vh - 5.5rem); overflow: auto; padding: 0.5rem 0; font-size: 0.9rem; }
+    .toc-m { display: none; }
+  }
+  .toc h2 { font: 600 0.72rem var(--f-data); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.5rem; border: 0; padding: 0; }
+  .toc ol { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--border); }
+  .toc a { display: block; padding: 0.3rem 0.75rem; margin-left: -2px; border-left: 2px solid transparent; color: var(--muted); text-decoration: none; }
+  .toc a:hover { color: var(--text); }
+  .toc a.on { color: var(--text); border-left-color: var(--accent); font-weight: 600; }
+  .toc-m { margin: 1rem 0 0; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+  .toc-m summary { padding: 0.7rem 1rem; font-weight: 600; cursor: pointer; }
+  .toc-m ol { margin: 0; padding: 0 1rem 0.8rem 2rem; columns: 2; column-gap: 1.5rem; font-size: 0.92rem; }
+  @media (max-width: 30rem) { .toc-m ol { columns: 1; } }
+
+  /* ------------------------------------------------------------ hero */
+  .hero { margin: 1.2rem 0 0; padding: clamp(1.4rem, 4vw, 2.6rem); border-radius: 20px; border: 1px solid var(--border); background:
+      radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--border) 70%, transparent) 1px, transparent 0) 0 0 / 18px 18px,
+      linear-gradient(135deg, var(--hero-a), var(--hero-b)); }
+  .eyebrow { font: 500 0.74rem var(--f-data); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  h1 { font: 700 clamp(2rem, 5vw, 3.2rem)/1.05 var(--f-display); letter-spacing: -0.02em; margin: 0.4rem 0 0.8rem; text-wrap: balance; }
+  .lead { font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.55; max-width: 44rem; margin: 0; }
+  .pledges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.2rem 0 0; padding: 0; list-style: none; }
+  .pledges li { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.35rem 0.8rem; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: 0.9rem; font-weight: 500; }
+  .pledges svg { width: 1rem; height: 1rem; color: var(--v-final); flex: none; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); gap: 0.75rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 0.85rem 1rem; }
+  .stat b { display: block; font: 600 1.7rem/1.1 var(--f-data); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+  .stat span { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+  .stat i { display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 50%; margin-right: 0.35rem; }
+  .asof { font-size: 0.82rem; color: var(--muted); margin: 0.8rem 0 0; }
+
+  /* ------------------------------------------------------------ sections */
+  section { margin-top: 3.2rem; }
+  h2 { font: 650 clamp(1.45rem, 3vw, 1.9rem)/1.15 var(--f-display); letter-spacing: -0.015em; margin: 0 0 0.4rem; text-wrap: balance; }
+  h2 .no { font: 500 0.78rem var(--f-data); color: var(--muted); letter-spacing: 0.08em; display: block; margin-bottom: 0.25rem; }
+  h3 { font: 600 1.05rem var(--f-display); margin: 1.6rem 0 0.4rem; }
+  .intro { color: var(--muted); max-width: 46rem; margin: 0 0 1.2rem; font-size: 1.05rem; }
+  p { margin: 0.6rem 0; max-width: 46rem; }
+  ul, ol { max-width: 46rem; }
+  li { margin: 0.25rem 0; }
+
+  .aud { display: inline-flex; gap: 0.3rem; flex-wrap: wrap; vertical-align: middle; margin-left: 0.4rem; }
+  .aud span { font: 500 0.66rem var(--f-data); letter-spacing: 0.04em; text-transform: uppercase; padding: 0.1rem 0.45rem; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); background: var(--surface); white-space: nowrap; }
+
+  .paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.9rem; }
+  .path { display: flex; flex-direction: column; gap: 0.3rem; padding: 1rem 1.1rem; border-radius: 16px; border: 1px solid var(--border); background: var(--surface); text-decoration: none; color: var(--text); transition: transform 0.12s, box-shadow 0.12s, border-color 0.12s; }
+  .path:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--accent); }
+  @media (prefers-reduced-motion: reduce) { .path { transition: none; } .path:hover { transform: none; } }
+  .path .who { font: 500 0.72rem var(--f-data); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .path strong { font: 600 1.15rem/1.2 var(--f-display); }
+  .path span.d { color: var(--muted); font-size: 0.93rem; }
+  .path .go { margin-top: auto; padding-top: 0.5rem; font-weight: 600; font-size: 0.9rem; color: var(--link); }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.1rem 1.25rem; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 0.9rem; }
+  .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.9rem; }
+  .card h3 { margin-top: 0; }
+  .card ul { padding-left: 1.2rem; margin: 0.3rem 0; }
+
+  .callout { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.85rem 1.1rem; border-radius: 14px; background: var(--warn-bg); color: var(--warn-text); max-width: 46rem; margin: 1rem 0; }
+  .callout svg { width: 1.25rem; height: 1.25rem; flex: none; margin-top: 0.15rem; }
+  .callout p { margin: 0; }
+  .callout.good { background: var(--good-bg); color: var(--good-text); }
+  .dd { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 0.9rem; }
+  .do, .dont { border-radius: 16px; padding: 1rem 1.25rem; }
+  .do { background: var(--good-bg); color: var(--good-text); }
+  .dont { background: var(--bad-bg); color: var(--bad-text); }
+  .do h3, .dont h3 { margin-top: 0; font-size: 1rem; }
+  .do ul, .dont ul { padding-left: 1.1rem; margin: 0.3rem 0 0; }
+  .say { border-left: 4px solid var(--accent); padding: 0.6rem 1rem; background: var(--surface); border-radius: 0 12px 12px 0; margin: 0.8rem 0; max-width: 46rem; }
+  .say q { font-style: normal; }
+  .say small { display: block; color: var(--muted); margin-top: 0.2rem; }
+
+  .check { counter-reset: c; list-style: none; padding: 0; display: grid; gap: 0.6rem; }
+  .check li { counter-increment: c; display: grid; grid-template-columns: 2rem 1fr; gap: 0.75rem; align-items: start; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.7rem 0.9rem; margin: 0; }
+  .check li::before { content: counter(c); display: grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--accent); color: var(--accent-text); font: 600 0.85rem var(--f-data); }
+
+  /* dataset cards */
+  .ds { border-top: 5px solid var(--c); }
+  .ds.public { --c: var(--c-public); } .ds.private { --c: var(--c-private); } .ds.college { --c: var(--c-college); }
+  .ds .kicker { font: 500 0.72rem var(--f-data); letter-spacing: 0.08em; text-transform: uppercase; color: var(--c); }
+  .ds dl { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; margin: 0.8rem 0 0; font-size: 0.93rem; }
+  .ds dt { font: 500 0.68rem var(--f-data); letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); margin-top: 0.65rem; }
+  .ds dd { margin: 0.1rem 0 0; }
+
+  /* flow */
+  .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr)); gap: 0.6rem; counter-reset: s; list-style: none; padding: 0; max-width: none; }
+  .flow li { counter-increment: s; position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 0.8rem 0.9rem 0.9rem; margin: 0; }
+  .flow li::before { content: counter(s); font: 600 0.75rem var(--f-data); color: var(--accent-text); background: var(--accent); width: 1.5rem; height: 1.5rem; border-radius: 50%; display: grid; place-items: center; margin-bottom: 0.4rem; }
+  .flow strong { display: block; font: 600 0.98rem var(--f-display); }
+  .flow span { font-size: 0.88rem; color: var(--muted); }
+
+  /* tables */
+  .scroll { position: relative; overflow-x: auto; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+  th, td { padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); }
+  tbody tr:last-child td, tbody tr:last-child th { border-bottom: 0; }
+  thead th { background: var(--surface-2); font: 600 0.74rem var(--f-data); letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); white-space: nowrap; position: sticky; top: 0; }
+  tbody th { font-weight: 600; white-space: nowrap; }
+  td.num, th.num { font-variant-numeric: tabular-nums; }
+  .tab { display: inline-block; font: 500 0.72rem var(--f-data); padding: 0.1rem 0.5rem; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); white-space: nowrap; }
+  .group { margin: 1.2rem 0 0.5rem; display: flex; align-items: center; gap: 0.6rem; font: 600 1.05rem var(--f-display); }
+  .group i { width: 0.8rem; height: 0.8rem; border-radius: 50%; background: var(--c); }
+  details.fold { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; margin: 0.7rem 0; max-width: none; }
+  details.fold > summary { cursor: pointer; padding: 0.8rem 1.1rem; font-weight: 600; list-style: none; display: flex; align-items: center; gap: 0.6rem; }
+  details.fold > summary::-webkit-details-marker { display: none; }
+  details.fold > summary::before { content: '▸'; color: var(--muted); transition: transform 0.15s; }
+  details.fold[open] > summary::before { transform: rotate(90deg); }
+  details.fold > div, details.fold > .scroll { margin: 0 1.1rem 1rem; }
+  details.fold > .scroll { margin-top: 0; }
+  details.fold .sum { margin-left: auto; font: 400 0.8rem var(--f-data); color: var(--muted); }
+
+
+  /* chart guide rows */
+  ul.crs { list-style: none; margin: 0; padding: 0; max-width: none; display: grid; gap: 0.6rem; }
+  li.cr { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.4rem 1.5rem; margin: 0; padding: 0.85rem 1rem; background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; }
+  @media (min-width: 52rem) { li.cr { grid-template-columns: minmax(11rem, 15rem) minmax(0, 1fr); } li.cr .cr-m { grid-column: 1 / -1; } }
+  .cr-h { display: flex; flex-direction: column; gap: 0.35rem; align-items: flex-start; }
+  .cr-h h4 { font: 600 1rem/1.25 var(--f-display); margin: 0; }
+  .pill { font: 500 0.68rem var(--f-data); letter-spacing: 0.06em; text-transform: uppercase; padding: 0.12rem 0.55rem; border-radius: 999px; background: var(--accent); color: var(--accent-text); }
+  .cr-b p { margin: 0 0 0.45rem; max-width: 40rem; }
+  .cr-b p.tip { font-size: 0.92rem; color: var(--muted); margin: 0; }
+  .cr-b p.tip b { color: var(--text); }
+  .cr-m { margin: 0; max-width: none; display: flex; flex-wrap: wrap; gap: 0.3rem 0.5rem; align-items: center; font-size: 0.85rem; color: var(--muted); padding-top: 0.5rem; border-top: 1px dashed var(--border); }
+  .cr-m span:not(.tab) { font: 500 0.68rem var(--f-data); letter-spacing: 0.06em; text-transform: uppercase; margin-left: 0.4rem; }
+  .cr-m span:not(.tab):first-child { margin-left: 0; }
+  details.fold > ul.crs { margin: 0 1.1rem 1rem; }
+
+  /* glossary */
+  .gl-tools { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0 0 1rem; }
+  input[type=search], select { font: 1rem var(--f-body); color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 0.55rem 0.8rem; min-height: 2.6rem; }
+  input[type=search] { flex: 1 1 14rem; max-width: 24rem; }
+  dl.gl { display: grid; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 0.7rem; margin: 0; }
+  dl.gl > div { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.7rem 0.95rem; }
+  dl.gl dt { font-weight: 650; font-family: var(--f-display); }
+  dl.gl dt small { font: 400 0.7rem var(--f-data); color: var(--muted); margin-left: 0.4rem; }
+  dl.gl dd { margin: 0.15rem 0 0; font-size: 0.93rem; }
+  .none { color: var(--muted); padding: 0.5rem 0; }
+
+  /* coverage */
+  .seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--surface); }
+  .seg button { border: 0; background: none; color: var(--muted); font: 500 0.88rem var(--f-body); padding: 0.55rem 0.85rem; cursor: pointer; min-height: 2.6rem; }
+  .seg button + button { border-left: 1px solid var(--border); }
+  .seg button[aria-pressed=true] { background: var(--accent); color: var(--accent-text); }
+  .legend { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.82rem; color: var(--muted); margin: 0.7rem 0; padding: 0; list-style: none; max-width: none; }
+  .legend li { display: inline-flex; align-items: center; gap: 0.35rem; margin: 0; }
+  .legend i { width: 0.8rem; height: 0.8rem; border-radius: 3px; }
+  .v-final { fill: var(--v-final); background: var(--v-final); } .v-provisional { fill: var(--v-provisional); background: var(--v-provisional); } .v-preliminary { fill: var(--v-preliminary); background: var(--v-preliminary); }
+  .v-revised { fill: var(--v-revised); background: var(--v-revised); } .v-legacy { fill: var(--v-legacy); background: var(--v-legacy); } .v-other { fill: var(--muted); background: var(--muted); }
+  svg.cov { display: block; width: 100%; height: 16px; border-radius: 4px; background: var(--surface-2); }
+  ul.cvs { list-style: none; margin: 0; padding: 0; max-width: none; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); overflow: hidden; }
+  li.cv { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.45rem 1.5rem; margin: 0; padding: 0.65rem 1rem; border-bottom: 1px solid var(--border); align-items: center; }
+  li.cv:last-child { border-bottom: 0; }
+  .cv-t { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+  .cv-t strong { font-weight: 600; overflow-wrap: anywhere; }
+  .cv-m { font-size: 0.82rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.25rem 0.5rem; align-items: center; }
+  .cv-head, .cv-axisrow { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 1.5rem; padding: 0 1rem; font: 600 0.72rem var(--f-data); letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+  .cv-head { margin-bottom: 0.2rem; }
+  .cv-head .cv-yrs { text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 0.8rem; }
+  .cv-axisrow { margin-bottom: 0.3rem; }
+  .cv-axisrow .cv-axis { grid-column: -2; position: relative; height: 1rem; }
+  @media (min-width: 46rem) { .cv-axisrow .cv-axis { grid-column: 2; } .cv-head .cv-yrs { grid-column: 2; } }
+  .cv-axis span { position: absolute; transform: translateX(-50%); font: 400 0.72rem var(--f-data); letter-spacing: 0; }
+  @media (min-width: 46rem) { li.cv, .cv-head, .cv-axisrow { grid-template-columns: minmax(0, 22rem) minmax(0, 1fr); } }
+  .more { margin: 0.8rem 0; }
+  button.btn { font: 600 0.9rem var(--f-body); color: var(--accent-text); background: var(--accent); border: 0; border-radius: 10px; padding: 0.55rem 1rem; cursor: pointer; min-height: 2.6rem; }
+  button.btn.ghost { color: var(--text); background: var(--surface); border: 1px solid var(--border); }
+  button.btn:hover { filter: brightness(1.08); }
+
+  /* code */
+  .code { position: relative; background: #0f1623; color: #e6edf7; border-radius: 12px; padding: 0.9rem 1rem; margin: 0.8rem 0; font: 0.84rem/1.55 var(--f-data); overflow-x: auto; max-width: 46rem; }
+  .code button { position: absolute; top: 0.5rem; right: 0.5rem; font: 500 0.75rem var(--f-body); color: #e6edf7; background: #243049; border: 1px solid #34425f; border-radius: 7px; padding: 0.25rem 0.6rem; cursor: pointer; min-height: 1.9rem; }
+  .code pre { margin: 0; white-space: pre; }
+  .cite { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1rem 1.2rem; max-width: 46rem; }
+  .cite p { margin: 0 0 0.7rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+  footer p { max-width: none; }
+
+  @media print {
+    .bar, .toc, .toc-m, .path .go, button { display: none !important; }
+    body { background: #fff; color: #000; font-size: 11pt; }
+    .cols { display: block; }
+    details.fold:not([open]) > *:not(summary) { display: block !important; }
+    a { color: #000; }
+    section { break-inside: avoid-page; }
+  }
 </style>
 </head>
 <body>
-<main>
-<nav><a href="./">&larr; Back to the map</a></nav>
-<h1>Data and methods</h1>
-<p>This site shows public data that the U.S. Department of Education's National Center for Education Statistics (NCES) and the U.S. Census Bureau publish, for one state at a time and for every year that could be ingested. Its aim is to make the data easier to find and read. <strong>It does not rank, rate or recommend schools or colleges</strong>, and counts are not measures of quality. Everything is built from the original files by the open-source pipeline in the repository, and nothing is fetched from a third-party data API.</p>
-<p class="note">NCES public-use data are for statistical purposes only. Do not use them to try to identify individuals.</p>
+<header class="bar">
+  <a class="back" href="./" aria-label="Back to the map"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg>Map</a>
+  <span class="title">About the data</span>
+  <button class="theme" id="theme" type="button">Theme: auto</button>
+</header>
 
-<h2>Sources</h2>
-<div class="scroll"><table>
-<thead><tr><th>Dataset</th><th>What it contains here</th><th>Original source</th></tr></thead>
-<tbody>
-<tr><td>Public schools and districts</td><td>CCD directories, membership (enrollment by grade, race/ethnicity and sex), free and reduced-price lunch eligibility, staff (FTE), school characteristics, students with disabilities (IDEA) and English learners by district (while published), district finance (F-33), graduates/completers and dropouts by district, for school years 1997-98 onward (before 2014-15 only the directory, location, membership, lunch and staff tables, plus the as-published universe files; school years 1986-87 to 1996-97 only exist as fixed-width text and are not included).</td><td><a href="https://nces.ed.gov/ccd/files.asp">NCES Common Core of Data</a></td></tr>
-<tr><td>Public school locations</td><td>School points, locale codes and geography (EDGE). The CCD directory itself has no coordinates.</td><td><a href="https://nces.ed.gov/programs/edge/Geographic/SchoolLocations">NCES EDGE school locations</a></td></tr>
-<tr><td>Private schools</td><td>All Private School Universe Survey public-use files (1989-90 to the latest survey); enrollment (total, grade, race, sex) and teacher tables are derived from them.</td><td><a href="https://nces.ed.gov/surveys/pss/pssdata.asp">NCES PSS</a></td></tr>
-<tr><td>Colleges</td><td>Every IPEDS Data Center complete data file from 1980 onward for the institutions ever located in the state (the map layer and the enrollment charts start in 2000, the first year of the standard directory file): directory, characteristics, enrollment, completions, graduation rates, outcome measures, admissions, student aid, finance, staff, libraries and derived variables.</td><td><a href="https://nces.ed.gov/ipeds/use-the-data">NCES IPEDS</a></td></tr>
-<tr><td>School district boundaries</td><td>Unified, elementary and secondary school district polygons, simplified for display.</td><td><a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html">Census TIGER/Line</a></td></tr>
-<tr><td>Geocoding</td><td>Addresses without source coordinates were located with the <a href="https://geocoding.geo.census.gov/geocoder/">U.S. Census Geocoder</a>; results are cached in the repository.</td><td>U.S. Census Bureau</td></tr>
-<tr><td>Basemaps</td><td>OpenFreeMap vector tiles with OpenMapTiles, &copy; OpenStreetMap contributors.</td><td><a href="https://openfreemap.org">OpenFreeMap</a></td></tr>
-</tbody></table></div>
+<div class="wrap">
+<details class="toc-m">
+  <summary>On this page</summary>
+  <ol id="toc-m"></ol>
+</details>
 
-<h2>Releases, versions and coverage</h2>
-<p class="muted">Generated from <code>data/meta/years.json</code> when this page loads. A version of <em>preliminary</em>, <em>provisional</em> or <em>final</em> is the label NCES gives the release (CCD: 0a preliminary, 1a provisional, 2a final; IPEDS: <em>revised</em> files replace the original <em>provisional</em> ones).</p>
-<div id="versions" class="scroll"><p>Loading…</p></div>
+<div class="cols">
+<nav class="toc" aria-label="On this page">
+  <h2>On this page</h2>
+  <ol id="toc"></ol>
+</nav>
 
-<h2>How values are handled</h2>
-<ul>
-  <li><strong>Missing and suppressed values are never zero.</strong> Source codes such as -1 (missing), -2 (not applicable), -3 (suppressed), M, N or text flags become empty values, and a companion flag column (<code>value_flag</code> or <code>&lt;column&gt;_flag</code>) records the reason: reported, derived, adjusted, missing, not_applicable, not_reported, suppressed, not_meeting_standards.</li>
-  <li><strong>IPEDS</strong> keeps its negative codes as published because in code columns they are labelled categories (for example "Not available") and finance values can really be negative. NCES's own status columns appear as <code>&lt;column&gt;_flag</code>.</li>
-  <li><strong>Identifiers</strong> are text with leading zeros preserved. <strong>Years</strong> are the fall year of the school year (2024 means 2024-25); IPEDS uses the file year.</li>
-  <li>Every table column has a dictionary entry (label, description, unit, years, caveat) built from NCES's own documentation; hover a field name in a detail panel to read it.</li>
-</ul>
+<main id="main">
+<div class="hero" id="top">
+  <div class="eyebrow">Data, methods and how to read them</div>
+  <h1>Where these numbers come from, and how to use them well</h1>
+  <p class="lead">This site puts public schools, private schools, school districts and colleges in <span data-state>one state</span> on a map, with their history. Every figure comes straight from files that the U.S. Department of Education and the Census Bureau publish. We standardise, organise and chart them; we do not estimate missing values or judge quality.</p>
+  <ul class="pledges" aria-label="Our commitments">
+    <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5"/></svg>No rankings or ratings</li>
+    <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5"/></svg>Built directly from the federal files</li>
+    <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5"/></svg>Missing is never shown as zero</li>
+    <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5"/></svg>Free and open source</li>
+  </ul>
+  <ul class="stats" id="stats" aria-label="The data at a glance">
+    <li class="stat"><b>…</b><span>Loading the latest counts</span></li>
+  </ul>
+  <p class="asof" id="asof"></p>
+</div>
 
-<h2>Things to know when reading the data</h2>
-<h3>Public schools (CCD)</h3>
-<ul>
-  <li>The latest year may be a <em>preliminary</em> directory with no membership, staff or lunch files yet; the app opens on the latest year with enrollment.</li>
-  <li><strong>Free and reduced-price lunch</strong> counts are not comparable across schools or years where the Community Eligibility Provision or similar provisions are used, because eligibility may be reported for all students or carried forward.</li>
-  <li><strong>Race/ethnicity</strong> categories were revised in 2009-10 (adding "Two or more races"). Totals are comparable; some detail rows are subtotals ("No Category Codes", "Education Unit Total"): do not add them to detail rows.</li>
-  <li>Counts can be <strong>suppressed</strong> to protect privacy; district totals can differ slightly from the sum of school rows because of reconciliation and adult-education adjustments.</li>
-  <li>Status (open, closed, new, future, changed boundary) is as reported for that school year. Closed schools are hidden unless you ask to include them.</li>
-  <li>District finance (F-33) amounts are in dollars, not inflation-adjusted, and item definitions changed over time. The CCD files used here contain counts of graduates and dropouts, not graduation or dropout rates.</li>
-  <li>CCD files before 2014-15 use older layouts (state-keyed codes such as status, type and level were converted to the modern labels; locale codes before 2006 use an older 8-category scheme). In 1997-98 to 2013-14 some states or schools reported totals without race/sex detail, so detail rows may not add up to the total. The as-published legacy files are in the data tables as <em>legacy_school</em> and <em>legacy_district</em>.</li>
-</ul>
-<h3>Locations</h3>
-<ul>
-  <li>Public school coordinates come from NCES EDGE (2014-15 through 2024-25). Where a school year has no EDGE file yet, each school's most recent EDGE point is used; schools with no earlier point, and colleges or private schools without source coordinates, were geocoded from their address. <strong>Dotted marker outlines mark approximate (non-exact) geocodes.</strong> PO boxes cannot be located, and some addresses do not match.</li>
-  <li>IPEDS directory files carry coordinates only from about 2008, so institutions that closed earlier have no map location.</li>
-  <li>District boundaries are TIGER/Line vintages: the file labelled <em>Y</em> describes the school year ending in <em>Y</em> (as of January 1 of that year). The newest school year reuses the latest vintage.</li>
-</ul>
-<h3>Private schools (PSS)</h3>
-<ul>
-  <li>The survey is conducted <strong>every two years</strong> (fall of the first year shown). Years in between are not missing data; the map shows the latest survey that began in or before the selected year and says so.</li>
-  <li>School names and permanent IDs are in the public-use files from 2005-06 (PPIN also in 1993-94, 2001-02 and 2003-04), so earlier surveys cannot be linked to schools or mapped, but they are in the data tables.</li>
-  <li>Questionnaire item numbers (P###) belong to each survey; value labels come from the 2023-24 codebook and definitions can differ in earlier years. Values may be imputed by NCES (see the imputation flags). Not every private school is captured by the survey.</li>
-</ul>
-<h3>Colleges (IPEDS)</h3>
-<ul>
-  <li>Fall enrollment race/ethnicity categories changed in 2010; the race chart starts there. 12-month headcount, completions (awards, not students) and admissions are separate surveys with their own definitions.</li>
-  <li>Student aid columns ending in a digit (for example <code>npist0</code>) are positional: the same name refers to different award years in different files.</li>
-  <li>Finance forms differ by institution type (public GASB, private not-for-profit or FASB, for-profit) and are not directly comparable.</li>
-  <li>Graduation rate files hold cohort counts, exclusions and completions: compute a rate only from rows of the same cohort. Admissions are shown as counts only.</li>
-  <li>IPEDS files before 2000 use different layouts and many more table families; they are in the data tables (use the table explorer on a college) but not on the map or in the charts, and column definitions may differ from later years.</li>
-</ul>
+<section id="start" aria-labelledby="h-start">
+  <h2 id="h-start"><span class="no">START HERE</span>Pick the path that fits you</h2>
+  <p class="intro">Each part of this page is written for everyone first, with technical detail tucked behind “For analysts” folds you can open when you need them.</p>
+  <div class="paths">
+    <a class="path" href="#officials"><span class="who">Elected and appointed officials</span><strong>Quote a number with confidence</strong><span class="d">What the data can and cannot say, wording that holds up, and a five-point check before you cite a figure.</span><span class="go">Go to decision-maker guide →</span></a>
+    <a class="path" href="#charts"><span class="who">Agency staff, planners, journalists</span><strong>Find what each chart means</strong><span class="d">Every chart, in plain words: what is measured, which survey it comes from, which years exist, and how to read it.</span><span class="go">Go to the chart guide →</span></a>
+    <a class="path" href="#numbers"><span class="who">Researchers and data analysts</span><strong>See how the numbers are handled</strong><span class="d">Missing and suppressed values, flags, release versions, comparability breaks and known limits for each source.</span><span class="go">Go to methods and limits →</span></a>
+    <a class="path" href="#technical"><span class="who">Developers and technical staff</span><strong>Reuse the data or rebuild it</strong><span class="d">Open Parquet files, file layout, a query you can run today, how the pipeline guards against surprises, and the license.</span><span class="go">Go to technical reference →</span></a>
+  </div>
+</section>
 
-<h2>Reproducing and extending</h2>
-<p>The code, the data pipeline, the schema maps and every processed Parquet file are in the <a href="https://github.com/ar-puuk/education-explorer">project repository</a> (MIT license; data are U.S. public data, see <code>DATA_ATTRIBUTION.md</code>). The pipeline fails loudly if an NCES release adds, drops or renames a column, so a new release is usually a short edit to a column map. The state shown is chosen by one configuration file, so another state is built by adding a file and running the pipeline.</p>
+<section id="officials" aria-labelledby="h-off">
+  <h2 id="h-off"><span class="no">DECISION-MAKERS</span>Using these numbers well <span class="aud" aria-label="For"><span>Officials</span><span>Staff</span></span></h2>
+  <p class="intro">These figures describe who is enrolled where, and how that has changed. They are a good starting point for a question and a poor place to stop. Here is how to get the most from them without overstating what they show.</p>
+
+  <div class="grid3">
+    <div class="card">
+      <h3>Good questions for this data</h3>
+      <ul>
+        <li>How has enrollment in a school, district or college changed over time?</li>
+        <li>What does the student population look like by race and ethnicity, grade or age?</li>
+        <li>Where are schools, colleges and private schools located, and what grades or programs do they offer?</li>
+        <li>How do tuition, aid and net price at a college compare with its own past?</li>
+        <li>How do a district’s revenue and spending per student break down?</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Questions it cannot answer</h3>
+      <ul>
+        <li>Which school or college is “best”. Nothing here is a quality measure.</li>
+        <li>Why a number changed. The data show what, not why.</li>
+        <li>How a school’s students perform on tests. Test scores are not included.</li>
+        <li>What any individual student or family experiences.</li>
+        <li>Anything newer than the latest release for each survey (see <a href="#coverage">coverage</a>).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Terms that trip people up</h3>
+      <ul>
+        <li><strong>Enrollment</strong> is a head count on one fall date, not a yearly average.</li>
+        <li><strong>Students per teacher</strong> is not class size.</li>
+        <li><strong>Free or reduced-price lunch</strong> is a rough income signal, and is unreliable where whole schools are enrolled automatically.</li>
+        <li>A <strong>share</strong> (%) says who is counted, not how any group is doing.</li>
+        <li>Years are <strong>school years</strong>: 2024 means 2024-25.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Before you quote a number</h3>
+  <ol class="check">
+    <li><div><strong>Say the year.</strong> “Fall 2024”, “school year 2023-24” or “the 2023-24 survey”. Private schools are surveyed every two years, so the latest survey may be older than the year you are looking at.</div></li>
+    <li><div><strong>Say the source.</strong> “According to the National Center for Education Statistics’ Common Core of Data” (public schools), “Private School Universe Survey” or “IPEDS” (colleges). Each chart in the chart guide below names its survey.</div></li>
+    <li><div><strong>Check the release.</strong> Newer data are marked <em>preliminary</em> or <em>provisional</em> and can be revised. The <a href="#coverage">coverage table</a> shows which stage each year is in.</div></li>
+    <li><div><strong>Look for blanks.</strong> An empty bar or “—” means the value was missing, hidden for privacy, or not collected. It does not mean zero.</div></li>
+    <li><div><strong>Compare like with like.</strong> Same survey, same definition, ideally the same school or college over time. Differences between places usually reflect size, location and mission before anything else.</div></li>
+  </ol>
+
+  <h3>Wording that holds up</h3>
+  <div class="dd">
+    <div class="do">
+      <h3>Say</h3>
+      <ul>
+        <li>“Enrollment was 612 in fall 2023, down from 655 in fall 2019.”</li>
+        <li>“Hispanic or Latino students were 31% of students counted in 2024.”</li>
+        <li>“The college’s published in-state tuition and fees were $9,315 in 2023-24.”</li>
+      </ul>
+    </div>
+    <div class="dont">
+      <h3>Avoid</h3>
+      <ul>
+        <li>“This school is better or worse than that one.”</li>
+        <li>“Enrollment fell because the school got worse.”</li>
+        <li>“Only 20% of students graduate”, from a chart that shows counts of graduates or one cohort’s rate.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="say"><q>Source: U.S. Department of Education, National Center for Education Statistics, Common Core of Data, school year 2023-24 (final release); accessed through the Education Explorer.</q><small>A short credit line you can paste under a chart or table.</small></div>
+</section>
+
+<section id="sources" aria-labelledby="h-src">
+  <h2 id="h-src"><span class="no">SOURCES</span>Where the data come from <span class="aud" aria-label="For"><span>Everyone</span></span></h2>
+  <p class="intro">Three federal surveys supply the people and places. Two Census Bureau products supply the geography. All are public and free to use.</p>
+  <div class="grid3">
+    <article class="card ds public">
+      <div class="kicker">Public schools and districts</div>
+      <h3>Common Core of Data (CCD)</h3>
+      <p>Each year, every state education agency reports its schools and districts to the National Center for Education Statistics (NCES).</p>
+      <dl>
+        <dt>Contains</dt><dd>School and district directories, enrollment by grade, race/ethnicity and sex, free and reduced-price lunch eligibility, teachers (FTE), program characteristics, and for districts: finance, graduates, dropouts, English learners and students with disabilities.</dd>
+        <dt>Years here</dt><dd id="yrs-ccd">…</dd>
+        <dt>Reported by</dt><dd>State education agencies</dd>
+        <dt>Best for</dt><dd>Enrollment and demographic trends for a school or district.</dd>
+        <dt>Not for</dt><dd>Quality or performance. No test scores.</dd>
+      </dl>
+      <p><a href="https://nces.ed.gov/ccd/files.asp">Original files →</a></p>
+    </article>
+    <article class="card ds private">
+      <div class="kicker">Private schools</div>
+      <h3>Private School Universe Survey (PSS)</h3>
+      <p>NCES surveys private schools every two years to build a list of them and describe their students and teachers.</p>
+      <dl>
+        <dt>Contains</dt><dd>Enrollment (total, grade, race, sex), teachers, religious orientation, school level and type.</dd>
+        <dt>Years here</dt><dd id="yrs-pss">…</dd>
+        <dt>Reported by</dt><dd>The schools themselves</dd>
+        <dt>Best for</dt><dd>Seeing which private schools exist, roughly how large, and how that changes.</dd>
+        <dt>Not for</dt><dd>Annual figures (it is biennial) or a complete count: not every private school responds.</dd>
+      </dl>
+      <p><a href="https://nces.ed.gov/surveys/pss/pssdata.asp">Original files →</a></p>
+    </article>
+    <article class="card ds college">
+      <div class="kicker">Colleges</div>
+      <h3>Integrated Postsecondary Education Data System (IPEDS)</h3>
+      <p>Colleges and universities that take part in federal student aid programs must report to IPEDS each year.</p>
+      <dl>
+        <dt>Contains</dt><dd>Enrollment (including online course load), age, residence, admissions, retention, graduation, awards, tuition, net price, financial aid, finances and staff.</dd>
+        <dt>Years here</dt><dd id="yrs-ipeds">…</dd>
+        <dt>Reported by</dt><dd>The institutions</dd>
+        <dt>Best for</dt><dd>Following one institution over time across many measures.</dd>
+        <dt>Not for</dt><dd>Ranking institutions. Missions and student bodies differ too much for that.</dd>
+      </dl>
+      <p><a href="https://nces.ed.gov/ipeds/use-the-data">Original files →</a></p>
+    </article>
+  </div>
+  <h3>Supporting sources</h3>
+  <div class="scroll" tabindex="0" role="region" aria-label="Supporting sources (scrollable)"><table>
+    <thead><tr><th>Used for</th><th>Source</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Public school locations</th><td><a href="https://nces.ed.gov/programs/edge/Geographic/SchoolLocations">NCES EDGE school locations</a></td><td>Map points and locale codes. The CCD directory has no coordinates of its own.</td></tr>
+      <tr><th scope="row">District boundaries</th><td><a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html">Census TIGER/Line</a></td><td>Unified, elementary and secondary districts, simplified for display. The file labelled <em>Y</em> describes the school year ending in <em>Y</em>.</td></tr>
+      <tr><th scope="row">Missing coordinates</th><td><a href="https://geocoding.geo.census.gov/geocoder/">U.S. Census Geocoder</a></td><td>Used only when a source file has no coordinates. Approximate matches are drawn with a dotted outline.</td></tr>
+      <tr><th scope="row">District finance</th><td>Census Bureau, Annual Survey of School System Finances (F-33), published through CCD</td><td>Dollars as reported; not adjusted for inflation.</td></tr>
+      <tr><th scope="row">Basemap</th><td><a href="https://openfreemap.org">OpenFreeMap</a>, OpenMapTiles, &copy; OpenStreetMap contributors</td><td>Background map only.</td></tr>
+    </tbody></table></div>
+
+  <h3>How a number gets from the federal file to your screen</h3>
+  <ol class="flow">
+    <li><strong>Download</strong><span>The original file from NCES or the Census Bureau, unchanged.</span></li>
+    <li><strong>Check</strong><span>The pipeline compares each file’s columns to what it expects and stops if anything is added, dropped or renamed.</span></li>
+    <li><strong>Standardise</strong><span>Codes become labels; blanks, suppressed and “not applicable” stay distinct from zero.</span></li>
+    <li><strong>Validate</strong><span>Automated checks for duplicates, impossible values and mismatched totals must pass.</span></li>
+    <li><strong>Publish</strong><span>Compact data files are saved with this site. Your browser reads them directly; no server or account is involved.</span></li>
+  </ol>
+</section>
+
+<section id="charts" aria-labelledby="h-ch">
+  <h2 id="h-ch"><span class="no">CHART GUIDE</span>What each chart shows <span class="aud" aria-label="For"><span>Staff</span><span>Analysts</span></span></h2>
+  <p class="intro">Open a school, district or college on the map and use its tabs. This guide lists every chart in the order you will meet them, in plain words, with the survey and years behind it. “Table” is the name you will see in the panel’s <em>Data</em> tab.</p>
+  <div class="gl-tools"><button class="btn ghost" id="expand" type="button">Open all groups</button></div>
+
+  <details class="fold" open>
+    <summary>Public schools <span class="sum">Common Core of Data</span></summary>
+    <ul class="crs"><li class="cr"><div class="cr-h"><span class="pill">Overview</span><h4>Enrollment over time</h4></div><div class="cr-b"><p>Students enrolled on the fall count date: total, or split by race/ethnicity, sex or grade. A dashed line and shaded band show the state’s typical school (median and middle half of operating schools).</p><p class="tip"><b>Reading tip.</b> The band is context, not a target. Small schools sit well below it by design.</p></div><p class="cr-m"><span>Table</span> <span class="tab">membership</span><span>Years</span> 1997-98 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Students</span><h4>Race and ethnicity; grades; girls and boys; race within each grade</h4></div><div class="cr-b"><p>Shares of the students counted, and one year’s head count by grade.</p><p class="tip"><b>Reading tip.</b> Shares describe composition only. Suppressed small cells are left out.</p></div><p class="cr-m"><span>Table</span> <span class="tab">membership</span><span>Years</span> 1997-98 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Students</span><h4>Lunch program eligibility</h4></div><div class="cr-b"><p>Students eligible for free or reduced-price lunch.</p><p class="tip"><b>Reading tip.</b> Not comparable where a school enrolls all students automatically (Community Eligibility).</p></div><p class="cr-m"><span>Table</span> <span class="tab">lunch</span><span>Years</span> 1998-99 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Programs</span><h4>Status and programs by year</h4></div><div class="cr-b"><p>For each year: operating status, grades offered, level, locale, school type, charter, virtual instruction, Title I, magnet, shared-time and school lunch program.</p><p class="tip"><b>Reading tip.</b> Dashed squares mean no record that year. Virtual and Title I fields were added later.</p></div><p class="cr-m"><span>Table</span> <span class="tab">school_directory</span> <span class="tab">school_characteristics</span> <span class="tab">school_location</span><span>Years</span> Directory 1997-98 on; programs 2014-15 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Trends</span><h4>Students per teacher; teachers; lunch share; lunch counts</h4></div><div class="cr-b"><p>Enrollment divided by full-time-equivalent teachers; teacher FTE; eligible students as a share of enrollment.</p><p class="tip"><b>Reading tip.</b> Students per teacher is not class size, and high values often come from very low reported teacher FTE.</p></div><p class="cr-m"><span>Table</span> <span class="tab">membership</span> <span class="tab">staff</span> <span class="tab">lunch</span><span>Years</span> 1998-99 on</p></li></ul>
+  </details>
+
+  <details class="fold">
+    <summary>School districts <span class="sum">Common Core of Data, Census F-33</span></summary>
+    <ul class="crs"><li class="cr"><div class="cr-h"><span class="pill">Overview</span><h4>Enrollment over time</h4></div><div class="cr-b"><p>District-reported students, total or by race/ethnicity.</p><p class="tip"><b>Reading tip.</b> Can differ slightly from the sum of its schools because of reconciliation.</p></div><p class="cr-m"><span>Table</span> <span class="tab">district_membership</span><span>Years</span> 1998-99 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Students</span><h4>Race, grades, girls and boys, race within each grade</h4></div><div class="cr-b"><p>Composition of enrollment.</p><p class="tip"><b>Reading tip.</b> Composition only.</p></div><p class="cr-m"><span>Table</span> <span class="tab">district_membership</span><span>Years</span> As above</p></li><li class="cr"><div class="cr-h"><span class="pill">Students</span><h4>English learners and students with disabilities</h4></div><div class="cr-b"><p>Counts divided by district enrollment for the same year.</p><p class="tip"><b>Reading tip.</b> Identification practices differ by state and over time.</p></div><p class="cr-m"><span>Table</span> <span class="tab">district_el</span> <span class="tab">district_idea</span><span>Years</span> English learners to 2018-19; disabilities to 2019-20</p></li><li class="cr"><div class="cr-h"><span class="pill">Students</span><h4>Diplomas and other credentials; diploma recipients and dropouts by race and sex</h4></div><div class="cr-b"><p>Counts of completers and of dropouts in grades 9–12, and who they are.</p><p class="tip"><b>Reading tip.</b> These are counts, not graduation or dropout rates. Small counts are hidden.</p></div><p class="cr-m"><span>Table</span> <span class="tab">district_graduates</span> <span class="tab">district_dropout</span><span>Years</span> 2018-19, 2022-23, 2023-24</p></li><li class="cr"><div class="cr-h"><span class="pill">Money</span><h4>Revenue and spending per student</h4></div><div class="cr-b"><p>Federal, state and local revenue, and spending by purpose, divided by fall membership.</p><p class="tip"><b>Reading tip.</b> Dollars of the year, not adjusted for inflation or local costs. Not a measure of quality.</p></div><p class="cr-m"><span>Table</span> <span class="tab">district_finance</span><span>Years</span> 2014-15 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Trends</span><h4>Staff, finance totals, students</h4></div><div class="cr-b"><p>Series you can switch between, with a CSV download.</p><p class="tip"><b>Reading tip.</b> Not every table covers every year.</p></div><p class="cr-m"><span>Table</span> <span class="tab">district_staff</span> <span class="tab">district_finance</span><span>Years</span> Varies</p></li></ul>
+  </details>
+
+  <details class="fold">
+    <summary>Private schools <span class="sum">Private School Universe Survey</span></summary>
+    <ul class="crs"><li class="cr"><div class="cr-h"><span class="pill">Overview</span><h4>Enrollment by survey year</h4></div><div class="cr-b"><p>Students, total or by grade, race or sex.</p><p class="tip"><b>Reading tip.</b> Gaps between surveys are not missing data.</p></div><p class="cr-m"><span>Table</span> <span class="tab">enrollment</span><span>Years</span> Every second year</p></li><li class="cr"><div class="cr-h"><span class="pill">Students</span><h4>Race, grades, girls and boys, students per teacher</h4></div><div class="cr-b"><p>Composition and the ratio as reported by the school.</p><p class="tip"><b>Reading tip.</b> Girls are shown as total minus boys.</p></div><p class="cr-m"><span>Table</span> <span class="tab">enrollment</span> <span class="tab">schools</span><span>Years</span> Every second year</p></li><li class="cr"><div class="cr-h"><span class="pill">Trends</span><h4>Teachers; prekindergarten</h4></div><div class="cr-b"><p>Full-time-equivalent teachers and prekindergarten counts.</p><p class="tip"><b>Reading tip.</b> Values may be imputed by NCES.</p></div><p class="cr-m"><span>Table</span> <span class="tab">teachers</span> <span class="tab">schools</span><span>Years</span> Every second year</p></li><li class="cr"><div class="cr-h"><span class="pill">Details</span><h4>Profile by survey year</h4></div><div class="cr-b"><p>Level, affiliation, orientation, type, locale and region at each survey.</p><p class="tip"><b>Reading tip.</b> Labels follow the latest codebook.</p></div><p class="cr-m"><span>Table</span> <span class="tab">schools</span><span>Years</span> Every second year</p></li></ul>
+  </details>
+
+  <details class="fold">
+    <summary>Colleges <span class="sum">IPEDS</span></summary>
+    <ul class="crs"><li class="cr"><div class="cr-h"><span class="pill">Overview</span><h4>Fall enrollment</h4></div><div class="cr-b"><p>Students enrolled in fall: total, by level, full or part time, gender, or race/ethnicity.</p><p class="tip"><b>Reading tip.</b> Race categories changed in 2010, so earlier years are not drawn.</p></div><p class="cr-m"><span>Table</span> <span class="tab">efa</span><span>Years</span> Back to 1980 where reported (race from 2010)</p></li><li class="cr"><div class="cr-h"><span class="pill">Overview</span><h4>How students take their courses</h4></div><div class="cr-b"><p>Fall students taking all, some or none of their courses online.</p><p class="tip"><b>Reading tip.</b> NCES does not separate hybrid from in person. Fall 2020 reflects emergency remote teaching.</p></div><p class="cr-m"><span>Table</span> <span class="tab">efadist</span><span>Years</span> Fall 2012 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Students</span><h4>Race share; age; where first-time students come from</h4></div><div class="cr-b"><p>Composition of enrollment, age bands, and state of residence when first admitted.</p><p class="tip"><b>Reading tip.</b> Origin shows the closest earlier report if the selected year has none.</p></div><p class="cr-m"><span>Table</span> <span class="tab">efa</span> <span class="tab">efb</span> <span class="tab">efc</span><span>Years</span> Age 2003 on; origin in alternate years</p></li><li class="cr"><div class="cr-h"><span class="pill">Students</span><h4>Admissions and share admitted</h4></div><div class="cr-b"><p>Applicants, admitted and enrolled first-time undergraduates.</p><p class="tip"><b>Reading tip.</b> An admit rate reflects who applies, not quality. Open-admission colleges do not report it.</p></div><p class="cr-m"><span>Table</span> <span class="tab">adm</span><span>Years</span> 2014 on, where reported</p></li><li class="cr"><div class="cr-h"><span class="pill">Students</span><h4>12-month headcount; students per faculty; staff and faculty</h4></div><div class="cr-b"><p>Unduplicated students over a year, the student-faculty ratio, instructional staff by rank, salary by rank and staff by occupation.</p><p class="tip"><b>Reading tip.</b> Salaries are equated to a 9-month contract; 2016-2020 files give only totals, so those years are blank.</p></div><p class="cr-m"><span>Table</span> <span class="tab">effy</span> <span class="tab">efd</span> <span class="tab">salis</span> <span class="tab">drvhr</span><span>Years</span> Headcount 2002 on; ratio about 2003 on; faculty 2012 on; occupations 2021 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Outcomes</span><h4>Retention; graduation rates; awards within 8 years; degrees awarded</h4></div><div class="cr-b"><p>Students returning the next fall, completion rates, longer-term outcomes including part-time and transfer students, and awards by level.</p><p class="tip"><b>Reading tip.</b> Graduation rates cover only first-time, full-time students. Outcome Measures cover more students but are reported by group.</p></div><p class="cr-m"><span>Table</span> <span class="tab">efd</span> <span class="tab">drvgr</span> <span class="tab">om</span> <span class="tab">ca</span><span>Years</span> Retention about 2003 on; graduation 2021 on; Outcome Measures 2015 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Costs</span><h4>Tuition; total price; net price; aid</h4></div><div class="cr-b"><p>Published tuition, cost of attendance, what aid recipients pay on average (by family income), the share receiving each kind of aid and average amounts.</p><p class="tip"><b>Reading tip.</b> Sticker price is not what most students pay. Net price covers first-time, full-time undergraduates only.</p></div><p class="cr-m"><span>Table</span> <span class="tab">icay</span> <span class="tab">drvic</span> <span class="tab">sfa</span><span>Years</span> Tuition 2000 on; aid 2000 on</p></li><li class="cr"><div class="cr-h"><span class="pill">Costs</span><h4>Revenue and expenses, every year; per student</h4></div><div class="cr-b"><p>Where money comes from and what it is spent on, in dollars, from whichever finance form the college files.</p><p class="tip"><b>Reading tip.</b> Public, private nonprofit and for-profit colleges follow different accounting rules.</p></div><p class="cr-m"><span>Table</span> <span class="tab">ff1a</span> <span class="tab">ff2</span> <span class="tab">ff3</span> <span class="tab">drvf</span><span>Years</span> 1997 or 2002 on</p></li></ul>
+  </details>
+</section>
+
+<section id="terms" aria-labelledby="h-terms">
+  <h2 id="h-terms"><span class="no">PLAIN-LANGUAGE GLOSSARY</span>Terms and abbreviations <span class="aud" aria-label="For"><span>Everyone</span></span></h2>
+  <p class="intro">Education data comes with its own vocabulary. Search or scroll.</p>
+  <div class="gl-tools">
+    <input type="search" id="gl-q" placeholder="Search terms, e.g. FTE, Title I, net price" aria-label="Search the glossary">
+    <span class="muted" id="gl-n" role="status" aria-live="polite"></span>
+  </div>
+  <dl class="gl" id="gl"></dl>
+  <p class="none" id="gl-none" hidden>No terms match. Try a shorter word.</p>
+</section>
+
+<section id="numbers" aria-labelledby="h-num">
+  <h2 id="h-num"><span class="no">METHODS</span>How the numbers are handled <span class="aud" aria-label="For"><span>Analysts</span><span>Staff</span></span></h2>
+  <p class="intro">A few rules apply everywhere on this site.</p>
+  <div class="grid2">
+    <div class="card"><h3>Missing is never zero</h3><p>If a value was not reported, was hidden to protect privacy, or does not apply, the chart leaves a gap. A real zero is drawn as zero.</p></div>
+    <div class="card"><h3>Shares are not rates</h3><p>A bar showing that a group is 22% of graduates says who graduated. It does not say how likely that group is to graduate; that needs each group’s enrollment too.</p></div>
+    <div class="card"><h3>School years are labelled by their start</h3><p>2024 means the 2024-25 school year. Colleges use the fall of the file’s year. Private schools appear in survey years only.</p></div>
+    <div class="card"><h3>Nothing is ranked or scored</h3><p>There are no rankings, grades or stars. Where a state “typical” band appears, it is labelled context and shown only for years with at least 10 operating schools.</p></div>
+    <div class="card"><h3>Releases get revised</h3><p>NCES publishes data as <em>preliminary</em>, then <em>provisional</em>, then <em>final</em>; IPEDS replaces provisional files with <em>revised</em> ones. The coverage table shows each year’s stage.</p></div>
+    <div class="card"><h3>Totals are not always the sum of parts</h3><p>Detail rows can be hidden when counts are small, and subtotals are published alongside detail rows. We never add subtotals to details, so totals may exceed the visible parts.</p></div>
+  </div>
+
+  <details class="fold">
+    <summary>For analysts: value flags, identifiers and column rules</summary>
+    <div>
+      <ul>
+        <li><strong>Flags.</strong> Source codes such as −1 (missing), −2 (not applicable), −3 (suppressed), M, N or text flags become empty values. A companion column (<code>value_flag</code> or <code>&lt;column&gt;_flag</code>) records why: <code>reported</code>, <code>derived</code>, <code>adjusted</code>, <code>missing</code>, <code>not_applicable</code>, <code>not_reported</code>, <code>suppressed</code>, <code>not_meeting_standards</code>.</li>
+        <li><strong>IPEDS</strong> keeps negative codes as published, because in code columns they are labelled categories (for example “Not available”) and finance values can truly be negative. NCES’s own status columns appear as <code>&lt;column&gt;_flag</code>. Many IPEDS derived tables store numbers as text, with “.” or a letter for missing.</li>
+        <li><strong>Identifiers</strong> are text with leading zeros preserved: <code>ncessch</code> (12-digit school), <code>leaid</code> (7-digit district), <code>unitid</code> (college), <code>ppin</code> (private school).</li>
+        <li><strong>Derived values</strong> (students per teacher, lunch share, state median and middle half, year summary) are computed by the pipeline’s <code>derive</code> step from the published tables and are stored under <code>data/derived/</code> and <code>data/meta/</code>. Students per teacher is left empty when teacher FTE is zero.</li>
+        <li><strong>Dictionary.</strong> Every table column has an entry (label, description, unit, first and last year, caveat) built from NCES’s own documentation. Hover or focus a field name in a detail panel to read it.</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<section id="limits" aria-labelledby="h-lim">
+  <h2 id="h-lim"><span class="no">KNOWN LIMITS</span>What to keep in mind, source by source <span class="aud" aria-label="For"><span>Everyone</span></span></h2>
+  <p class="intro">Each source has quirks that can change how a number should be read. The short version comes first; open a group for the detail.</p>
+
+  <details class="fold" open>
+    <summary>Public schools (CCD)</summary>
+    <div>
+      <p><strong>In short:</strong> the newest year may be incomplete; lunch eligibility is unreliable where schools enroll everyone automatically; small counts are hidden.</p>
+      <ul>
+        <li>The latest year may be a <em>preliminary</em> directory with no enrollment, staff or lunch files yet. The map opens on the latest year that has enrollment.</li>
+        <li><strong>Free and reduced-price lunch</strong> counts are not comparable across schools or years where the Community Eligibility Provision or similar rules apply, because eligibility may be reported for all students or carried forward.</li>
+        <li>Race and ethnicity categories were revised in 2009-10 (adding “Two or more races”). Totals are comparable; some rows are subtotals (“No Category Codes”, “Education Unit Total”) and are never added to detail rows.</li>
+        <li>Counts can be suppressed to protect privacy. District totals can differ slightly from the sum of school rows because of reconciliation and adult-education adjustments.</li>
+        <li>Status (open, closed, new, future, changed boundary) is as reported for that year. Closed schools are hidden unless you ask for them.</li>
+        <li>District finance amounts are in dollars of the year, not adjusted for inflation, and item definitions changed over time. The graduate and dropout files hold counts, not rates.</li>
+        <li><strong>Before 2014-15</strong> the files use older layouts: codes were converted to modern labels, and locale codes before 2006 use an older 8-category scheme. In 1997-98 to 2013-14 some states reported totals without race and sex detail, so detail rows may not add up. School years 1986-87 to 1996-97 exist only as fixed-width text and are not included.</li>
+      </ul>
+    </div>
+  </details>
+  <details class="fold">
+    <summary>Locations and boundaries</summary>
+    <div>
+      <p><strong>In short:</strong> most points are exact; some are approximate and drawn with a dotted outline.</p>
+      <ul>
+        <li>Public school coordinates come from NCES EDGE (2014-15 onward). Where a year has no EDGE file yet, each school’s most recent EDGE point is used; schools with no earlier point, and colleges or private schools without source coordinates, were located from their address. PO boxes cannot be located and some addresses do not match.</li>
+        <li>IPEDS directory files carry coordinates only from about 2008, so institutions that closed earlier have no map location.</li>
+        <li>District boundaries are TIGER/Line vintages (as of January 1 of the labelled year). The newest school year reuses the latest vintage, so a recent boundary change may not appear yet.</li>
+      </ul>
+    </div>
+  </details>
+  <details class="fold">
+    <summary>Private schools (PSS)</summary>
+    <div>
+      <p><strong>In short:</strong> a survey every two years, and not every school answers.</p>
+      <ul>
+        <li>The survey is conducted every two years (fall of the first year shown). The map shows the latest survey that began in or before the selected year, and says so.</li>
+        <li>School names and permanent IDs are in the public files from 2005-06 (and a few earlier years), so earlier surveys cannot be linked to schools or mapped. They remain in the data tables.</li>
+        <li>Questionnaire item numbers belong to each survey, and value labels follow the 2023-24 codebook, so definitions can differ in earlier years. NCES may impute values (see the imputation flags).</li>
+      </ul>
+    </div>
+  </details>
+  <details class="fold">
+    <summary>Colleges (IPEDS)</summary>
+    <div>
+      <p><strong>In short:</strong> different surveys use different definitions, so charts from different tabs are not interchangeable.</p>
+      <ul>
+        <li>Fall enrollment race/ethnicity categories changed in 2010, so the race charts start there. 12-month headcount, completions (awards, not students) and admissions are separate surveys with their own definitions.</li>
+        <li>Student aid columns ending in a digit (for example <code>npist0</code>) are positional: the same name refers to different award years in different files.</li>
+        <li>Finance forms differ by institution type (public GASB, private nonprofit FASB, for-profit) and are only roughly comparable. The “every year” finance charts group the three forms into shared categories and show any remainder as “Other”.</li>
+        <li>Graduation-rate files hold cohort counts, exclusions and completions; a rate is computed only within one cohort. Faculty salaries for 2016-2020 are published only as total outlays, so those years are blank.</li>
+        <li>IPEDS files before 2000 use different layouts and many more table families. They are in the data tables, but not on the map or in the charts, and column definitions may differ.</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<section id="coverage" aria-labelledby="h-cov">
+  <h2 id="h-cov"><span class="no">COVERAGE</span>Which years exist, and how final they are <span class="aud" aria-label="For"><span>Staff</span><span>Analysts</span></span></h2>
+  <p class="intro">One row per table in the data. The strip shows the years available, coloured by release stage. This is read live from the site’s own data files, so it is always current.</p>
+  <ul class="legend" aria-label="Release stage colours">
+    <li><i class="v-final"></i>Final</li><li><i class="v-provisional"></i>Provisional</li><li><i class="v-preliminary"></i>Preliminary</li><li><i class="v-revised"></i>Revised</li><li><i class="v-legacy"></i>As published (older files)</li><li><i class="v-other"></i>Stage not labelled</li>
+  </ul>
+  <div class="gl-tools">
+    <div class="seg" role="group" aria-label="Show tables from" id="cov-seg">
+      <button type="button" data-ds="" aria-pressed="true">All</button>
+      <button type="button" data-ds="ccd" aria-pressed="false">Public (CCD)</button>
+      <button type="button" data-ds="pss" aria-pressed="false">Private (PSS)</button>
+      <button type="button" data-ds="ipeds" aria-pressed="false">Colleges (IPEDS)</button>
+      <button type="button" data-ds="geo" aria-pressed="false">Boundaries</button>
+    </div>
+    <input type="search" id="cov-q" placeholder="Filter tables, e.g. membership" aria-label="Filter coverage table">
+  </div>
+  <div id="versions"><p class="muted">Loading…</p></div>
+  <p class="muted" id="cov-n" role="status" aria-live="polite"></p>
+</section>
+
+<section id="technical" aria-labelledby="h-tech">
+  <h2 id="h-tech"><span class="no">TECHNICAL REFERENCE</span>Reuse the data or rebuild it <span class="aud" aria-label="For"><span>Developers</span><span>Analysts</span></span></h2>
+  <p class="intro">Everything the site displays is a plain file you can download. There is no API and no database server.</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>Open files</h3>
+      <p>Data are <a href="https://parquet.apache.org/">Parquet</a> files, one per table and year:</p>
+      <p><code>data/&lt;dataset&gt;/&lt;table&gt;/&lt;year&gt;.parquet</code></p>
+      <ul>
+        <li><code>ccd</code>, <code>pss</code>, <code>ipeds</code>: the survey tables as published, standardised.</li>
+        <li><code>derived</code>: school metrics and profiles computed from them.</li>
+        <li><code>geo</code>: points, district boundaries and the search index.</li>
+        <li><code>meta</code>: dictionary, value labels, row counts, release versions.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Guarantees</h3>
+      <ul>
+        <li>Files are deterministic: the same input always writes the same bytes.</li>
+        <li>A new NCES release that adds, drops or renames a column stops the build instead of being guessed at.</li>
+        <li>Validation (uniqueness, ranges, totals, file counts) must pass before any data are committed.</li>
+        <li>Raw downloads are never committed; every step can be re-run from the original sources.</li>
+      </ul>
+    </div>
+  </div>
+  <h3>Try it now</h3>
+  <p>Any tool that reads Parquet over the web can query these files. For example, in <a href="https://duckdb.org">DuckDB</a>:</p>
+  <div class="code"><button type="button" data-copy="q-duck">Copy</button><pre id="q-duck">SELECT *
+FROM read_parquet('…/data/ccd/membership/2024.parquet')
+LIMIT 10;</pre></div>
+  <p>Or in Python with pandas:</p>
+  <div class="code"><button type="button" data-copy="q-py">Copy</button><pre id="q-py">import pandas as pd
+df = pd.read_parquet('…/data/ipeds/efadist/2024.parquet')
+df.head()</pre></div>
+  <details class="fold">
+    <summary>For developers: rebuild, extend, contribute</summary>
+    <div>
+      <ul>
+        <li><strong>Pipeline.</strong> Python and DuckDB, in <code>pipeline/</code>. Commands include <code>update</code> (download, check, standardise, derive), <code>validate</code> and <code>derive</code>. Column maps are year-ranged YAML files, so a new release is usually a short edit.</li>
+        <li><strong>One state at a time.</strong> The state shown is set by a single configuration file; another state is built by adding a file and running the pipeline.</li>
+        <li><strong>Web app.</strong> Svelte, MapLibre, DuckDB-WASM (reads the Parquet files in your browser) and Observable Plot, in <code>web/</code>. It is static, with no backend, and runs from any web host.</li>
+        <li><strong>Tests.</strong> pytest for the pipeline, vitest for chart logic, and Playwright checks for the map, charts, tooltips, touch layout and accessibility (axe, light and dark).</li>
+        <li><strong>Accessibility.</strong> Charts have text alternatives, tooltips are available on touch and keyboard, and colour is never the only cue (markers also differ in shape).</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<section id="cite" aria-labelledby="h-cite">
+  <h2 id="h-cite"><span class="no">CITE AND REUSE</span>Credit, license and feedback <span class="aud" aria-label="For"><span>Everyone</span></span></h2>
+  <div class="cite">
+    <p id="citation">Education Explorer. Data: U.S. Department of Education, National Center for Education Statistics (Common Core of Data, Private School Universe Survey, IPEDS); U.S. Census Bureau (TIGER/Line, Geocoder). <span id="cite-url"></span>, accessed <span id="cite-date"></span>.</p>
+    <button type="button" class="btn" data-copy="citation">Copy citation</button>
+  </div>
+  <div class="callout good" role="note"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="8"/><path d="m6.5 10.2 2.4 2.3 4.6-4.9"/></svg><p>The underlying federal data are public. The code is open source under the MIT license; see <a href="https://github.com/ar-puuk/education-explorer/blob/main/DATA_ATTRIBUTION.md">DATA_ATTRIBUTION.md</a> for each source’s terms.</p></div>
+  <div class="callout" role="note"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.5 18 17H2z"/><path d="M10 8v4M10 14.5v.1"/></svg><p><strong>Statistical use only.</strong> NCES public-use data are for statistical purposes. Do not use them to try to identify individuals.</p></div>
+  <p>Found something wrong, or a number that looks odd? <a href="https://github.com/ar-puuk/education-explorer/issues">Open an issue</a> with the school or college, the year and what you expected. The more specific, the faster it can be checked against the source file.</p>
+</section>
+
+<footer>
+  <p><a href="#top">Back to top</a> · <a href="./">Back to the map</a></p>
+  <p>Education Explorer shows public data for <span data-state>one state</span>. It does not rank, rate or recommend schools or colleges, and counts are not measures of quality.</p>
+</footer>
 </main>
+</div>
+</div>
+
 <script>
-(async function () {
-  var box = document.getElementById('versions')
-  try {
-    var r = await fetch('./data/meta/years.json'); var y = await r.json()
-    var rows = []
-    Object.keys(y).sort().forEach(function (ds) {
-      Object.keys(y[ds]).sort().forEach(function (t) {
-        var e = y[ds][t]; var ys = e.years || []
-        if (!ys.length) return
-        var vers = {}
-        Object.keys(e.versions || {}).forEach(function (yr) { var v = e.versions[yr]; v = Array.isArray(v) ? v.join('/') : v; if (v) (vers[v] = vers[v] || []).push(yr) })
-        var vtxt = Object.keys(vers).map(function (v) { return v + ' (' + (vers[v].length > 3 ? vers[v][0] + '–' + vers[v][vers[v].length - 1] + ', ' + vers[v].length + ' yrs' : vers[v].join(', ')) + ')' }).join('; ')
-        rows.push('<tr><td>' + ds.toUpperCase() + '</td><td>' + (e.title || t).replace(/</g, '&lt;') + '</td><td>' + ys[0] + '–' + ys[ys.length - 1] + ' (' + ys.length + ')</td><td>' + (vtxt || '') + '</td></tr>')
-      })
+(function () {
+  var $ = function (s, r) { return (r || document).querySelector(s) }
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)) }
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }) }
+  var sy = function (y) { return y + '-' + String(y + 1).slice(2) }
+  var fmt = function (n) { return Number(n).toLocaleString('en-US') }
+
+  // ---------------------------------------------------------------- theme
+  var themeBtn = $('#theme')
+  var order = ['system', 'light', 'dark']
+  function current() { try { var t = localStorage.getItem('theme'); return order.indexOf(t) >= 0 ? t : 'system' } catch (e) { return 'system' } }
+  function applyTheme(p) {
+    if (p === 'system') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', p)
+    themeBtn.textContent = 'Theme: ' + (p === 'system' ? 'auto' : p)
+    themeBtn.setAttribute('aria-label', 'Theme: ' + (p === 'system' ? 'auto' : p) + '. Activate to change the colour theme.')
+  }
+  applyTheme(current())
+  themeBtn.addEventListener('click', function () {
+    var next = order[(order.indexOf(current()) + 1) % 3]
+    try { localStorage.setItem('theme', next) } catch (e) {}
+    applyTheme(next)
+  })
+
+  // ---------------------------------------------------------------- table of contents and scroll spy
+  var heads = $$('main section[id]').map(function (s) { var h = $('h2', s); var no = $('.no', h); return { id: s.id, label: h.childNodes[1] ? h.childNodes[1].textContent.trim() : h.textContent.trim(), el: s } })
+  var tocLabels = { start: 'Start here', officials: 'For decision-makers', sources: 'Where the data come from', charts: 'What each chart shows', terms: 'Glossary', numbers: 'How numbers are handled', limits: 'Known limits', coverage: 'Coverage and release status', technical: 'Technical reference', cite: 'Cite and reuse' }
+  var tocHtml = heads.map(function (h) { return '<li><a href="#' + h.id + '">' + esc(tocLabels[h.id] || h.label) + '</a></li>' }).join('')
+  $('#toc').innerHTML = tocHtml; $('#toc-m').innerHTML = tocHtml
+  $$('#toc-m a').forEach(function (a) { a.addEventListener('click', function () { $('.toc-m').open = false }) })
+  if ('IntersectionObserver' in window) {
+    var links = {}; $$('#toc a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a })
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { $$('#toc a').forEach(function (a) { a.classList.remove('on'); a.removeAttribute('aria-current') }); var a = links[e.target.id]; if (a) { a.classList.add('on'); a.setAttribute('aria-current', 'true') } } })
+    }, { rootMargin: '-15% 0px -70% 0px' })
+    heads.forEach(function (h) { io.observe(h.el) })
+    io.observe($('#top'))
+  }
+
+  // ---------------------------------------------------------------- open all
+  var expand = $('#expand'); var allOpen = false
+  expand.addEventListener('click', function () {
+    allOpen = !allOpen
+    $$('#charts details.fold').forEach(function (d) { d.open = allOpen })
+    expand.textContent = allOpen ? 'Close all groups' : 'Open all groups'
+  })
+
+  // ---------------------------------------------------------------- copy buttons
+  $$('button[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById(b.getAttribute('data-copy')); var text = el.innerText.replace(/\s+\n/g, '\n').trim()
+      var done = function (ok) { var old = b.textContent; b.textContent = ok ? 'Copied' : 'Press Ctrl+C'; if (!ok) { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r) } setTimeout(function () { b.textContent = old }, 1600) }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true) }, function () { done(false) }); else done(false)
     })
-    box.innerHTML = '<table><thead><tr><th>Dataset</th><th>Table</th><th>Years (count)</th><th>Release versions</th></tr></thead><tbody>' + rows.join('') + '</tbody></table>'
-  } catch (e) { box.textContent = 'Could not load coverage information: ' + e }
+  })
+
+  // ---------------------------------------------------------------- glossary
+  var TERMS = [
+    ['Enrollment', 'Also called membership. The number of students on a school’s rolls on one fall count date (generally around October 1). It is a snapshot, not a yearly average.', 'schools'],
+    ['FTE (full-time equivalent)', 'A way to count staff or students by hours: two half-time teachers equal one FTE. Used so part-time staff are not counted as whole people.', 'schools · colleges'],
+    ['Students per teacher', 'Enrollment divided by teacher FTE. It is not class size: it includes teachers who do not lead a classroom, and small teacher counts make it jump.', 'schools'],
+    ['Free or reduced-price lunch', 'Students eligible for the federal school meal program, which depends on household income (or automatic qualification). Often used as a rough signal of low-income families.', 'schools'],
+    ['Community Eligibility Provision (CEP)', 'A rule that lets high-need schools serve free meals to everyone. Eligibility counts there may cover all students, so they are not comparable with other schools.', 'schools'],
+    ['Title I', 'Federal funding for schools with many students from low-income families. “School-wide” means the funds can be used to improve the whole school.', 'schools'],
+    ['Charter school', 'A public school that is independently operated under a charter, usually with its own governing board.', 'schools'],
+    ['Magnet school', 'A public school with a special theme or program meant to draw students from beyond its usual attendance area.', 'schools'],
+    ['Shared-time school', 'A school where students attend only part of the day, often alongside another school.', 'schools'],
+    ['Virtual school', 'NCES labels schools by how much instruction is online, from none to exclusively virtual.', 'schools'],
+    ['Locale', 'NCES’s classification of where a school sits: city, suburb, town or rural, each in sizes or distances (for example “Suburb, large”).', 'schools'],
+    ['Operating status', 'Whether a school was open, closed, new or planned in that school year, as reported.', 'schools'],
+    ['School district (LEA)', 'The local education agency that runs a group of public schools. Districts have boundaries; charter agencies may not.', 'districts'],
+    ['NCES ID', 'Identifiers that stay with a place over time: a 12-digit school ID, a 7-digit district ID, a 6-digit college ID (UnitID) and a private school ID (PPIN).', 'all'],
+    ['IDEA (students with disabilities)', 'Students receiving services under the Individuals with Disabilities Education Act. Counts depend on how each state identifies students.', 'districts'],
+    ['English learner', 'A student still developing English proficiency and receiving language support. Identification rules vary by state.', 'districts'],
+    ['F-33', 'The Census Bureau’s annual survey of school system finances. Source of district revenue and spending.', 'districts'],
+    ['Diploma recipient / completer', 'A student who finished high school that year with a regular diploma or another state-recognized credential. A count, not a graduation rate.', 'districts'],
+    ['Dropout', 'A student in grades 9–12 who left school without completing, as defined by each state. Counts, not rates.', 'districts'],
+    ['IPEDS', 'The Integrated Postsecondary Education Data System: yearly surveys of colleges that take part in federal student aid.', 'colleges'],
+    ['Distance education', 'Courses delivered mostly online, where students and instructor are in different places. IPEDS reports students taking all, some or none of their courses this way. It does not separate hybrid courses.', 'colleges'],
+    ['12-month headcount', 'Every student enrolled at any time over a year, counted once. Larger than fall enrollment.', 'colleges'],
+    ['Retention rate', 'Of first-time students one fall, the share enrolled again (or completed) the next fall.', 'colleges'],
+    ['Graduation rate (150%)', 'Of a cohort of first-time, full-time students, the share who finished within 150% of normal program time (six years for a bachelor’s degree). Leaves out part-time and transfer students.', 'colleges'],
+    ['Outcome Measures', 'A broader set of completion outcomes that includes part-time and transfer-in students and looks 6 and 8 years out, reported by group.', 'colleges'],
+    ['Cost of attendance / total price', 'Published tuition and fees plus housing, food, books and other expected costs for a year.', 'colleges'],
+    ['Net price', 'Cost of attendance minus grants and scholarships, averaged for first-time, full-time undergraduates who were awarded aid. Shown by family income band where reported.', 'colleges'],
+    ['Pell grant', 'A federal grant for undergraduates with financial need that does not have to be repaid.', 'colleges'],
+    ['Preliminary / provisional / final / revised', 'Release stages. Preliminary and provisional numbers can change. Final (CCD) and revised (IPEDS) are the settled versions.', 'releases'],
+    ['Suppression', 'Hiding a small count so individuals cannot be identified. A suppressed value is blank on this site, never zero.', 'privacy'],
+    ['Share (percent)', 'A group’s part of a total. It describes composition and does not measure how a group is doing.', 'charts'],
+    ['Median and middle half', 'The dashed line is the typical school’s value (half are above, half below); the shaded band covers the middle half of schools. Context only.', 'charts'],
+    ['Geocoding', 'Turning an address into map coordinates. Approximate matches are drawn with a dotted outline.', 'map'],
+    ['TIGER/Line', 'The Census Bureau’s boundary files, used for school district shapes.', 'map'],
+    ['Parquet', 'A compact open file format for tables that most data tools can read.', 'technical']
+  ]
+  var gl = $('#gl')
+  gl.innerHTML = TERMS.map(function (t) { return '<div><dt>' + esc(t[0]) + '<small>' + esc(t[2]) + '</small></dt><dd>' + esc(t[1]) + '</dd></div>' }).join('')
+  var glq = $('#gl-q')
+  function filterTerms() {
+    var q = glq.value.trim().toLowerCase(); var n = 0
+    $$('div', gl).forEach(function (d) { var show = !q || d.textContent.toLowerCase().indexOf(q) >= 0; d.hidden = !show; if (show) n++ })
+    $('#gl-none').hidden = n > 0
+    $('#gl-n').textContent = q ? n + ' of ' + TERMS.length + ' terms' : TERMS.length + ' terms'
+  }
+  glq.addEventListener('input', filterTerms); filterTerms()
+
+  // ---------------------------------------------------------------- live data: state name, counts, coverage
+  var base = new URL('./', location.href).href
+  var citeUrl = $('#cite-url'); citeUrl.textContent = base; $('#cite-date').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  var duck = $('#q-duck'); duck.textContent = duck.textContent.replace('…', base.replace(/\/$/, '')); var py = $('#q-py'); py.textContent = py.textContent.replace('…', base.replace(/\/$/, ''))
+
+  function get(p) { return fetch('./data/' + p).then(function (r) { if (!r.ok) throw new Error(p + ' ' + r.status); return r }) }
+  var yearsP = get('meta/years.json').then(function (r) { return r.json().then(function (j) { return { j: j, lm: r.headers.get('last-modified') } }) })
+  get('meta/state.json').then(function (r) { return r.json() }).then(function (s) {
+    $$('[data-state]').forEach(function (e) { e.textContent = s.name || 'one state' })
+    document.title = 'About the data · ' + (s.site_title || 'Education Explorer')
+    $('#citation').innerHTML = $('#citation').innerHTML.replace('Education Explorer.', esc(s.site_title || 'Education Explorer') + '.')
+  }).catch(function () {})
+
+  var range = function (e) { return e && e.years && e.years.length ? e.years[0] + '–' + e.years[e.years.length - 1] : '' }
+  Promise.all([yearsP, get('meta/year_summary.json').then(function (r) { return r.json() }).catch(function () { return null }), get('meta/rowcounts.json').then(function (r) { return r.json() }).catch(function () { return null })]).then(function (res) {
+    var y = res[0].j, sum = res[1], rc = res[2]
+    var tables = 0, files = 0
+    Object.keys(y).forEach(function (ds) { Object.keys(y[ds]).forEach(function (t) { var n = (y[ds][t].years || []).length; if (n) { tables++; files += n } }) })
+    var rows = 0
+    if (rc) Object.keys(rc).forEach(function (k) { Object.keys(rc[k]).forEach(function (yr) { rows += Number(rc[k][yr]) || 0 }) })
+    var lastMem = y.ccd && y.ccd.membership ? y.ccd.membership.years.slice(-1)[0] : null
+    var stats = []
+    if (sum && lastMem != null && sum.public[String(lastMem)]) stats.push(['<i style="background:var(--c-public)"></i>', fmt(sum.public[String(lastMem)].operating), 'operating public schools, ' + sy(lastMem)])
+    if (sum && sum.private) { var ps = Object.keys(sum.private).sort().slice(-1)[0]; if (ps) stats.push(['<i style="background:var(--c-private)"></i>', fmt(sum.private[ps].mapped), 'private schools, ' + sy(Number(ps)) + ' survey']) }
+    if (sum && sum.college) { var cy = Object.keys(sum.college).sort().slice(-1)[0]; if (cy) stats.push(['<i style="background:var(--c-college)"></i>', fmt(sum.college[cy].active), 'active colleges, ' + cy]) }
+    var dirY = y.ccd && y.ccd.school_directory ? y.ccd.school_directory.years : []
+    if (dirY.length) stats.push(['', (dirY[dirY.length - 1] - dirY[0] + 1), 'school years of public data (' + sy(dirY[0]) + ' to ' + sy(dirY[dirY.length - 1]) + ')'])
+    stats.push(['', fmt(tables), 'data tables'])
+    if (rows) stats.push(['', fmt(rows), 'rows of data across ' + fmt(files) + ' files'])
+    $('#stats').innerHTML = stats.map(function (s) { return '<li class="stat"><b>' + s[1] + '</b><span>' + s[0] + esc(s[2]) + '</span></li>' }).join('')
+    var lm = res[0].lm
+    $('#asof').textContent = 'Counts are read from this site’s data files' + (lm ? ' (last updated ' + new Date(lm).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + ')' : '') + '.'
+    var setR = function (id, e, f) { var el = $(id); if (el && e && e.years && e.years.length) el.textContent = (f || sy)(e.years[0]) + ' to ' + (f || sy)(e.years[e.years.length - 1]) }
+    setR('#yrs-ccd', y.ccd && y.ccd.school_directory)
+    var pssY = sum && sum.private_survey_years
+    if (pssY && pssY.length) $('#yrs-pss').textContent = 'Surveys from ' + sy(pssY[0]) + ' to ' + sy(pssY[pssY.length - 1]) + ' on the map; earlier surveys (from 1989-90) in the data tables'
+    var hd = y.ipeds && y.ipeds.hd
+    if (hd && hd.years.length) $('#yrs-ipeds').textContent = hd.years[0] + ' to ' + hd.years[hd.years.length - 1] + ' on the map; files from 1980 in the data tables'
+    buildCoverage(y)
+  }).catch(function (e) { $('#stats').innerHTML = '<li class="stat"><b>—</b><span>Could not load the latest counts</span></li>'; $('#versions').textContent = 'Could not load coverage information: ' + e })
+
+  // ---------------------------------------------------------------- coverage table
+  var DSNAME = { ccd: 'Public (CCD)', pss: 'Private (PSS)', ipeds: 'Colleges (IPEDS)', geo: 'Boundaries' }
+  function stageClass(v) { v = String(v || '').toLowerCase(); return ['final', 'provisional', 'preliminary', 'revised', 'legacy'].indexOf(v) >= 0 ? 'v-' + v : 'v-other' }
+  function strip(e, lo, hi) {
+    var W = 1000, span = hi - lo + 1, w = W / span, parts = [], run = null
+    function flush() { if (run) parts.push('<rect class="' + run.c + '" x="' + (run.s - lo) * w + '" y="0" width="' + (run.n * w) + '" height="14"><title>' + run.s + (run.n > 1 ? '–' + (run.s + run.n - 1) : '') + ': ' + run.l + '</title></rect>'); run = null }
+    ;(e.years || []).forEach(function (yr) {
+      var v = (e.versions || {})[String(yr)]; v = Array.isArray(v) ? v.join('/') : v
+      var c = stageClass(v), l = v || 'stage not labelled'
+      if (run && run.c === c && run.l === l && run.s + run.n === yr) run.n++; else { flush(); run = { s: yr, n: 1, c: c, l: l } }
+    })
+    flush()
+    return '<svg class="cov" viewBox="0 0 ' + W + ' 14" preserveAspectRatio="none" aria-hidden="true" focusable="false">' + parts.join('') + '</svg>'
+  }
+  function stageSummary(e) {
+    var c = {}; Object.keys(e.versions || {}).forEach(function (yr) { var v = e.versions[yr]; v = Array.isArray(v) ? v.join('/') : v; if (v) c[v] = (c[v] || 0) + 1 })
+    return Object.keys(c).map(function (v) { return v + ' ' + c[v] }).join(', ')
+  }
+  var COV = []
+  function buildCoverage(y) {
+    var lo = 9999, hi = 0
+    Object.keys(y).forEach(function (ds) { Object.keys(y[ds]).forEach(function (t) { var ys = y[ds][t].years || []; if (ys.length) { lo = Math.min(lo, ys[0]); hi = Math.max(hi, ys[ys.length - 1]) } }) })
+    Object.keys(y).forEach(function (ds) { Object.keys(y[ds]).sort().forEach(function (t) { var e = y[ds][t]; if (e.years && e.years.length) COV.push({ ds: ds, t: t, e: e, title: e.title || t }) }) })
+    COV.lo = lo; COV.hi = hi
+    renderCoverage()
+  }
+  var covDs = '', covLimit = 14
+  function axis() {
+    var span = COV.hi - COV.lo + 1, out = []
+    for (var yr = Math.ceil(COV.lo / 10) * 10; yr <= COV.hi; yr += 10) out.push('<span style="left:' + (((yr - COV.lo + 0.5) / span) * 100).toFixed(2) + '%">' + yr + '</span>')
+    return '<div class="cv-axis" aria-hidden="true">' + out.join('') + '</div>'
+  }
+  function renderCoverage() {
+    var q = $('#cov-q').value.trim().toLowerCase()
+    var list = COV.filter(function (r) { return (!covDs || r.ds === covDs) && (!q || (r.title + ' ' + r.t + ' ' + DSNAME[r.ds]).toLowerCase().indexOf(q) >= 0) })
+    var shown = q || covLimit >= list.length ? list : list.slice(0, covLimit)
+    var rows = shown.map(function (r) {
+      var e = r.e, n = e.years.length
+      return '<li class="cv"><div class="cv-t"><strong>' + esc(r.title) + '</strong><span class="cv-m"><span class="tab">' + esc(r.t) + '</span> ' + esc(DSNAME[r.ds] || r.ds) + ' · ' + e.years[0] + '–' + e.years[n - 1] + ' (' + n + ' year' + (n === 1 ? '' : 's') + ')</span></div><div class="cv-s">' + strip(e, COV.lo, COV.hi) + '<span class="sr">Release stages: ' + esc(stageSummary(e) || 'not labelled') + '</span></div></li>'
+    }).join('')
+    $('#versions').innerHTML = rows ? '<div class="cv-head"><span>Table</span><span class="cv-yrs">Years available, ' + COV.lo + '–' + COV.hi + ', coloured by release stage</span></div><div class="cv-axisrow">' + axis() + '</div><ul class="cvs">' + rows + '</ul>' + (shown.length < list.length ? '<div class="more"><button type="button" class="btn ghost" id="cov-more">Show all ' + list.length + ' tables</button></div>' : '') : '<p class="none">No tables match.</p>'
+    $('#cov-n').textContent = 'Showing ' + shown.length + ' of ' + list.length + ' table' + (list.length === 1 ? '' : 's') + '.'
+    var more = $('#cov-more'); if (more) more.addEventListener('click', function () { covLimit = 9999; renderCoverage() })
+  }
+  $$('#cov-seg button').forEach(function (b) { b.addEventListener('click', function () { covDs = b.getAttribute('data-ds'); covLimit = 14; $$('#cov-seg button').forEach(function (o) { o.setAttribute('aria-pressed', String(o === b)) }); renderCoverage() }) })
+  $('#cov-q').addEventListener('input', renderCoverage)
 })()
 </script>
 </body>

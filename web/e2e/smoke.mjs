@@ -201,7 +201,7 @@ await page.getByRole('button', { name: 'Close table' }).click()
 // methodology page
 const mp = await ctx.newPage()
 await mp.goto(base_ + 'methodology.html')
-await mp.waitForSelector('#versions table', { timeout: 20000 })
+await mp.waitForSelector('#versions li.cv', { timeout: 20000 })
 ok('methodology page loads coverage table')
 await mp.close()
 
