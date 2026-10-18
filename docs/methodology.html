@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Icons: Lucide (https://lucide.dev, ISC licence), inlined. -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About the data</title>
@@ -183,7 +184,8 @@
   details.fold { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; margin: 0.7rem 0; max-width: none; }
   details.fold > summary { cursor: pointer; padding: 0.8rem 1.1rem; font-weight: 600; list-style: none; display: flex; align-items: center; gap: 0.6rem; }
   details.fold > summary::-webkit-details-marker { display: none; }
-  details.fold > summary::before { content: '▸'; color: var(--muted); transition: transform 0.15s; }
+  /* chevron-right from Lucide (ISC), drawn as a mask so it follows --muted */
+  details.fold > summary::before { content: ''; width: 1rem; height: 1rem; flex: none; background: var(--muted); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 18 6-6-6-6'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 18 6-6-6-6'/%3E%3C/svg%3E") center / contain no-repeat; transition: transform 0.15s; }
   details.fold[open] > summary::before { transform: rotate(90deg); }
   details.fold > div, details.fold > .scroll { margin: 0 1.1rem 1rem; }
   details.fold > .scroll { margin-top: 0; }
@@ -267,7 +269,7 @@
 </head>
 <body>
 <header class="bar">
-  <a class="back" href="./" aria-label="Back to the map"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg>Map</a>
+  <a class="back" href="./" aria-label="Back to the map"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>Map</a>
   <span class="title">About the data</span>
   <button class="theme" id="theme" type="button">Theme: auto</button>
 </header>
@@ -290,10 +292,10 @@
   <h1>Where these numbers come from, and how to use them well</h1>
   <p class="lead">This site puts public schools, private schools, school districts and colleges in <span data-state>one state</span> on a map, with their history. Every figure comes straight from files that the U.S. Department of Education and the Census Bureau publish. We standardise, organise and chart them; we do not estimate missing values or judge quality.</p>
   <ul class="pledges" aria-label="Our commitments">
-    <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5"/></svg>No rankings or ratings</li>
-    <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5"/></svg>Built directly from the federal files</li>
-    <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5"/></svg>Missing is never shown as zero</li>
-    <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5"/></svg>Free and open source</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No rankings or ratings</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Built directly from the federal files</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Missing is never shown as zero</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Free and open source</li>
   </ul>
   <ul class="stats" id="stats" aria-label="The data at a glance">
     <li class="stat"><b>…</b><span>Loading the latest counts</span></li>
@@ -638,8 +640,8 @@ df.head()</pre></div>
     <p id="citation">Education Explorer. Data: U.S. Department of Education, National Center for Education Statistics (Common Core of Data, Private School Universe Survey, IPEDS); U.S. Census Bureau (TIGER/Line, Geocoder). <span id="cite-url"></span>, accessed <span id="cite-date"></span>.</p>
     <button type="button" class="btn" data-copy="citation">Copy citation</button>
   </div>
-  <div class="callout good" role="note"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="8"/><path d="m6.5 10.2 2.4 2.3 4.6-4.9"/></svg><p>The underlying federal data are public. The code is open source under the MIT license; see <a href="https://github.com/ar-puuk/education-explorer/blob/main/DATA_ATTRIBUTION.md">DATA_ATTRIBUTION.md</a> for each source’s terms.</p></div>
-  <div class="callout" role="note"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.5 18 17H2z"/><path d="M10 8v4M10 14.5v.1"/></svg><p><strong>Statistical use only.</strong> NCES public-use data are for statistical purposes. Do not use them to try to identify individuals.</p></div>
+  <div class="callout good" role="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg><p>The underlying federal data are public. The code is open source under the MIT license; see <a href="https://github.com/ar-puuk/education-explorer/blob/main/DATA_ATTRIBUTION.md">DATA_ATTRIBUTION.md</a> for each source’s terms.</p></div>
+  <div class="callout" role="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><p><strong>Statistical use only.</strong> NCES public-use data are for statistical purposes. Do not use them to try to identify individuals.</p></div>
   <p>Found something wrong, or a number that looks odd? <a href="https://github.com/ar-puuk/education-explorer/issues">Open an issue</a> with the school or college, the year and what you expected. The more specific, the faster it can be checked against the source file.</p>
 </section>
 
