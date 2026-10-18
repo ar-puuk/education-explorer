@@ -212,7 +212,7 @@ export class MapController {
           'icon-image': ['get', 'icon'],
           'icon-allow-overlap': true,
           'icon-ignore-placement': true,
-          'icon-size': this.iconSize(),
+          'icon-size': this.iconSize(ds),
         },
       })
       if (this.wired.has(ds)) return
@@ -251,16 +251,18 @@ export class MapController {
     }
   }
 
-  private iconSize(): maplibregl.ExpressionSpecification | number {
-    if (!this.sizeByEnroll) return 0.9
+  /** Public and private schools always match. At the default fixed size colleges are a little larger (a diamond reads smaller than a circle or square of the same box); sized by enrollment, every dataset follows the same scale. */
+  private iconSize(ds: Dataset): maplibregl.ExpressionSpecification | number {
+    if (!this.sizeByEnroll) return ds === 'college' ? 1.1 : 0.9
+    // Log scale: each tenfold step in enrollment adds the same amount, so a 30,000-student university
+    // reads clearly bigger than a 500-student school without dwarfing it (about 2x across the whole range).
     return [
       'interpolate',
       ['linear'],
-      ['coalesce', ['to-number', ['get', 'enroll']], 300],
-      0, 0.7,
-      300, 0.85,
-      1000, 1.05,
-      2500, 1.35,
+      ['log10', ['max', 50, ['coalesce', ['to-number', ['get', 'enroll']], 300]]],
+      1.7, 0.75, // 50 students or fewer
+      3, 1.1, // 1,000
+      4.6, 1.6, // 40,000 and up
     ]
   }
 
@@ -309,7 +311,7 @@ export class MapController {
   setSizeByEnroll(on: boolean) {
     this.sizeByEnroll = on
     for (const ds of DATASETS) {
-      if (this.map.getLayer(`${ds}-points`)) this.map.setLayoutProperty(`${ds}-points`, 'icon-size', this.iconSize())
+      if (this.map.getLayer(`${ds}-points`)) this.map.setLayoutProperty(`${ds}-points`, 'icon-size', this.iconSize(ds))
     }
   }
 
