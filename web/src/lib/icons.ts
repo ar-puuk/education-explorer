@@ -1,5 +1,7 @@
 /** Runtime marker icons: coloured shape + white glyph. Shape and glyph differ per dataset so
  *  meaning never depends on colour alone. */
+import { iconPath2D, MARKER_ICONS } from './lucide'
+
 export type Dataset = 'public' | 'private' | 'college'
 /** What can be selected on the map: a point dataset or a school district polygon. */
 export type Selectable = Dataset | 'district'
@@ -33,50 +35,21 @@ function shape(ctx: Ctx, kind: Dataset, s: number) {
   }
 }
 
+const GLYPH_PATHS: Partial<Record<Dataset, Path2D>> = {}
+
 function glyph(ctx: Ctx, kind: Dataset, s: number) {
-  const c = s / 2
+  const path = (GLYPH_PATHS[kind] ??= iconPath2D(MARKER_ICONS[kind]))
+  const g = 17 // glyph box in logical px
+  const k = g / 24
+  ctx.save()
+  ctx.translate((s - g) / 2, (s - g) / 2)
+  ctx.scale(k, k)
   ctx.strokeStyle = '#fff'
-  ctx.fillStyle = '#fff'
-  ctx.lineWidth = 1.8
+  ctx.lineWidth = 2 // icon units, scaled with the glyph
   ctx.lineJoin = 'round'
   ctx.lineCap = 'round'
-  ctx.beginPath()
-  if (kind === 'public') {
-    // schoolhouse/institution: pediment + columns
-    ctx.moveTo(c - 7, c - 2)
-    ctx.lineTo(c, c - 7)
-    ctx.lineTo(c + 7, c - 2)
-    ctx.closePath()
-    ctx.fill()
-    ctx.fillRect(c - 5.5, c - 0.5, 2, 6)
-    ctx.fillRect(c - 1, c - 0.5, 2, 6)
-    ctx.fillRect(c + 3.5, c - 0.5, 2, 6)
-    ctx.fillRect(c - 7, c + 6, 14, 1.8)
-  } else if (kind === 'private') {
-    // house
-    ctx.moveTo(c - 7, c)
-    ctx.lineTo(c, c - 7)
-    ctx.lineTo(c + 7, c)
-    ctx.moveTo(c - 5, c - 1.5)
-    ctx.lineTo(c - 5, c + 6)
-    ctx.lineTo(c + 5, c + 6)
-    ctx.lineTo(c + 5, c - 1.5)
-    ctx.stroke()
-    ctx.fillRect(c - 1.5, c + 1.5, 3, 4.5)
-  } else {
-    // graduation cap
-    ctx.moveTo(c - 8, c - 1)
-    ctx.lineTo(c, c - 5)
-    ctx.lineTo(c + 8, c - 1)
-    ctx.lineTo(c, c + 3)
-    ctx.closePath()
-    ctx.fill()
-    ctx.moveTo(c - 4.5, c + 2)
-    ctx.lineTo(c - 4.5, c + 6)
-    ctx.quadraticCurveTo(c, c + 8.5, c + 4.5, c + 6)
-    ctx.lineTo(c + 4.5, c + 2)
-    ctx.stroke()
-  }
+  ctx.stroke(path)
+  ctx.restore()
 }
 
 export interface IconStyle {
