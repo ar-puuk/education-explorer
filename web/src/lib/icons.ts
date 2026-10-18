@@ -83,15 +83,25 @@ export function cssVar(name: string): string {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim()
 }
 
-/** SVG markup for legend/UI use (same shapes, simplified). */
+const attrs = (a: Record<string, string | number | undefined>) =>
+  Object.entries(a).map(([k, v]) => `${k}="${v}"`).join(' ')
+
+/** SVG markup for legend/UI use: the same shape and Lucide glyph as the map marker, on the marker's 28-unit grid. */
 export function legendSvg(kind: Dataset, size = 18): string {
-  const s = size
+  const s = SIZE
+  const c = s / 2
   const col = `var(--c-${kind})`
   const shapeEl =
     kind === 'public'
-      ? `<circle cx="${s / 2}" cy="${s / 2}" r="${s / 2 - 1}" fill="${col}"/>`
+      ? `<circle cx="${c}" cy="${c}" r="${c - 2}" fill="${col}"/>`
       : kind === 'private'
-        ? `<rect x="1" y="1" width="${s - 2}" height="${s - 2}" rx="3" fill="${col}"/>`
-        : `<polygon points="${s / 2},0.5 ${s - 0.5},${s / 2} ${s / 2},${s - 0.5} 0.5,${s / 2}" fill="${col}"/>`
-  return `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" aria-hidden="true">${shapeEl}</svg>`
+        ? `<rect x="2" y="2" width="${s - 4}" height="${s - 4}" rx="5" fill="${col}"/>`
+        : `<polygon points="${c},1 ${s - 1},${c} ${c},${s - 1} 1,${c}" fill="${col}"/>`
+  const g = 17
+  const glyphEl = MARKER_ICONS[kind].map(([tag, a]) => `<${tag} ${attrs(a)}/>`).join('')
+  return (
+    `<svg width="${size}" height="${size}" viewBox="0 0 ${s} ${s}" aria-hidden="true">${shapeEl}` +
+    `<g transform="translate(${(s - g) / 2} ${(s - g) / 2}) scale(${g / 24})" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${glyphEl}</g></svg>`
+  )
 }
+

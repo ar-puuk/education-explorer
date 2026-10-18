@@ -37,7 +37,7 @@
     {#each chips as c}
       <button class="dchip" aria-pressed={app.layers[c.id]} onclick={() => (app.layers[c.id] = !app.layers[c.id])} title={DATASET_LABEL[c.id]}>
         <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-        <span class="shape">{@html legendSvg(c.id, 14)}</span>
+        <span class="shape">{@html legendSvg(c.id, 20)}</span>
         {c.label}
         <b>{fmtInt(counts[c.id])}</b>
       </button>
