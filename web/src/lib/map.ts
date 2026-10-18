@@ -7,6 +7,8 @@ import { cssVar, makeIcon, type Dataset, type Selectable } from './icons'
 
 const DATASETS: Dataset[] = ['public', 'private', 'college']
 const VARIANTS = ['open', 'closed', 'approx'] as const
+/** Marker image ids are prefixed so they can never collide with the basemap sprite (which has its own 'college' and 'school' icons). */
+const imageId = (name: string) => `ee-${name}`
 const CATEGORY_ICONS = 8
 
 export type PointFeature = GeoJSON.Feature<GeoJSON.Point, Record<string, unknown>>
@@ -74,7 +76,7 @@ export class MapController {
       const fill = cssVar(`--c-${ds}`)
       const ring = cssVar('--ring')
       for (const v of VARIANTS) {
-        const name = v === 'open' ? ds : `${ds}-${v}`
+        const name = imageId(v === 'open' ? ds : `${ds}-${v}`)
         if (this.map.hasImage(name)) this.map.removeImage(name)
         this.map.addImage(name, makeIcon(ds, { fill, ring, closed: v === 'closed', approx: v === 'approx' }, ratio), { pixelRatio: ratio })
       }
@@ -87,7 +89,7 @@ export class MapController {
   /** Public school icons in the categorical chart colours (for "colour by"). */
   private addCategoryIcons() {
     for (let i = 0; i < CATEGORY_ICONS; i++) {
-      const name = `public-cat${i}`
+      const name = imageId(`public-cat${i}`)
       if (this.map.hasImage(name)) this.map.removeImage(name)
       this.map.addImage(name, makeIcon('public', { fill: cssVar(`--chart-${i + 1}`), ring: cssVar('--ring') }, 2), { pixelRatio: 2 })
     }
@@ -209,7 +211,7 @@ export class MapController {
         filter: ['!', ['has', 'point_count']],
         layout: {
           visibility: vis,
-          'icon-image': ['get', 'icon'],
+          'icon-image': ['concat', 'ee-', ['get', 'icon']],
           'icon-allow-overlap': true,
           'icon-ignore-placement': true,
           'icon-size': this.iconSize(ds),
@@ -366,7 +368,7 @@ export class MapController {
     const ratio = 2
     for (const ds of DATASETS) {
       for (const v of VARIANTS) {
-        const name = v === 'open' ? ds : `${ds}-${v}`
+        const name = imageId(v === 'open' ? ds : `${ds}-${v}`)
         if (this.map.hasImage(name)) this.map.removeImage(name)
         this.map.addImage(name, makeIcon(ds, { fill: cssVar(`--c-${ds}`), ring: cssVar('--ring'), closed: v === 'closed', approx: v === 'approx' }, ratio), { pixelRatio: ratio })
       }
