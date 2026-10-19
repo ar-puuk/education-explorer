@@ -88,6 +88,11 @@
       cancelled = true
     }
   })
+  $effect(() => {
+    const sel = app.selected
+    const leaid = sel?.dataset === 'public' ? app.points?.schools.find((s) => s.id === sel.id)?.leaid : undefined
+    ctl?.setSchoolDistrict(leaid ?? null)
+  })
   $effect(() => ctl?.setSelected(app.selected?.dataset ?? null, app.selected?.id ?? null))
 
   /** Used by the search box and the detail panel. */

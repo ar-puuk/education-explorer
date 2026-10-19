@@ -383,17 +383,10 @@ details.cav p {
   right: var(--insp-w, 0px);
   transition: right 0.18s ease;
 }
-.maplibregl-ctrl-bottom-left {
-  left: var(--drawer-w, 0px);
-  transition: left 0.18s ease;
-}
 @media (max-width: 720px) {
   .maplibregl-ctrl-top-right,
   .maplibregl-ctrl-bottom-right {
     right: 0;
-  }
-  .maplibregl-ctrl-bottom-left {
-    left: 0;
   }
   .maplibregl-ctrl-top-right {
     top: 56px;

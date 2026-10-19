@@ -37,6 +37,7 @@ export class MapController {
   private selected: { dataset: Selectable; id: string } | null = null
   private districts: GeoJSON.FeatureCollection = { type: 'FeatureCollection', features: [] }
   private districtsVisible = false
+  private schoolDistrict: string | null = null
   private sizeByEnroll = true
   private wired = new Set<string>()
   private popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 16, className: 'ee-popup' })
@@ -140,6 +141,21 @@ export class MapController {
         layout: { visibility: vis },
         paint: { 'line-color': cssVar('--accent'), 'line-width': 4 },
       })
+      // The district of a selected public school: shown even when the Boundaries toggle is off.
+      m.addLayer({
+        id: 'districts-school-fill',
+        type: 'fill',
+        source: 'districts',
+        filter: this.schoolDistrictFilter(),
+        paint: { 'fill-color': cssVar('--accent'), 'fill-opacity': 0.06 },
+      })
+      m.addLayer({
+        id: 'districts-school-line',
+        type: 'line',
+        source: 'districts',
+        filter: this.schoolDistrictFilter(),
+        paint: { 'line-color': cssVar('--accent'), 'line-width': 2.5, 'line-opacity': 0.9, 'line-dasharray': [2, 1] },
+      })
     }
     if (!this.wired.has('districts')) {
       this.wired.add('districts')
@@ -162,6 +178,10 @@ export class MapController {
         if (f) this.opts.onSelect('district', String(f.properties.leaid))
       })
     }
+  }
+
+  private schoolDistrictFilter(): maplibregl.FilterSpecification {
+    return ['==', ['get', 'leaid'], this.schoolDistrict ?? '__none__']
   }
 
   private districtFilter(): maplibregl.FilterSpecification {
@@ -329,6 +349,14 @@ export class MapController {
     }
   }
 
+  /** Outline the district of the selected public school, independent of the Boundaries toggle. */
+  setSchoolDistrict(leaid: string | null) {
+    this.schoolDistrict = leaid
+    for (const l of ['districts-school-fill', 'districts-school-line']) {
+      if (this.map.getLayer(l)) this.map.setFilter(l, this.schoolDistrictFilter())
+    }
+  }
+
   fitDistrict(leaid: string) {
     const f = this.districts.features.find((x) => x.properties?.leaid === leaid)
     if (!f) return
@@ -376,8 +404,8 @@ export class MapController {
         this.map.setPaintProperty(`${ds}-clusters`, 'circle-color', cssVar(`--c-${ds}`))
         this.map.setPaintProperty(`${ds}-clusters`, 'circle-stroke-color', cssVar('--ring'))
       }
-      for (const l of ['districts-fill', 'districts-line', 'districts-selected']) {
-        if (this.map.getLayer(l)) this.map.setPaintProperty(l, l === 'districts-fill' ? 'fill-color' : 'line-color', cssVar('--accent'))
+      for (const l of ['districts-fill', 'districts-line', 'districts-selected', 'districts-school-fill', 'districts-school-line']) {
+        if (this.map.getLayer(l)) this.map.setPaintProperty(l, l.endsWith('-fill') ? 'fill-color' : 'line-color', cssVar('--accent'))
       }
       if (this.map.getLayer('districts-label')) {
         this.map.setPaintProperty('districts-label', 'text-color', cssVar('--text'))
