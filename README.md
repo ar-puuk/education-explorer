@@ -1,5 +1,7 @@
 # Education Explorer
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23789926.svg)](https://doi.org/10.5281/zenodo.23789926)
+
 A static, zero-cost, map-first dashboard for exploring **publicly available NCES data** for one U.S. state at a time:
 
 | Layer | Source | Years |
