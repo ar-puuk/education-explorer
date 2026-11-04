@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Education Explorer"
+abstract: "A static, map-first dashboard for exploring publicly available NCES data (public schools, private schools, colleges and school district boundaries) for one U.S. state at a time."
+type: software
+authors:
+  - family-names: Bhandari
+    given-names: Pukar
+doi: 10.5281/zenodo.23789926
+repository-code: "https://github.com/ar-puuk/education-explorer"
+url: "https://ar-puuk.github.io/education-explorer/"
+license: MIT
+date-released: "2026-10-29"
+keywords:
+  - education
+  - NCES
+  - IPEDS
+  - schools
+  - map
+  - dashboard
