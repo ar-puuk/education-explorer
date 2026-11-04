@@ -10,7 +10,8 @@ doi: 10.5281/zenodo.23789926
 repository-code: "https://github.com/ar-puuk/education-explorer"
 url: "https://ar-puuk.github.io/education-explorer/"
 license: MIT
-date-released: "2026-10-29"
+version: "1.0.0"
+date-released: "2026-10-30"
 keywords:
   - education
   - NCES
